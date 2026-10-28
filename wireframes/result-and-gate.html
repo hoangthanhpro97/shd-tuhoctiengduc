@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wireframe: Kết Quả Thi & Lead Gate Đa Tầng - SHD Tự Học Tiếng Đức</title>
+  <title>Wireframe: Kết Quả Thi &amp; Lead Gate Đa Tầng - SHD Tự Học Tiếng Đức</title>
   <style>
     /* Reset & Design System Tokens */
     *, *::before, *::after {
@@ -37,6 +37,7 @@
       line-height: 1.5;
       font-size: 15px;
       -webkit-font-smoothing: antialiased;
+      overflow-wrap: anywhere;
     }
 
     button, input, select, label, a {
@@ -72,9 +73,10 @@
       display: flex;
       gap: 8px;
       align-items: center;
+      flex-wrap: wrap;
     }
     .demo-btn {
-      min-height: 28px;
+      min-height: 30px;
       padding: 2px 10px;
       font-size: 11px;
       background: #32383f;
@@ -92,6 +94,7 @@
       max-width: 1040px;
       margin: 20px auto 40px;
       padding: 0 16px;
+      width: 100%;
     }
 
     /* Result Header Card */
@@ -133,7 +136,7 @@
       display: grid;
       grid-template-columns: 1.2fr 1fr 1fr;
       gap: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
     .score-box {
       background: #fafbfc;
@@ -141,6 +144,7 @@
       border-radius: 6px;
       padding: 16px;
       text-align: center;
+      min-width: 0;
     }
     .score-box.main-score {
       background: #f0f6fc;
@@ -159,12 +163,23 @@
       color: var(--text-main);
     }
     .score-desc {
-      font-size: 12px;
+      font-size: 13px;
       margin-top: 4px;
-      font-weight: 600;
+      font-weight: 700;
     }
     .text-success { color: var(--success-text); }
     .text-warning { color: var(--warning-text); }
+
+    .score-disclaimer {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-style: italic;
+      padding: 8px 12px;
+      background: #fafbfc;
+      border-radius: 4px;
+      border-left: 3px solid var(--border-dark);
+      margin-top: 8px;
+    }
 
     /* Primary CTA Banner (Đăng ký Test 1-1 miễn phí) */
     .banner-cta {
@@ -202,6 +217,7 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
+      min-height: 44px;
     }
     .btn-cta-primary:hover {
       background: #e1e4e8;
@@ -221,21 +237,8 @@
     .filter-tags {
       display: flex;
       gap: 6px;
-    }
-    .filter-btn {
-      min-height: 32px;
-      padding: 4px 10px;
       font-size: 12px;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-color);
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-    .filter-btn.active {
-      background: var(--accent-wire);
-      color: #fff;
-      border-color: var(--accent-wire);
+      color: var(--text-muted);
     }
 
     /* Explanation Cards */
@@ -257,6 +260,8 @@
       margin-bottom: 10px;
       border-bottom: 1px dashed var(--border-color);
       padding-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .q-badge {
       font-weight: 700;
@@ -294,6 +299,7 @@
       display: flex;
       gap: 8px;
       margin-bottom: 4px;
+      flex-wrap: wrap;
     }
     .ans-label {
       min-width: 130px;
@@ -318,7 +324,7 @@
       gap: 6px;
     }
 
-    /* LOCKED LEAD GATE CARD (Từ Câu 3 trở đi) */
+    /* LOCKED LEAD GATE CARD (Từ Câu 3 trở đi: DÙNG CHỮ GIẢ VÔ NGHĨA, KHÔNG HIỆN ĐÚNG/SAI) */
     .solution-card.locked-state {
       position: relative;
       border: 2px dashed var(--border-dark);
@@ -326,21 +332,21 @@
       overflow: hidden;
     }
     .blurred-content {
-      filter: blur(4px);
+      filter: blur(5px);
       user-select: none;
       pointer-events: none;
-      opacity: 0.6;
+      opacity: 0.5;
     }
     .lock-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.92);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 20px;
+      padding: 24px 16px;
       z-index: 10;
     }
     .lock-icon {
@@ -355,21 +361,33 @@
     .lock-desc {
       font-size: 13px;
       color: var(--text-muted);
-      max-width: 480px;
-      margin-bottom: 14px;
+      max-width: 520px;
+      margin-bottom: 16px;
     }
     .btn-unlock-gate {
       background: var(--accent-wire);
       color: #fff;
       font-weight: 700;
-      padding: 10px 22px;
+      padding: 12px 24px;
       border-radius: 6px;
       border: none;
       font-size: 14px;
       cursor: pointer;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
     .btn-unlock-gate:hover {
       background: #000;
+    }
+
+    /* Security Architecture Badge Notice */
+    .security-notice-pill {
+      font-size: 11px;
+      color: #6e7781;
+      margin-top: 10px;
+      display: inline-block;
     }
 
     /* MODAL LEAD GATE MULTI-STEP */
@@ -396,29 +414,43 @@
       padding: 24px;
       box-shadow: 0 12px 30px rgba(0,0,0,0.25);
       position: relative;
+      margin: auto;
     }
+    
+    /* Close button positioned safely away from step bar */
     .btn-close-modal {
       position: absolute;
-      top: 14px;
-      right: 14px;
-      background: none;
-      border: none;
-      font-size: 20px;
+      top: 12px;
+      right: 12px;
+      background: #f0f0f0;
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      font-size: 16px;
       cursor: pointer;
-      color: var(--text-muted);
+      color: var(--text-main);
+      width: 36px;
+      height: 36px;
       min-height: 36px;
-      min-width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+    }
+    .btn-close-modal:hover {
+      background: #e0e0e0;
     }
 
     /* Modal Step Indicators */
     .step-bar {
       display: flex;
       justify-content: space-between;
+      margin-top: 10px;
       margin-bottom: 20px;
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 12px;
       font-size: 12px;
       color: var(--text-muted);
+      padding-right: 36px; /* Tránh đè nút X */
     }
     .step-item.active {
       font-weight: 700;
@@ -428,7 +460,7 @@
       margin-bottom: -13px;
     }
 
-    /* Form Styles */
+    /* Form Styles (min-width: 0 on all grid items) */
     .gate-form {
       display: flex;
       flex-direction: column;
@@ -438,6 +470,7 @@
       display: flex;
       flex-direction: column;
       gap: 4px;
+      min-width: 0;
     }
     .form-label {
       font-size: 13px;
@@ -446,16 +479,33 @@
     .form-label .req {
       color: var(--danger-text);
     }
+    .form-label .opt {
+      color: var(--text-muted);
+      font-weight: normal;
+      font-size: 11px;
+    }
     .form-input, .form-select {
       border: 1px solid var(--border-color);
       border-radius: 6px;
       padding: 10px 12px;
       font-size: 14px;
       background: #fafbfc;
+      min-width: 0;
+      width: 100%;
     }
     .form-input:focus, .form-select:focus {
       background: #fff;
       border-color: var(--accent-active);
+    }
+
+    /* Responsive 2-column form row with min-width: 0 */
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .grid-2col > * {
+      min-width: 0;
     }
 
     /* Radio grid for goals */
@@ -475,9 +525,13 @@
       padding: 8px 10px;
       cursor: pointer;
       min-height: 44px;
+      min-width: 0;
     }
     .pill-radio-label:hover {
       background: #f0f6fc;
+    }
+    .pill-radio-label input[type="radio"] {
+      flex-shrink: 0;
     }
 
     /* Under 18 Dynamic Parental Branch */
@@ -511,7 +565,7 @@
       border: 1px solid var(--border-color);
       border-radius: 8px;
       padding: 14px;
-      margin-top: 8px;
+      margin-top: 6px;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -579,6 +633,8 @@
       font-weight: 600;
       cursor: pointer;
       text-decoration: underline;
+      min-height: auto;
+      padding: 0;
     }
 
     /* Modal Actions */
@@ -595,6 +651,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      min-height: 48px;
     }
     .btn-step-submit:disabled {
       background: var(--border-color);
@@ -605,31 +662,48 @@
     /* Success State View */
     .success-view {
       text-align: center;
-      padding: 20px 0;
+      padding: 10px 0;
     }
     .success-icon {
-      font-size: 48px;
+      font-size: 44px;
       color: var(--success-text);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .success-title {
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 700;
       margin-bottom: 8px;
     }
     .success-desc {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--text-muted);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       line-height: 1.6;
     }
 
-    /* Responsive Breakdown (375px) */
+    /* Parent Confirmation Preview Sub-screen */
+    .parent-preview-box {
+      background: #fafbfc;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .zalo-msg-bubble {
+      background: #dcf8c6;
+      border: 1px solid #c2e5a8;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: #111;
+      margin-top: 8px;
+    }
+
+    /* Responsive Breakdown (Mobile First 375px & 480px) */
     @media (max-width: 768px) {
       .score-summary-grid {
-        grid-template-columns: 1fr;
-      }
-      .radio-pill-group {
         grid-template-columns: 1fr;
       }
       .banner-cta {
@@ -639,8 +713,32 @@
       .btn-cta-primary {
         width: 100%;
       }
+    }
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 10px;
+      }
+      .result-card {
+        padding: 16px;
+      }
       .gate-dialog {
         padding: 16px;
+      }
+      .grid-2col {
+        grid-template-columns: 1fr !important;
+      }
+      .radio-pill-group {
+        grid-template-columns: 1fr !important;
+      }
+      .step-bar {
+        font-size: 11px;
+        padding-right: 28px;
+      }
+      .result-title {
+        font-size: 18px;
+      }
+      .score-number {
+        font-size: 26px;
       }
     }
   </style>
@@ -650,12 +748,13 @@
   <!-- Wireframe Meta Bar -->
   <div class="wireframe-banner">
     <div>
-      <strong>[WIREFRAME] KẾT QUẢ THI & LEAD GATE ĐA TẦNG</strong> — Câu 1–2: Mở | Câu 3+: Khóa | 3 Checkbox không tích sẵn
+      <strong>[WIREFRAME] KẾT QUẢ THI &amp; LEAD GATE ĐA TẦNG</strong> — Dữ liệu chuẩn spec 08 | Câu 1–2 mở | Câu 3+ chữ giả vô nghĩa
     </div>
     <div class="demo-controls">
       <span>Mô phỏng:</span>
       <button class="demo-btn" onclick="openLeadGate('manual')">Mở Modal Lead Gate</button>
-      <button class="demo-btn" onclick="simulateSuccessUnlock()">Simulate: Đã mở khóa toàn bộ</button>
+      <button class="demo-btn" onclick="openParentConfirmationView()">Xem Nhánh Xác Nhận Phụ Huynh</button>
+      <button class="demo-btn" onclick="simulateSuccessUnlock()">Simulate: Đã mở khóa</button>
       <a href="exam-room.html" style="margin-left: 8px;">← Về Phòng thi</a>
       <a href="catalog.html" style="margin-left: 8px;">Về Danh mục →</a>
     </div>
@@ -670,10 +769,10 @@
           <span class="exam-tag">TELC DEUTSCH B1</span>
           <h1 class="result-title">Kết Quả Bài Thi Thử Tổng Hợp Số 02</h1>
           <p style="color: var(--text-muted); font-size: 13px; margin-top: 4px;">
-            Thời gian hoàn thành: 38 phút 20 giây | Ngày làm bài: 28/10/2026
+            Thời gian hoàn thành: 38 phút 20 giây / 65 phút | Ngày làm bài: 28/10/2026
           </p>
         </div>
-        <button class="filter-btn" onclick="window.print()">🖨 In kết quả</button>
+        <button class="btn-unlock-gate" style="padding: 6px 14px; font-size: 12px; min-height: 40px;" onclick="window.print()">🖨 In kết quả</button>
       </div>
 
       <!-- Score Breakdown Grid (Miễn phí) -->
@@ -681,32 +780,37 @@
         <div class="score-box main-score">
           <div class="score-label">ĐIỂM TỔNG QUAN</div>
           <div class="score-number">21 / 30</div>
-          <div class="score-desc text-success">ĐẠT (BESTANDEN - 70%)</div>
-          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Trình độ ước lượng: Khá vững B1</div>
+          <div class="score-desc text-success">ĐẠT NGƯỠNG THAM KHẢO (70%)</div>
+          <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Ước lượng trình độ: Gần mức B1</div>
         </div>
 
         <div class="score-box">
-          <div class="score-label">TEIL 1: LESEN (ĐỌC HIỂU)</div>
+          <div class="score-label">PHẦN 1: LESEN (ĐỌC HIỂU)</div>
           <div class="score-number">12 / 15</div>
           <div class="score-desc text-success">Tỷ lệ đúng: 80%</div>
-          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Khả năng đọc hiểu bài khóa tốt</div>
+          <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Khả năng đọc hiểu bài khóa tốt</div>
         </div>
 
         <div class="score-box">
-          <div class="score-label">TEIL 2: HÖREN (NGHE HIỂU)</div>
+          <div class="score-label">PHẦN 2: HÖREN (NGHE HIỂU)</div>
           <div class="score-number">9 / 15</div>
           <div class="score-desc text-warning">Tỷ lệ đúng: 60%</div>
-          <div style="font-size: 11px; color: var(--danger-text); margin-top: 4px;">Cần luyện thêm ngữ điệu bản xứ</div>
+          <div style="font-size: 12px; color: var(--danger-text); margin-top: 4px;">Cần luyện thêm ngữ điệu bản xứ</div>
         </div>
+      </div>
+
+      <!-- Ghi chú tham khảo chuẩn theo quy định C7c -->
+      <div class="score-disclaimer">
+        * Điểm luyện tập chỉ mang tính tham khảo, không phải kết quả thi chính thức. Ngưỡng tham khảo được cấu hình theo từng kỳ thi (TELC B1 đạt từ 60%).
       </div>
     </section>
 
-    <!-- PRIMARY CTA BANNER: Đăng ký Test 1-1 miễn phí -->
+    <!-- PRIMARY CTA BANNER: Đăng ký Test 1-1 miễn phí (Single Consistent CTA) -->
     <section class="banner-cta">
       <div class="banner-cta-content">
-        <h3>🎯 Đăng ký Test Đầu Vào 1-1 Miễn Phí cùng Giáo Viên SHD</h3>
+        <h3>🎯 Đăng ký Test Đầu Vào 1-1 Miễn Phí cùng Giáo Viên Chuyên Môn SHD</h3>
         <p>
-          Bạn muốn biết mình yếu ở kỹ năng nào trong bài thi Goethe/TELC? Đặt lịch kiểm tra phát âm, phản xạ nói và nhận lộ trình học cá nhân hóa trực tiếp từ chuyên gia bản xứ của SHD Education.
+          Đặt lịch kiểm tra phát âm, phản xạ nói và nhận lộ trình cá nhân hóa trực tiếp từ chuyên gia của SHD Education.
         </p>
       </div>
       <button class="btn-cta-primary" onclick="openLeadGate('banner_cta')">
@@ -719,18 +823,16 @@
       <div class="section-title">
         <span>Lời giải chi tiết từng câu hỏi</span>
         <div class="filter-tags">
-          <button class="filter-btn active">Tất cả (30)</button>
-          <button class="filter-btn">Câu sai (9)</button>
-          <button class="filter-btn">Câu đúng (21)</button>
+          <span>(Nhãn đúng/sai chỉ áp dụng cho 2 câu công khai trước khi mở khóa)</span>
         </div>
       </div>
 
       <div class="solution-list">
         
-        <!-- CÂU 1: CÔNG KHAI (FREE) -->
+        <!-- CÂU 1: CÔNG KHAI (FREE) - Spec: User chọn B, ĐÚNG -->
         <article class="solution-card">
           <div class="solution-card-header">
-            <span class="q-badge">Aufgabe 1 (Lesen)</span>
+            <span class="q-badge">Aufgabe 1 (Lesen Teil 1)</span>
             <span class="user-status-pill correct">✓ Bạn đã trả lời đúng (+1 điểm)</span>
           </div>
           <div class="q-question-text">Warum ist das duale Ausbildungssystem für ausländische Bewerber attraktiv?</div>
@@ -749,15 +851,15 @@
           <div class="explanation-box">
             <div class="explanation-title">💡 Giải thích chi tiết (Công khai miễn phí):</div>
             <p>
-              Trong đoạn văn bản số 1 có câu: <em>"Viele junge Menschen aus dem Ausland interessieren sich für die Kombination aus Theorie an der Berufsschule und praktischer Arbeit im Betrieb. Dieses Modell bietet finanzielle Unabhängigkeit..."</em>. Như vậy, điểm hấp dẫn chính là sự kết hợp giữa lý thuyết và thực hành được trả lương. Phương án B phản ánh chính xác nhất ý này.
+              Trong đoạn văn bản số 1 có câu: <em>"Viele junge Menschen aus dem Ausland interessieren sich für die Kombination aus Theorie an der Berufsschule und praktischer Arbeit im Betrieb. Dieses Modell bietet finanzielle Unabhängigkeit..."</em>. Điểm hấp dẫn chính là sự kết hợp giữa lý thuyết và thực hành được trả lương. Phương án B là đáp án chính xác.
             </p>
           </div>
         </article>
 
-        <!-- CÂU 2: CÔNG KHAI (FREE) -->
+        <!-- CÂU 2: CÔNG KHAI (FREE) - Spec: User chọn A, SAI -->
         <article class="solution-card">
           <div class="solution-card-header">
-            <span class="q-badge">Aufgabe 2 (Lesen)</span>
+            <span class="q-badge">Aufgabe 2 (Lesen Teil 1)</span>
             <span class="user-status-pill wrong">✗ Bạn đã trả lời sai (0/1 điểm)</span>
           </div>
           <div class="q-question-text">In welchen Bereichen wird in Deutschland gegenwärtig besonders viel Personal gesucht?</div>
@@ -776,50 +878,44 @@
           <div class="explanation-box">
             <div class="explanation-title">💡 Giải thích chi tiết (Công khai miễn phí):</div>
             <p>
-              Đoạn văn số 2 khẳng định trực tiếp: <em>"Besonders in den Bereichen Krankenpflege, Mechatronik und Gastronomie herrscht derzeit ein hoher Fachkräftebedarf."</em>. Do đó phương án đúng là B. Bạn chọn A là không chính xác vì ngành ngân hàng và nông nghiệp không được nhắc tới.
+              Đoạn văn số 2 khẳng định trực tiếp: <em>"Besonders in den Bereichen Krankenpflege, Mechatronik und Gastronomie herrscht derzeit ein hoher Fachkräftebedarf."</em>. Ba ngành nghề đang thiếu nhân lực là điều dưỡng, cơ điện tử và nhà hàng. Do đó phương án đúng là B.
             </p>
           </div>
         </article>
 
-        <!-- CÂU 3: BỊ KHÓA SAU LEAD GATE (LOCKED TRIGGER) -->
+        <!-- CÂU 3 TRỞ ĐI: BỊ KHÓA SAU LEAD GATE (DÙNG CHỮ GIẢ VÔ NGHĨA - KHÔNG HIỆN ĐÚNG/SAI) -->
         <article class="solution-card locked-state" id="locked-card-3">
           
-          <!-- Nội dung mờ phía sau -->
+          <!-- Nội dung mờ phía sau dùng CHỮ GIẢ VÔ NGHĨA để bảo mật -->
           <div class="blurred-content">
             <div class="solution-card-header">
-              <span class="q-badge">Aufgabe 3 (Lesen)</span>
-              <span class="user-status-pill wrong">✗ Bạn đã trả lời sai</span>
+              <span class="q-badge">Aufgabe 3 (Nội dung bị khóa)</span>
             </div>
-            <div class="q-question-text">Welches Sprachniveau wird für den theoretischen Unterricht an der Berufsschule empfohlen?</div>
+            <div class="q-question-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</div>
             <div class="q-answer-review">
-              <div>Đáp án của bạn: C. Ausschließlich muttersprachliche Kompetenzen...</div>
-              <div>Đáp án chính xác: B. Solide Kenntnisse auf dem Niveau B1 oder B2.</div>
+              <div>Lựa chọn A: Lorem ipsum dolor sit amet consetetur sadipscing elitr...</div>
+              <div>Lựa chọn B: Sed diam nonumy eirmod tempor invidunt ut labore et dolore...</div>
             </div>
             <div class="explanation-box">
-              <p>Lời giải chi tiết câu 3: Đây là nội dung mẫu phân tích ngữ pháp và từ vựng then chốt giúp bạn không bao giờ chọn nhầm khi đi thi thật...</p>
+              <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.</p>
             </div>
           </div>
 
-          <!-- Lớp phủ khóa Lead Gate -->
+          <!-- Lớp phủ khóa Lead Gate (Consistent Single Call to Action) -->
           <div class="lock-overlay" id="overlay-card-3">
             <div class="lock-icon">🔒</div>
-            <h3 class="lock-title">Mở khóa Lời giải chi tiết từ Câu 3 đến Câu 30</h3>
+            <h3 class="lock-title">Mở khóa toàn bộ lời giải chi tiết và phân tích lỗi sai</h3>
             <p class="lock-desc">
-              Nhận trọn bộ đáp án, phân tích bẫy đề thi tiếng Đức và tải Ebook tổng hợp lỗi sai cá nhân của bạn hoàn toàn miễn phí.
+              Để lại thông tin để xem trọn bộ đáp án kèm phân tích bẫy đề thi và lưu lịch sử rèn luyện hoàn toàn miễn phí.
             </p>
-            <button class="btn-unlock-gate" onclick="openLeadGate('question_3_gate')">
+            <button class="btn-unlock-gate" onclick="openLeadGate('single_cta')">
               Mở khóa toàn bộ lời giải ngay (Miễn phí)
             </button>
+            <span class="security-notice-pill">
+              🔒 <em>[Ghi chú kỹ thuật]: Bản thật không bao giờ gửi dữ liệu lời giải bị khóa xuống trình duyệt client.</em>
+            </span>
           </div>
         </article>
-
-        <!-- Placeholder mô phỏng các câu tiếp theo bị khóa -->
-        <div style="text-align: center; padding: 20px; background: #fff; border: 1px dashed var(--border-color); border-radius: 8px;">
-          <p style="color: var(--text-muted); font-size: 13px;">... và 27 câu hỏi còn lại (Câu 4 đến 30) đang bị khóa ...</p>
-          <button class="btn-unlock-gate" style="margin-top: 10px;" onclick="openLeadGate('bottom_button')">
-            Mở khóa tất cả 30 câu giải thích
-          </button>
-        </div>
 
       </div>
     </section>
@@ -831,76 +927,80 @@
     <div class="gate-dialog">
       <button class="btn-close-modal" onclick="closeLeadGate()" aria-label="Đóng cửa sổ">✕</button>
 
-      <!-- Step Bar -->
+      <!-- Step Bar (Rút gọn nhãn, không bị nút X đè) -->
       <div class="step-bar">
-        <span class="step-item active" id="pill-step-1">1. Thông tin người học</span>
-        <span class="step-item" id="pill-step-2">2. Xác thực OTP Zalo</span>
-        <span class="step-item" id="pill-step-3">3. Hoàn tất & Mở khóa</span>
+        <span class="step-item active" id="pill-step-1">1. Thông tin</span>
+        <span class="step-item" id="pill-step-2">2. OTP Zalo</span>
+        <span class="step-item" id="pill-step-3">3. Mở khóa</span>
       </div>
 
-      <!-- BƯỚC 1: ĐIỀN THÔNG TIN & ĐỒNG Ý PHÁP LÝ -->
+      <!-- BƯỚC 1: ĐIỀN THÔNG TIN & ĐỒNG Ý PHÁP LÝ (KHÔNG CHỌN SẴN, EMAIL TÙY CHỌN) -->
       <div id="step-1-content">
-        <h2 id="modal-gate-title" style="font-size: 18px; margin-bottom: 4px;">Mở khóa Lời giải & Lưu lịch sử thi</h2>
+        <h2 id="modal-gate-title" style="font-size: 18px; margin-bottom: 4px;">Mở khóa Lời giải &amp; Lưu lịch sử thi</h2>
         <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
-          Vui lòng điền thông tin để hệ thống gửi bảng phân tích lỗi sai và mở khóa trọn bộ 30 câu hỏi.
+          Vui lòng điền thông tin để nhận mã xác thực OTP và lưu kết quả bài làm.
         </p>
 
-        <form class="gate-form" onsubmit="event.preventDefault(); goToStep2();">
+        <form class="gate-form" id="gate-form-el" onsubmit="event.preventDefault(); goToStep2();">
+          
           <div class="form-group">
             <label class="form-label">Họ và tên <span class="req">*</span></label>
-            <input type="text" class="form-input" id="lead-name" placeholder="Ví dụ: Nguyễn Văn A" required>
+            <input type="text" class="form-input" id="lead-name" placeholder="Ví dụ: Nguyễn Văn A" required oninput="checkFormValidity()">
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <!-- Grid 2 cột tự chuyển 1 cột dưới 480px -->
+          <div class="grid-2col">
             <div class="form-group">
               <label class="form-label">Số điện thoại / Zalo <span class="req">*</span></label>
-              <input type="tel" class="form-input" id="lead-phone" placeholder="0912 345 678" required>
+              <input type="tel" class="form-input" id="lead-phone" placeholder="0912 345 678" required oninput="checkFormValidity()">
             </div>
             <div class="form-group">
-              <label class="form-label">Email nhận tài liệu <span class="req">*</span></label>
-              <input type="email" class="form-input" id="lead-email" placeholder="email@gmail.com" required>
+              <label class="form-label">Email <span class="opt">(Tùy chọn - nhận ebook nếu có)</span></label>
+              <input type="email" class="form-input" id="lead-email" placeholder="email@gmail.com">
             </div>
           </div>
 
-          <!-- Mục tiêu học -->
+          <!-- Mục tiêu học: KHÔNG CHỌN SẴN -->
           <div class="form-group">
             <label class="form-label">Mục tiêu học tiếng Đức của bạn <span class="req">*</span></label>
             <div class="radio-pill-group">
               <label class="pill-radio-label">
-                <input type="radio" name="learning_goal" value="cert" checked>
-                <span>Thi lấy chứng chỉ (Goethe/TELC)</span>
+                <input type="radio" name="learning_goal" value="cert" onchange="checkFormValidity()">
+                <span>Thi chứng chỉ (Goethe/TELC)</span>
               </label>
               <label class="pill-radio-label">
-                <input type="radio" name="learning_goal" value="ausbildung">
+                <input type="radio" name="learning_goal" value="ausbildung" onchange="checkFormValidity()">
                 <span>Du học nghề CHLB Đức</span>
               </label>
               <label class="pill-radio-label">
-                <input type="radio" name="learning_goal" value="visa18b">
+                <input type="radio" name="learning_goal" value="visa18b" onchange="checkFormValidity()">
                 <span>Đi làm / Định cư diện 18b</span>
               </label>
               <label class="pill-radio-label">
-                <input type="radio" name="learning_goal" value="comms">
+                <input type="radio" name="learning_goal" value="comms" onchange="checkFormValidity()">
                 <span>Giao tiếp / Du lịch / Khác</span>
               </label>
             </div>
           </div>
 
-          <!-- Thời gian dự kiến thi -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <!-- Thời gian thi & Đối tượng: KHÔNG CHỌN SẴN, DÙNG PLACEHOLDER CHỌN... -->
+          <div class="grid-2col">
             <div class="form-group">
               <label class="form-label">Thời gian dự kiến thi <span class="req">*</span></label>
-              <select class="form-select" id="lead-timeframe">
-                <option value="1m">Trong 1 tháng tới</option>
-                <option value="1_3m" selected>1 – 3 tháng tới</option>
+              <select class="form-select" id="lead-timeframe" required onchange="checkFormValidity()">
+                <option value="" disabled selected>Chọn thời gian dự kiến thi...</option>
+                <option value="1m">Trong 1 tháng tới (Gấp)</option>
+                <option value="1_3m">1 – 3 tháng tới</option>
                 <option value="3_6m">3 – 6 tháng tới</option>
                 <option value="unknown">Chưa xác định</option>
               </select>
             </div>
             <div class="form-group">
               <label class="form-label">Nhóm đối tượng / Độ tuổi <span class="req">*</span></label>
-              <select class="form-select" id="lead-persona-type" onchange="handleAgeSelection(this.value)">
+              <select class="form-select" id="lead-persona-type" required onchange="handleAgeSelection(this.value); checkFormValidity()">
+                <option value="" disabled selected>Chọn đối tượng / độ tuổi...</option>
                 <option value="student_under18">Học sinh (&lt; 18 tuổi)</option>
-                <option value="university" selected>Sinh viên (18–22 tuổi)</option>
+                <option value="university">Sinh viên (18–22 tuổi)</option>
                 <option value="worker">Người đi làm (23–35 tuổi)</option>
                 <option value="parent">Phụ huynh học sinh</option>
               </select>
@@ -909,25 +1009,25 @@
 
           <!-- NHÁNH PHỤ HUYNH KHI CHỌN DƯỚI 18 TUỔI -->
           <div id="parent-branch" class="parent-branch-box">
-            <div class="parent-title">👨‍👩‍👦 Thông tin Cha/Mẹ hoặc Người giám hộ (Bắt buộc cho học sinh dưới 18 tuổi)</div>
+            <div class="parent-title">👨‍👩‍👦 Bắt buộc cho học sinh dưới 18 tuổi (Theo Nghị định 13/2023/NĐ-CP):</div>
             <div class="form-group" style="margin-top: 6px;">
               <label class="form-label">Số điện thoại / Zalo của Cha/Mẹ <span class="req">*</span></label>
-              <input type="tel" class="form-input" id="parent-phone" placeholder="Nhập số Zalo của Bố hoặc Mẹ">
+              <input type="tel" class="form-input" id="parent-phone" placeholder="Nhập số Zalo của Bố hoặc Mẹ" oninput="checkFormValidity()">
             </div>
             <p class="legal-badge-notice">
-              [PLACEHOLDER – chờ pháp chế duyệt] Theo quy định pháp luật về bảo vệ dữ liệu trẻ em (Nghị định 13/2023/NĐ-CP), SHD Education sẽ gửi tin nhắn thông báo kết quả qua Zalo tới Cha/Mẹ để xác nhận đồng ý trước khi đội ngũ tư vấn liên hệ.
+              [PLACEHOLDER – chờ pháp chế duyệt] Hệ thống sẽ gửi tin nhắn thông báo kết quả thi qua Zalo tới Cha/Mẹ để xác nhận đồng ý trước khi đội ngũ tư vấn được phép liên hệ.
             </p>
           </div>
 
           <!-- KHỐI ĐỒNG Ý PHÁP LÝ (3 Ô TÁCH BIỆT - KHÔNG TÍCH SẴN) -->
           <div class="consents-container">
             <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">
-              Chính sách bảo mật & Điều khoản sử dụng dữ liệu
+              Chính sách bảo mật &amp; Điều khoản sử dụng dữ liệu
             </div>
 
             <!-- Ô 1: Bắt buộc -->
             <label class="consent-item">
-              <input type="checkbox" id="consent-mandatory" onchange="validateConsent()">
+              <input type="checkbox" id="consent-mandatory" onchange="checkFormValidity()">
               <div>
                 <span class="consent-badge-mandatory">[Bắt buộc]</span>
                 <span>
@@ -966,7 +1066,7 @@
             </div>
           </div>
 
-          <!-- Nút hành động Bước 1 -->
+          <!-- Nút hành động Bước 1 (Chỉ bật khi đủ điều kiện) -->
           <button type="submit" id="btn-request-otp" class="btn-step-submit" disabled>
             Nhận mã xác thực OTP qua Zalo / SMS →
           </button>
@@ -981,7 +1081,7 @@
         </p>
 
         <div style="background: var(--bg-muted); padding: 10px; border-radius: 6px; font-size: 13px; text-align: center; margin-bottom: 16px;">
-          Số nhận mã: <strong id="display-target-phone">0912 *** 678</strong>
+          Số nhận mã: <strong id="display-target-phone">0912 345 678</strong>
         </div>
 
         <div class="otp-inputs">
@@ -1002,12 +1102,12 @@
           <button class="btn-resend-otp" onclick="resendOTP()">Gửi lại mã qua SMS</button>
         </div>
 
-        <div style="display: flex; gap: 10px;">
+        <div class="grid-2col">
           <button type="button" class="btn-step-submit" style="background: #fff; color: var(--text-main); border: 1px solid var(--border-color);" onclick="goToStep1()">
             ← Quay lại
           </button>
           <button type="button" class="btn-step-submit" onclick="verifyOTP()">
-            Xác nhận & Mở khóa ngay
+            Xác nhận &amp; Mở khóa
           </button>
         </div>
       </div>
@@ -1018,11 +1118,11 @@
           <div class="success-icon">✓</div>
           <h2 class="success-title">Mở Khóa Toàn Bộ Thành Công!</h2>
           <p class="success-desc">
-            Toàn bộ 30 câu giải thích chi tiết đã được mở khóa. Bản phân tích năng lực chi tiết kèm Ebook ngữ pháp độc quyền đã được gửi tới email của bạn.
+            Toàn bộ 30 câu giải thích chi tiết đã được mở khóa. Bản phân tích năng lực chi tiết đã được lưu vào hồ sơ học tập của bạn.
           </p>
 
-          <div id="parent-alert-success" style="display: none; background: #fff8c5; border: 1px solid #d4a72c; padding: 10px; border-radius: 6px; font-size: 12px; color: #7d4e00; margin-bottom: 18px;">
-            📩 Tin nhắn Zalo thông báo kết quả thi của bạn cũng đã được gửi tới số Phụ huynh để xác nhận hỗ trợ học tập.
+          <div id="parent-alert-success" style="display: none; background: #fff8c5; border: 1px solid #d4a72c; padding: 12px; border-radius: 6px; font-size: 12px; color: #7d4e00; margin-bottom: 18px; text-align: left;">
+            📩 <strong>Thông báo Phụ huynh:</strong> Tin nhắn Zalo ZNS thông báo kết quả thi của bạn đã được gửi tới số Cha/Mẹ để xác nhận hỗ trợ tư vấn lộ trình.
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 10px;">
@@ -1034,6 +1134,40 @@
             </button>
           </div>
         </div>
+      </div>
+
+      <!-- VIEW PHỤC VỤ KIỂM THỬ: MÀN HÌNH XÁC NHẬN CỦA PHỤ HUYNH -->
+      <div id="parent-preview-content" style="display: none;">
+        <h2 style="font-size: 18px; margin-bottom: 4px;">Trạng Thái: Phụ Huynh Xác Nhận (Nhánh &lt;18 Tuổi)</h2>
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">
+          Giao diện mô phỏng tin nhắn Zalo ZNS gửi đến điện thoại Cha/Mẹ và màn hình xác nhận cho phép tư vấn.
+        </p>
+
+        <div class="parent-preview-box">
+          <div style="font-weight: 700; font-size: 13px; color: #0969da;">Tin nhắn Zalo ZNS gửi từ SHD Education:</div>
+          <div class="zalo-msg-bubble">
+            <strong>Kính gửi Quý phụ huynh,</strong><br>
+            Con của bạn (Học viên: <strong>Nguyễn Văn A</strong>) vừa hoàn thành bài thi thử tiếng Đức TELC B1 với kết quả <strong>21/30 điểm (Đạt ngưỡng tham khảo)</strong>.<br>
+            Nhằm hỗ trợ định hướng lộ trình học và du học nghề an toàn, xin vui lòng bấm nút bên dưới để xem chi tiết và xác nhận đồng ý nhận tư vấn.
+          </div>
+        </div>
+
+        <div style="background: var(--bg-surface); border: 2px dashed #0969da; border-radius: 8px; padding: 16px; margin-bottom: 16px; text-align: center;">
+          <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Trang đích xác nhận dành cho Phụ huynh:</div>
+          <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">
+            Học viên: <strong>Nguyễn Văn A</strong> | Điểm: <strong>21/30 (Lesen: 12/15, Hören: 9/15)</strong>
+          </p>
+          <button class="btn-step-submit" style="background: #1a7f37; margin-bottom: 8px;" onclick="confirmParentApproval()">
+            ✓ Phụ Huynh Đồng Ý Để SHD Liên Hệ Tư Vấn
+          </button>
+          <button class="btn-step-submit" style="background: #fff; color: #666; border: 1px solid #ccc;" onclick="goToStep1()">
+            Từ chối tiếp thị / Chỉ lưu điểm số
+          </button>
+        </div>
+
+        <button class="btn-step-submit" style="background: #f0f0f0; color: #333;" onclick="goToStep1()">
+          ← Quay lại biểu mẫu chính
+        </button>
       </div>
 
     </div>
@@ -1056,9 +1190,11 @@
       document.getElementById('step-1-content').style.display = 'block';
       document.getElementById('step-2-content').style.display = 'none';
       document.getElementById('step-3-content').style.display = 'none';
+      document.getElementById('parent-preview-content').style.display = 'none';
       document.getElementById('pill-step-1').className = 'step-item active';
       document.getElementById('pill-step-2').className = 'step-item';
       document.getElementById('pill-step-3').className = 'step-item';
+      checkFormValidity();
     }
 
     function goToStep2() {
@@ -1068,6 +1204,7 @@
       document.getElementById('step-1-content').style.display = 'none';
       document.getElementById('step-2-content').style.display = 'block';
       document.getElementById('step-3-content').style.display = 'none';
+      document.getElementById('parent-preview-content').style.display = 'none';
       document.getElementById('pill-step-1').className = 'step-item';
       document.getElementById('pill-step-2').className = 'step-item active';
       document.getElementById('pill-step-3').className = 'step-item';
@@ -1077,6 +1214,7 @@
       document.getElementById('step-1-content').style.display = 'none';
       document.getElementById('step-2-content').style.display = 'none';
       document.getElementById('step-3-content').style.display = 'block';
+      document.getElementById('parent-preview-content').style.display = 'none';
       document.getElementById('pill-step-1').className = 'step-item';
       document.getElementById('pill-step-2').className = 'step-item';
       document.getElementById('pill-step-3').className = 'step-item active';
@@ -1084,7 +1222,22 @@
       const persona = document.getElementById('lead-persona-type').value;
       if (persona === 'student_under18') {
         document.getElementById('parent-alert-success').style.display = 'block';
+      } else {
+        document.getElementById('parent-alert-success').style.display = 'none';
       }
+    }
+
+    function openParentConfirmationView() {
+      document.getElementById('lead-modal').classList.add('open');
+      document.getElementById('step-1-content').style.display = 'none';
+      document.getElementById('step-2-content').style.display = 'none';
+      document.getElementById('step-3-content').style.display = 'none';
+      document.getElementById('parent-preview-content').style.display = 'block';
+    }
+
+    function confirmParentApproval() {
+      alert('Phụ huynh đã xác nhận thành công! Trạng thái Lead được thăng hạng thành "Parent Approved" trên hệ thống CRM.');
+      goToStep3();
     }
 
     // Toggle Parental Fields when under 18 is selected
@@ -1100,16 +1253,31 @@
       }
     }
 
-    // Validate mandatory consent to enable button
-    function validateConsent() {
-      const chk = document.getElementById('consent-mandatory');
+    // Check validity of mandatory fields to enable OTP button
+    function checkFormValidity() {
+      const name = (document.getElementById('lead-name').value || '').trim();
+      const phone = (document.getElementById('lead-phone').value || '').trim();
+      const timeframe = document.getElementById('lead-timeframe').value;
+      const persona = document.getElementById('lead-persona-type').value;
+      const mandatoryConsent = document.getElementById('consent-mandatory').checked;
+      
+      const goalRadios = document.querySelectorAll('input[name="learning_goal"]:checked');
+      const hasGoal = goalRadios.length > 0;
+
+      let parentValid = true;
+      if (persona === 'student_under18') {
+        const parentPhone = (document.getElementById('parent-phone').value || '').trim();
+        parentValid = parentPhone.length > 0;
+      }
+
+      const isValid = (name.length > 0) && (phone.length > 0) && hasGoal && (timeframe !== '') && (persona !== '') && mandatoryConsent && parentValid;
+
       const btn = document.getElementById('btn-request-otp');
-      btn.disabled = !chk.checked;
+      btn.disabled = !isValid;
     }
 
     // OTP validation simulation
     function verifyOTP() {
-      // In wireframe demo: accept 123456 as valid
       goToStep3();
     }
 
