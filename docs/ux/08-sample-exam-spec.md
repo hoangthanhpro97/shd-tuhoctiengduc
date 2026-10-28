@@ -87,3 +87,4 @@
    - Từ Câu 3 đến 30: **TUYỆT ĐỐI KHÔNG** hiển thị nhãn đúng/sai hay đáp án (để tránh người học đoán suy luận khi thi lại). Phần chữ phía sau lớp kính mờ chỉ dùng văn bản giả vô nghĩa (dummy text). Trình duyệt của client không nhận payload lời giải thật trước khi vượt qua Lead Gate.
 2. **Sau khi mở khóa (Đã xác thực OTP):**
    - Toàn bộ 30 câu hỏi hiển thị đầy đủ đáp án người dùng chọn, đáp án chính xác và lời giải thích chi tiết.
+

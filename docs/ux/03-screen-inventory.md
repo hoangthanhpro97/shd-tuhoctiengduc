@@ -42,3 +42,4 @@ Mọi tương tác quan trọng trên toàn bộ hành trình người dùng đ�
 | `otp_verification_failed` | SCR-08 | Nhập sai OTP hoặc mã hết hạn | `error_reason` (wrong_code/expired), `attempt_count` | Phát hiện tình trạng kẹt phễu tại bước xác thực số điện thoại. |
 | `lead_converted_success` | SCR-09 | Nhập đúng OTP và mở khóa kết quả thành công | `lead_id`, `exam_id`, `total_score`, `marketing_eligible` | Chỉ số quan trọng nhất: Chuyển đổi thành công một Qualified Lead. |
 | `test_1on1_cta_clicked` | SCR-05, SCR-09 | Bấm nút "Đăng ký test đầu vào 1-1 miễn phí" | `exam_id`, `user_status` (anonymous/lead_captured) | Đếm số lượng học viên có ý định học ngay với giáo viên. |
+
