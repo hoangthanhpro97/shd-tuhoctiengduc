@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  validate:
+    name: Lint, Typecheck, Security & Tests
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres_test_password
+          POSTGRES_DB: postgres
+          SHD_MIGRATOR_PASSWORD: migrator_test_password
+          SHD_APP_PASSWORD: app_test_password
+          SHD_GRADER_PASSWORD: grader_test_password
+          SHD_WORKER_PASSWORD: worker_test_password
+          SHD_READONLY_PASSWORD: readonly_test_password
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4.0.0
+        with:
+          version: 9.15.4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '24'
+          cache: 'pnpm'
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate local environment credentials
+        run: pnpm setup:env
+
+      - name: Scan tracked files for secrets
+        run: pnpm check:secrets
+
+      - name: Check architectural dependencies (dependency-cruiser)
+        run: pnpm check:deps
+
+      - name: Run code linter
+        run: pnpm lint
+
+      - name: Run TypeScript typecheck
+        run: pnpm typecheck
+
+      - name: Run automated test suite
+        run: pnpm test
+
+      - name: Audit dependencies (report-only)
+        run: pnpm audit || true

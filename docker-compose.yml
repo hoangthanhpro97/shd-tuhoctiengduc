@@ -1,0 +1,29 @@
+name: shd-tuhoctiengduc
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: shd-postgres-16
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-postgres}
+      SHD_MIGRATOR_PASSWORD: ${SHD_MIGRATOR_PASSWORD}
+      SHD_APP_PASSWORD: ${SHD_APP_PASSWORD}
+      SHD_GRADER_PASSWORD: ${SHD_GRADER_PASSWORD}
+      SHD_WORKER_PASSWORD: ${SHD_WORKER_PASSWORD}
+      SHD_READONLY_PASSWORD: ${SHD_READONLY_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./infra/postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:

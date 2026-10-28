@@ -1,0 +1,31 @@
+{
+  "name": "shd-tuhoctiengduc-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "check:deps": "depcruise --config .dependency-cruiser.cjs packages/contracts packages/core packages/db packages/adapters packages/config packages/testing/src",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "setup:env": "node scripts/setup-env.mjs",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d",
+    "check:all": "pnpm lint && pnpm typecheck && pnpm check:deps && pnpm check:secrets && pnpm test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.7",
+    "dependency-cruiser": "^16.9.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "typescript": "~5.6.3",
+    "typescript-eslint": "^8.19.1",
+    "vitest": "^2.1.8"
+  }
+}
