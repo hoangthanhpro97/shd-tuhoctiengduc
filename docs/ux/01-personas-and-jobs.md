@@ -26,8 +26,8 @@
 
 ### Điểm chạm chuyển đổi (Lead Gate Touchpoints)
 - Làm xong 2 câu đầu thấy lời giải cực kỳ chi tiết, dễ hiểu.
-- Muốn mở khóa giải thích từ câu 3 trở đi $\rightarrow$ sẵn sàng điền form.
-- Khi được hỏi độ tuổi $\rightarrow$ chọn "Dưới 18 tuổi" $\rightarrow$ nhập số Zalo của Mẹ để Mẹ nhận thông báo kết quả và tư vấn thay mình.
+- Muốn mở khóa giải thích từ câu 3 trở đi → sẵn sàng điền form.
+- Khi được hỏi độ tuổi → chọn "Dưới 18 tuổi" → nhập số Zalo của Mẹ để Mẹ nhận thông báo kết quả và tư vấn thay mình.
 
 ---
 
@@ -88,3 +88,4 @@
 | **Rào cản Lead Gate** | Cần nhập Zalo phụ huynh | Sợ spam cuộc gọi | Cần sự minh bạch & uy tín |
 | **Kênh liên hệ tốt nhất** | Zalo chat / ZNS | Zalo / Cuộc gọi hẹn trước ngoài giờ | Zalo ZNS + Cuộc gọi tư vấn chuyên sâu |
 | **Đề xuất giá trị giữ chân** | Lời giải chi tiết tiếng Việt | Lịch Test 1-1 & Lộ trình cấp tốc | Báo cáo năng lực của con & Cam kết visa |
+

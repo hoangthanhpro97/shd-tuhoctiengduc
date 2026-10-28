@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Luồng A: Khách ẩn danh làm bài $\rightarrow$ Nộp bài $\rightarrow$ Xem kết quả $\rightarrow$ Lead Gate $\rightarrow$ Thành công
+## 1. Luồng A: Khách ẩn danh làm bài → Nộp bài → Xem kết quả → Lead Gate → Thành công
 
 Luồng chính yếu (Happy Path) dẫn dắt khách vãng lai trải nghiệm thi thử và chuyển đổi thành Lead tiềm năng thông qua điểm chặn giá trị.
 
@@ -198,3 +198,4 @@ flowchart TD
     AnalyzeState -- "Tích [1] Bắt buộc, Tích [2] Tư vấn, KHÔNG tích [3] Du học/18b" --> PartialConsent["Chỉ phân phối Lead cho phòng Đào tạo tiếng Đức SHD Education"]
     PartialConsent --> Block18bSharing["Không chia sẻ dữ liệu cho SHD Career / SHD International"]
 ```
+

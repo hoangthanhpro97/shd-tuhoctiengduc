@@ -27,18 +27,21 @@
       color: var(--text-main);
       line-height: 1.6;
       padding: 24px 16px 60px;
+      overflow-wrap: anywhere;
     }
     .hub-container {
       max-width: 960px;
       margin: 0 auto;
+      width: 100%;
     }
     .hub-header {
       background: var(--bg-surface);
       border: 1px solid var(--border-color);
       border-radius: 8px;
-      padding: 28px;
+      padding: 24px;
       margin-bottom: 24px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      overflow-wrap: anywhere;
     }
     .badge-hub {
       display: inline-block;
@@ -52,12 +55,15 @@
       margin-bottom: 10px;
     }
     h1 {
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 8px;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      line-height: 1.35;
     }
     p.lead {
       color: var(--text-muted);
-      font-size: 15px;
+      font-size: 14px;
     }
 
     /* Cards Grid */
@@ -133,7 +139,8 @@
       background: var(--bg-surface);
       border: 1px solid var(--border-color);
       border-radius: 8px;
-      padding: 24px;
+      padding: 20px;
+      width: 100%;
     }
     .testing-guide h2 {
       font-size: 18px;
@@ -141,11 +148,21 @@
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 8px;
     }
+    
+    /* Scrollable responsive container for table */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+    }
     .guide-table {
       width: 100%;
+      min-width: 600px;
       border-collapse: collapse;
       font-size: 13px;
-      margin-top: 12px;
     }
     .guide-table th, .guide-table td {
       border: 1px solid var(--border-color);
@@ -155,11 +172,35 @@
     .guide-table th {
       background: #fafbfc;
       font-weight: 700;
+      white-space: nowrap;
+    }
+
+    code {
+      background: #eff1f3;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 12px;
     }
 
     @media (max-width: 840px) {
       .wireframe-cards {
         grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 12px 10px 40px;
+      }
+      .hub-header {
+        padding: 16px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .testing-guide {
+        padding: 14px;
       }
     }
   </style>
@@ -168,8 +209,8 @@
 
   <div class="hub-container">
     <header class="hub-header">
-      <span class="badge-hub">UX Prototyping & Wireframes Hub</span>
-      <h1>SHD Tự Học Tiếng Đức (tuhoctiengduc.shdeducation.vn)</h1>
+      <span class="badge-hub">UX Prototyping &amp; Wireframes Hub</span>
+      <h1>SHD Tự Học Tiếng Đức<br><span style="font-size: 16px; color: var(--text-muted); font-weight: normal;">(tuhoctiengduc.shdeducation.vn)</span></h1>
       <p class="lead">
         Bộ Wireframe tương tác thuần (HTML/CSS, không phụ thuộc thư viện, chạy 100% offline) mô phỏng các màn hình tạo doanh thu (Money Screens), kiểm soát đáp án bảo mật và luồng chuyển đổi Lead Gate đa tầng.
       </p>
@@ -190,7 +231,7 @@
             <li>Đồng hồ đếm ngược server-authoritative</li>
             <li>Bảo mật: Không lộ đáp án trước khi nộp</li>
             <li>Audio Hören không nút tải, kiểm soát 2 lượt nghe</li>
-            <li>Chỉ báo tự lưu nháp & cơ chế lưu ngoại tuyến</li>
+            <li>Chỉ báo tự lưu nháp &amp; cơ chế lưu ngoại tuyến</li>
             <li>Hộp thoại xác nhận nộp bài chi tiết</li>
           </ul>
         </div>
@@ -201,14 +242,14 @@
       <div class="wf-card">
         <div>
           <div class="wf-number">MÀN HÌNH 02 (ƯU TIÊN 2)</div>
-          <h2 class="wf-title">Kết Quả & Lead Gate Đa Tầng</h2>
+          <h2 class="wf-title">Kết Quả &amp; Lead Gate Đa Tầng</h2>
           <p class="wf-desc">
             Trang trả điểm, điểm chặn Lead Gate tại Câu 3, biểu mẫu thu thập lead kèm nhánh xác nhận phụ huynh cho người dưới 18 tuổi.
           </p>
           <ul class="wf-features">
-            <li>Điểm tổng & điểm kỹ năng xem miễn phí</li>
+            <li>Điểm tổng &amp; điểm kỹ năng xem miễn phí</li>
             <li>Câu 1–2 mở công khai; Câu 3+ bị mờ khóa</li>
-            <li>Modal Lead Gate: Form $\rightarrow$ OTP $\rightarrow$ Thành công</li>
+            <li>Modal Lead Gate: Form → OTP → Thành công</li>
             <li>Nhánh &lt;18 tuổi: Bắt buộc Zalo Cha/Mẹ</li>
             <li>3 Checkbox đồng ý pháp lý không tích sẵn</li>
             <li>CTA chính: Đăng ký Test 1-1 miễn phí</li>
@@ -223,11 +264,11 @@
           <div class="wf-number">MÀN HÌNH 03 (ƯU TIÊN 3)</div>
           <h2 class="wf-title">Danh Mục Đề Thi Dạng Thẻ</h2>
           <p class="wf-desc">
-            Trang tìm kiếm và phân loại đề thi theo phong cách DOL Tự Học: bộ lọc kỳ thi TELC/Goethe, cấp độ A1–C1, kỹ năng và tiến độ.
+            Trang tìm kiếm và phân loại đề thi dạng lưới thẻ trực quan: bộ lọc kỳ thi TELC/Goethe, cấp độ A1–C1, kỹ năng và tiến độ làm bài.
           </p>
           <ul class="wf-features">
             <li>Lưới thẻ đề thi trực quan, chuẩn touch target</li>
-            <li>Bộ lọc đa tiêu chí: Kỳ thi, Cấp độ, Kỹ năng</li>
+            <li>Bộ lọc tương tác thực tế: Kỳ thi, Cấp độ, Kỹ năng</li>
             <li>Thẻ trạng thái: Đang làm dở, Chưa làm, Đã xong</li>
             <li>Thẻ ưu đãi: Đăng ký test đầu vào 1-1</li>
             <li>Phân trang và tìm kiếm theo tên đề</li>
@@ -240,48 +281,51 @@
 
     <!-- Hướng dẫn kiểm thử kịch bản -->
     <section class="testing-guide">
-      <h2>Kịch bản Kiểm tra & Đánh giá Nghiệm thu (Test Scenarios)</h2>
-      <table class="guide-table">
-        <thead>
-          <tr>
-            <th style="width: 25%;">Kịch bản cần kiểm tra</th>
-            <th style="width: 35%;">Thao tác thực hiện trên Wireframe</th>
-            <th style="width: 40%;">Kết quả mong đợi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>1. Kiểm tra Responsive Mobile (375px)</strong></td>
-            <td>Mở DevTools (F12) $\rightarrow$ chuyển kích thước màn hình sang 375px (iPhone SE) trên cả 3 trang.</td>
-            <td>Không có thanh cuộn ngang; các nút bấm có chiều cao $\ge 44\text{px}$; trên phòng thi xuất hiện thanh chuyển đổi tab Đề thi $\leftrightarrow$ Phiếu câu hỏi.</td>
-          </tr>
-          <tr>
-            <td><strong>2. Bảo mật đáp án trước khi nộp</strong></td>
-            <td>Mở `exam-room.html`, kiểm tra giao diện và inspect DOM mã nguồn.</td>
-            <td>Tuyệt đối không có bất kỳ ký hiệu, màu sắc hay thuộc tính nào để lộ đáp án đúng trước khi người dùng bấm nộp bài.</td>
-          </tr>
-          <tr>
-            <td><strong>3. Mô phỏng Mất mạng & Lỗi Audio</strong></td>
-            <td>Trên thanh demo đen ở đầu `exam-room.html`, bấm các nút: <em>"Simulate: Mất mạng/Online"</em> và <em>"Simulate: Lỗi Audio Hören"</em>.</td>
-            <td>Xuất hiện banner vàng cảnh báo mất mạng, trạng thái đổi thành "Lưu ngoại tuyến". Hộp lỗi audio hiện nút "Thử lại tải âm thanh" và không trừ lượt nghe.</td>
-          </tr>
-          <tr>
-            <td><strong>4. Kiểm tra Điểm chặn Lead Gate</strong></td>
-            <td>Mở `result-and-gate.html`, cuộn xuống phần lời giải chi tiết.</td>
-            <td>Câu 1 & Câu 2 hiển thị đầy đủ đáp án và giải thích tiếng Việt. Từ Câu 3 trở đi nội dung bị làm mờ kèm thẻ phủ khóa "Mở khóa toàn bộ lời giải".</td>
-          </tr>
-          <tr>
-            <td><strong>5. Thử nghiệm Nhánh dưới 18 tuổi</strong></td>
-            <td>Bấm nút mở modal Lead Gate $\rightarrow$ tại ô "Nhóm đối tượng/Độ tuổi", chọn <em>"Học sinh (&lt; 18 tuổi)"</em>.</td>
-            <td>Form tự động mở rộng hộp màu vàng yêu cầu nhập số Zalo của Cha/Mẹ kèm ghi chú pháp lý [PLACEHOLDER - chờ pháp chế duyệt].</td>
-          </tr>
-          <tr>
-            <td><strong>6. Kiểm tra 3 Checkbox đồng ý</strong></td>
-            <td>Quan sát khối điều khoản ở cuối form Bước 1 trong Lead Gate.</td>
-            <td>Cả 3 ô đều KHÔNG tích sẵn. Nút "Nhận mã OTP" bị vô hiệu hóa cho tới khi người dùng chủ động tích ô [Bắt buộc].</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Kịch bản Kiểm tra &amp; Đánh giá Nghiệm thu (Test Scenarios)</h2>
+      
+      <div class="table-container">
+        <table class="guide-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Kịch bản cần kiểm tra</th>
+              <th style="width: 35%;">Thao tác thực hiện trên Wireframe</th>
+              <th style="width: 40%;">Kết quả mong đợi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Kiểm tra Responsive Mobile (375px)</strong></td>
+              <td>Mở DevTools (F12) → chuyển kích thước màn hình sang 375px (iPhone SE) trên cả 3 trang.</td>
+              <td>Không có thanh cuộn ngang; các nút bấm có chiều cao ≥ 44px; trên phòng thi xuất hiện thanh chuyển đổi tab Đề thi ↔ Phiếu câu hỏi.</td>
+            </tr>
+            <tr>
+              <td><strong>2. Bảo mật đáp án trước khi nộp</strong></td>
+              <td>Mở <code>exam-room.html</code>, kiểm tra giao diện và inspect DOM mã nguồn.</td>
+              <td>Tuyệt đối không có bất kỳ ký hiệu, màu sắc hay thuộc tính nào để lộ đáp án đúng trước khi người dùng bấm nộp bài.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Mô phỏng Mất mạng &amp; Lỗi Audio</strong></td>
+              <td>Trên thanh demo đen ở đầu <code>exam-room.html</code>, bấm các nút: <em>"Simulate: Mất mạng/Online"</em> và <em>"Simulate: Lỗi Audio Hören"</em>.</td>
+              <td>Xuất hiện banner vàng cảnh báo mất mạng, trạng thái đổi thành "Lưu ngoại tuyến". Hộp lỗi audio hiện nút "Thử lại tải âm thanh" và không trừ lượt nghe.</td>
+            </tr>
+            <tr>
+              <td><strong>4. Kiểm tra Điểm chặn Lead Gate</strong></td>
+              <td>Mở <code>result-and-gate.html</code>, cuộn xuống phần lời giải chi tiết.</td>
+              <td>Câu 1 &amp; Câu 2 hiển thị đầy đủ đáp án và giải thích tiếng Việt. Từ Câu 3 trở đi nội dung bị làm mờ kèm thẻ phủ khóa "Mở khóa toàn bộ lời giải".</td>
+            </tr>
+            <tr>
+              <td><strong>5. Thử nghiệm Nhánh dưới 18 tuổi</strong></td>
+              <td>Bấm nút mở modal Lead Gate → tại ô "Nhóm đối tượng/Độ tuổi", chọn <em>"Học sinh (&lt; 18 tuổi)"</em>.</td>
+              <td>Form tự động mở rộng hộp màu vàng yêu cầu nhập số Zalo của Cha/Mẹ kèm ghi chú pháp lý [PLACEHOLDER - chờ pháp chế duyệt].</td>
+            </tr>
+            <tr>
+              <td><strong>6. Kiểm tra 3 Checkbox đồng ý</strong></td>
+              <td>Quan sát khối điều khoản ở cuối form Bước 1 trong Lead Gate.</td>
+              <td>Cả 3 ô đều KHÔNG tích sẵn. Nút "Nhận mã OTP" bị vô hiệu hóa cho tới khi người dùng chủ động tích ô [Bắt buộc].</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </div>
 
