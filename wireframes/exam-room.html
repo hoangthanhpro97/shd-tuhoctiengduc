@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe: Phòng Thi Chia Đôi Màn Hình (Lesen & Hören) - SHD Tự Học Tiếng Đức</title>
+  <style>
+    /* Reset & Design System Tokens (Wireframe Monochromatic) */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --bg-canvas: #f4f5f7;
+      --bg-surface: #ffffff;
+      --bg-muted: #ebecef;
+      --border-color: #cbd0d6;
+      --border-dark: #8c939d;
+      --text-main: #1f2328;
+      --text-muted: #57606a;
+      --accent-wire: #2f363d;
+      --accent-active: #0969da;
+      --warning-bg: #fff8c5;
+      --warning-text: #9a6700;
+      --success-bg: #dafbe1;
+      --success-text: #1a7f37;
+      --danger-bg: #ffebe9;
+      --danger-text: #cf222e;
+      --font-stack: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      line-height: 1.5;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Accessibility: Touch target & focus styles */
+    button, input, label, a {
+      font-family: inherit;
+      min-height: 44px;
+      touch-action: manipulation;
+    }
+    :focus-visible {
+      outline: 3px solid var(--accent-active);
+      outline-offset: 2px;
+    }
+
+    /* Wireframe Meta Badge & Demo Bar */
+    .wireframe-banner {
+      background: #24292f;
+      color: #fff;
+      padding: 8px 16px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .wireframe-banner a {
+      color: #58a6ff;
+      text-decoration: none;
+      min-height: auto;
+      display: inline-flex;
+      align-items: center;
+    }
+    .demo-controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .demo-btn {
+      min-height: 28px;
+      padding: 2px 10px;
+      font-size: 11px;
+      background: #32383f;
+      color: #f0f6fc;
+      border: 1px solid #484f58;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .demo-btn:hover {
+      background: #444c56;
+    }
+
+    /* Header Bar */
+    .exam-header {
+      background: var(--bg-surface);
+      border-bottom: 2px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 10px 16px;
+    }
+    .header-content {
+      max-width: 1320px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .exam-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .exam-badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 8px;
+      background: var(--bg-muted);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .exam-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* Auto-save & Status Indicators */
+    .status-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .save-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: var(--success-bg);
+      color: var(--success-text);
+      font-weight: 500;
+      border: 1px solid rgba(26,127,55,0.2);
+    }
+    .save-indicator.offline {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      border-color: rgba(154,103,0,0.3);
+    }
+    .save-indicator .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    /* Server Countdown Timer */
+    .timer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-muted);
+      border: 1px solid var(--border-dark);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-family: "SF Mono", Consolas, monospace;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .timer-badge.warning {
+      background: var(--danger-bg);
+      color: var(--danger-text);
+      border-color: var(--danger-text);
+      animation: pulse 1s infinite alternate;
+    }
+    @keyframes pulse {
+      from { opacity: 0.8; }
+      to { opacity: 1; }
+    }
+
+    /* Submit Button */
+    .btn-submit-exam {
+      background: var(--accent-wire);
+      color: #fff;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 6px;
+      border: 1px solid #000;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-submit-exam:hover {
+      background: #000;
+    }
+
+    /* Mode Navigation (Lesen vs Hören) */
+    .skill-nav {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+      padding: 8px 16px;
+    }
+    .skill-nav-inner {
+      max-width: 1320px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .skill-tabs {
+      display: flex;
+      gap: 8px;
+    }
+    .tab-btn {
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      background: var(--bg-muted);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .tab-btn.active {
+      background: var(--accent-wire);
+      color: #fff;
+      border-color: var(--accent-wire);
+    }
+    .view-mobile-switch {
+      display: none;
+      gap: 6px;
+    }
+
+    /* Offline Alert Notification Banner */
+    .offline-banner {
+      display: none;
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      border-bottom: 1px solid rgba(154,103,0,0.3);
+      padding: 8px 16px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .offline-banner.visible {
+      display: block;
+    }
+
+    /* Main Container (Split-screen Desktop) */
+    .exam-container {
+      max-width: 1320px;
+      margin: 16px auto;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    /* Content Panels */
+    .panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .panel-header {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .panel-title {
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .panel-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Reading Content Pane (Lesetext) */
+    .reading-content {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #24292f;
+      background: #fafbfc;
+      padding: 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      max-height: calc(100vh - 240px);
+      overflow-y: auto;
+    }
+    .reading-content h4 {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .reading-content p {
+      margin-bottom: 14px;
+    }
+
+    /* Audio Hören Player UI */
+    .audio-player-card {
+      background: #fafbfc;
+      border: 2px dashed var(--border-dark);
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+    .audio-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .audio-badge {
+      font-size: 13px;
+      font-weight: 600;
+      background: #fff;
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .audio-status-pill {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: var(--bg-muted);
+      color: var(--text-muted);
+    }
+    .audio-status-pill.playing {
+      background: var(--success-bg);
+      color: var(--success-text);
+    }
+    .audio-status-pill.error {
+      background: var(--danger-bg);
+      color: var(--danger-text);
+    }
+
+    .audio-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-audio-play {
+      min-width: 44px;
+      min-height: 44px;
+      border-radius: 50%;
+      background: var(--accent-wire);
+      color: #fff;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .btn-audio-play:disabled {
+      background: var(--border-color);
+      cursor: not-allowed;
+    }
+    .audio-progress-bar {
+      flex: 1;
+      height: 8px;
+      background: var(--border-color);
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+    }
+    .audio-progress-fill {
+      width: 35%;
+      height: 100%;
+      background: var(--accent-wire);
+      border-radius: 4px;
+    }
+    .audio-time {
+      font-family: monospace;
+      font-size: 13px;
+      color: var(--text-muted);
+      min-width: 75px;
+      text-align: right;
+    }
+    .audio-notice {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .audio-notice .no-download-badge {
+      font-style: italic;
+      color: #6e7781;
+    }
+
+    .audio-error-box {
+      display: none;
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: var(--danger-bg);
+      color: var(--danger-text);
+      border: 1px solid rgba(207,34,46,0.3);
+      border-radius: 6px;
+      font-size: 13px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .audio-error-box.visible {
+      display: flex;
+    }
+    .btn-retry-audio {
+      background: #fff;
+      border: 1px solid var(--danger-text);
+      color: var(--danger-text);
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* Questions Pane (Aufgaben) */
+    .questions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .question-card {
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 16px;
+      background: var(--bg-surface);
+      scroll-margin-top: 90px;
+    }
+    .question-card.active {
+      border-color: var(--accent-wire);
+      box-shadow: 0 0 0 2px var(--border-dark);
+    }
+    .question-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      gap: 8px;
+    }
+    .question-number {
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .flag-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 4px 8px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background: #fff;
+      user-select: none;
+    }
+    .flag-toggle.flagged {
+      background: #fff8c5;
+      color: #9a6700;
+      border-color: #d4a72c;
+      font-weight: 600;
+    }
+    .question-text {
+      font-size: 15px;
+      margin-bottom: 14px;
+      color: #1f2328;
+    }
+
+    /* Options List (Radio Buttons >= 44px) */
+    .options-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .option-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: #fafbfc;
+      cursor: pointer;
+      min-height: 44px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .option-label:hover {
+      background: #f3f4f6;
+      border-color: var(--border-dark);
+    }
+    .option-label input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent-wire);
+    }
+    .option-label.selected {
+      background: #f0f6fc;
+      border-color: #0969da;
+      font-weight: 500;
+    }
+
+    /* Question Palette (Bảng điều hướng câu hỏi 1-30) */
+    .palette-box {
+      margin-top: 24px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .palette-header {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .palette-legend {
+      display: flex;
+      gap: 12px;
+      font-size: 11px;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+    }
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .legend-box {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      border: 1px solid var(--border-color);
+      background: #fff;
+    }
+    .legend-box.answered {
+      background: var(--accent-wire);
+      border-color: var(--accent-wire);
+    }
+    .legend-box.flagged {
+      background: #e3b341;
+      border-color: #9a6700;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 6px;
+    }
+    .palette-btn {
+      min-height: 36px;
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .palette-btn:hover {
+      background: var(--bg-muted);
+    }
+    .palette-btn.answered {
+      background: var(--accent-wire);
+      color: #fff;
+      border-color: var(--accent-wire);
+    }
+    .palette-btn.flagged::after {
+      content: "⚑";
+      position: absolute;
+      top: -2px;
+      right: 2px;
+      font-size: 10px;
+      color: #d4a72c;
+    }
+    .palette-btn.flagged.answered::after {
+      color: #fff8c5;
+    }
+
+    /* Modal Backdrop & Confirm Dialog */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .modal-backdrop.open {
+      display: flex;
+    }
+    .modal-dialog {
+      background: var(--bg-surface);
+      border-radius: 10px;
+      border: 2px solid var(--border-dark);
+      max-width: 480px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .modal-summary-box {
+      background: var(--bg-muted);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 14px;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .btn-secondary {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .btn-primary-danger {
+      background: #cf222e;
+      color: #fff;
+      border: 1px solid #a40e26;
+      padding: 8px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    /* Responsive Breakdown: Mobile First (375px) vs Desktop (1280px) */
+    @media (max-width: 768px) {
+      .exam-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin: 10px auto;
+        padding: 0 10px;
+      }
+      .view-mobile-switch {
+        display: flex;
+        width: 100%;
+        margin-top: 8px;
+      }
+      .mobile-view-btn {
+        flex: 1;
+        text-align: center;
+        background: #fff;
+        border: 1px solid var(--border-color);
+        padding: 8px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .mobile-view-btn.active {
+        background: var(--bg-muted);
+        border-color: var(--accent-wire);
+      }
+      /* In Mobile view: toggle between Text/Audio pane and Questions pane */
+      .panel.mobile-hidden {
+        display: none !important;
+      }
+      .palette-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      .exam-title {
+        font-size: 14px;
+      }
+      .timer-badge {
+        font-size: 14px;
+        padding: 4px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Wireframe Meta Bar & Interactive Simulation Toggles -->
+  <div class="wireframe-banner">
+    <div>
+      <strong>[WIREFRAME] PHÒNG THI CHIA ĐÔI MÀN HÌNH</strong> — Tiêu chuẩn: 375px & 1280px | Đáp án đúng: BẢO MẬT TUYỆT ĐỐI
+    </div>
+    <div class="demo-controls">
+      <span>Mô phỏng tương tác:</span>
+      <button class="demo-btn" onclick="toggleOffline()">Simulate: Mất mạng/Online</button>
+      <button class="demo-btn" onclick="triggerAudioError()">Simulate: Lỗi Audio Hören</button>
+      <a href="index.html" style="margin-left: 8px;">← Về Hub Wireframe</a>
+    </div>
+  </div>
+
+  <!-- Offline Alert Banner (State: Offline) -->
+  <div id="offline-banner" class="offline-banner">
+    ⚠️ <strong>MẤT KẾT NỐI INTERNET:</strong> Đang lưu các câu trả lời ngoại tuyến trên thiết bị. Không làm mới trình duyệt.
+  </div>
+
+  <!-- Header Sticky Bar -->
+  <header class="exam-header">
+    <div class="header-content">
+      <div class="exam-info">
+        <span class="exam-badge">TELC B1</span>
+        <span class="exam-title">Đề thi thử tổng hợp số 02 - Lesen & Hören</span>
+      </div>
+
+      <div class="status-group">
+        <!-- Auto-save state indicator -->
+        <div id="save-pill" class="save-indicator">
+          <span class="dot"></span>
+          <span id="save-text">Đã tự động lưu 5s trước</span>
+        </div>
+
+        <!-- Server-Authoritative Countdown Timer -->
+        <div id="exam-timer" class="timer-badge" title="Đồng hồ đếm ngược do server kiểm soát">
+          ⏱ <span>44:32</span>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="btn-submit-exam" onclick="openSubmitModal()">
+          Nộp bài thi
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skill Navigation (Lesen vs Hören) & Mobile Switcher -->
+  <nav class="skill-nav">
+    <div class="skill-nav-inner">
+      <div class="skill-tabs">
+        <button class="tab-btn active" id="tab-lesen" onclick="switchSkill('lesen')">
+          📖 Teil 1: Leseverstehen (Đọc hiểu)
+        </button>
+        <button class="tab-btn" id="tab-hoeren" onclick="switchSkill('hoeren')">
+          🎧 Teil 2: Hörverstehen (Nghe hiểu)
+        </button>
+      </div>
+
+      <!-- Mobile Screen Toggle (Cho màn hình hẹp 375px) -->
+      <div class="view-mobile-switch">
+        <button class="mobile-view-btn active" id="m-btn-content" onclick="toggleMobileView('content')">
+          📄 Xem Đề / Bài đọc / Audio
+        </button>
+        <button class="mobile-view-btn" id="m-btn-questions" onclick="toggleMobileView('questions')">
+          📝 Phiếu câu hỏi (1–30)
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Split-screen Workspace -->
+  <main class="exam-container">
+    
+    <!-- LEFT PANEL: Bài đọc (Lesen) HOẶC Trình phát nghe (Hören) -->
+    <section class="panel" id="left-panel">
+      
+      <!-- VIEW A: ĐỌC HIỂU (LESEN) -->
+      <div id="view-lesen-content">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Teil 1: Leseverstehen</h2>
+            <p class="panel-subtitle">Lesen Sie den folgenden Text und lösen Sie die Aufgaben 1 bis 5.</p>
+          </div>
+          <span class="exam-badge">5 Câu hỏi</span>
+        </div>
+
+        <div class="reading-content">
+          <h4>Beispieltext: Die Entwicklung der beruflichen Bildung in Deutschland</h4>
+          <p>
+            <em>[Văn bản mẫu mô phỏng bài đọc tiếng Đức chuẩn B1. Không sao chép đề thi bản quyền]</em>
+          </p>
+          <p>
+            In den letzten Jahren hat das duale Ausbildungssystem in Deutschland international große Aufmerksamkeit erlangt. Viele junge Menschen aus dem Ausland interessieren sich für die Kombination aus Theorie an der Berufsschule und praktischer Arbeit im Betrieb. Dieses Modell bietet finanzielle Unabhängigkeit von Beginn an und sehr gute Berufsperspektiven auf dem deutschen Arbeitsmarkt.
+          </p>
+          <p>
+            Besonders in den Bereichen Krankenpflege, Mechatronik und Gastronomie herrscht derzeit ein hoher Fachkräftebedarf. Voraussetzungen für eine erfolgreiche Ausbildung sind nicht nur fachliche Eignung, sondern vor allem solide Sprachkenntnisse auf dem Niveau B1 oder B2, um die theoretischen Prüfungen an der Berufsschule ohne größere Barrieren bestehen zu können.
+          </p>
+          <p>
+            Experten betonen, dass eine gründliche sprachliche und kulturelle Vorbereitung im Heimatland der Schlüssel zu einer gelungenen Integration am Arbeitsplatz und im täglichen Leben in Deutschland ist.
+          </p>
+        </div>
+      </div>
+
+      <!-- VIEW B: NGHE HIỂU (HÖREN) - Trình phát chuyên dụng không download -->
+      <div id="view-hoeren-content" style="display: none;">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Teil 2: Hörverstehen</h2>
+            <p class="panel-subtitle">Sie hören zwei Gespräche. Lösen Sie die Aufgaben 6 bis 10.</p>
+          </div>
+          <span class="exam-badge">5 Câu hỏi</span>
+        </div>
+
+        <div class="audio-player-card">
+          <div class="audio-meta">
+            <span class="audio-badge">🎧 Audio Teil 2 (Track_02.mp3)</span>
+            <span id="audio-status" class="audio-status-pill">Sẵn sàng phát</span>
+          </div>
+
+          <!-- Trình phát an toàn: Không nút tải xuống -->
+          <div class="audio-controls">
+            <button id="btn-play-audio" class="btn-audio-play" onclick="toggleAudio()" title="Phát âm thanh" aria-label="Phát audio">
+              ▶
+            </button>
+            <div class="audio-progress-bar" onclick="seekAudio(event)" title="Thanh tiến trình nghe">
+              <div id="audio-progress-fill" class="audio-progress-fill"></div>
+            </div>
+            <div class="audio-time">
+              <span id="audio-current">01:14</span> / 03:25
+            </div>
+          </div>
+
+          <div class="audio-notice">
+            <span><strong>Quy định:</strong> Số lần nghe tối đa: <strong>2 lần</strong>. Hiện tại: <span id="listen-count">Lần 1 / 2</span></span>
+            <span class="no-download-badge">🔒 Trình phát bảo mật (Không cho phép tải về)</span>
+          </div>
+
+          <!-- Error State Box (Designed for poor network) -->
+          <div id="audio-error-box" class="audio-error-box">
+            <span>⚠️ <strong>Lỗi kết nối âm thanh:</strong> Không thể tải đoạn nghe do sóng yếu. Lượt nghe của bạn KHÔNG bị trừ.</span>
+            <button class="btn-retry-audio" onclick="retryAudio()">Thử lại tải âm thanh</button>
+          </div>
+        </div>
+
+        <div class="reading-content" style="max-height: 250px;">
+          <h4>Hướng dẫn phần thi Nghe:</h4>
+          <p>1. Bạn có 30 giây để đọc trước các câu hỏi trước khi băng phát.</p>
+          <p>2. Trong quá trình nghe, hãy chọn phương án đúng nhất A, B hoặc C trên phiếu câu hỏi bên phải.</p>
+          <p>3. Khi hoàn thành lần nghe thứ 2, trình phát sẽ tự động khóa lại.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT PANEL: Phiếu câu hỏi trắc nghiệm & Bảng chọn câu 1-30 -->
+    <section class="panel" id="right-panel">
+      <div class="panel-header">
+        <div>
+          <h2 class="panel-title">Phiếu câu hỏi & Trả lời</h2>
+          <p class="panel-subtitle">Lựa chọn 1 đáp án duy nhất cho mỗi câu. Đáp án không hiển thị trước khi nộp.</p>
+        </div>
+        <span class="panel-subtitle">Đã làm: <strong id="answered-counter">3</strong>/30 câu</span>
+      </div>
+
+      <!-- Danh sách câu hỏi mẫu -->
+      <div class="questions-list">
+        
+        <!-- Câu 1 -->
+        <article class="question-card active" id="q-1">
+          <div class="question-card-header">
+            <span class="question-number">Aufgabe 1 (Beispielfrage 1)</span>
+            <span class="flag-toggle" onclick="toggleFlag(1, this)" title="Đánh dấu để xem lại sau">
+              ⚑ Đánh dấu xem lại
+            </span>
+          </div>
+          <p class="question-text">Warum ist das duale Ausbildungssystem für ausländische Bewerber attraktiv?</p>
+          <div class="options-group">
+            <label class="option-label selected">
+              <input type="radio" name="q1" value="A" checked onchange="recordAnswer(1)">
+              <span>A. Man lernt ausschließlich an der Universität ohne Praxis.</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="B" onchange="recordAnswer(1)">
+              <span>B. Es verbindet theoretisches Lernen mit bezahlter betrieblicher Praxis.</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q1" value="C" onchange="recordAnswer(1)">
+              <span>C. Man muss vor der Einreise keine Sprachkenntnisse nachweisen.</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- Câu 2 -->
+        <article class="question-card" id="q-2">
+          <div class="question-card-header">
+            <span class="question-number">Aufgabe 2 (Beispielfrage 2)</span>
+            <span class="flag-toggle" onclick="toggleFlag(2, this)" title="Đánh dấu để xem lại sau">
+              ⚑ Đánh dấu xem lại
+            </span>
+          </div>
+          <p class="question-text">In welchen Bereichen wird in Deutschland gegenwärtig besonders viel Personal gesucht?</p>
+          <div class="options-group">
+            <label class="option-label">
+              <input type="radio" name="q2" value="A" onchange="recordAnswer(2)">
+              <span>A. Vor allem im Bankwesen und in der Landwirtschaft.</span>
+            </label>
+            <label class="option-label selected">
+              <input type="radio" name="q2" value="B" checked onchange="recordAnswer(2)">
+              <span>B. In der Krankenpflege, Mechatronik und Gastronomie.</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q2" value="C" onchange="recordAnswer(2)">
+              <span>C. Ausschließlich im Hochschulbereich als Dozent.</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- Câu 3 (Điểm chạm sau này sẽ bị khóa lời giải) -->
+        <article class="question-card" id="q-3">
+          <div class="question-card-header">
+            <span class="question-number">Aufgabe 3 (Beispielfrage 3)</span>
+            <span class="flag-toggle flagged" onclick="toggleFlag(3, this)" title="Đánh dấu để xem lại sau">
+              ⚑ Đã đánh dấu xem lại
+            </span>
+          </div>
+          <p class="question-text">Welches Sprachniveau wird für den theoretischen Unterricht an der Berufsschule empfohlen?</p>
+          <div class="options-group">
+            <label class="option-label">
+              <input type="radio" name="q3" value="A" onchange="recordAnswer(3)">
+              <span>A. Grundkenntnisse auf Niveau A1 genügen vollkommen.</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q3" value="B" onchange="recordAnswer(3)">
+              <span>B. Solide Kenntnisse auf dem Niveau B1 oder B2.</span>
+            </label>
+            <label class="option-label selected">
+              <input type="radio" name="q3" value="C" checked onchange="recordAnswer(3)">
+              <span>C. Ausschließlich muttersprachliche Kompetenzen auf C2-Niveau.</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- Câu 4 (Chưa làm) -->
+        <article class="question-card" id="q-4">
+          <div class="question-card-header">
+            <span class="question-number">Aufgabe 4 (Beispielfrage 4)</span>
+            <span class="flag-toggle" onclick="toggleFlag(4, this)" title="Đánh dấu để xem lại sau">
+              ⚑ Đánh dấu xem lại
+            </span>
+          </div>
+          <p class="question-text">Was gilt laut Experten als Schlüssel für eine erfolgreiche Integration?</p>
+          <div class="options-group">
+            <label class="option-label">
+              <input type="radio" name="q4" value="A" onchange="recordAnswer(4)">
+              <span>A. Sprachliche und kulturelle Vorbereitung im Heimatland.</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="B" onchange="recordAnswer(4)">
+              <span>B. Sofortiger Wechsel des Ausbildungsbetriebs nach Ankunft.</span>
+            </label>
+            <label class="option-label">
+              <input type="radio" name="q4" value="C" onchange="recordAnswer(4)">
+              <span>C. Vollständiger Verzicht auf Kontakt zur Heimatkultur.</span>
+            </label>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Question Palette 1-30 (Bảng chọn câu) -->
+      <div class="palette-box">
+        <div class="palette-header">
+          <span>Ma trận câu hỏi (1–30)</span>
+          <div class="palette-legend">
+            <span class="legend-item"><span class="legend-box answered"></span> Đã chọn</span>
+            <span class="legend-item"><span class="legend-box flagged"></span> Xem lại</span>
+            <span class="legend-item"><span class="legend-box"></span> Chưa làm</span>
+          </div>
+        </div>
+
+        <div class="palette-grid">
+          <!-- 30 câu hỏi -->
+          <button class="palette-btn answered" onclick="scrollToQ(1)">1</button>
+          <button class="palette-btn answered" onclick="scrollToQ(2)">2</button>
+          <button class="palette-btn answered flagged" onclick="scrollToQ(3)">3</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">4</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">5</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">6</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">7</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">8</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">9</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">10</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">11</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">12</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">13</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">14</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">15</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">16</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">17</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">18</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">19</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">20</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">21</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">22</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">23</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">24</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">25</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">26</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">27</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">28</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">29</button>
+          <button class="palette-btn" onclick="scrollToQ(4)">30</button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Submit Confirmation Modal -->
+  <div id="submit-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-submit-title">
+    <div class="modal-dialog">
+      <h3 id="modal-submit-title" class="modal-title">Xác nhận nộp bài thi</h3>
+      <p style="color: var(--text-muted); font-size: 14px;">Vui lòng kiểm tra lại tình trạng làm bài của bạn trước khi gửi kết quả về hệ thống.</p>
+      
+      <div class="modal-summary-box">
+        <div>• Tổng số câu hỏi: <strong>30 câu</strong></div>
+        <div style="color: #1a7f37;">• Đã chọn đáp án: <strong>3 câu</strong></div>
+        <div style="color: #cf222e;">• Chưa chọn đáp án: <strong>27 câu</strong></div>
+        <div style="color: #9a6700;">• Đánh dấu xem lại: <strong>1 câu (Câu 3)</strong></div>
+        <div style="margin-top: 10px; font-weight: 600; color: #cf222e;">
+          ⚠️ Sau khi nộp bài, bạn không thể thay đổi các câu trả lời!
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="closeSubmitModal()">Quay lại làm tiếp</button>
+        <a href="result-and-gate.html" class="btn-primary-danger">Xác nhận nộp bài ngay</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Vanilla JS for Testing Wireframe -->
+  <script>
+    // Tab switching: Lesen vs Hören
+    function switchSkill(skill) {
+      const lesenView = document.getElementById('view-lesen-content');
+      const hoerenView = document.getElementById('view-hoeren-content');
+      const tabLesen = document.getElementById('tab-lesen');
+      const tabHoeren = document.getElementById('tab-hoeren');
+
+      if (skill === 'hoeren') {
+        lesenView.style.display = 'none';
+        hoerenView.style.display = 'block';
+        tabHoeren.classList.add('active');
+        tabLesen.classList.remove('active');
+      } else {
+        hoerenView.style.display = 'none';
+        lesenView.style.display = 'block';
+        tabLesen.classList.add('active');
+        tabHoeren.classList.remove('active');
+      }
+    }
+
+    // Mobile View Toggle: Content vs Questions
+    function toggleMobileView(view) {
+      const leftPanel = document.getElementById('left-panel');
+      const rightPanel = document.getElementById('right-panel');
+      const mBtnContent = document.getElementById('m-btn-content');
+      const mBtnQuestions = document.getElementById('m-btn-questions');
+
+      if (view === 'questions') {
+        leftPanel.classList.add('mobile-hidden');
+        rightPanel.classList.remove('mobile-hidden');
+        mBtnQuestions.classList.add('active');
+        mBtnContent.classList.remove('active');
+      } else {
+        rightPanel.classList.add('mobile-hidden');
+        leftPanel.classList.remove('mobile-hidden');
+        mBtnContent.classList.add('active');
+        mBtnQuestions.classList.remove('active');
+      }
+    }
+
+    // Flag toggle
+    function toggleFlag(qNum, el) {
+      el.classList.toggle('flagged');
+      if (el.classList.contains('flagged')) {
+        el.innerText = '⚑ Đã đánh dấu xem lại';
+      } else {
+        el.innerText = '⚑ Đánh dấu xem lại';
+      }
+    }
+
+    // Question scroll
+    function scrollToQ(num) {
+      const el = document.getElementById('q-' + num) || document.getElementById('q-1');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // On mobile, automatically show questions panel
+      if (window.innerWidth <= 768) {
+        toggleMobileView('questions');
+      }
+    }
+
+    // Answer radio handler
+    function recordAnswer(qNum) {
+      // simulate auto-save
+      const pill = document.getElementById('save-pill');
+      const saveText = document.getElementById('save-text');
+      saveText.innerText = 'Đang lưu...';
+      setTimeout(() => {
+        saveText.innerText = 'Đã tự động lưu vừa xong';
+      }, 400);
+    }
+
+    // Submit modal toggle
+    function openSubmitModal() {
+      document.getElementById('submit-modal').classList.add('open');
+    }
+    function closeSubmitModal() {
+      document.getElementById('submit-modal').classList.remove('open');
+    }
+
+    // Audio simulation
+    let isPlaying = false;
+    function toggleAudio() {
+      const btn = document.getElementById('btn-play-audio');
+      const status = document.getElementById('audio-status');
+      isPlaying = !isPlaying;
+      if (isPlaying) {
+        btn.innerText = '❚❚';
+        status.innerText = 'Đang phát...';
+        status.className = 'audio-status-pill playing';
+      } else {
+        btn.innerText = '▶';
+        status.innerText = 'Tạm dừng';
+        status.className = 'audio-status-pill';
+      }
+    }
+
+    function triggerAudioError() {
+      const errBox = document.getElementById('audio-error-box');
+      const status = document.getElementById('audio-status');
+      errBox.classList.add('visible');
+      status.innerText = 'Lỗi âm thanh';
+      status.className = 'audio-status-pill error';
+      switchSkill('hoeren');
+    }
+
+    function retryAudio() {
+      const errBox = document.getElementById('audio-error-box');
+      const status = document.getElementById('audio-status');
+      errBox.classList.remove('visible');
+      status.innerText = 'Đã kết nối lại';
+      status.className = 'audio-status-pill';
+    }
+
+    // Offline simulation toggle
+    let isOffline = false;
+    function toggleOffline() {
+      isOffline = !isOffline;
+      const banner = document.getElementById('offline-banner');
+      const savePill = document.getElementById('save-pill');
+      const saveText = document.getElementById('save-text');
+
+      if (isOffline) {
+        banner.classList.add('visible');
+        savePill.classList.add('offline');
+        saveText.innerText = 'Mất kết nối - Lưu ngoại tuyến';
+      } else {
+        banner.classList.remove('visible');
+        savePill.classList.remove('offline');
+        saveText.innerText = 'Đã kết nối lại - Đã đồng bộ';
+      }
+    }
+  </script>
+</body>
+</html>
