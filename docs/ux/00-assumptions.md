@@ -44,7 +44,26 @@
 
 ---
 
-## 2. Danh sách câu hỏi mở cần SHD Education phê duyệt chính thức
+## 2. Các Quyết Định Nghiệp Vụ Mới [CẦN DUYỆT]
+
+Dưới đây là các quyết định nghiệp vụ đã được đưa vào thiết kế và triển khai cụ thể trên wireframe bản cập nhật, cần Ban Giám đốc và các Trưởng bộ phận SHD phê duyệt chính thức:
+
+| Mã | Quyết định thiết kế | Nội dung chi tiết | Trạng thái |
+| :--- | :--- | :--- | :---: |
+| **DEC-01** | **Bảo mật đáp án câu 3–30 trước Gate** | Nhãn đúng/sai từng câu và bộ lọc "Câu sai / Câu đúng" chỉ áp dụng cho Câu 1 và 2. Từ Câu 3 trở đi **KHÔNG** hiển thị nhãn đúng/sai trước khi người dùng mở khóa qua Lead Gate (tránh để người học suy ra đáp án để gian lận khi thi lại). | **[CẦN DUYỆT]** |
+| **DEC-02** | **Nội dung mờ sau khối khóa là chữ giả** | Lớp làm mờ (blur) phía sau thẻ khóa dùng văn bản giả lập (dummy/placeholder text), không chứa dữ liệu câu hỏi hay lời giải thật. Trong kiến trúc thực tế, server không bao giờ gửi payload lời giải bị khóa xuống DOM của trình duyệt. | **[CẦN DUYỆT]** |
+| **DEC-03** | **Chuẩn hóa thông điệp kết quả & Trình độ** | Thay thế chữ "ĐẠT (BESTANDEN)" bằng cụm từ chính xác: **"Đạt ngưỡng tham khảo"**, kèm chú thích rõ: *"Điểm luyện tập chỉ mang tính tham khảo, không phải kết quả thi chính thức. Ngưỡng điểm được cấu hình theo từng kỳ thi"*. Thay "Khá vững B1" bằng cách nói không khẳng định tuyệt đối: **"Gần mức B1"**. | **[CẦN DUYỆT]** |
+| **DEC-04** | **Thống nhất một lời kêu gọi mở khóa (Single CTA)** | Gộp các nút mở khóa phân tán thành một lời kêu gọi nhất quán duy nhất: **"Mở khóa toàn bộ lời giải chi tiết và phân tích lỗi sai"**, loại bỏ hoàn toàn sự mâu thuẫn giữa "từ Câu 3" và "30 câu". | **[CẦN DUYỆT]** |
+| **DEC-05** | **Không chọn sẵn lựa chọn trong Lead Gate** | Form Lead Gate tuyệt đối **KHÔNG** chọn sẵn bất kỳ giá trị nào cho "Mục tiêu học", "Thời gian dự kiến thi", "Nhóm đối tượng/Độ tuổi". Mặc định để placeholder *"Chọn..."*. Lý do: Thời gian thi "1–3 tháng" là tín hiệu Hot Lead quan trọng của phễu CRM, không được làm sai lệch dữ liệu phân loại. | **[CẦN DUYỆT]** |
+| **DEC-06** | **Trường Email chuyển thành Tùy chọn** | Trường Email trên form Lead Gate là tùy chọn (không bắt buộc), chỉ bắt buộc khi người học chọn nhận Ebook tài liệu hoặc nhận báo cáo qua email. Trường bắt buộc duy nhất để gửi OTP là Số điện thoại/Zalo. | **[CẦN DUYỆT]** |
+| **DEC-07** | **Trạng thái trực quan cho nhánh dưới 18 tuổi** | Nhánh học sinh dưới 18 tuổi có tab/màn hình xem riêng thể hiện đầy đủ trạng thái gửi ZNS cho Cha/Mẹ và màn hình Phụ huynh xác nhận đồng ý trước khi đội ngũ tuyển sinh được phép liên hệ. | **[CẦN DUYỆT]** |
+| **DEC-08** | **Cuộn độc lập phòng thi Desktop** | Trên màn hình Desktop (1280px), cột trái (Bài đọc/Audio) là sticky và cuộn độc lập với cột danh sách câu hỏi bên phải. Trên Mobile (375px), có thanh tab chuyển nhanh giữa tab "Đề bài" và tab "Câu hỏi". | **[CẦN DUYỆT]** |
+| **DEC-09** | **Trình phát Hören cấm tua & cấu hình Pause** | Thanh tiến trình audio của bài nghe Hören chỉ đóng vai trò hiển thị trực quan (read-only), **KHÔNG** cho phép người học bấm tua. Nút Tạm dừng (Pause) có thể hiện hoặc ẩn tùy theo cấu hình của từng kỳ thi (TELC cho phép/Goethe nghiêm ngặt). | **[CẦN DUYỆT]** |
+| **DEC-10** | **Loại bỏ chữ "DOL", "band" & vô hiệu hóa ÖSD** | Giao diện công khai loại bỏ hoàn toàn chữ "DOL", thuật ngữ "band điểm" (của IELTS); kỳ thi ÖSD được chuyển sang trạng thái vô hiệu hóa (disabled) kèm nhãn *"Sắp có"*. Bộ lọc catalog hoạt động tương tác thời gian thực trên dữ liệu mẫu. | **[CẦN DUYỆT]** |
+
+---
+
+## 3. Danh sách câu hỏi mở cần SHD Education phản hồi
 
 1. **Về quy chế liên hệ người dưới 18 tuổi:** Đội ngũ tư vấn của SHD sẽ gửi thông điệp tự động mời phụ huynh tham gia nhóm Zalo hay gọi điện trực tiếp phụ huynh sau khi phụ huynh bấm nút đồng ý trên Zalo?
 2. **Về việc xử lý Lead không đồng ý tiếp thị:** Với những người học hoàn thành bài thi nhưng không tích ô "Đồng ý nhận tư vấn khóa học", SHD có chính sách nuôi dưỡng (nurture) tự động chỉ qua Email bản tin hay hoàn toàn không liên hệ?
