@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cổng Điều Hướng Wireframe - SHD Tự Học Tiếng Đức</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --bg-canvas: #f4f5f7;
+      --bg-surface: #ffffff;
+      --border-color: #cbd0d6;
+      --border-dark: #8c939d;
+      --text-main: #1f2328;
+      --text-muted: #57606a;
+      --accent-wire: #2f363d;
+      --accent-active: #0969da;
+      --font-stack: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 24px 16px 60px;
+    }
+    .hub-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .hub-header {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .badge-hub {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: var(--accent-wire);
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    p.lead {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    /* Cards Grid */
+    .wireframe-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .wf-card {
+      background: var(--bg-surface);
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .wf-card:hover {
+      border-color: var(--accent-wire);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .wf-number {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .wf-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .wf-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .wf-features {
+      list-style: none;
+      font-size: 12px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .wf-features li::before {
+      content: "✓ ";
+      color: #1a7f37;
+      font-weight: bold;
+    }
+    .btn-open-wf {
+      display: block;
+      background: var(--accent-wire);
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      min-height: 44px;
+      line-height: 24px;
+    }
+    .btn-open-wf:hover {
+      background: #000;
+    }
+
+    /* Testing Guide Section */
+    .testing-guide {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .testing-guide h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+    }
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+    .guide-table th, .guide-table td {
+      border: 1px solid var(--border-color);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    .guide-table th {
+      background: #fafbfc;
+      font-weight: 700;
+    }
+
+    @media (max-width: 840px) {
+      .wireframe-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hub-container">
+    <header class="hub-header">
+      <span class="badge-hub">UX Prototyping & Wireframes Hub</span>
+      <h1>SHD Tự Học Tiếng Đức (tuhoctiengduc.shdeducation.vn)</h1>
+      <p class="lead">
+        Bộ Wireframe tương tác thuần (HTML/CSS, không phụ thuộc thư viện, chạy 100% offline) mô phỏng các màn hình tạo doanh thu (Money Screens), kiểm soát đáp án bảo mật và luồng chuyển đổi Lead Gate đa tầng.
+      </p>
+    </header>
+
+    <!-- Cards linking to all 3 wireframes -->
+    <div class="wireframe-cards">
+      
+      <!-- Card 1: Phòng thi -->
+      <div class="wf-card">
+        <div>
+          <div class="wf-number">MÀN HÌNH 01 (ƯU TIÊN 1)</div>
+          <h2 class="wf-title">Phòng Thi Chia Đôi Màn Hình</h2>
+          <p class="wf-desc">
+            Không gian thi thử chuẩn đề TELC/Goethe: chế độ Đọc (Lesen) và Nghe (Hören), tối ưu cho mobile 375px và desktop 1280px.
+          </p>
+          <ul class="wf-features">
+            <li>Đồng hồ đếm ngược server-authoritative</li>
+            <li>Bảo mật: Không lộ đáp án trước khi nộp</li>
+            <li>Audio Hören không nút tải, kiểm soát 2 lượt nghe</li>
+            <li>Chỉ báo tự lưu nháp & cơ chế lưu ngoại tuyến</li>
+            <li>Hộp thoại xác nhận nộp bài chi tiết</li>
+          </ul>
+        </div>
+        <a href="exam-room.html" class="btn-open-wf">Mở Phòng Thi (exam-room.html) →</a>
+      </div>
+
+      <!-- Card 2: Kết quả & Lead Gate -->
+      <div class="wf-card">
+        <div>
+          <div class="wf-number">MÀN HÌNH 02 (ƯU TIÊN 2)</div>
+          <h2 class="wf-title">Kết Quả & Lead Gate Đa Tầng</h2>
+          <p class="wf-desc">
+            Trang trả điểm, điểm chặn Lead Gate tại Câu 3, biểu mẫu thu thập lead kèm nhánh xác nhận phụ huynh cho người dưới 18 tuổi.
+          </p>
+          <ul class="wf-features">
+            <li>Điểm tổng & điểm kỹ năng xem miễn phí</li>
+            <li>Câu 1–2 mở công khai; Câu 3+ bị mờ khóa</li>
+            <li>Modal Lead Gate: Form $\rightarrow$ OTP $\rightarrow$ Thành công</li>
+            <li>Nhánh &lt;18 tuổi: Bắt buộc Zalo Cha/Mẹ</li>
+            <li>3 Checkbox đồng ý pháp lý không tích sẵn</li>
+            <li>CTA chính: Đăng ký Test 1-1 miễn phí</li>
+          </ul>
+        </div>
+        <a href="result-and-gate.html" class="btn-open-wf">Mở Trang Kết Quả (result-and-gate.html) →</a>
+      </div>
+
+      <!-- Card 3: Danh mục đề thi -->
+      <div class="wf-card">
+        <div>
+          <div class="wf-number">MÀN HÌNH 03 (ƯU TIÊN 3)</div>
+          <h2 class="wf-title">Danh Mục Đề Thi Dạng Thẻ</h2>
+          <p class="wf-desc">
+            Trang tìm kiếm và phân loại đề thi theo phong cách DOL Tự Học: bộ lọc kỳ thi TELC/Goethe, cấp độ A1–C1, kỹ năng và tiến độ.
+          </p>
+          <ul class="wf-features">
+            <li>Lưới thẻ đề thi trực quan, chuẩn touch target</li>
+            <li>Bộ lọc đa tiêu chí: Kỳ thi, Cấp độ, Kỹ năng</li>
+            <li>Thẻ trạng thái: Đang làm dở, Chưa làm, Đã xong</li>
+            <li>Thẻ ưu đãi: Đăng ký test đầu vào 1-1</li>
+            <li>Phân trang và tìm kiếm theo tên đề</li>
+          </ul>
+        </div>
+        <a href="catalog.html" class="btn-open-wf">Mở Danh Mục Đề (catalog.html) →</a>
+      </div>
+
+    </div>
+
+    <!-- Hướng dẫn kiểm thử kịch bản -->
+    <section class="testing-guide">
+      <h2>Kịch bản Kiểm tra & Đánh giá Nghiệm thu (Test Scenarios)</h2>
+      <table class="guide-table">
+        <thead>
+          <tr>
+            <th style="width: 25%;">Kịch bản cần kiểm tra</th>
+            <th style="width: 35%;">Thao tác thực hiện trên Wireframe</th>
+            <th style="width: 40%;">Kết quả mong đợi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Kiểm tra Responsive Mobile (375px)</strong></td>
+            <td>Mở DevTools (F12) $\rightarrow$ chuyển kích thước màn hình sang 375px (iPhone SE) trên cả 3 trang.</td>
+            <td>Không có thanh cuộn ngang; các nút bấm có chiều cao $\ge 44\text{px}$; trên phòng thi xuất hiện thanh chuyển đổi tab Đề thi $\leftrightarrow$ Phiếu câu hỏi.</td>
+          </tr>
+          <tr>
+            <td><strong>2. Bảo mật đáp án trước khi nộp</strong></td>
+            <td>Mở `exam-room.html`, kiểm tra giao diện và inspect DOM mã nguồn.</td>
+            <td>Tuyệt đối không có bất kỳ ký hiệu, màu sắc hay thuộc tính nào để lộ đáp án đúng trước khi người dùng bấm nộp bài.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Mô phỏng Mất mạng & Lỗi Audio</strong></td>
+            <td>Trên thanh demo đen ở đầu `exam-room.html`, bấm các nút: <em>"Simulate: Mất mạng/Online"</em> và <em>"Simulate: Lỗi Audio Hören"</em>.</td>
+            <td>Xuất hiện banner vàng cảnh báo mất mạng, trạng thái đổi thành "Lưu ngoại tuyến". Hộp lỗi audio hiện nút "Thử lại tải âm thanh" và không trừ lượt nghe.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Kiểm tra Điểm chặn Lead Gate</strong></td>
+            <td>Mở `result-and-gate.html`, cuộn xuống phần lời giải chi tiết.</td>
+            <td>Câu 1 & Câu 2 hiển thị đầy đủ đáp án và giải thích tiếng Việt. Từ Câu 3 trở đi nội dung bị làm mờ kèm thẻ phủ khóa "Mở khóa toàn bộ lời giải".</td>
+          </tr>
+          <tr>
+            <td><strong>5. Thử nghiệm Nhánh dưới 18 tuổi</strong></td>
+            <td>Bấm nút mở modal Lead Gate $\rightarrow$ tại ô "Nhóm đối tượng/Độ tuổi", chọn <em>"Học sinh (&lt; 18 tuổi)"</em>.</td>
+            <td>Form tự động mở rộng hộp màu vàng yêu cầu nhập số Zalo của Cha/Mẹ kèm ghi chú pháp lý [PLACEHOLDER - chờ pháp chế duyệt].</td>
+          </tr>
+          <tr>
+            <td><strong>6. Kiểm tra 3 Checkbox đồng ý</strong></td>
+            <td>Quan sát khối điều khoản ở cuối form Bước 1 trong Lead Gate.</td>
+            <td>Cả 3 ô đều KHÔNG tích sẵn. Nút "Nhận mã OTP" bị vô hiệu hóa cho tới khi người dùng chủ động tích ô [Bắt buộc].</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>
