@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe: Danh Mục Đề Thi Thử Tiếng Đức - SHD Tự Học Tiếng Đức</title>
+  <style>
+    /* Reset & Design System Tokens */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --bg-canvas: #f4f5f7;
+      --bg-surface: #ffffff;
+      --bg-muted: #ebecef;
+      --border-color: #cbd0d6;
+      --border-dark: #8c939d;
+      --text-main: #1f2328;
+      --text-muted: #57606a;
+      --accent-wire: #2f363d;
+      --accent-active: #0969da;
+      --success-bg: #dafbe1;
+      --success-text: #1a7f37;
+      --warning-bg: #fff8c5;
+      --warning-text: #9a6700;
+      --font-stack: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      line-height: 1.5;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, input, select, label, a {
+      font-family: inherit;
+      min-height: 44px;
+      touch-action: manipulation;
+    }
+    :focus-visible {
+      outline: 3px solid var(--accent-active);
+      outline-offset: 2px;
+    }
+
+    /* Top Meta Bar */
+    .wireframe-banner {
+      background: #24292f;
+      color: #fff;
+      padding: 8px 16px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .wireframe-banner a {
+      color: #58a6ff;
+      text-decoration: none;
+      min-height: auto;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    /* Layout Container */
+    .catalog-container {
+      max-width: 1240px;
+      margin: 20px auto 50px;
+      padding: 0 16px;
+    }
+
+    /* Hero Header */
+    .catalog-hero {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .catalog-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .catalog-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 800px;
+    }
+
+    /* Search & Filter Toolbar (DOL Tự Học style card grid layout) */
+    .filter-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .search-row {
+      display: flex;
+      gap: 12px;
+    }
+    .search-input {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 14px;
+      background: #fafbfc;
+    }
+    .search-input:focus {
+      background: #fff;
+      border-color: var(--accent-active);
+    }
+    .btn-search {
+      background: var(--accent-wire);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Filter Groups */
+    .filter-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-label {
+      min-width: 100px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .filter-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .filter-pill {
+      min-height: 34px;
+      padding: 4px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      background: #fafbfc;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .filter-pill:hover {
+      background: #f0f6fc;
+      border-color: var(--border-dark);
+    }
+    .filter-pill.active {
+      background: var(--accent-wire);
+      color: #fff;
+      border-color: var(--accent-wire);
+      font-weight: 600;
+    }
+
+    /* Filter Results Info Bar */
+    .results-info-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .btn-reset-filters {
+      background: none;
+      border: none;
+      color: #0969da;
+      cursor: pointer;
+      font-size: 13px;
+      text-decoration: underline;
+      min-height: auto;
+    }
+
+    /* Card Grid (Lưới thẻ đề thi) */
+    .exam-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    /* Individual Exam Card */
+    .exam-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s, box-shadow 0.15s;
+      position: relative;
+    }
+    .exam-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-color: var(--border-dark);
+    }
+    .exam-card.in-progress {
+      border-left: 4px solid #d4a72c;
+    }
+    .exam-card.completed {
+      border-left: 4px solid var(--success-text);
+    }
+
+    .card-badges {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      border: 1px solid var(--border-color);
+      background: var(--bg-muted);
+    }
+    .badge.b1 { background: #ddf4ff; color: #0969da; border-color: #54aeff; }
+    .badge.b2 { background: #ffebe9; color: #cf222e; border-color: #ff8182; }
+    .badge.status-resuming { background: var(--warning-bg); color: var(--warning-text); border-color: #d4a72c; }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-skills-tags {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .skill-tag {
+      font-size: 11px;
+      background: #fafbfc;
+      border: 1px solid var(--border-color);
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: #57606a;
+    }
+
+    /* In-progress mini bar */
+    .progress-box {
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .progress-bar {
+      height: 6px;
+      background: var(--border-color);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: #d4a72c;
+    }
+
+    .btn-card-action {
+      background: var(--accent-wire);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      border: 1px solid #000;
+    }
+    .btn-card-action:hover {
+      background: #000;
+    }
+    .btn-card-action.secondary {
+      background: #fff;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+    .btn-card-action.secondary:hover {
+      background: var(--bg-muted);
+    }
+
+    /* Special Promo Card: Test đầu vào 1-1 */
+    .promo-card {
+      grid-column: span 1;
+      background: #24292f;
+      color: #fff;
+      border-radius: 8px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid #444c56;
+    }
+    .promo-tag {
+      font-size: 11px;
+      font-weight: 700;
+      background: #f0883e;
+      color: #000;
+      padding: 3px 8px;
+      border-radius: 4px;
+      width: fit-content;
+      margin-bottom: 10px;
+    }
+    .promo-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .promo-desc {
+      font-size: 13px;
+      color: #8b949e;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .btn-promo {
+      background: #fff;
+      color: #24292f;
+      border: none;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Pagination */
+    .pagination-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 36px;
+    }
+    .page-btn {
+      min-width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      background: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .page-btn.active {
+      background: var(--accent-wire);
+      color: #fff;
+      border-color: var(--accent-wire);
+    }
+
+    /* Responsive Breakdown (Mobile First 375px & 1280px) */
+    @media (max-width: 1024px) {
+      .exam-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .exam-grid {
+        grid-template-columns: 1fr;
+      }
+      .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .search-row {
+        flex-direction: column;
+      }
+      .promo-card {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Wireframe Meta Bar -->
+  <div class="wireframe-banner">
+    <div>
+      <strong>[WIREFRAME] DANH MỤC ĐỀ THI THỬ</strong> — Lưới thẻ chuẩn DOL Tự Học | Lọc TELC / Goethe / Cấp độ A1–C1
+    </div>
+    <div>
+      <a href="index.html" style="margin-right: 12px;">← Về Hub Wireframe</a>
+      <a href="exam-room.html">Xem Phòng thi →</a>
+    </div>
+  </div>
+
+  <main class="catalog-container">
+    
+    <!-- Hero Header -->
+    <header class="catalog-hero">
+      <nav class="breadcrumb">Trang chủ / Kho đề thi thử tiếng Đức</nav>
+      <h1 class="catalog-title">Kho Đề Thi Thử Tiếng Đức TELC & Goethe (A1 – C1)</h1>
+      <p class="catalog-desc">
+        Hệ thống đề thi trắc nghiệm mô phỏng phòng thi thật với đồng hồ đếm ngược, trình phát nghe chuẩn đề thi và lời giải chi tiết bằng tiếng Việt giúp học viên nâng band điểm nhanh chóng.
+      </p>
+    </header>
+
+    <!-- Filter System Panel -->
+    <section class="filter-panel">
+      <!-- Search Input -->
+      <div class="search-row">
+        <input type="text" class="search-input" placeholder="Tìm kiếm theo tên đề (Ví dụ: TELC B1 Đề 02, Goethe B2 Lesen...)" aria-label="Tìm kiếm đề thi">
+        <button class="btn-search">Tìm kiếm</button>
+      </div>
+
+      <!-- Filter 1: Kỳ thi -->
+      <div class="filter-group">
+        <span class="filter-label">Kỳ thi:</span>
+        <div class="filter-options">
+          <button class="filter-pill active">Tất cả kỳ thi</button>
+          <button class="filter-pill">TELC Deutsch</button>
+          <button class="filter-pill">Goethe-Zertifikat</button>
+          <button class="filter-pill">ÖSD</button>
+        </div>
+      </div>
+
+      <!-- Filter 2: Trình độ -->
+      <div class="filter-group">
+        <span class="filter-label">Trình độ:</span>
+        <div class="filter-options">
+          <button class="filter-pill">Tất cả</button>
+          <button class="filter-pill">A1</button>
+          <button class="filter-pill">A2</button>
+          <button class="filter-pill active">B1</button>
+          <button class="filter-pill">B2</button>
+          <button class="filter-pill">C1</button>
+        </div>
+      </div>
+
+      <!-- Filter 3: Kỹ năng -->
+      <div class="filter-group">
+        <span class="filter-label">Kỹ năng:</span>
+        <div class="filter-options">
+          <button class="filter-pill active">Tất cả kỹ năng</button>
+          <button class="filter-pill">Đọc hiểu (Lesen)</button>
+          <button class="filter-pill">Nghe hiểu (Hören)</button>
+          <button class="filter-pill">Tổng hợp Đọc + Nghe</button>
+        </div>
+      </div>
+
+      <!-- Filter 4: Trạng thái cá nhân -->
+      <div class="filter-group">
+        <span class="filter-label">Trạng thái:</span>
+        <div class="filter-options">
+          <button class="filter-pill active">Tất cả đề</button>
+          <button class="filter-pill">Chưa làm</button>
+          <button class="filter-pill">Đang làm dở</button>
+          <button class="filter-pill">Đã hoàn thành</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results bar -->
+    <div class="results-info-bar">
+      <span>Tìm thấy <strong>12</strong> đề thi phù hợp với bộ lọc [TELC & Goethe / B1]</span>
+      <button class="btn-reset-filters">Đặt lại bộ lọc mặc định</button>
+    </div>
+
+    <!-- Exam Cards Grid -->
+    <section class="exam-grid">
+      
+      <!-- Card 1: Đề đang làm dở (Luồng B - Returning User) -->
+      <article class="exam-card in-progress">
+        <div>
+          <div class="card-badges">
+            <span class="badge">TELC</span>
+            <span class="badge b1">B1</span>
+            <span class="badge status-resuming">Đang làm dở (24/30)</span>
+          </div>
+          <h2 class="card-title">TELC Deutsch B1 - Đề thi thử tổng hợp số 02</h2>
+          <div class="card-meta">
+            <span class="meta-item">⏱ 65 phút</span>
+            <span class="meta-item">📝 30 câu hỏi</span>
+            <span class="meta-item">👥 3.420 lượt thi</span>
+          </div>
+          <div class="card-skills-tags">
+            <span class="skill-tag">Lesen</span>
+            <span class="skill-tag">Hören</span>
+            <span class="skill-tag">Giải thích chi tiết</span>
+          </div>
+          <div class="progress-box">
+            <div class="progress-text">
+              <span>Tiến độ làm bài</span>
+              <span><strong>80%</strong> (Còn 44 phút)</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+        <a href="exam-room.html" class="btn-card-action">
+          Tiếp tục làm bài thi →
+        </a>
+      </article>
+
+      <!-- Card 2: Đề chưa làm -->
+      <article class="exam-card">
+        <div>
+          <div class="card-badges">
+            <span class="badge">Goethe</span>
+            <span class="badge b1">B1</span>
+            <span class="badge" style="background: #e1f5fe;">Đề mới</span>
+          </div>
+          <h2 class="card-title">Goethe-Zertifikat B1 - Modul Lesen Teil 1–5</h2>
+          <div class="card-meta">
+            <span class="meta-item">⏱ 65 phút</span>
+            <span class="meta-item">📝 30 câu hỏi</span>
+            <span class="meta-item">👥 1.890 lượt thi</span>
+          </div>
+          <div class="card-skills-tags">
+            <span class="skill-tag">Lesen chuyên sâu</span>
+            <span class="skill-tag">Bẫy từ đồng nghĩa</span>
+          </div>
+        </div>
+        <a href="exam-room.html" class="btn-card-action secondary">
+          Làm bài thi ngay →
+        </a>
+      </article>
+
+      <!-- Card 3: Special Promo Card: Test 1-1 Miễn Phí -->
+      <aside class="promo-card">
+        <div>
+          <span class="promo-tag">ƯU ĐÃI ĐỘC QUYỀN</span>
+          <h3 class="promo-title">Chưa rõ mình đang ở trình độ nào?</h3>
+          <p class="promo-desc">
+            Đặt lịch test phản xạ và phát âm 1-1 cùng giáo viên chuyên môn của SHD Education. Nhận đánh giá CEFR chuẩn xác và lộ trình học tối ưu chỉ trong 30 phút.
+          </p>
+        </div>
+        <a href="result-and-gate.html" class="btn-promo">
+          Đăng ký Test 1-1 Miễn Phí →
+        </a>
+      </aside>
+
+      <!-- Card 4: Đã hoàn thành (Xem kết quả) -->
+      <article class="exam-card completed">
+        <div>
+          <div class="card-badges">
+            <span class="badge">TELC</span>
+            <span class="badge b1">B1</span>
+            <span class="badge" style="background: var(--success-bg); color: var(--success-text);">Đã làm: 21/30 (Đạt)</span>
+          </div>
+          <h2 class="card-title">TELC Deutsch B1 - Đề thi thử số 01 (Mô phỏng 2026)</h2>
+          <div class="card-meta">
+            <span class="meta-item">⏱ 65 phút</span>
+            <span class="meta-item">📝 30 câu hỏi</span>
+            <span class="meta-item">👥 5.110 lượt thi</span>
+          </div>
+          <div class="card-skills-tags">
+            <span class="skill-tag">Lesen</span>
+            <span class="skill-tag">Hören</span>
+          </div>
+        </div>
+        <a href="result-and-gate.html" class="btn-card-action secondary">
+          Xem lại kết quả & Lời giải →
+        </a>
+      </article>
+
+      <!-- Card 5: Đề B2 -->
+      <article class="exam-card">
+        <div>
+          <div class="card-badges">
+            <span class="badge">Goethe</span>
+            <span class="badge b2">B2</span>
+          </div>
+          <h2 class="card-title">Goethe-Zertifikat B2 - Modul Hören Teil 1–4</h2>
+          <div class="card-meta">
+            <span class="meta-item">⏱ 40 phút</span>
+            <span class="meta-item">📝 25 câu hỏi</span>
+            <span class="meta-item">👥 920 lượt thi</span>
+          </div>
+          <div class="card-skills-tags">
+            <span class="skill-tag">Hören</span>
+            <span class="skill-tag">Giọng bản xứ miền Nam Đức</span>
+          </div>
+        </div>
+        <a href="exam-room.html" class="btn-card-action secondary">
+          Làm bài thi ngay →
+        </a>
+      </article>
+
+      <!-- Card 6: Đề A2 Du học nghề -->
+      <article class="exam-card">
+        <div>
+          <div class="card-badges">
+            <span class="badge">TELC</span>
+            <span class="badge" style="background: #e8f5e9; color: #2e7d32;">A2</span>
+          </div>
+          <h2 class="card-title">TELC Deutsch A2 - Ôn thi cấp tốc Du học nghề</h2>
+          <div class="card-meta">
+            <span class="meta-item">⏱ 50 phút</span>
+            <span class="meta-item">📝 20 câu hỏi</span>
+            <span class="meta-item">👥 4.300 lượt thi</span>
+          </div>
+          <div class="card-skills-tags">
+            <span class="skill-tag">Giao tiếp hàng ngày</span>
+            <span class="skill-tag">Dễ đạt điểm tối đa</span>
+          </div>
+        </div>
+        <a href="exam-room.html" class="btn-card-action secondary">
+          Làm bài thi ngay →
+        </a>
+      </article>
+
+    </section>
+
+    <!-- Pagination -->
+    <nav class="pagination-bar" aria-label="Phân trang đề thi">
+      <button class="page-btn" disabled>«</button>
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">»</button>
+    </nav>
+
+  </main>
+
+</body>
+</html>
