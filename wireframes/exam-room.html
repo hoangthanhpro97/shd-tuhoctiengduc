@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wireframe: Phòng Thi Chia Đôi Màn Hình (Lesen & Hören) - SHD Tự Học Tiếng Đức</title>
+  <title>Wireframe: Phòng Thi Chia Đôi Màn Hình (Lesen &amp; Hören) - SHD Tự Học Tiếng Đức</title>
   <style>
     /* Reset & Design System Tokens (Wireframe Monochromatic) */
     *, *::before, *::after {
@@ -37,9 +37,10 @@
       line-height: 1.5;
       font-size: 15px;
       -webkit-font-smoothing: antialiased;
+      overflow-wrap: anywhere;
     }
 
-    /* Accessibility: Touch target & focus styles */
+    /* Accessibility: Touch target & focus styles >= 44px */
     button, input, label, a {
       font-family: inherit;
       min-height: 44px;
@@ -73,9 +74,10 @@
       display: flex;
       gap: 8px;
       align-items: center;
+      flex-wrap: wrap;
     }
     .demo-btn {
-      min-height: 28px;
+      min-height: 30px;
       padding: 2px 10px;
       font-size: 11px;
       background: #32383f;
@@ -88,7 +90,7 @@
       background: #444c56;
     }
 
-    /* Header Bar */
+    /* Header Sticky Bar */
     .exam-header {
       background: var(--bg-surface);
       border-bottom: 2px solid var(--border-color);
@@ -121,7 +123,7 @@
       text-transform: uppercase;
     }
     .exam-title {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
     }
 
@@ -129,13 +131,14 @@
     .status-group {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
     .save-indicator {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 13px;
+      font-size: 12px;
       padding: 4px 10px;
       border-radius: 20px;
       background: var(--success-bg);
@@ -162,21 +165,11 @@
       gap: 6px;
       background: var(--bg-muted);
       border: 1px solid var(--border-dark);
-      padding: 6px 14px;
+      padding: 6px 12px;
       border-radius: 6px;
-      font-family: "SF Mono", Consolas, monospace;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace;
       font-weight: 700;
-      font-size: 16px;
-    }
-    .timer-badge.warning {
-      background: var(--danger-bg);
-      color: var(--danger-text);
-      border-color: var(--danger-text);
-      animation: pulse 1s infinite alternate;
-    }
-    @keyframes pulse {
-      from { opacity: 0.8; }
-      to { opacity: 1; }
+      font-size: 15px;
     }
 
     /* Submit Button */
@@ -184,7 +177,7 @@
       background: var(--accent-wire);
       color: #fff;
       font-weight: 600;
-      padding: 8px 18px;
+      padding: 8px 16px;
       border-radius: 6px;
       border: 1px solid #000;
       cursor: pointer;
@@ -196,7 +189,7 @@
       background: #000;
     }
 
-    /* Mode Navigation (Lesen vs Hören) */
+    /* Skill Navigation (Lesen vs Hören) & Mobile Switcher */
     .skill-nav {
       background: var(--bg-surface);
       border-bottom: 1px solid var(--border-color);
@@ -216,8 +209,8 @@
       gap: 8px;
     }
     .tab-btn {
-      padding: 8px 18px;
-      font-size: 14px;
+      padding: 8px 16px;
+      font-size: 13px;
       font-weight: 600;
       background: var(--bg-muted);
       border: 1px solid var(--border-color);
@@ -235,6 +228,24 @@
     .view-mobile-switch {
       display: none;
       gap: 6px;
+      width: 100%;
+    }
+    .mobile-view-btn {
+      flex: 1;
+      text-align: center;
+      background: #fff;
+      border: 1px solid var(--border-color);
+      padding: 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      min-height: 44px;
+    }
+    .mobile-view-btn.active {
+      background: var(--accent-wire);
+      color: #fff;
+      border-color: var(--accent-wire);
     }
 
     /* Offline Alert Notification Banner */
@@ -252,7 +263,7 @@
       display: block;
     }
 
-    /* Main Container (Split-screen Desktop) */
+    /* Main Container (Desktop Split-screen with independent scroll) */
     .exam-container {
       max-width: 1320px;
       margin: 16px auto;
@@ -263,6 +274,21 @@
       align-items: start;
     }
 
+    /* Left Sticky Independent Scrolling Column (Desktop) */
+    .left-sticky-col {
+      position: sticky;
+      top: 76px;
+      max-height: calc(100vh - 96px);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-right: 4px;
+    }
+
+    /* Right Column: Questions scroll naturally */
+    .right-scroll-col {
+      min-width: 0;
+    }
+
     /* Content Panels */
     .panel {
       background: var(--bg-surface);
@@ -270,6 +296,7 @@
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin-bottom: 16px;
     }
     .panel-header {
       border-bottom: 2px solid var(--border-color);
@@ -278,6 +305,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .panel-title {
       font-size: 17px;
@@ -297,30 +326,28 @@
       padding: 16px;
       border: 1px solid var(--border-color);
       border-radius: 6px;
-      max-height: calc(100vh - 240px);
-      overflow-y: auto;
     }
     .reading-content h4 {
-      margin-bottom: 12px;
-      font-size: 16px;
+      margin-bottom: 10px;
+      font-size: 15px;
     }
     .reading-content p {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
-    /* Audio Hören Player UI */
+    /* Audio Hören Player UI - NO SEEK ALLOWED */
     .audio-player-card {
       background: #fafbfc;
       border: 2px dashed var(--border-dark);
       border-radius: 8px;
       padding: 18px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
     .audio-meta {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       flex-wrap: wrap;
       gap: 8px;
     }
@@ -367,20 +394,19 @@
       cursor: pointer;
       font-size: 18px;
     }
-    .btn-audio-play:disabled {
-      background: var(--border-color);
-      cursor: not-allowed;
-    }
-    .audio-progress-bar {
+    
+    /* READ-ONLY PROGRESS BAR (NO SEEK ALLOWED) */
+    .audio-progress-bar-readonly {
       flex: 1;
       height: 8px;
       background: var(--border-color);
       border-radius: 4px;
       position: relative;
-      cursor: pointer;
+      pointer-events: none; /* KHÔNG CHO TUA */
+      cursor: default;
     }
     .audio-progress-fill {
-      width: 35%;
+      width: 40%;
       height: 100%;
       background: var(--accent-wire);
       border-radius: 4px;
@@ -389,20 +415,27 @@
       font-family: monospace;
       font-size: 13px;
       color: var(--text-muted);
-      min-width: 75px;
+      min-width: 80px;
       text-align: right;
     }
+
     .audio-notice {
       margin-top: 12px;
       font-size: 12px;
       color: var(--text-muted);
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      gap: 4px;
     }
-    .audio-notice .no-download-badge {
-      font-style: italic;
-      color: #6e7781;
+    .audio-config-tag {
+      font-size: 11px;
+      color: #57606a;
+      background: #eff1f3;
+      padding: 2px 8px;
+      border-radius: 4px;
+      width: fit-content;
+      margin-top: 4px;
+      border: 1px solid var(--border-color);
     }
 
     .audio-error-box {
@@ -424,18 +457,21 @@
       background: #fff;
       border: 1px solid var(--danger-text);
       color: var(--danger-text);
-      padding: 4px 10px;
+      padding: 6px 12px;
       border-radius: 4px;
       cursor: pointer;
       font-size: 12px;
       font-weight: 600;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
     }
 
     /* Questions Pane (Aufgaben) */
     .questions-list {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 16px;
     }
     .question-card {
       border: 1px solid var(--border-color);
@@ -452,7 +488,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       gap: 8px;
     }
     .question-number {
@@ -466,11 +502,12 @@
       font-size: 12px;
       color: var(--text-muted);
       cursor: pointer;
-      padding: 4px 8px;
+      padding: 4px 10px;
       border: 1px solid var(--border-color);
       border-radius: 4px;
       background: #fff;
       user-select: none;
+      min-height: 36px;
     }
     .flag-toggle.flagged {
       background: #fff8c5;
@@ -480,11 +517,11 @@
     }
     .question-text {
       font-size: 15px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       color: #1f2328;
     }
 
-    /* Options List (Radio Buttons >= 44px) */
+    /* Options List (Radio Buttons >= 44px touch target) */
     .options-group {
       display: flex;
       flex-direction: column;
@@ -499,7 +536,7 @@
       border-radius: 6px;
       background: #fafbfc;
       cursor: pointer;
-      min-height: 44px;
+      min-height: 48px;
       transition: background 0.15s, border-color 0.15s;
     }
     .option-label:hover {
@@ -510,6 +547,7 @@
       width: 18px;
       height: 18px;
       accent-color: var(--accent-wire);
+      flex-shrink: 0;
     }
     .option-label.selected {
       background: #f0f6fc;
@@ -517,9 +555,9 @@
       font-weight: 500;
     }
 
-    /* Question Palette (Bảng điều hướng câu hỏi 1-30) */
+    /* Question Palette 1-30: Chia rõ theo kỹ năng */
     .palette-box {
-      margin-top: 24px;
+      margin-top: 20px;
       background: var(--bg-surface);
       border: 1px solid var(--border-color);
       border-radius: 8px;
@@ -532,6 +570,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .palette-legend {
       display: flex;
@@ -561,13 +601,23 @@
       border-color: #9a6700;
     }
 
+    .palette-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin: 10px 0 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+
     .palette-grid {
       display: grid;
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(8, 1fr);
       gap: 6px;
+      margin-bottom: 8px;
     }
     .palette-btn {
-      min-height: 36px;
+      min-height: 40px;
       background: #fff;
       border: 1px solid var(--border-color);
       border-radius: 4px;
@@ -591,8 +641,8 @@
     .palette-btn.flagged::after {
       content: "⚑";
       position: absolute;
-      top: -2px;
-      right: 2px;
+      top: -1px;
+      right: 3px;
       font-size: 10px;
       color: #d4a72c;
     }
@@ -626,7 +676,7 @@
     .modal-title {
       font-size: 18px;
       font-weight: 700;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .modal-summary-box {
       background: var(--bg-muted);
@@ -642,6 +692,7 @@
       justify-content: flex-end;
       gap: 10px;
       margin-top: 20px;
+      flex-wrap: wrap;
     }
     .btn-secondary {
       background: #fff;
@@ -650,6 +701,7 @@
       border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
+      min-height: 44px;
     }
     .btn-primary-danger {
       background: #cf222e;
@@ -662,6 +714,7 @@
       text-decoration: none;
       display: inline-flex;
       align-items: center;
+      min-height: 44px;
     }
 
     /* Responsive Breakdown: Mobile First (375px) vs Desktop (1280px) */
@@ -672,32 +725,22 @@
         margin: 10px auto;
         padding: 0 10px;
       }
+      .left-sticky-col {
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
+      }
       .view-mobile-switch {
         display: flex;
-        width: 100%;
         margin-top: 8px;
       }
-      .mobile-view-btn {
-        flex: 1;
-        text-align: center;
-        background: #fff;
-        border: 1px solid var(--border-color);
-        padding: 8px;
-        border-radius: 4px;
-        font-weight: 600;
-        font-size: 13px;
-        cursor: pointer;
-      }
-      .mobile-view-btn.active {
-        background: var(--bg-muted);
-        border-color: var(--accent-wire);
-      }
-      /* In Mobile view: toggle between Text/Audio pane and Questions pane */
-      .panel.mobile-hidden {
+      /* On Mobile: toggle between left-sticky-col (Đề bài/Audio) and right-scroll-col (Câu hỏi) */
+      .mobile-hidden {
         display: none !important;
       }
       .palette-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
       }
       .exam-title {
         font-size: 14px;
@@ -714,19 +757,21 @@
   <!-- Wireframe Meta Bar & Interactive Simulation Toggles -->
   <div class="wireframe-banner">
     <div>
-      <strong>[WIREFRAME] PHÒNG THI CHIA ĐÔI MÀN HÌNH</strong> — Tiêu chuẩn: 375px & 1280px | Đáp án đúng: BẢO MẬT TUYỆT ĐỐI
+      <strong>[WIREFRAME] PHÒNG THI CHIA ĐÔI MÀN HÌNH</strong> — Dữ liệu chuẩn spec 08 | Hören cấm tua | Đáp án bảo mật
     </div>
     <div class="demo-controls">
-      <span>Mô phỏng tương tác:</span>
+      <span>Mô phỏng:</span>
       <button class="demo-btn" onclick="toggleOffline()">Simulate: Mất mạng/Online</button>
       <button class="demo-btn" onclick="triggerAudioError()">Simulate: Lỗi Audio Hören</button>
-      <a href="index.html" style="margin-left: 8px;">← Về Hub Wireframe</a>
+      <button class="demo-btn" onclick="togglePauseConfig()">Toggle: Cho phép/Cấm Pause Hören</button>
+      <a href="index.html" style="margin-left: 8px;">← Về Hub</a>
+      <a href="result-and-gate.html" style="margin-left: 8px;">Xem Kết quả →</a>
     </div>
   </div>
 
   <!-- Offline Alert Banner (State: Offline) -->
   <div id="offline-banner" class="offline-banner">
-    ⚠️ <strong>MẤT KẾT NỐI INTERNET:</strong> Đang lưu các câu trả lời ngoại tuyến trên thiết bị. Không làm mới trình duyệt.
+    ⚠️ <strong>MẤT KẾT NỐI INTERNET:</strong> Đang lưu các câu trả lời ngoại tuyến trên thiết bị. Vui lòng tiếp tục làm bài bình thường.
   </div>
 
   <!-- Header Sticky Bar -->
@@ -734,7 +779,7 @@
     <div class="header-content">
       <div class="exam-info">
         <span class="exam-badge">TELC B1</span>
-        <span class="exam-title">Đề thi thử tổng hợp số 02 - Lesen & Hören</span>
+        <span class="exam-title">Đề thi thử tổng hợp số 02 - Lesen &amp; Hören</span>
       </div>
 
       <div class="status-group">
@@ -762,17 +807,17 @@
     <div class="skill-nav-inner">
       <div class="skill-tabs">
         <button class="tab-btn active" id="tab-lesen" onclick="switchSkill('lesen')">
-          📖 Teil 1: Leseverstehen (Đọc hiểu)
+          📖 Phần 1: Leseverstehen (Câu 1–15)
         </button>
         <button class="tab-btn" id="tab-hoeren" onclick="switchSkill('hoeren')">
-          🎧 Teil 2: Hörverstehen (Nghe hiểu)
+          🎧 Phần 2: Hörverstehen (Câu 16–30)
         </button>
       </div>
 
       <!-- Mobile Screen Toggle (Cho màn hình hẹp 375px) -->
       <div class="view-mobile-switch">
         <button class="mobile-view-btn active" id="m-btn-content" onclick="toggleMobileView('content')">
-          📄 Xem Đề / Bài đọc / Audio
+          📄 Đề bài (Đọc / Audio)
         </button>
         <button class="mobile-view-btn" id="m-btn-questions" onclick="toggleMobileView('questions')">
           📝 Phiếu câu hỏi (1–30)
@@ -784,17 +829,17 @@
   <!-- Main Split-screen Workspace -->
   <main class="exam-container">
     
-    <!-- LEFT PANEL: Bài đọc (Lesen) HOẶC Trình phát nghe (Hören) -->
-    <section class="panel" id="left-panel">
+    <!-- LEFT PANEL (STICKY & INDEPENDENT SCROLL ON DESKTOP) -->
+    <section class="left-sticky-col" id="left-panel">
       
       <!-- VIEW A: ĐỌC HIỂU (LESEN) -->
-      <div id="view-lesen-content">
+      <div class="panel" id="view-lesen-content">
         <div class="panel-header">
           <div>
             <h2 class="panel-title">Teil 1: Leseverstehen</h2>
             <p class="panel-subtitle">Lesen Sie den folgenden Text und lösen Sie die Aufgaben 1 bis 5.</p>
           </div>
-          <span class="exam-badge">5 Câu hỏi</span>
+          <span class="exam-badge">Aufgaben 1–5</span>
         </div>
 
         <div class="reading-content">
@@ -814,218 +859,382 @@
         </div>
       </div>
 
-      <!-- VIEW B: NGHE HIỂU (HÖREN) - Trình phát chuyên dụng không download -->
-      <div id="view-hoeren-content" style="display: none;">
+      <!-- VIEW B: NGHE HIỂU (HÖREN) - TRÌNH PHÁT BẢO MẬT KHÔNG CHO TUA -->
+      <div class="panel" id="view-hoeren-content" style="display: none;">
         <div class="panel-header">
           <div>
-            <h2 class="panel-title">Teil 2: Hörverstehen</h2>
-            <p class="panel-subtitle">Sie hören zwei Gespräche. Lösen Sie die Aufgaben 6 bis 10.</p>
+            <h2 class="panel-title">Teil 1: Hörverstehen</h2>
+            <p class="panel-subtitle">Sie hören fünf kurze Durchsagen. Lösen Sie die Aufgaben 16 bis 20.</p>
           </div>
-          <span class="exam-badge">5 Câu hỏi</span>
+          <span class="exam-badge">Aufgaben 16–20</span>
         </div>
 
         <div class="audio-player-card">
           <div class="audio-meta">
-            <span class="audio-badge">🎧 Audio Teil 2 (Track_02.mp3)</span>
+            <span class="audio-badge">🎧 Audio Track 01 (Teil 1 - Durchsagen)</span>
             <span id="audio-status" class="audio-status-pill">Sẵn sàng phát</span>
           </div>
 
-          <!-- Trình phát an toàn: Không nút tải xuống -->
+          <!-- Trình phát an toàn: KHÔNG NÚT TẢI, KHÔNG CHO TUA -->
           <div class="audio-controls">
             <button id="btn-play-audio" class="btn-audio-play" onclick="toggleAudio()" title="Phát âm thanh" aria-label="Phát audio">
               ▶
             </button>
-            <div class="audio-progress-bar" onclick="seekAudio(event)" title="Thanh tiến trình nghe">
+            <div class="audio-progress-bar-readonly" title="Thanh tiến trình chỉ xem (Không cho phép tua)">
               <div id="audio-progress-fill" class="audio-progress-fill"></div>
             </div>
             <div class="audio-time">
-              <span id="audio-current">01:14</span> / 03:25
+              <span id="audio-current">01:14</span> / 03:05
             </div>
           </div>
 
           <div class="audio-notice">
-            <span><strong>Quy định:</strong> Số lần nghe tối đa: <strong>2 lần</strong>. Hiện tại: <span id="listen-count">Lần 1 / 2</span></span>
-            <span class="no-download-badge">🔒 Trình phát bảo mật (Không cho phép tải về)</span>
+            <span><strong>Quy định:</strong> Số lần nghe: tối đa <strong>2 lần</strong>. Hiện tại: <span id="listen-count">Lần 1 / 2</span></span>
+            <span style="color: #6e7781; font-style: italic;">🔒 Trình phát bảo mật: Thanh tiến trình chỉ xem, KHÔNG cho tua nhanh/chậm.</span>
+            <div class="audio-config-tag" id="pause-config-tag">
+              ⚙️ Cấu hình đề thi: Cho phép tạm dừng (Pause: BẬT)
+            </div>
           </div>
 
-          <!-- Error State Box (Designed for poor network) -->
+          <!-- Error State Box -->
           <div id="audio-error-box" class="audio-error-box">
-            <span>⚠️ <strong>Lỗi kết nối âm thanh:</strong> Không thể tải đoạn nghe do sóng yếu. Lượt nghe của bạn KHÔNG bị trừ.</span>
+            <span>⚠️ <strong>Lỗi kết nối âm thanh:</strong> Không thể tải file do mạng yếu. Lượt nghe của bạn KHÔNG bị trừ.</span>
             <button class="btn-retry-audio" onclick="retryAudio()">Thử lại tải âm thanh</button>
           </div>
         </div>
 
-        <div class="reading-content" style="max-height: 250px;">
-          <h4>Hướng dẫn phần thi Nghe:</h4>
+        <div class="reading-content" style="font-size: 13px;">
+          <h4>Hướng dẫn phần thi Nghe (Hörverstehen):</h4>
           <p>1. Bạn có 30 giây để đọc trước các câu hỏi trước khi băng phát.</p>
-          <p>2. Trong quá trình nghe, hãy chọn phương án đúng nhất A, B hoặc C trên phiếu câu hỏi bên phải.</p>
-          <p>3. Khi hoàn thành lần nghe thứ 2, trình phát sẽ tự động khóa lại.</p>
+          <p>2. Mỗi bài nghe được phát đúng 2 lần. Không tải xuống file âm thanh.</p>
+          <p>3. Hãy chọn phương án đúng nhất A, B hoặc C trên phiếu câu hỏi bên phải.</p>
         </div>
       </div>
 
     </section>
 
-    <!-- RIGHT PANEL: Phiếu câu hỏi trắc nghiệm & Bảng chọn câu 1-30 -->
-    <section class="panel" id="right-panel">
-      <div class="panel-header">
-        <div>
-          <h2 class="panel-title">Phiếu câu hỏi & Trả lời</h2>
-          <p class="panel-subtitle">Lựa chọn 1 đáp án duy nhất cho mỗi câu. Đáp án không hiển thị trước khi nộp.</p>
+    <!-- RIGHT PANEL (QUESTIONS & QUESTION PALETTE) -->
+    <section class="right-scroll-col" id="right-panel">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title" id="questions-section-title">Phiếu Câu Hỏi: Teil 1 (Aufgaben 1–5)</h2>
+            <p class="panel-subtitle">Lựa chọn 1 đáp án duy nhất cho mỗi câu. Đáp án không hiển thị trước khi nộp.</p>
+          </div>
+          <span class="panel-subtitle">Đã chọn: <strong id="answered-counter">21</strong>/30 câu</span>
         </div>
-        <span class="panel-subtitle">Đã làm: <strong id="answered-counter">3</strong>/30 câu</span>
-      </div>
 
-      <!-- Danh sách câu hỏi mẫu -->
-      <div class="questions-list">
+        <!-- CÂU HỎI THEO TAB ĐANG CHỌN (KHÔNG LẶP CÂU) -->
         
-        <!-- Câu 1 -->
-        <article class="question-card active" id="q-1">
-          <div class="question-card-header">
-            <span class="question-number">Aufgabe 1 (Beispielfrage 1)</span>
-            <span class="flag-toggle" onclick="toggleFlag(1, this)" title="Đánh dấu để xem lại sau">
-              ⚑ Đánh dấu xem lại
-            </span>
-          </div>
-          <p class="question-text">Warum ist das duale Ausbildungssystem für ausländische Bewerber attraktiv?</p>
-          <div class="options-group">
-            <label class="option-label selected">
-              <input type="radio" name="q1" value="A" checked onchange="recordAnswer(1)">
-              <span>A. Man lernt ausschließlich an der Universität ohne Praxis.</span>
-            </label>
-            <label class="option-label">
-              <input type="radio" name="q1" value="B" onchange="recordAnswer(1)">
-              <span>B. Es verbindet theoretisches Lernen mit bezahlter betrieblicher Praxis.</span>
-            </label>
-            <label class="option-label">
-              <input type="radio" name="q1" value="C" onchange="recordAnswer(1)">
-              <span>C. Man muss vor der Einreise keine Sprachkenntnisse nachweisen.</span>
-            </label>
-          </div>
-        </article>
+        <!-- NHÓM CÂU HỎI LESEN (CÂU 1 - 5) -->
+        <div class="questions-list" id="lesen-questions-group">
+          
+          <!-- Câu 1 (Spec: User chọn B, ĐÚNG) -->
+          <article class="question-card" id="q-1">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 1 (Beispielfrage 1)</span>
+              <span class="flag-toggle" onclick="toggleFlag(1, this)" title="Đánh dấu để xem lại sau">
+                ⚑ Đánh dấu xem lại
+              </span>
+            </div>
+            <p class="question-text">Warum ist das duale Ausbildungssystem für ausländische Bewerber attraktiv?</p>
+            <div class="options-group">
+              <label class="option-label">
+                <input type="radio" name="q1" value="A" onchange="recordAnswer(1)">
+                <span>A. Man lernt ausschließlich an der Universität ohne Praxis.</span>
+              </label>
+              <label class="option-label selected">
+                <input type="radio" name="q1" value="B" checked onchange="recordAnswer(1)">
+                <span>B. Es verbindet theoretisches Lernen mit bezahlter betrieblicher Praxis.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q1" value="C" onchange="recordAnswer(1)">
+                <span>C. Man muss vor der Einreise keine Sprachkenntnisse nachweisen.</span>
+              </label>
+            </div>
+          </article>
 
-        <!-- Câu 2 -->
-        <article class="question-card" id="q-2">
-          <div class="question-card-header">
-            <span class="question-number">Aufgabe 2 (Beispielfrage 2)</span>
-            <span class="flag-toggle" onclick="toggleFlag(2, this)" title="Đánh dấu để xem lại sau">
-              ⚑ Đánh dấu xem lại
-            </span>
-          </div>
-          <p class="question-text">In welchen Bereichen wird in Deutschland gegenwärtig besonders viel Personal gesucht?</p>
-          <div class="options-group">
-            <label class="option-label">
-              <input type="radio" name="q2" value="A" onchange="recordAnswer(2)">
-              <span>A. Vor allem im Bankwesen und in der Landwirtschaft.</span>
-            </label>
-            <label class="option-label selected">
-              <input type="radio" name="q2" value="B" checked onchange="recordAnswer(2)">
-              <span>B. In der Krankenpflege, Mechatronik und Gastronomie.</span>
-            </label>
-            <label class="option-label">
-              <input type="radio" name="q2" value="C" onchange="recordAnswer(2)">
-              <span>C. Ausschließlich im Hochschulbereich als Dozent.</span>
-            </label>
-          </div>
-        </article>
+          <!-- Câu 2 (Spec: User chọn A, SAI) -->
+          <article class="question-card" id="q-2">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 2 (Beispielfrage 2)</span>
+              <span class="flag-toggle" onclick="toggleFlag(2, this)" title="Đánh dấu để xem lại sau">
+                ⚑ Đánh dấu xem lại
+              </span>
+            </div>
+            <p class="question-text">In welchen Bereichen wird in Deutschland gegenwärtig besonders viel Personal gesucht?</p>
+            <div class="options-group">
+              <label class="option-label selected">
+                <input type="radio" name="q2" value="A" checked onchange="recordAnswer(2)">
+                <span>A. Vor allem im Bankwesen und in der Landwirtschaft.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q2" value="B" onchange="recordAnswer(2)">
+                <span>B. In der Krankenpflege, Mechatronik und Gastronomie.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q2" value="C" onchange="recordAnswer(2)">
+                <span>C. Ausschließlich im Hochschulbereich als Dozent.</span>
+              </label>
+            </div>
+          </article>
 
-        <!-- Câu 3 (Điểm chạm sau này sẽ bị khóa lời giải) -->
-        <article class="question-card" id="q-3">
-          <div class="question-card-header">
-            <span class="question-number">Aufgabe 3 (Beispielfrage 3)</span>
-            <span class="flag-toggle flagged" onclick="toggleFlag(3, this)" title="Đánh dấu để xem lại sau">
-              ⚑ Đã đánh dấu xem lại
-            </span>
-          </div>
-          <p class="question-text">Welches Sprachniveau wird für den theoretischen Unterricht an der Berufsschule empfohlen?</p>
-          <div class="options-group">
-            <label class="option-label">
-              <input type="radio" name="q3" value="A" onchange="recordAnswer(3)">
-              <span>A. Grundkenntnisse auf Niveau A1 genügen vollkommen.</span>
-            </label>
-            <label class="option-label">
-              <input type="radio" name="q3" value="B" onchange="recordAnswer(3)">
-              <span>B. Solide Kenntnisse auf dem Niveau B1 oder B2.</span>
-            </label>
-            <label class="option-label selected">
-              <input type="radio" name="q3" value="C" checked onchange="recordAnswer(3)">
-              <span>C. Ausschließlich muttersprachliche Kompetenzen auf C2-Niveau.</span>
-            </label>
-          </div>
-        </article>
+          <!-- Câu 3 (Spec: User chọn B, ĐÚNG, Gắn cờ) -->
+          <article class="question-card" id="q-3">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 3 (Beispielfrage 3)</span>
+              <span class="flag-toggle flagged" onclick="toggleFlag(3, this)" title="Đánh dấu để xem lại sau">
+                ⚑ Đã đánh dấu xem lại
+              </span>
+            </div>
+            <p class="question-text">Welches Sprachniveau wird für den theoretischen Unterricht an der Berufsschule empfohlen?</p>
+            <div class="options-group">
+              <label class="option-label">
+                <input type="radio" name="q3" value="A" onchange="recordAnswer(3)">
+                <span>A. Grundkenntnisse auf Niveau A1 genügen vollkommen.</span>
+              </label>
+              <label class="option-label selected">
+                <input type="radio" name="q3" value="B" checked onchange="recordAnswer(3)">
+                <span>B. Solide Kenntnisse auf dem Niveau B1 oder B2.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q3" value="C" onchange="recordAnswer(3)">
+                <span>C. Ausschließlich muttersprachliche Kompetenzen auf C2-Niveau.</span>
+              </label>
+            </div>
+          </article>
 
-        <!-- Câu 4 (Chưa làm) -->
-        <article class="question-card" id="q-4">
-          <div class="question-card-header">
-            <span class="question-number">Aufgabe 4 (Beispielfrage 4)</span>
-            <span class="flag-toggle" onclick="toggleFlag(4, this)" title="Đánh dấu để xem lại sau">
-              ⚑ Đánh dấu xem lại
-            </span>
-          </div>
-          <p class="question-text">Was gilt laut Experten als Schlüssel für eine erfolgreiche Integration?</p>
-          <div class="options-group">
-            <label class="option-label">
-              <input type="radio" name="q4" value="A" onchange="recordAnswer(4)">
-              <span>A. Sprachliche und kulturelle Vorbereitung im Heimatland.</span>
-            </label>
-            <label class="option-label">
-              <input type="radio" name="q4" value="B" onchange="recordAnswer(4)">
-              <span>B. Sofortiger Wechsel des Ausbildungsbetriebs nach Ankunft.</span>
-            </label>
-            <label class="option-label">
-              <input type="radio" name="q4" value="C" onchange="recordAnswer(4)">
-              <span>C. Vollständiger Verzicht auf Kontakt zur Heimatkultur.</span>
-            </label>
-          </div>
-        </article>
+          <!-- Câu 4 (Spec: User chọn A, ĐÚNG) -->
+          <article class="question-card" id="q-4">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 4 (Beispielfrage 4)</span>
+              <span class="flag-toggle" onclick="toggleFlag(4, this)" title="Đánh dấu để xem lại sau">
+                ⚑ Đánh dấu xem lại
+              </span>
+            </div>
+            <p class="question-text">Was gilt laut Experten als Schlüssel für eine erfolgreiche Integration?</p>
+            <div class="options-group">
+              <label class="option-label selected">
+                <input type="radio" name="q4" value="A" checked onchange="recordAnswer(4)">
+                <span>A. Sprachliche und kulturelle Vorbereitung im Heimatland.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q4" value="B" onchange="recordAnswer(4)">
+                <span>B. Sofortiger Wechsel des Ausbildungsbetriebs nach Ankunft.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q4" value="C" onchange="recordAnswer(4)">
+                <span>C. Vollständiger Verzicht auf Kontakt zur Heimatkultur.</span>
+              </label>
+            </div>
+          </article>
 
-      </div>
+          <!-- Câu 5 (Spec: User chọn C, ĐÚNG) -->
+          <article class="question-card" id="q-5">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 5 (Beispielfrage 5)</span>
+              <span class="flag-toggle" onclick="toggleFlag(5, this)" title="Đánh dấu để xem lại sau">
+                ⚑ Đánh dấu xem lại
+              </span>
+            </div>
+            <p class="question-text">Wie beurteilt der Text die Zukunftsaussichten für Absolventen der dualen Ausbildung?</p>
+            <div class="options-group">
+              <label class="option-label">
+                <input type="radio" name="q5" value="A" onchange="recordAnswer(5)">
+                <span>A. Eher unsicher aufgrund hoher Arbeitslosigkeit.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q5" value="B" onchange="recordAnswer(5)">
+                <span>B. Nur für Personen mit deutschem Pass positiv.</span>
+              </label>
+              <label class="option-label selected">
+                <input type="radio" name="q5" value="C" checked onchange="recordAnswer(5)">
+                <span>C. Sehr gut wegen des anhaltenden Fachkräftemangels.</span>
+              </label>
+            </div>
+          </article>
 
-      <!-- Question Palette 1-30 (Bảng chọn câu) -->
-      <div class="palette-box">
-        <div class="palette-header">
-          <span>Ma trận câu hỏi (1–30)</span>
-          <div class="palette-legend">
-            <span class="legend-item"><span class="legend-box answered"></span> Đã chọn</span>
-            <span class="legend-item"><span class="legend-box flagged"></span> Xem lại</span>
-            <span class="legend-item"><span class="legend-box"></span> Chưa làm</span>
+        </div>
+
+        <!-- NHÓM CÂU HỎI HÖREN (CÂU 16 - 20) - CHỈ HIỆN KHI BẤM TAB HÖREN -->
+        <div class="questions-list" id="hoeren-questions-group" style="display: none;">
+          
+          <!-- Câu 16 (Spec: User chọn A, ĐÚNG) -->
+          <article class="question-card" id="q-16">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 16 (Hörverstehen Teil 1)</span>
+              <span class="flag-toggle" onclick="toggleFlag(16, this)">⚑ Đánh dấu xem lại</span>
+            </div>
+            <p class="question-text">Sie hören eine Durchsage am Hauptbahnhof. Welcher Zug hat heute Verspätung?</p>
+            <div class="options-group">
+              <label class="option-label selected">
+                <input type="radio" name="q16" value="A" checked onchange="recordAnswer(16)">
+                <span>A. Der ICE nach München über Nürnberg.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q16" value="B" onchange="recordAnswer(16)">
+                <span>B. Die Regionalbahn nach Frankfurt Flughafen.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q16" value="C" onchange="recordAnswer(16)">
+                <span>C. Der Nachtzug nach Wien.</span>
+              </label>
+            </div>
+          </article>
+
+          <!-- Câu 17 (Spec: User chọn C, SAI) -->
+          <article class="question-card" id="q-17">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 17 (Hörverstehen Teil 1)</span>
+              <span class="flag-toggle" onclick="toggleFlag(17, this)">⚑ Đánh dấu xem lại</span>
+            </div>
+            <p class="question-text">Was sollen die Fahrgäste nach Gleis 4 tun?</p>
+            <div class="options-group">
+              <label class="option-label">
+                <input type="radio" name="q17" value="A" onchange="recordAnswer(17)">
+                <span>A. Im Zug sitzen bleiben und abwarten.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q17" value="B" onchange="recordAnswer(17)">
+                <span>B. Den Schienenersatzverkehr mit Bussen nutzen.</span>
+              </label>
+              <label class="option-label selected">
+                <input type="radio" name="q17" value="C" checked onchange="recordAnswer(17)">
+                <span>C. Eine neue Fahrkarte am Schalter kaufen.</span>
+              </label>
+            </div>
+          </article>
+
+          <!-- Câu 18 (Spec: User chọn B, ĐÚNG, Gắn cờ) -->
+          <article class="question-card" id="q-18">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 18 (Hörverstehen Teil 1)</span>
+              <span class="flag-toggle flagged" onclick="toggleFlag(18, this)">⚑ Đã đánh dấu xem lại</span>
+            </div>
+            <p class="question-text">Wo findet die Gepäckausgabe für Passagiere aus Hanoi statt?</p>
+            <div class="options-group">
+              <label class="option-label">
+                <input type="radio" name="q18" value="A" onchange="recordAnswer(18)">
+                <span>A. An Band 2 im Terminal 1.</span>
+              </label>
+              <label class="option-label selected">
+                <input type="radio" name="q18" value="B" checked onchange="recordAnswer(18)">
+                <span>B. An Band 5 im Ankunftsbereich B.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q18" value="C" onchange="recordAnswer(18)">
+                <span>C. Direkt beim Zollschalter.</span>
+              </label>
+            </div>
+          </article>
+
+          <!-- Câu 19 (Spec: User chọn C, ĐÚNG) -->
+          <article class="question-card" id="q-19">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 19 (Hörverstehen Teil 1)</span>
+              <span class="flag-toggle" onclick="toggleFlag(19, this)">⚑ Đánh dấu xem lại</span>
+            </div>
+            <p class="question-text">Bis wann ist der Kundenservice heute geöffnet?</p>
+            <div class="options-group">
+              <label class="option-label">
+                <input type="radio" name="q19" value="A" onchange="recordAnswer(19)">
+                <span>A. Bis 16:30 Uhr.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q19" value="B" onchange="recordAnswer(19)">
+                <span>B. Bis 18:00 Uhr.</span>
+              </label>
+              <label class="option-label selected">
+                <input type="radio" name="q19" value="C" checked onchange="recordAnswer(19)">
+                <span>C. Bis 20:00 Uhr.</span>
+              </label>
+            </div>
+          </article>
+
+          <!-- Câu 20 (Spec: User chọn A, SAI) -->
+          <article class="question-card" id="q-20">
+            <div class="question-card-header">
+              <span class="question-number">Aufgabe 20 (Hörverstehen Teil 1)</span>
+              <span class="flag-toggle" onclick="toggleFlag(20, this)">⚑ Đánh dấu xem lại</span>
+            </div>
+            <p class="question-text">Warum hält der Bus nicht an der Haltestelle Rathaus?</p>
+            <div class="options-group">
+              <label class="option-label selected">
+                <input type="radio" name="q20" value="A" checked onchange="recordAnswer(20)">
+                <span>A. Wegen einer Baustelle auf der Hauptstraße.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q20" value="B" onchange="recordAnswer(20)">
+                <span>B. Wegen eines Stadtfestes am Wochenende.</span>
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q20" value="C" onchange="recordAnswer(20)">
+                <span>C. Der Fahrer muss eine Pause einlegen.</span>
+              </label>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- QUESTION PALETTE 1-30 (CHIA THEO KỸ NĂNG) -->
+        <div class="palette-box">
+          <div class="palette-header">
+            <span>Ma trận câu hỏi (1–30)</span>
+            <div class="palette-legend">
+              <span class="legend-item"><span class="legend-box answered"></span> Đã chọn (21)</span>
+              <span class="legend-item"><span class="legend-box flagged"></span> Xem lại (2)</span>
+              <span class="legend-item"><span class="legend-box"></span> Chưa chọn (9)</span>
+            </div>
+          </div>
+
+          <!-- Nhóm 1: Lesen (1-15) -->
+          <div class="palette-section-title">
+            <span>📖 Leseverstehen (Câu 1–15)</span>
+            <span>Đã làm: 12/15</span>
+          </div>
+          <div class="palette-grid">
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 1)">1</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 2)">2</button>
+            <button class="palette-btn answered flagged" onclick="jumpToQuestion('lesen', 3)">3</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 4)">4</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 5)">5</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 1)">6</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 2)">7</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 3)">8</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 4)">9</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 5)">10</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 1)">11</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('lesen', 2)">12</button>
+            <button class="palette-btn" onclick="jumpToQuestion('lesen', 3)">13</button>
+            <button class="palette-btn" onclick="jumpToQuestion('lesen', 4)">14</button>
+            <button class="palette-btn" onclick="jumpToQuestion('lesen', 5)">15</button>
+          </div>
+
+          <!-- Nhóm 2: Hören (16-30) -->
+          <div class="palette-section-title">
+            <span>🎧 Hörverstehen (Câu 16–30)</span>
+            <span>Đã làm: 9/15</span>
+          </div>
+          <div class="palette-grid">
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 16)">16</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 17)">17</button>
+            <button class="palette-btn answered flagged" onclick="jumpToQuestion('hoeren', 18)">18</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 19)">19</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 20)">20</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 16)">21</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 17)">22</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 18)">23</button>
+            <button class="palette-btn answered" onclick="jumpToQuestion('hoeren', 19)">24</button>
+            <button class="palette-btn" onclick="jumpToQuestion('hoeren', 20)">25</button>
+            <button class="palette-btn" onclick="jumpToQuestion('hoeren', 16)">26</button>
+            <button class="palette-btn" onclick="jumpToQuestion('hoeren', 17)">27</button>
+            <button class="palette-btn" onclick="jumpToQuestion('hoeren', 18)">28</button>
+            <button class="palette-btn" onclick="jumpToQuestion('hoeren', 19)">29</button>
+            <button class="palette-btn" onclick="jumpToQuestion('hoeren', 20)">30</button>
           </div>
         </div>
 
-        <div class="palette-grid">
-          <!-- 30 câu hỏi -->
-          <button class="palette-btn answered" onclick="scrollToQ(1)">1</button>
-          <button class="palette-btn answered" onclick="scrollToQ(2)">2</button>
-          <button class="palette-btn answered flagged" onclick="scrollToQ(3)">3</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">4</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">5</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">6</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">7</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">8</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">9</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">10</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">11</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">12</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">13</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">14</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">15</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">16</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">17</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">18</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">19</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">20</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">21</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">22</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">23</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">24</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">25</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">26</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">27</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">28</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">29</button>
-          <button class="palette-btn" onclick="scrollToQ(4)">30</button>
-        </div>
       </div>
-
     </section>
 
   </main>
@@ -1037,10 +1246,10 @@
       <p style="color: var(--text-muted); font-size: 14px;">Vui lòng kiểm tra lại tình trạng làm bài của bạn trước khi gửi kết quả về hệ thống.</p>
       
       <div class="modal-summary-box">
-        <div>• Tổng số câu hỏi: <strong>30 câu</strong></div>
-        <div style="color: #1a7f37;">• Đã chọn đáp án: <strong>3 câu</strong></div>
-        <div style="color: #cf222e;">• Chưa chọn đáp án: <strong>27 câu</strong></div>
-        <div style="color: #9a6700;">• Đánh dấu xem lại: <strong>1 câu (Câu 3)</strong></div>
+        <div>• Tổng số câu hỏi: <strong>30 câu</strong> (Lesen: 15 / Hören: 15)</div>
+        <div style="color: #1a7f37;">• Đã chọn đáp án: <strong>21 câu</strong></div>
+        <div style="color: #cf222e;">• Chưa chọn đáp án: <strong>9 câu</strong></div>
+        <div style="color: #9a6700;">• Đánh dấu xem lại: <strong>2 câu (Câu 3, Câu 18)</strong></div>
         <div style="margin-top: 10px; font-weight: 600; color: #cf222e;">
           ⚠️ Sau khi nộp bài, bạn không thể thay đổi các câu trả lời!
         </div>
@@ -1061,17 +1270,39 @@
       const hoerenView = document.getElementById('view-hoeren-content');
       const tabLesen = document.getElementById('tab-lesen');
       const tabHoeren = document.getElementById('tab-hoeren');
+      const lesenQuestions = document.getElementById('lesen-questions-group');
+      const hoerenQuestions = document.getElementById('hoeren-questions-group');
+      const title = document.getElementById('questions-section-title');
 
       if (skill === 'hoeren') {
         lesenView.style.display = 'none';
         hoerenView.style.display = 'block';
         tabHoeren.classList.add('active');
         tabLesen.classList.remove('active');
+        lesenQuestions.style.display = 'none';
+        hoerenQuestions.style.display = 'flex';
+        title.innerText = 'Phiếu Câu Hỏi: Teil 1 (Aufgaben 16–20)';
       } else {
         hoerenView.style.display = 'none';
         lesenView.style.display = 'block';
         tabLesen.classList.add('active');
         tabHoeren.classList.remove('active');
+        hoerenQuestions.style.display = 'none';
+        lesenQuestions.style.display = 'flex';
+        title.innerText = 'Phiếu Câu Hỏi: Teil 1 (Aufgaben 1–5)';
+      }
+    }
+
+    // Jump to question from palette
+    function jumpToQuestion(skill, qNum) {
+      switchSkill(skill);
+      setTimeout(() => {
+        const el = document.getElementById('q-' + qNum) || document.getElementById('q-1');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 50);
+
+      if (window.innerWidth <= 768) {
+        toggleMobileView('questions');
       }
     }
 
@@ -1105,25 +1336,13 @@
       }
     }
 
-    // Question scroll
-    function scrollToQ(num) {
-      const el = document.getElementById('q-' + num) || document.getElementById('q-1');
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // On mobile, automatically show questions panel
-      if (window.innerWidth <= 768) {
-        toggleMobileView('questions');
-      }
-    }
-
-    // Answer radio handler
+    // Answer radio handler (auto-save simulation)
     function recordAnswer(qNum) {
-      // simulate auto-save
-      const pill = document.getElementById('save-pill');
       const saveText = document.getElementById('save-text');
       saveText.innerText = 'Đang lưu...';
       setTimeout(() => {
         saveText.innerText = 'Đã tự động lưu vừa xong';
-      }, 400);
+      }, 300);
     }
 
     // Submit modal toggle
@@ -1134,21 +1353,44 @@
       document.getElementById('submit-modal').classList.remove('open');
     }
 
-    // Audio simulation
+    // Audio Hören Player simulation
     let isPlaying = false;
+    let allowPause = true;
+
     function toggleAudio() {
       const btn = document.getElementById('btn-play-audio');
       const status = document.getElementById('audio-status');
-      isPlaying = !isPlaying;
-      if (isPlaying) {
-        btn.innerText = '❚❚';
+      
+      if (!isPlaying) {
+        isPlaying = true;
+        btn.innerText = allowPause ? '❚❚' : '▶';
+        if (!allowPause) {
+          btn.disabled = true;
+          btn.title = 'Bài thi không cho phép tạm dừng';
+        }
         status.innerText = 'Đang phát...';
         status.className = 'audio-status-pill playing';
       } else {
-        btn.innerText = '▶';
-        status.innerText = 'Tạm dừng';
-        status.className = 'audio-status-pill';
+        if (allowPause) {
+          isPlaying = false;
+          btn.innerText = '▶';
+          status.innerText = 'Tạm dừng';
+          status.className = 'audio-status-pill';
+        }
       }
+    }
+
+    function togglePauseConfig() {
+      allowPause = !allowPause;
+      const tag = document.getElementById('pause-config-tag');
+      const btn = document.getElementById('btn-play-audio');
+      btn.disabled = false;
+      if (allowPause) {
+        tag.innerText = '⚙️ Cấu hình đề thi: Cho phép tạm dừng (Pause: BẬT)';
+      } else {
+        tag.innerText = '⚙️ Cấu hình đề thi: KHÔNG cho tạm dừng (Mô phỏng thi nghiêm ngặt)';
+      }
+      switchSkill('hoeren');
     }
 
     function triggerAudioError() {
