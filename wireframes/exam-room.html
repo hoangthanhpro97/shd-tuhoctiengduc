@@ -63,6 +63,18 @@
       flex-wrap: wrap;
       gap: 8px;
     }
+    .btn-demo-toggle {
+      display: none;
+      min-height: 32px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      background: #32383f;
+      color: #f0f6fc;
+      border: 1px solid #484f58;
+      border-radius: 4px;
+      cursor: pointer;
+    }
     .wireframe-banner a {
       color: #58a6ff;
       text-decoration: none;
@@ -406,7 +418,7 @@
       cursor: default;
     }
     .audio-progress-fill {
-      width: 40%;
+      width: 0%;
       height: 100%;
       background: var(--accent-wire);
       border-radius: 4px;
@@ -750,16 +762,37 @@
         padding: 4px 10px;
       }
     }
+    @media (max-width: 480px) {
+      .btn-demo-toggle {
+        display: inline-flex !important;
+        align-items: center;
+      }
+      .demo-controls {
+        display: none !important;
+        width: 100%;
+        margin-top: 6px;
+        padding-top: 6px;
+        border-top: 1px solid #484f58;
+      }
+      .wireframe-banner.expanded .demo-controls {
+        display: flex !important;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- Wireframe Meta Bar & Interactive Simulation Toggles -->
-  <div class="wireframe-banner">
-    <div>
-      <strong>[WIREFRAME] PHÒNG THI CHIA ĐÔI MÀN HÌNH</strong> — Dữ liệu chuẩn spec 08 | Hören cấm tua | Đáp án bảo mật
+  <div class="wireframe-banner" id="wireframe-banner">
+    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 8px; flex-wrap: wrap;">
+      <div>
+        <strong>[WIREFRAME] PHÒNG THI CHIA ĐÔI MÀN HÌNH</strong> — Dữ liệu chuẩn spec 08 | Hören cấm tua | Đáp án bảo mật
+      </div>
+      <button class="btn-demo-toggle" id="btn-demo-toggle" onclick="toggleDemoBar()">
+        🛠️ Công cụ demo ▾
+      </button>
     </div>
-    <div class="demo-controls">
+    <div class="demo-controls" id="demo-controls">
       <span>Mô phỏng:</span>
       <button class="demo-btn" onclick="toggleOffline()">Simulate: Mất mạng/Online</button>
       <button class="demo-btn" onclick="triggerAudioError()">Simulate: Lỗi Audio Hören</button>
@@ -884,12 +917,12 @@
               <div id="audio-progress-fill" class="audio-progress-fill"></div>
             </div>
             <div class="audio-time">
-              <span id="audio-current">01:14</span> / 03:05
+              <span id="audio-current">00:00</span> / 03:05
             </div>
           </div>
 
           <div class="audio-notice">
-            <span><strong>Quy định:</strong> Số lần nghe: tối đa <strong>2 lần</strong>. Hiện tại: <span id="listen-count">Lần 1 / 2</span></span>
+            <span><strong>Quy định:</strong> Số lần nghe: tối đa <strong>2 lần</strong>. Hiện tại: <span id="listen-count">Lượt nghe 1/2</span></span>
             <span style="color: #6e7781; font-style: italic;">🔒 Trình phát bảo mật: Thanh tiến trình chỉ xem, KHÔNG cho tua nhanh/chậm.</span>
             <div class="audio-config-tag" id="pause-config-tag">
               ⚙️ Cấu hình đề thi: Cho phép tạm dừng (Pause: BẬT)
@@ -1357,9 +1390,22 @@
     let isPlaying = false;
     let allowPause = true;
 
+    function toggleDemoBar() {
+      const banner = document.getElementById('wireframe-banner');
+      banner.classList.toggle('expanded');
+      const btn = document.getElementById('btn-demo-toggle');
+      if (banner.classList.contains('expanded')) {
+        btn.innerText = '🛠️ Công cụ demo ▴';
+      } else {
+        btn.innerText = '🛠️ Công cụ demo ▾';
+      }
+    }
+
     function toggleAudio() {
       const btn = document.getElementById('btn-play-audio');
       const status = document.getElementById('audio-status');
+      const time = document.getElementById('audio-current');
+      const fill = document.getElementById('audio-progress-fill');
       
       if (!isPlaying) {
         isPlaying = true;
@@ -1370,6 +1416,8 @@
         }
         status.innerText = 'Đang phát...';
         status.className = 'audio-status-pill playing';
+        time.innerText = '01:14';
+        fill.style.width = '40%';
       } else {
         if (allowPause) {
           isPlaying = false;

@@ -417,24 +417,37 @@
       margin: auto;
     }
     
-    /* Close button positioned safely away from step bar */
+    /* Modal top bar with dedicated close button */
+    .modal-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .modal-top-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
     .btn-close-modal {
-      position: absolute;
-      top: 10px;
-      right: 10px;
+      position: static;
       background: #f0f0f0;
       border: 1px solid var(--border-color);
-      border-radius: 50%;
+      border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
       color: var(--text-main);
       width: 44px;
       height: 44px;
       min-height: 44px;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      z-index: 20;
+      flex-shrink: 0;
     }
     .btn-close-modal:hover {
       background: #e0e0e0;
@@ -444,13 +457,13 @@
     .step-bar {
       display: flex;
       justify-content: space-between;
-      margin-top: 10px;
+      margin-top: 4px;
       margin-bottom: 20px;
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 12px;
       font-size: 12px;
       color: var(--text-muted);
-      padding-right: 36px; /* Tránh đè nút X */
+      padding-right: 0;
     }
     .step-item.active {
       font-weight: 700;
@@ -732,7 +745,7 @@
       }
       .step-bar {
         font-size: 11px;
-        padding-right: 28px;
+        padding-right: 0;
       }
       .result-title {
         font-size: 18px;
@@ -752,8 +765,10 @@
     </div>
     <div class="demo-controls">
       <span>Mô phỏng:</span>
-      <button class="demo-btn" onclick="openLeadGate('manual')">Mở Modal Lead Gate</button>
-      <button class="demo-btn" onclick="openParentConfirmationView()">Xem Nhánh Xác Nhận Phụ Huynh</button>
+      <button class="demo-btn" onclick="openLeadGate('manual')">Mở Modal chung</button>
+      <button class="demo-btn" onclick="openUnder18Form()">Demo 18a: Form SĐT Cha/Mẹ</button>
+      <button class="demo-btn" onclick="openUnder18Pending()">Demo 18b: Chờ phụ huynh</button>
+      <button class="demo-btn" onclick="openParentConfirmationView()">Demo 18c: Phụ huynh duyệt</button>
       <button class="demo-btn" onclick="simulateSuccessUnlock()">Simulate: Đã mở khóa</button>
       <a href="exam-room.html" style="margin-left: 8px;">← Về Phòng thi</a>
       <a href="catalog.html" style="margin-left: 8px;">Về Danh mục →</a>
@@ -925,9 +940,13 @@
   <!-- MULTI-STEP LEAD GATE MODAL -->
   <div id="lead-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-gate-title">
     <div class="gate-dialog">
-      <button class="btn-close-modal" onclick="closeLeadGate()" aria-label="Đóng cửa sổ">✕</button>
+      <!-- Modal Top Bar: Hàng riêng cho nút đóng X, không che thanh bước -->
+      <div class="modal-top-bar">
+        <span class="modal-top-title">Đăng ký &amp; Mở khóa kết quả</span>
+        <button class="btn-close-modal" onclick="closeLeadGate()" aria-label="Đóng cửa sổ">✕</button>
+      </div>
 
-      <!-- Step Bar (Rút gọn nhãn, không bị nút X đè) -->
+      <!-- Step Bar (Rút gọn nhãn, hoàn toàn không bị nút X đè) -->
       <div class="step-bar">
         <span class="step-item active" id="pill-step-1">1. Thông tin</span>
         <span class="step-item" id="pill-step-2">2. OTP Zalo</span>
@@ -1009,7 +1028,7 @@
 
           <!-- NHÁNH PHỤ HUYNH KHI CHỌN DƯỚI 18 TUỔI -->
           <div id="parent-branch" class="parent-branch-box">
-            <div class="parent-title">👨‍👩‍👦 Bắt buộc cho học sinh dưới 18 tuổi (Theo Nghị định 13/2023/NĐ-CP):</div>
+            <div class="parent-title">👨‍👩‍👦 Bắt buộc cho học sinh dưới 18 tuổi (Theo Luật 91/2025/QH15 và Nghị định 356/2025/NĐ-CP):</div>
             <div class="form-group" style="margin-top: 6px;">
               <label class="form-label">Số điện thoại / Zalo của Cha/Mẹ <span class="req">*</span></label>
               <input type="tel" class="form-input" id="parent-phone" placeholder="Nhập số Zalo của Bố hoặc Mẹ" oninput="checkFormValidity()">
@@ -1136,9 +1155,33 @@
         </div>
       </div>
 
+      <!-- VIEW MÔ PHỎNG: ĐÃ GỬI TIN CHO PHỤ HUYNH, ĐANG CHỜ (NHÁNH <18 TUỔI) -->
+      <div id="parent-pending-content" style="display: none;">
+        <div style="text-align: center; padding: 10px 0;">
+          <div style="font-size: 36px; margin-bottom: 8px;">⏳</div>
+          <h2 style="font-size: 18px; margin-bottom: 4px;">Đang Chờ Phụ Huynh Xác Nhận</h2>
+          <div style="background: #fff8c5; border: 1px solid #d4a72c; border-radius: 6px; padding: 12px; font-size: 13px; color: #7d4e00; margin: 16px 0; text-align: left; line-height: 1.5;">
+            <strong>Đã gửi tin xác nhận cho phụ huynh, đang chờ:</strong><br>
+            Hệ thống đã tự động gửi tin nhắn Zalo ZNS kèm kết quả làm bài đến số Cha/Mẹ (<strong id="display-pending-parent-phone">0987 654 321</strong>).
+          </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5; text-align: left;">
+            Theo Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 và Nghị định 356/2025/NĐ-CP, SHD Education chỉ liên hệ tư vấn chuyên sâu sau khi Cha/Mẹ bấm đồng ý xác nhận qua Zalo.
+          </p>
+          <div style="background: var(--bg-muted); border: 1px dashed var(--border-color); padding: 12px; border-radius: 6px; margin-bottom: 16px;">
+            <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase;">Mô phỏng quy trình phụ huynh:</div>
+            <button type="button" class="btn-step-submit" style="background: #0969da; font-size: 13px; min-height: 42px;" onclick="openParentConfirmationView()">
+              Mô phỏng Phụ huynh mở tin nhắn &amp; Đồng ý →
+            </button>
+          </div>
+          <button type="button" class="btn-step-submit" style="background: #f0f0f0; color: #333; min-height: 42px;" onclick="goToStep1()">
+            ← Quay lại biểu mẫu
+          </button>
+        </div>
+      </div>
+
       <!-- VIEW PHỤC VỤ KIỂM THỬ: MÀN HÌNH XÁC NHẬN CỦA PHỤ HUYNH -->
       <div id="parent-preview-content" style="display: none;">
-        <h2 style="font-size: 18px; margin-bottom: 4px;">Trạng Thái: Phụ Huynh Xác Nhận (Nhánh &lt;18 Tuổi)</h2>
+        <h2 style="font-size: 18px; margin-bottom: 4px;">Màn Hình Phụ Huynh Xác Nhận Đồng Ý (Dưới 18 Tuổi)</h2>
         <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">
           Giao diện mô phỏng tin nhắn Zalo ZNS gửi đến điện thoại Cha/Mẹ và màn hình xác nhận cho phép tư vấn.
         </p>
@@ -1147,7 +1190,7 @@
           <div style="font-weight: 700; font-size: 13px; color: #0969da;">Tin nhắn Zalo ZNS gửi từ SHD Education:</div>
           <div class="zalo-msg-bubble">
             <strong>Kính gửi Quý phụ huynh,</strong><br>
-            Con của bạn (Học viên: <strong>Nguyễn Văn A</strong>) vừa hoàn thành bài thi thử tiếng Đức TELC B1 với kết quả <strong>21/30 điểm (Đạt ngưỡng tham khảo)</strong>.<br>
+            Con của bạn (Học viên: <strong>Nguyễn Văn A</strong>) vừa hoàn thành bài thi thử tiếng Đức mô phỏng định dạng TELC B1 với kết quả <strong>21/30 điểm (Đạt ngưỡng tham khảo)</strong>.<br>
             Nhằm hỗ trợ định hướng lộ trình học và du học nghề an toàn, xin vui lòng bấm nút bên dưới để xem chi tiết và xác nhận đồng ý nhận tư vấn.
           </div>
         </div>
@@ -1165,8 +1208,8 @@
           </button>
         </div>
 
-        <button class="btn-step-submit" style="background: #f0f0f0; color: #333;" onclick="goToStep1()">
-          ← Quay lại biểu mẫu chính
+        <button class="btn-step-submit" style="background: #f0f0f0; color: #333;" onclick="openUnder18Pending()">
+          ← Quay lại trạng thái chờ
         </button>
       </div>
 
@@ -1191,6 +1234,8 @@
       document.getElementById('step-2-content').style.display = 'none';
       document.getElementById('step-3-content').style.display = 'none';
       document.getElementById('parent-preview-content').style.display = 'none';
+      const pending = document.getElementById('parent-pending-content');
+      if (pending) pending.style.display = 'none';
       document.getElementById('pill-step-1').className = 'step-item active';
       document.getElementById('pill-step-2').className = 'step-item';
       document.getElementById('pill-step-3').className = 'step-item';
@@ -1205,6 +1250,8 @@
       document.getElementById('step-2-content').style.display = 'block';
       document.getElementById('step-3-content').style.display = 'none';
       document.getElementById('parent-preview-content').style.display = 'none';
+      const pending = document.getElementById('parent-pending-content');
+      if (pending) pending.style.display = 'none';
       document.getElementById('pill-step-1').className = 'step-item';
       document.getElementById('pill-step-2').className = 'step-item active';
       document.getElementById('pill-step-3').className = 'step-item';
@@ -1215,6 +1262,8 @@
       document.getElementById('step-2-content').style.display = 'none';
       document.getElementById('step-3-content').style.display = 'block';
       document.getElementById('parent-preview-content').style.display = 'none';
+      const pending = document.getElementById('parent-pending-content');
+      if (pending) pending.style.display = 'none';
       document.getElementById('pill-step-1').className = 'step-item';
       document.getElementById('pill-step-2').className = 'step-item';
       document.getElementById('pill-step-3').className = 'step-item active';
@@ -1227,11 +1276,40 @@
       }
     }
 
+    function openUnder18Form() {
+      openLeadGate('under18');
+      const select = document.getElementById('lead-persona-type');
+      select.value = 'student_under18';
+      handleAgeSelection('student_under18');
+      document.getElementById('lead-name').value = 'Nguyễn Văn A';
+      document.getElementById('lead-phone').value = '0912 345 678';
+      document.getElementById('parent-phone').value = '0987 654 321';
+      document.getElementById('lead-timeframe').value = '1_3m';
+      const goalRadios = document.querySelectorAll('input[name="learning_goal"]');
+      if (goalRadios[0]) goalRadios[0].checked = true;
+      document.getElementById('consent-mandatory').checked = true;
+      checkFormValidity();
+    }
+
+    function openUnder18Pending() {
+      document.getElementById('lead-modal').classList.add('open');
+      document.getElementById('step-1-content').style.display = 'none';
+      document.getElementById('step-2-content').style.display = 'none';
+      document.getElementById('step-3-content').style.display = 'none';
+      document.getElementById('parent-preview-content').style.display = 'none';
+      const pending = document.getElementById('parent-pending-content');
+      if (pending) pending.style.display = 'block';
+      const parentPhone = document.getElementById('parent-phone').value || '0987 654 321';
+      document.getElementById('display-pending-parent-phone').innerText = parentPhone;
+    }
+
     function openParentConfirmationView() {
       document.getElementById('lead-modal').classList.add('open');
       document.getElementById('step-1-content').style.display = 'none';
       document.getElementById('step-2-content').style.display = 'none';
       document.getElementById('step-3-content').style.display = 'none';
+      const pending = document.getElementById('parent-pending-content');
+      if (pending) pending.style.display = 'none';
       document.getElementById('parent-preview-content').style.display = 'block';
     }
 

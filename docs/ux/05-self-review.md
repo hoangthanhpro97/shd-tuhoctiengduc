@@ -37,11 +37,12 @@ Dữ liệu được trích xuất tự động từ phiên chạy headless audi
 | `exam-room.html` (Hết giờ làm bài) | 375px | 375px | **PASS (100%)** | Đồng hồ cảnh báo đỏ 00:00 |
 | `exam-room.html` (Hộp xác nhận nộp) | 375px | 375px | **PASS (100%)** | Modal căn giữa, số liệu 21/30 câu khớp spec |
 | `result-and-gate.html` (Tổng quan điểm) | 375px | 375px | **PASS (100%)** | Thẻ điểm 21/30, ghi chú tham khảo, câu 3+ chữ giả mờ |
-| `result-and-gate.html` (Lead Gate Bước 1) | 375px | 375px | **PASS (100%)** | Lưới 1 cột, min-width: 0, không bị cắt mép phải |
-| `result-and-gate.html` (Nhánh < 18 tuổi) | 375px | 375px | **PASS (100%)** | Mở rộng trường Zalo Cha/Mẹ mượt mà |
+| `result-and-gate.html` (Lead Gate Bước 1) | 375px | 375px | **PASS (100%)** | Lưới 1 cột, min-width: 0, nút X hàng riêng không che bước |
+| `result-and-gate.html` (Nhánh < 18 tuổi - Form) | 375px | 375px | **PASS (100%)** | Mở rộng trường Zalo Cha/Mẹ mượt mà |
+| `result-and-gate.html` (Nhánh < 18 tuổi - Chờ duyệt) | 375px | 375px | **PASS (100%)** | Màn hình "Đã gửi tin xác nhận cho phụ huynh, đang chờ" |
+| `result-and-gate.html` (Phụ huynh xác nhận duyệt) | 375px | 375px | **PASS (100%)** | Tin nhắn ZNS mô phỏng và nút xác nhận đồng ý |
 | `result-and-gate.html` (Lead Gate Bước 2) | 375px | 375px | **PASS (100%)** | 6 ô OTP căn giữa, đồng hồ đếm ngược 54s |
 | `result-and-gate.html` (Lead Gate Bước 3) | 375px | 375px | **PASS (100%)** | Trạng thái mở khóa thành công, nút CTA lớn |
-| `result-and-gate.html` (Phụ huynh xác nhận)| 375px | 375px | **PASS (100%)** | Tin nhắn ZNS mô phỏng và nút xác nhận đồng ý |
 
 ---
 
@@ -57,5 +58,5 @@ Dữ liệu được trích xuất tự động từ phiên chạy headless audi
 
 ## 4. Bằng Chứng Hình Ảnh Kiểm Chứng (Screenshots)
 
-Bộ 30 hình ảnh độ phân giải cao tại 375px và 1280px đã được tạo tự động và lưu trữ tại thư mục:  
-`docs/ux/screenshots/` (Bao gồm đầy đủ các trạng thái của Catalog, Exam Room, Result Page, Modal Lead Gate và Nhánh phụ huynh).
+Bộ ảnh độ phân giải cao tại 375px và 1280px đã được tạo tự động và lưu trữ tại thư mục:  
+`docs/ux/screenshots/` (Bao gồm đầy đủ các trạng thái của Catalog, Exam Room, Result Page, Modal Lead Gate và đặc biệt 3 trạng thái độc lập của Nhánh dưới 18 tuổi: (a) `result_375px_gate_under18_form.png`, (b) `result_375px_gate_under18_pending.png`, (c) `result_375px_gate_under18_parent_approval.png`).

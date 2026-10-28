@@ -17,15 +17,27 @@ const chromeProc = spawn(CHROME_PATH, [
   '--no-sandbox',
   '--disable-gpu',
   `--remote-debugging-port=${PORT}`,
+  '--remote-allow-origins=*',
   '--user-data-dir=' + path.join(WORKSPACE, '.chrome-temp-profile')
 ]);
+
+let devtoolsWsUrl = null;
+chromeProc.stderr.on('data', d => {
+  const str = d.toString();
+  console.log('[Chrome stderr]:', str);
+  const match = str.match(/DevTools listening on (ws:\/\/[^\s]+)/);
+  if (match) {
+    devtoolsWsUrl = match[1];
+  }
+});
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function waitForWsUrl() {
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 60; i++) {
+    if (devtoolsWsUrl) return devtoolsWsUrl;
     try {
       const res = await fetch(`http://127.0.0.1:${PORT}/json/version`);
       if (res.ok) {
@@ -159,10 +171,13 @@ async function run() {
       scenarios: [
         { label: "overview", setup: "" },
         { label: "gate_step1", setup: "openLeadGate(); goToStep1();" },
-        { label: "gate_under18", setup: "openLeadGate(); handleAgeSelection('student_under18'); document.getElementById('lead-persona-type').value = 'student_under18';" },
+        { label: "gate_under18_form", setup: "openUnder18Form();" },
+        { label: "gate_under18_pending", setup: "openUnder18Pending();" },
+        { label: "gate_under18_parent_approval", setup: "openParentConfirmationView();" },
+        { label: "gate_under18", setup: "openUnder18Form();" },
+        { label: "parent_approval", setup: "openParentConfirmationView();" },
         { label: "gate_step2_otp", setup: "openLeadGate(); goToStep2();" },
-        { label: "gate_step3_success", setup: "openLeadGate(); goToStep3();" },
-        { label: "parent_approval", setup: "openParentConfirmationView();" }
+        { label: "gate_step3_success", setup: "openLeadGate(); goToStep3();" }
       ]
     }
   ];

@@ -97,3 +97,26 @@ Toàn bộ 4 trang wireframe ở mọi trạng thái và kích thước viewport
 - `result_375px_gate_step2_otp.png`, `result_1280px_gate_step2_otp.png`
 - `result_375px_gate_step3_success.png`, `result_1280px_gate_step3_success.png`
 - `result_375px_parent_approval.png`, `result_1280px_parent_approval.png`
+
+---
+
+## 4. Chi Tiết Bản Cập Nhật Lệnh 2.0 (Dọn Tồn Đọng Bước 1)
+
+1. **Nút X đóng Lead Gate Modal:**
+   - Đưa nút X vào thanh tiêu đề độc lập (`.modal-top-bar`) nằm phía trên `.step-bar`.
+   - Loại bỏ hoàn toàn hiện tượng nút X đè lên nhãn "3. Mở khóa" tại 360px và 375px.
+2. **Nhánh Người dùng dưới 18 tuổi:**
+   - Xây dựng 3 trạng thái giao diện trực quan riêng biệt:
+     - Trạng thái 18a: Biểu mẫu điền thêm số Zalo của Cha/Mẹ (`result_375px_gate_under18_form.png`).
+     - Trạng thái 18b: Màn hình "Đã gửi tin xác nhận cho phụ huynh, đang chờ" (`result_375px_gate_under18_pending.png`).
+     - Trạng thái 18c: Màn hình phụ huynh xem kết quả và bấm xác nhận đồng ý (`result_375px_gate_under18_parent_approval.png`).
+3. **Phòng thi trên Mobile (`exam-room.html`):**
+   - Trình phát Hören: Thống nhất trạng thái sẵn sàng ban đầu là `00:00 / 03:05`, thanh tiến trình `0%`, hiển thị rõ `Lượt nghe 1/2`.
+   - Thanh demo bar màu đen: Gộp vào nút "🛠️ Công cụ demo ▾", mặc định thu gọn khi màn hình $\le 480\text{px}$.
+4. **Pháp lý và Thuật ngữ:**
+   - Cập nhật trích dẫn Nghị định 13/2023 sang **Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định 356/2025/NĐ-CP** (kèm ghi chú "chờ pháp chế xác nhận").
+   - Mục B-03 trong `00-assumptions.md`: sửa thành "cần pháp chế xác nhận; thiết kế mặc định KHÔNG liên hệ khi thiếu đồng ý".
+   - Mục C-02 trong `00-assumptions.md`: tách thời gian hiệu lực OTP (đề xuất 5 phút) khỏi thời gian chờ gửi lại (60 giây).
+   - Mục B-01 & DEC-09: Thống nhất chế độ Thi thử cấm tua, Luyện tập cho tua; thêm câu hỏi mở về chế độ Luyện tập trong MVP.
+   - Thay toàn bộ "chuẩn TELC/Goethe" thành "mô phỏng định dạng TELC/Goethe". Thêm Mục 6 "Giả định về cấu trúc đề" vào `docs/ux/08-sample-exam-spec.md`.
+

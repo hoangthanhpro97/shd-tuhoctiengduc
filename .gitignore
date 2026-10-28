@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Temporary profiles & caches
+.chrome-temp-profile/
+.turbo/
+dist/
+coverage/
+*.log

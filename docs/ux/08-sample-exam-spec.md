@@ -5,9 +5,9 @@
 
 ---
 
-## 1. Cấu Trúc Đề Thi Mẫu (Đề thi thử tổng hợp số 02 - Chuẩn TELC B1)
+## 1. Cấu Trúc Đề Thi Mẫu (Đề thi thử tổng hợp số 02 - Mô phỏng định dạng TELC B1)
 
-- **Tên đề:** TELC Deutsch B1 - Đề thi thử tổng hợp số 02 (Lesen & Hören)
+- **Tên đề:** TELC Deutsch B1 - Đề thi thử tổng hợp số 02 (Lesen & Hören - Mô phỏng định dạng)
 - **Tổng số câu hỏi:** 30 câu trắc nghiệm
 - **Tổng thời gian quy định:** 65 phút
   - Phần 1 - Đọc hiểu (Leseverstehen): 45 phút, 15 câu (Câu 1 đến 15)
@@ -88,3 +88,8 @@
 2. **Sau khi mở khóa (Đã xác thực OTP):**
    - Toàn bộ 30 câu hỏi hiển thị đầy đủ đáp án người dùng chọn, đáp án chính xác và lời giải thích chi tiết.
 
+---
+
+## 6. Giả Định Về Cấu Trúc Đề Thi
+
+Số lượng câu hỏi (30 câu), thời gian làm bài (65 phút) và sự phân chia các Teil (Teil 1, 2, 3) trong tài liệu này hoàn toàn là **dữ liệu minh họa**, KHÔNG phải định dạng chính thức của bất kỳ tổ chức khảo thí nào (Goethe-Institut, telc gGmbH, hay ÖSD). Giảng viên và chuyên gia học thuật của SHD Education bắt buộc phải xác nhận cấu trúc chi tiết trước khi xuất bản bất kỳ đề thi chính thức nào trên hệ thống.
