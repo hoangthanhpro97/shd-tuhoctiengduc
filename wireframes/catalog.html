@@ -35,6 +35,7 @@
       line-height: 1.5;
       font-size: 15px;
       -webkit-font-smoothing: antialiased;
+      overflow-wrap: anywhere;
     }
 
     button, input, select, label, a {
@@ -66,12 +67,31 @@
       display: inline-flex;
       align-items: center;
     }
+    .demo-controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .demo-btn {
+      min-height: 28px;
+      padding: 2px 10px;
+      font-size: 11px;
+      background: #32383f;
+      color: #f0f6fc;
+      border: 1px solid #484f58;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .demo-btn:hover {
+      background: #444c56;
+    }
 
     /* Layout Container */
     .catalog-container {
       max-width: 1240px;
       margin: 20px auto 50px;
       padding: 0 16px;
+      width: 100%;
     }
 
     /* Hero Header */
@@ -99,7 +119,7 @@
       max-width: 800px;
     }
 
-    /* Search & Filter Toolbar (DOL Tự Học style card grid layout) */
+    /* Search & Filter Toolbar */
     .filter-panel {
       background: var(--bg-surface);
       border: 1px solid var(--border-color);
@@ -121,6 +141,7 @@
       border-radius: 6px;
       font-size: 14px;
       background: #fafbfc;
+      min-width: 0;
     }
     .search-input:focus {
       background: #fff;
@@ -155,8 +176,8 @@
       gap: 6px;
     }
     .filter-pill {
-      min-height: 34px;
-      padding: 4px 14px;
+      min-height: 38px;
+      padding: 6px 14px;
       border: 1px solid var(--border-color);
       border-radius: 20px;
       background: #fafbfc;
@@ -166,8 +187,9 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      transition: all 0.15s;
     }
-    .filter-pill:hover {
+    .filter-pill:hover:not(.disabled) {
       background: #f0f6fc;
       border-color: var(--border-dark);
     }
@@ -176,6 +198,13 @@
       color: #fff;
       border-color: var(--accent-wire);
       font-weight: 600;
+    }
+    .filter-pill.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background: #f0f0f0;
+      border-color: #ddd;
+      color: #888;
     }
 
     /* Filter Results Info Bar */
@@ -186,6 +215,8 @@
       margin-bottom: 16px;
       font-size: 14px;
       color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .btn-reset-filters {
       background: none;
@@ -195,6 +226,7 @@
       font-size: 13px;
       text-decoration: underline;
       min-height: auto;
+      padding: 0;
     }
 
     /* Card Grid (Lưới thẻ đề thi) */
@@ -242,8 +274,11 @@
       border: 1px solid var(--border-color);
       background: var(--bg-muted);
     }
+    .badge.a1 { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
+    .badge.a2 { background: #e8f5e9; color: #2e7d32; border-color: #c8e6c9; }
     .badge.b1 { background: #ddf4ff; color: #0969da; border-color: #54aeff; }
     .badge.b2 { background: #ffebe9; color: #cf222e; border-color: #ff8182; }
+    .badge.c1 { background: #f3e8ff; color: #6b21a8; border-color: #d8b4fe; }
     .badge.status-resuming { background: var(--warning-bg); color: var(--warning-text); border-color: #d4a72c; }
 
     .card-title {
@@ -378,6 +413,17 @@
       justify-content: center;
     }
 
+    /* Empty state */
+    .empty-state {
+      display: none;
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 48px 20px;
+      background: #fff;
+      border: 1px dashed var(--border-color);
+      border-radius: 8px;
+    }
+
     /* Pagination */
     .pagination-bar {
       display: flex;
@@ -423,6 +469,15 @@
       .promo-card {
         grid-column: span 1;
       }
+      .catalog-container {
+        padding: 0 10px;
+      }
+      .catalog-hero {
+        padding: 16px;
+      }
+      .filter-panel {
+        padding: 14px;
+      }
     }
   </style>
 </head>
@@ -431,11 +486,14 @@
   <!-- Wireframe Meta Bar -->
   <div class="wireframe-banner">
     <div>
-      <strong>[WIREFRAME] DANH MỤC ĐỀ THI THỬ</strong> — Lưới thẻ chuẩn DOL Tự Học | Lọc TELC / Goethe / Cấp độ A1–C1
+      <strong>[WIREFRAME] DANH MỤC ĐỀ THI THỬ</strong> — Lưới thẻ trực quan | Lọc TELC / Goethe / Trình độ A1–C1
     </div>
-    <div>
-      <a href="index.html" style="margin-right: 12px;">← Về Hub Wireframe</a>
-      <a href="exam-room.html">Xem Phòng thi →</a>
+    <div class="demo-controls">
+      <span>Mô phỏng:</span>
+      <button class="demo-btn" onclick="simulateEmptyState()">Simulate: 0 kết quả</button>
+      <button class="demo-btn" onclick="resetFilters()">Đặt lại bộ lọc</button>
+      <a href="index.html" style="margin-left: 8px;">← Về Hub</a>
+      <a href="exam-room.html" style="margin-left: 8px;">Xem Phòng thi →</a>
     </div>
   </div>
 
@@ -444,9 +502,9 @@
     <!-- Hero Header -->
     <header class="catalog-hero">
       <nav class="breadcrumb">Trang chủ / Kho đề thi thử tiếng Đức</nav>
-      <h1 class="catalog-title">Kho Đề Thi Thử Tiếng Đức TELC & Goethe (A1 – C1)</h1>
+      <h1 class="catalog-title">Kho Đề Thi Thử Tiếng Đức TELC &amp; Goethe (A1 – C1)</h1>
       <p class="catalog-desc">
-        Hệ thống đề thi trắc nghiệm mô phỏng phòng thi thật với đồng hồ đếm ngược, trình phát nghe chuẩn đề thi và lời giải chi tiết bằng tiếng Việt giúp học viên nâng band điểm nhanh chóng.
+        Hệ thống đề thi trắc nghiệm mô phỏng phòng thi thật với đồng hồ đếm ngược, trình phát nghe chuẩn đề thi và lời giải chi tiết bằng tiếng Việt giúp học viên nâng điểm số nhanh chóng.
       </p>
     </header>
 
@@ -454,68 +512,68 @@
     <section class="filter-panel">
       <!-- Search Input -->
       <div class="search-row">
-        <input type="text" class="search-input" placeholder="Tìm kiếm theo tên đề (Ví dụ: TELC B1 Đề 02, Goethe B2 Lesen...)" aria-label="Tìm kiếm đề thi">
-        <button class="btn-search">Tìm kiếm</button>
+        <input type="text" id="search-input" class="search-input" placeholder="Tìm kiếm theo tên đề (Ví dụ: TELC B1, Goethe B2...)" aria-label="Tìm kiếm đề thi" oninput="applyFilters()">
+        <button class="btn-search" onclick="applyFilters()">Tìm kiếm</button>
       </div>
 
       <!-- Filter 1: Kỳ thi -->
       <div class="filter-group">
         <span class="filter-label">Kỳ thi:</span>
-        <div class="filter-options">
-          <button class="filter-pill active">Tất cả kỳ thi</button>
-          <button class="filter-pill">TELC Deutsch</button>
-          <button class="filter-pill">Goethe-Zertifikat</button>
-          <button class="filter-pill">ÖSD</button>
+        <div class="filter-options" id="filter-exam">
+          <button class="filter-pill active" data-val="all" onclick="setFilter('exam', 'all', this)">Tất cả kỳ thi</button>
+          <button class="filter-pill" data-val="telc" onclick="setFilter('exam', 'telc', this)">TELC Deutsch</button>
+          <button class="filter-pill" data-val="goethe" onclick="setFilter('exam', 'goethe', this)">Goethe-Zertifikat</button>
+          <button class="filter-pill disabled" disabled title="Kỳ thi ÖSD đang được cập nhật">ÖSD (Sắp có)</button>
         </div>
       </div>
 
       <!-- Filter 2: Trình độ -->
       <div class="filter-group">
         <span class="filter-label">Trình độ:</span>
-        <div class="filter-options">
-          <button class="filter-pill">Tất cả</button>
-          <button class="filter-pill">A1</button>
-          <button class="filter-pill">A2</button>
-          <button class="filter-pill active">B1</button>
-          <button class="filter-pill">B2</button>
-          <button class="filter-pill">C1</button>
+        <div class="filter-options" id="filter-level">
+          <button class="filter-pill active" data-val="all" onclick="setFilter('level', 'all', this)">Tất cả</button>
+          <button class="filter-pill" data-val="a1" onclick="setFilter('level', 'a1', this)">A1</button>
+          <button class="filter-pill" data-val="a2" onclick="setFilter('level', 'a2', this)">A2</button>
+          <button class="filter-pill" data-val="b1" onclick="setFilter('level', 'b1', this)">B1</button>
+          <button class="filter-pill" data-val="b2" onclick="setFilter('level', 'b2', this)">B2</button>
+          <button class="filter-pill" data-val="c1" onclick="setFilter('level', 'c1', this)">C1</button>
         </div>
       </div>
 
       <!-- Filter 3: Kỹ năng -->
       <div class="filter-group">
         <span class="filter-label">Kỹ năng:</span>
-        <div class="filter-options">
-          <button class="filter-pill active">Tất cả kỹ năng</button>
-          <button class="filter-pill">Đọc hiểu (Lesen)</button>
-          <button class="filter-pill">Nghe hiểu (Hören)</button>
-          <button class="filter-pill">Tổng hợp Đọc + Nghe</button>
+        <div class="filter-options" id="filter-skill">
+          <button class="filter-pill active" data-val="all" onclick="setFilter('skill', 'all', this)">Tất cả kỹ năng</button>
+          <button class="filter-pill" data-val="lesen" onclick="setFilter('skill', 'lesen', this)">Đọc hiểu (Lesen)</button>
+          <button class="filter-pill" data-val="hoeren" onclick="setFilter('skill', 'hoeren', this)">Nghe hiểu (Hören)</button>
+          <button class="filter-pill" data-val="both" onclick="setFilter('skill', 'both', this)">Tổng hợp Đọc + Nghe</button>
         </div>
       </div>
 
       <!-- Filter 4: Trạng thái cá nhân -->
       <div class="filter-group">
         <span class="filter-label">Trạng thái:</span>
-        <div class="filter-options">
-          <button class="filter-pill active">Tất cả đề</button>
-          <button class="filter-pill">Chưa làm</button>
-          <button class="filter-pill">Đang làm dở</button>
-          <button class="filter-pill">Đã hoàn thành</button>
+        <div class="filter-options" id="filter-status">
+          <button class="filter-pill active" data-val="all" onclick="setFilter('status', 'all', this)">Tất cả đề</button>
+          <button class="filter-pill" data-val="not_started" onclick="setFilter('status', 'not_started', this)">Chưa làm</button>
+          <button class="filter-pill" data-val="in_progress" onclick="setFilter('status', 'in_progress', this)">Đang làm dở</button>
+          <button class="filter-pill" data-val="completed" onclick="setFilter('status', 'completed', this)">Đã hoàn thành</button>
         </div>
       </div>
     </section>
 
     <!-- Results bar -->
     <div class="results-info-bar">
-      <span>Tìm thấy <strong>12</strong> đề thi phù hợp với bộ lọc [TELC & Goethe / B1]</span>
-      <button class="btn-reset-filters">Đặt lại bộ lọc mặc định</button>
+      <span id="results-count-text">Tìm thấy <strong>7</strong> đề thi phù hợp với bộ lọc [Tất cả đề]</span>
+      <button class="btn-reset-filters" onclick="resetFilters()">Đặt lại bộ lọc mặc định</button>
     </div>
 
     <!-- Exam Cards Grid -->
-    <section class="exam-grid">
+    <section class="exam-grid" id="exam-grid">
       
       <!-- Card 1: Đề đang làm dở (Luồng B - Returning User) -->
-      <article class="exam-card in-progress">
+      <article class="exam-card in-progress" data-exam="telc" data-level="b1" data-skill="both" data-status="in_progress">
         <div>
           <div class="card-badges">
             <span class="badge">TELC</span>
@@ -549,7 +607,7 @@
       </article>
 
       <!-- Card 2: Đề chưa làm -->
-      <article class="exam-card">
+      <article class="exam-card" data-exam="goethe" data-level="b1" data-skill="lesen" data-status="not_started">
         <div>
           <div class="card-badges">
             <span class="badge">Goethe</span>
@@ -572,8 +630,8 @@
         </a>
       </article>
 
-      <!-- Card 3: Special Promo Card: Test 1-1 Miễn Phí -->
-      <aside class="promo-card">
+      <!-- Card 3: Special Promo Card: Test 1-1 Miễn Phí (Always visible in grid) -->
+      <aside class="promo-card" id="promo-banner-card">
         <div>
           <span class="promo-tag">ƯU ĐÃI ĐỘC QUYỀN</span>
           <h3 class="promo-title">Chưa rõ mình đang ở trình độ nào?</h3>
@@ -587,7 +645,7 @@
       </aside>
 
       <!-- Card 4: Đã hoàn thành (Xem kết quả) -->
-      <article class="exam-card completed">
+      <article class="exam-card completed" data-exam="telc" data-level="b1" data-skill="both" data-status="completed">
         <div>
           <div class="card-badges">
             <span class="badge">TELC</span>
@@ -606,12 +664,12 @@
           </div>
         </div>
         <a href="result-and-gate.html" class="btn-card-action secondary">
-          Xem lại kết quả & Lời giải →
+          Xem lại kết quả &amp; Lời giải →
         </a>
       </article>
 
-      <!-- Card 5: Đề B2 -->
-      <article class="exam-card">
+      <!-- Card 5: Đề B2 Goethe -->
+      <article class="exam-card" data-exam="goethe" data-level="b2" data-skill="hoeren" data-status="not_started">
         <div>
           <div class="card-badges">
             <span class="badge">Goethe</span>
@@ -634,11 +692,11 @@
       </article>
 
       <!-- Card 6: Đề A2 Du học nghề -->
-      <article class="exam-card">
+      <article class="exam-card" data-exam="telc" data-level="a2" data-skill="both" data-status="not_started">
         <div>
           <div class="card-badges">
             <span class="badge">TELC</span>
-            <span class="badge" style="background: #e8f5e9; color: #2e7d32;">A2</span>
+            <span class="badge a2">A2</span>
           </div>
           <h2 class="card-title">TELC Deutsch A2 - Ôn thi cấp tốc Du học nghề</h2>
           <div class="card-meta">
@@ -656,18 +714,167 @@
         </a>
       </article>
 
+      <!-- Card 7: Đề A1 Goethe -->
+      <article class="exam-card" data-exam="goethe" data-level="a1" data-skill="lesen" data-status="not_started">
+        <div>
+          <div class="card-badges">
+            <span class="badge">Goethe</span>
+            <span class="badge a1">A1</span>
+          </div>
+          <h2 class="card-title">Goethe-Zertifikat A1 - Start Deutsch 1 (Đề 01)</h2>
+          <div class="card-meta">
+            <span class="meta-item">⏱ 45 phút</span>
+            <span class="meta-item">📝 15 câu hỏi</span>
+            <span class="meta-item">👥 2.150 lượt thi</span>
+          </div>
+          <div class="card-skills-tags">
+            <span class="skill-tag">Lesen căn bản</span>
+            <span class="skill-tag">Từ vựng đời sống</span>
+          </div>
+        </div>
+        <a href="exam-room.html" class="btn-card-action secondary">
+          Làm bài thi ngay →
+        </a>
+      </article>
+
+      <!-- Card 8: Đề C1 TELC Hochschule -->
+      <article class="exam-card" data-exam="telc" data-level="c1" data-skill="lesen" data-status="not_started">
+        <div>
+          <div class="card-badges">
+            <span class="badge">TELC</span>
+            <span class="badge c1">C1</span>
+          </div>
+          <h2 class="card-title">TELC Deutsch C1 Hochschule - Đề thi thử đọc hiểu chuyên sâu</h2>
+          <div class="card-meta">
+            <span class="meta-item">⏱ 90 phút</span>
+            <span class="meta-item">📝 35 câu hỏi</span>
+            <span class="meta-item">👥 610 lượt thi</span>
+          </div>
+          <div class="card-skills-tags">
+            <span class="skill-tag">Lesen học thuật</span>
+            <span class="skill-tag">C1 Đại học Đức</span>
+          </div>
+        </div>
+        <a href="exam-room.html" class="btn-card-action secondary">
+          Làm bài thi ngay →
+        </a>
+      </article>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="empty-state">
+        <div style="font-size: 36px; margin-bottom: 8px;">🔍</div>
+        <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 6px;">Không tìm thấy đề thi phù hợp</h3>
+        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 18px;">
+          Không có đề thi nào khớp với tất cả các tiêu chí bạn đã chọn. Vui lòng thử lại với bộ lọc khác.
+        </p>
+        <button class="btn-card-action" style="display: inline-flex; width: auto; margin: 0 auto; padding: 8px 20px;" onclick="resetFilters()">
+          Đặt lại bộ lọc mặc định
+        </button>
+      </div>
+
     </section>
 
     <!-- Pagination -->
-    <nav class="pagination-bar" aria-label="Phân trang đề thi">
+    <nav class="pagination-bar" id="pagination-bar" aria-label="Phân trang đề thi">
       <button class="page-btn" disabled>«</button>
       <button class="page-btn active">1</button>
       <button class="page-btn">2</button>
-      <button class="page-btn">3</button>
       <button class="page-btn">»</button>
     </nav>
 
   </main>
+
+  <!-- Interactive JavaScript for Live Filtering -->
+  <script>
+    const currentFilters = {
+      exam: 'all',
+      level: 'all',
+      skill: 'all',
+      status: 'all'
+    };
+
+    function setFilter(category, val, btnEl) {
+      currentFilters[category] = val;
+      const group = btnEl.parentElement;
+      const buttons = group.querySelectorAll('.filter-pill');
+      buttons.forEach(b => b.classList.remove('active'));
+      btnEl.classList.add('active');
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const keyword = (document.getElementById('search-input').value || '').trim().toLowerCase();
+      const cards = document.querySelectorAll('.exam-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cardExam = card.getAttribute('data-exam');
+        const cardLevel = card.getAttribute('data-level');
+        const cardSkill = card.getAttribute('data-skill');
+        const cardStatus = card.getAttribute('data-status');
+        const cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
+
+        const matchExam = (currentFilters.exam === 'all') || (cardExam === currentFilters.exam);
+        const matchLevel = (currentFilters.level === 'all') || (cardLevel === currentFilters.level);
+        const matchSkill = (currentFilters.skill === 'all') || (cardSkill === currentFilters.skill) || (currentFilters.skill === 'both' && cardSkill === 'both');
+        const matchStatus = (currentFilters.status === 'all') || (cardStatus === currentFilters.status);
+        const matchKeyword = !keyword || cardTitle.includes(keyword);
+
+        if (matchExam && matchLevel && matchSkill && matchStatus && matchKeyword) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Handle empty state
+      const emptyState = document.getElementById('empty-state');
+      const promoCard = document.getElementById('promo-banner-card');
+      const countText = document.getElementById('results-count-text');
+      const pagination = document.getElementById('pagination-bar');
+
+      if (visibleCount === 0) {
+        emptyState.style.display = 'block';
+        if (promoCard) promoCard.style.display = 'none';
+        countText.innerHTML = `Tìm thấy <strong>0</strong> đề thi phù hợp với bộ lọc`;
+        pagination.style.display = 'none';
+      } else {
+        emptyState.style.display = 'none';
+        if (promoCard) promoCard.style.display = 'flex';
+        countText.innerHTML = `Tìm thấy <strong>${visibleCount}</strong> đề thi phù hợp với bộ lọc`;
+        pagination.style.display = 'flex';
+      }
+    }
+
+    function resetFilters() {
+      currentFilters.exam = 'all';
+      currentFilters.level = 'all';
+      currentFilters.skill = 'all';
+      currentFilters.status = 'all';
+      document.getElementById('search-input').value = '';
+
+      ['filter-exam', 'filter-level', 'filter-skill', 'filter-status'].forEach(id => {
+        const group = document.getElementById(id);
+        const buttons = group.querySelectorAll('.filter-pill');
+        buttons.forEach(b => b.classList.remove('active'));
+        const allBtn = group.querySelector('[data-val="all"]');
+        if (allBtn) allBtn.classList.add('active');
+      });
+
+      applyFilters();
+    }
+
+    function simulateEmptyState() {
+      document.getElementById('search-input').value = 'XYZ_NOT_FOUND_EXAM_999';
+      applyFilters();
+    }
+
+    // Initialize
+    window.addEventListener('DOMContentLoaded', () => {
+      applyFilters();
+    });
+  </script>
 
 </body>
 </html>
