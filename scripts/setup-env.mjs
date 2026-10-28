@@ -54,3 +54,4 @@ OTP_HASH_PEPPER=${otpHashPepper}
 
 fs.writeFileSync(ENV_PATH, envContent, { encoding: 'utf-8' });
 console.log('✓ Successfully created local .env file with secure random credentials.');
+

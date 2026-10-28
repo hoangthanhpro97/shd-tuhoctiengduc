@@ -9,3 +9,4 @@ describe('Contracts Package', () => {
     expect(err.detail).toBe('Invalid payload');
   });
 });
+

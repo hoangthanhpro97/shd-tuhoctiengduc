@@ -11,3 +11,4 @@ export function getRoleDefinition(
     canRunDdl: role === 'shd_migrator',
   };
 }
+

@@ -20,3 +20,4 @@ describe('Architecture & Dependency Invariant Rules', () => {
     expect(output).toContain('core-no-import-adapters-or-apps');
   });
 });
+

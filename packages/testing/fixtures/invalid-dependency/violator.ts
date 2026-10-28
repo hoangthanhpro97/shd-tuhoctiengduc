@@ -2,3 +2,4 @@
 import { MockZnsAdapter } from '../../../adapters/src/index.js';
 
 export const invalidInstance = new MockZnsAdapter();
+

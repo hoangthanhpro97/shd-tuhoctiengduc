@@ -9,3 +9,4 @@ export function getBaseConfig(): AppConfig {
     port: Number(process.env['PORT']) || 3000,
   };
 }
+

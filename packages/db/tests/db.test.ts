@@ -8,3 +8,4 @@ describe('DB Package', () => {
     expect(getRoleDefinition('shd_grader').canRunDdl).toBe(false);
   });
 });
+

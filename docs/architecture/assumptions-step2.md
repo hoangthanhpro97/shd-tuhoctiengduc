@@ -25,3 +25,4 @@
 | **SEC-03** | **Khởi tạo 5 Role Database ở Lệnh 2.1** | Lệnh 2.1 chỉ khởi tạo tài khoản đăng nhập cho 5 role: `shd_migrator`, `shd_app`, `shd_grader`, `shd_worker`, `shd_readonly`. Phân quyền chi tiết trên từng bảng/view sẽ thực hiện ở Lệnh 2.3. | **[CHỐT]** |
 | **SEC-04** | **Pháp lý Bảo vệ Dữ liệu** | Căn cứ pháp lý áp dụng là Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 và Nghị định 356/2025/NĐ-CP (hiệu lực 01/01/2026). Các điều khoản cụ thể ghi chú `[Cần pháp chế xác nhận]`. | **[CHỐT]** |
 | **SEC-05** | **Đồng hồ đếm ngược Server-Authoritative** | Schema v1 không hỗ trợ tạm dừng đồng hồ đếm ngược server trong phòng thi (ghi nhận ADR mở rộng sau). Đồng hồ server là nguồn sự thật duy nhất. | **[CHỐT]** |
+

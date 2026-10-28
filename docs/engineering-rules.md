@@ -37,3 +37,4 @@
 
 ### 7. Quy Ước Thông Điệp Git Commit
 - Bắt buộc tuân thủ chuẩn **Conventional Commits**: `feat:`, `fix:`, `docs:`, `test:`, `refactor:`, `chore:`. Ví dụ: `feat(contracts): add exam submit payload schema`.
+

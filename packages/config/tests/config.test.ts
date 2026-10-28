@@ -8,3 +8,4 @@ describe('Config Package', () => {
     expect(typeof cfg.port).toBe('number');
   });
 });
+

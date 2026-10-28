@@ -30,3 +30,4 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "shd_tuhoctiengduc"
 EOSQL
 
 echo "SHD databases and roles initialized successfully."
+

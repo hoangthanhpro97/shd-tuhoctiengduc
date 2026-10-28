@@ -7,3 +7,4 @@ export class MockZnsAdapter implements NotificationAdapter {
     return true;
   }
 }
+

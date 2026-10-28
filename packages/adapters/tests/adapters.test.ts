@@ -8,3 +8,4 @@ describe('Adapters Package', () => {
     expect(res).toBe(true);
   });
 });
+

@@ -93,3 +93,4 @@ Xem chi tiết trong [`docs/engineering-rules.md`](file:///c:/Users/Editer%20SHB
 - **Server-Side Grading:** Đáp án (`answer_keys`) không bao giờ ra khỏi server; role `shd_app` bị cấm `SELECT` đáp án.
 - **Bảo Vệ Dữ Liệu Cá Nhân:** Tuân thủ Luật 91/2025/QH15 & Nghị định 356/2025/NĐ-CP; SĐT và OTP chỉ lưu dạng băm HMAC.
 - **Quy tắc Kiến trúc:** `core` không import `adapters`/`apps`; `contracts` không import `core`/`db`; `db` không import `core`.
+
