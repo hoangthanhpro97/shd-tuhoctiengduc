@@ -58,3 +58,4 @@ for (const r of roles) {
     console.error(`❌ Failed connecting as role [${r.name}]:`, err.message);
   }
 }
+

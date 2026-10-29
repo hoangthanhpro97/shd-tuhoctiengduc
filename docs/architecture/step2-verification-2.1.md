@@ -102,3 +102,4 @@ x 1 dependency violations (1 errors, 0 warnings). 2 modules, 1 dependencies crui
 3. **Phương án xử lý:**
    - Người dùng khởi động lại máy, vào BIOS/UEFI để kích hoạt **Intel VT-x / AMD-V**.
    - Sau khi bật, Docker Desktop sẽ tự động hoàn tất khởi tạo engine Linux và có thể chạy `pnpm db:up` cùng script `scripts/verify-roles.mjs`.
+
