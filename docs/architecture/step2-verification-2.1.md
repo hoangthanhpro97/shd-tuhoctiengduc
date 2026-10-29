@@ -79,7 +79,7 @@ i/lf    w/lf    attr/text eol=lf        scripts/setup-env.mjs
 
 ### 2.4. Kiểm tra khả năng phát hiện bí mật của `check:secrets`
 ```text
-PS> "FAKE_API_KEY='AKIA1234567890ABCDEF'" > temp_leak_test.txt; git add temp_leak_test.txt; pnpm check:secrets
+PS> "FAKE_API_KEY='[FAKE_AWS_KEY_REDACTED]'" > temp_leak_test.txt; git add temp_leak_test.txt; pnpm check:secrets
 ❌ Potential secrets detected in tracked files:
   - [AWS Access Key] in temp_leak_test.txt
 ELIFECYCLE Command failed with exit code 1.
