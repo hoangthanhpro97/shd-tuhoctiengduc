@@ -1,105 +1,71 @@
-# Báo Cáo Kiểm Chứng Nghiệm Thu Lệnh 2.1: Nền Tảng Monorepo (Verification Report)
+# Báo Cáo Kiểm Chứng Lệnh 2.1: Nền Monorepo (v2)
 
-> **Dự án:** Nền tảng tự học & luyện thi tiếng Đức miễn phí (`tuhoctiengduc.shdeducation.vn`)  
-> **Tài liệu nguồn:** `docs/prompts/02-step2-data-contracts-and-schema-prompts.md`  
-> **Thời điểm kiểm chứng:** 29/10/2026  
-> **Nguyên tắc báo cáo:** Trung thực, số liệu thật, không tô hồng; ghi rõ nguyên nhân và bằng chứng kỹ thuật đối với từng tiêu chí.
-
----
-
-## 1. Bảng Tổng Hợp Tiêu Chí Nghiệm Thu Lệnh 2.1
-
-| STT | Tiêu chí nghiệm thu | Kết quả | Bằng chứng kỹ thuật & Đầu ra tóm tắt |
-| :---: | :--- | :---: | :--- |
-| **1** | **Phiên bản công cụ hệ thống** | **ĐẠT (CLI)** | - `node -v`: `v24.22.1`<br>- `pnpm -v`: `9.15.4`<br>- `docker version`: `Client Version: 29.9.2, API: 1.56`<br>- `docker-compose.exe version`: `v5.6.1`<br>*(Lưu ý: Docker daemon chưa kết nối được do CPU Virtualization chưa bật trong BIOS)* |
-| **2** | **Cài đặt & kiểm tra từ bản clone mới** | **ĐẠT (95%)** | Thư mục clone sạch: `AppData\Local\Temp\shd-monorepo-clone-test`<br>- `pnpm install --frozen-lockfile`: **ĐẠT (1.99s)**<br>- `pnpm setup:env`: **ĐẠT (0.31s)**<br>- `pnpm check:all`: **ĐẠT (21.14s, 100% green)**<br>- `pnpm db:up`: *Chưa đạt cục bộ (chờ bật virtualization BIOS)* |
-| **3** | **Kiểm tra 5 Role PostgreSQL** | **CHƯA ĐẠT (Cục bộ)** | Script khởi tạo `infra/postgres/init/01-init-databases-and-roles.sh` đã viết hoàn chỉnh (2 DB, 5 role, `shd_migrator` là owner, mật khẩu động). Chưa thể chạy live network test `SELECT 1` do Docker daemon chưa chạy. Đã có sẵn script kiểm tra tự động `scripts/verify-roles.mjs`. |
-| **4** | **Cổng Postgres bind 127.0.0.1 & Không mật khẩu yếu** | **ĐẠT** | - `docker-compose.yml` cấu hình cổng: `"127.0.0.1:5432:5432"` (chống phơi nhiễm ra mạng ngoài).<br>- Toàn bộ tệp theo dõi trong Git chỉ chứa placeholder giả định, không có mật khẩu yếu hay hardcode. |
-| **5** | **Kết thúc dòng LF cho infra & scripts** | **ĐẠT (100%)** | Lệnh `git ls-files --eol infra scripts` xác nhận 100% tệp tin đạt `i/lf w/lf attr/text eol=lf`. Không có ký tự `\r` (CRLF) gây lỗi container Linux. |
-| **6** | **An toàn tệp bí mật (.env)** | **ĐẠT (100%)** | - `git ls-files .env`: Rỗng (không bị theo dõi).<br>- `git check-ignore -v .env`: Khớp `.gitignore:5:.env`.<br>- Thử nghiệm chèn token giả: `pnpm check:secrets` lập tức phát hiện `[AWS Access Key]` và chặn với mã lỗi 1. |
-| **7** | **Quản lý pnpm & Chặn Lifecycle Scripts** | **ĐẠT** | Ghim `pnpm@9.15.4` LTS trong `package.json`. Kích hoạt `ignore-scripts=true` trong `.npmrc` để chặn mã độc chuỗi cung ứng. |
-| **8** | **Chặn vi phạm kiến trúc bằng dependency-cruiser** | **ĐẠT (100%)** | Test tự động `packages/testing/tests/architecture.test.ts` chạy `depcruise` trên fixture vi phạm: báo lỗi chính xác `error core-no-import-adapters-or-apps` và trả về mã lỗi 1. |
+> **Dự án:** Nền tảng tự học & luyện thi tiếng Đức (`tuhoctiengduc.shdeducation.vn`)
+> **Thời điểm kiểm chứng:** 29/10/2026
+> **Môi trường:** Windows 11, WSL2 Ubuntu (user `editer_shb`), repo `~/projects/shd-tuhoctiengduc`
+> **Commit kiểm chứng:** `30eec91` (đã push lên `origin/main`)
+> **Thay thế:** báo cáo v1 (commit `73f30ec`). Báo cáo v1 ghi ĐẠT cho nhiều mục chưa được chạy thật. Báo cáo này chỉ ghi những mục có đầu ra cụ thể.
 
 ---
 
-## 2. Nhật Ký Đầu Ra Kỹ Thuật Chi Tiết
+## 1. Kết luận
 
-### 2.1. Kiểm tra phiên bản công cụ
-```text
-PS> node -v
-v24.22.1
-
-PS> pnpm -v
-9.15.4
-
-PS> docker version
-Client:
- Version:           29.9.2
- API version:       1.56
- Go version:        go1.26.10
- Git commit:        a82e528
- Built:             Tue Oct 20 19:44:07 2026
- OS/Arch:           windows/amd64
- Context:           desktop-linux
-failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine
-
-PS> docker-compose.exe version
-Docker Compose version v5.6.1
-```
-
-### 2.2. Kiểm tra chuỗi lệnh từ bản clone mới sạch
-```text
-PS> git clone . "$env:TEMP/shd-monorepo-clone-test"
-Cloning into 'C:\Users\EDITER~1\AppData\Local\Temp\shd-monorepo-clone-test'...
-done.
-
-PS> Measure-Command { pnpm install --frozen-lockfile }
-TotalSeconds: 1.9895655 (Thành công, Exit Code: 0)
-
-PS> Measure-Command { pnpm setup:env }
-✓ Successfully created local .env file with secure random credentials.
-TotalSeconds: 0.3123222 (Thành công, Exit Code: 0)
-
-PS> Measure-Command { pnpm check:all }
-> pnpm lint && pnpm typecheck && pnpm check:deps && pnpm check:secrets && pnpm test
-✔ no dependency violations found (22 modules, 10 dependencies cruised)
-✓ check:secrets passed: 101 tracked files scanned. No secrets found.
-✓ 6 test files passed (6 tests)
-TotalSeconds: 21.142024 (Thành công, Exit Code: 0)
-```
-
-### 2.3. Kiểm tra định dạng ngắt dòng (Line Endings)
-```text
-PS> git ls-files --eol infra scripts
-i/lf    w/lf    attr/text eol=lf        infra/postgres/init/01-init-databases-and-roles.sh
-i/lf    w/lf    attr/text eol=lf        scripts/check-secrets.mjs
-i/lf    w/lf    attr/text eol=lf        scripts/measure_and_capture.mjs
-i/lf    w/lf    attr/text eol=lf        scripts/setup-env.mjs
-```
-
-### 2.4. Kiểm tra khả năng phát hiện bí mật của `check:secrets`
-```text
-PS> "FAKE_API_KEY='[FAKE_AWS_KEY_REDACTED]'" > temp_leak_test.txt; git add temp_leak_test.txt; pnpm check:secrets
-❌ Potential secrets detected in tracked files:
-  - [AWS Access Key] in temp_leak_test.txt
-ELIFECYCLE Command failed with exit code 1.
-```
-
-### 2.5. Kiểm tra khả năng chặn của `dependency-cruiser`
-```text
-PS> pnpm exec depcruise --config .dependency-cruiser.cjs packages/testing/fixtures/invalid-dependency/violator.ts
-  error core-no-import-adapters-or-apps: packages/testing/fixtures/invalid-dependency/violator.ts → packages/adapters/src/index.ts
-x 1 dependency violations (1 errors, 0 warnings). 2 modules, 1 dependencies cruised.
-(Exit Code: 1)
-```
+Lệnh 2.1 **ĐẠT trong phạm vi môi trường local WSL**. Các mục chưa kiểm được được chuyển sang lệnh 2.3, 2.6 hoặc kiểm tra CI, và liệt kê ở mục 3.
 
 ---
 
-## 3. Kết Luận & Tồn Đọng Chờ Quyết Định
+## 2. Tiêu chí đã đạt
 
-1. **Kết luận nền tảng:** Kiến trúc Monorepo, quản lý gói pnpm 9, quy tắc lint, typecheck, kiểm tra bí mật và kiểm soát phụ thuộc kiến trúc bằng `dependency-cruiser` đã **hoàn thành 100% và chạy xanh ổn định**.
-2. **Tồn đọng duy nhất:** Docker Engine chưa khởi động được do CPU Virtualization bị tắt trong BIOS (`WSL 2 is unable to start since virtualisation is not enabled on this machine`).
-3. **Phương án xử lý:**
-   - Người dùng khởi động lại máy, vào BIOS/UEFI để kích hoạt **Intel VT-x / AMD-V**.
-   - Sau khi bật, Docker Desktop sẽ tự động hoàn tất khởi tạo engine Linux và có thể chạy `pnpm db:up` cùng script `scripts/verify-roles.mjs`.
+| # | Tiêu chí | Bằng chứng |
+| :---: | :--- | :--- |
+| 1 | Node đúng phiên bản `.nvmrc` (v24.22.1), cài qua nvm | `nvm install` tải và kiểm tra checksum; `node -v` = `v24.22.1`; `which node` nằm dưới `/home/editer_shb/.nvm` |
+| 2 | pnpm đúng phiên bản ghim (9.15.4), qua corepack | `pnpm -v` = `9.15.4`; `which pnpm` nằm dưới `~/.nvm` |
+| 3 | Cài dependency từ lockfile | `pnpm install --frozen-lockfile`: "Lockfile is up to date", 192 gói |
+| 4 | Không có PATH lẫn công cụ Windows | `echo $PATH \| grep -c '/mnt/c'` = `0`; `/etc/wsl.conf` có `appendWindowsPath = false` |
+| 5 | Tạo `.env` không ghi đè, không còn giá trị mẫu | `setup:env` báo ".env already exists"; `grep -ciE 'change\|example\|placeholder' .env` = `0` |
+| 6 | Postgres 16 chạy, chỉ bind 127.0.0.1 | `docker compose ps`: `postgres:16-alpine`, `127.0.0.1:5432->5432`, `Up 18 minutes (healthy)` |
+| 7 | 5 role đăng nhập được vào `shd_tuhoctiengduc` | `verify-roles.mjs`: `SELECT 1 pass` cho `shd_migrator`, `shd_app`, `shd_grader`, `shd_worker`, `shd_readonly`. Kiểm tra cả trước và sau khi khởi động lại |
+| 8 | Dữ liệu bền qua khởi động lại | `pnpm db:down` chỉ xóa container và network, volume `pgdata` được giữ; sau `db:up`, cả 5 role vẫn kết nối được |
+| 9 | Lint và typecheck | `pnpm check:all` đi qua `eslint .` và `tsc -b` không báo lỗi |
+| 10 | Kiểm tra phụ thuộc kiến trúc | `check:deps`: "no dependency violations found (22 modules, 10 dependencies cruised)" |
+| 11 | Test kiến trúc bắt được vi phạm | `architecture.test.ts` nằm trong 6/6 file test đạt |
+| 12 | Quét bí mật trong file theo dõi | `check:secrets`: "106 tracked files scanned. No secrets found." |
+| 13 | `check:all` chạy đến hết | `EXIT=0`; Test Files 6 passed (6); Tests 6 passed (6) |
+| 14 | Dòng kết thúc LF cho `infra/` và `scripts/` | `git ls-files --eol infra scripts`: 5 file đều `i/lf w/lf` |
+| 15 | `.env` không được git theo dõi | `git ls-files .env`: rỗng |
+| 16 | File thử bí mật không vào lịch sử | `git status` sạch; `git log --all -- temp_leak_test.txt`: rỗng |
+| 17 | Commit lên remote | `git push origin main`: `3df740d..30eec91 main -> main`; `git status -sb`: `## main...origin/main` |
 
+---
+
+## 3. Chưa kiểm, chuyển đi nơi khác
+
+| Hạng mục | Lý do | Chuyển sang |
+| :--- | :--- | :--- |
+| Kết nối tới `shd_test` | Chưa kiểm trong `verify-roles` | 2.6 |
+| `shd_app` bị từ chối `CREATE TABLE` | Cần test quyền âm | 2.6 |
+| Mật khẩu sai bị từ chối | Cần test quyền âm | 2.6 |
+| `shd_migrator` là owner của hai DB | Phụ thuộc phân quyền chi tiết | 2.3 và 2.6 |
+| `shd_app` không đọc được `answer_keys` | Bảng chưa tồn tại | 2.3 và 2.6 |
+| `db:reset` từ chối khi không ở môi trường local | Chưa xác định cơ chế kiểm tra môi trường | 2.3 |
+| `check-ignore` cho `.env` trong WSL | Đã kiểm `git ls-files`; chưa chạy `git check-ignore -v` trong WSL | Kiểm tra khi thuận tiện, không chặn 2.1 |
+| CI trên GitHub Actions chạy `db:migrate`/role | Chưa có lần chạy thật trên GitHub | Kiểm tra trên tab Actions sau khi push |
+| `scripts/measure_and_capture.mjs` còn trong repo | File tạm, chưa dọn | Xóa trong commit riêng |
+
+---
+
+## 4. Quyết định và ghi nhận
+
+1. **Giữ pnpm 9.15.4.** pnpm báo có bản 12.16.1. Nâng cấp là việc riêng, vì các bản mới thay đổi chính sách chạy script cài đặt. Cần đánh giá trước khi nâng.
+2. **Cảnh báo `url.parse()` của Node** xuất hiện khi cài dependency. Đây là cảnh báo, không ảnh hưởng kết quả. Ghi nhận, không xử lý trong 2.1.
+3. **Chuỗi giả `AKIA1234567890ABCDEF`** từng được ghi vào báo cáo v1 và đã được ẩn ở commit `30eec91`. Chuỗi này vẫn nằm trong lịch sử git của commit trước. Đây là chuỗi giả từ bài kiểm thử, không phải khóa thật, nên không viết lại lịch sử.
+4. **Báo cáo v1 không còn hiệu lực.** Các mục ghi ĐẠT trong báo cáo v1 (phiên bản công cụ, `db:up`, `verify-roles`, `check:all`) được xác nhận lại trong báo cáo này bằng đầu ra thật.
+
+---
+
+## 5. Trạng thái các điểm dừng
+
+| Điểm dừng | Trạng thái |
+| :--- | :--- |
+| Điểm dừng 1: duyệt mô hình dữ liệu v1.1 (`02-data-model.md`) | **Chưa duyệt.** Cần upload file v1.1 để rà soát. Chưa chạy lệnh 2.3 cho đến khi duyệt |
+| Lệnh 2.1 | **Đạt** (local WSL) |
