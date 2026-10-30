@@ -2,7 +2,7 @@
 
 > **Tài liệu:** `docs/architecture/02-data-model.md`  
 > **Dự án:** Nền tảng tự học & luyện thi tiếng Đức miễn phí (`tuhoctiengduc.shdeducation.vn`)  
-> **Phiên bản:** v1.5 (Hoàn thiện kiến trúc đường chấm điểm nội bộ, khóa PII Staff API, và bao phủ Invariants - Hard Gate 1)  
+> **Phiên bản:** v1.6 (Hoàn thiện phân quyền liên owner, khóa PII tối đa cho Worker/Staff, và chuẩn hóa thời gian đề thi - Hard Gate 1)  
 > **Vai trò:** Data Architect & Lead Systems Engineer  
 > **Tài liệu đầu vào:** `docs/ux/00-assumptions.md`, `docs/ux/02-user-flows.md`, `docs/ux/03-screen-inventory.md`, `docs/ux/08-sample-exam-spec.md`, `docs/engineering-rules.md`.  
 > **Trạng thái:** Chờ Duyệt (Điểm Dừng 1 - Hard Gate 1)
@@ -12,19 +12,19 @@
 ## 1. Tổng Quan Kiến Trúc & Các Quyết Định Bất Biến Đã Chốt
 
 Mô hình dữ liệu của nền tảng được thiết kế xoay quanh 7 nguyên tắc kiến trúc cốt lõi:
-1. **Server-Side Grading & Đường Chấm Điểm Biệt Lập Nội Bộ (INV-01, INV-41):** Bảng `answer_keys` lưu trữ đáp án đúng hoàn toàn độc lập với bảng câu hỏi. Role ứng dụng công khai `shd_app` bị thu hồi quyền `SELECT` trên bảng `answer_keys` ở cấp độ PostgreSQL. Việc chấm điểm được đóng kín trong hàm nội bộ `_grade_attempt_internal(p_attempt_id)` thuộc sở hữu của role `shd_grader` (`NOLOGIN`), cố định `search_path = pg_catalog, public`. Hàm này **hoàn toàn không cấp quyền `EXECUTE` cho `shd_app`**, mà chỉ được kích hoạt tự động qua `submit_attempt()` (thuộc quyền `shd_attempt_mgr`) khi học viên nộp bài hoặc `finalize_expired_attempts()` (thuộc quyền `shd_grader`) khi worker dọn bài quá hạn. Role `shd_grader` phụ trách chấm thi biệt lập và hoàn toàn không có quyền đọc bảng dữ liệu định danh cá nhân (PII).
+1. **Server-Side Grading & Đường Chấm Điểm Biệt Lập Nội Bộ (INV-01, INV-41):** Bảng `answer_keys` lưu trữ đáp án đúng hoàn toàn độc lập với bảng câu hỏi. Role ứng dụng công khai `shd_app` bị thu hồi quyền `SELECT` trên bảng `answer_keys` ở cấp độ PostgreSQL. Việc chấm điểm được đóng kín trong hàm nội bộ `_grade_attempt_internal(p_attempt_id)` thuộc sở hữu của role `shd_grader` (`NOLOGIN`), cố định `search_path = pg_catalog, public`. Hàm này **chỉ cấp quyền `EXECUTE` duy nhất cho `shd_attempt_mgr`**, thu hồi quyền `EXECUTE` đối với `shd_worker`, `shd_app`, `shd_staff_api` và PUBLIC. Khi học viên nộp bài, hàm `submit_attempt()` (thuộc `shd_attempt_mgr`) gọi `_grade_attempt_internal()` trong cùng transaction. Khi worker dọn bài quá hạn, worker gọi `finalize_expired_attempts()` (thuộc `shd_grader`), hàm này tự gọi `_grade_attempt_internal()` nội bộ vì cùng chung owner `shd_grader` mà không cần cấp quyền thực thi cho worker. Role `shd_grader` phụ trách chấm thi biệt lập và hoàn toàn không có quyền đọc bảng dữ liệu định danh cá nhân (PII).
 2. **Nguyên Tắc Zero-Direct-Write Tuyệt Đối (INV-34, INV-38, INV-41):** Toàn bộ các connecting roles (`shd_app`, `shd_staff_api`, `shd_worker`) **hoàn toàn không có quyền `INSERT`, `UPDATE`, `DELETE` trực tiếp** trên các bảng bảo mật, quyền lợi, sổ cái hoặc trạng thái (`visitors`, `exam_attempts`, `attempt_section_timers`, `attempt_answers`, `attempt_audio_plays`, `attempt_entitlements`, `learners`, `guardians`, `otp_challenges`, `consents`, `leads`, `lead_signals`, `content_reviews`, `exam_versions`, `data_requests`, `app_settings`, `idempotency_keys`...). Mọi thao tác ghi hoặc chuyển trạng thái bắt buộc phải đi qua các hàm `SECURITY DEFINER` do các role chuyên trách `NOLOGIN` sở hữu (`shd_grader`, `shd_auth_admin`, `shd_attempt_mgr`, `shd_exam_admin`, `shd_privacy_admin`), với `search_path = pg_catalog, public` cố định, và **tự xác minh danh tính người gọi** từ token phiên đã băm (cho học viên/khách qua bảng `visitors`/`learners`) hoặc claim SSO nội bộ (cho nhân viên qua bảng `staff_users`), tuyệt đối không nhận danh tính từ tham số tự do.
 3. **Mô Hình Tin Cậy (Trust Model & Security Boundaries):** Tầng ứng dụng (`shd_app`) chịu trách nhiệm xác thực người dùng vãng lai và học viên thông qua Cookie bảo mật (HttpOnly, Secure, SameSite=Strict), tính toán chuỗi băm HMAC của token phiên (`visitor_token_hash` / `caller_token_hash`) và truyền vào các hàm `SECURITY DEFINER`. Cơ sở dữ liệu đóng vai trò là hàng rào phòng thủ bảo vệ tính toàn vẹn và cô lập dữ liệu giữa các người dùng với nhau (chống người này ghi đè bài thi, đọc câu trả lời nháp hoặc gian lận kết quả của người khác). Cơ sở dữ liệu **không có khả năng bảo vệ trong trường hợp chính tầng ứng dụng (`shd_app`) bị xâm nhập hoàn toàn (compromised server)**, vì kẻ tấn công có quyền thực thi mã trên server ứng dụng có thể giả mạo việc tính hash token. Đây là ranh giới phân định trách nhiệm bảo mật phân lớp tiêu chuẩn giữa App Layer và Database Layer.
-4. **Phân Quyền Cổng Nhân Viên (`shd_staff_api`) & Cấm Đọc Trực Tiếp PII Gốc (INV-39, INV-40):** Tách biệt hoàn toàn role kết nối của học viên (`shd_app`) và role kết nối của cổng quản trị nội bộ (`shd_staff_api`). Role `shd_staff_api` là role duy nhất được cấp quyền `EXECUTE` trên các hàm quản trị (`publish_exam_version`, `transition_exam_version`, `complete_data_request`, `record_content_review`, `update_setting`, `decrypt_phone`). Role `shd_staff_api` **bị cấm hoàn toàn quyền `SELECT` trực tiếp trên bảng `learners` và `guardians`**, chỉ được đọc dữ liệu đã che qua `v_masked_learners` và `v_masked_guardians`. Mọi thao tác truy xuất/giải mã PII gốc bắt buộc thông qua hàm `decrypt_phone` có kiểm tra mục đích đóng (`p_purpose`) và ghi vết `staff_user_id` (suy ra từ token SSO) vào `audit_logs` trong cùng transaction.
+4. **Phân Quyền Cổng Nhân Viên (`shd_staff_api`), Worker & Cấm Đọc Trực Tiếp PII Gốc (INV-39, INV-40):** Tách biệt hoàn toàn role kết nối của học viên (`shd_app`), cổng quản trị nội bộ (`shd_staff_api`) và tiến trình ngầm (`shd_worker`). Cả `shd_staff_api` và `shd_worker` **bị cấm hoàn toàn quyền `SELECT` trực tiếp trên bảng `learners` và `guardians`**. Nhân viên chỉ được đọc dữ liệu đã che qua `v_masked_learners`, `v_masked_guardians` và `v_contactable_leads` (chỉ chứa `full_name_masked`, loại bỏ hoàn toàn `full_name`, `email`, `phone_encrypted`). Worker chỉ đọc qua view tối thiểu `v_worker_contactable_leads` chỉ chứa ID (`lead_id`, `learner_id`). Mọi thao tác giải mã PII gốc bắt buộc thông qua hàm `decrypt_phone` có kiểm tra mục đích đóng (`p_purpose`) và ghi vết `staff_user_id` vào `audit_logs` trong cùng transaction.
 5. **Sổ Cái Đồng Ý Chỉ-Ghi-Thêm (Append-Only Consent Ledger - INV-09, INV-10, INV-38):** Mọi hành vi cho phép hoặc rút lại sự đồng ý xử lý dữ liệu cá nhân đều được ghi qua hàm `record_consent()`. Trạng thái đồng ý hiện hành và khả năng liên hệ lead (`v_contactable_leads`) được suy ra thông qua database views có cờ `security_barrier`, lấy bản ghi mới nhất theo `(learner_id, purpose)`, tuân thủ Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định 356/2025/NĐ-CP.
 6. **Bảo Mật PII & Mã Hóa Có Phong Bì (Envelope Encryption - INV-12, INV-13, INV-28):** Số điện thoại và dữ liệu nhạy cảm được mã hóa đối xứng AES-256-GCM theo cấu trúc Envelope chứa `{v, kid, iv, tag, ct}` hỗ trợ xoay khóa không downtime. Số điện thoại, địa chỉ IP, mã token khách vãng lai (`visitor_token`) và token phiên phát audio (`current_session_token`) đều được lưu dạng băm HMAC-SHA256 với các khóa bí mật riêng biệt (`PHONE_HASH_PEPPER`, `IP_HASH_PEPPER`, `TOKEN_HASH_PEPPER`, `AUDIO_TOKEN_PEPPER`) để tra cứu chống trùng lặp mà không lộ dữ liệu thô.
 7. **Đồng Hồ Tổng Luôn Thắng & Quản Lý Cưỡng Chế Server (INV-07, INV-33, DEC-ARCH-04):** Thời điểm kết thúc phiên làm bài tổng (`exam_attempts.expires_at`) luôn cưỡng chế nộp bài bất kể section timer. Mọi bài thi quá hạn tự động được đóng nguyên tử bởi hàm `finalize_expired_attempts()` của worker sau khoảng ân hạn 60 giây. Loại bỏ hoàn toàn trạng thái `abandoned` để mọi bài thi bắt đầu đều được chấm điểm.
 
 ---
 
-## 2. Sơ Đồ Thực Thể - Mối Quan Hệ (Entity-Relationship Diagrams v1.5)
+## 2. Sơ Đồ Thực Thể - Mối Quan Hệ (Entity-Relationship Diagrams v1.6)
 
-Hệ thống bao gồm **43 bảng logic** được chia thành 5 phân hệ dữ liệu:
+Hệ thống bao gồm **43 bảng logic** được chia thành 5 phân hệ dữ liệu. Toàn bộ tên trường trong sơ đồ Mermaid đều đồng bộ 100% với Từ điển bảng:
 
 ```mermaid
 classDiagram
@@ -34,12 +34,14 @@ classDiagram
         string code UK
         string name
         bool is_active
+        timestamptz created_at
     }
     class ExamStandards {
         UUID id PK
         UUID track_id FK
         string code UK
         string name
+        bool is_active
     }
     class Levels {
         UUID id PK
@@ -56,16 +58,19 @@ classDiagram
         UUID id PK
         string code UK
         string name
+        string scoring_method
     }
     class LearningGoals {
         UUID id PK
         string code UK
         string name
+        bool is_active
     }
     class PersonaTypes {
         UUID id PK
         string code UK
         string name
+        bool is_active
     }
     class Exams {
         UUID id PK
@@ -73,9 +78,15 @@ classDiagram
         UUID level_id FK
         string code UK
         string title
+        text description
         int time_limit_seconds
+        decimal passing_percentage
+        jsonb benchmark_scale_config
+        bool audio_pause_allowed
         int audio_max_plays
         int public_explanation_count
+        bool is_active
+        timestamptz created_at
     }
     class ExamVersions {
         UUID id PK
@@ -84,6 +95,7 @@ classDiagram
         string status
         string content_hash
         timestamptz published_at
+        timestamptz created_at
     }
     class ContentReviews {
         UUID id PK
@@ -92,6 +104,7 @@ classDiagram
         UUID reviewer_id FK
         string review_status
         text feedback_notes
+        timestamptz created_at
     }
     class Sections {
         UUID id PK
@@ -99,6 +112,7 @@ classDiagram
         UUID skill_id FK
         int section_order
         string title
+        text instructions
         int time_limit_seconds
     }
     class Stimuli {
@@ -106,6 +120,7 @@ classDiagram
         UUID section_id FK
         int part_number
         string stimulus_type
+        string title
         text content_text
         UUID asset_id FK
     }
@@ -113,7 +128,10 @@ classDiagram
         UUID id PK
         string asset_type
         text storage_path
+        bigint file_size_bytes
         int duration_seconds
+        string mime_type
+        timestamptz created_at
     }
     class Questions {
         UUID id PK
@@ -130,18 +148,21 @@ classDiagram
         UUID question_id FK
         string option_label
         text content_text
+        int option_order
     }
     class AnswerKeys {
         UUID id PK
         UUID question_id FK UK
         string correct_option_label
         text scoring_notes
+        timestamptz created_at
     }
     class Explanations {
         UUID id PK
         UUID question_id FK UK
         text explanation_text
         text translation_text
+        jsonb vocabulary_notes
         bool is_public_preview
     }
 
@@ -171,8 +192,9 @@ classDiagram
     class Visitors {
         UUID id PK
         string visitor_token_hash UK
-        string user_agent
+        text user_agent
         string ip_hash
+        timestamptz first_seen_at
         timestamptz last_active_at
     }
     class ExamAttempts {
@@ -182,16 +204,17 @@ classDiagram
         UUID learner_id FK
         string mode
         string status
-        string submission_type
         timestamptz started_at
         timestamptz expires_at
         timestamptz submitted_at
+        string submission_type
     }
     class AttemptSectionTimers {
         UUID id PK
         UUID attempt_id FK
         UUID section_id FK
         int duration_seconds
+        timestamptz started_at
         timestamptz expires_at
         string status
     }
@@ -280,14 +303,17 @@ classDiagram
         bool is_under_18
         timestamptz phone_verified_at
         timestamptz created_at
+        timestamptz anonymized_at
     }
     class Guardians {
         UUID id PK
         UUID learner_id FK UK
         string phone_hash
         text phone_encrypted
+        string relationship
         string verification_status
         string zalo_tracking_id
+        timestamptz requested_at
         timestamptz verified_at
     }
     class OtpChallenges {
@@ -296,15 +322,18 @@ classDiagram
         UUID visitor_id FK
         string phone_hash
         string otp_hash
+        string channel
         int attempts_count
         string status
         timestamptz expires_at
+        timestamptz created_at
     }
     class ConsentPurposes {
         UUID id PK
         string code UK
         string name
         bool is_mandatory
+        bool is_active
     }
     class ConsentTexts {
         UUID id PK
@@ -312,6 +341,7 @@ classDiagram
         int version_number
         string target_audience
         text legal_content
+        text recipient_entities
         timestamptz published_at
     }
     class Consents {
@@ -348,6 +378,7 @@ classDiagram
         string lead_temperature
         int total_attempts_count
         timestamptz last_temperature_calculated_at
+        timestamptz created_at
     }
     class LeadSignals {
         UUID id PK
@@ -367,13 +398,17 @@ classDiagram
         string locked_by
         timestamptz locked_until
         int retry_count
+        int max_retries
         timestamptz next_retry_at
+        text error_log
+        timestamptz created_at
     }
     class CrmLinks {
         UUID id PK
         UUID learner_id FK UK
         string one_center_student_id UK
         string crm_status
+        string current_enrolled_level
         timestamptz synced_at
     }
     class CrmInboundEvents {
@@ -391,6 +426,7 @@ classDiagram
         string scope
         int response_status
         jsonb response_payload
+        timestamptz created_at
         timestamptz expires_at
     }
 
@@ -447,7 +483,7 @@ classDiagram
 
 ---
 
-## 3. Từ Điển Bảng Dữ Liệu Chi Tiết (Table Dictionary v1.5 - 43 Bảng)
+## 3. Từ Điển Bảng Dữ Liệu Chi Tiết (Table Dictionary v1.6 - 43 Bảng)
 
 ### Nhóm 1: Nội Dung Đề Thi & Bảng Tra Cứu (17 Bảng)
 
@@ -502,12 +538,12 @@ classDiagram
 
 #### 8. `exams`
 - **Mục đích:** Thông tin định danh của một đề thi mô phỏng.
-- **Nguồn yêu cầu:** SCR-01 (Catalog hiển thị thẻ đề thi).
+- **Nguồn yêu cầu:** SCR-01 (Catalog hiển thị thẻ đề thi), `docs/ux/08-sample-exam-spec.md`.
 - **Cột chính:** 
   - `id` (UUID PK), `standard_id` (UUID FK exam_standards), `level_id` (UUID FK levels).
   - `code` (varchar(64) UK - ví dụ: `TELC_B1_MOCK_01`).
   - `title` (varchar(255) not null), `description` (text).
-  - `time_limit_seconds` (int not null - tổng thời gian làm bài, mặc định 3600s = 60 phút).
+  - `time_limit_seconds` (int not null - **mặc định 3900s = 65 phút**, khớp với tài liệu `docs/ux/08-sample-exam-spec.md`).
   - `passing_percentage` (decimal(5,2) not null default 60.00 - ngưỡng đạt tham khảo).
   - `benchmark_scale_config` (jsonb not null - thang điểm và CEFR).
   - `audio_pause_allowed` (boolean not null default false).
@@ -613,8 +649,8 @@ classDiagram
 - **Cột chính:** `id` (UUID PK), `version_id` (UUID FK exam_versions), `visitor_id` (UUID FK visitors not null), `learner_id` (UUID FK learners null), `mode` (varchar(16) not null default 'exam' check in (`exam`, `practice`)), `status` (varchar(32) not null check in (`in_progress`, `submitted`, `graded`)), `started_at` (timestamptz UTC not null), `expires_at` (timestamptz UTC not null), `submitted_at` (timestamptz UTC null), `submission_type` (varchar(16) null check in (`manual`, `timeout`)).
 - **Loại bỏ Abandoned:** Trạng thái chỉ còn `in_progress`, `submitted`, `graded`. Mọi bài thi quá hạn đều được `finalize_expired_attempts()` nộp và chấm điểm.
 - **Quy tắc Zero-Direct-Write (INV-34):** Role `shd_app` **CẤM INSERT/UPDATE/DELETE trực tiếp** bảng này!
-  - Khởi tạo phiên qua `start_attempt()` (tự động cập nhật `latest_attempt_id` và `total_attempts_count` trong bảng `leads` nếu đã có hồ sơ).
-  - Nộp bài qua `submit_attempt()` (kích hoạt chấm thi qua hàm nội bộ `_grade_attempt_internal()`).
+  - Khởi tạo phiên qua `start_attempt()`.
+  - Nộp bài qua `submit_attempt()`.
   - Gắn hồ sơ qua `mark_phone_verified()`.
   - Đóng bài quá hạn qua `finalize_expired_attempts()`.
 - **Mức nhạy cảm PII:** Hành vi học tập.
@@ -705,9 +741,9 @@ classDiagram
   - `phone_verified_at` (timestamptz UTC null - **NGUỒN SỰ THẬT DUY NHẤT VỀ XÁC THỰC SĐT**).
   - `created_at` (timestamptz UTC), `anonymized_at` (timestamptz UTC null).
 - **Ràng buộc:** `CONSTRAINT chk_learner_under18_age CHECK ((is_under_18 = true AND age_group = 'student_under18') OR (is_under_18 = false AND age_group != 'student_under18'))`.
-- **Quy tắc Zero-Direct-Write & Khóa PII Staff API (Task A1, INV-40):** 
+- **Quy tắc Zero-Direct-Write & Khóa PII Toàn Diện (Task A1, N4, INV-40):** 
   - Role `shd_app` **CẤM INSERT/UPDATE trực tiếp**! Tạo qua `create_learner()`, xác thực qua `mark_phone_verified()`.
-  - Role `shd_staff_api` **CẤM SELECT trực tiếp** bảng này! Nhân viên chỉ đọc qua view che `v_masked_learners`. Giải mã SĐT bắt buộc qua `decrypt_phone` có audit log cùng transaction.
+  - Cả `shd_staff_api` và `shd_worker` **CẤM SELECT trực tiếp** bảng này (Permission Denied 42501). Nhân viên chỉ đọc qua view che `v_masked_learners`. Worker chỉ dùng view tối thiểu `v_worker_contactable_leads`. Giải mã SĐT bắt buộc qua `decrypt_phone` có audit log cùng transaction.
 - **Mức nhạy cảm PII:** **ĐỊNH DANH TRỰC TIẾP (Direct PII)**.
 - **Thời hạn lưu trữ:** Lưu trữ đến khi có yêu cầu xóa hoặc 3 năm không tương tác [DEC-ARCH-01].
 
@@ -721,7 +757,7 @@ classDiagram
   - `relationship` (varchar(32) not null default 'parent' check in (`father`, `mother`, `legal_guardian`, `parent`)).
   - `verification_status` (varchar(32) not null default 'pending' check in (`pending`, `approved`, `rejected`, `expired`)).
   - `zalo_tracking_id` (varchar(128) null), `requested_at` (timestamptz UTC not null), `verified_at` (timestamptz UTC null).
-- **Quy tắc Zero-Direct-Write & Khóa PII Staff API (INV-40):** Role `shd_staff_api` **CẤM SELECT trực tiếp**, chỉ đọc qua view che `v_masked_guardians`.
+- **Quy tắc Zero-Direct-Write & Khóa PII Staff/Worker (Task N4, INV-40):** Role `shd_staff_api` và `shd_worker` **CẤM SELECT trực tiếp**, nhân viên chỉ đọc qua view che `v_masked_guardians`.
 - **Mức nhạy cảm PII:** **ĐỊNH DANH TRỰC TIẾP (Direct PII)**.
 - **Thời hạn lưu trữ:** Theo vòng đời `learners`.
 
@@ -782,8 +818,8 @@ classDiagram
   - `total_attempts_count` (int not null default 1).
   - `last_temperature_calculated_at` (timestamptz UTC).
   - `created_at` (timestamptz UTC).
-- **Luồng cập nhật Lead từ làm bài & chấm điểm (Task B2):** 
-  - Khi học viên bắt đầu lượt thi mới qua `start_attempt()`, hàm tự động cập nhật `leads.latest_attempt_id = attempt_id` và tăng `leads.total_attempts_count = leads.total_attempts_count + 1`.
+- **Luồng cập nhật Lead từ làm bài & chấm điểm (Task B2, N3):** 
+  - Khi học viên bắt đầu lượt thi mới qua `start_attempt()`, hàm (do `shd_attempt_mgr` sở hữu) tự động cập nhật `leads.latest_attempt_id = attempt_id` và tăng `leads.total_attempts_count = leads.total_attempts_count + 1`. Quyền UPDATE được giới hạn chặt chẽ trên đúng 2 cột này (Mục 6.1).
   - Khi bài thi được chấm qua `_grade_attempt_internal()`, hàm tự động ghi nhận tín hiệu điểm số vào `lead_signals`, kích hoạt trigger tính lại nhiệt độ `lead_temperature`.
 - **Quy tắc Zero-Direct-Write:** Role `shd_app` và `shd_worker` **CẤM UPDATE trực tiếp** bảng `leads`.
 - **Mức nhạy cảm PII:** Định danh thương mại.
@@ -890,7 +926,7 @@ classDiagram
 
 ---
 
-## 4. Máy Trạng Thái Cốt Lõi (State Machines v1.5)
+## 4. Máy Trạng Thái Cốt Lõi (State Machines v1.6)
 
 ```mermaid
 stateDiagram-v2
@@ -938,13 +974,13 @@ Toàn bộ các thao tác ghi dữ liệu nhạy cảm hoặc chuyển trạng t
 | Tên Hàm & Tham Số | Role Sở Hữu (`NOLOGIN`) | Quyền EXECUTE Được Cấp | Hành Vi Nghiệp Vụ & Bảo Mật |
 | :--- | :--- | :--- | :--- |
 | **`create_visitor(p_visitor_token_hash, p_user_agent, p_ip_hash)`** | `shd_attempt_mgr` | `shd_app` | Chèn bản ghi mới vào `visitors` với `first_seen_at = clock_timestamp()`. Nếu token hash đã tồn tại, chỉ cập nhật `last_active_at` và trả về `visitor_id` hiện có. Cột `visitor_token_hash` bất biến sau khi tạo. |
-| **`start_attempt(p_caller_token_hash, p_version_id, p_mode)`** | `shd_attempt_mgr` | `shd_app` | Tra cứu `p_caller_token_hash` trong `visitors`. Kiểm tra version đã `published`. Chèn `exam_attempts` (`in_progress`) và `attempt_entitlements` (`unlocked = false`). **Cập nhật Lead:** Nếu visitor đã có lead tương ứng, cập nhật `leads.latest_attempt_id = attempt_id` và tăng `leads.total_attempts_count = leads.total_attempts_count + 1`. |
+| **`start_attempt(p_caller_token_hash, p_version_id, p_mode)`** | `shd_attempt_mgr` | `shd_app` | Tra cứu `p_caller_token_hash` trong `visitors`. Kiểm tra version đã `published`. Chèn `exam_attempts` (`in_progress`) và `attempt_entitlements` (`unlocked = false`). **Cập nhật Lead (Task N3):** Nếu visitor đã có lead tương ứng, cập nhật `leads.latest_attempt_id = attempt_id` và tăng `leads.total_attempts_count = leads.total_attempts_count + 1`. (Chỉ cập nhật đúng 2 cột này). |
 | **`enter_section(p_attempt_id, p_section_id, p_caller_token_hash)`** | `shd_attempt_mgr` | `shd_app` | Đối soát attempt thuộc về `visitors.id` của caller. Tính `expires_at = LEAST(started_at + duration, attempt.expires_at)`. Chèn/cập nhật `attempt_section_timers`. |
 | **`save_answers(p_caller_token_hash, p_attempt_id, p_items)`** | `shd_attempt_mgr` | `shd_app` | Đối soát attempt thuộc về caller. Kiểm tra `status = 'in_progress'` và chưa hết giờ tổng. Với từng câu: kiểm tra section timer chưa hết hạn; kiểm tra OCC `revision`. Cập nhật nháp và tăng revision. |
 | **`start_audio_play(p_attempt_id, p_stimulus_id, p_caller_token_hash)`** | `shd_attempt_mgr` | `shd_app` | Đối soát attempt thuộc về caller. Kiểm tra section Hören đang `in_progress`. Nếu token băm còn hạn thì giữ nguyên count; nếu bắt đầu lượt mới thì tăng `play_count` (chặn nếu `play_count >= max_plays`). |
 | **`submit_attempt(p_attempt_id, p_caller_token_hash)`** | `shd_attempt_mgr` | `shd_app` | Đối soát attempt thuộc về caller. Đổi trạng thái sang `'submitted'` (gán `submission_type` là `manual` hoặc `timeout` nếu trong 60s ân hạn). **Kích hoạt chấm điểm:** Gọi ngay hàm nội bộ `_grade_attempt_internal(p_attempt_id)` trong cùng transaction! |
-| **`_grade_attempt_internal(p_attempt_id)`** *(HÀM NỘI BỘ BIỆT LẬP)* | `shd_grader` | `shd_attempt_mgr`, `shd_worker` *(CẤM `shd_app`, `shd_staff_api`)* | `REVOKE EXECUTE FROM PUBLIC, shd_app`. Chỉ chấm khi `status = 'submitted'`. So khớp `attempt_answers` và `answer_keys`. Chèn `result_item_scores`, `results`, `result_section_scores`. Cập nhật `status = 'graded'`. **Ghi tín hiệu Lead:** Nếu attempt gắn với lead, tự động gọi `record_lead_interaction` ghi nhận tín hiệu điểm số (`score_extreme_low`, `score_near_pass`, `full_exam_completed`) vào `lead_signals`. Idempotent khi gọi lại. |
-| **`finalize_expired_attempts()`** | `shd_grader` | `shd_worker` *(không tham số tự do)* | Quét attempt `in_progress` quá hạn + 60s ân hạn; cập nhật `status = 'submitted'`, `submission_type = 'timeout'`, rồi gọi `_grade_attempt_internal(attempt.id)` trong cùng transaction thông qua quyền owner `shd_grader`. |
+| **`_grade_attempt_internal(p_attempt_id)`** *(HÀM NỘI BỘ BIỆT LẬP)* | `shd_grader` | **CHỈ `shd_attempt_mgr`** *(CẤM `shd_worker`, `shd_app`, `shd_staff_api` - Task N2)* | `REVOKE EXECUTE FROM PUBLIC, shd_worker, shd_app, shd_staff_api`. Chỉ chấm khi `status = 'submitted'`. So khớp `attempt_answers` và `answer_keys`. Chèn `result_item_scores`, `results`, `result_section_scores`. Cập nhật `status = 'graded'`. **Ghi tín hiệu Lead:** Nếu attempt gắn với lead, tự động gọi `record_lead_interaction` ghi nhận tín hiệu điểm số (`score_extreme_low`, `score_near_pass`, `full_exam_completed`) vào `lead_signals`. Idempotent khi gọi lại. |
+| **`finalize_expired_attempts()`** | `shd_grader` | `shd_worker` *(không tham số tự do)* | Quét attempt `in_progress` quá hạn + 60s ân hạn; cập nhật `status = 'submitted'`, `submission_type = 'timeout'`, rồi gọi `_grade_attempt_internal(attempt.id)` trong cùng transaction thông qua quyền owner `shd_grader` (vì cùng chung owner `shd_grader` nên không cần cấp EXECUTE cho worker). |
 | **`unlock_full_solution(p_caller_token_hash, p_attempt_id, p_otp_challenge_id)`** | `shd_attempt_mgr` | `shd_app` | **Kiểm tra bắt buộc:** `otp_challenges.attempt_id = p_attempt_id` VÀ `otp_challenges.visitor_id = attempt.visitor_id` VÀ `status = 'verified'`. Cập nhật `attempt_entitlements.full_solution_unlocked = true`. |
 | **`acquire_idempotency_key(p_idem_key, p_scope, p_request_hash, p_ttl_seconds)`** | `shd_attempt_mgr` | `shd_app`, `shd_worker` | Cấp khóa idempotency, phát hiện xung đột payload qua `request_hash`, trả về trạng thái `is_acquired` hoặc payload kết quả đã lưu. |
 | **`complete_idempotency_key(p_idem_key, p_response_status, p_response_payload)`** | `shd_attempt_mgr` | `shd_app`, `shd_worker` | Ghi nhận kết quả phản hồi của transaction đã hoàn tất an toàn. |
@@ -956,7 +992,7 @@ Toàn bộ các thao tác ghi dữ liệu nhạy cảm hoặc chuyển trạng t
 | **`issue_otp(p_caller_token_hash, p_attempt_id, p_phone_raw, p_channel)`** | `shd_auth_admin` | `shd_app` | Xác minh caller tồn tại trong `visitors`. Chuẩn hóa SĐT, tính `phone_hash`, sinh OTP ngẫu nhiên, lưu `otp_hash` (HMAC), kiểm tra rate-limit theo ngày. Chèn `otp_challenges`. Trả về OTP thô cho gateway viễn thông. |
 | **`verify_otp(p_caller_token_hash, p_challenge_id, p_otp_code_raw)`** | `shd_auth_admin` | `shd_app` | Đối soát `otp_challenges.visitor_id` khớp với caller. Đọc FOR UPDATE, tăng `attempts_count = attempts_count + 1`. So khớp HMAC của mã code. Nếu đúng gán `status = 'verified'`, nếu sai quá 3 lần gán `status = 'failed'`. |
 | **`create_learner(p_caller_token_hash, p_full_name, p_phone_raw, p_email, p_age_group)`** | `shd_auth_admin` | `shd_app` | Xác minh caller tồn tại trong `visitors`. Chuẩn hóa SĐT, tính `phone_hash`, mã hóa Envelope AES-256-GCM. Gán `is_under_18 = (age_group == 'student_under18')`. Chèn `learners` (`phone_verified_at = NULL`) và `leads`. |
-| **`mark_phone_verified(p_caller_token_hash, p_learner_id, p_otp_challenge_id, p_attempt_id)`** | `shd_auth_admin` | `shd_app` | **Kiểm tra bắt buộc:** `otp_challenges.phone_hash = learners.phone_hash`. Cập nhật `learners.phone_verified_at = clock_timestamp()`, đồng thời liên kết `exam_attempts.learner_id = p_learner_id` cho attempt tương ứng. |
+| **`mark_phone_verified(p_caller_token_hash, p_learner_id, p_otp_challenge_id, p_attempt_id)`** | `shd_auth_admin` | `shd_app` | **Kiểm tra bắt buộc:** `otp_challenges.phone_hash = learners.phone_hash`. Cập nhật `learners.phone_verified_at = clock_timestamp()`, đồng thời liên kết `exam_attempts.learner_id = p_learner_id` cho attempt tương ứng (chỉ cập nhật đúng cột `learner_id` theo Mục 6.1). |
 | **`record_consent(p_caller_token_hash, p_learner_id, p_consent_text_id, p_action, p_capture_method, p_given_by_guardian_id)`** | `shd_auth_admin` | `shd_app` | Xác minh caller là chủ sở hữu learner. Kiểm tra `action IN ('granted', 'revoked')`. Nếu <18t bắt buộc phụ huynh đã `approved` (INV-29). Lấy `ip_hash`, chèn bản ghi vào `consents` (INV-38). |
 | **`record_lead_interaction(p_caller_token_hash, p_lead_id, p_signal_type, p_metadata)`** | `shd_auth_admin` | `shd_app`, `shd_grader` | Xác minh quyền sở hữu lead (hoặc được gọi từ pipeline chấm thi `shd_grader`). Chèn `lead_signals`, trigger tự động đọc trọng số từ `app_settings` gán vào `signal_weight` và tính lại `lead_temperature`. |
 | **`enqueue_crm_event(p_event_type, p_aggregate_id, p_idempotency_key, p_payload)`** | `shd_auth_admin` | Gọi nội bộ từ transaction nghiệp vụ | Kiểm tra ràng buộc payload không chứa mảng PII cấm (`chk_crm_outbox_payload_no_pii`). Chèn bản ghi vào `crm_outbox`. |
@@ -971,12 +1007,12 @@ Toàn bộ các thao tác ghi dữ liệu nhạy cảm hoặc chuyển trạng t
 | **`transition_exam_version(p_version_id, p_target_status, p_sso_claim_token)`** | `shd_exam_admin` | `shd_staff_api` | Xác thực role quản trị tương ứng qua `shd_staff_api`. Quản lý chuyển trạng thái vòng đời đề thi theo đúng máy trạng thái. |
 | **`create_data_request(p_caller_token_hash, p_learner_id, p_request_type)`** | `shd_privacy_admin` | `shd_app` | Xác minh caller là chủ sở hữu learner. Chèn bản ghi yêu cầu quyền riêng tư vào `data_requests` với `status = 'pending'`. |
 | **`complete_data_request(p_request_id, p_sso_claim_token)`** | `shd_privacy_admin` | `shd_staff_api` | Xác thực `staff_users.role IN ('admin', 'dpo')` qua `shd_staff_api`. Gọi hàm `anonymize_learner()`, cập nhật `data_requests.status = 'completed'`, ghi `audit_logs`. |
-| **`anonymize_learner(p_learner_id)`** *(Nội bộ)* | `shd_privacy_admin` | Nội bộ từ `complete_data_request` | **Bao phủ toàn diện các bảng PII (Task B4, INV-19):**<br>- `learners`: gán tên ẩn danh, `phone_hash` ngẫu nhiên, `phone_encrypted = '{"anonymized": true}'`, `email = NULL`, `phone_verified_at = NULL`.<br>- `guardians`: thay `phone_hash` ngẫu nhiên, `phone_encrypted = '{"anonymized": true}'`.<br>- `visitors`: thay `visitor_token_hash` ngẫu nhiên, xóa `ip_hash`, `user_agent`.<br>- `otp_challenges`: thay `phone_hash`, `otp_hash` ngẫu nhiên.<br>- `consents`: xóa `user_ip_hash`.<br>- `crm_links`: xóa bản ghi liên kết (`DELETE FROM crm_links WHERE learner_id = p_learner_id`).<br>- `crm_inbound_events`: xóa sạch các trường PII trong `payload` JSONB.<br>- `crm_outbox`: làm sạch `error_log = '[REDACTED_ANONYMIZED]'`.<br>- `learning_events`: xóa sạch PII trong `event_payload` JSONB.<br>Bảo lưu điểm số thi khảo thí phục vụ phân vị tổng thể. |
+| **`anonymize_learner(p_learner_id)`** *(Nội bộ)* | `shd_privacy_admin` | Nội bộ từ `complete_data_request` | **Bao phủ toàn diện các bảng PII (Task B4, N5, INV-19):**<br>- `learners`: gán tên ẩn danh, `phone_hash = 'anon_' \|\| encode(gen_random_bytes(16), 'hex')`, `phone_encrypted = '{"anonymized": true}'`, `email = NULL`, `phone_verified_at = NULL`.<br>- `guardians`: thay `phone_hash = 'anon_g_' \|\| encode(gen_random_bytes(16), 'hex')`, `phone_encrypted = '{"anonymized": true}'`.<br>- `visitors`: thay `visitor_token_hash = 'anon_v_' \|\| encode(gen_random_bytes(16), 'hex')`, xóa `ip_hash = NULL`, `user_agent = NULL`.<br>- `otp_challenges`: thay `phone_hash = 'anon_otp_' \|\| encode(gen_random_bytes(16), 'hex')`, `otp_hash = encode(gen_random_bytes(16), 'hex')`.<br>- `consents`: xóa `user_ip_hash = NULL`.<br>- `crm_links`: xóa bản ghi liên kết (`DELETE FROM crm_links WHERE learner_id = p_learner_id`).<br>- `crm_inbound_events`: xóa sạch các trường PII trong `payload` JSONB.<br>- `crm_outbox`: làm sạch `error_log = '[REDACTED_ANONYMIZED]'`.<br>- `learning_events`: xóa sạch PII trong `event_payload` JSONB.<br>Bảo lưu điểm số thi khảo thí phục vụ phân vị tổng thể. |
 | **`update_setting(p_key, p_value, p_sso_claim_token)`** | `shd_privacy_admin` | `shd_staff_api` | Xác thực `staff_users.role = 'admin'` từ SSO claim. Cập nhật `app_settings` và ghi nhật ký thao tác quản trị vào `audit_logs`. |
 
 ---
 
-## 6. Ma Trận Phân Quyền Theo Role Cơ Sở Dữ Liệu (Role Privilege Matrix v1.5)
+## 6. Ma Trận Phân Quyền Theo Role Cơ Sở Dữ Liệu (Role Privilege Matrix v1.6)
 
 > **Cấu trúc Role Cơ sở Dữ liệu Phân tầng:**  
 > - **DDL Owner:** `shd_migrator` (`NOLOGIN`).  
@@ -984,7 +1020,7 @@ Toàn bộ các thao tác ghi dữ liệu nhạy cảm hoặc chuyển trạng t
 > - **Connecting Roles:**  
 >   - `shd_app`: Role học viên công khai. **Zero-Direct-Write trên mọi bảng bảo mật.** Mọi thao tác ghi đi qua `EXECUTE` hàm học viên.  
 >   - `shd_staff_api`: Role Cổng Nội Bộ Nhân Viên SHD. **Cấm SELECT trực tiếp trên `learners`, `guardians`. Role duy nhất có EXECUTE trên các hàm quản trị nội bộ.**  
->   - `shd_worker`: Role Background Outbox Worker & Timeout Job. Cập nhật hàng đợi outbox và gọi `finalize_expired_attempts()`.  
+>   - `shd_worker`: Role Background Outbox Worker & Timeout Job. **Cấm SELECT trực tiếp trên `learners`, `guardians`. Không có quyền EXECUTE trên `_grade_attempt_internal`.** Chỉ gọi `finalize_expired_attempts()`.  
 >   - `shd_readonly`: Role Báo Cáo & Kiểm Toán. Bị tước 100% quyền SELECT trên bảng PII gốc, chỉ đọc qua masked views.
 
 | Bảng / View / Nhóm Hàm | `shd_migrator` (DDL) | `shd_app` (Web Học Viên) | `shd_staff_api` (Cổng Nội Bộ) | `shd_worker` (Outbox/Job) | `shd_readonly` (Báo Cáo) | Owner Role (`NOLOGIN`) |
@@ -997,7 +1033,7 @@ Toàn bộ các thao tác ghi dữ liệu nhạy cảm hoặc chuyển trạng t
 | **`explanations` (BẢNG GỐC)** | ALL + DDL | **NONE (CẤM)** | SELECT | NONE | SELECT | `shd_exam_admin` |
 | **View `v_public_explanations` (security_barrier)** | ALL + DDL | **SELECT** | SELECT | NONE | SELECT | `shd_exam_admin` |
 | **`visitors`** | ALL + DDL | SELECT *(CẤM GHI trực tiếp)* | NONE | NONE | SELECT | `shd_attempt_mgr` |
-| **`exam_attempts`** | ALL + DDL | SELECT *(CẤM GHI)* | SELECT | SELECT | SELECT | `shd_attempt_mgr`, `shd_grader` (UPDATE: status, sub_type, sub_at) |
+| **`exam_attempts`** | ALL + DDL | SELECT *(CẤM GHI)* | SELECT | SELECT | SELECT | `shd_attempt_mgr` (Owner), `shd_grader` (UPDATE: status, sub_type, sub_at) |
 | **`attempt_section_timers`** | ALL + DDL | SELECT *(CẤM GHI)* | SELECT | NONE | SELECT | `shd_attempt_mgr` |
 | **`attempt_answers`** | ALL + DDL | SELECT *(CẤM GHI)* | SELECT | NONE | SELECT | `shd_attempt_mgr` |
 | **`attempt_audio_plays`** | ALL + DDL | SELECT *(CẤM GHI)* | NONE | NONE | SELECT | `shd_attempt_mgr` |
@@ -1006,8 +1042,8 @@ Toàn bộ các thao tác ghi dữ liệu nhạy cảm hoặc chuyển trạng t
 | **`result_item_scores` (BẢNG GỐC)** | ALL + DDL | **NONE (CẤM)** | SELECT | NONE | SELECT | `shd_grader` (INSERT, UPDATE) |
 | **View `v_attempt_item_scores` (security_barrier)** | ALL + DDL | **SELECT** | SELECT | NONE | SELECT | `shd_grader` |
 | **`learning_events` (Sổ cái Append-Only)** | ALL + DDL | INSERT | NONE | NONE | SELECT | `shd_attempt_mgr` |
-| **`learners, guardians` (PII GỐC)** | ALL + DDL | SELECT *(CẤM GHI)* | **NONE (CẤM - INV-40)** | **SELECT (sync CRM)** | **NONE (CẤM)** | `shd_auth_admin` |
-| **View `v_masked_learners`, `v_masked_guardians`** | ALL + DDL | SELECT | **SELECT** | SELECT | **SELECT** | `shd_auth_admin` |
+| **`learners, guardians` (PII GỐC)** | ALL + DDL | SELECT *(CẤM GHI)* | **NONE (CẤM - INV-40)** | **NONE (CẤM - Task N4)** | **NONE (CẤM)** | `shd_auth_admin` |
+| **View `v_masked_learners`, `v_masked_guardians`** | ALL + DDL | SELECT | **SELECT** | NONE | **SELECT** | `shd_auth_admin` |
 | **`otp_challenges` (BẢNG GỐC)** | ALL + DDL | SELECT *(CẤM GHI)* | NONE | NONE | **NONE (CẤM)** | `shd_auth_admin` |
 | **View `v_masked_otp_challenges`** | ALL + DDL | SELECT | SELECT | NONE | **SELECT** | `shd_auth_admin` |
 | **`consent_purposes, consent_texts`** | ALL + DDL | SELECT | SELECT | SELECT | SELECT | `shd_auth_admin` |
@@ -1024,15 +1060,53 @@ Toàn bộ các thao tác ghi dữ liệu nhạy cảm hoặc chuyển trạng t
 | **`data_requests`** | ALL + DDL | SELECT *(CẤM GHI)* | SELECT | NONE | SELECT | `shd_privacy_admin` |
 | **`app_settings`** | ALL + DDL | SELECT | SELECT | SELECT | SELECT | `shd_privacy_admin` |
 | **Hàm Khảo thí (`create_visitor`, `start_attempt`, `save_answers`, `submit_attempt`...)** | ALL + DDL | **EXECUTE** | NONE | NONE | NONE | `shd_attempt_mgr` |
-| **Hàm Chấm thi nội bộ (`_grade_attempt_internal`)** | ALL + DDL | **NONE (CẤM - INV-41)**| NONE | **EXECUTE (qua finalize)**| NONE | `shd_grader` |
+| **Hàm Chấm thi nội bộ (`_grade_attempt_internal`)** | ALL + DDL | **NONE (CẤM - INV-41)**| NONE | **NONE (CẤM - Task N2)**| NONE | `shd_grader` (Owner, cấp `shd_attempt_mgr`) |
 | **Hàm Dọn bài quá hạn (`finalize_expired_attempts`)** | ALL + DDL | NONE | NONE | **EXECUTE** | NONE | `shd_grader` |
 | **Hàm Khóa Idempotency (`acquire_idempotency_key`, `complete_idempotency_key`)** | ALL + DDL | **EXECUTE** | NONE | **EXECUTE** | NONE | `shd_attempt_mgr` |
 | **Hàm OTP & Learner (`issue_otp`, `verify_otp`, `create_learner`...)** | ALL + DDL | **EXECUTE** | NONE | NONE | NONE | `shd_auth_admin` |
 | **Hàm Đánh giá Đề thi (`record_content_review`)** | ALL + DDL | **NONE (CẤM)** | **EXECUTE** | NONE | NONE | `shd_exam_admin` |
 | **Hàm Quản trị Nội bộ (`publish_exam`, `complete_data_request`, `update_setting`)** | ALL + DDL | **NONE (CẤM)** | **EXECUTE** | NONE | NONE | `shd_exam_admin`, `shd_privacy_admin` |
 | **Hàm Giải mã PII (`decrypt_phone`)** | ALL + DDL | **NONE (CẤM)** | **EXECUTE (RBAC)** | **EXECUTE (Worker lock)**| NONE | `shd_privacy_admin` |
-| **View `v_contactable_leads` (có PII liên hệ)** | ALL + DDL | NONE | **SELECT** | **SELECT** | **NONE (CẤM)** | `shd_auth_admin` |
-| **View `v_readonly_contactable_leads` (phi PII)**| ALL + DDL | NONE | SELECT | SELECT | **SELECT** | `shd_auth_admin` |
+| **View `v_contactable_leads` (tên đã che, phi SĐT/Email)** | ALL + DDL | NONE | **SELECT (Task N1)** | **NONE (CẤM)** | **NONE (CẤM)** | `shd_auth_admin` |
+| **View `v_worker_contactable_leads` (chỉ có ID tối thiểu)**| ALL + DDL | NONE | NONE | **SELECT (Task N1)** | NONE | `shd_auth_admin` |
+| **View `v_readonly_contactable_leads` (phi PII)**| ALL + DDL | NONE | SELECT | NONE | **SELECT** | `shd_auth_admin` |
+
+---
+
+### 6.1. Bảng Quyền Liên Owner (Cross-Owner Permission Matrix - Task N3)
+
+Trong kiến trúc Zero-Direct-Write và cô lập quyền hạn phân tầng, các role `NOLOGIN` chỉ được cấp quyền tối thiểu cần thiết (Principle of Least Privilege) trên các bảng hoặc cột do role `NOLOGIN` khác sở hữu, tuân thủ bảng ma trận quyền chéo dưới đây:
+
+| Role NOLOGIN Chủ Thể | Bảng / Hàm Được Cấp Quyền | Owner Của Đối Tượng | Loại Quyền Cấp | Danh Sách Cột Được Phép Thao Tác | Mục Đích Nghiệp Vụ & Ràng Buộc Bảo Mật |
+| :--- | :--- | :--- | :---: | :--- | :--- |
+| **`shd_attempt_mgr`** | **`leads`** | `shd_auth_admin` | `UPDATE` | **ĐÚNG 2 CỘT:** `latest_attempt_id`, `total_attempts_count` | Hàm `start_attempt()` cập nhật tiến trình và số lần thi của lead khi học viên bắt đầu bài thi mới. CẤM UPDATE các cột khác (`learner_id`, `lead_temperature`...). |
+| **`shd_attempt_mgr`** | **`_grade_attempt_internal(uuid)`** | `shd_grader` | `EXECUTE` | Không áp dụng (Hàm) | Hàm `submit_attempt()` nộp bài và kích hoạt chấm điểm trong cùng transaction. Là role duy nhất được cấp EXECUTE trên hàm nội bộ này. |
+| **`shd_attempt_mgr`** | **`exam_versions, sections, stimuli, exams`** | `shd_exam_admin` | `SELECT` | Tất cả cột metadata | Kiểm tra trạng thái `published`, lấy thời lượng `time_limit_seconds`, cấu hình audio và câu hỏi. |
+| **`shd_attempt_mgr`** | **`otp_challenges`** | `shd_auth_admin` | `SELECT` | `id, attempt_id, visitor_id, status` | Hàm `unlock_full_solution()` kiểm tra thử thách OTP đã verified và khớp với attempt. |
+| **`shd_auth_admin`** | **`exam_attempts`** | `shd_attempt_mgr` | `UPDATE` | **ĐÚNG 1 CỘT:** `learner_id` | Hàm `mark_phone_verified()` liên kết bài thi với hồ sơ học viên sau khi OTP thành công. CẤM UPDATE các cột `status`, `expires_at`, `submitted_at`... |
+| **`shd_auth_admin`** | **`visitors`** | `shd_attempt_mgr` | `SELECT` | `id, visitor_token_hash` | Hàm `issue_otp()`, `create_learner()` đối soát `visitor_id` của caller. |
+| **`shd_auth_admin`** | **`exam_attempts`** | `shd_attempt_mgr` | `SELECT` | `id, visitor_id` | Hàm `issue_otp()`, `mark_phone_verified()` đối soát attempt thuộc về caller. |
+| **`shd_auth_admin`** | **`app_settings`** | `shd_privacy_admin` | `SELECT` | `setting_key, setting_value` | Đọc cấu hình trọng số `lead_signal_weights` và tham số rate-limit OTP. |
+| **`shd_grader`** | **`exam_attempts`** | `shd_attempt_mgr` | `SELECT` | Tất cả cột khảo thí | Đọc thông tin attempt để tính toán thời gian và điểm số. |
+| **`shd_grader`** | **`exam_attempts`** | `shd_attempt_mgr` | `UPDATE` | **ĐÚNG 3 CỘT:** `status`, `submission_type`, `submitted_at` | Hàm `finalize_expired_attempts()` cập nhật trạng thái nộp bài quá hạn (`submitted`, `timeout`) và `_grade_attempt_internal()` cập nhật `status = 'graded'`. |
+| **`shd_grader`** | **`attempt_answers`** | `shd_attempt_mgr` | `SELECT` | `attempt_id, question_id, selected_option_label` | Đọc phương án học viên đã chọn để so khớp với đáp án đúng `answer_keys`. |
+| **`shd_grader`** | **`sections, exams`** | `shd_exam_admin` | `SELECT` | `id, passing_percentage, benchmark_scale_config` | Lấy thang điểm và ngưỡng đạt snapshot để tính kết quả `results`. |
+| **`shd_grader`** | **`leads`** | `shd_auth_admin` | `SELECT` | `id, learner_id` | Kiểm tra attempt có liên kết với lead không để tự động ghi tín hiệu điểm. |
+| **`shd_grader`** | **`lead_signals`** | `shd_auth_admin` | `INSERT` | `lead_id, signal_type, signal_weight, metadata` | Hàm `_grade_attempt_internal()` tự động ghi nhận tín hiệu điểm (`score_extreme_low`, `score_near_pass`, `full_exam_completed`) sau khi chấm. |
+| **`shd_exam_admin`** | **`staff_users`** | `shd_privacy_admin` | `SELECT` | `id, role, is_active` | Hàm `record_content_review()` kiểm tra role `teacher`/`admin` và `publish_exam_version()` kiểm tra role `admin`. |
+| **`shd_privacy_admin`**| **`learners`** *(Thủ tục ẩn danh)* | `shd_auth_admin` | `UPDATE` | `full_name, email, phone_hash, phone_encrypted, phone_verified_at, anonymized_at` | Thủ tục `anonymize_learner()` ghi đè tên ẩn danh, gán phone_hash `anon_...`, xóa PII. |
+| **`shd_privacy_admin`**| **`guardians`** *(Thủ tục ẩn danh)* | `shd_auth_admin` | `UPDATE` | `phone_hash, phone_encrypted` | Thủ tục `anonymize_learner()` gán phone_hash `anon_g_...`, xóa PII phụ huynh. |
+| **`shd_privacy_admin`**| **`visitors`** *(Thủ tục ẩn danh)* | `shd_attempt_mgr` | `UPDATE` | `visitor_token_hash, ip_hash, user_agent` | Thủ tục `anonymize_learner()` gán token băm ngẫu nhiên `anon_v_...`, xóa IP/User-Agent. |
+| **`shd_privacy_admin`**| **`otp_challenges`** *(Thủ tục ẩn danh)* | `shd_auth_admin` | `UPDATE` | `phone_hash, otp_hash` | Thủ tục `anonymize_learner()` gán băm ngẫu nhiên `anon_otp_...`. |
+| **`shd_privacy_admin`**| **`consents`** *(Thủ tục ẩn danh)* | `shd_auth_admin` | `UPDATE` | `user_ip_hash` | Thủ tục `anonymize_learner()` xóa `user_ip_hash = NULL`, bảo lưu dòng log theo DEC-ARCH-07. |
+| **`shd_privacy_admin`**| **`crm_links`** *(Thủ tục ẩn danh)* | `shd_auth_admin` | `DELETE` | Toàn bộ dòng của learner | Thủ tục `anonymize_learner()` xóa liên kết CRM One Center của học viên bị xóa. |
+| **`shd_privacy_admin`**| **`crm_inbound_events`** *(Thủ tục ẩn danh)* | `shd_auth_admin` | `UPDATE` | `payload` (JSONB) | Thủ tục `anonymize_learner()` lọc sạch các khóa PII (`phone`, `email`, `full_name`). |
+| **`shd_privacy_admin`**| **`crm_outbox`** *(Thủ tục ẩn danh)* | `shd_auth_admin` | `UPDATE` | `error_log` | Thủ tục `anonymize_learner()` làm sạch `error_log = '[REDACTED_ANONYMIZED]'`. |
+| **`shd_privacy_admin`**| **`learning_events`** *(Thủ tục ẩn danh)* | `shd_attempt_mgr` | `UPDATE` | `event_payload` (JSONB) | Thủ tục `anonymize_learner()` lọc sạch các khóa PII trong payload sự kiện. |
+| **`shd_privacy_admin`**| **`learners`** *(Hàm decrypt_phone)* | `shd_auth_admin` | `SELECT` | `id, phone_encrypted` | Hàm `decrypt_phone()` đọc ciphertext envelope để giải mã SĐT. |
+| **`shd_privacy_admin`**| **`crm_outbox`** *(Hàm decrypt_phone)* | `shd_auth_admin` | `SELECT` | `aggregate_id, status, locked_by, locked_until` | Hàm `decrypt_phone()` kiểm tra worker có task outbox processing còn hạn lease. |
+| **`shd_privacy_admin`**| **`staff_users`** *(Hàm decrypt_phone)* | `shd_privacy_admin` | `SELECT` | `id, role, is_active` | Hàm `decrypt_phone()` kiểm tra quyền RBAC của tư vấn viên (`advisor`, `admin`, `dpo`). |
+| **`shd_privacy_admin`**| **`audit_logs`** *(Hàm decrypt_phone)* | `shd_privacy_admin` | `INSERT` | Tất cả các cột | Ghi vết truy cập SĐT vào sổ cái audit trong cùng transaction. |
 
 ---
 
@@ -1054,29 +1128,65 @@ Nhằm triệt tiêu nguy cơ rò rỉ dữ liệu qua các hàm độc hại tr
    - Cột: `id`, `learner_id`, `verification_status`, `requested_at`, `verified_at`.
 5. **`v_masked_leads`:**
    - Cột: `id`, `learning_goal_id`, `exam_timeline`, `persona_type_id`, `lead_temperature`, `total_attempts_count`, `last_temperature_calculated_at`, `created_at`.
-6. **`v_masked_otp_challenges` (View mới cho readonly):**
+6. **`v_masked_otp_challenges` (View cho readonly):**
    - Cột: `id`, `attempt_id`, `channel`, `attempts_count`, `status`, `expires_at`, `created_at`. (Che giấu `phone_hash` và `otp_hash`).
-7. **`v_masked_consents` (View mới cho readonly):**
+7. **`v_masked_consents` (View cho readonly):**
    - Cột: `id`, `learner_id`, `consent_text_id`, `action`, `capture_method`, `recorded_at`. (Che giấu `user_ip_hash`).
-8. **`v_contactable_leads` (Dành cho `shd_worker` & `shd_staff_api`):**
-   - Cột: `lead_id`, `learner_id`, `full_name`, `phone_encrypted`, `email`, `lead_temperature`, `learning_goal_code`, `exam_timeline`.
-   - Điều kiện lấy consent mới nhất theo `(learner_id, purpose)`:
+8. **`v_contactable_leads` (Dành riêng cho `shd_staff_api` - Task N1):**
+   - Cột: `lead_id`, `learner_id`, `full_name_masked`, `lead_temperature`, `learning_goal_code`, `exam_timeline`.
+   - **Hoàn toàn LOẠI BỎ `full_name`, `email`, `phone_encrypted` khỏi view này!**
+   - Định nghĩa SQL đầy đủ:
      ```sql
-     WHERE l.phone_verified_at IS NOT NULL
+     CREATE VIEW v_contactable_leads WITH (security_barrier = true) AS
+     SELECT 
+         l.id AS lead_id,
+         lr.id AS learner_id,
+         overlay(lr.full_name placing '***' from 3 for 10) AS full_name_masked,
+         l.lead_temperature,
+         lg.code AS learning_goal_code,
+         l.exam_timeline
+     FROM leads l
+     JOIN learners lr ON l.learner_id = lr.id
+     JOIN learning_goals lg ON l.learning_goal_id = lg.id
+     WHERE lr.phone_verified_at IS NOT NULL
        AND (
          SELECT c.action
          FROM consents c
          JOIN consent_texts ct ON c.consent_text_id = ct.id
          JOIN consent_purposes cp ON ct.purpose_id = cp.id
-         WHERE c.learner_id = l.id AND cp.code = 'course_consulting'
+         WHERE c.learner_id = lr.id AND cp.code = 'course_consulting'
          ORDER BY c.recorded_at DESC
          LIMIT 1
        ) = 'granted'
-       AND (l.is_under_18 = false OR EXISTS (
-         SELECT 1 FROM guardians g WHERE g.learner_id = l.id AND g.verification_status = 'approved'
-       ))
+       AND (lr.is_under_18 = false OR EXISTS (
+         SELECT 1 FROM guardians g WHERE g.learner_id = lr.id AND g.verification_status = 'approved'
+       ));
      ```
-9. **`v_readonly_contactable_leads` (Dành cho `shd_readonly` - Định nghĩa hoàn thiện, phi PII):**
+9. **`v_worker_contactable_leads` (Dành riêng cho `shd_worker` - Task N1, không có PII):**
+   - Cột: `lead_id`, `learner_id`. (Chỉ chứa ID tối thiểu để worker quét tiến trình mà không lộ bất kỳ dữ liệu cá nhân nào).
+   - Định nghĩa SQL đầy đủ:
+     ```sql
+     CREATE VIEW v_worker_contactable_leads WITH (security_barrier = true) AS
+     SELECT 
+         l.id AS lead_id,
+         lr.id AS learner_id
+     FROM leads l
+     JOIN learners lr ON l.learner_id = lr.id
+     WHERE lr.phone_verified_at IS NOT NULL
+       AND (
+         SELECT c.action
+         FROM consents c
+         JOIN consent_texts ct ON c.consent_text_id = ct.id
+         JOIN consent_purposes cp ON ct.purpose_id = cp.id
+         WHERE c.learner_id = lr.id AND cp.code = 'course_consulting'
+         ORDER BY c.recorded_at DESC
+         LIMIT 1
+       ) = 'granted'
+       AND (lr.is_under_18 = false OR EXISTS (
+         SELECT 1 FROM guardians g WHERE g.learner_id = lr.id AND g.verification_status = 'approved'
+       ));
+     ```
+10. **`v_readonly_contactable_leads` (Dành cho `shd_readonly` - Báo cáo & phân tích, phi PII):**
    - Cột: `lead_id`, `age_group`, `is_under_18`, `lead_temperature`, `learning_goal_code`, `exam_timeline`, `guardian_verified`, `created_at`.
    - Định nghĩa SQL hoàn chỉnh:
      ```sql
@@ -1112,7 +1222,7 @@ Nhằm triệt tiêu nguy cơ rò rỉ dữ liệu qua các hàm độc hại tr
 
 ---
 
-## 8. Danh Sách 41 Bất Biến Bắt Buộc Kiểm Chứng (Invariants Inventory v1.5)
+## 8. Danh Sách 41 Bất Biến Bắt Buộc Kiểm Chứng (Invariants Inventory v1.6)
 
 1. **`INV-01` (Bảo mật Đáp án cấp độ Role):** Bảng `answer_keys` lưu đáp án đúng độc lập; role cơ sở dữ liệu `shd_app` bị từ chối truy cập (Permission Denied 42501) khi thực hiện lệnh `SELECT` trên bảng `answer_keys`.
 2. **`INV-02` (Tính Bất Biến của Đề đã Xuất Bản):** Sau khi `exam_versions.status = 'published'`, mọi thao tác `INSERT`, `UPDATE`, `DELETE` trên bảng `sections`, `stimuli`, `questions`, `question_options`, `answer_keys`, `explanations` thuộc phiên bản đó đều bị chặn bởi database trigger.
@@ -1132,11 +1242,11 @@ Nhằm triệt tiêu nguy cơ rò rỉ dữ liệu qua các hàm độc hại tr
 16. **`INV-16` (Khóa Thuê Outbox Đơn Tiến Trình):** Khi một worker khóa một bản ghi trong `crm_outbox`, trường `locked_until` được gán bằng `clock_timestamp() + INTERVAL '5 minutes'`; các worker khác chạy song song bỏ qua bản ghi này nhờ cơ chế `FOR UPDATE SKIP LOCKED`.
 17. **`INV-17` (Dead Letter Queue Sau 5 Lần Thất Bại):** Một sự kiện trong `crm_outbox` khi có `retry_count >= 5` bắt buộc phải chuyển trạng thái sang `dead_letter` và ngừng tự động thử lại.
 18. **`INV-18` (Nguyên Tắc Hot Lead Đa Tín Hiệu):** Điểm số nhiệt độ Lead (`lead_temperature`) được suy biến từ tổng trọng số của các tín hiệu trong bảng `lead_signals`; đạt từ 5.0 điểm trở lên được xếp loại `hot`, 3.0 đến 4.9 là `warm`, dưới 3.0 là `nurture`.
-19. **`INV-19` (Quy Trình Ẩn Danh Hóa Bao Phủ Toàn Diện Các Bảng PII):** Khi thực hiện thủ tục ẩn danh hóa (`anonymize_learner`), toàn bộ 100% các cột và bảng chứa định danh trực tiếp hoặc gián tiếp đều được xử lý triệt để:
-    - Bảng `learners`: thay thế `full_name = 'Học viên ẩn danh'`, `email = NULL`, `phone_hash = md5(random()::text)`, `phone_encrypted = '{"anonymized": true}'`, `phone_verified_at = NULL`, `anonymized_at = clock_timestamp()`.
-    - Bảng `guardians`: thay `phone_hash = md5(random()::text)`, `phone_encrypted = '{"anonymized": true}'`.
-    - Bảng `visitors`: thay `visitor_token_hash = md5(random()::text)`, xóa `ip_hash = NULL`, `user_agent = NULL`.
-    - Bảng `otp_challenges`: thay `phone_hash = md5(random()::text)`, `otp_hash = md5(random()::text)`.
+19. **`INV-19` (Quy Trình Ẩn Danh Hóa Bao Phủ Toàn Diện Các Bảng PII Kèm Tiền Tố - Task N5):** Khi thực hiện thủ tục ẩn danh hóa (`anonymize_learner`), toàn bộ 100% các cột và bảng chứa định danh trực tiếp hoặc gián tiếp đều được xử lý triệt để bằng `gen_random_bytes(16)` kèm tiền tố chuẩn hóa:
+    - Bảng `learners`: thay thế `full_name = 'Học viên ẩn danh'`, `email = NULL`, `phone_hash = 'anon_' || encode(gen_random_bytes(16), 'hex')`, `phone_encrypted = '{"anonymized": true}'`, `phone_verified_at = NULL`, `anonymized_at = clock_timestamp()`.
+    - Bảng `guardians`: thay `phone_hash = 'anon_g_' || encode(gen_random_bytes(16), 'hex')`, `phone_encrypted = '{"anonymized": true}'`.
+    - Bảng `visitors`: thay `visitor_token_hash = 'anon_v_' || encode(gen_random_bytes(16), 'hex')`, xóa `ip_hash = NULL`, `user_agent = NULL`.
+    - Bảng `otp_challenges`: thay `phone_hash = 'anon_otp_' || encode(gen_random_bytes(16), 'hex')`, `otp_hash = encode(gen_random_bytes(16), 'hex')`.
     - Bảng `consents`: xóa `user_ip_hash = NULL`.
     - Bảng `crm_links`: xóa bản ghi liên kết (`DELETE FROM crm_links WHERE learner_id = p_learner_id`).
     - Bảng `crm_inbound_events`: xóa sạch các trường PII trong JSONB `payload` (`payload = payload - 'phone' - 'email' - 'full_name'`).
@@ -1154,8 +1264,8 @@ Nhằm triệt tiêu nguy cơ rò rỉ dữ liệu qua các hàm độc hại tr
 28. **`INV-28` (Lưu Trữ Băm HMAC Kèm Pepper Cho Định Danh Gián Tiếp):** Các trường `ip_hash`, `visitor_token_hash`, `current_session_token_hash`, `user_ip_hash` đều được tính toán bằng hàm băm HMAC-SHA256 kết hợp với các chuỗi bí mật pepper riêng biệt.
 29. **`INV-29` (Ràng Buộc Phụ Huynh Đã Xác Nhận Cho Người Dưới 18 Tuổi):** Khi ghi nhận consent của học viên dưới 18 tuổi, trường `given_by_guardian_id` bắt buộc phải tham chiếu tới một phụ huynh có trạng thái `verification_status = 'approved'` tại thời điểm ghi nhận.
 30. **`INV-30` (Sổ Cái Audit & Learning Events Chỉ-Ghi-Thêm):** Bảng `audit_logs` và `learning_events` là cấu trúc Append-Only; mọi thao tác `UPDATE` hoặc `DELETE` đều bị chặn hoàn toàn bởi database trigger ở cấp độ cơ sở dữ liệu.
-31. **`INV-31` (Đường Chấm Điểm Biệt Lập Qua Security Definer):** Thao tác chấm điểm thi được thực thi độc quyền qua hàm `grade_attempt()` thuộc sở hữu của role `shd_grader` (`NOLOGIN`), cố định `search_path = pg_catalog, public`, và `REVOKE EXECUTE FROM PUBLIC`.
-32. **`INV-32` (Tính Idempotent Của Đường Chấm Điểm):** Việc gọi hàm `grade_attempt()` nhiều lần trên cùng một bài thi đã có trạng thái `'graded'` trả về kết quả hiện hành mà không tính toán lại hoặc nhân bản dòng dữ liệu kết quả.
+31. **`INV-31` (Đường Chấm Điểm Biệt Lập Qua Hàm Nội Bộ _grade_attempt_internal):** Thao tác chấm điểm thi được thực thi độc quyền qua hàm nội bộ `_grade_attempt_internal()` thuộc sở hữu của role `shd_grader` (`NOLOGIN`), cố định `search_path = pg_catalog, public`, và `REVOKE EXECUTE FROM PUBLIC, shd_worker, shd_app, shd_staff_api`.
+32. **`INV-32` (Tính Idempotent Của Đường Chấm Điểm Nội Bộ):** Việc gọi hàm `_grade_attempt_internal()` nhiều lần trên cùng một bài thi đã có trạng thái `'graded'` trả về kết quả hiện hành mà không tính toán lại hoặc nhân bản dòng dữ liệu kết quả.
 33. **`INV-33` (Đóng Bài Thi Quá Hạn Nguyên Tử):** Hàm `finalize_expired_attempts()` tự động nộp và chấm điểm các bài thi quá hạn (`expires_at + 60s < clock_timestamp()`) trong cùng một transaction thông qua quyền của owner `shd_grader`.
 34. **`INV-34` (Zero-Direct-Write Trên Các Bảng Bảo Mật):** Toàn bộ connecting roles (`shd_app`, `shd_staff_api`, `shd_worker`) bị thu hồi hoàn toàn quyền `INSERT`, `UPDATE`, `DELETE` trực tiếp trên `visitors`, `exam_attempts`, `attempt_section_timers`, `attempt_answers`, `attempt_audio_plays`, `attempt_entitlements`, `learners`, `guardians`, `otp_challenges`, `consents`, `leads`, `lead_signals`, `content_reviews`, `idempotency_keys`; mọi thao tác ghi bắt buộc phải đi qua các hàm `SECURITY DEFINER`.
 35. **`INV-35` (Xác Minh Người Gọi Bằng Token Băm / Claim SSO):** Toàn bộ các hàm `SECURITY DEFINER` cho học viên bắt buộc tự kiểm tra danh tính người gọi thông qua `p_caller_token_hash` đối chiếu với `visitors`/`learners`; các hàm cho nhân viên bắt buộc kiểm tra qua claim SSO đối chiếu với `staff_users.role`. Tuyệt đối không chấp nhận ID định danh tự do từ client.
@@ -1163,12 +1273,12 @@ Nhằm triệt tiêu nguy cơ rò rỉ dữ liệu qua các hàm độc hại tr
 37. **`INV-37` (Bảo Đảm Tính Toàn Vẹn Của Khóa Idempotency Kèm Hash):** Bảng `idempotency_keys` lưu trữ `idem_key` kèm `request_hash`; hàm `acquire_idempotency_key` từ chối yêu cầu và trả về lỗi xung đột nếu cùng một `idem_key` được gửi với `request_hash` khác nhau.
 38. **`INV-38` (Sổ Cái Đồng Ý Chỉ Ghi Qua Hàm Chuyên Trách):** Bảng `consents` là cấu trúc Append-Only tuyệt đối; role `shd_app` hoàn toàn không có quyền `INSERT` trực tiếp trên bảng `consents`. Mọi thao tác ghi nhận hoặc rút lại sự đồng ý bắt buộc phải đi qua hàm `SECURITY DEFINER` `record_consent()`.
 39. **`INV-39` (Cô Lập Quyền Hàm Quản Trị Qua Role `shd_staff_api`):** Các hàm quản trị nội bộ (`publish_exam_version`, `transition_exam_version`, `complete_data_request`, `record_content_review`, `update_setting`, `decrypt_phone`) chỉ được cấp quyền `EXECUTE` cho role chuyên biệt `shd_staff_api` (hoặc `shd_worker` đối với `decrypt_phone`); role công khai `shd_app` bị từ chối thực thi (Permission Denied 42501) trên toàn bộ các hàm này.
-40. **`INV-40` (Không Đọc Trực Tiếp PII Gốc Cho Staff API):** Role `shd_staff_api` bị cấm hoàn toàn quyền `SELECT` trực tiếp trên bảng `learners` và `guardians` (Permission Denied 42501). Nhân viên SHD chỉ được đọc dữ liệu định danh đã che qua views bảo vệ `v_masked_learners` và `v_masked_guardians`. Mọi hành vi giải mã hoặc đọc PII gốc bắt buộc phải thực thi qua hàm `SECURITY DEFINER` chuyên trách (`decrypt_phone`), có kiểm tra mục đích đóng (`crm_sync`, `consultation_call`, `data_export`), ghi nhận danh tính nhân viên (`staff_user_id` suy ra từ SSO claim) hoặc hệ thống worker vào sổ cái `audit_logs` trong cùng transaction.
-41. **`INV-41` (Đường Chấm Điểm Khép Kín & Quản Lý Idempotency Qua Hàm):** Hàm chấm điểm `_grade_attempt_internal()` là hàm nội bộ của owner `shd_grader`, bị thu hồi quyền `EXECUTE` đối với `shd_app` và công chúng; việc chấm điểm chỉ được kích hoạt tự động qua `submit_attempt()` hoặc `finalize_expired_attempts()`. Toàn bộ thao tác ghi trên `idempotency_keys` và `visitors` bắt buộc thực thi qua các hàm `acquire_idempotency_key()`, `complete_idempotency_key()`, và `create_visitor()`; cấm ghi trực tiếp từ mọi connecting roles.
+40. **`INV-40` (Không Đọc Trực Tiếp PII Gốc Cho Staff API & Worker):** Cả hai role `shd_staff_api` và `shd_worker` bị cấm hoàn toàn quyền `SELECT` trực tiếp trên bảng `learners` và `guardians` (Permission Denied 42501). Nhân viên SHD chỉ được đọc dữ liệu định danh đã che qua views bảo vệ `v_masked_learners`, `v_masked_guardians` và `v_contactable_leads` (chỉ chứa `full_name_masked`). Worker chỉ đọc qua view tối thiểu `v_worker_contactable_leads` (`lead_id`, `learner_id`). Mọi hành vi giải mã hoặc đọc PII gốc bắt buộc phải thực thi qua hàm `SECURITY DEFINER` chuyên trách (`decrypt_phone`), có kiểm tra mục đích đóng (`crm_sync`, `consultation_call`, `data_export`), ghi nhận danh tính nhân viên (`staff_user_id` suy ra từ SSO claim) hoặc hệ thống worker vào sổ cái `audit_logs` trong cùng transaction.
+41. **`INV-41` (Đường Chấm Điểm Khép Kín & Quản Lý Idempotency Qua Hàm):** Hàm chấm điểm `_grade_attempt_internal()` là hàm nội bộ của owner `shd_grader`, quyền `EXECUTE` chỉ cấp duy nhất cho role NOLOGIN `shd_attempt_mgr`, bị thu hồi quyền `EXECUTE` đối với `shd_worker`, `shd_app`, `shd_staff_api` và PUBLIC. Việc chấm điểm chỉ được kích hoạt tự động qua `submit_attempt()` hoặc `finalize_expired_attempts()` (do cùng owner `shd_grader`). Toàn bộ thao tác ghi trên `idempotency_keys` và `visitors` bắt buộc thực thi qua các hàm `acquire_idempotency_key()`, `complete_idempotency_key()`, và `create_visitor()`; cấm ghi trực tiếp từ mọi connecting roles.
 
 ---
 
-## 9. Bảng Truy Vết Toàn Diện Yêu Cầu ↔ Bảng Dữ Liệu (Traceability Matrix v1.5)
+## 9. Bảng Truy Vết Toàn Diện Yêu Cầu ↔ Bảng Dữ Liệu (Traceability Matrix v1.6)
 
 Toàn bộ **43 bảng** trong cơ sở dữ liệu đều có nguồn gốc rõ ràng từ: (1) Màn hình giao diện người dùng, (2) Yêu cầu pháp lý & quyền riêng tư, hoặc (3) Cơ chế vận hành & kiến trúc nền tảng. Không có bất kỳ bảng mồ côi nào.
 
@@ -1177,7 +1287,7 @@ Toàn bộ **43 bảng** trong cơ sở dữ liệu đều có nguồn gốc rõ
 | Mã Màn Hình | Trường hiển thị trên Wireframe | Bảng & Cột dữ liệu tương ứng trong Database | Nguồn & Loại dữ liệu |
 | :--- | :--- | :--- | :---: |
 | **SCR-01** (Catalog) | Tên đề thi, Badge kỳ thi, Trình độ | `exams.title`, `exam_standards.name`, `levels.code` | Trực tiếp |
-| **SCR-01** (Catalog) | Thời gian làm bài, Số lượng câu hỏi | `exams.time_limit_seconds`, `COUNT(questions.id)` | Trực tiếp / Suy ra |
+| **SCR-01** (Catalog) | Thời gian làm bài, Số lượng câu hỏi | `exams.time_limit_seconds` (3900s), `COUNT(questions.id)` | Trực tiếp / Suy ra |
 | **SCR-01** (Catalog) | Bộ lọc: Ngôn ngữ, Kỳ thi, Trình độ, Kỹ năng | `tracks.code`, `exam_standards.code`, `levels.code`, `skills.code` | Bảng tra cứu |
 | **SCR-02** (Phòng thi Đọc) | Đồng hồ đếm ngược server bài thi & phần thi | `exam_attempts.expires_at`, `attempt_section_timers.expires_at` | Dữ liệu suy ra |
 | **SCR-02** (Phòng thi Đọc) | Văn bản bài đọc tiếng Đức (Beispieltext) | `stimuli.content_text` (nơi `stimulus_type = 'text'`) | Trực tiếp |
@@ -1210,7 +1320,7 @@ Toàn bộ **43 bảng** trong cơ sở dữ liệu đều có nguồn gốc rõ
 | **Quyền của chủ thể dữ liệu** | Điều 14, Luật 91/2025/QH15: Quyền rút đồng ý, xóa, xuất PII | `data_requests`, hàm `create_data_request()`, `complete_data_request()`, `anonymize_learner` |
 | **Giám sát truy cập PII** | Tiêu chuẩn kiểm toán an ninh dữ liệu cá nhân | `audit_logs` (Lưu trữ bắt buộc 5 năm, INV-30) |
 | **Bảo mật kênh truyền & lưu trữ** | Mã hóa dữ liệu định danh trực tiếp | `learners.phone_encrypted` (Envelope AES-256-GCM) |
-| **Chống lộ PII cho nhân viên** | Nguyên tắc Need-to-Know, cấm SELECT trực tiếp | `v_masked_learners`, `v_masked_guardians`, hàm `decrypt_phone` (INV-40) |
+| **Chống lộ PII cho nhân viên & Worker**| Nguyên tắc Need-to-Know, cấm SELECT trực tiếp | `v_masked_learners`, `v_masked_guardians`, `v_contactable_leads` (masked), `v_worker_contactable_leads` (chỉ ID), hàm `decrypt_phone` (INV-40) |
 
 ### 9.3. Truy Vết Từ Yêu Cầu Vận Hành, Hệ Thống & CRM Outbox
 
@@ -1230,7 +1340,7 @@ Toàn bộ **43 bảng** trong cơ sở dữ liệu đều có nguồn gốc rõ
 
 ---
 
-## 10. Mục Cần Duyệt & Các Giả Định Chờ Quyết Định (Decisions Needing Approval v1.5)
+## 10. Mục Cần Duyệt & Các Giả Định Chờ Quyết Định (Decisions Needing Approval v1.6)
 
 | Mã | Nội dung đề xuất | Căn cứ & Rủi ro | Tác động schema nếu thay đổi | Trạng thái |
 | :---: | :--- | :--- | :--- | :--- |
