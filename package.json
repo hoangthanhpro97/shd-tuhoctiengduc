@@ -16,13 +16,18 @@
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
     "db:reset": "docker compose down -v && docker compose up -d",
-    "check:all": "pnpm lint && pnpm typecheck && pnpm check:deps && pnpm check:secrets && pnpm test"
+    "check:all": "pnpm lint && pnpm typecheck && pnpm check:deps && pnpm check:secrets && pnpm test",
+    "db:bootstrap": "node scripts/bootstrap-roles.mjs",
+    "db:verify-roles": "node scripts/verify-roles.mjs",
+    "db:migrate": "node scripts/migrate.mjs",
+    "db:check-drift": "node scripts/check-drift.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
     "@types/node": "^22.10.7",
     "dependency-cruiser": "^16.9.0",
     "eslint": "^9.18.0",
+    "pg": "8.23.1",
     "prettier": "^3.4.2",
     "typescript": "~5.6.3",
     "typescript-eslint": "^8.19.1",
