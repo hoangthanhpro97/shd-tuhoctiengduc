@@ -9,7 +9,12 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@shd/config": "workspace:*"
+    "@shd/config": "workspace:*",
+    "drizzle-orm": "0.38.3",
+    "pg": "8.13.1"
+  },
+  "devDependencies": {
+    "@types/pg": "8.11.10",
+    "drizzle-kit": "0.30.2"
   }
 }
-
