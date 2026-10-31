@@ -831,3 +831,4 @@ export const appSettings = pgTable('app_settings', {
   description: text('description'),
   updatedAt: timestamp('updated_at', { withTimezone: true, mode: 'date' }).notNull().defaultNow(),
 });
+

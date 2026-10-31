@@ -141,3 +141,4 @@ GRANT SELECT (id, phone_encrypted) ON learners TO shd_privacy_admin;
 GRANT SELECT (aggregate_id, status, locked_by, locked_until) ON crm_outbox TO shd_privacy_admin;
 GRANT SELECT (id, role, is_active) ON staff_users TO shd_privacy_admin;
 GRANT INSERT ON audit_logs TO shd_privacy_admin;
+

@@ -55,3 +55,4 @@ ALTER TABLE "staff_users" OWNER TO shd_privacy_admin;
 ALTER TABLE "audit_logs" OWNER TO shd_privacy_admin;
 ALTER TABLE "data_requests" OWNER TO shd_privacy_admin;
 ALTER TABLE "app_settings" OWNER TO shd_privacy_admin;
+

@@ -198,3 +198,4 @@ WHERE lr.phone_verified_at IS NOT NULL
 
 ALTER VIEW v_readonly_contactable_leads OWNER TO shd_auth_admin;
 GRANT SELECT ON v_readonly_contactable_leads TO shd_readonly, shd_staff_api;
+

@@ -1334,3 +1334,4 @@ $$;
 ALTER FUNCTION update_setting(varchar, jsonb, jsonb) OWNER TO shd_privacy_admin;
 REVOKE ALL ON FUNCTION update_setting(varchar, jsonb, jsonb) FROM PUBLIC;
 GRANT EXECUTE ON FUNCTION update_setting(varchar, jsonb, jsonb) TO shd_staff_api;
+
