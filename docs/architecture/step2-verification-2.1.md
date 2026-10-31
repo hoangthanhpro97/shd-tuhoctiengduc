@@ -58,7 +58,7 @@ Lệnh 2.1 **ĐẠT trong phạm vi môi trường local WSL**. Các mục chưa
 
 1. **Giữ pnpm 9.15.4.** pnpm báo có bản 12.16.1. Nâng cấp là việc riêng, vì các bản mới thay đổi chính sách chạy script cài đặt. Cần đánh giá trước khi nâng.
 2. **Cảnh báo `url.parse()` của Node** xuất hiện khi cài dependency. Đây là cảnh báo, không ảnh hưởng kết quả. Ghi nhận, không xử lý trong 2.1.
-3. **Chuỗi giả `AKIA1234567890ABCDEF`** từng được ghi vào báo cáo v1 và đã được ẩn ở commit `30eec91`. Chuỗi này vẫn nằm trong lịch sử git của commit trước. Đây là chuỗi giả từ bài kiểm thử, không phải khóa thật, nên không viết lại lịch sử.
+3. **Chuỗi giả `[FAKE_AWS_KEY_REDACTED]`** từng được ghi vào báo cáo v1 và đã được ẩn ở commit `30eec91`. Chuỗi này vẫn nằm trong lịch sử git của commit trước. Đây là chuỗi giả từ bài kiểm thử, không phải khóa thật, nên không viết lại lịch sử.
 4. **Báo cáo v1 không còn hiệu lực.** Các mục ghi ĐẠT trong báo cáo v1 (phiên bản công cụ, `db:up`, `verify-roles`, `check:all`) được xác nhận lại trong báo cáo này bằng đầu ra thật.
 
 ---
