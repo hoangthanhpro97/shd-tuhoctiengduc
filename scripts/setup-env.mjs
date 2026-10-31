@@ -16,8 +16,8 @@ const randomHex = (bytes = 16) => crypto.randomBytes(bytes).toString('hex');
 const pgSuperPassword = randomHex(16);
 const migratorPassword = randomHex(16);
 const appPassword = randomHex(16);
-const graderPassword = randomHex(16);
 const workerPassword = randomHex(16);
+const staffApiPassword = randomHex(16);
 const readonlyPassword = randomHex(16);
 
 const phoneHashPepper = randomHex(32);
@@ -37,15 +37,17 @@ POSTGRES_PORT=5432
 # Database Roles
 SHD_MIGRATOR_PASSWORD=${migratorPassword}
 SHD_APP_PASSWORD=${appPassword}
-SHD_GRADER_PASSWORD=${graderPassword}
 SHD_WORKER_PASSWORD=${workerPassword}
+SHD_STAFF_API_PASSWORD=${staffApiPassword}
 SHD_READONLY_PASSWORD=${readonlyPassword}
 
 # Connection Strings
 DATABASE_URL=postgresql://shd_app:${appPassword}@127.0.0.1:5432/shd_tuhoctiengduc
 TEST_DATABASE_URL=postgresql://shd_migrator:${migratorPassword}@127.0.0.1:5432/shd_test
 MIGRATOR_DATABASE_URL=postgresql://shd_migrator:${migratorPassword}@127.0.0.1:5432/shd_tuhoctiengduc
-GRADER_DATABASE_URL=postgresql://shd_grader:${graderPassword}@127.0.0.1:5432/shd_tuhoctiengduc
+WORKER_DATABASE_URL=postgresql://shd_worker:${workerPassword}@127.0.0.1:5432/shd_tuhoctiengduc
+STAFF_API_DATABASE_URL=postgresql://shd_staff_api:${staffApiPassword}@127.0.0.1:5432/shd_tuhoctiengduc
+READONLY_DATABASE_URL=postgresql://shd_readonly:${readonlyPassword}@127.0.0.1:5432/shd_tuhoctiengduc
 
 # Security Hashes (32 bytes hex)
 PHONE_HASH_PEPPER=${phoneHashPepper}
