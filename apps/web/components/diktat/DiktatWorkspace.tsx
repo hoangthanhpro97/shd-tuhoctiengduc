@@ -93,7 +93,7 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
   }, [exercise, sentences]);
 
   const totalSentences = items.length;
-  const packageTitle = exercise?.title || 'Phản xạ nghe chép chính tả';
+  const packageTitle = exercise?.title || 'Diktat & Hörverstehen';
   const packageLevel = exercise?.level || 'B1';
 
   // Navigation & Mode State
@@ -127,9 +127,9 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
   const [checkedQuestions, setCheckedQuestions] = useState<Record<number, boolean>>({});
   const [questionScores, setQuestionScores] = useState<Record<number, boolean>>({});
 
-  // Accordion open states
-  const [isScriptOpen, setIsScriptOpen] = useState(true);
-  const [isVocabOpen, setIsVocabOpen] = useState(true);
+  // Accordion open states (collapsed by default, click to open)
+  const [isScriptOpen, setIsScriptOpen] = useState(false);
+  const [isVocabOpen, setIsVocabOpen] = useState(false);
 
   // Recording (for Shadowing & Vocabulary)
   const [recordingId, setRecordingId] = useState<string | null>(null);
@@ -472,17 +472,14 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
 
           <div className="h-5 w-px bg-gray-200" />
 
-          {/* SHD Brand Badge */}
-          <Link href="/" className="flex items-center gap-1 shrink-0 font-extrabold tracking-tight">
-            <span className="bg-[#da2527] text-white text-xs px-1.5 py-0.5 rounded font-black">
+          {/* SHD Brand Logo */}
+          <Link href="/" className="flex items-center shrink-0" title="SHD Education">
+            <span className="bg-[#da2527] text-white text-xs px-2 py-0.5 rounded font-black tracking-wider">
               SHD
-            </span>
-            <span className="text-sm font-bold text-gray-900 hidden sm:inline">
-              Tự Học Tiếng Đức
             </span>
           </Link>
 
-          <div className="h-5 w-px bg-gray-200 hidden sm:block" />
+          <div className="h-5 w-px bg-gray-200" />
 
           {/* Title Info */}
           <div className="min-w-0">
@@ -780,22 +777,6 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
                   >
                     <Repeat size={14} />
                   </button>
-
-                  {/* Static Voice Badge */}
-                  {currentSentence && (
-                    <span
-                      className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 px-2 py-1 text-xs font-semibold text-slate-700"
-                      title={
-                        currentSentence.voice === 'female' || currentSentence.audioUrl?.includes('nu-')
-                          ? 'Bản thu âm giọng Nữ'
-                          : 'Bản thu âm giọng Nam'
-                      }
-                    >
-                      {currentSentence.voice === 'female' || currentSentence.audioUrl?.includes('nu-')
-                        ? '♀ Giọng Nữ'
-                        : '♂ Giọng Nam'}
-                    </span>
-                  )}
                 </div>
               </div>
 

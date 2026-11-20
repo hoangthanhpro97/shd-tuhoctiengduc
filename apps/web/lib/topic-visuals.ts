@@ -126,6 +126,72 @@ const EXACT_ITEM_VISUALS: Record<string, TopicVisual> = {
     badgeColor: 'bg-amber-700/90 text-white',
     iconEmoji: '☕',
   },
+  'diktat-b1-bai-01': {
+    imageUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-blue-950/85 via-blue-900/35 to-transparent',
+    badgeColor: 'bg-blue-600/90 text-white',
+    iconEmoji: '🗣️',
+  },
+  'diktat-b1-bai-02': {
+    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-emerald-950/85 via-emerald-900/35 to-transparent',
+    badgeColor: 'bg-emerald-600/90 text-white',
+    iconEmoji: '🏡',
+  },
+  'diktat-b1-bai-03': {
+    imageUrl: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-slate-950/85 via-slate-900/35 to-transparent',
+    badgeColor: 'bg-slate-700/90 text-white',
+    iconEmoji: '💼',
+  },
+  'diktat-b1-bai-04': {
+    imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-amber-950/85 via-amber-900/35 to-transparent',
+    badgeColor: 'bg-amber-600/90 text-white',
+    iconEmoji: '☕',
+  },
+  'diktat-b1-bai-05': {
+    imageUrl: 'https://images.unsplash.com/photo-1541447271487-09612b3f49f7?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-cyan-950/85 via-cyan-900/35 to-transparent',
+    badgeColor: 'bg-cyan-600/90 text-white',
+    iconEmoji: '🚆',
+  },
+  'diktat-b1-bai-06': {
+    imageUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-orange-950/85 via-orange-900/35 to-transparent',
+    badgeColor: 'bg-orange-600/90 text-white',
+    iconEmoji: '🍽️',
+  },
+  'diktat-b1-bai-07': {
+    imageUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-rose-950/85 via-rose-900/35 to-transparent',
+    badgeColor: 'bg-rose-600/90 text-white',
+    iconEmoji: '🤝',
+  },
+  'diktat-b1-bai-08': {
+    imageUrl: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-purple-950/85 via-purple-900/35 to-transparent',
+    badgeColor: 'bg-purple-600/90 text-white',
+    iconEmoji: '🎙️',
+  },
+  'diktat-b1-bai-09': {
+    imageUrl: 'https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-teal-950/85 via-teal-900/35 to-transparent',
+    badgeColor: 'bg-teal-600/90 text-white',
+    iconEmoji: '💬',
+  },
+  'diktat-b1-bai-10': {
+    imageUrl: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-indigo-950/85 via-indigo-900/35 to-transparent',
+    badgeColor: 'bg-indigo-600/90 text-white',
+    iconEmoji: '✍️',
+  },
+  'diktat-b1-bai-11': {
+    imageUrl: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=640&q=80',
+    overlayGradient: 'from-red-950/85 via-red-900/35 to-transparent',
+    badgeColor: 'bg-[#da2527]/90 text-white',
+    iconEmoji: '🏛️',
+  },
 };
 
 const fallbackVisual: TopicVisual = {
@@ -166,6 +232,20 @@ const writingFallbackVisuals: TopicVisual[] = [
   { imageUrl: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-slate-900/40 via-transparent to-transparent', badgeColor: 'bg-indigo-700/90 text-white', iconEmoji: '📝' },
 ];
 
+const diktatFallbackVisuals: TopicVisual[] = [
+  { imageUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-blue-950/85 via-blue-900/35 to-transparent', badgeColor: 'bg-blue-600/90 text-white', iconEmoji: '🗣️' },
+  { imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-emerald-950/85 via-emerald-900/35 to-transparent', badgeColor: 'bg-emerald-600/90 text-white', iconEmoji: '🏡' },
+  { imageUrl: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-slate-950/85 via-slate-900/35 to-transparent', badgeColor: 'bg-slate-700/90 text-white', iconEmoji: '💼' },
+  { imageUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-amber-950/85 via-amber-900/35 to-transparent', badgeColor: 'bg-amber-600/90 text-white', iconEmoji: '☕' },
+  { imageUrl: 'https://images.unsplash.com/photo-1541447271487-09612b3f49f7?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-cyan-950/85 via-cyan-900/35 to-transparent', badgeColor: 'bg-cyan-600/90 text-white', iconEmoji: '🚆' },
+  { imageUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-orange-950/85 via-orange-900/35 to-transparent', badgeColor: 'bg-orange-600/90 text-white', iconEmoji: '🍽️' },
+  { imageUrl: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-rose-950/85 via-rose-900/35 to-transparent', badgeColor: 'bg-rose-600/90 text-white', iconEmoji: '🤝' },
+  { imageUrl: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-purple-950/85 via-purple-900/35 to-transparent', badgeColor: 'bg-purple-600/90 text-white', iconEmoji: '🎙️' },
+  { imageUrl: 'https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-teal-950/85 via-teal-900/35 to-transparent', badgeColor: 'bg-teal-600/90 text-white', iconEmoji: '💬' },
+  { imageUrl: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-indigo-950/85 via-indigo-900/35 to-transparent', badgeColor: 'bg-indigo-600/90 text-white', iconEmoji: '✍️' },
+  { imageUrl: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=640&q=80', overlayGradient: 'from-red-950/85 via-red-900/35 to-transparent', badgeColor: 'bg-[#da2527]/90 text-white', iconEmoji: '🏛️' },
+];
+
 function hashKey(key: string) {
   return [...key].reduce((sum, character, idx) => sum + character.charCodeAt(0) * (idx + 1), 0);
 }
@@ -200,6 +280,9 @@ export function getTopicVisual(skill: string, title: string, itemKey?: string): 
   }
   if (skill === 'schreiben' && itemKey) {
     return writingFallbackVisuals[hashKey(itemKey) % writingFallbackVisuals.length];
+  }
+  if (skill === 'diktat' && itemKey) {
+    return diktatFallbackVisuals[hashKey(itemKey) % diktatFallbackVisuals.length];
   }
   return fallbackVisual;
 }

@@ -95,4 +95,12 @@ describe('Diktat 11-Package & Audio Dynamic Verification', () => {
       expect(found).toBeDefined();
     });
   });
+
+  it('package titles have no lesson numbering and are academic German topic names', () => {
+    importedDiktatPackages.forEach((pkg) => {
+      expect(pkg.title).not.toMatch(/^Bài \d+/i);
+      expect(pkg.title).not.toContain('Bài ');
+      expect(pkg.title.length).toBeGreaterThan(5);
+    });
+  });
 });
