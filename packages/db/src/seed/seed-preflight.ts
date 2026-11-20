@@ -8,9 +8,20 @@ export function getExamFixturesDirectory(repositoryRoot = process.cwd()): string
   return resolve(repositoryRoot, 'content', 'exams');
 }
 
+const canonicalSeedFiles = new Set([
+  'b1-osd-mock-01.json',
+  'osd-b1-test-02.json',
+  'osd-b1-test-03.json',
+  'osd-b1-test-04.json',
+  'b2-osd-mock-01.json',
+  'osd-b2-test-02.json',
+  'osd-b2-test-03.json',
+  'osd-b2-test-04.json',
+]);
+
 export function discoverExamFixtureFiles(repositoryRoot = process.cwd()): string[] {
   return readdirSync(getExamFixturesDirectory(repositoryRoot))
-    .filter((fileName) => fileName.endsWith('.json'))
+    .filter((fileName) => canonicalSeedFiles.has(fileName))
     .sort()
     .map((fileName) => join(getExamFixturesDirectory(repositoryRoot), fileName));
 }

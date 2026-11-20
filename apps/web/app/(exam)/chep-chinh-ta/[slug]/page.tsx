@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import { DiktatWorkspace } from '../../../../components/diktat/DiktatWorkspace';
 import {
   getDiktatExerciseBySlug,
-  importedDiktatPackages,
   type DiktatExercisePackage,
 } from '../../../../data/diktat-imported';
 import { diktatExercises } from '../../../../data/learning-fixtures';

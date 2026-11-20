@@ -16,7 +16,6 @@ import {
   ChevronRight,
   X,
   Share2,
-  Headphones,
   BookOpen,
   Sparkles,
   Repeat,

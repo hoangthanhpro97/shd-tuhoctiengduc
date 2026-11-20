@@ -16,6 +16,8 @@ export default tseslint.config(
       'packages/testing/fixtures/**',
       'docs/**',
       'wireframes/**',
+      '**/.kilo/**',
+      'scratch/**',
       '*.cjs',
     ],
   },
