@@ -1,0 +1,1195 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-05",
+    "version": "v2",
+    "slug": "osd-b2-test-05-v2",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 05 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD B2 (Modelltest 05) bám sát Das Testbuch ÖSD. Tích hợp trọn vẹn ngữ liệu đọc báo chí, bảng nối tiêu đề, fax cắt lề, thư điền từ và bảng ma trận nghe ứng viên lễ tân khách sạn.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20.0,
+      "hoerenMaxPoints": 20.0,
+      "minPassingScorePerSkill": 12.0
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t5_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu B2 (Leseverstehen)",
+      "durationMinutes": 90,
+      "totalQuestions": 12,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "multiple_choice",
+          "title": "Aufgabe 1: Wissenschaftlicher Text (Psychologie des Schönheitsideals)",
+          "instruction": "Lesen Sie den Text auf Blatt 1 und lösen Sie dann die Aufgaben 1 bis 5, indem Sie die richtige Antwort (A, B oder C) ankreuzen.",
+          "questionRange": [
+            1,
+            5
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Lesetext Blatt 1: Psychologie des Schönheitsideals (S. 58)",
+            "content": "PSYCHOLOGIE DES SCHÖNHEITSIDEALS: JUGENDLICHE IM BANN DER DIGITALEN SELBSTOPTIMIERUNG\n\nDer Druck auf Jugendliche und junge Erwachsene, einem scheinbar perfekten Schönheitsideal zu entsprechen, hat in den letzten Jahren dramatisch zugenommen. Wie eine großangelegte Studie des Hamburger Universitätsklinikums belegt, sind über sechzig Prozent der befragten Mädchen und fast vierzig Prozent der Jungen im Alter zwischen 14 und 19 Jahren mit ihrem eigenen Körper unzufrieden. Der Hauptauslöser für diese bedenkliche Entwicklung liegt laut Psychologen in der allgegenwärtigen Präsenz digital optimierter und mit Filtern bearbeiteter Körperbilder in sozialen Netzwerken.\n\nWährend frühere Generationen Schönheitsideale vor allem aus Hochglanzmagazinen oder dem Fernsehen kannten, sind heutige Jugendliche rund um die Uhr auf Plattformen wie Instagram oder TikTok mit scheinbar authentischen, in Wahrheit aber minutiös kuratierten Schnappschüssen von Gleichaltrigen und Influencern konfrontiert. Dieser permanente soziale Vergleich führt zu chronischer Unzufriedenheit, Versagensängsten und im schlimmsten Fall zu schweren Essstörungen oder Depressionen.\n\nExperten fordern daher eine gesetzliche Kennzeichnungspflicht für digital bearbeitete Porträtfotos in der kommerziellen Werbung sowie eine verstärkte Medienkompetenzförderung an Schulen, um Jugendlichen den Unterschied zwischen digitaler Inszenierung und natürlicher Vielfalt bewusst zu machen."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T5_L_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Welcher Hauptfaktor beeinflusst laut Studie das Schönheitsideal Jugendlicher?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Traditionelle familiäre Wertvorstellungen."
+                },
+                {
+                  "id": "B",
+                  "text": "Die ständige Präsenz digital bearbeiteter Körper in sozialen Medien."
+                },
+                {
+                  "id": "C",
+                  "text": "Der gesetzliche Sportunterricht an Schulen."
+                }
+              ],
+              "publicExplanation": "Đáp án B chính xác theo S. 147 (Aufgabe 1: 1 B). Áp lực hình thể xuất phát từ việc tiếp xúc liên tục với các hình ảnh chỉnh sửa số trên mạng xã hội."
+            },
+            {
+              "id": "OSD_B2_T5_L_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Wie viele Mädchen sind laut Studie mit ihrem Aussehen unzufrieden?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Nur rund zehn Prozent."
+                },
+                {
+                  "id": "B",
+                  "text": "Über sechzig Prozent."
+                },
+                {
+                  "id": "C",
+                  "text": "Nahezu hundert Prozent."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_L_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Worin unterscheidet sich die Situation heutiger Jugendlicher von früheren Generationen?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Schönheitsbilder werden heute rund um die Uhr auf Smartphones konsumiert."
+                },
+                {
+                  "id": "B",
+                  "text": "Früher gab es keine Hochglanzmagazine."
+                },
+                {
+                  "id": "C",
+                  "text": "Heutige Jugendliche treiben viel mehr Leistungssport."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_L_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Welche schweren psychischen Folgen kann der ständige Vergleich haben?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Bessere schulische Leistungen."
+                },
+                {
+                  "id": "B",
+                  "text": "Essstörungen, Depressionen und chronische Selbstzweifel."
+                },
+                {
+                  "id": "C",
+                  "text": "Desinteresse an digitalen Medien."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_L_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Was fordern Psychologen zum Schutz junger Menschen?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Eine Kennzeichnungspflicht für retuschierte Werbefotos und mehr Medienkompetenz."
+                },
+                {
+                  "id": "B",
+                  "text": "Ein generelles Smartphone-Verbot bis zum 18. Lebensjahr."
+                },
+                {
+                  "id": "C",
+                  "text": "Die Schließung aller Foto-Plattformen."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "matching_headlines",
+          "title": "Aufgabe 2: Fünf Pressetexte und Überschriften zuordnen",
+          "instruction": "Lesen Sie die 10 Überschriften auf Blatt 1 und die 5 Texte auf Blatt 2. Ordnen Sie dann den Texten (1–5) die passende Überschrift (A–K) zu.",
+          "questionRange": [
+            6,
+            10
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Überschriften und Pressetexte: Wissenschaft und Ernährung (S. 59-60)",
+            "content": "ÜBERSCHRIFTEN (A–K, S. 59):\n[A] Ernährungsirrtümer\n[B] Studie: Mädchen sind besser in Mathe!\n[C] Die geheime Macht der Zahlen\n[D] Wie isst man sich glücklich?\n[E] Schüler gestalten Zukunft\n[F] Überraschende Ergebnisse im Fach Mathematik\n[G] Treffen der Mathematiker\n[H] Gesunde Küche im Handumdrehen\n[I] Die Schönmacher im Essen\n[K] Formeln können schön sein\n\nTEXTE AUF BLATT 2 (S. 60):\n[Text 1] Mathematik ist für viele ein Buch mit sieben Siegeln. Die Wanderausstellung 'Imaginary' zeigt nun die faszinierende visuelle und ästhetische Seite mathematischer Formeln: Komplexe algebraische Gleichungen verwandeln sich in farbenprächtige dreidimensionale Skulpturen und atemberaubende Kunstwerke.\n[Text 2] Dass Mädchen in Mathe schlechter seien als Jungen, ist ein uraltes Vorurteil. Eine großangelegte Studie an über 20.000 Schülerinnen und Schülern belegt nun verblüffende Ergebnisse: Unter der Anleitung motivierter Lehrerinnen erzielen Mädchen in Geometrie und Algebra oft sogar deutlich bessere Leistungen als ihre männlichen Mitschüler.\n[Text 3] Wer möchte nicht gerne schön, fit und strahlend aussehen? Das neu erschienene Buch 'Schönkost' lüftet das Geheimnis natürlicher Anti-Aging-Wirkstoffe in Beeren, Nüssen und Avocadoöl und erklärt, wie bestimmte Vitamine die Haut von innen straffen.\n[Text 4] Macht Spinat wirklich stark? Schadet Kaffee dem Herzen? Ein Team führender Ernährungswissenschaftler räumt in einer neuen Publikation mit den zwanzig hartnäckigsten Mythen und Fehleinschätzungen rund um gesundes Essen auf.\n[Text 5] Schokolade hellt bekanntlich die Stimmung auf, aber wussten Sie, dass auch Walnüsse, Bananen und Haferflocken durch die Bildung von Serotonin echte Glücklichmacher für das Gehirn sind? Ernährungsexperten erklären den Zusammenhang zwischen Speiseplan und psychischem Wohlbefinden."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T5_L_Q06",
+              "order": 6,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 1 (S. 60): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "C",
+                  "text": "C: Die geheime Macht der Zahlen"
+                },
+                {
+                  "id": "G",
+                  "text": "G: Treffen der Mathematiker"
+                },
+                {
+                  "id": "K",
+                  "text": "K: Formeln können schön sein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_L_Q07",
+              "order": 7,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 2 (S. 60): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "B",
+                  "text": "B: Studie: Mädchen sind besser in Mathe!"
+                },
+                {
+                  "id": "F",
+                  "text": "F: Überraschende Ergebnisse im Fach Mathematik"
+                },
+                {
+                  "id": "G",
+                  "text": "G: Treffen der Mathematiker"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_L_Q08",
+              "order": 8,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 3 (S. 60): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "D",
+                  "text": "D: Wie isst man sich glücklich?"
+                },
+                {
+                  "id": "H",
+                  "text": "H: Gesunde Küche im Handumdrehen"
+                },
+                {
+                  "id": "I",
+                  "text": "I: Die Schönmacher im Essen"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_L_Q09",
+              "order": 9,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 4 (S. 60): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A: Ernährungsirrtümer"
+                },
+                {
+                  "id": "D",
+                  "text": "D: Wie isst man sich glücklich?"
+                },
+                {
+                  "id": "H",
+                  "text": "H: Gesunde Küche im Handumdrehen"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_L_Q10",
+              "order": 10,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 5 (S. 60): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A: Ernährungsirrtümer"
+                },
+                {
+                  "id": "D",
+                  "text": "D: Wie isst man sich glücklich?"
+                },
+                {
+                  "id": "I",
+                  "text": "I: Die Schönmacher im Essen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "fax_reconstruction",
+          "title": "Aufgabe 3: Fax-Rekonstruktion (Freiwilliges Engagement in Österreich)",
+          "instruction": "Rekonstruieren Sie den Text, indem Sie die fehlenden Wörter bzw. Wortteile an den rechten Rand schreiben (maximal 3 Buchstaben pro Lücke).",
+          "questionRange": [
+            11,
+            11
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Fax-Rekonstruktion: Ehrenamt und Freiwillige (S. 61)",
+            "content": "FAX-REKONSTRUKTION: Freizeitaktivitäten und Ehrenamt in Österreich (S. 61)\n\nFreiwilliges Engagement in Österre[ich] (a)\n\nMehr als zwei Millionen Menschen in Österre[ich] (1)\nengagieren sich regelmäßig in ihrer Freiz[eit] (2)\nin gemeinnützigen Vereinen oder Hilfsorganisat[ionen.] (3)\nBesonders stark vertreten ist das Ehren[amt] (4)\nim Rettungswesen, bei der Freiwilligen Feuerw[ehr] (5)\nsowie im organisierten Breitensp[ort.] (6)\nOhne die unentgeltliche Arbeit dieser Freiwill[igen] (7)\nwäre das soziale und kulturelle Leben in viel[en] (8)\nGemeinden kaum aufrechtzuerhalt[en.] (9)\nUm das freiwillige Engagement auch für jun[ge] (10)\nErwachsene attraktiver zu gestalten, fo[rdert] (11)\ndie Bundesregierung den Erwerb offiziell[er] (12)\nZertifikate, die bei Bewerbungen auf dem Arbeitsm[arkt] (13)\nals wertvolle Zusatzqualifikation anerkan[nt] (14)\nwerden. Zudem wird der rechtliche Versicherungssch[utz] (15)\nfür alle freiwilligen Helfer im Einsa[tz] (16)\nfortlaufend modernisiert und ausgeb[aut.] (17)\nExperten betonen, dass bürgerschaftliches Engagem[ent] (18)\nden gesellschaftlichen Zusammenhalt nachhal[tig] (19)\nstärkt und Generationen verbindet."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T5_L_Q11",
+              "order": 11,
+              "part": 3,
+              "taskType": "fax_reconstruction",
+              "prompt": "Rekonstruieren Sie die 20 Lücken am rechten Rand mit maximal 3 Buchstaben pro Lücke.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "1: ich | 2: eit | 3: ionen | 4: amt | 5: ehr | 6: ort | 7: igen | 8: en | 9: en | 10: ge | 11: rdert | 12: er | 13: arkt | 14: nt | 15: utz | 16: tz | 17: aut | 18: ent | 19: tig | 20: det"
+                },
+                {
+                  "id": "B",
+                  "text": "Sai lệch hình thức ngữ pháp."
+                },
+                {
+                  "id": "C",
+                  "text": "Điền sai đuôi từ."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "cloze_grammar",
+          "title": "Aufgabe 4: Werbebrief (Kinder- und Jugendcamp Alf Fink)",
+          "instruction": "Ergänzen Sie die 10 fehlenden Wörter sinngemäß, grammatikalisch und orthografisch passend (ein Wort pro Lücke).",
+          "questionRange": [
+            12,
+            12
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Werbebrief: Feriencamp Alf Fink, Karate Wien (S. 62)",
+            "content": "WERBEBRIEF: Kinder- und Jugendcamp Alf Fink, Karate Wien (S. 62)\n\nSehr geehrte Eltern,\n\nwir freuen uns, Ihnen unser diesjähriges Sommercamp für Kinder und Jugendliche (1) [von] 8 bis 16 Jahren vorstellen zu dürfen. Unser Feriencamp verbindet professionelles Karatetraining mit spannenden Naturerlebnissen und bietet eine ideale Vorbereitung (2) [auf] das neue Schuljahr.\n\nDie Trainings finden täglich (3) [in] kleinen Gruppen unter Anleitung zertifizierter Trainer statt. Dabei lernen die Kinder neben sportlicher Fitness auch wichtige Werte (4) [wie] Disziplin, Respekt und Selbstvertrauen. Für den Nachmittag haben wir ein abwechslungsreiches Freizeitprogramm (5) [für] alle Teilnehmer vorbereitet.\n\nUnser Ziel ist es, Kindern Freude (6) [zu] vermitteln und neue Freundschaften (7) [mit] Gleichaltrigen zu ermöglichen. Das Camp erstreckt sich über zwei Wochen, von Anfang Juli (8) [bis] Mitte August. Anmeldungen sind ab sofort möglich.\n\nFragen beantworten wir gerne (9) [bei] einem persönlichen Beratungsgespräch in unserem Dojo oder telefonisch (10) [unter] 01-544 321.\n\nMit sportlichen Grüßen\nAlf Fink, Karateverein Wien"
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T5_L_Q12",
+              "order": 12,
+              "part": 4,
+              "taskType": "cloze_single_word",
+              "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "1: von | 2: auf | 3: in | 4: wie | 5: für | 6: zu | 7: mit | 8: bis | 9: bei | 10: unter"
+                },
+                {
+                  "id": "B",
+                  "text": "1: aus | 2: an | 3: an | 4: als | 5: mit | 6: an | 7: von | 8: zu | 9: in | 10: auf"
+                },
+                {
+                  "id": "C",
+                  "text": "Sai giới từ và liên từ so sánh."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B2_T5_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Welcher Hauptfaktor beeinflusst laut Studie das Schönheitsideal Jugendlicher?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Traditionelle familiäre Wertvorstellungen."
+            },
+            {
+              "id": "B",
+              "text": "Die ständige Präsenz digital bearbeiteter Körper in sozialen Medien."
+            },
+            {
+              "id": "C",
+              "text": "Der gesetzliche Sportunterricht an Schulen."
+            }
+          ],
+          "publicExplanation": "Đáp án B chính xác theo S. 147 (Aufgabe 1: 1 B). Áp lực hình thể xuất phát từ việc tiếp xúc liên tục với các hình ảnh chỉnh sửa số trên mạng xã hội."
+        },
+        {
+          "id": "OSD_B2_T5_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Wie viele Mädchen sind laut Studie mit ihrem Aussehen unzufrieden?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Nur rund zehn Prozent."
+            },
+            {
+              "id": "B",
+              "text": "Über sechzig Prozent."
+            },
+            {
+              "id": "C",
+              "text": "Nahezu hundert Prozent."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Worin unterscheidet sich die Situation heutiger Jugendlicher von früheren Generationen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Schönheitsbilder werden heute rund um die Uhr auf Smartphones konsumiert."
+            },
+            {
+              "id": "B",
+              "text": "Früher gab es keine Hochglanzmagazine."
+            },
+            {
+              "id": "C",
+              "text": "Heutige Jugendliche treiben viel mehr Leistungssport."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Welche schweren psychischen Folgen kann der ständige Vergleich haben?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bessere schulische Leistungen."
+            },
+            {
+              "id": "B",
+              "text": "Essstörungen, Depressionen und chronische Selbstzweifel."
+            },
+            {
+              "id": "C",
+              "text": "Desinteresse an digitalen Medien."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Was fordern Psychologen zum Schutz junger Menschen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Eine Kennzeichnungspflicht für retuschierte Werbefotos und mehr Medienkompetenz."
+            },
+            {
+              "id": "B",
+              "text": "Ein generelles Smartphone-Verbot bis zum 18. Lebensjahr."
+            },
+            {
+              "id": "C",
+              "text": "Die Schließung aller Foto-Plattformen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q06",
+          "order": 6,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 1 (S. 60): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "C",
+              "text": "C: Die geheime Macht der Zahlen"
+            },
+            {
+              "id": "G",
+              "text": "G: Treffen der Mathematiker"
+            },
+            {
+              "id": "K",
+              "text": "K: Formeln können schön sein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q07",
+          "order": 7,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 2 (S. 60): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "B",
+              "text": "B: Studie: Mädchen sind besser in Mathe!"
+            },
+            {
+              "id": "F",
+              "text": "F: Überraschende Ergebnisse im Fach Mathematik"
+            },
+            {
+              "id": "G",
+              "text": "G: Treffen der Mathematiker"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q08",
+          "order": 8,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 3 (S. 60): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "D",
+              "text": "D: Wie isst man sich glücklich?"
+            },
+            {
+              "id": "H",
+              "text": "H: Gesunde Küche im Handumdrehen"
+            },
+            {
+              "id": "I",
+              "text": "I: Die Schönmacher im Essen"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q09",
+          "order": 9,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 4 (S. 60): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A: Ernährungsirrtümer"
+            },
+            {
+              "id": "D",
+              "text": "D: Wie isst man sich glücklich?"
+            },
+            {
+              "id": "H",
+              "text": "H: Gesunde Küche im Handumdrehen"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q10",
+          "order": 10,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 5 (S. 60): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A: Ernährungsirrtümer"
+            },
+            {
+              "id": "D",
+              "text": "D: Wie isst man sich glücklich?"
+            },
+            {
+              "id": "I",
+              "text": "I: Die Schönmacher im Essen"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q11",
+          "order": 11,
+          "part": 3,
+          "taskType": "fax_reconstruction",
+          "prompt": "Rekonstruieren Sie die 20 Lücken am rechten Rand mit maximal 3 Buchstaben pro Lücke.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: ich | 2: eit | 3: ionen | 4: amt | 5: ehr | 6: ort | 7: igen | 8: en | 9: en | 10: ge | 11: rdert | 12: er | 13: arkt | 14: nt | 15: utz | 16: tz | 17: aut | 18: ent | 19: tig | 20: det"
+            },
+            {
+              "id": "B",
+              "text": "Sai lệch hình thức ngữ pháp."
+            },
+            {
+              "id": "C",
+              "text": "Điền sai đuôi từ."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_L_Q12",
+          "order": 12,
+          "part": 4,
+          "taskType": "cloze_single_word",
+          "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: von | 2: auf | 3: in | 4: wie | 5: für | 6: zu | 7: mit | 8: bis | 9: bei | 10: unter"
+            },
+            {
+              "id": "B",
+              "text": "1: aus | 2: an | 3: an | 4: als | 5: mit | 6: an | 7: von | 8: zu | 9: in | 10: auf"
+            },
+            {
+              "id": "C",
+              "text": "Sai giới từ và liên từ so sánh."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t5_hoeren",
+      "skill": "Hoeren",
+      "title": "Kỹ năng Nghe hiểu B2 (Hörverstehen)",
+      "durationMinutes": 30,
+      "totalQuestions": 11,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "radio_broadcast",
+          "title": "Aufgabe 1: Radioreportage über Arbeitsmarkt und Hotelbranche",
+          "instruction": "Sie hören eine Radiosendung. Wählen Sie: Sind die Aussagen richtig oder falsch? Sie hören den Text zwei Mal.",
+          "questionRange": [
+            1,
+            10
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Radiosendung: Hotellerie und Berufschancen (S. 63 & 147)",
+            "content": "HÖRTEXT AUFGABE 1: Radioreportage über Arbeitsmarkt und Hotelbranche (S. 63 & 147)\n\nRadiosendung mit 10 Aussagen zu Fachkräftemangel, Ausbildung und Verdienstchancen in der internationalen Hotellerie (Nghe 2 lần)."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T5_H_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q07",
+              "order": 7,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q08",
+              "order": 8,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q09",
+              "order": 9,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T5_H_Q10",
+              "order": 10,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "information_grid",
+          "title": "Aufgabe 2: Vergleich dreier Bewerberinnen für Rezeptionistin",
+          "instruction": "Ergänzen Sie die fehlenden Informationen oder kreuzen Sie die entsprechenden Kästchen in der Tabelle an. Sie hören den Text ein Mal.",
+          "questionRange": [
+            11,
+            11
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Vergleichstabelle: Bewerberinnen Hotelrezeption (S. 64 & 148)",
+            "content": "VERGLEICHSTABELLE: Bewerberinnen für Hotel-Rezeptionistin (Stellenvermittlungsbüro, S. 64 & 148)\n\nVergleich von 3 Bewerberinnen (Frau Schmidt, Frau Reubert, Frau Klingel) für eine Stelle als Hotel-Rezeptionistin anhand von 9 Kriterien:\n1. Alter der Bewerberin\n2. Abgeschlossene Berufsausbildung (Hotelfachfrau / Matura)\n3. Berufserfahrung an Hotelrezeptionen (Jahre)\n4. Fremdsprachenkenntnisse: Englisch & Französisch\n5. EDV-Kenntnisse (spezielle Hotel-Buchungssoftware)\n6. Bereitschaft zum Schicht- und Wochenenddienst\n7. Gehaltsvorstellung (Monatsbrutto)\n8. Frühester Arbeitsbeginn\n9. Vollständigkeit der Bewerbungsunterlagen"
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T5_H_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "table_completion",
+              "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den drei Bewerberinnen für die Rezeptionsstelle.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Điền đầy đủ và chính xác toàn bộ 9 tiêu chí so sánh hồ sơ 3 ứng viên theo băng thoại."
+                },
+                {
+                  "id": "B",
+                  "text": "Sai sót thông tin về kinh nghiệm làm việc và mức lương yêu cầu."
+                },
+                {
+                  "id": "C",
+                  "text": "Thiếu các tiêu chí ngoại ngữ và ngày nhận việc."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B2_T5_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T5_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "table_completion",
+          "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den drei Bewerberinnen für die Rezeptionsstelle.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền đầy đủ và chính xác toàn bộ 9 tiêu chí so sánh hồ sơ 3 ứng viên theo băng thoại."
+            },
+            {
+              "id": "B",
+              "text": "Sai sót thông tin về kinh nghiệm làm việc và mức lương yêu cầu."
+            },
+            {
+              "id": "C",
+              "text": "Thiếu các tiêu chí ngoại ngữ và ngày nhận việc."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T5_L_Q01",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 1: 1 B)",
+      "trapExplanationVi": "Tác động của mạng xã hội và hình ảnh được chỉnh sửa."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q02",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 1: 2 B)",
+      "trapExplanationVi": "Hơn 60% nữ sinh không hài lòng về ngoại hình."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q03",
+      "correctOption": "A",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 1: 3 A)",
+      "trapExplanationVi": "Hình ảnh được tiếp cận 24/7 trên điện thoại."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q04",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 1: 4 B)",
+      "trapExplanationVi": "Hậu quả tâm lý: Rối loạn ăn uống, trầm cảm."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q05",
+      "correctOption": "A",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 1: 5 A)",
+      "trapExplanationVi": "Yêu cầu gắn nhãn ảnh quảng cáo đã qua chỉnh sửa."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q06",
+      "correctOption": "K",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 2: Text 1 -> K)",
+      "trapExplanationVi": "Formeln können schön sein."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q07",
+      "correctOption": "F",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 2: Text 2 -> F)",
+      "trapExplanationVi": "Überraschende Ergebnisse im Fach Mathematik."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q08",
+      "correctOption": "I",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 2: Text 3 -> I)",
+      "trapExplanationVi": "Die Schönmacher im Essen."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q09",
+      "correctOption": "A",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 2: Text 4 -> A)",
+      "trapExplanationVi": "Ernährungsirrtümer."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q10",
+      "correctOption": "D",
+      "points": 1.0,
+      "citation": "S. 147 (Aufgabe 2: Text 5 -> D)",
+      "trapExplanationVi": "Wie isst man sich glücklich?"
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q11",
+      "correctOption": "A",
+      "points": 5.0,
+      "citation": "S. 147 (Aufgabe 3 Fax)",
+      "trapExplanationVi": "Khóa đáp án chính thức 20 vị trí cắt lề."
+    },
+    {
+      "questionId": "OSD_B2_T5_L_Q12",
+      "correctOption": "A",
+      "points": 5.0,
+      "citation": "S. 147 (Aufgabe 4 Werbebrief)",
+      "trapExplanationVi": "Khóa đáp án chính thức 10 từ điền khuyết."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 1 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q02",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 2 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 3 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q04",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 4 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 5 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q06",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 6 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 7 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q08",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 8 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 9 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q10",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 148 (Aufgabe 1: 10 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T5_H_Q11",
+      "correctOption": "A",
+      "points": 10.0,
+      "citation": "S. 148 (Aufgabe 2 Tabelle)",
+      "trapExplanationVi": "Khóa chấm điểm bảng đối chiếu hồ sơ 3 ứng viên lễ tân."
+    }
+  ]
+}

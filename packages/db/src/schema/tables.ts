@@ -88,6 +88,8 @@ export const exams = pgTable('exams', {
     .notNull()
     .references(() => levels.id, { onDelete: 'restrict' }),
   code: varchar('code', { length: 64 }).notNull().unique(),
+  slug: varchar('slug', { length: 128 }).notNull().unique(),
+  providerFormat: varchar('provider_format', { length: 128 }).notNull(),
   title: varchar('title', { length: 255 }).notNull(),
   description: text('description'),
   timeLimitSeconds: integer('time_limit_seconds').notNull().default(3900),
@@ -184,11 +186,15 @@ export const sections = pgTable('sections', {
   skillId: uuid('skill_id')
     .notNull()
     .references(() => skills.id, { onDelete: 'restrict' }),
+  sourceSectionId: varchar('source_section_id', { length: 128 }).notNull(),
   sectionOrder: integer('section_order').notNull(),
   title: varchar('title', { length: 128 }).notNull(),
   instructions: text('instructions'),
   timeLimitSeconds: integer('time_limit_seconds'),
-});
+}, (table) => [
+  unique('uq_sections_version_source_id').on(table.versionId, table.sourceSectionId),
+  unique('uq_sections_version_order').on(table.versionId, table.sectionOrder),
+]);
 
 // 12. assets
 export const assets = pgTable(
@@ -207,6 +213,7 @@ export const assets = pgTable(
       'chk_assets_asset_type',
       sql`${table.assetType} IN ('audio_mp3', 'image_png', 'image_webp')`
     ),
+    unique('assets_storage_path_unique').on(table.storagePath),
   ]
 );
 
@@ -218,6 +225,7 @@ export const stimuli = pgTable(
     sectionId: uuid('section_id')
       .notNull()
       .references(() => sections.id, { onDelete: 'restrict' }),
+    dialogueTranscript: jsonb('dialogue_transcript'),
     partNumber: integer('part_number').notNull().default(1),
     stimulusType: varchar('stimulus_type', { length: 16 }).notNull(),
     title: varchar('title', { length: 255 }),
@@ -233,6 +241,7 @@ export const stimuli = pgTable(
       'chk_stimulus_audio_asset',
       sql`(${table.stimulusType} = 'audio' AND ${table.assetId} IS NOT NULL) OR (${table.stimulusType} != 'audio')`
     ),
+    unique('uq_stimuli_section_part').on(table.sectionId, table.partNumber),
   ]
 );
 
@@ -247,16 +256,19 @@ export const questions = pgTable(
     sectionId: uuid('section_id')
       .notNull()
       .references(() => sections.id, { onDelete: 'restrict' }),
+    sourceQuestionId: varchar('source_question_id', { length: 128 }).notNull(),
     stimulusId: uuid('stimulus_id').references(() => stimuli.id, { onDelete: 'restrict' }),
     typeId: uuid('type_id')
       .notNull()
       .references(() => questionTypes.id, { onDelete: 'restrict' }),
     questionOrder: integer('question_order').notNull(),
+    partNumber: integer('part_number').notNull().default(1),
     promptText: text('prompt_text').notNull(),
-    points: integer('points').notNull().default(1),
+    points: numeric('points', { precision: 8, scale: 2 }).notNull().default('1.00'),
   },
   (table) => [
-    unique('uq_questions_version_id_question_order').on(table.versionId, table.questionOrder),
+    unique('uq_questions_version_section_order').on(table.versionId, table.sectionId, table.questionOrder),
+    unique('uq_questions_version_source_id').on(table.versionId, table.sourceQuestionId),
   ]
 );
 
@@ -268,7 +280,7 @@ export const questionOptions = pgTable(
     questionId: uuid('question_id')
       .notNull()
       .references(() => questions.id, { onDelete: 'restrict' }),
-    optionLabel: varchar('option_label', { length: 8 }).notNull(),
+    optionLabel: text('option_label').notNull(),
     contentText: text('content_text').notNull(),
     optionOrder: integer('option_order').notNull(),
   },
@@ -284,8 +296,11 @@ export const answerKeys = pgTable('answer_keys', {
     .notNull()
     .unique()
     .references(() => questions.id, { onDelete: 'restrict' }),
-  correctOptionLabel: varchar('correct_option_label', { length: 8 }).notNull(),
+  correctOptionLabel: text('correct_option_label').notNull(),
   scoringNotes: text('scoring_notes'),
+  citation: text('citation').notNull(),
+  trapExplanationVi: text('trap_explanation_vi').notNull(),
+  tags: jsonb('tags').notNull().default([]),
   createdAt: timestamp('created_at', { withTimezone: true, mode: 'date' }).notNull().defaultNow(),
 });
 
@@ -299,6 +314,7 @@ export const explanations = pgTable('explanations', {
   explanationText: text('explanation_text').notNull(),
   translationText: text('translation_text'),
   vocabularyNotes: jsonb('vocabulary_notes'),
+  learningMetadata: jsonb('learning_metadata'),
   isPublicPreview: boolean('is_public_preview').notNull().default(false),
 });
 
@@ -408,7 +424,7 @@ export const attemptAnswers = pgTable(
     questionId: uuid('question_id')
       .notNull()
       .references(() => questions.id, { onDelete: 'restrict' }),
-    selectedOptionLabel: varchar('selected_option_label', { length: 8 }),
+    selectedOptionLabel: text('selected_option_label'),
     isFlagged: boolean('is_flagged').notNull().default(false),
     revision: integer('revision').notNull().default(1),
     answeredAt: timestamp('answered_at', { withTimezone: true, mode: 'date' }).notNull().defaultNow(),
@@ -458,8 +474,8 @@ export const results = pgTable(
       .notNull()
       .unique()
       .references(() => examAttempts.id, { onDelete: 'restrict' }),
-    totalScore: integer('total_score').notNull(),
-    maxPossibleScore: integer('max_possible_score').notNull().default(30),
+    totalScore: numeric('total_score', { precision: 8, scale: 2 }).notNull(),
+    maxPossibleScore: numeric('max_possible_score', { precision: 8, scale: 2 }).notNull().default('30.00'),
     percentage: numeric('percentage', { precision: 5, scale: 2 }).notNull(),
     passingPercentageSnapshot: numeric('passing_percentage_snapshot', { precision: 5, scale: 2 })
       .notNull()
@@ -487,8 +503,8 @@ export const resultSectionScores = pgTable(
     sectionId: uuid('section_id')
       .notNull()
       .references(() => sections.id, { onDelete: 'restrict' }),
-    score: integer('score').notNull(),
-    maxScore: integer('max_score').notNull(),
+    score: numeric('score', { precision: 8, scale: 2 }).notNull(),
+    maxScore: numeric('max_score', { precision: 8, scale: 2 }).notNull(),
     cefrCode: varchar('cefr_code', { length: 16 }).notNull(),
   },
   (table) => [
@@ -508,7 +524,7 @@ export const resultItemScores = pgTable(
       .notNull()
       .references(() => questions.id, { onDelete: 'restrict' }),
     isCorrect: boolean('is_correct').notNull(),
-    earnedPoints: integer('earned_points').notNull(),
+    earnedPoints: numeric('earned_points', { precision: 8, scale: 2 }).notNull(),
   },
   (table) => [
     unique('uq_result_item_scores_result_question').on(table.resultId, table.questionId),
@@ -831,4 +847,3 @@ export const appSettings = pgTable('app_settings', {
   description: text('description'),
   updatedAt: timestamp('updated_at', { withTimezone: true, mode: 'date' }).notNull().defaultNow(),
 });
-

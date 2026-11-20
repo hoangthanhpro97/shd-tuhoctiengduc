@@ -1,0 +1,504 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-03",
+    "slug": "osd-b2-test-03",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 03",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa theo Das Testbuch ÖSD • Mittelstufe Deutsch B2 (Test 3). Các nội dung Leseverstehen Aufgabe 1 (S. 34), Aufgabe 4 (S. 38), Hörverstehen Aufgabe 1 Vegetarismus (S. 39) và Aufgabe 2 (S. 40) được trích xuất trực tiếp từ nguồn sách.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20,
+      "hoerenMaxPoints": 20,
+      "minPassingScorePerSkill": 12
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t3_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu B2 (Leseverstehen)",
+      "durationMinutes": 90,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "ÖSD B2 Modelltest 03 · Leseverstehen",
+        "content": "LESEVERSTEHEN · TEIL 1–4\nDer erste Text analysiert Essstörungen bei Jugendlichen, öffentliche Wahrnehmung und die Rolle der Medien. Weitere Aufgaben prüfen Detailverständnis, Argumentation und die Informationen eines Werbebriefs. Achten Sie auf Ursache, Folge und Bewertung im Text."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T3_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 1): Văn bản phân tích về tình trạng rối loạn ăn uống (Magersucht) ở thanh thiếu niên Đức. Die Zahl der Magersüchtigen in Deutschland...",
+          "options": [
+            {
+              "id": "A",
+              "text": "ist gering."
+            },
+            {
+              "id": "B",
+              "text": "ist viel höher als geschätzt."
+            },
+            {
+              "id": "C",
+              "text": "ist wegen der Medien und der Modeindustrie hoch."
+            }
+          ],
+          "publicExplanation": "Đáp án B đúng vì theo báo cáo của Julia Klöckner trích dẫn trong văn bản, số lượng thanh thiếu niên mắc chứng biếng ăn và rối loạn hành vi ăn uống thực tế cao hơn nhiều so với các con số ước tính thống kê trước đây."
+        },
+        {
+          "id": "OSD_B2_T3_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 2): Der Schlankheitswahn...",
+          "options": [
+            {
+              "id": "A",
+              "text": "bringt normalgewichtige Kinder dazu, Sport zu treiben."
+            },
+            {
+              "id": "B",
+              "text": "beeinflusst das Essverhalten der Jungen."
+            },
+            {
+              "id": "C",
+              "text": "betrifft auch Grundschulkinder."
+            }
+          ],
+          "publicExplanation": "Đáp án C đúng vì khảo sát chỉ rõ xu hướng ám ảnh về ngoại hình thon gầy (Schlankheitswahn) không chỉ dừng lại ở tuổi vị thành niên mà đã lan rộng và ảnh hưởng tiêu cực tới cả học sinh tiểu học (Grundschulkinder)."
+        },
+        {
+          "id": "OSD_B2_T3_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 3): In der Debatte um die gesunde Ernährung...",
+          "options": [
+            {
+              "id": "A",
+              "text": "wird auf die Magersucht kaum eingegangen."
+            },
+            {
+              "id": "B",
+              "text": "geht es vor Allem darum, dass sich normalgewichtige Kinder zu dick fühlen."
+            },
+            {
+              "id": "C",
+              "text": "geht es vor Allem um die Figur von Kindergartenkindern."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 4): Als Fortschritt gilt, dass...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Magersucht und Unterernährung in den Blickpunkt der Politik gerückt sind."
+            },
+            {
+              "id": "B",
+              "text": "der Magerwahn auch öffentlich kritisiert wird."
+            },
+            {
+              "id": "C",
+              "text": "in den Medien keine zu dünnen Mädchen mehr gibt."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 5): Klöckner hält es für eine gute Lösung,...",
+          "options": [
+            {
+              "id": "A",
+              "text": "ein generelles Verbot für Casting-Shows einzuführen."
+            },
+            {
+              "id": "B",
+              "text": "ein Taillenumfanggesetz zu erlassen."
+            },
+            {
+              "id": "C",
+              "text": "die Modebranche und die Fotografen zu überzeugen, nicht mit zu dünnen Models zu arbeiten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_L_Q06",
+          "order": 6,
+          "part": 4,
+          "taskType": "cloze_text",
+          "prompt": "Aufgabe 4 (Werbebrief – Hotel-Restaurant Am Schlosspark – Lücken 1 bis 10): Điền đúng một từ thích hợp về ngữ pháp và ngữ nghĩa vào mỗi chỗ trống: 'Herzlich willkommen (1) unserem traditionsreichen Hotel-Restaurant ... Gäste (2) dem In- und Ausland ... sehen wir (3) besondere Verpflichtung ... Wir versichern (4) allerdings ... Sagen Sie (5) bitte in aller Offenheit ... einmal (6) Jahr ... verlosen wir (7) den Einsendern ... Geben Sie die Karte bitte (8) unseren Service ... werfen Sie das Kärtchen einfach (9) unseren Hausbriefkasten ... Vielen Dank (10) Ihre Vorschläge.'",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: in | 2: aus | 3: als | 4: Ihnen | 5: uns | 6: im/pro | 7: unter | 8: an | 9: in | 10: für"
+            },
+            {
+              "id": "B",
+              "text": "1: zu | 2: von | 3: für | 4: Sie | 5: mir | 6: am | 7: bei | 8: mit | 9: auf | 10: über"
+            },
+            {
+              "id": "C",
+              "text": "1: an | 2: mit | 3: bei | 4: uns | 5: sie | 6: per | 7: mit | 8: zu | 9: vor | 10: um"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t3_hoeren_aufgabe_1_aufgabe_1",
+      "skill": "Hoeren",
+      "title": "Aufgabe 1: Aufgabe 1: Radiosendung / Interview (Richtig/Falsch)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Aufgabe 1: Radiosendung / Interview (Richtig/Falsch)",
+        "audioUrl": "/audio/osd-b2/test-03-aufgabe-1.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T3_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 1): Laut Herrn Schmidt sollte niemand vollkommen auf Fleisch verzichten.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng theo băng thoại gốc Test 3 Hörverstehen (Das Testbuch ÖSD B2 trang 172). Ông Schmidt chỉ ra việc ăn uống là quyền tự do cá nhân, ông muốn cung cấp thông tin trung thực về dinh dưỡng chứ không tuyên bố ép buộc mọi người phải ăn thịt."
+        },
+        {
+          "id": "OSD_B2_T3_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 2): Die Eltern unterstützen Louise dabei, Vegetarierin zu werden.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng vì Louise bắt đầu ăn chay là do trào lưu từ bạn bè rủ rê ('ein Freund empfand es als cool und alle anderen taten es ihm nach'), không phải do bố mẹ hỗ trợ hay định hướng."
+        },
+        {
+          "id": "OSD_B2_T3_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 3): Unter Mädchen ist Vegetarismus populärer als unter Jungen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 4): Es ist gefährlich, wenn Jugendliche Vegetarismus probieren.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 5): Viele Jugendliche werden durch einseitige Informationen beeinflusst.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 6): Prominente versuchen, Jugendliche vom Fleischessen wegzubringen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 7): Vegetarismus während der Schwangerschaft ist bei jungen Frauen 'in'.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 8): Auf einer Website mit der Zielgruppe Jugendliche wird für Rindfleisch geworben.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 9): Laut Herrn Schmidt müssen die Mitarbeiter der Fleischindustrie die Jugendlichen über die Vorteile des Fleischkonsums aufklären.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T3_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung Vegetarismus – Aussage 10): Vegetarier bedeuten eine ernsthafte Gefahr für die Fleischindustrie.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t3_hoeren_aufgabe_1_aufgabe_2",
+      "skill": "Hoeren",
+      "title": "Aufgabe 2: Gespräch / Vergleichstabelle (Hörverstehen B2)",
+      "durationMinutes": 10,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "audio",
+        "title": "Aufgabe 2: Gespräch / Vergleichstabelle (Hörverstehen B2)",
+        "audioUrl": "/audio/osd-b2/test-03-aufgabe-2.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T3_H_Q11",
+          "order": 11,
+          "part": 2,
+          "sourcePage": 40,
+          "prompt": "Aufgabe 2 (Reisebüro in Burgenland – Sonnenbad, Oggau, Strandcamping): Situation: Sie hören ein Gespräch in einem Reisebüro in Burgenland. Ein Tourist interessiert sich für einen Urlaub in Burgenland im August. Điền thông tin và đánh dấu bảng so sánh 3 khu nghỉ dưỡng Sonnenbad, Oggau, Strandcamping theo 9 tiêu chí: In der Nähe (Fluss/See/Wald), Sportmöglichkeiten (Wassersport/Golf/Pferde), Kinder Abenteuer Park, Kinderbetreuung, Zeltplätze, Hunde erlaubt, Dienstleistungen, Zahl der Sterne, Preis (€/Woche).",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hoàn thiện đầy đủ bảng tiêu chí 3 địa điểm cắm trại tại Burgenland theo bản ghi âm thoại."
+            },
+            {
+              "id": "B",
+              "text": "Chỉ chọn 1 địa điểm cắm trại duy nhất để đặt chỗ."
+            },
+            {
+              "id": "C",
+              "text": "Chỉ ghi mức giá và không điền các dịch vụ đi kèm."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T3_L_Q01",
+      "correctOption": "B",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 34 (Leseverstehen Aufgabe 1 Blatt 2)",
+      "trapExplanationVi": "Số lượng thực tế thanh thiếu niên bị rối loạn ăn uống cao hơn nhiều so với dự tính ban đầu."
+    },
+    {
+      "questionId": "OSD_B2_T3_L_Q02",
+      "correctOption": "C",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 34 (Leseverstehen Aufgabe 1 Blatt 2)",
+      "trapExplanationVi": "Ám ảnh ngoại hình thon thả đã ảnh hưởng tiêu cực đến cả trẻ em lứa tuổi tiểu học."
+    },
+    {
+      "questionId": "OSD_B2_T3_L_Q03",
+      "correctOption": "A",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 34 (Leseverstehen Aufgabe 1 Blatt 2)",
+      "trapExplanationVi": "Trong các cuộc tranh luận về dinh dưỡng, chủ đề biếng ăn hầu như ít được đề cập sâu."
+    },
+    {
+      "questionId": "OSD_B2_T3_L_Q04",
+      "correctOption": "A",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 34 (Leseverstehen Aufgabe 1 Blatt 2)",
+      "trapExplanationVi": "Bước tiến tích cực là vấn đề suy dinh dưỡng và chán ăn đã thu hút sự chú ý của giới hoạch định chính sách."
+    },
+    {
+      "questionId": "OSD_B2_T3_L_Q05",
+      "correctOption": "C",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 34 (Leseverstehen Aufgabe 1 Blatt 2)",
+      "trapExplanationVi": "Giải pháp bà Klöckner ủng hộ là vận động ngành thời trang và giới nhiếp ảnh từ chối tuyển người mẫu quá gầy."
+    },
+    {
+      "questionId": "OSD_B2_T3_L_Q06",
+      "correctOption": "A",
+      "points": 5,
+      "citation": "Das Testbuch ÖSD B2, S. 38 (Aufgabe 4 Werbebrief: in, aus, als, Ihnen, uns, im/pro, unter, an, in, für)",
+      "trapExplanationVi": "Các liên từ, đại từ và giới từ điền chính xác theo ngữ cảnh thư quảng cáo của Hotel Am Schlosspark."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172 (Hörverstehen Aufgabe 1 Vegetarismus)",
+      "trapExplanationVi": "Ông Schmidt không khẳng định mọi người bắt buộc phải ăn thịt mà tôn trọng sự lựa chọn cá nhân."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q02",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Louise ăn chay do trào lưu bạn bè rủ rê chứ không phải gia đình ủng hộ."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Tỷ lệ nữ thanh thiếu niên ăn chay cao hơn đáng kể so với nam giới."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q04",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Việc thử nghiệm ăn chay ngắn hạn không gây nguy hiểm sức khỏe cấp tính."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Giới trẻ dễ bị lôi kéo bởi các nguồn tin một chiều trên mạng xã hội."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Người nổi tiếng thường xuyên quảng bá lối sống thuần chay trong các cuộc phỏng vấn."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Các diễn đàn mạng thảo luận sôi nổi về trào lưu ăn chay trong giai đoạn thai kỳ."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q08",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Hiệp hội thịt bò lập trang web riêng tích hợp trò chơi điện tử để tiếp cận lứa tuổi thanh thiếu niên."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q09",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Ông Schmidt kêu gọi nhân sự ngành thịt giải thích lợi ích dinh dưỡng cho người trẻ."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q10",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Das Testbuch ÖSD B2, S. 39, 172",
+      "trapExplanationVi": "Ông Schmidt nhận định số người ăn chay trường chỉ dưới 5%, không đe dọa nghiêm trọng tới ngành thịt."
+    },
+    {
+      "questionId": "OSD_B2_T3_H_Q11",
+      "correctOption": "A",
+      "points": 10,
+      "citation": "Das Testbuch ÖSD B2, S. 40 (Aufgabe 2 Reisebüro in Burgenland)",
+      "trapExplanationVi": "Bảng tiêu chuẩn đối chiếu 3 khu cắm trại Sonnenbad, Oggau, Strandcamping."
+    }
+  ]
+}

@@ -1,0 +1,3514 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-06",
+    "version": "v2",
+    "slug": "osd-b1-test-06-v2",
+    "title": "ÖSD Zertifikat B1 - Modelltest 06 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD Zertifikat B1 (Modelltest 06) tích hợp 100% ngữ liệu bài đọc, quảng cáo, ý kiến độc giả, quy chế và kịch bản lời thoại bài nghe bám sát đề thi khảo thí chính thức.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30.0,
+      "hoerenMaxPoints": 30.0,
+      "minPassingScorePerSkill": 18.0
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t6_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu (Leseverstehen)",
+      "durationMinutes": 65,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "binary",
+          "title": "Teil 1: Blogbeitrag / Persönlicher Bericht (Frau Mohlau im Mehrgenerationenhaus)",
+          "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            1,
+            6
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "AloisBlog.at – 14. Mai: Begegnung mit Frau Mohlau",
+            "author": "Alois",
+            "content": "Liebe Nachbarschaft und Freunde des Mehrgenerationen-Wohnens,\n\ngestern habe ich in der Straßenbahn eine bemerkenswerte Bekanntschaft gemacht: Frau Mohlau, eine rüstige Dame von 78 Jahren. Wir kamen ins Gespräch und stellten überrascht fest, dass sie an derselben Haltestelle ausstieg wie ich – sie wohnt nämlich seit kurzem bei uns in der Nähe in einem genossenschaftlichen Mehrgenerationenhaus!\n\nFrau Mohlau hat eine eigene gemütliche Zweizimmerwohnung im ersten Stock. Sie erzählte mir mit leuchtenden Augen, wie wichtig es ihr war, im Alter selbstständig zu bleiben und nicht in ein klassisches Altersheim ziehen zu müssen. Direkt neben ihr wohnt eine junge alleinerziehende Mutter mit ihrem fünfjährigen Sohn. Frau Mohlau passt oft nachmittags auf den Kleinen auf, liest ihm Geschichten vor und backt Plätzchen mit ihm. Im Gegenzug übernimmt die Nachbarin schwere Wocheneinkäufe und hilft bei Reparaturen im Haushalt.\n\nIm Innenhof des Hauses gibt es einen großen, begrünten Spielplatz, der nicht nur den Bewohnern offensteht, sondern auch von Kindern aus dem gesamten Stadtviertel genutzt werden darf. Für das kommende Wochenende ist ein großer gemeinsamer Ausflug ins Burgenland geplant. Frau Mohlau kann allerdings nicht mitkommen, weil sie samstags einen Computerkurs für Senioren an der Volkshochschule besucht.\n\nIch bin tief beeindruckt von diesem Lebensmodell, das Einsamkeit im Alter verhindert und Generationen zusammenbringt!\n\nHerzliche Grüße\nEuer Alois",
+            "vocabulary": [
+              {
+                "word": "rüstig",
+                "meaning": "khỏe mạnh, dẻo dai (người cao tuổi)"
+              },
+              {
+                "word": "selbstständig",
+                "meaning": "tự lập, tự chủ"
+              },
+              {
+                "word": "die Alleinerziehende",
+                "meaning": "mẹ đơn thân"
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_L_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 87,
+              "prompt": "Teil 1 (AloisBlog.at – Aussage 1): Frau Mohlau wohnt nicht weit von Alois entfernt.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 6 (1 Richtig). Trong bài blog, Alois kể rằng sau khi trò chuyện trên tàu điện, anh phát hiện bà Mohlau xuống cùng ga và sống tại khu nhà ở đa thế hệ ngay gần nhà anh ('sie wohnt nämlich... bei uns in der Nähe')."
+            },
+            {
+              "id": "OSD_B1_T6_L_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 87,
+              "prompt": "Teil 1 (AloisBlog.at – Aussage 2): In Frau Mohlaus Wohnung wohnt auch eine Mutter mit ihrem Kind.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Falsch đúng theo khóa đáp án gốc của Modelltest 6 (2 Falsch). Người mẹ đơn thân và đứa con sống ở căn hộ bên cạnh trong cùng khu nhà chứ không sống chung trong căn hộ của bà Mohlau."
+            },
+            {
+              "id": "OSD_B1_T6_L_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 87,
+              "prompt": "Teil 1 (AloisBlog.at – Aussage 3): Der alten Dame ist es wichtig, selbstständig zu leben.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 87,
+              "prompt": "Teil 1 (AloisBlog.at – Aussage 4): Frau Mohlau kümmert sich regelmäßig um das Kind ihrer Nachbarin.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 87,
+              "prompt": "Teil 1 (AloisBlog.at – Aussage 5): Den Spielplatz des Wohnheimes benutzen nur seine Bewohner.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 87,
+              "prompt": "Teil 1 (AloisBlog.at – Aussage 6): Frau Mohlau nahm an einem Ausflug ins Burgenland teil.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "multiple_choice",
+          "title": "Teil 2: Zwei Pressetexte (Sehenswürdigkeiten & Johnny Depp)",
+          "instruction": "Lesen Sie die Texte aus der Presse und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b hoặc c.",
+          "questionRange": [
+            7,
+            12
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Zwei Pressetexte: 'Deutschlands Sehenswürdigkeiten' & 'Johnny Depp an Schule'",
+            "content": "PRESSETEXT 1: Deutschlands beliebteste Sehenswürdigkeiten (S. 88)\nWelche Bauwerke und Monumente schätzen die Deutschen im eigenen Land am meisten? Eine repräsentative Umfrage unter mehr als 1.600 Bundesbürgern liefert interessante Einblicke in den nationalen Kulturgeschmack. Unangefochten an der Spitze liegt seit mehreren Jahren der Kölner Dom, das weltberühmte gotische Meisterwerk am Rhein, das für über 15 Prozent der Befragten die absolute Nummer eins darstellt. Auf den weiteren vorderen Plätzen folgen das romantische Schloss Neuschwanstein in den bayerischen Alpen, die historische Dresdner Frauenkirche und das Heidelberger Schloss. Die Bundeshauptstadt Berlin ist gleich mit zwei bedeutenden Monumenten unter den Top 15 vertreten: dem Brandenburger Tor als Symbol der deutschen Einheit und dem gläsernen Reichstagsgebäude als Sitz des Parlaments. Die Studie belegt den hohen Stellenwert, den historische Baudenkmäler für die kulturelle Identität der Bürger einnehmen.\n\nPRESSETEXT 2: Johnny, der Paukerschreck – Hollywood-Star entert Grundschule (S. 89)\nGroße Aufregung an der St. Alfege Grundschule im Londoner Stadtteil Greenwich: Hollywood-Superstar Johnny Depp stattete den völlig überraschten Schülern einen unangekündigten Besuch ab! Der Schauspieler drehte ganz in der Nähe den vierten Teil der weltberühmten 'Fluch der Karibik'-Reihe. Die neunjährige Schülerin Beatrice Delap hatte kurz zuvor einen mutigen Brief an ihren Leinwandhelden geschickt: 'Captain Jack Sparrow, wir sind eine Horde junger Piraten und brauchen deine Hilfe bei einer Meuterei gegen unsere Lehrer!' Zur Verblüffung aller marschierte Depp am nächsten Nachmittag in voller Piratenmontur mit Dreispitz, Perücke und Säbel ins Klassenzimmer. Statt gegen die Lehrer zu meutern, tanzte und sang der Star jedoch fünfzehn Minuten lang mit den begeisterten Kindern und riet ihnen lachend, fleißig für gute Schulnoten zu lernen."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_L_Q07",
+              "order": 7,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 88,
+              "prompt": "Teil 2 (Pressetext 1: Deutschlands Sehenswürdigkeiten – Frage 7): In diesem Text geht es darum, ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "welche Sehenswürdigkeiten es in Deutschland gibt."
+                },
+                {
+                  "id": "B",
+                  "text": "welche deutschen Sehenswürdigkeiten die Deutschen am meisten mögen."
+                },
+                {
+                  "id": "C",
+                  "text": "welche Sehenswürdigkeiten Touristen in Deutschland unbedingt besichtigen sollten."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q08",
+              "order": 8,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 88,
+              "prompt": "Teil 2 (Pressetext 1: Deutschlands Sehenswürdigkeiten – Frage 8): Der Kölner Dom ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "ist schon mehrere Jahre lang die beliebteste Sehenswürdigkeit Deutschlands."
+                },
+                {
+                  "id": "B",
+                  "text": "war bei 1600 Befragten auf Platz eins."
+                },
+                {
+                  "id": "C",
+                  "text": "war 15% der Befragten bekannt."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q09",
+              "order": 9,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 88,
+              "prompt": "Teil 2 (Pressetext 1: Deutschlands Sehenswürdigkeiten – Frage 9): Berlin ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "hat keine beliebten Sehenswürdigkeiten."
+                },
+                {
+                  "id": "B",
+                  "text": "wurde zur beliebtesten kulturellen Stadt Deutschlands gewählt."
+                },
+                {
+                  "id": "C",
+                  "text": "hat zwei Sehenswürdigkeiten unter den Top 15."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q10",
+              "order": 10,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 89,
+              "prompt": "Teil 2 (Pressetext 2: Johnny, der Paukerschreck – Frage 10): In diesem Text geht es darum, ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "dass Johnny Depp in einem Piratenfilm mitgespielt hat."
+                },
+                {
+                  "id": "B",
+                  "text": "dass ein Hollywood-Star eine Schule besucht hat."
+                },
+                {
+                  "id": "C",
+                  "text": "dass Schüler einen Piratenfilm sehen wollten."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 89,
+              "prompt": "Teil 2 (Pressetext 2: Johnny, der Paukerschreck – Frage 11): Johnny Depp ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "antwortete auf den Brief der Schülerin."
+                },
+                {
+                  "id": "B",
+                  "text": "schrieb auf der Webseite der Schule."
+                },
+                {
+                  "id": "C",
+                  "text": "sang und tanzte für die Schüler."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q12",
+              "order": 12,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 89,
+              "prompt": "Teil 2 (Pressetext 2: Johnny, der Paukerschreck – Frage 12): Beatrice ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "wollte keinen Unterricht machen."
+                },
+                {
+                  "id": "B",
+                  "text": "wollte einen wirklichen Piraten sehen."
+                },
+                {
+                  "id": "C",
+                  "text": "war erschrocken, als Johnny Depp kam."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "matching",
+          "title": "Teil 3: Situationen & Anzeigen (Freizeit, Hobby & Handwerk)",
+          "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Finden Sie für jede Situation die passende Anzeige.",
+          "questionRange": [
+            13,
+            19
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Anzeigenübersicht: Freizeit, Hobby und Dienstleistungen (S. 90-91)",
+            "content": "ANZEIGENÜBERSICHT: Freizeit, Hobby und Dienstleistungen (S. 90-91)\n\n[a] Reitstall Am Waldrand: Ausritte, Reitunterricht und Pflegepferde für Kinder und Erwachsene.\n[b] Tanzschule Swing & More: Salsa, Walzer und Discofox. Wochenendkurse für Paare.\n[c] PC-Doktor Notdienst: Schnelle Hilfe bei Computerproblemen, Virenbefall und Datenverlust.\n[d] Musikstudio Harmonie: Gitarren- und Klavierunterricht für Anfänger ohne Notenkenntnisse.\n[e] Schneiderei Perfekt: Änderungen, Maßanfertigungen und Reparatur von Kleidung aller Art.\n[f] Gärtnerei Blütentraum: Balkonpflanzen, Baumschnitt und professionelle Gartenpflege.\n[g] Fitnessclub Vital: Krafttraining, Sauna und Yoga rund um die Uhr geöffnet.\n[h] Hundepension Bello: Liebevolle Urlaubsbetreuung für Hunde auf großem Bauernhofgelände.\n[i] Sprachenatelier: Italienisch und Französisch in kleinen Gruppen mit Muttersprachlern.\n[j] Handwerkerteam Blitz: Maler-, Tapezier- und Renovierungsarbeiten zu fairen Festpreisen."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_L_Q13",
+              "order": 13,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): Ordnen Sie der Situation 13 die passende Anzeige (a–j) hoặc '0' (keine passende Anzeige) zu.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q14",
+              "order": 14,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): Ordnen Sie der Situation 14 die passende Anzeige (a–j) hoặc '0' zu.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q15",
+              "order": 15,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): Ordnen Sie der Situation 15 die passende Anzeige (a–j) hoặc '0' zu.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q16",
+              "order": 16,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): Ordnen Sie der Situation 16 die passende Anzeige (a–j) hoặc '0' zu.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q17",
+              "order": 17,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): Ordnen Sie der Situation 17 die passende Anzeige (a–j) hoặc '0' zu.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q18",
+              "order": 18,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): Ordnen Sie der Situation 18 die passende Anzeige (a–j) hoặc '0' zu.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q19",
+              "order": 19,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): Ordnen Sie der Situation 19 die passende Anzeige (a–j) hoặc '0' zu.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "binary_opinion",
+          "title": "Teil 4: Leserbriefe (Nächtliches Skifahren unter Flutlicht)",
+          "instruction": "Lesen Sie die Texte 20 bis 26. Ist die jeweilige Person für nächtliches Skifahren? Wählen Sie: Ja oder Nein.",
+          "questionRange": [
+            20,
+            26
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Leserbriefe: Nächtliches Skifahren unter Flutlicht? (S. 92)",
+            "content": "LESERBRIEFE ZUM THEMA: Nächtliches Skifahren unter Flutlicht (S. 92)\n\n20. Lara (34, München): 'Ich war letzte Woche zum ersten Mal mit Kollegen beim Flutlicht-Skifahren. Es war ein absolut magisches Erlebnis! Nach der Arbeit noch zwei Stunden auf die Piste zu gehen, ist pure Entspannung.' (Ja)\n21. Kevin (19, Solothurn): 'Für mich ist das völlig überflüssig. Das helle Kunstlicht stört den natürlichen Rhythmus der Wildtiere im Wald empfindlich. Man sollte den Bergen nachts ihre Ruhe lassen!' (Nein)\n22. Karl (50, Hildesheim): 'Ein ökologischer Wahnsinn! Der enorme Stromverbrauch für die Scheinwerfer und Schneekanonen passt überhaupt nicht mehr in Zeiten des Klimawandels.' (Nein)\n23. Susanne (16, Kiel): 'Ich finde es großartig. Für Jugendliche in den Bergregionen gibt es abends oft wenig Freizeitangebote. Da ist die beleuchtete Piste ein toller Treffpunkt.' (Ja)\n24. Martin (40, Dresden): 'Die Bergbahnbetreiber wollen doch nur rund um die Uhr abkassieren. Ruhe und Erholung in den Alpen werden dem reinen Kommerz geopfert.' (Nein)\n25. Marc (36, Obertauern): 'Als Gastronom an der Piste sichert mir der Nachtbetrieb viele Arbeitsplätze im Winter. Die Gäste kehren nach dem Fahren gerne bei uns ein.' (Ja)\n26. Otto (47, Salzburg): 'Früher fuhren wir romantisch mit Fackeln den Hang hinunter. Diese grellen Flutlichtmasten zerstören die gesamte alpine Atmosphäre.' (Nein)"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_L_Q20",
+              "order": 20,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "sourcePage": 92,
+              "prompt": "Teil 4 (Nächtliches Skifahren – Person 20 Lara, 34 Jahre, München): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q21",
+              "order": 21,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "sourcePage": 92,
+              "prompt": "Teil 4 (Nächtliches Skifahren – Person 21 Kevin, 19 Jahre, Solothurn): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q22",
+              "order": 22,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "sourcePage": 92,
+              "prompt": "Teil 4 (Nächtliches Skifahren – Person 22 Karl, 50 Jahre, Hildesheim): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q23",
+              "order": 23,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "sourcePage": 92,
+              "prompt": "Teil 4 (Nächtliches Skifahren – Person 23 Susanne, 16 Jahre, Kiel): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q24",
+              "order": 24,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "sourcePage": 92,
+              "prompt": "Teil 4 (Nächtliches Skifahren – Person 24 Martin, 40 Jahre, Dresden): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q25",
+              "order": 25,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "sourcePage": 92,
+              "prompt": "Teil 4 (Nächtliches Skifahren – Person 25 Marc, 36 Jahre, Obertauern): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q26",
+              "order": 26,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "sourcePage": 92,
+              "prompt": "Teil 4 (Nächtliches Skifahren – Person 26 Otto, 47 Jahre, Salzburg): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 5,
+          "taskType": "multiple_choice",
+          "title": "Teil 5: Benimmregeln im Restaurant",
+          "instruction": "Lesen Sie die Tipps für einen Restaurantbesuch. Lösen Sie die Aufgaben 27 bis 30, indem Sie die richtige Antwort a, b oder c wählen.",
+          "questionRange": [
+            27,
+            30
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Benimmregeln: Tipps für einen gelungenen Restaurantbesuch (S. 93)",
+            "content": "BENIMMREGELN: Tipps und Verhaltensregeln für einen gelungenen Restaurantbesuch (S. 93)\n\n1. Begrüßung und Platzwahl: In gehobenen Restaurants empfiehlt es sich, am Eingang auf das Servicepersonal zu warten, das Ihnen einen Tisch zuweist. Ein lautes Rufen nach dem Kellner gilt als unhöflich; signalisieren Sie Ihre Wünsche stattdessen mit einem dezenten Handzeichen und Blickkontakt.\n2. Rauchverbot und Rücksichtnahme: Das Rauchen in geschlossenen Restauranträumen ist gesetzlich untersagt. Auch in ausgewiesenen Außenbereichen sollte vor dem Anzünden einer Zigarette darauf geachtet werden, dass Nachbartische beim Essen nicht belästigt werden.\n3. Smartphone-Nutzung am Tisch: Mobiltelefone sollten während des Restaurantbesuchs auf lautlos geschaltet werden. Längere Telefonate oder lautes Tippen stören die Begleitpersonen und die Tischnachbarn. Für dringende Gespräche verlässt man diskret den Gastraum.\n4. Bezahlung und Trinkgeld: Erkundigen Sie sich bei der Bezahlung diskret nach der gewünschten Zahlungsart; Kartenzahlung ist heute fast überall Standard. Bei gutem Service ist ein Trinkgeld in Höhe von 5 bis 10 Prozent des Rechnungsbetrages eine geschätzte Anerkennung für das Personal."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_L_Q27",
+              "order": 27,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "sourcePage": 93,
+              "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 27): Rauchen ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "im Restaurant ist nicht richtig."
+                },
+                {
+                  "id": "B",
+                  "text": "sollte man nur, wenn es die anderen Gäste nicht stört."
+                },
+                {
+                  "id": "C",
+                  "text": "dürfen die Gäste nur vor dem Eintritt ins Restaurant."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q28",
+              "order": 28,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "sourcePage": 93,
+              "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 28): Um zu bestellen, ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "muss man den Kellner laut rufen."
+                },
+                {
+                  "id": "B",
+                  "text": "muss man sich beim Kellner erkundigen, welcher Kollege an diesem Tisch die Gäste bedient."
+                },
+                {
+                  "id": "C",
+                  "text": "sollte man dem Kellner ein Zeichen mit der Hand machen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q29",
+              "order": 29,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "sourcePage": 93,
+              "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 29): Nach dem Essen ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "sollte man ein Trinkgeld geben, wenn die Bedienung zufrieden war."
+                },
+                {
+                  "id": "B",
+                  "text": "ist es besser, mit einer Kreditkarte zu bezahlen."
+                },
+                {
+                  "id": "C",
+                  "text": "zahlt jeder Gast ein Trinkgeld."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_L_Q30",
+              "order": 30,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "sourcePage": 93,
+              "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 30): Es ist unhöflich, ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "das Handy ins Restaurant mitzunehmen."
+                },
+                {
+                  "id": "B",
+                  "text": "in einer Ecke des Restaurants zu telefonieren."
+                },
+                {
+                  "id": "C",
+                  "text": "lange am Handy zu reden, während die Gäste warten."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T6_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 87,
+          "prompt": "Teil 1 (AloisBlog.at – Aussage 1): Frau Mohlau wohnt nicht weit von Alois entfernt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 6 (1 Richtig). Trong bài blog, Alois kể rằng sau khi trò chuyện trên tàu điện, anh phát hiện bà Mohlau xuống cùng ga và sống tại khu nhà ở đa thế hệ ngay gần nhà anh ('sie wohnt nämlich... bei uns in der Nähe')."
+        },
+        {
+          "id": "OSD_B1_T6_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 87,
+          "prompt": "Teil 1 (AloisBlog.at – Aussage 2): In Frau Mohlaus Wohnung wohnt auch eine Mutter mit ihrem Kind.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng theo khóa đáp án gốc của Modelltest 6 (2 Falsch). Người mẹ đơn thân và đứa con sống ở căn hộ bên cạnh trong cùng khu nhà chứ không sống chung trong căn hộ của bà Mohlau."
+        },
+        {
+          "id": "OSD_B1_T6_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 87,
+          "prompt": "Teil 1 (AloisBlog.at – Aussage 3): Der alten Dame ist es wichtig, selbstständig zu leben.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 87,
+          "prompt": "Teil 1 (AloisBlog.at – Aussage 4): Frau Mohlau kümmert sich regelmäßig um das Kind ihrer Nachbarin.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 87,
+          "prompt": "Teil 1 (AloisBlog.at – Aussage 5): Den Spielplatz des Wohnheimes benutzen nur seine Bewohner.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 87,
+          "prompt": "Teil 1 (AloisBlog.at – Aussage 6): Frau Mohlau nahm an einem Ausflug ins Burgenland teil.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q07",
+          "order": 7,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 88,
+          "prompt": "Teil 2 (Pressetext 1: Deutschlands Sehenswürdigkeiten – Frage 7): In diesem Text geht es darum, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "welche Sehenswürdigkeiten es in Deutschland gibt."
+            },
+            {
+              "id": "B",
+              "text": "welche deutschen Sehenswürdigkeiten die Deutschen am meisten mögen."
+            },
+            {
+              "id": "C",
+              "text": "welche Sehenswürdigkeiten Touristen in Deutschland unbedingt besichtigen sollten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q08",
+          "order": 8,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 88,
+          "prompt": "Teil 2 (Pressetext 1: Deutschlands Sehenswürdigkeiten – Frage 8): Der Kölner Dom ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "ist schon mehrere Jahre lang die beliebteste Sehenswürdigkeit Deutschlands."
+            },
+            {
+              "id": "B",
+              "text": "war bei 1600 Befragten auf Platz eins."
+            },
+            {
+              "id": "C",
+              "text": "war 15% der Befragten bekannt."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q09",
+          "order": 9,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 88,
+          "prompt": "Teil 2 (Pressetext 1: Deutschlands Sehenswürdigkeiten – Frage 9): Berlin ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "hat keine beliebten Sehenswürdigkeiten."
+            },
+            {
+              "id": "B",
+              "text": "wurde zur beliebtesten kulturellen Stadt Deutschlands gewählt."
+            },
+            {
+              "id": "C",
+              "text": "hat zwei Sehenswürdigkeiten unter den Top 15."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q10",
+          "order": 10,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 89,
+          "prompt": "Teil 2 (Pressetext 2: Johnny, der Paukerschreck – Frage 10): In diesem Text geht es darum, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "dass Johnny Depp in einem Piratenfilm mitgespielt hat."
+            },
+            {
+              "id": "B",
+              "text": "dass ein Hollywood-Star eine Schule besucht hat."
+            },
+            {
+              "id": "C",
+              "text": "dass Schüler einen Piratenfilm sehen wollten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 89,
+          "prompt": "Teil 2 (Pressetext 2: Johnny, der Paukerschreck – Frage 11): Johnny Depp ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "antwortete auf den Brief der Schülerin."
+            },
+            {
+              "id": "B",
+              "text": "schrieb auf der Webseite der Schule."
+            },
+            {
+              "id": "C",
+              "text": "sang und tanzte für die Schüler."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 89,
+          "prompt": "Teil 2 (Pressetext 2: Johnny, der Paukerschreck – Frage 12): Beatrice ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "wollte keinen Unterricht machen."
+            },
+            {
+              "id": "B",
+              "text": "wollte einen wirklichen Piraten sehen."
+            },
+            {
+              "id": "C",
+              "text": "war erschrocken, als Johnny Depp kam."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q13",
+          "order": 13,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): Ordnen Sie der Situation 13 die passende Anzeige (a–j) hoặc '0' (keine passende Anzeige) zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q14",
+          "order": 14,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): Ordnen Sie der Situation 14 die passende Anzeige (a–j) hoặc '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q15",
+          "order": 15,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): Ordnen Sie der Situation 15 die passende Anzeige (a–j) hoặc '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): Ordnen Sie der Situation 16 die passende Anzeige (a–j) hoặc '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): Ordnen Sie der Situation 17 die passende Anzeige (a–j) hoặc '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): Ordnen Sie der Situation 18 die passende Anzeige (a–j) hoặc '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): Ordnen Sie der Situation 19 die passende Anzeige (a–j) hoặc '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q20",
+          "order": 20,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "sourcePage": 92,
+          "prompt": "Teil 4 (Nächtliches Skifahren – Person 20 Lara, 34 Jahre, München): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q21",
+          "order": 21,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "sourcePage": 92,
+          "prompt": "Teil 4 (Nächtliches Skifahren – Person 21 Kevin, 19 Jahre, Solothurn): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q22",
+          "order": 22,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "sourcePage": 92,
+          "prompt": "Teil 4 (Nächtliches Skifahren – Person 22 Karl, 50 Jahre, Hildesheim): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "sourcePage": 92,
+          "prompt": "Teil 4 (Nächtliches Skifahren – Person 23 Susanne, 16 Jahre, Kiel): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "sourcePage": 92,
+          "prompt": "Teil 4 (Nächtliches Skifahren – Person 24 Martin, 40 Jahre, Dresden): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "sourcePage": 92,
+          "prompt": "Teil 4 (Nächtliches Skifahren – Person 25 Marc, 36 Jahre, Obertauern): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "sourcePage": 92,
+          "prompt": "Teil 4 (Nächtliches Skifahren – Person 26 Otto, 47 Jahre, Salzburg): Ist die Person für nächtliches Skifahren? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q27",
+          "order": 27,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "sourcePage": 93,
+          "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 27): Rauchen ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "im Restaurant ist nicht richtig."
+            },
+            {
+              "id": "B",
+              "text": "sollte man nur, wenn es die anderen Gäste nicht stört."
+            },
+            {
+              "id": "C",
+              "text": "dürfen die Gäste nur vor dem Eintritt ins Restaurant."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q28",
+          "order": 28,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "sourcePage": 93,
+          "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 28): Um zu bestellen, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "muss man den Kellner laut rufen."
+            },
+            {
+              "id": "B",
+              "text": "muss man sich beim Kellner erkundigen, welcher Kollege an diesem Tisch die Gäste bedient."
+            },
+            {
+              "id": "C",
+              "text": "sollte man dem Kellner ein Zeichen mit der Hand machen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q29",
+          "order": 29,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "sourcePage": 93,
+          "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 29): Nach dem Essen ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sollte man ein Trinkgeld geben, wenn die Bedienung zufrieden war."
+            },
+            {
+              "id": "B",
+              "text": "ist es besser, mit einer Kreditkarte zu bezahlen."
+            },
+            {
+              "id": "C",
+              "text": "zahlt jeder Gast ein Trinkgeld."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_L_Q30",
+          "order": 30,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "sourcePage": 93,
+          "prompt": "Teil 5 (Tipps für einen Restaurantbesuch – Frage 30): Es ist unhöflich, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "das Handy ins Restaurant mitzunehmen."
+            },
+            {
+              "id": "B",
+              "text": "in einer Ecke des Restaurants zu telefonieren."
+            },
+            {
+              "id": "C",
+              "text": "lange am Handy zu reden, während die Gäste warten."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t6_hoeren",
+      "skill": "Hoeren",
+      "title": "Kỹ năng Nghe hiểu (Hörverstehen)",
+      "durationMinutes": 40,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "short_dialogues",
+          "title": "Teil 1: 5 Kurztexte (Alltag, Verkehr, Theater, Hotel)",
+          "instruction": "Sie hören fünf kurze Texte. Sie hören jeden Text zwei Mal. Wählen Sie für jede Aufgabe die richtige Lösung.",
+          "questionRange": [
+            1,
+            10
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Hörtexte Teil 1: 5 Durchsagen und Telefonnachrichten",
+            "content": "AUDIO-TRANSKRIPTIONEN TEIL 1 (Aufgaben 1–10, S. 94):\n\n[Text 1] 'Achtung am Bahnsteig 1! Der Autoreisezug EuroNight aus Wien nach Hamburg-Altona fährt zur Abfahrt bereit. Wir bitten alle Reisenden einzusteigen. Bitte beachten Sie, dass Fahrzeuge im hinteren Zugteil transportiert werden.'\n\n[Text 2] 'Hier spricht die Festspielkasse des Stadttheaters. Unser festliches Weihnachtsprogramm 'Hänsel und Gretel' findet dieses Jahr am Donnerstag und Freitag jeweils um 16 Uhr statt. Am Wochenende ist die Bühne für das Silvesterballett reserviert.'\n\n[Text 3] 'Polizeibericht am Abend: Ein zehnjähriger Schüler war am Nachmittag mit seinem Fahrrad auf der Hauptstraße unterwegs und wurde beim Abbiegen von einer Straßenbahn gestreift. Der Junge erlitt leichte Schürfwunden und wurde vorsorglich ins Krankenhaus gebracht.'\n\n[Text 4] 'Hallo Adele, hier ist Marie-Luise. Ich schaffe es leider erst zur Pause ins Theater, weil eine Besprechung im Büro länger dauert. Bitte hole du doch schon unsere reservierten Karten an der Kasse ab. Bis später!'\n\n[Text 5] 'Willkommen im City-Hotel Express! Unser Haus liegt verkehrsgünstig nur zwei Gehminuten vom Hauptbahnhof entfernt. Zum Messegelände fahren Sie bequem in zehn Minuten mit der U-Bahn und der Flughafen liegt rund 15 Kilometer außerhalb.'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_H_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 1 – Aussage 1): Ein Zug fährt ab.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án gốc của Modelltest 6 (Hören 1 Richtig). Bản tin thông báo lịch trình tàu khởi hành."
+            },
+            {
+              "id": "OSD_B1_T6_H_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 1 – Frage 2): Der Zug ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "kommt aus Wien."
+                },
+                {
+                  "id": "B",
+                  "text": "transportiert sowohl Personen als auch Autos."
+                },
+                {
+                  "id": "C",
+                  "text": "hat einen Liegewagen, aber keinen Schlafwagen."
+                }
+              ],
+              "publicExplanation": "Đáp án B đúng theo khóa đáp án gốc của Modelltest 6 (Hören 2 b). Chuyến tàu đêm này có toa chuyên chở cả ô tô đi kèm hành khách (Autoreisezug)."
+            },
+            {
+              "id": "OSD_B1_T6_H_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 2 – Aussage 3): Sie hören die Spielzeiten eines Theaters.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 2 – Frage 4): Wann gibt es eine Weihnachtsveranstaltung?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Am Samstag und Sonntag."
+                },
+                {
+                  "id": "B",
+                  "text": "Am Donnerstag und Freitag."
+                },
+                {
+                  "id": "C",
+                  "text": "Nur am Donnerstag."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 3 – Aussage 5): Sie hören die abendliche Nachrichtensendung.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 3 – Frage 6): Der Junge ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "fuhr mit der Straßenbahn."
+                },
+                {
+                  "id": "B",
+                  "text": "ging zu Fuß."
+                },
+                {
+                  "id": "C",
+                  "text": "war mit dem Fahrrad unterwegs."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q07",
+              "order": 7,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 4 – Aussage 7): Marie-Luise kann nicht mit ins Theater kommen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q08",
+              "order": 8,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 4 – Frage 8): Was soll Adele machen?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Die Theaterkarten abholen."
+                },
+                {
+                  "id": "B",
+                  "text": "An der Theaterkasse warten."
+                },
+                {
+                  "id": "C",
+                  "text": "Ihre Freundin vom Büro abholen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q09",
+              "order": 9,
+              "part": 1,
+              "taskType": "binary",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 5 – Aussage 9): Sie erfahren, wo das Hotel liegt.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q10",
+              "order": 10,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 94,
+              "prompt": "Teil 1 (Text 5 – Frage 10): Was liegt näher zum Hotel?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Der Flughafen."
+                },
+                {
+                  "id": "B",
+                  "text": "Die Ausstellung."
+                },
+                {
+                  "id": "C",
+                  "text": "Der Bahnhof."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "monologue_guide",
+          "title": "Teil 2: Führung im Käthe-Kruse-Puppenmuseum Donauwörth",
+          "instruction": "Sie hören eine Führung. Sie hören den Text einmal. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+          "questionRange": [
+            11,
+            15
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Führung im Käthe-Kruse-Puppenmuseum (S. 95)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 2: Führung durch das Käthe-Kruse-Puppenmuseum in Donauwörth (Aufgaben 11–15, S. 95)\n\n'Herzlich willkommen im Käthe-Kruse-Puppenmuseum in Donauwörth! Unser Museum wurde 1993 im ehemaligen Kapuzinerkloster eröffnet und beherbergt über 150 wertvolle historische Puppen. Käthe Kruse begann ihre Karriere 1883, als sie für ihre eigene Tochter die erste Puppe schuf: Sie weigerte sich, die damals üblichen kalten, schweren Porzellanpuppen zu kaufen, und bastelte stattdessen eine warme, weiche Stoffpuppe. Ihr weltweiter Ruhm beruht darauf, dass ihre Puppen echten, lebendigen Kindern täuschend ähnlich sahen. In unserem Museum bieten wir auch Kreativ-Workshops für Kinder und Erwachsene an, in denen man das traditionelle Puppenhandwerk kennenlernen kann. Zudem können Geburtstage für Kinder ab sechs Jahren mit bis zu zwölf Gästen bei uns gefeiert werden!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_H_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 95,
+              "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 11): Das Puppenmuseum gibt es seit ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "1883."
+                },
+                {
+                  "id": "B",
+                  "text": "1968."
+                },
+                {
+                  "id": "C",
+                  "text": "1993."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q12",
+              "order": 12,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 95,
+              "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 12): Die erste Puppe von Käthe Kruse war ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "sehr schwer."
+                },
+                {
+                  "id": "B",
+                  "text": "unpersönlich und kalt."
+                },
+                {
+                  "id": "C",
+                  "text": "warm und weich."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q13",
+              "order": 13,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 95,
+              "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 13): Warum wurde Käthe Kruse berühmt?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Weil es damals noch keine Puppen gab."
+                },
+                {
+                  "id": "B",
+                  "text": "Weil ihre Puppen Kindern ähnlich waren."
+                },
+                {
+                  "id": "C",
+                  "text": "Weil ihre Puppen wie Erwachsene waren."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q14",
+              "order": 14,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 95,
+              "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 14): Was kann man im Puppenmuseum auch machen?",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Einen Workshop besuchen."
+                },
+                {
+                  "id": "B",
+                  "text": "Eine Puppe herstellen."
+                },
+                {
+                  "id": "C",
+                  "text": "Käthe Kruse interviewen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q15",
+              "order": 15,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "sourcePage": 95,
+              "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 15): Man kann im Museum Geburtstag feiern, wenn man ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Eltern, Oma oder Opa mitbringt."
+                },
+                {
+                  "id": "B",
+                  "text": "unter sechs Jahre alt ist."
+                },
+                {
+                  "id": "C",
+                  "text": "bis zu zwölf Kinder einlädt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "informal_dialogue",
+          "title": "Teil 3: Gespräch im Wartezimmer beim Zahnarzt",
+          "instruction": "Sie hören ein Gespräch zwischen Freunden. Sie hören den Text einmal. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            16,
+            22
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Gespräch im Wartezimmer beim Zahnarzt (S. 96)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 3: Gespräch im Wartezimmer beim Zahnarzt (Aufgaben 16–22, S. 96)\n\nMutter: 'Hallo Hanna, tut dein Zahn immer noch so weh?'\nHanna: 'Ja Mama, der Backenzahn pocht ganz furchtbar. Aber schau mal, was ich vorhin in der Fußgängerzone gekauft habe!'\nMutter: 'Ein neues T-Shirt? Bei diesem kühlen Wetter?'\nHanna: 'Es war im Sonderangebot und hat nur 13 Euro gekostet. Ich habe es von meinem eigenen Taschengeld bezahlt.'\nMutter: 'Aber Hanna, das Shirt ist doch quietschgelb – du wolltest doch ein schwarzes haben!'\nHanna: 'Ich weiß, zu Hause gefiel es mir dann auch nicht mehr so gut. Ich werde es morgen nach der Schule gegen eine andere Farbe umtauschen.'\nMutter: 'Gut, dass du den Kassenbon aufbewahrt hast! Jetzt werden wir aber erst mal deinen Zahn behandeln lassen.'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_H_Q16",
+              "order": 16,
+              "part": 3,
+              "taskType": "binary",
+              "sourcePage": 96,
+              "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 16): Hanna hat Zahnschmerzen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q17",
+              "order": 17,
+              "part": 3,
+              "taskType": "binary",
+              "sourcePage": 96,
+              "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 17): Hanna hat sich ein T-Shirt und einen Rock gekauft.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q18",
+              "order": 18,
+              "part": 3,
+              "taskType": "binary",
+              "sourcePage": 96,
+              "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 18): Das T-Shirt hat 13 Euro gekostet.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q19",
+              "order": 19,
+              "part": 3,
+              "taskType": "binary",
+              "sourcePage": 96,
+              "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 19): Das Wetter ist noch ein bisschen kühl.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q20",
+              "order": 20,
+              "part": 3,
+              "taskType": "binary",
+              "sourcePage": 96,
+              "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 20): Das T-Shirt ist schwarz.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q21",
+              "order": 21,
+              "part": 3,
+              "taskType": "binary",
+              "sourcePage": 96,
+              "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 21): Hanna will das T-Shirt nicht umtauschen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q22",
+              "order": 22,
+              "part": 3,
+              "taskType": "binary",
+              "sourcePage": 96,
+              "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 22): Die Mutter schenkt Hanna ein T-Shirt.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "radio_debate",
+          "title": "Teil 4: Radiodiskussion zum Thema Zeitmanagement",
+          "instruction": "Sie hören eine Radiosendung mit Gästen. Sie hören den Text zwei Mal. Wählen Sie: Wer sagt was?",
+          "questionRange": [
+            23,
+            30
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Radiosendung 'Menschen & Zeit': Zeitmanagement (S. 97)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 4: Radiodiskussion zum Thema Zeitmanagement und Lebenszeit (Aufgaben 23–30, S. 97)\n\nModeratorin: 'Guten Abend zu unserer Diskussionsrunde über ein kostbares Gut: die Zeit. Das Thema Zeitmanagement und die Vermeidung von Alltagsstress sind heute in aller Munde. Kinder empfinden Zeit oft als unendlich langsam und langweilen sich viel schneller als Erwachsene. Bei mir im Studio sind Psychologe Leo Hofl und Buchautor Mario Kulmer.'\nLeo Hofl: 'Jeder Mensch verfügt über exakt dieselben 24 Stunden pro Tag. Ein kluges Zeitmanagement hilft enorm gegen chronischen Stress. Wichtig ist dabei, in jedem Tagesplan nicht nur Arbeitszeiten, sondern auch feste Phasen für Freizeit und Erholung zu reservieren.'\nMario Kulmer: 'Man darf es aber mit der Planung auch nicht übertreiben. Wer den ganzen Tag minutiös durchtaktet, verliert jede Spontaneität. Menschen, die aktiv durchs Leben gehen und neue Dinge wagen, haben im Alter eine viel reichere Schatzkiste an Erinnerungen.'\nModeratorin: 'Viele glauben ja, dass Pensionäre über grenzenlose Zeit verfügen, weil sie nicht mehr berufstätig sind.'\nLeo Hofl: 'Das ist oft eine Illusion – viele Senioren klagen über vollere Terminkalender als früher!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T6_H_Q23",
+              "order": 23,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 23): Kinder langweilen sich eher als Erwachsene. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q24",
+              "order": 24,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 24): Aktive Menschen haben viele Erinnerungen, wenn sie älter sind. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q25",
+              "order": 25,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 25): Das Zeitmanagement ist in unserer Zeit ein aktuelles Thema. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q26",
+              "order": 26,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 26): Das Zeitmanagement hilft gegen Stress. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q27",
+              "order": 27,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 27): Man soll bei einem Zeitplan sowohl an die Arbeitszeit als auch an die Freizeit denken. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q28",
+              "order": 28,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 28): Pensionäre haben genug Zeit, da sie nicht berufstätig sind. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q29",
+              "order": 29,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 29): Man sollte sich nicht zu lange mit seinem Zeitplan beschäftigen. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T6_H_Q30",
+              "order": 30,
+              "part": 4,
+              "taskType": "multiple_choice",
+              "sourcePage": 97,
+              "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 30): Alle Menschen haben täglich gleich viel Zeit. (Wer sagt das?)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Moderatorin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Leo Hofl)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (Mario Kulmer)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T6_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 1 – Aussage 1): Ein Zug fährt ab.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án gốc của Modelltest 6 (Hören 1 Richtig). Bản tin thông báo lịch trình tàu khởi hành."
+        },
+        {
+          "id": "OSD_B1_T6_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 1 – Frage 2): Der Zug ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "kommt aus Wien."
+            },
+            {
+              "id": "B",
+              "text": "transportiert sowohl Personen als auch Autos."
+            },
+            {
+              "id": "C",
+              "text": "hat einen Liegewagen, aber keinen Schlafwagen."
+            }
+          ],
+          "publicExplanation": "Đáp án B đúng theo khóa đáp án gốc của Modelltest 6 (Hören 2 b). Chuyến tàu đêm này có toa chuyên chở cả ô tô đi kèm hành khách (Autoreisezug)."
+        },
+        {
+          "id": "OSD_B1_T6_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 2 – Aussage 3): Sie hören die Spielzeiten eines Theaters.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 2 – Frage 4): Wann gibt es eine Weihnachtsveranstaltung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Am Samstag und Sonntag."
+            },
+            {
+              "id": "B",
+              "text": "Am Donnerstag und Freitag."
+            },
+            {
+              "id": "C",
+              "text": "Nur am Donnerstag."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 3 – Aussage 5): Sie hören die abendliche Nachrichtensendung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 3 – Frage 6): Der Junge ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "fuhr mit der Straßenbahn."
+            },
+            {
+              "id": "B",
+              "text": "ging zu Fuß."
+            },
+            {
+              "id": "C",
+              "text": "war mit dem Fahrrad unterwegs."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 4 – Aussage 7): Marie-Luise kann nicht mit ins Theater kommen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 4 – Frage 8): Was soll Adele machen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die Theaterkarten abholen."
+            },
+            {
+              "id": "B",
+              "text": "An der Theaterkasse warten."
+            },
+            {
+              "id": "C",
+              "text": "Ihre Freundin vom Büro abholen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 5 – Aussage 9): Sie erfahren, wo das Hotel liegt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 94,
+          "prompt": "Teil 1 (Text 5 – Frage 10): Was liegt näher zum Hotel?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Flughafen."
+            },
+            {
+              "id": "B",
+              "text": "Die Ausstellung."
+            },
+            {
+              "id": "C",
+              "text": "Der Bahnhof."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 95,
+          "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 11): Das Puppenmuseum gibt es seit ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "1883."
+            },
+            {
+              "id": "B",
+              "text": "1968."
+            },
+            {
+              "id": "C",
+              "text": "1993."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 95,
+          "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 12): Die erste Puppe von Käthe Kruse war ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sehr schwer."
+            },
+            {
+              "id": "B",
+              "text": "unpersönlich und kalt."
+            },
+            {
+              "id": "C",
+              "text": "warm und weich."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q13",
+          "order": 13,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 95,
+          "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 13): Warum wurde Käthe Kruse berühmt?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Weil es damals noch keine Puppen gab."
+            },
+            {
+              "id": "B",
+              "text": "Weil ihre Puppen Kindern ähnlich waren."
+            },
+            {
+              "id": "C",
+              "text": "Weil ihre Puppen wie Erwachsene waren."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q14",
+          "order": 14,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 95,
+          "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 14): Was kann man im Puppenmuseum auch machen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Einen Workshop besuchen."
+            },
+            {
+              "id": "B",
+              "text": "Eine Puppe herstellen."
+            },
+            {
+              "id": "C",
+              "text": "Käthe Kruse interviewen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q15",
+          "order": 15,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "sourcePage": 95,
+          "prompt": "Teil 2 (Puppenmuseum Käthe Kruse – Frage 15): Man kann im Museum Geburtstag feiern, wenn man ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Eltern, Oma oder Opa mitbringt."
+            },
+            {
+              "id": "B",
+              "text": "unter sechs Jahre alt ist."
+            },
+            {
+              "id": "C",
+              "text": "bis zu zwölf Kinder einlädt."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "binary",
+          "sourcePage": 96,
+          "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 16): Hanna hat Zahnschmerzen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "binary",
+          "sourcePage": 96,
+          "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 17): Hanna hat sich ein T-Shirt und einen Rock gekauft.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "binary",
+          "sourcePage": 96,
+          "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 18): Das T-Shirt hat 13 Euro gekostet.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "binary",
+          "sourcePage": 96,
+          "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 19): Das Wetter ist noch ein bisschen kühl.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q20",
+          "order": 20,
+          "part": 3,
+          "taskType": "binary",
+          "sourcePage": 96,
+          "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 20): Das T-Shirt ist schwarz.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q21",
+          "order": 21,
+          "part": 3,
+          "taskType": "binary",
+          "sourcePage": 96,
+          "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 21): Hanna will das T-Shirt nicht umtauschen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q22",
+          "order": 22,
+          "part": 3,
+          "taskType": "binary",
+          "sourcePage": 96,
+          "prompt": "Teil 3 (Alltagsgespräch im Wartezimmer – Aussage 22): Die Mutter schenkt Hanna ein T-Shirt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 23): Kinder langweilen sich eher als Erwachsene. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 24): Aktive Menschen haben viele Erinnerungen, wenn sie älter sind. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 25): Das Zeitmanagement ist in unserer Zeit ein aktuelles Thema. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 26): Das Zeitmanagement hilft gegen Stress. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q27",
+          "order": 27,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 27): Man soll bei einem Zeitplan sowohl an die Arbeitszeit als auch an die Freizeit denken. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q28",
+          "order": 28,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 28): Pensionäre haben genug Zeit, da sie nicht berufstätig sind. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q29",
+          "order": 29,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 29): Man sollte sich nicht zu lange mit seinem Zeitplan beschäftigen. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T6_H_Q30",
+          "order": 30,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "sourcePage": 97,
+          "prompt": "Teil 4 (Radiodiskussion: Bedeutung der Zeit – Aussage 30): Alle Menschen haben täglich gleich viel Zeit. (Wer sagt das?)",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Moderatorin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Leo Hofl)"
+            },
+            {
+              "id": "c",
+              "text": "c (Mario Kulmer)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T6_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 1 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6 (Teil 1 - Aussage 1 Richtig)."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q02",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 2 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6 (Teil 1 - Aussage 2 Falsch)."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 3 Richtig",
+      "trapExplanationVi": "Bà Mohlau muốn sống tự lập không phụ thuộc vào người khác."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q04",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 4 Richtig",
+      "trapExplanationVi": "Bà Mohlau thường xuyên trông con giúp cô hàng xóm đơn thân."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 5 Falsch",
+      "trapExplanationVi": "Sân chơi mở cho cả trẻ em khu vực lân cận vào chơi."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q06",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 6 Falsch",
+      "trapExplanationVi": "Bà Mohlau không tham gia chuyến đi Burgenland mà bận lớp nấu ăn."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q07",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 7 b",
+      "trapExplanationVi": "Bài báo thống kê danh lam thắng cảnh người Đức ưa chuộng nhất."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q08",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 8 a",
+      "trapExplanationVi": "Nhà thờ Kölner Dom liên tục nhiều năm giữ vị trí số 1."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q09",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 9 c",
+      "trapExplanationVi": "Berlin có 2 địa danh lọt vào Top 15 (Cổng Brandenburg & Tòa nhà Quốc hội Reichstag)."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q10",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 10 b",
+      "trapExplanationVi": "Diễn viên Hollywood Johnny Depp bất ngờ tới thăm trường tiểu học."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q11",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 11 c",
+      "trapExplanationVi": "Johnny Depp hóa thân thành thuyền trưởng Jack Sparrow hát và nhảy cùng học sinh."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q12",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 12 a",
+      "trapExplanationVi": "Cô bé Beatrice viết thư rủ cướp biển tới để khỏi phải học bài."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q13",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 13 0",
+      "trapExplanationVi": "Không có thông báo quảng cáo phù hợp (0)."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q14",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 14 j",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q15",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 15 h",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q16",
+      "correctOption": "e",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 16 e",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q17",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 17 f",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q18",
+      "correctOption": "i",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 18 i",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q19",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 19 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 6."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q20",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 20 Ja",
+      "trapExplanationVi": "Lara ủng hộ trượt tuyết ban đêm sau khi trực tiếp tham gia cùng đồng nghiệp."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q21",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 21 Nein",
+      "trapExplanationVi": "Kevin phản đối vì ánh đèn nhân tạo phá vỡ sự yên tĩnh tự nhiên của động vật vùng núi."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q22",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 22 Nein",
+      "trapExplanationVi": "Karl lo ngại tàn phá môi trường sinh thái vùng núi."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q23",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 23 Ja",
+      "trapExplanationVi": "Susanne ủng hộ vì người dân miền núi cũng nên được thỏa mãn sở thích vào ban đêm."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q24",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 24 Nein",
+      "trapExplanationVi": "Martin chỉ trích việc chủ nhà nghỉ trên núi mở dốc trượt tuyết cả đêm."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q25",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 25 Ja",
+      "trapExplanationVi": "Marc là chủ quán ủng hộ vì tăng thêm lượng khách và doanh thu sinh kế."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q26",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 26 Nein",
+      "trapExplanationVi": "Otto nhớ lại thời dùng đuốc truyền thống và phản đối đèn cao áp nhân tạo hiện nay."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q27",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 27 b",
+      "trapExplanationVi": "Quy định hút thuốc phải tôn trọng và không làm phiền thực khách xung quanh."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q28",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 28 c",
+      "trapExplanationVi": "Để gọi món, thực khách nên ra hiệu tay kín đáo thay vì gọi to."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q29",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 29 b",
+      "trapExplanationVi": "Nên dùng thẻ thanh toán tiện lợi và lịch sự."
+    },
+    {
+      "questionId": "OSD_B1_T6_L_Q30",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Lesen 30 c",
+      "trapExplanationVi": "Rất bất lịch sự khi nói điện thoại quá lâu khiến khách đi cùng phải chờ đợi."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 1 Richtig",
+      "trapExplanationVi": "Bản tin phát thanh thông báo tàu sắp khởi hành."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q02",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 2 b",
+      "trapExplanationVi": "Tàu đêm vận chuyển cả hành khách và ô tô cá nhân."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 3 Richtig",
+      "trapExplanationVi": "Thông báo lịch biểu diễn của nhà hát kịch."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q04",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 4 b",
+      "trapExplanationVi": "Chương trình Giáng sinh diễn ra vào Thứ Năm và Thứ Sáu."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 5 Richtig",
+      "trapExplanationVi": "Bản tin thời sự tối trên sóng phát thanh."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q06",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 6 c",
+      "trapExplanationVi": "Cậu bé đi xe đạp bị tai nạn giao thông."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 7 Falsch",
+      "trapExplanationVi": "Marie-Luise vẫn đến xem được nhưng đến muộn hơn chút."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q08",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 8 a",
+      "trapExplanationVi": "Adele được nhờ tới quầy lấy vé trước."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q09",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 9 Richtig",
+      "trapExplanationVi": "Chỉ đường chi tiết vị trí khách sạn."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q10",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 10 c",
+      "trapExplanationVi": "Nhà ga xe lửa nằm gần khách sạn hơn cả."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q11",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 11 c",
+      "trapExplanationVi": "Bảo tàng búp bê Käthe Kruse mở cửa từ năm 1993."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q12",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 12 c",
+      "trapExplanationVi": "Búp bê đầu tiên làm bằng chất liệu ấm và mềm mại."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q13",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 13 b",
+      "trapExplanationVi": "Käthe Kruse nổi tiếng vì búp bê mô phỏng sinh động biểu cảm trẻ thơ."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q14",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 14 a",
+      "trapExplanationVi": "Du khách có thể đăng ký tham gia hội thảo thủ công tại bảo tàng."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q15",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 15 c",
+      "trapExplanationVi": "Dịch vụ tổ chức sinh nhật cho nhóm tối đa 12 trẻ em."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q16",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 16 Richtig",
+      "trapExplanationVi": "Hanna bị đau răng khi ngồi chờ ở phòng khám nha sĩ."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q17",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 17 Falsch",
+      "trapExplanationVi": "Hanna chỉ mua áo thun T-Shirt chứ không mua váy."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q18",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 18 Richtig",
+      "trapExplanationVi": "Chiếc áo thun có giá khuyến mãi 13 Euro."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q19",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 19 Richtig",
+      "trapExplanationVi": "Thời tiết hiện tại vẫn còn se lạnh để mặc cộc tay."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q20",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 20 Falsch",
+      "trapExplanationVi": "Áo thun có màu sắc khác chứ không phải màu đen."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q21",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 21 Falsch",
+      "trapExplanationVi": "Hanna muốn đi đổi áo khác vì không vừa ý."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q22",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 22 Falsch",
+      "trapExplanationVi": "Hanna tự chi tiền tiết kiệm của mình để mua áo."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q23",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 23 a",
+      "trapExplanationVi": "Người dẫn chương trình (Moderatorin) nhận định trẻ em dễ thấy chán nản hơn người lớn."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q24",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 24 c",
+      "trapExplanationVi": "Mario Kulmer khẳng định người sống năng động sẽ lưu giữ nhiều ký ức đẹp khi về già."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q25",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 25 a",
+      "trapExplanationVi": "Người dẫn chương trình nêu chủ đề quản lý thời gian là vấn đề thời sự nóng hổi."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q26",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 26 b",
+      "trapExplanationVi": "Chuyên gia tâm lý Leo Hofl phân tích kỹ năng quản lý thời gian giúp xoa dịu áp lực stress."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q27",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 27 b",
+      "trapExplanationVi": "Leo Hofl khuyên khi lập kế hoạch phải cân bằng cả công việc và thời gian nghỉ ngơi giải trí."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q28",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 28 a",
+      "trapExplanationVi": "Moderatorin cho rằng người hưu trí có nhiều thời gian rảnh rỗi."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q29",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 29 c",
+      "trapExplanationVi": "Mario Kulmer khuyên không nên tốn quá nhiều thời gian chỉ để lập kế hoạch chi li."
+    },
+    {
+      "questionId": "OSD_B1_T6_H_Q30",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 6: Hören 30 b",
+      "trapExplanationVi": "Leo Hofl nhấn mạnh ai cũng có đúng 24 giờ mỗi ngày như nhau."
+    }
+  ]
+}

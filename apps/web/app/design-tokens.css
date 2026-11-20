@@ -1,0 +1,43 @@
+:root {
+  --color-cream: #f8fafc;
+  --color-surface: #ffffff;
+  --color-navy: #0f172a;
+  --color-navy-soft: #334155;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+  --color-red: #da2527;
+  --color-red-dark: #b91c1f;
+  --color-yellow: #f59e0b;
+  --color-green-soft: #e8f1ed;
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, .08);
+  --radius-card: 12px;
+  --font-sans: var(--font-montserrat), 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html { font-family: var(--font-sans); }
+body { margin: 0; background: var(--color-cream); color: var(--color-navy); font-family: var(--font-sans); }
+a { color: inherit; text-decoration: none; }
+button, input, textarea, select { font: inherit; font-family: var(--font-sans); }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: 3px; }
+.container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+.eyebrow { color: var(--color-red); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.accent { color: var(--color-red); }
+.section { padding: 96px 0 0; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+.section-heading h2 { margin: 8px 0 0; font-size: clamp(25px, 3vw, 34px); letter-spacing: -.04em; }
+.section-heading h2 em { color: var(--color-red); font-style: normal; }
+.section-heading p { margin: 0; color: var(--color-muted); font-size: 13px; }
+.section-link { color: var(--color-red); font-size: 13px; font-weight: 800; white-space: nowrap; }
+.horizontal-scroll { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 700px) {
+  .container { width: min(100% - 32px, 540px); }
+  .section { padding-top: 56px; }
+  .section-heading { align-items: start; flex-direction: column; gap: 8px; }
+  .horizontal-scroll { display: flex; gap: 12px; overflow-x: auto; margin-right: -16px; padding: 2px 16px 12px 0; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .horizontal-scroll::-webkit-scrollbar { display: none; }
+  .horizontal-scroll > * { flex: 0 0 78%; scroll-snap-align: start; }
+}

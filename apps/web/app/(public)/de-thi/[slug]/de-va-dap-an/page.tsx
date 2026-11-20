@@ -1,0 +1,14 @@
+import { notFound } from 'next/navigation';
+import { ExamFullKeyView } from '../../../../../components/exam/ExamFullKeyView';
+import { getExamStudyPayload, type StudySkill } from '../../../../../lib/server/exam-answer-key-loader';
+
+export const dynamic = 'force-dynamic';
+
+export default async function FullKeyPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ skill?: string }> }) {
+  const { slug } = await params;
+  const query = await searchParams;
+  const skill: StudySkill = query.skill === 'hoeren' ? 'hoeren' : 'lesen';
+  const payload = await getExamStudyPayload(slug, skill);
+  if (!payload) notFound();
+  return <ExamFullKeyView payload={payload} />;
+}

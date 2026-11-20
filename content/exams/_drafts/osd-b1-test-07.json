@@ -1,0 +1,3516 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-07",
+    "version": "v2",
+    "slug": "osd-b1-test-07-v2",
+    "title": "ÖSD Zertifikat B1 - Modelltest 07 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD Zertifikat B1 (Modelltest 07) tích hợp 100% ngữ liệu bài đọc, quảng cáo, ý kiến độc giả, quy chế và kịch bản lời thoại bài nghe bám sát đề thi khảo thí chính thức.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30.0,
+      "hoerenMaxPoints": 30.0,
+      "minPassingScorePerSkill": 18.0
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t7_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu (Leseverstehen)",
+      "durationMinutes": 65,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "binary",
+          "title": "Teil 1: Blogbeitrag / Persönlicher Bericht (Start ins Berufsleben)",
+          "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            1,
+            6
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "JuliasBlog.de – 1. Oktober: Mein Start ins Berufsleben",
+            "author": "Julia",
+            "content": "Liebe Leserinnen und Leser,\n\nheute möchte ich euch von meinen ersten aufregenden Wochen im Berufsleben berichten! Nach dem erfolgreichen Abschluss meines Masterstudiums in Kommunikationswissenschaften stand ich wie viele Absolventen vor der großen Frage: Wie gelingt der Einstieg in die Praxis?\n\nIch hatte riesiges Glück: Eine ehemalige Studienkollegin, die bereits seit zwei Jahren bei einer renommierten Münchner Medienagentur arbeitet, erzählte mir von einer freien Stelle im Bereich Social-Media-Management und empfahl mich direkt bei ihrem Abteilungsleiter. Nach zwei intensiven Vorstellungsgesprächen hielt ich den Arbeitsvertrag in den Händen!\n\nDer Arbeitsweg ist allerdings ganz schön weit: Mein Büro liegt am anderen Ende der Stadt und ich muss jeden Morgen fast 45 Minuten mit der S-Bahn pendeln. An das frühe Aufstehen musste ich mich erst gewöhnen. Die Einarbeitung war jedoch hervorragend: Ein erfahrener Kollege stand mir als Mentor zur Seite und erklärte mir geduldig alle internen Softwareprogramme.\n\nObwohl ich in den ersten Wochen so manche Überstunde machen musste, um mich in komplexe Projekte einzuarbeiten, bereue ich meine Entscheidung keine Sekunde. Das Team ist jung, dynamisch und die Aufgaben machen unglaublich viel Spaß. Ich möchte nach der sechsmonatigen Probezeit unbedingt fest im Unternehmen bleiben!\n\nHerzliche Grüße\nEure Julia",
+            "vocabulary": [
+              {
+                "word": "der Berufseinstieg",
+                "meaning": "bước khởi đầu sự nghiệp"
+              },
+              {
+                "word": "die Probezeit",
+                "meaning": "thời gian thử việc"
+              },
+              {
+                "word": "die Einarbeitung",
+                "meaning": "quá trình hướng dẫn làm quen công việc"
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_L_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Blogbeitrag – Aussage 1): Die Autorin berichtet in ihrem Blogbeitrag über ihre Erfahrungen beim Start ins Berufsleben nach dem Studium.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 7 (1 Richtig). Tác giả chia sẻ câu chuyện thực tế về những tuần đầu tiên đi làm và làm quen với môi trường công sở mới."
+            },
+            {
+              "id": "OSD_B1_T7_L_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Blogbeitrag – Aussage 2): Sie hat die neue Stelle über eine persönliche Empfehlung eines Bekannten erhalten.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 7 (2 Richtig). Văn bản xác nhận việc cô tìm được công việc thông qua mối quan hệ giới thiệu."
+            },
+            {
+              "id": "OSD_B1_T7_L_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Blogbeitrag – Aussage 3): Ihr neuer Arbeitsplatz liegt ganz in der Nähe ihrer Wohnung, sodass sie zu Fuß gehen kann.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Blogbeitrag – Aussage 4): Die Einarbeitung im Betrieb verlief von Beginn an völlig ohne fremde Unterstützung.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Blogbeitrag – Aussage 5): Sie plant, die Stelle bereits nach der Probezeit wieder zu kündigen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Blogbeitrag – Aussage 6): Trotz mancher Überstunden zieht sie insgesamt ein sehr positives Zwischenfazit.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "multiple_choice",
+          "title": "Teil 2: Zwei Pressetexte (Lernen in Slums & Solarium-Verbot)",
+          "instruction": "Lesen Sie die Texte aus der Presse und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+          "questionRange": [
+            7,
+            12
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Zwei Pressetexte: 'Lernen in Slums' & 'Solarium-Verbot für Jugendliche'",
+            "content": "PRESSETEXT 1: Lernen in Slums – Bildungsprojekt für Straßenkinder in Neu-Delhi (S. 104)\nIn den riesigen Elendsvierteln der indischen Millionenmetropole Neu-Delhi wachsen Hunderttausende Kinder ohne geregelten Schulunterricht auf. Um diesen Teufelskreis aus Armut und fehlender Bildung zu durchbrechen, gründete eine internationale Hilfsorganisation vor fünf Jahren mobile Unterrichtszentren direkt in den Slums. Auf einfachen Bastmatten unter freiem Himmel lernen die Kinder nicht nur das Alphabet, Lesen und Schreiben, sondern üben sich auch im Rechnen und Basteln. Ziel der Initiative ist es nicht, die staatliche Schule dauerhaft zu ersetzen, sondern die Kinder so gezielt vorzubereiten, dass sie nach ein bis zwei Jahren erfolgreich in reguläre staatliche Grundschulen integriert werden können.\n\nPRESSETEXT 2: Solarium-Verbot für Jugendliche unter 18 Jahren in Österreich (S. 105)\nDer österreichische Nationalrat hat ein wegweisendes Gesetz beschlossen: Ab sofort ist Jugendlichen unter 18 Jahren der Zutritt zu Solarien und Sonnenstudios gesetzlich untersagt. Führende Dermatologen und Hautärzte begrüßen das Verbot ausdrücklich. Wissenschaftliche Langzeitstudien belegen, dass die künstliche UV-Strahlung in Solarien für jugendliche Haut extrem gefährlich ist und das Risiko, im späteren Erwachsenenalter an bösartigem Hautkrebs (Melanom) zu erkranken, massiv erhöht. Ärzte betonen, dass natürliche Sonnenstrahlen im Freien der Haut bei unvorsichtigem Sonnenbaden genauso schaden können wie Solarienbänke, und fordern generell mehr Aufklärung über Sonnenschutz bei Jugendlichen."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_L_Q07",
+              "order": 7,
+              "part": 2,
+              "sourcePage": 104,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Pressetext 1: Lernen in Slums – Frage 7, S. 104): In diesem Text geht es um ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Unterricht für Kinder in Slums."
+                },
+                {
+                  "id": "b",
+                  "text": "b) das staatliche Schulsystem in Indien."
+                },
+                {
+                  "id": "c",
+                  "text": "c) die Ernährung von Kindern im Slum."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q08",
+              "order": 8,
+              "part": 2,
+              "sourcePage": 104,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Pressetext 1: Lernen in Slums – Frage 8, S. 104): Im Unterricht ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) lernen die Kinder das Alphabet."
+                },
+                {
+                  "id": "b",
+                  "text": "b) essen die Kinder."
+                },
+                {
+                  "id": "c",
+                  "text": "c) basteln die Kinder auch."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q09",
+              "order": 9,
+              "part": 2,
+              "sourcePage": 104,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Pressetext 1: Lernen in Slums – Frage 9, S. 104): Die Hilfsorganisation ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) besteht aus zwei Lehrern."
+                },
+                {
+                  "id": "b",
+                  "text": "b) hat zum Ziel, Slumkinder für die staatliche Schule vorzubereiten."
+                },
+                {
+                  "id": "c",
+                  "text": "c) wurde von Slum-Bewohnern gegründet."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q10",
+              "order": 10,
+              "part": 2,
+              "sourcePage": 105,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Pressetext 2: Solarium-Verbot für Jugendliche – Frage 10, S. 105): In diesem Text geht es darum, ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) was österreichische Jugendliche dürfen."
+                },
+                {
+                  "id": "b",
+                  "text": "b) warum das Solarium für Jugendliche schädlich ist."
+                },
+                {
+                  "id": "c",
+                  "text": "c) wie man sich vor der Sonne schützen kann."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q11",
+              "order": 11,
+              "part": 2,
+              "sourcePage": 105,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Pressetext 2: Solarium-Verbot für Jugendliche – Frage 11, S. 105): Die Ärzte ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) empfehlen den Jugendlichen eine Creme, die selbst bräunt."
+                },
+                {
+                  "id": "b",
+                  "text": "b) wollen, dass alle Solarien schließen."
+                },
+                {
+                  "id": "c",
+                  "text": "c) meinen, dass Jugendliche nicht daran denken, was später passieren könnte."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q12",
+              "order": 12,
+              "part": 2,
+              "sourcePage": 105,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Pressetext 2: Solarium-Verbot für Jugendliche – Frage 12, S. 105): Die Sonne ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) kann der Haut genauso schaden wie das Solarium."
+                },
+                {
+                  "id": "b",
+                  "text": "b) tut der Haut gut."
+                },
+                {
+                  "id": "c",
+                  "text": "c) schadet Jugendlichen weniger als Erwachsenen."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "matching",
+          "title": "Teil 3: Situationen & Anzeigen (Hilfsangebote im Privathaushalt)",
+          "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Finden Sie für jede Situation die passende Anzeige.",
+          "questionRange": [
+            13,
+            19
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Anzeigenübersicht: Dienstleistungen und Hilfsangebote im Haushalt (S. 106-107)",
+            "content": "ANZEIGENÜBERSICHT: Dienstleistungen und Hilfsangebote im Privathaushalt (S. 106-107)\n\n[a] Wir suchen Zusteller: Münchner Wochenblatt und Werbeprospekte austragen. Ideal für rüstige Rentner und Schüler ab 16 Jahren.\n[b] TD Domer Textilhandel: Strick- und Häkelkurse für Anfänger jeden Dienstagabend im Gemeinschaftszentrum.\n[c] Alles aus einer Hand: Handwerker-Service für Kleinreparaturen, Elektroarbeiten, Lampenwechsel und Malerarbeiten.\n[d] Nachhilfeunterricht gesucht: Pensionierte Pädagogen und Studenten zur Erteilung von Mathe- und Physiknachhilfe gesucht.\n[e] Gartenhilfe gesucht: Privathaushalt sucht Unterstützung beim Unkrautjäten und Rasenmähen.\n[f] Professioneller Gärtner: Übernehme sämtliche anfallenden Gartenarbeiten wie Baumschnitt, Heckenschnitt und Beetpflege.\n[g] Haushaltshilfe gesucht: Suchen zuverlässige Dame für älteres Ehepaar zur Haushaltsführung.\n[h] Welt der Handarbeit: Riesige Auswahl an Strickwolle, feinsten Mohair-Garnen und Stoffen aller Art.\n[i] Bäckers Nähstudio: Maßanfertigungen von Vorhängen und Festkleidung.\n[j] Suche Job in Privathaushalt: Erfahrene Seniorenbetreuerin übernimmt Einkäufe, Arztbegleitung und leichte Hausarbeit."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_L_Q13",
+              "order": 13,
+              "part": 3,
+              "sourcePage": 106,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13, S. 106): Die Lampe im Wohnzimmer von Herrn Rathenau funktioniert nicht mehr. Allein schafft er es leider nicht, den Schaden zu reparieren. Welche Anzeige passt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Wir suchen Zusteller (Münchner Wochenblatt)"
+                },
+                {
+                  "id": "b",
+                  "text": "b) Strickkurs (TD Domer Textilhandel)"
+                },
+                {
+                  "id": "c",
+                  "text": "c) Alles aus einer Hand (Elektro- und Malerarbeiten, Lampenwechsel usw.)"
+                },
+                {
+                  "id": "d",
+                  "text": "d) Nachhilfeunterricht gesucht (Mathematik/Physik)"
+                },
+                {
+                  "id": "e",
+                  "text": "e) Gartenhilfe gesucht"
+                },
+                {
+                  "id": "f",
+                  "text": "f) Gärtner übernimmt sämtliche anfallenden Arbeiten"
+                },
+                {
+                  "id": "g",
+                  "text": "g) Haushaltshilfe gesucht"
+                },
+                {
+                  "id": "h",
+                  "text": "h) Welt der Handarbeit (Wolle, Strickgarne)"
+                },
+                {
+                  "id": "i",
+                  "text": "i) Bäckers Nähstudio"
+                },
+                {
+                  "id": "j",
+                  "text": "j) Suche Job in Privathaushalt"
+                },
+                {
+                  "id": "0",
+                  "text": "0) Keine passende Anzeige"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q14",
+              "order": 14,
+              "part": 3,
+              "sourcePage": 106,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14, S. 106): Frau Eggers war Mathematiklehrerin und ist jetzt in Pension. Sie würde gerne ab und zu wieder Unterricht geben. Welche Anzeige passt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Wir suchen Zusteller"
+                },
+                {
+                  "id": "b",
+                  "text": "b) Strickkurs"
+                },
+                {
+                  "id": "c",
+                  "text": "c) Alles aus einer Hand"
+                },
+                {
+                  "id": "d",
+                  "text": "d) Pensionierte Pädagogen bzw. Studenten für Nachhilfeunterricht Mathematik/Physik gesucht"
+                },
+                {
+                  "id": "e",
+                  "text": "e) Gartenhilfe gesucht"
+                },
+                {
+                  "id": "f",
+                  "text": "f) Gärtner übernimmt Arbeiten"
+                },
+                {
+                  "id": "g",
+                  "text": "g) Haushaltshilfe gesucht"
+                },
+                {
+                  "id": "h",
+                  "text": "h) Welt der Handarbeit"
+                },
+                {
+                  "id": "i",
+                  "text": "i) Bäckers Nähstudio"
+                },
+                {
+                  "id": "j",
+                  "text": "j) Suche Job in Privathaushalt"
+                },
+                {
+                  "id": "0",
+                  "text": "0) Keine passende Anzeige"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q15",
+              "order": 15,
+              "part": 3,
+              "sourcePage": 106,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15, S. 106): Frau Bäuerle hat oft Rückenschmerzen. Sie braucht jemanden, der ihre Einkäufe erledigt, weil sie nichts Schweres tragen darf. Welche Anzeige passt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Wir suchen Zusteller"
+                },
+                {
+                  "id": "b",
+                  "text": "b) Strickkurs"
+                },
+                {
+                  "id": "c",
+                  "text": "c) Alles aus einer Hand"
+                },
+                {
+                  "id": "d",
+                  "text": "d) Nachhilfeunterricht gesucht"
+                },
+                {
+                  "id": "e",
+                  "text": "e) Gartenhilfe gesucht"
+                },
+                {
+                  "id": "f",
+                  "text": "f) Gärtner übernimmt Arbeiten"
+                },
+                {
+                  "id": "g",
+                  "text": "g) Haushaltshilfe gesucht"
+                },
+                {
+                  "id": "h",
+                  "text": "h) Welt der Handarbeit"
+                },
+                {
+                  "id": "i",
+                  "text": "i) Bäckers Nähstudio"
+                },
+                {
+                  "id": "j",
+                  "text": "j) Suche Job in Privathaushalt: Betreuung ält. Menschen, Einkaufen, Spazieren"
+                },
+                {
+                  "id": "0",
+                  "text": "0) Keine passende Anzeige"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q16",
+              "order": 16,
+              "part": 3,
+              "sourcePage": 106,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16, S. 106): Das Ehepaar Schütte liebt seinen Garten über alles. Die zwei können ihn aber nicht mehr allein pflegen. Welche Anzeige passt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Wir suchen Zusteller"
+                },
+                {
+                  "id": "b",
+                  "text": "b) Strickkurs"
+                },
+                {
+                  "id": "c",
+                  "text": "c) Alles aus einer Hand"
+                },
+                {
+                  "id": "d",
+                  "text": "d) Nachhilfeunterricht gesucht"
+                },
+                {
+                  "id": "e",
+                  "text": "e) Gartenhilfe gesucht"
+                },
+                {
+                  "id": "f",
+                  "text": "f) Gärtner übernimmt sämtliche anfallenden Arbeiten"
+                },
+                {
+                  "id": "g",
+                  "text": "g) Haushaltshilfe gesucht"
+                },
+                {
+                  "id": "h",
+                  "text": "h) Welt der Handarbeit"
+                },
+                {
+                  "id": "i",
+                  "text": "i) Bäckers Nähstudio"
+                },
+                {
+                  "id": "j",
+                  "text": "j) Suche Job in Privathaushalt"
+                },
+                {
+                  "id": "0",
+                  "text": "0) Keine passende Anzeige"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q17",
+              "order": 17,
+              "part": 3,
+              "sourcePage": 106,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17, S. 106): Die Haushaltshilfe von Herrn Reuter ist in eine andere Stadt gezogen. Deshalb sucht er eine neue Haushaltshilfe. Welche Anzeige passt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Wir suchen Zusteller"
+                },
+                {
+                  "id": "b",
+                  "text": "b) Strickkurs"
+                },
+                {
+                  "id": "c",
+                  "text": "c) Alles aus einer Hand"
+                },
+                {
+                  "id": "d",
+                  "text": "d) Nachhilfeunterricht gesucht"
+                },
+                {
+                  "id": "e",
+                  "text": "e) Gartenhilfe gesucht"
+                },
+                {
+                  "id": "f",
+                  "text": "f) Gärtner übernimmt Arbeiten"
+                },
+                {
+                  "id": "g",
+                  "text": "g) Haushaltshilfe gesucht (sucht für älteres Ehepaar, bietet keine Stelle an)"
+                },
+                {
+                  "id": "h",
+                  "text": "h) Welt der Handarbeit"
+                },
+                {
+                  "id": "i",
+                  "text": "i) Bäckers Nähstudio"
+                },
+                {
+                  "id": "j",
+                  "text": "j) Suche Job in Privathaushalt"
+                },
+                {
+                  "id": "0",
+                  "text": "0) Keine passende Anzeige"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q18",
+              "order": 18,
+              "part": 3,
+              "sourcePage": 106,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18, S. 106): Herr Mayer war früher Briefträger. Er bekommt jetzt zwar eine gute Rente, aber er langweilt sich zu Hause und sucht einen Teilzeitjob. Welche Anzeige passt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Wir suchen Zusteller für das Münchner Wochenblatt und Werbe-Prospekte (Für Schüler, Rentner)"
+                },
+                {
+                  "id": "b",
+                  "text": "b) Strickkurs"
+                },
+                {
+                  "id": "c",
+                  "text": "c) Alles aus einer Hand"
+                },
+                {
+                  "id": "d",
+                  "text": "d) Nachhilfeunterricht gesucht"
+                },
+                {
+                  "id": "e",
+                  "text": "e) Gartenhilfe gesucht"
+                },
+                {
+                  "id": "f",
+                  "text": "f) Gärtner übernimmt Arbeiten"
+                },
+                {
+                  "id": "g",
+                  "text": "g) Haushaltshilfe gesucht"
+                },
+                {
+                  "id": "h",
+                  "text": "h) Welt der Handarbeit"
+                },
+                {
+                  "id": "i",
+                  "text": "i) Bäckers Nähstudio"
+                },
+                {
+                  "id": "j",
+                  "text": "j) Suche Job in Privathaushalt"
+                },
+                {
+                  "id": "0",
+                  "text": "0) Keine passende Anzeige"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q19",
+              "order": 19,
+              "part": 3,
+              "sourcePage": 106,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19, S. 106): Frau Hetzel möchte für ihre Enkelkinder Pullover stricken. Sie braucht dafür blaue und weiße Mohair-Wolle. Welche Anzeige passt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Wir suchen Zusteller"
+                },
+                {
+                  "id": "b",
+                  "text": "b) Strickkurs"
+                },
+                {
+                  "id": "c",
+                  "text": "c) Alles aus einer Hand"
+                },
+                {
+                  "id": "d",
+                  "text": "d) Nachhilfeunterricht gesucht"
+                },
+                {
+                  "id": "e",
+                  "text": "e) Gartenhilfe gesucht"
+                },
+                {
+                  "id": "f",
+                  "text": "f) Gärtner übernimmt Arbeiten"
+                },
+                {
+                  "id": "g",
+                  "text": "g) Haushaltshilfe gesucht"
+                },
+                {
+                  "id": "h",
+                  "text": "h) Welt der Handarbeit (Wolle, Strickgarne u. Stoffe in großer Auswahl)"
+                },
+                {
+                  "id": "i",
+                  "text": "i) Bäckers Nähstudio"
+                },
+                {
+                  "id": "j",
+                  "text": "j) Suche Job in Privathaushalt"
+                },
+                {
+                  "id": "0",
+                  "text": "0) Keine passende Anzeige"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "binary_opinion",
+          "title": "Teil 4: Leserbriefe (Verbot von Plastiktüten)",
+          "instruction": "Lesen Sie die Texte 20 bis 26. Ist die jeweilige Person für ein Verbot von Plastiktüten? Wählen Sie: Ja oder Nein.",
+          "questionRange": [
+            20,
+            26
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Leserbriefe: Verbot von Plastiktüten? (S. 108)",
+            "content": "LESERBRIEFE ZUM THEMA: Sollte die kostenlose Ausgabe von Plastiktüten verboten werden? (S. 108)\n\n20. Axel (26, Hameln): 'Ein generelles Verbot halte ich für übertrieben. Wenn Plastiktüten an der Kasse 20 Cent kosten, überlegt sich jeder Kunde von allein, ob er wirklich eine braucht.' (Nein)\n21. Miriam (22, St. Moritz): 'Ich bin absolut für ein Verbot. Ich nehme seit Jahren immer meinen eigenen Stoffbeutel oder Rucksack zum Einkaufen mit. Es ist so einfach, auf Plastikmüll zu verzichten!' (Ja)\n22. Sarah (17, München): 'Man tut so, als seien Papiertüten die Rettung. Aber für Papiertüten müssen riesige Wälder gerodet werden! Ich benutze Plastiktüten mehrmals, das ist genauso nachhaltig.' (Nein)\n23. Tom (19, Salzburg): 'Tausende Meerestiere verenden jedes Jahr qualvoll an unserem Plastikmüll. Jede verbotene Plastiktüte ist ein Segen für die Weltmeere. Ein striktes Verbot ist längst überfällig!' (Ja)\n24. Madsen (50, Erlangen): 'In Deutschland wird doch fast alles recycelt. Ich benutze die Einkaufstüten zu Hause immer als Müllbeutel. Man sollte die Kirche im Dorf lassen.' (Nein)\n25. Luisa (46, Konstanz): 'Mit Verboten erreicht man bei den Bürgern nur Trotz. Viel wichtiger ist es, umweltfreundliche Mehrwegtaschen attraktiv und günstig zu machen.' (Nein)\n26. Frederike (27, Gera): 'In vielen afrikanischen und asiatischen Ländern sind Plastiktüten schon lange komplett verboten. Warum schafft Deutschland das nicht? Ein klares Ja zum Verbot!' (Ja)"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_L_Q20",
+              "order": 20,
+              "part": 4,
+              "sourcePage": 108,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Verbot von Plastiktüten – Person 20 Axel, 26, Hameln, S. 108): Ist Axel für ein Verbot von Plastiktüten? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q21",
+              "order": 21,
+              "part": 4,
+              "sourcePage": 108,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Verbot von Plastiktüten – Person 21 Miriam, 22, St. Moritz, S. 108): Ist Miriam für ein Verbot von Plastiktüten? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q22",
+              "order": 22,
+              "part": 4,
+              "sourcePage": 108,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Verbot von Plastiktüten – Person 22 Sarah, 17, München, S. 108): Ist Sarah für ein Verbot von Plastiktüten? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q23",
+              "order": 23,
+              "part": 4,
+              "sourcePage": 108,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Verbot von Plastiktüten – Person 23 Tom, 19, Salzburg, S. 108): Ist Tom für ein Verbot von Plastiktüten? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q24",
+              "order": 24,
+              "part": 4,
+              "sourcePage": 108,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Verbot von Plastiktüten – Person 24 Madsen, 50, Erlangen, S. 108): Ist Madsen für ein Verbot von Plastiktüten? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q25",
+              "order": 25,
+              "part": 4,
+              "sourcePage": 108,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Verbot von Plastiktüten – Person 25 Luisa, 46, Konstanz, S. 108): Ist Luisa für ein Verbot von Plastiktüten? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q26",
+              "order": 26,
+              "part": 4,
+              "sourcePage": 108,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Verbot von Plastiktüten – Person 26 Frederike, 27, Gera, S. 108): Ist Frederike für ein Verbot von Plastiktüten? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 5,
+          "taskType": "multiple_choice",
+          "title": "Teil 5: Bestimmungen des VDH für die Begleithundprüfung",
+          "instruction": "Lesen Sie die Prüfungsbestimmungen. Lösen Sie die Aufgaben 27 bis 30, indem Sie die richtige Antwort a, b oder c wählen.",
+          "questionRange": [
+            27,
+            30
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Prüfungsordnung: Begleithundprüfung des VDH (S. 109)",
+            "content": "PRÜFUNGSORDNUNG: Bestimmungen des VDH für die Begleithundprüfung (BH-VT, S. 109)\n\n1. Zulassungsvoraussetzungen und Gebühren: An der Begleithundprüfung können Hunde aller Rassen und Größen teilnehmen. Voraussetzung ist ein Mindestalter des Hundes von 15 Monaten am Tag der Prüfung sowie der Nachweis einer gültigen Tollwutimpfung. Der Hundeführer muss Mitglied in einem dem VDH angeschlossenen Verein sein. Für die Teilnahme wird eine feste Prüfungsgebühr erhoben.\n2. Gliederung der Prüfung: Die Prüfung gliedert sich in zwei Abschnitte: Teil A (Prüfung auf dem Übungsplatz – Leinenführigkeit, Freifolge, Sitzen und Ablegen) und Teil B (Prüfung im Verkehr – Verhalten gegenüber Fußgängern, Radfahrern, Joggern und Autos). Nur wer in Teil A mindestens 70 Prozent der maximalen Punktzahl (42 von 60 Punkten) erreicht, wird zur Verkehrsprüfung in Teil B zugelassen.\n3. Witterung und Termine: Prüfungsveranstaltungen finden nur an offiziell genehmigten Terminen statt. Bei extremen Wetterbedingungen wie Glatteis, starkem Schneefall oder extremer Hitze kann der Leistungsrichter die Prüfung im Interesse des Tierschutzes absagen."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_L_Q27",
+              "order": 27,
+              "part": 5,
+              "sourcePage": 109,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 27, S. 109): Jeder Teilnehmer muss ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Mitglied in einem Tierschutzverein sein."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Geld für die Teilnahme an der Prüfung zahlen."
+                },
+                {
+                  "id": "c",
+                  "text": "c) vor der Prüfung den Hund von einem Tierarzt untersuchen lassen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q28",
+              "order": 28,
+              "part": 5,
+              "sourcePage": 109,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 28, S. 109): Für die Teilnahme an Prüfungsteil B ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) muss der Hund zuerst Prüfungsteil A bestanden haben."
+                },
+                {
+                  "id": "b",
+                  "text": "b) kann der Hund bis zu 70 Punkten erhalten."
+                },
+                {
+                  "id": "c",
+                  "text": "c) kann man vor der Prüfung mit dem Hund auf einem Übungsplatz trainieren."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q29",
+              "order": 29,
+              "part": 5,
+              "sourcePage": 109,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 29, S. 109): Prüfungsveranstaltungen finden ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) bei schlechtem Wetter nicht statt."
+                },
+                {
+                  "id": "b",
+                  "text": "b) nur zu bestimmten Terminen statt."
+                },
+                {
+                  "id": "c",
+                  "text": "c) jederzeit mit Erlaubnis des Prüfungsleiters statt."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_L_Q30",
+              "order": 30,
+              "part": 5,
+              "sourcePage": 109,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 30, S. 109): Für die Begleithundprüfung gilt:",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Es dürfen nur bestimmte Hunderassen teilnehmen."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Es gibt ein Mindestalter für die Hunde."
+                },
+                {
+                  "id": "c",
+                  "text": "c) Bei weniger als zwölf Teilnehmern findet die Prüfung nicht statt."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T7_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 1): Die Autorin berichtet in ihrem Blogbeitrag über ihre Erfahrungen beim Start ins Berufsleben nach dem Studium.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 7 (1 Richtig). Tác giả chia sẻ câu chuyện thực tế về những tuần đầu tiên đi làm và làm quen với môi trường công sở mới."
+        },
+        {
+          "id": "OSD_B1_T7_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 2): Sie hat die neue Stelle über eine persönliche Empfehlung eines Bekannten erhalten.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 7 (2 Richtig). Văn bản xác nhận việc cô tìm được công việc thông qua mối quan hệ giới thiệu."
+        },
+        {
+          "id": "OSD_B1_T7_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 3): Ihr neuer Arbeitsplatz liegt ganz in der Nähe ihrer Wohnung, sodass sie zu Fuß gehen kann.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 4): Die Einarbeitung im Betrieb verlief von Beginn an völlig ohne fremde Unterstützung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 5): Sie plant, die Stelle bereits nach der Probezeit wieder zu kündigen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 6): Trotz mancher Überstunden zieht sie insgesamt ein sehr positives Zwischenfazit.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q07",
+          "order": 7,
+          "part": 2,
+          "sourcePage": 104,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1: Lernen in Slums – Frage 7, S. 104): In diesem Text geht es um ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Unterricht für Kinder in Slums."
+            },
+            {
+              "id": "b",
+              "text": "b) das staatliche Schulsystem in Indien."
+            },
+            {
+              "id": "c",
+              "text": "c) die Ernährung von Kindern im Slum."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q08",
+          "order": 8,
+          "part": 2,
+          "sourcePage": 104,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1: Lernen in Slums – Frage 8, S. 104): Im Unterricht ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) lernen die Kinder das Alphabet."
+            },
+            {
+              "id": "b",
+              "text": "b) essen die Kinder."
+            },
+            {
+              "id": "c",
+              "text": "c) basteln die Kinder auch."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q09",
+          "order": 9,
+          "part": 2,
+          "sourcePage": 104,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1: Lernen in Slums – Frage 9, S. 104): Die Hilfsorganisation ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) besteht aus zwei Lehrern."
+            },
+            {
+              "id": "b",
+              "text": "b) hat zum Ziel, Slumkinder für die staatliche Schule vorzubereiten."
+            },
+            {
+              "id": "c",
+              "text": "c) wurde von Slum-Bewohnern gegründet."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q10",
+          "order": 10,
+          "part": 2,
+          "sourcePage": 105,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2: Solarium-Verbot für Jugendliche – Frage 10, S. 105): In diesem Text geht es darum, ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) was österreichische Jugendliche dürfen."
+            },
+            {
+              "id": "b",
+              "text": "b) warum das Solarium für Jugendliche schädlich ist."
+            },
+            {
+              "id": "c",
+              "text": "c) wie man sich vor der Sonne schützen kann."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q11",
+          "order": 11,
+          "part": 2,
+          "sourcePage": 105,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2: Solarium-Verbot für Jugendliche – Frage 11, S. 105): Die Ärzte ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) empfehlen den Jugendlichen eine Creme, die selbst bräunt."
+            },
+            {
+              "id": "b",
+              "text": "b) wollen, dass alle Solarien schließen."
+            },
+            {
+              "id": "c",
+              "text": "c) meinen, dass Jugendliche nicht daran denken, was später passieren könnte."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q12",
+          "order": 12,
+          "part": 2,
+          "sourcePage": 105,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2: Solarium-Verbot für Jugendliche – Frage 12, S. 105): Die Sonne ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) kann der Haut genauso schaden wie das Solarium."
+            },
+            {
+              "id": "b",
+              "text": "b) tut der Haut gut."
+            },
+            {
+              "id": "c",
+              "text": "c) schadet Jugendlichen weniger als Erwachsenen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q13",
+          "order": 13,
+          "part": 3,
+          "sourcePage": 106,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13, S. 106): Die Lampe im Wohnzimmer von Herrn Rathenau funktioniert nicht mehr. Allein schafft er es leider nicht, den Schaden zu reparieren. Welche Anzeige passt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Wir suchen Zusteller (Münchner Wochenblatt)"
+            },
+            {
+              "id": "b",
+              "text": "b) Strickkurs (TD Domer Textilhandel)"
+            },
+            {
+              "id": "c",
+              "text": "c) Alles aus einer Hand (Elektro- und Malerarbeiten, Lampenwechsel usw.)"
+            },
+            {
+              "id": "d",
+              "text": "d) Nachhilfeunterricht gesucht (Mathematik/Physik)"
+            },
+            {
+              "id": "e",
+              "text": "e) Gartenhilfe gesucht"
+            },
+            {
+              "id": "f",
+              "text": "f) Gärtner übernimmt sämtliche anfallenden Arbeiten"
+            },
+            {
+              "id": "g",
+              "text": "g) Haushaltshilfe gesucht"
+            },
+            {
+              "id": "h",
+              "text": "h) Welt der Handarbeit (Wolle, Strickgarne)"
+            },
+            {
+              "id": "i",
+              "text": "i) Bäckers Nähstudio"
+            },
+            {
+              "id": "j",
+              "text": "j) Suche Job in Privathaushalt"
+            },
+            {
+              "id": "0",
+              "text": "0) Keine passende Anzeige"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q14",
+          "order": 14,
+          "part": 3,
+          "sourcePage": 106,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14, S. 106): Frau Eggers war Mathematiklehrerin und ist jetzt in Pension. Sie würde gerne ab und zu wieder Unterricht geben. Welche Anzeige passt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Wir suchen Zusteller"
+            },
+            {
+              "id": "b",
+              "text": "b) Strickkurs"
+            },
+            {
+              "id": "c",
+              "text": "c) Alles aus einer Hand"
+            },
+            {
+              "id": "d",
+              "text": "d) Pensionierte Pädagogen bzw. Studenten für Nachhilfeunterricht Mathematik/Physik gesucht"
+            },
+            {
+              "id": "e",
+              "text": "e) Gartenhilfe gesucht"
+            },
+            {
+              "id": "f",
+              "text": "f) Gärtner übernimmt Arbeiten"
+            },
+            {
+              "id": "g",
+              "text": "g) Haushaltshilfe gesucht"
+            },
+            {
+              "id": "h",
+              "text": "h) Welt der Handarbeit"
+            },
+            {
+              "id": "i",
+              "text": "i) Bäckers Nähstudio"
+            },
+            {
+              "id": "j",
+              "text": "j) Suche Job in Privathaushalt"
+            },
+            {
+              "id": "0",
+              "text": "0) Keine passende Anzeige"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q15",
+          "order": 15,
+          "part": 3,
+          "sourcePage": 106,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15, S. 106): Frau Bäuerle hat oft Rückenschmerzen. Sie braucht jemanden, der ihre Einkäufe erledigt, weil sie nichts Schweres tragen darf. Welche Anzeige passt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Wir suchen Zusteller"
+            },
+            {
+              "id": "b",
+              "text": "b) Strickkurs"
+            },
+            {
+              "id": "c",
+              "text": "c) Alles aus einer Hand"
+            },
+            {
+              "id": "d",
+              "text": "d) Nachhilfeunterricht gesucht"
+            },
+            {
+              "id": "e",
+              "text": "e) Gartenhilfe gesucht"
+            },
+            {
+              "id": "f",
+              "text": "f) Gärtner übernimmt Arbeiten"
+            },
+            {
+              "id": "g",
+              "text": "g) Haushaltshilfe gesucht"
+            },
+            {
+              "id": "h",
+              "text": "h) Welt der Handarbeit"
+            },
+            {
+              "id": "i",
+              "text": "i) Bäckers Nähstudio"
+            },
+            {
+              "id": "j",
+              "text": "j) Suche Job in Privathaushalt: Betreuung ält. Menschen, Einkaufen, Spazieren"
+            },
+            {
+              "id": "0",
+              "text": "0) Keine passende Anzeige"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q16",
+          "order": 16,
+          "part": 3,
+          "sourcePage": 106,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16, S. 106): Das Ehepaar Schütte liebt seinen Garten über alles. Die zwei können ihn aber nicht mehr allein pflegen. Welche Anzeige passt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Wir suchen Zusteller"
+            },
+            {
+              "id": "b",
+              "text": "b) Strickkurs"
+            },
+            {
+              "id": "c",
+              "text": "c) Alles aus einer Hand"
+            },
+            {
+              "id": "d",
+              "text": "d) Nachhilfeunterricht gesucht"
+            },
+            {
+              "id": "e",
+              "text": "e) Gartenhilfe gesucht"
+            },
+            {
+              "id": "f",
+              "text": "f) Gärtner übernimmt sämtliche anfallenden Arbeiten"
+            },
+            {
+              "id": "g",
+              "text": "g) Haushaltshilfe gesucht"
+            },
+            {
+              "id": "h",
+              "text": "h) Welt der Handarbeit"
+            },
+            {
+              "id": "i",
+              "text": "i) Bäckers Nähstudio"
+            },
+            {
+              "id": "j",
+              "text": "j) Suche Job in Privathaushalt"
+            },
+            {
+              "id": "0",
+              "text": "0) Keine passende Anzeige"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q17",
+          "order": 17,
+          "part": 3,
+          "sourcePage": 106,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17, S. 106): Die Haushaltshilfe von Herrn Reuter ist in eine andere Stadt gezogen. Deshalb sucht er eine neue Haushaltshilfe. Welche Anzeige passt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Wir suchen Zusteller"
+            },
+            {
+              "id": "b",
+              "text": "b) Strickkurs"
+            },
+            {
+              "id": "c",
+              "text": "c) Alles aus einer Hand"
+            },
+            {
+              "id": "d",
+              "text": "d) Nachhilfeunterricht gesucht"
+            },
+            {
+              "id": "e",
+              "text": "e) Gartenhilfe gesucht"
+            },
+            {
+              "id": "f",
+              "text": "f) Gärtner übernimmt Arbeiten"
+            },
+            {
+              "id": "g",
+              "text": "g) Haushaltshilfe gesucht (sucht für älteres Ehepaar, bietet keine Stelle an)"
+            },
+            {
+              "id": "h",
+              "text": "h) Welt der Handarbeit"
+            },
+            {
+              "id": "i",
+              "text": "i) Bäckers Nähstudio"
+            },
+            {
+              "id": "j",
+              "text": "j) Suche Job in Privathaushalt"
+            },
+            {
+              "id": "0",
+              "text": "0) Keine passende Anzeige"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q18",
+          "order": 18,
+          "part": 3,
+          "sourcePage": 106,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18, S. 106): Herr Mayer war früher Briefträger. Er bekommt jetzt zwar eine gute Rente, aber er langweilt sich zu Hause und sucht einen Teilzeitjob. Welche Anzeige passt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Wir suchen Zusteller für das Münchner Wochenblatt und Werbe-Prospekte (Für Schüler, Rentner)"
+            },
+            {
+              "id": "b",
+              "text": "b) Strickkurs"
+            },
+            {
+              "id": "c",
+              "text": "c) Alles aus einer Hand"
+            },
+            {
+              "id": "d",
+              "text": "d) Nachhilfeunterricht gesucht"
+            },
+            {
+              "id": "e",
+              "text": "e) Gartenhilfe gesucht"
+            },
+            {
+              "id": "f",
+              "text": "f) Gärtner übernimmt Arbeiten"
+            },
+            {
+              "id": "g",
+              "text": "g) Haushaltshilfe gesucht"
+            },
+            {
+              "id": "h",
+              "text": "h) Welt der Handarbeit"
+            },
+            {
+              "id": "i",
+              "text": "i) Bäckers Nähstudio"
+            },
+            {
+              "id": "j",
+              "text": "j) Suche Job in Privathaushalt"
+            },
+            {
+              "id": "0",
+              "text": "0) Keine passende Anzeige"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q19",
+          "order": 19,
+          "part": 3,
+          "sourcePage": 106,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19, S. 106): Frau Hetzel möchte für ihre Enkelkinder Pullover stricken. Sie braucht dafür blaue und weiße Mohair-Wolle. Welche Anzeige passt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Wir suchen Zusteller"
+            },
+            {
+              "id": "b",
+              "text": "b) Strickkurs"
+            },
+            {
+              "id": "c",
+              "text": "c) Alles aus einer Hand"
+            },
+            {
+              "id": "d",
+              "text": "d) Nachhilfeunterricht gesucht"
+            },
+            {
+              "id": "e",
+              "text": "e) Gartenhilfe gesucht"
+            },
+            {
+              "id": "f",
+              "text": "f) Gärtner übernimmt Arbeiten"
+            },
+            {
+              "id": "g",
+              "text": "g) Haushaltshilfe gesucht"
+            },
+            {
+              "id": "h",
+              "text": "h) Welt der Handarbeit (Wolle, Strickgarne u. Stoffe in großer Auswahl)"
+            },
+            {
+              "id": "i",
+              "text": "i) Bäckers Nähstudio"
+            },
+            {
+              "id": "j",
+              "text": "j) Suche Job in Privathaushalt"
+            },
+            {
+              "id": "0",
+              "text": "0) Keine passende Anzeige"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q20",
+          "order": 20,
+          "part": 4,
+          "sourcePage": 108,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Verbot von Plastiktüten – Person 20 Axel, 26, Hameln, S. 108): Ist Axel für ein Verbot von Plastiktüten? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q21",
+          "order": 21,
+          "part": 4,
+          "sourcePage": 108,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Verbot von Plastiktüten – Person 21 Miriam, 22, St. Moritz, S. 108): Ist Miriam für ein Verbot von Plastiktüten? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q22",
+          "order": 22,
+          "part": 4,
+          "sourcePage": 108,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Verbot von Plastiktüten – Person 22 Sarah, 17, München, S. 108): Ist Sarah für ein Verbot von Plastiktüten? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q23",
+          "order": 23,
+          "part": 4,
+          "sourcePage": 108,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Verbot von Plastiktüten – Person 23 Tom, 19, Salzburg, S. 108): Ist Tom für ein Verbot von Plastiktüten? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q24",
+          "order": 24,
+          "part": 4,
+          "sourcePage": 108,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Verbot von Plastiktüten – Person 24 Madsen, 50, Erlangen, S. 108): Ist Madsen für ein Verbot von Plastiktüten? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q25",
+          "order": 25,
+          "part": 4,
+          "sourcePage": 108,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Verbot von Plastiktüten – Person 25 Luisa, 46, Konstanz, S. 108): Ist Luisa für ein Verbot von Plastiktüten? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q26",
+          "order": 26,
+          "part": 4,
+          "sourcePage": 108,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Verbot von Plastiktüten – Person 26 Frederike, 27, Gera, S. 108): Ist Frederike für ein Verbot von Plastiktüten? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q27",
+          "order": 27,
+          "part": 5,
+          "sourcePage": 109,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 27, S. 109): Jeder Teilnehmer muss ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Mitglied in einem Tierschutzverein sein."
+            },
+            {
+              "id": "b",
+              "text": "b) Geld für die Teilnahme an der Prüfung zahlen."
+            },
+            {
+              "id": "c",
+              "text": "c) vor der Prüfung den Hund von einem Tierarzt untersuchen lassen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q28",
+          "order": 28,
+          "part": 5,
+          "sourcePage": 109,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 28, S. 109): Für die Teilnahme an Prüfungsteil B ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) muss der Hund zuerst Prüfungsteil A bestanden haben."
+            },
+            {
+              "id": "b",
+              "text": "b) kann der Hund bis zu 70 Punkten erhalten."
+            },
+            {
+              "id": "c",
+              "text": "c) kann man vor der Prüfung mit dem Hund auf einem Übungsplatz trainieren."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q29",
+          "order": 29,
+          "part": 5,
+          "sourcePage": 109,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 29, S. 109): Prüfungsveranstaltungen finden ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) bei schlechtem Wetter nicht statt."
+            },
+            {
+              "id": "b",
+              "text": "b) nur zu bestimmten Terminen statt."
+            },
+            {
+              "id": "c",
+              "text": "c) jederzeit mit Erlaubnis des Prüfungsleiters statt."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_L_Q30",
+          "order": 30,
+          "part": 5,
+          "sourcePage": 109,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Bestimmungen des VDH für die Begleithundprüfung – Frage 30, S. 109): Für die Begleithundprüfung gilt:",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Es dürfen nur bestimmte Hunderassen teilnehmen."
+            },
+            {
+              "id": "b",
+              "text": "b) Es gibt ein Mindestalter für die Hunde."
+            },
+            {
+              "id": "c",
+              "text": "c) Bei weniger als zwölf Teilnehmern findet die Prüfung nicht statt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t7_hoeren",
+      "skill": "Hoeren",
+      "title": "Kỹ năng Nghe hiểu (Hörverstehen)",
+      "durationMinutes": 40,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "short_dialogues",
+          "title": "Teil 1: 5 Kurztexte (Schule, Philharmonie, Verkehr, Reisen, Polizei)",
+          "instruction": "Sie hören fünf kurze Texte. Sie hören jeden Text zwei Mal. Wählen Sie für jede Aufgabe die richtige Lösung.",
+          "questionRange": [
+            1,
+            10
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Hörtexte Teil 1: 5 Durchsagen und Telefonnachrichten",
+            "content": "AUDIO-TRANSKRIPTIONEN TEIL 1 (Aufgaben 1–10, S. 110):\n\n[Text 1] 'Das Bayerische Kultusministerium startet einen landesweiten Kreativwettbewerb für alle Realschüler der Jahrgangsstufen 8, 9 und 10. Gesucht werden innovative Ideen zur Digitalisierung des Schulalltags. Einsendeschluss für Projektentwürfe ist der 30. November.'\n\n[Text 2] 'Sie hören die automatische Bandansage der Philharmonie. Unser neues Spielzeitheft für die kommende Saison ist erschienen. Ausführliche Informationen zu unseren beliebten Konzert-Abonnements erhalten Sie montags bis freitags von 10 bis 16 Uhr telefonisch unter 089-28900.'\n\n[Text 3] 'Verkehrsnachrichten aus Zürich: Im Hauptbahnhof beginnen am kommenden Montag umfangreiche Erweiterungsarbeiten an der unterirdischen Passage. Aufgrund der Baumaßnahmen, die voraussichtlich 14 Monate dauern werden, müssen Fahrgäste mit geänderten Fußwegen zu den Gleisen rechnen.'\n\n[Text 4] 'Sommerurlaub an der sonnigen Ostsee! Genießen Sie erholsame Tage im traditionsreichen Seebad Kolberg mit kilometerlangem Sandstrand, modernen Wellness-Hotels und frischer Meeresbrise. Unser Sonderangebot gilt ab sofort!'\n\n[Text 5] 'Kurioses aus dem Polizeibericht: Ein Motorradfahrer fand auf der Autobahnraststätte ein verlorenes Kfz-Kennzeichen und übergab es der nächsten Polizeidienststelle. Dank der ehrlichen Geste konnte das Kennzeichen dem überglücklichen Fahrzeughalter aus München zurückgegeben werden.'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_H_Q01",
+              "order": 1,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Text 1 – Aussage 1, S. 110): Es gibt einen Wettbewerb für Schüler.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án gốc Modelltest 7 (Hören 1 Richtig). Bản tin thông báo tổ chức cuộc thi dành cho học sinh."
+            },
+            {
+              "id": "OSD_B1_T7_H_Q02",
+              "order": 2,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 1 (Text 1 – Frage 2, S. 110): Wer kann teilnehmen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Kinder im Alter von 8 bis 10 Jahren."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Die Eltern bayerischer Schüler."
+                },
+                {
+                  "id": "c",
+                  "text": "c) Realschüler aus den Klassen 8, 9 und 10."
+                }
+              ],
+              "publicExplanation": "Đáp án c đúng theo khóa đáp án gốc Modelltest 7 (Hören 2 c). Đối tượng tham gia là học sinh trường trung học thực hành các lớp 8, 9 và 10."
+            },
+            {
+              "id": "OSD_B1_T7_H_Q03",
+              "order": 3,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Text 2 – Aussage 3, S. 110): Sie hören das Konzertprogramm der Philharmonie.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q04",
+              "order": 4,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 1 (Text 2 – Frage 4, S. 110): Wie kann man sich über Abonnements informieren?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Telefonisch."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Über Internet."
+                },
+                {
+                  "id": "c",
+                  "text": "c) Per E-Mail."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q05",
+              "order": 5,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Text 3 – Aussage 5, S. 110): In Zürich wird ein Bahnhof gebaut.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q06",
+              "order": 6,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 1 (Text 3 – Frage 6, S. 110): Die Bauarbeiten dauern ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) weniger als ein Jahr."
+                },
+                {
+                  "id": "b",
+                  "text": "b) länger als ein Jahr."
+                },
+                {
+                  "id": "c",
+                  "text": "c) vier Jahre."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q07",
+              "order": 7,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Text 4 – Aussage 7, S. 110): Sie hören eine Reisewerbung.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q08",
+              "order": 8,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 1 (Text 4 – Frage 8, S. 110): Wo verbringt man den Urlaub?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) In Kolberg."
+                },
+                {
+                  "id": "b",
+                  "text": "b) An der Ostsee."
+                },
+                {
+                  "id": "c",
+                  "text": "c) An der Nordsee."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q09",
+              "order": 9,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "binary",
+              "prompt": "Teil 1 (Text 5 – Aussage 9, S. 110): Sie hören Nachrichten über Deutschland.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q10",
+              "order": 10,
+              "part": 1,
+              "sourcePage": 110,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 1 (Text 5 – Frage 10, S. 110): Wer hat das Nummernschild gefunden?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Ein Mann aus München."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Ein Motorradfahrer."
+                },
+                {
+                  "id": "c",
+                  "text": "c) Die Polizei."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "monologue_guide",
+          "title": "Teil 2: Führung im Tierpark Haag bei Schloss Salaberg",
+          "instruction": "Sie hören eine Führung. Sie hören den Text einmal. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+          "questionRange": [
+            11,
+            15
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Führung im Tierpark Haag (S. 111)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 2: Führung im Tierpark Haag bei Schloss Salaberg (Aufgaben 11–15, S. 111)\n\n'Herzlich willkommen im Tierpark Haag im historischen Schlosspark Salaberg! Unser Tierpark wurde 1973 gegründet und beherbergt heute über 700 Tiere aus fünf Kontinenten. Bei unseren jungen Besuchern stehen vor allem die lebhaften Affen, die majestätischen Tiger und die verspielten Zebras ganz oben auf der Beliebtheitsskala. Bevor wir unseren Rundgang starten, verteile ich an alle Schüler unsere Entdecker-Arbeitsblätter, auf denen ihr spannende Fragen zu den Tierarten beantworten könnt. Im Anschluss an die Führung steht euch unser großer Abenteuerspielplatz kostenlos zur Verfügung; lediglich für das Ponyreiten wird ein kleiner Unkostenbeitrag von 3 Euro erhoben. Bitte achtet beim Rundgang stets auf die Informationsschilder an den Gehegen und füttert die Tiere keinesfalls mit mitgebrachten Speisen!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_H_Q11",
+              "order": 11,
+              "part": 2,
+              "sourcePage": 111,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 11, S. 111): Den Tierpark gibt es seit ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) 1900."
+                },
+                {
+                  "id": "b",
+                  "text": "b) 1970."
+                },
+                {
+                  "id": "c",
+                  "text": "c) 1973."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q12",
+              "order": 12,
+              "part": 2,
+              "sourcePage": 111,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 12, S. 111): Welche Tiere sehen Kinder am liebsten im Tierpark?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Tiger."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Affen."
+                },
+                {
+                  "id": "c",
+                  "text": "c) Vögel."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q13",
+              "order": 13,
+              "part": 2,
+              "sourcePage": 111,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 13, S. 111): Der Sprecher verteilt ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Zeichenblöcke."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Malstifte."
+                },
+                {
+                  "id": "c",
+                  "text": "c) Arbeitsblätter."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q14",
+              "order": 14,
+              "part": 2,
+              "sourcePage": 111,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 14, S. 111): Etwas bezahlen muss man für ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) das Klettern."
+                },
+                {
+                  "id": "b",
+                  "text": "b) den Kinderspielplatz."
+                },
+                {
+                  "id": "c",
+                  "text": "c) das Reiten."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q15",
+              "order": 15,
+              "part": 2,
+              "sourcePage": 111,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 15, S. 111): Was sollte man im Tierpark machen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a) Musik spielen."
+                },
+                {
+                  "id": "b",
+                  "text": "b) Die Schilder lesen."
+                },
+                {
+                  "id": "c",
+                  "text": "c) Skateboard fahren."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "informal_dialogue",
+          "title": "Teil 3: Gespräch am Küchentisch – Hauskauf oder Eigentumswohnung?",
+          "instruction": "Sie hören ein Gespräch zwischen Familienmitgliedern. Sie hören den Text einmal. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            16,
+            22
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Gespräch über Hauskauf (S. 112)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 3: Gespräch am Küchentisch – Hauskauf oder Eigentumswohnung? (Aufgaben 16–22, S. 112)\n\nMutter: 'Schaut mal, ich habe hier zwei interessante Immobilienanzeigen mitgebracht. Eine moderne Neubauwohnung im Stadtzentrum und ein charmantes älteres Einfamilienhaus mit Garten am Stadtrand.'\nVater: 'Das Haus ist erstaunlicherweise kaum teurer als die zentrale Wohnung. Aber als Büroangestellter habe ich leider zwei linke Hände, wenn es um Reparaturen an alten Gebäuden geht!'\nLennard: 'Papa, das Haus hat aber einen riesigen Garten! Wir könnten uns endlich den Hund wünschen, von dem wir schon so lange träumen. Und ich verspreche euch feierlich, dass ich am Wochenende immer beim Rasenmähen helfe!'\nMutter: 'Die Wohnung ist zwar brandneu, aber in so einem großen Mehrparteienhaus hat man oft Ärger mit lauten Nachbarn im Treppenhaus. Außerdem hat das Haus fünf Zimmer – ein Zimmer mehr als die Wohnung, sodass Papa sein eigenes Arbeitszimmer hätte.'\nVater: 'Das überzeugt mich! Lass uns am Samstag gleich einen Besichtigungstermin für das Haus vereinbaren.'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_H_Q16",
+              "order": 16,
+              "part": 3,
+              "sourcePage": 112,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 16, S. 112): Das Haus ist viel teurer als die Wohnung.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q17",
+              "order": 17,
+              "part": 3,
+              "sourcePage": 112,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 17, S. 112): Die Wohnung ist neuer als das Haus.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q18",
+              "order": 18,
+              "part": 3,
+              "sourcePage": 112,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 18, S. 112): Die Familie hat einen Hund.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q19",
+              "order": 19,
+              "part": 3,
+              "sourcePage": 112,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 19, S. 112): Die Mutter findet Nachbarn im selben Haus positiv.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q20",
+              "order": 20,
+              "part": 3,
+              "sourcePage": 112,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 20, S. 112): Lennard verspricht, bei der Gartenarbeit zu helfen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q21",
+              "order": 21,
+              "part": 3,
+              "sourcePage": 112,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 21, S. 112): Das Haus hat mehr Zimmer als die Wohnung.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q22",
+              "order": 22,
+              "part": 3,
+              "sourcePage": 112,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Gespräch: Kauf eines Hauses hoặc einer Wohnung – Aussage 22, S. 112): Der Vater von Lennard ist Architekt.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "radio_debate",
+          "title": "Teil 4: Radiosendung zum Weltspartag – Geld sparen bei Jugendlichen",
+          "instruction": "Sie hören eine Radiosendung mit Gästen. Sie hören den Text zwei Mal. Wählen Sie: Wer sagt was?",
+          "questionRange": [
+            23,
+            30
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Radiosendung 'Wirtschaft & Jugend': Weltspartag (S. 113)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 4: Radiosendung zum Weltspartag – Wie lernen Kinder sparen? (Aufgaben 23–30, S. 113)\n\nJournalistin: 'Herzlich willkommen zu unserer heutigen Wirtschaftssendung! Anlass ist der bevorstehende Weltspartag. Wer an diesem Tag sein Erspartes zur Bank bringt, wird traditionell mit kleinen Geschenken wie Spardosen oder Stofftieren belohnt. Bei mir im Studio sind Bankberater Alexander Klein und die 13-jährige Schülerin Katja Grewe.'\nAlexander Klein: 'Guten Abend! Das Sparen ist eine fundamentale Lebenskompetenz. Früher bekamen Kinder oft schon zur Geburt vom Großvater das erste Sparbuch geschenkt. Heute kommen Kinder mit vielen klugen Fragen zu uns an den Schalter – sie wollen genau wissen, wie Zinsen funktionieren und wie ihr Geld wächst.'\nKatja Grewe: 'An meinen allerersten Besuch bei der Sparkasse erinnere ich mich noch genau: Die Schalterhalle war riesig und die Angestellten wirkten so ernst, dass mir ganz mulmig zumute war! Heute verwalte ich mein Taschengeld ganz selbstverständlich mit einer Jugend-App.'\nJournalistin: 'Herr Klein, in Zeiten von Online-Shopping kaufen immer mehr Erwachsene auf Pump und verschulden sich.'\nAlexander Klein: 'Das ist eine gefährliche Entwicklung. Wer früh lernt, Geld zurückzulegen und nicht jeden Impuls sofort auf Kredit zu finanzieren, lebt im Alter deutlich sorgenfreier. Auf der Bank ist das Ersparte absolut sicher.'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T7_H_Q23",
+              "order": 23,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 23, S. 113): Wer am Weltspartag sein Geld auf ein Konto einzahlt, bekommt ein kleines Geschenk. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q24",
+              "order": 24,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 24, S. 113): Die erste Erfahrung auf der Sparkasse war nicht angenehm. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q25",
+              "order": 25,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 25, S. 113): Kinder haben viele Fragen. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q26",
+              "order": 26,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 26, S. 113): Das Sparbuch war ein Geschenk vom Großvater. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q27",
+              "order": 27,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 27, S. 113): Viele Erwachsene kaufen auf Kredit ein. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q28",
+              "order": 28,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 28, S. 113): Man braucht sich keine Sorgen um das Geld auf der Bank zu machen. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q29",
+              "order": 29,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 29, S. 113): Euskirchen liegt in der Nähe von Bonn. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T7_H_Q30",
+              "order": 30,
+              "part": 4,
+              "sourcePage": 113,
+              "taskType": "multiple_choice",
+              "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 30, S. 113): Man bekommt mehr Geld von der Bank, wenn man viel spart. Wer sagt das?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "a (Journalistin)"
+                },
+                {
+                  "id": "b",
+                  "text": "b (Al. Klein)"
+                },
+                {
+                  "id": "c",
+                  "text": "c (K. Grewe)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T7_H_Q01",
+          "order": 1,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 1 – Aussage 1, S. 110): Es gibt einen Wettbewerb für Schüler.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án gốc Modelltest 7 (Hören 1 Richtig). Bản tin thông báo tổ chức cuộc thi dành cho học sinh."
+        },
+        {
+          "id": "OSD_B1_T7_H_Q02",
+          "order": 2,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 1 – Frage 2, S. 110): Wer kann teilnehmen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Kinder im Alter von 8 bis 10 Jahren."
+            },
+            {
+              "id": "b",
+              "text": "b) Die Eltern bayerischer Schüler."
+            },
+            {
+              "id": "c",
+              "text": "c) Realschüler aus den Klassen 8, 9 und 10."
+            }
+          ],
+          "publicExplanation": "Đáp án c đúng theo khóa đáp án gốc Modelltest 7 (Hören 2 c). Đối tượng tham gia là học sinh trường trung học thực hành các lớp 8, 9 và 10."
+        },
+        {
+          "id": "OSD_B1_T7_H_Q03",
+          "order": 3,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 2 – Aussage 3, S. 110): Sie hören das Konzertprogramm der Philharmonie.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q04",
+          "order": 4,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 2 – Frage 4, S. 110): Wie kann man sich über Abonnements informieren?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Telefonisch."
+            },
+            {
+              "id": "b",
+              "text": "b) Über Internet."
+            },
+            {
+              "id": "c",
+              "text": "c) Per E-Mail."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q05",
+          "order": 5,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 3 – Aussage 5, S. 110): In Zürich wird ein Bahnhof gebaut.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q06",
+          "order": 6,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 3 – Frage 6, S. 110): Die Bauarbeiten dauern ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) weniger als ein Jahr."
+            },
+            {
+              "id": "b",
+              "text": "b) länger als ein Jahr."
+            },
+            {
+              "id": "c",
+              "text": "c) vier Jahre."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q07",
+          "order": 7,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 4 – Aussage 7, S. 110): Sie hören eine Reisewerbung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q08",
+          "order": 8,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 4 – Frage 8, S. 110): Wo verbringt man den Urlaub?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) In Kolberg."
+            },
+            {
+              "id": "b",
+              "text": "b) An der Ostsee."
+            },
+            {
+              "id": "c",
+              "text": "c) An der Nordsee."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q09",
+          "order": 9,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 5 – Aussage 9, S. 110): Sie hören Nachrichten über Deutschland.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q10",
+          "order": 10,
+          "part": 1,
+          "sourcePage": 110,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 5 – Frage 10, S. 110): Wer hat das Nummernschild gefunden?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Ein Mann aus München."
+            },
+            {
+              "id": "b",
+              "text": "b) Ein Motorradfahrer."
+            },
+            {
+              "id": "c",
+              "text": "c) Die Polizei."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q11",
+          "order": 11,
+          "part": 2,
+          "sourcePage": 111,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 11, S. 111): Den Tierpark gibt es seit ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) 1900."
+            },
+            {
+              "id": "b",
+              "text": "b) 1970."
+            },
+            {
+              "id": "c",
+              "text": "c) 1973."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q12",
+          "order": 12,
+          "part": 2,
+          "sourcePage": 111,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 12, S. 111): Welche Tiere sehen Kinder am liebsten im Tierpark?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Tiger."
+            },
+            {
+              "id": "b",
+              "text": "b) Affen."
+            },
+            {
+              "id": "c",
+              "text": "c) Vögel."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q13",
+          "order": 13,
+          "part": 2,
+          "sourcePage": 111,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 13, S. 111): Der Sprecher verteilt ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Zeichenblöcke."
+            },
+            {
+              "id": "b",
+              "text": "b) Malstifte."
+            },
+            {
+              "id": "c",
+              "text": "c) Arbeitsblätter."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q14",
+          "order": 14,
+          "part": 2,
+          "sourcePage": 111,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 14, S. 111): Etwas bezahlen muss man für ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) das Klettern."
+            },
+            {
+              "id": "b",
+              "text": "b) den Kinderspielplatz."
+            },
+            {
+              "id": "c",
+              "text": "c) das Reiten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q15",
+          "order": 15,
+          "part": 2,
+          "sourcePage": 111,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besuch im Tierpark Haag – Frage 15, S. 111): Was sollte man im Tierpark machen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a) Musik spielen."
+            },
+            {
+              "id": "b",
+              "text": "b) Die Schilder lesen."
+            },
+            {
+              "id": "c",
+              "text": "c) Skateboard fahren."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q16",
+          "order": 16,
+          "part": 3,
+          "sourcePage": 112,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 16, S. 112): Das Haus ist viel teurer als die Wohnung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q17",
+          "order": 17,
+          "part": 3,
+          "sourcePage": 112,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 17, S. 112): Die Wohnung ist neuer als das Haus.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q18",
+          "order": 18,
+          "part": 3,
+          "sourcePage": 112,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 18, S. 112): Die Familie hat einen Hund.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q19",
+          "order": 19,
+          "part": 3,
+          "sourcePage": 112,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 19, S. 112): Die Mutter findet Nachbarn im selben Haus positiv.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q20",
+          "order": 20,
+          "part": 3,
+          "sourcePage": 112,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 20, S. 112): Lennard verspricht, bei der Gartenarbeit zu helfen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q21",
+          "order": 21,
+          "part": 3,
+          "sourcePage": 112,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Gespräch: Kauf eines Hauses oder einer Wohnung – Aussage 21, S. 112): Das Haus hat mehr Zimmer als die Wohnung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q22",
+          "order": 22,
+          "part": 3,
+          "sourcePage": 112,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Gespräch: Kauf eines Hauses hoặc einer Wohnung – Aussage 22, S. 112): Der Vater von Lennard ist Architekt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q23",
+          "order": 23,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 23, S. 113): Wer am Weltspartag sein Geld auf ein Konto einzahlt, bekommt ein kleines Geschenk. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q24",
+          "order": 24,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 24, S. 113): Die erste Erfahrung auf der Sparkasse war nicht angenehm. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q25",
+          "order": 25,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 25, S. 113): Kinder haben viele Fragen. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q26",
+          "order": 26,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 26, S. 113): Das Sparbuch war ein Geschenk vom Großvater. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q27",
+          "order": 27,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 27, S. 113): Viele Erwachsene kaufen auf Kredit ein. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q28",
+          "order": 28,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 28, S. 113): Man braucht sich keine Sorgen um das Geld auf der Bank zu machen. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q29",
+          "order": 29,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 29, S. 113): Euskirchen liegt in der Nähe von Bonn. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T7_H_Q30",
+          "order": 30,
+          "part": 4,
+          "sourcePage": 113,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion: Geld sparen – Aussage 30, S. 113): Man bekommt mehr Geld von der Bank, wenn man viel spart. Wer sagt das?",
+          "options": [
+            {
+              "id": "a",
+              "text": "a (Journalistin)"
+            },
+            {
+              "id": "b",
+              "text": "b (Al. Klein)"
+            },
+            {
+              "id": "c",
+              "text": "c (K. Grewe)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T7_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 1 Richtig",
+      "trapExplanationVi": "Tác giả chia sẻ bài viết đầu tiên về cảm nhận khi bắt đầu đi làm."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q02",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 2 Richtig",
+      "trapExplanationVi": "Được người quen giới thiệu công việc."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 3 Falsch",
+      "trapExplanationVi": "Nơi làm việc xa nhà, phải di chuyển bằng phương tiện giao thông."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q04",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 4 Falsch",
+      "trapExplanationVi": "Có đồng nghiệp và người hướng dẫn hỗ trợ nhiệt tình."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 5 Falsch",
+      "trapExplanationVi": "Mong muốn gắn bó lâu dài sau thời gian thử việc."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 6 Richtig",
+      "trapExplanationVi": "Đánh giá tích cực về môi trường làm việc."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q07",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 7 a",
+      "trapExplanationVi": "Trọng tâm bài báo về giáo dục và lớp học cho trẻ em khu ổ chuột."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q08",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 8 c",
+      "trapExplanationVi": "Trẻ em cũng được tham gia các hoạt động thủ công (basteln)."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q09",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 9 b",
+      "trapExplanationVi": "Mục tiêu tổ chức là chuẩn bị kiến thức cho trẻ em vào trường công."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q10",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 10 b",
+      "trapExplanationVi": "Tác hại của việc tắm nắng nhân tạo (Solarium) đối với thanh thiếu niên."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q11",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 11 c",
+      "trapExplanationVi": "Bác sĩ cho rằng giới trẻ ít khi lường trước nguy cơ ung thư da về sau."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q12",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 12 a",
+      "trapExplanationVi": "Tia nắng tự nhiên cũng gây hại tương tự như tia bức xạ trong buồng tắm nắng."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q13",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 13 c",
+      "trapExplanationVi": "Anzeige c nhận sửa chữa điện và thay bóng đèn."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q14",
+      "correctOption": "d",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 14 d",
+      "trapExplanationVi": "Anzeige d tìm giáo viên hưu trí dạy kèm môn Toán/Lý."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q15",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 15 j",
+      "trapExplanationVi": "Anzeige j nhận đi chợ và hỗ trợ người cao tuổi."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q16",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 16 f",
+      "trapExplanationVi": "Anzeige f dịch vụ làm vườn chuyên nghiệp."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q17",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 17 0",
+      "trapExplanationVi": "Không có thông báo tuyển dụng việc làm giúp việc phù hợp (Anzeige g là tìm người làm cho gia đình khác)."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q18",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 18 a",
+      "trapExplanationVi": "Anzeige a tuyển nhân viên phát báo/tờ rơi bán thời gian cho người về hưu."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q19",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 19 h",
+      "trapExplanationVi": "Anzeige h cửa hàng bán len và dụng cụ đan lát."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q20",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 20 Nein",
+      "trapExplanationVi": "Axel cho rằng không nên cấm mà chỉ nên thu phí."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q21",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 21 Ja",
+      "trapExplanationVi": "Miriam luôn mang túi vải và ủng hộ cấm túi nilon."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q22",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 22 Nein",
+      "trapExplanationVi": "Sarah cho rằng việc sản xuất túi giấy tốn gỗ và ủng hộ tái sử dụng túi nilon."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q23",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 23 Ja",
+      "trapExplanationVi": "Tom cảnh báo về rác thải nhựa đe dọa sinh vật biển."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q24",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 24 Nein",
+      "trapExplanationVi": "Madsen dùng túi nilon làm túi đựng rác nên thấy không cần làm quá vấn đề."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q25",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 25 Nein",
+      "trapExplanationVi": "Luisa tự hào về hệ thống tái chế rác ở Đức nên thấy chưa cần luật cấm."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q26",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 26 Ja",
+      "trapExplanationVi": "Frederike loại bỏ hoàn toàn đồ nhựa và ủng hộ lệnh cấm."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q27",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 27 b",
+      "trapExplanationVi": "Thí sinh phải đóng lệ phí thi (Startgebühr)."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q28",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 28 a",
+      "trapExplanationVi": "Phải đạt tối thiểu 70% điểm phần A mới được thi tiếp phần B."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q29",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 29 a",
+      "trapExplanationVi": "Kỳ thi bị hủy nếu điều kiện thời tiết không bảo đảm an toàn cho chó."
+    },
+    {
+      "questionId": "OSD_B1_T7_L_Q30",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Lesen 30 b",
+      "trapExplanationVi": "Quy định độ tuổi tối thiểu từ 15 tháng trở lên."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 1 Richtig",
+      "trapExplanationVi": "Bản tin phát động cuộc thi học sinh."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q02",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 2 c",
+      "trapExplanationVi": "Dành cho học sinh Realschule lớp 8, 9 và 10."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 3 Falsch",
+      "trapExplanationVi": "Không phải chương trình biểu diễn của dàn nhạc giao hưởng."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q04",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 4 a",
+      "trapExplanationVi": "Đăng ký và tìm hiểu thông tin vé theo mùa qua điện thoại."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 5 Falsch",
+      "trapExplanationVi": "Nhà ga đã có sẵn, chỉ nâng cấp mở rộng đường hầm."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q06",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 6 b",
+      "trapExplanationVi": "Công trình thi công kéo dài hơn một năm."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 7 Richtig",
+      "trapExplanationVi": "Quảng cáo kỳ nghỉ dưỡng biển trọn gói."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q08",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 8 b",
+      "trapExplanationVi": "Khu nghỉ mát nằm cạnh bờ biển Baltic (Ostsee)."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 9 Falsch",
+      "trapExplanationVi": "Bản tin kể về câu chuyện tìm thấy đồ vật đánh rơi."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q10",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 10 b",
+      "trapExplanationVi": "Một người lái xe máy đã nhặt được biển số."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q11",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 11 c",
+      "trapExplanationVi": "Vườn thú Haag chính thức khánh thành năm 1973."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q12",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 12 b",
+      "trapExplanationVi": "Trẻ em thích xem khỉ (Affen), chó sói và ngựa vằn nhất."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q13",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 13 c",
+      "trapExplanationVi": "Phát phiếu bài tập quan sát tập tính chim chóc."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q14",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 14 c",
+      "trapExplanationVi": "Dịch vụ cưỡi ngựa pony thu phí 3 Euro / 30 phút."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q15",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 15 b",
+      "trapExplanationVi": "Cần chú ý đọc kỹ các biển báo hướng dẫn tại chuồng thú."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q16",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 16 Falsch",
+      "trapExplanationVi": "Giá căn nhà không đắt hơn căn hộ nhiều như tưởng tượng."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q17",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 17 Richtig",
+      "trapExplanationVi": "Căn hộ chung cư mới xây dựng so với ngôi nhà cổ."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q18",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 18 Falsch",
+      "trapExplanationVi": "Gia đình chưa nuôi chó, chỉ đang dự định."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 19 Falsch",
+      "trapExplanationVi": "Mẹ lo ngại tiếng ồn từ các căn hộ bên cạnh."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q20",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 20 Richtig",
+      "trapExplanationVi": "Cậu con trai hứa sẽ cắt cỏ và chăm sóc vườn tược."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q21",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 21 Richtig",
+      "trapExplanationVi": "Ngôi nhà có thêm 1 phòng làm việc và gác lửng."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q22",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 22 Falsch",
+      "trapExplanationVi": "Bố làm việc văn phòng, không phải kiến trúc sư."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q23",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 23 b",
+      "trapExplanationVi": "Chuyên gia ngân hàng Alexander Klein giải thích về ngày hội tiết kiệm thế giới."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q24",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 24 c",
+      "trapExplanationVi": "Katja Grewe kể về cảm giác rụt rè bỡ ngỡ lần đầu tới quầy giao dịch."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q25",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 25 b",
+      "trapExplanationVi": "Chuyên gia nhận xét trẻ em rất tò mò về cơ chế tiền tệ."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q26",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 26 b",
+      "trapExplanationVi": "Chuyên gia kể về truyền thống ông bà mở sổ tiết kiệm cho cháu."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q27",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 27 a",
+      "trapExplanationVi": "Nhà báo nêu thực trạng người trưởng thành chi tiêu bằng thẻ tín dụng."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q28",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 28 b",
+      "trapExplanationVi": "Chuyên gia khẳng định mức độ an toàn tiền gửi tại ngân hàng."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q29",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 29 a",
+      "trapExplanationVi": "Người dẫn chương trình giới thiệu địa danh quê nhà."
+    },
+    {
+      "questionId": "OSD_B1_T7_H_Q30",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 7: Hören 30 b",
+      "trapExplanationVi": "Chuyên gia giải thích lãi kép và ưu đãi cho người tích lũy lâu dài."
+    }
+  ]
+}

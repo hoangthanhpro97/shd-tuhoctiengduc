@@ -13,8 +13,8 @@ services:
       POSTGRES_DB: ${POSTGRES_DB:-postgres}
       SHD_MIGRATOR_PASSWORD: ${SHD_MIGRATOR_PASSWORD}
       SHD_APP_PASSWORD: ${SHD_APP_PASSWORD}
-      SHD_GRADER_PASSWORD: ${SHD_GRADER_PASSWORD}
       SHD_WORKER_PASSWORD: ${SHD_WORKER_PASSWORD}
+      SHD_STAFF_API_PASSWORD: ${SHD_STAFF_API_PASSWORD}
       SHD_READONLY_PASSWORD: ${SHD_READONLY_PASSWORD}
     volumes:
       - pgdata:/var/lib/postgresql/data
@@ -27,4 +27,3 @@ services:
 
 volumes:
   pgdata:
-

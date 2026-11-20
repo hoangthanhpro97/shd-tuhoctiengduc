@@ -94,3 +94,16 @@ Xem chi tiết trong [`docs/engineering-rules.md`](file:///c:/Users/Editer%20SHB
 - **Bảo Vệ Dữ Liệu Cá Nhân:** Tuân thủ Luật 91/2025/QH15 & Nghị định 356/2025/NĐ-CP; SĐT và OTP chỉ lưu dạng băm HMAC.
 - **Quy tắc Kiến trúc:** `core` không import `adapters`/`apps`; `contracts` không import `core`/`db`; `db` không import `core`.
 
+---
+
+## 6. Chạy Demo Vertical Slice
+
+Giai đoạn dựng demo hiện có một luồng người học chạy độc lập với PostgreSQL để kiểm chứng trải nghiệm trước khi nối API và database thật:
+
+```powershell
+pnpm web:dev
+```
+
+Mở `http://localhost:3000`. Demo bao gồm danh mục đề, phòng thi 30 câu, lưu câu trả lời, chấm điểm server-side, kết quả `21/30` theo fixture mẫu và lead gate giả lập để mở khóa phần giải thích. Toàn bộ dữ liệu trong demo là dữ liệu minh họa, không phải dữ liệu người thật.
+
+Chi tiết kỹ thuật xem tại [`apps/web/README.md`](apps/web/README.md).

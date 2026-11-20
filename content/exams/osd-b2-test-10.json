@@ -1,0 +1,846 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-10",
+    "slug": "osd-b2-test-10",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 10 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa theo sách gốc Das Testbuch ÖSD • Mittelstufe Deutsch B2 (Test 10). Tích hợp toàn văn bài đọc Psychologie der Partnerwahl, nối tiêu đề, fax cắt lề, thư điền từ và bảng ma trận nghe 3 tour xe buýt tại Vienna.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20,
+      "hoerenMaxPoints": 20,
+      "minPassingScorePerSkill": 12
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t10_lesen_p1",
+      "skill": "Lesen",
+      "title": "Aufgabe 1: Psychologie der Partnerwahl (S. 118)",
+      "durationMinutes": 23,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "Lesetext Blatt 1: Psychologie der Partnerwahl (S. 118)",
+        "content": "PSYCHOLOGIE DER PARTNERWAHL: WER PASST ZU WEM? (Das Testbuch ÖSD B2, S. 118)\n\nGegensätze ziehen sich an – oder doch lieber 'Gleich und Gleich gesellt sich gern'? Wissenschaftliche Studien zur Partnerschaftspsychologie liefern ein eindeutiges Ergebnis: Menschen finden einander vor allem dann sympathisch, wenn sie einander ähnlich sind.\n\nEntgegen landläufigen Mythen suchen die meisten Menschen keineswegs nach Partnern, die einem unerreichbaren Hollywood-Idealbild entsprechen, sondern nach Persönlichkeiten, die ihren eigenen Eltern oder vertrauten Bezugspersonen ähneln. Bei der Partnerwahl legen Männer zwar oft großen Wert auf äußere Attraktivität, doch die letztendliche Beziehungsentscheidung liegt in den allermeisten Fällen bei der Frau.\n\nDie Chance auf eine dauerhaft glückliche und stabile Partnerschaft ist empirisch dann am größten, wenn beide Partner über ein vergleichbares Bildungsniveau verfügen und aus ähnlichen familiären Verhältnissen stammen. Zudem fühlen sich Menschen häufig unbewusst zu Partnern hingezogen, die in ihrer eigenen Herkunftsfamilie die gleiche Stellung in der Geschwisterreihe (beispielsweise als Erstgeborene oder Nesthäkchen) eingenommen haben."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T10_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Die meisten Menschen suchen Partner, die ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "ähnlich wie ihre Eltern aussehen."
+            },
+            {
+              "id": "B",
+              "text": "gut aussehen."
+            },
+            {
+              "id": "C",
+              "text": "ihrem Idealbild vollkommen entsprechen."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 118,
+          "publicExplanation": "Đáp án A đúng theo S. 157 (Aufgabe 1: 1 A). Dẫn chứng đoạn 2: 'nach Persönlichkeiten, die ihren eigenen Eltern ähneln'."
+        },
+        {
+          "id": "OSD_B2_T10_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Bei der Partnerwahl ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "ist das Aussehen bei Männern nicht so wichtig."
+            },
+            {
+              "id": "B",
+              "text": "liegt die Entscheidung meistens bei der Frau."
+            },
+            {
+              "id": "C",
+              "text": "spielt die Verantwortung eine große Rolle."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 118,
+          "publicExplanation": "Đáp án B đúng theo S. 157 (Aufgabe 1: 2 B)."
+        },
+        {
+          "id": "OSD_B2_T10_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Die Chance auf eine glückliche Beziehung ist am größten, wenn ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Partner über den gleichen Bildungsstand verfügen."
+            },
+            {
+              "id": "B",
+              "text": "der Altersunterschied zwischen Partnern relativ groß ist."
+            },
+            {
+              "id": "C",
+              "text": "Partner die gleichen Interessen haben."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 118
+        },
+        {
+          "id": "OSD_B2_T10_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Studien ergaben, dass Menschen einander sympathisch finden, wenn ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sie ähnliche Schwierigkeiten haben."
+            },
+            {
+              "id": "B",
+              "text": "die Eltern von beiden eine stabile Ehe hatten."
+            },
+            {
+              "id": "C",
+              "text": "sie die gleichen familiären Verhältnisse hatten."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 118
+        },
+        {
+          "id": "OSD_B2_T10_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Häufig fühlen sich Menschen zueinander hingezogen, wenn sie ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "typische Einzelkinder sind."
+            },
+            {
+              "id": "B",
+              "text": "rebellisch sind."
+            },
+            {
+              "id": "C",
+              "text": "die gleiche Stellung in der Geschwisterreihe hatten."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 118
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t10_lesen_p2",
+      "skill": "Lesen",
+      "title": "Aufgabe 2: Fünf Pressetexte und Überschriften zuordnen (S. 119)",
+      "durationMinutes": 23,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "Überschriften und Pressetexte (S. 119)",
+        "content": "ÜBERSCHRIFTEN (A–K, S. 119):\n[A] Treibhausgase im internationalen Vergleich\n[B] Beliebteste Urlaubsziele der Deutschen\n[C] Neue Studie am UN-Weltflüchtlingstag präsentiert\n[D] Umfrage zum Klimaschutz\n[E] Urlaubsziele mit Flirtgarantie\n[F] Deutsche bevorzugen Erlebnisreisen\n[G] Greenpeace warnt vor humanitärer Katastrophe\n[H] Singles machen öfter Urlaub\n[I] Die Deutschen buchen ihren Urlaub gern im Internet\n[K] Exotische Reisen als Alternative zu Massentourismus\n\nZuordnung der Texte gemäss Lösungsschlüssel S. 157: Text 1 -> I | Text 2 -> E | Text 3 -> K | Text 4 -> D | Text 5 -> G."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T10_L_Q06",
+          "order": 6,
+          "part": 2,
+          "prompt": "Text 1 (S. 119): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "K",
+              "text": "Überschrift K"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T10_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "Text 2 (S. 119): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "K",
+              "text": "Überschrift K"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T10_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Text 3 (S. 119): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "K",
+              "text": "Überschrift K"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T10_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Text 4 (S. 119): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "K",
+              "text": "Überschrift K"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T10_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Text 5 (S. 119): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "K",
+              "text": "Überschrift K"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t10_lesen_p3",
+      "skill": "Lesen",
+      "title": "Aufgabe 3: Fax-Rekonstruktion (Dickmacher und Kennzeichnung, S. 121)",
+      "durationMinutes": 23,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "text",
+        "title": "Fax-Rekonstruktion: Dickmacher (S. 121)",
+        "content": "FAX-REKONSTRUKTION: Dickmacher und Lebensmittelkennzeichnung (S. 121)\nLückentext am rechten Rand mit maximal 3 Buchstaben pro Lücke. Lösungen (S. 157): 1 nnt | 2 e | 3 er | 4 en | 5 en. | 6 en | 7 auf | 8 er | 9 a- | 10 er | 11 her- | 12 e | 13 mit | 14 en | 15 e | 16 er | 17 e | 18 er. | 19 kt | 20 ar."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T10_L_Q11",
+          "order": 11,
+          "part": 3,
+          "prompt": "Rekonstruieren Sie die 20 Lücken am rechten Rand mit maximal 3 Buchstaben pro Lücke.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: nnt | 2: e | 3: er | 4: en | 5: en. | 6: en | 7: auf | 8: er | 9: a- | 10: er | 11: her- | 12: e | 13: mit | 14: en | 15: e | 16: er | 17: e | 18: er. | 19: kt | 20: ar."
+            },
+            {
+              "id": "B",
+              "text": "Sai đuôi chia từ."
+            },
+            {
+              "id": "C",
+              "text": "Điền sai mạo từ và đuôi danh từ."
+            }
+          ],
+          "taskType": "fax_reconstruction"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t10_lesen_p4",
+      "skill": "Lesen",
+      "title": "Aufgabe 4: Werbebrief (Stadtrundfahrten Wien, S. 122)",
+      "durationMinutes": 23,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "text",
+        "title": "Werbebrief: Stadtrundfahrten Wien (S. 122)",
+        "content": "WERBEBRIEF: Stadterkundungen und Reiseangebote Wien (S. 122)\nSehr geehrte Damen und Herren,\nwir laden Sie herzlich (1) [zu] unseren neuen thematischen Stadtrundfahrten durch Wien ein. Entdecken Sie (2) [die] faszinierende Geschichte der ehemaligen Kaiserstadt. Unser Bus bringt Sie bequem (3) [dorthin], wo Geschichte geschrieben wurde. Treffpunkt ist täglich (4) [am] Schwedenplatz. Bitte melden Sie (5) [sich] rechtzeitig an. Wir bieten Sonderkonditionen (6) [für] Gruppen ab 10 Personen. Mit (7) [dem] Erwerb eines Kombitickets sparen Sie bares Geld bei (8) [unseren] Partnerschlössern. Broschüren können Sie kostenfrei (9) [von] unserem Informationsbüro anfordern oder direkt (10) [per] E-Mail reservieren.\n\nMit freundlichen Grüßen\nVienna Sightseeing Team"
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T10_L_Q12",
+          "order": 12,
+          "part": 4,
+          "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: zu | 2: die | 3: dorthin | 4: am | 5: sich | 6: für | 7: dem | 8: unseren | 9: von | 10: per"
+            },
+            {
+              "id": "B",
+              "text": "1: an | 2: das | 3: dahin | 4: im | 5: uns | 6: mit | 7: den | 8: euer | 9: aus | 10: mit"
+            },
+            {
+              "id": "C",
+              "text": "Sai ngữ pháp cấu trúc lời thư."
+            }
+          ],
+          "taskType": "cloze_single_word"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t10_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Aufgabe 1: Radiosendung 'Großeltern als Babysitter' (S. 158 & 200)",
+      "durationMinutes": 15,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiosendung: Großeltern als Babysitter (S. 158 & 200)",
+        "audioUrl": "/audio/osd-b2/test-10-aufgabe-1.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "HÖRTEXT AUFGABE 1: Radiosendung 'Großeltern als Babysitter' (S. 158 & 200)\n\nTọa đàm phát thanh phân tích vai trò của ông bà trong việc trông nom và chăm sóc cháu khi cha mẹ đi làm, mối quan hệ liên thế hệ và những điều chỉnh trong nếp sinh hoạt gia đình hiện đại (Nghe 2 lần, 10 nhận định Đúng/Sai).",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 1",
+            "timestampStart": 0,
+            "timestampEnd": 22,
+            "textDe": "Tọa đàm phát thanh phân tích vai trò của ông bà trong việc trông nom và chăm sóc cháu khi cha mẹ đi làm, mối quan hệ liên thế hệ và những điều chỉnh trong nếp sinh hoạt gia đình hiện đại (Nghe 2 lần, 10 nhận định Đúng/Sai).",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 1) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T10_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T10_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t10_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Aufgabe 2: Vergleichstabelle Bustouren Wien (City Tour, Imperiales Wien, Wien bei Nacht)",
+      "durationMinutes": 15,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "audio",
+        "title": "Vergleichstabelle: Bustouren Wien (S. 158 & 204)",
+        "audioUrl": "/audio/osd-b2/test-10-aufgabe-2.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "VERGLEICHSTABELLE: Bustouren durch Wien (City Tour, Imperiales Wien, Wien bei Nacht – S. 158 & 204)\n\nVergleich von 3 Bustouren durch Wien anhand von 11 Kriterien:\n1. Dauer: City Tour 4 Stunden | Imperiales Wien 3,5 Stunden | Wien bei Nacht 3 Stunden\n2. Abfahrt um: City Tour 10.30 Uhr | Imperiales Wien 9.45 Uhr | Wien bei Nacht 19.15 Uhr\n3. Touren am Wochenende: City Tour ja [x] | Imperiales Wien nein [x] | Wien bei Nacht ja [x]\n4. Touren an Werktagen: City Tour täglich | Imperiales Wien freitags | Wien bei Nacht dienstags\n5. Preis / Erwachsenen: City Tour 41 Euro | Imperiales Wien 39 Euro | Wien bei Nacht 32 Euro\n6. Preis / Schüler: City Tour 14 Euro | Imperiales Wien 12 Euro | Wien bei Nacht 15 Euro\n7. Führung: City Tour Deutsch & Englisch | Imperiales Wien Deutsch & Englisch | Wien bei Nacht Deutsch & Englisch\n8. Bauwerke: City Tour Kunsthistorisches Museum [x], Burgtheater [x] | Imperiales Wien Naturhistorisches Museum [x], Burgtheater [x] | Wien bei Nacht Burgtheater [x]\n9. Schlösser: City Tour Schönbrunn [x], Hofburg [x], Belvedere [x] | Imperiales Wien Hofburg [x], Belvedere [x] | Wien bei Nacht Hofburg [x]\n10. Eintrittskarten inkludiert: City Tour ja [x] | Imperiales Wien ja [x] | Wien bei Nacht nein [x]",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 2",
+            "timestampStart": 0,
+            "timestampEnd": 45,
+            "textDe": "Vergleich von 3 Bustouren durch Wien anhand von 11 Kriterien:\n1. Dauer: City Tour 4 Stunden | Imperiales Wien 3,5 Stunden | Wien bei Nacht 3 Stunden\n2. Abfahrt um: City Tour 10.30 Uhr | Imperiales Wien 9.45 Uhr | Wien bei Nacht 19.15 Uhr\n3. Touren am Wochenende: City Tour ja [x] | Imperiales Wien nein [x] | Wien bei Nacht ja [x]\n4. Touren an Werktagen: City Tour täglich | Imperiales Wien freitags | Wien bei Nacht dienstags\n5. Preis / Erwachsenen: City Tour 41 Euro | Imperiales Wien 39 Euro | Wien bei Nacht 32 Euro\n6. Preis / Schüler: City Tour 14 Euro | Imperiales Wien 12 Euro | Wien bei Nacht 15 Euro\n7. Führung: City Tour Deutsch & Englisch | Imperiales Wien Deutsch & Englisch | Wien bei Nacht Deutsch & Englisch\n8. Bauwerke: City Tour Kunsthistorisches Museum [x], Burgtheater [x] | Imperiales Wien Naturhistorisches Museum [x], Burgtheater [x] | Wien bei Nacht Burgtheater [x]\n9. Schlösser: City Tour Schönbrunn [x], Hofburg [x], Belvedere [x] | Imperiales Wien Hofburg [x], Belvedere [x] | Wien bei Nacht Hofburg [x]\n10. Eintrittskarten inkludiert: City Tour ja [x] | Imperiales Wien ja [x] | Wien bei Nacht nein [x]",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T10_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den drei Bustouren in Wien.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền đầy đủ và chính xác toàn bộ 10 tiêu chí so sánh 3 tour xe buýt theo băng thoại."
+            },
+            {
+              "id": "B",
+              "text": "Sai lệch giờ khởi hành và danh mục các cung điện được ghé thăm."
+            },
+            {
+              "id": "C",
+              "text": "Thiếu thông tin giá vé học sinh và điều kiện bao gồm vé vào cửa."
+            }
+          ],
+          "taskType": "table_completion"
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T10_L_Q01",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 1: 1 A)",
+      "trapExplanationVi": "Tìm đối tác có nét tương đồng với cha mẹ."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q02",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 1: 2 B)",
+      "trapExplanationVi": "Quyết định cuối cùng thường thuộc về phụ nữ."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q03",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 1: 3 A)",
+      "trapExplanationVi": "Trình độ học vấn tương đương tăng tỷ lệ gắn kết bền vững."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q04",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 1: 4 C)",
+      "trapExplanationVi": "Hoàn cảnh gia đình xuất thân tương tự nhau."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q05",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 1: 5 C)",
+      "trapExplanationVi": "Thứ tự sinh trong hàng ngũ anh chị em."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q06",
+      "correctOption": "I",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 2: 1 I)",
+      "trapExplanationVi": "Tiêu đề Text 1: Urlaub im Internet buchen."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q07",
+      "correctOption": "E",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 2: 2 E)",
+      "trapExplanationVi": "Tiêu đề Text 2: Urlaubsziele mit Flirtgarantie."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q08",
+      "correctOption": "K",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 2: 3 K)",
+      "trapExplanationVi": "Tiêu đề Text 3: Exotische Reisen als Alternative."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q09",
+      "correctOption": "D",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 2: 4 D)",
+      "trapExplanationVi": "Tiêu đề Text 4: Umfrage zum Klimaschutz."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q10",
+      "correctOption": "G",
+      "points": 1,
+      "citation": "S. 157 (Aufgabe 2: 5 G)",
+      "trapExplanationVi": "Tiêu đề Text 5: Greenpeace warnt."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q11",
+      "correctOption": "A",
+      "points": 5,
+      "citation": "S. 157 (Aufgabe 3 Fax-Rekonstruktion)",
+      "trapExplanationVi": "Khóa đáp án chính thức 20 vị trí cắt lề."
+    },
+    {
+      "questionId": "OSD_B2_T10_L_Q12",
+      "correctOption": "A",
+      "points": 5,
+      "citation": "S. 157 (Aufgabe 4 Werbebrief)",
+      "trapExplanationVi": "10 từ điền khuyết: zu, die, dorthin, am, sich, für, dem, unseren, von, per."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 1 R)",
+      "trapExplanationVi": "Nhận định 1 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q02",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 2 R)",
+      "trapExplanationVi": "Nhận định 2 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 3 F)",
+      "trapExplanationVi": "Nhận định 3 sai."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q04",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 4 F)",
+      "trapExplanationVi": "Nhận định 4 sai."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 5 R)",
+      "trapExplanationVi": "Nhận định 5 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 6 R)",
+      "trapExplanationVi": "Nhận định 6 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 7 F)",
+      "trapExplanationVi": "Nhận định 7 sai."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q08",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 8 F)",
+      "trapExplanationVi": "Nhận định 8 sai."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 9 F)",
+      "trapExplanationVi": "Nhận định 9 sai."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q10",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 158 (Aufgabe 1: 10 R)",
+      "trapExplanationVi": "Nhận định 10 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T10_H_Q11",
+      "correctOption": "A",
+      "points": 10,
+      "citation": "S. 158 (Aufgabe 2 Tabelle)",
+      "trapExplanationVi": "Bảng ma trận đối chiếu 3 tour ngắm cảnh tại Vienna."
+    }
+  ]
+}

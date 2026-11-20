@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import pg from 'pg';
+import crypto from 'node:crypto';
 
 const ROOT_DIR = process.cwd();
 const ENV_PATH = path.join(ROOT_DIR, '.env');
@@ -48,9 +49,14 @@ async function runMigrations() {
       CREATE TABLE IF NOT EXISTS "__shd_migrations" (
         "id" serial PRIMARY KEY,
         "name" varchar(255) NOT NULL UNIQUE,
+        "checksum" varchar(64),
+        "execution_ms" integer,
         "applied_at" timestamptz NOT NULL DEFAULT clock_timestamp()
       );
     `);
+    await client.query(`ALTER TABLE "__shd_migrations" ADD COLUMN IF NOT EXISTS "checksum" varchar(64);`);
+    await client.query(`ALTER TABLE "__shd_migrations" ADD COLUMN IF NOT EXISTS "execution_ms" integer;`);
+    await client.query('SELECT pg_advisory_lock(hashtext($1))', ['shd-tuhoctiengduc-migrations']);
 
     // 2. Đọc tất cả file .sql
     const files = fs.readdirSync(drizzleDir)
@@ -60,11 +66,14 @@ async function runMigrations() {
     let appliedCount = 0;
     for (const file of files) {
       const checkRes = await client.query(
-        `SELECT 1 FROM "__shd_migrations" WHERE "name" = $1`,
+        `SELECT checksum FROM "__shd_migrations" WHERE "name" = $1`,
         [file]
       );
       if (checkRes.rowCount > 0) {
-        // Đã áp dụng
+        const currentChecksum = crypto.createHash('sha256').update(fs.readFileSync(path.join(drizzleDir, file))).digest('hex');
+        if (checkRes.rows[0].checksum && checkRes.rows[0].checksum !== currentChecksum) {
+          throw new Error(`Checksum migration thay đổi sau khi đã áp dụng: [${file}]`);
+        }
         continue;
       }
 
@@ -77,14 +86,16 @@ async function runMigrations() {
         .map((s) => s.trim())
         .filter((s) => s.length > 0);
 
+      const checksum = crypto.createHash('sha256').update(sqlContent).digest('hex');
+      const startedAt = Date.now();
       await client.query('BEGIN;');
       try {
         for (const stmt of statements) {
           await client.query(stmt);
         }
         await client.query(
-          `INSERT INTO "__shd_migrations" ("name") VALUES ($1)`,
-          [file]
+          `INSERT INTO "__shd_migrations" ("name", "checksum", "execution_ms") VALUES ($1, $2, $3)`,
+          [file, checksum, Date.now() - startedAt]
         );
         await client.query('COMMIT;');
         console.log(`✓ Áp dụng thành công migration: [${file}]`);
@@ -104,9 +115,9 @@ async function runMigrations() {
     console.error(`❌ Lỗi migration trên [${targetDb}]:`, err.message);
     process.exit(1);
   } finally {
+    try { await client.query('SELECT pg_advisory_unlock(hashtext($1))', ['shd-tuhoctiengduc-migrations']); } catch {}
     await client.end();
   }
 }
 
 runMigrations();
-

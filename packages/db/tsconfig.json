@@ -6,8 +6,8 @@
     "composite": true
   },
   "references": [
-    { "path": "../config" }
+    { "path": "../config" },
+    { "path": "../contracts" }
   ],
   "include": ["src/**/*"]
 }
-

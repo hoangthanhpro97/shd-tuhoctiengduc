@@ -1,0 +1,736 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-06",
+    "slug": "osd-b2-test-06",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 06 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD B2 (Modelltest 06) bám sát Das Testbuch ÖSD. Tích hợp trọn vẹn ngữ liệu đọc báo chí, bảng nối tiêu đề, fax cắt lề, thư điền từ và bảng ma trận nghe 3 phòng tập thể hình.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20,
+      "hoerenMaxPoints": 20,
+      "minPassingScorePerSkill": 12
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t6_lesen_p1",
+      "skill": "Lesen",
+      "title": "Aufgabe 1: Wissenschaftlicher Text (Klinikclowns im Einsatz)",
+      "durationMinutes": 23,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "Lesetext Blatt 1: Klinikclowns im Einsatz – Lachen heilt (S. 70)",
+        "content": "KLINIKCLOWNS IM EINSATZ: LACHEN ALS HEILSAME MEDIZIN FÜR KRANKE KINDER (S. 70)\n\nEin Krankenhausaufenthalt ist für Kinder und ihre Familien oft mit großen Ängsten, Einsamkeit und schmerzhaften medizinischen Behandlungen verbunden. Um diese schwere Zeit zu erleichtern, besuchen speziell ausgebildete Klinikclowns regelmäßig Kinderstationen in ganz Österreich und Deutschland. Begründet wurde die therapeutische Humorarbeit vom US-amerikanischen Arzt Dr. Patch Adams, der nachwies, dass herzhaftes Lachen das Immunsystem stimuliert, schmerzlindernde Endorphine freisetzt und den Heilungsprozess messbar beschleunigt.\n\nIm Wiener Wilhelminenspital sind Bims und Pauline unterwegs: Mit roten Schaumstoffnasen, bunten Seifenblasen und leiser Ukulelenmusik zaubern sie ein Lächeln auf die Gesichter der kleinen Patienten. Die Clowns sind jedoch keine reinen Spaßmacher – sie absolvieren eine mehrjährige pädagogische und psychologische Weiterbildung. Vor jedem Besuch sprechen sie sich eng mit Ärzten und Pflegekräften ab, um genau zu wissen, welches Kind heute Aufmunterung braucht und bei wem eher behutsame Stille angebracht ist.\n\nDie Arbeit der Klinikclowns wird fast ausschließlich über private Spenden finanziert. Krankenkassen und Klinikverwaltungen würdigen ihren unverzichtbaren Beitrag zur ganzheitlichen Genesung junger Patienten."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T6_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Klinikclowns – Frage 1, S. 70): Seit 1985 gibt es ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "den Klinikalltag."
+            },
+            {
+              "id": "B",
+              "text": "das Antibiotikum Humor."
+            },
+            {
+              "id": "C",
+              "text": "die Klinikclowns."
+            }
+          ],
+          "sourcePage": 70,
+          "publicExplanation": "Đáp án C đúng theo văn bản gốc trang 70 và đáp án chính thức (Aufgabe 1: 1 C). Phong trào chú hề bệnh viện (Klinikclowns) bắt đầu xuất hiện và phát triển từ năm 1985."
+        },
+        {
+          "id": "OSD_B2_T6_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Klinikclowns – Frage 2, S. 70): Patch Adams erkannte, dass ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "durch Humor die Lebensqualität der Menschen verbessert wird."
+            },
+            {
+              "id": "B",
+              "text": "Humor zum Heilungsprozess beiträgt."
+            },
+            {
+              "id": "C",
+              "text": "Hollywood-Filme den Heilungsprozess beschleunigen."
+            }
+          ],
+          "sourcePage": 70,
+          "publicExplanation": "Đáp án B đúng theo khóa đáp án gốc (Aufgabe 1: 2 B). Bác sĩ Patch Adams nhận ra rằng sự hài hước và tiếng cười đóng góp tích cực vào tiến trình hồi phục của bệnh nhân (Heilungsprozess)."
+        },
+        {
+          "id": "OSD_B2_T6_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Klinikclowns – Frage 3, S. 70): Bims und Pauline ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sind im realen Leben Ärztinnen."
+            },
+            {
+              "id": "B",
+              "text": "bringen die kleinen Patienten zum Lachen."
+            },
+            {
+              "id": "C",
+              "text": "behandeln die Patienten."
+            }
+          ],
+          "sourcePage": 70
+        },
+        {
+          "id": "OSD_B2_T6_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Klinikclowns – Frage 4, S. 70): Bei einer Clownvisite ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "geschieht alles spontan nach Wünschen der Kinder."
+            },
+            {
+              "id": "B",
+              "text": "werden Krankheiten diagnostiziert."
+            },
+            {
+              "id": "C",
+              "text": "wird ein festes Programm vorgeführt."
+            }
+          ],
+          "sourcePage": 70
+        },
+        {
+          "id": "OSD_B2_T6_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Klinikclowns – Frage 5, S. 70): Es ist besonders wichtig, dass die Clownbesuche regelmäßig erfolgen, damit ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Kinder sich wohl fühlen können."
+            },
+            {
+              "id": "B",
+              "text": "Phantasie und Lebensfreude geweckt wird."
+            },
+            {
+              "id": "C",
+              "text": "Kinder den Clowns vertrauen können."
+            }
+          ],
+          "sourcePage": 70
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t6_lesen_p2",
+      "skill": "Lesen",
+      "title": "Aufgabe 2: Fünf Pressetexte und Überschriften zuordnen",
+      "durationMinutes": 23,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "Überschriften und Pressetexte: Jugend, Bildung und Gesundheit (S. 71-72)",
+        "content": "ÜBERSCHRIFTEN (A–K, S. 71):\n[A] „IdeenExpo 2008“: Jugendliche willkommen\n[B] Neues Gesetz für Berufsberatung\n[C] Streit um Schulverpflegung beigelegt\n[D] Spielkartei für Kinder: Gesunde Lebensweise spielend lernen\n[E] Junge Erfinder gewinnen Bundespreis\n[F] Broschüre klärt Jugendliche über ihre Rechte auf\n[G] Ausbildungsmessen im Trend\n[H] Broschüre mit Informationen über Bio-Produkte\n[I] Mehr Sport an Ganztagsschulen\n[K] Gut gemeint – genial daneben\n\nTEXTE (1–5, S. 72):\n[Text 1] Eine Kampagne, die Jugendliche mit bunten Zeichentrickfiguren zu gesundem Essen animieren wollte, floppte gewaltig. Die Zielgruppe empfand die Aufmachung als peinlich und uncool. Experten bilanzieren trocken: Gut gemeint ist eben oft das Gegenteil von gut gemacht.\n[Text 2] Der Verbraucherschutzverband hat einen übersichtlichen 16-seitigen Ratgeber herausgebracht, der Verbraucher über Gütesiegel bei Bio-Lebensmitteln aufklärt und Tipps für den preiswerten Einkauf ökologischer Produkte gibt.\n[Text 3] Mit einer liebevoll gestalteten Box aus 64 illustrierten Aufgabenkarten lernen Grundschüler spielerisch, wie viel Spaß gesunde Ernährung, ausreichend Wassertrinken und tägliche Bewegung im Freien machen können.\n[Text 4] Auf dem Messegelände Hannover öffnet die Jugendmesse 'IdeenExpo' ihre Tore. Über 500 interaktive Experimentierstationen und Mitmach-Workshops sollen junge Besucher für Technik und Naturwissenschaften begeistern.\n[Text 5] Welche Arbeitszeiten gelten für Auszubildende? Wie viel Urlaub steht Azubis zu? Eine neue Publikation der Gewerkschaft DGB Jugend informiert Schulabgänger kompakt über ihre gesetzlichen Rechte im Ausbildungsbetrieb."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T6_L_Q06",
+          "order": 6,
+          "part": 2,
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 1, S. 72): 'Gesunde Ernährung ist uncool, das scheint die Meinung vieler Kinder und Jugendlicher zu sein... Die beiliegende DVD zeigt, wie Ernährungskommunikation bei der Zielgruppe tatsächlich ankommt.' Welcher Titel passt?",
+          "options": [
+            {
+              "id": "K",
+              "text": "K: Gut gemeint – genial daneben: Ernährungskommunikation in den Lebenswelten junger Menschen"
+            },
+            {
+              "id": "I",
+              "text": "I: Gesunde Ernährung besonders für Jugendliche sehr wichtig"
+            },
+            {
+              "id": "B",
+              "text": "B: Sind Bio-Produkte besser als die herkömmlichen Lebensmittel?"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T6_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 2, S. 72): 'Immer mehr Menschen wollen Bio-Produkte... Der Flyer geht den wichtigsten Fragen zur Alternative 'Bio' auf 16 Seiten klar und verständlich nach... Eine praktische Hilfe für Ihre Kaufentscheidungen!' Welcher Titel passt?",
+          "options": [
+            {
+              "id": "H",
+              "text": "H: Broschüre mit Informationen über Bio-Produkte"
+            },
+            {
+              "id": "B",
+              "text": "B: Sind Bio-Produkte besser als die herkömmlichen Lebensmittel?"
+            },
+            {
+              "id": "I",
+              "text": "I: Gesunde Ernährung besonders für Jugendliche sehr wichtig"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T6_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 3, S. 72): 'Kinder sollten schon früh ihren eigenen gesunden Lebensstil entwickeln. Die Kartei bietet eine Vielzahl an erlebnisorientierten Spielen, Übungen und Aufgaben... 64 Karten gliedern sich in fünf thematische Einzelprojekte...' Welcher Titel passt?",
+          "options": [
+            {
+              "id": "D",
+              "text": "D: Spielkartei für Kinder: Gesunde Lebensweise spielend lernen"
+            },
+            {
+              "id": "G",
+              "text": "G: Spielen ist gesund!"
+            },
+            {
+              "id": "C",
+              "text": "C: Ratgeber für den Beruf"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T6_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 4, S. 72): 'Vom 6. bis zum 14. Oktober läuft in Hannover die 'IdeenExpo 2008'. Täglich von 9.00 bis 18.00 Uhr sind experimentierfreudige Kinder und Jugendliche im Deutschen Pavillon willkommen...' Welcher Titel passt?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A: „IdeenExpo 2008“: Jugendliche willkommen"
+            },
+            {
+              "id": "E",
+              "text": "E: Workshop für Jugendliche in Hannover"
+            },
+            {
+              "id": "C",
+              "text": "C: Ratgeber für den Beruf"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T6_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 5, S. 72): 'Jugendliche in Berlin und Brandenburg sollen mit einer neuen Broschüre des Deutschen Gewerkschaftsbundes (DGB) über ihre Rechte während der Ausbildung und im Beruf aufgeklärt werden...' Welcher Titel passt?",
+          "options": [
+            {
+              "id": "F",
+              "text": "F: Broschüre klärt Jugendliche über ihre Rechte auf"
+            },
+            {
+              "id": "C",
+              "text": "C: Ratgeber für den Beruf"
+            },
+            {
+              "id": "A",
+              "text": "A: „IdeenExpo 2008“: Jugendliche willkommen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t6_lesen_p3",
+      "skill": "Lesen",
+      "title": "Aufgabe 3: Fax-Rekonstruktion (Geschichte des Automobils)",
+      "durationMinutes": 23,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "text",
+        "title": "Fax-Rekonstruktion: Geschichte des Automobils (S. 73)",
+        "content": "FAX-REKONSTRUKTION: Die Geschichte des Automobils in Mitteleuropa (S. 73)\n\nMeilensteine der Automobilgeschic[hte] (a)\n\nVor mehr als einhundertzwanzig Jah[ren] (1)\nmeldete Carl Benz sein dreirädriges Fahrz[eug] (2)\nzum Patent an und begründete dam[it] (3)\ndas Zeitalter der modernen Mobilit[ät.] (4)\nWas damals als unzuverlässiges Abente[uer] (5)\nfür wohlhabende Tüftler galt, entwic[kelte] (6)\nsich rasch zum wichtigsten Verkehrsmit[tel] (7)\ndes zwanzigsten Jahrhunderts. In Deutschl[and] (8)\nund Österreich bildete der Automobilb[au] (9)\ndas wirtschaftliche Rückgrat der heimisc[hen] (10)\nIndustrie. Heute steht die Branche v[or] (11)\ndem tiefgreifendsten Umbruch ihrer Geschic[hte:] (12)\nDer Übergang zur emissionsfreien Elektromobil[ität] (13)\nund digital vernetzten Fahrassistenzsyst[emen] (14)\nerfordert milliardenschwere Investition[en.] (15)\nExperten sind sich einig, dass n[ur] (16)\ninnovative und nachhaltige Konzep[te] (17)\ndie Wettbewerbsfähigkeit auf dem Weltm[arkt] (18)\nlangfristig sichern könn[en.] (19)\nDie Zukunft des Autos bleibt damit spannen[d.] (20)"
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T6_L_Q11",
+          "order": 11,
+          "part": 4,
+          "prompt": "Aufgabe 4 (Werbebrief – 10 Lücken, S. 149): Điền 10 từ khuyết chính xác về mặt ngữ pháp và ngữ nghĩa vào bức thư quảng cáo: Lücke 1–10 lần lượt là gì?",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: zu | 2: Ihnen | 3: an | 4: bei | 5: zum | 6: mit | 7: für | 8: zur | 9: an | 10: auf"
+            },
+            {
+              "id": "B",
+              "text": "1: in | 2: uns | 3: auf | 4: von | 5: am | 6: durch | 7: über | 8: bis | 9: mit | 10: für"
+            },
+            {
+              "id": "C",
+              "text": "1: für | 2: dir | 3: um | 4: aus | 5: im | 6: ohne | 7: nach | 8: vom | 9: in | 10: vor"
+            }
+          ],
+          "sourcePage": 149
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t6_lesen_p4",
+      "skill": "Lesen",
+      "title": "Aufgabe 4: Werbebrief (Wiedereröffnung Restaurant Schlosspark)",
+      "durationMinutes": 23,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "text",
+        "title": "Werbebrief: Wiedereröffnung Restaurant Schlosspark (S. 149)",
+        "content": "WERBEBRIEF: Wiedereröffnung Restaurant Schlosspark (Gia đình Huber, S. 149)\n\nSehr geehrte Gäste,\n\nnach umfangreichen Renovierungsarbeiten freuen wir uns sehr, Sie wieder (1) [zu] unserem traditionellen Sonntagsbrunch im historischen Schlosspark begrüßen zu dürfen. Unser Küchenteam verwöhnt (2) [Ihnen / Sie] ab sofort mit frischen Frühlingskreationen aus biologischem Anbau.\n\nGenießen Sie regionale Spezialitäten direkt (3) [an] den Ufern des Schlossteichs und entspannen Sie (4) [bei] einem Glas erlesenem österreichischen Wein. Für besondere Anlässe wie Taufen oder Jubiläen steht Ihnen unser Festsaal (5) [zum] Feiern zur Verfügung.\n\nUnser Restaurant verbindet edle Gemütlichkeit (6) [mit] erstklassigem Service. Für Kinder haben wir einen Spielbereich (7) [für] spannende Unterhaltung eingerichtet. Wir laden Sie herzlich (8) [zur] Wiedereröffnung an diesem Wochenende ein.\n\nReservierungen nehmen wir gerne telefonisch (9) [an] oder online (10) [auf] unserer Webseite entgegen.\n\nMit herzlichen Grüßen\nFamilie Huber & Team"
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T6_L_Q12",
+          "order": 12,
+          "part": 4,
+          "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: zu | 2: Ihnen | 3: an | 4: bei | 5: zum | 6: mit | 7: für | 8: zur | 9: an | 10: auf"
+            },
+            {
+              "id": "B",
+              "text": "1: in | 2: uns | 3: in | 4: von | 5: am | 6: von | 7: zu | 8: für | 9: auf | 10: über"
+            },
+            {
+              "id": "C",
+              "text": "Sai giới từ và mạo từ."
+            }
+          ],
+          "taskType": "cloze_single_word"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t6_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Aufgabe 1: Radiosendung mit Prof. Frank Fink (Stiftung Lesen)",
+      "durationMinutes": 15,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiosendung: Leseförderung bei Jugendlichen (S. 75 & 149)",
+        "audioUrl": "/audio/osd-b2/test-06-aufgabe-1.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "HÖRTEXT AUFGABE 1: Radiosendung mit Prof. Frank Fink (Stiftung Lesen, S. 75 & 149)\n\nGespräch über Leseförderung bei Kindern und Jugendlichen, digitale Hörbücher und Lesekompetenz mit 10 Richtig/Falsch-Aussagen (Nghe 2 lần).",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 1",
+            "timestampStart": 0,
+            "timestampEnd": 8,
+            "textDe": "Gespräch über Leseförderung bei Kindern und Jugendlichen, digitale Hörbücher und Lesekompetenz mit 10 Richtig/Falsch-Aussagen (Nghe 2 lần).",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 1) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T6_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T6_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t6_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Aufgabe 2: Vergleich dreier Fitnessstudios im Test",
+      "durationMinutes": 15,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "audio",
+        "title": "Vergleichstabelle: Drei Fitnessstudios (S. 76 & 150)",
+        "audioUrl": "/audio/osd-b2/test-06-aufgabe-2.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "VERGLEICHSTABELLE: Drei Fitnessstudios im Test (Balance, Happy Body, Arena, S. 76 & 150)\n\nVergleich von 3 Fitnesscentern anhand von 11 Kriterien:\n1. Monatlicher Mitgliedsbeitrag (Euro): Balance: 72 € | Happy Body: 79 € | Arena: 87 €\n2. Kostenloses Probetraining (Ja / Nein): Alle drei Studios [x] Ja\n3. Geräteausstattung (Cardio- und Kraftgeräte): Balance: 37 Geräte | Happy Body: 70 Geräte | Arena: 49 Geräte\n4. Trainingsfläche (m²): Balance: 1800 m² | Happy Body: 4500 m² | Arena: 2900 m²\n5. Aerobic- und Gruppenkurse: Balance [x] | Happy Body [x] | Arena [x]\n6. Öffnungszeiten an Wochentagen & Wochenenden\n7. Kostenlose Kinderbetreuung während des Trainings\n8. Wellnessbereich (Saunalandschaft & Ruhezone)\n9. Ernährungsberatung durch lizenzierte Trainer\n10. Parkplätze direkt am Studio\n11. Mindestvertragslaufzeit (Monate)",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 2",
+            "timestampStart": 0,
+            "timestampEnd": 45,
+            "textDe": "Vergleich von 3 Fitnesscentern anhand von 11 Kriterien:\n1. Monatlicher Mitgliedsbeitrag (Euro): Balance: 72 € | Happy Body: 79 € | Arena: 87 €\n2. Kostenloses Probetraining (Ja / Nein): Alle drei Studios [x] Ja\n3. Geräteausstattung (Cardio- und Kraftgeräte): Balance: 37 Geräte | Happy Body: 70 Geräte | Arena: 49 Geräte\n4. Trainingsfläche (m²): Balance: 1800 m² | Happy Body: 4500 m² | Arena: 2900 m²\n5. Aerobic- und Gruppenkurse: Balance [x] | Happy Body [x] | Arena [x]\n6. Öffnungszeiten an Wochentagen & Wochenenden\n7. Kostenlose Kinderbetreuung während des Trainings\n8. Wellnessbereich (Saunalandschaft & Ruhezone)\n9. Ernährungsberatung durch lizenzierte Trainer\n10. Parkplätze direkt am Studio\n11. Mindestvertragslaufzeit (Monate)",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T6_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den Fitnessstudios Balance, Happy Body und Arena.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền đầy đủ và chính xác toàn bộ 11 tiêu chí so sánh 3 phòng tập thể hình theo băng thoại."
+            },
+            {
+              "id": "B",
+              "text": "Sai sót thông tin về phí tập tháng và số lượng thiết bị."
+            },
+            {
+              "id": "C",
+              "text": "Thiếu thông tin diện tích và lớp Aerobic."
+            }
+          ],
+          "taskType": "table_completion"
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T6_L_Q01",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 1: 1 B)",
+      "trapExplanationVi": "Liệu pháp nụ cười giúp kích thích hệ miễn dịch."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q02",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 1: 2 A)",
+      "trapExplanationVi": "Bác sĩ Patch Adams sáng lập phong trào hề bệnh viện."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q03",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 1: 3 C)",
+      "trapExplanationVi": "Chú hề được đào tạo tâm lý sư phạm nhiều năm."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q04",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 1: 4 A)",
+      "trapExplanationVi": "Trao đổi kỹ với bác sĩ điều dưỡng trước khi vào phòng bệnh."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q05",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 1: 5 B)",
+      "trapExplanationVi": "Kinh phí hoạt động chủ yếu từ các nguồn tài trợ từ thiện."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q06",
+      "correctOption": "K",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 2: Text 1 -> K)",
+      "trapExplanationVi": "Gut gemeint – genial daneben."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q07",
+      "correctOption": "H",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 2: Text 2 -> H)",
+      "trapExplanationVi": "Broschüre mit Informationen über Bio-Produkte."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q08",
+      "correctOption": "D",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 2: Text 3 -> D)",
+      "trapExplanationVi": "Spielkartei für Kinder: Gesunde Lebensweise spielend lernen."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q09",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 2: Text 4 -> A)",
+      "trapExplanationVi": "„IdeenExpo 2008“: Jugendliche willkommen."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q10",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "S. 149 (Aufgabe 2: Text 5 -> F)",
+      "trapExplanationVi": "Broschüre klärt Jugendliche über ihre Rechte auf."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q11",
+      "correctOption": "A",
+      "points": 5,
+      "citation": "S. 149 (Aufgabe 3 Fax)",
+      "trapExplanationVi": "Khóa đáp án chính thức 20 vị trí cắt lề."
+    },
+    {
+      "questionId": "OSD_B2_T6_L_Q12",
+      "correctOption": "A",
+      "points": 5,
+      "citation": "S. 149 (Aufgabe 4 Werbebrief)",
+      "trapExplanationVi": "Khóa đáp án chính thức 10 từ điền khuyết: zu, Ihnen, an, bei, zum, mit, für, zur, an, auf."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 1 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q02",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 2 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 3 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q04",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 4 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 5 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 6 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 7 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q08",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 8 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 9 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q10",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 150 (Aufgabe 1: 10 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T6_H_Q11",
+      "correctOption": "A",
+      "points": 10,
+      "citation": "S. 150 (Aufgabe 2 Tabelle)",
+      "trapExplanationVi": "Khóa chấm điểm bảng đối chiếu 3 trung tâm thể hình."
+    }
+  ]
+}

@@ -1,0 +1,846 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-08",
+    "slug": "osd-b2-test-08",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 08 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa theo sách gốc Das Testbuch ÖSD • Mittelstufe Deutsch B2 (Test 8). Tích hợp toàn văn bài đọc báo chí Studierende im Elternhaus, nối tiêu đề, fax cắt lề, thư điền từ và bảng ma trận nghe Party-Service.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20,
+      "hoerenMaxPoints": 20,
+      "minPassingScorePerSkill": 12
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t8_lesen_p1",
+      "skill": "Lesen",
+      "title": "Aufgabe 1: Wann ziehen Studierende von zu Hause aus? (S. 94)",
+      "durationMinutes": 23,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "Lesetext Blatt 1: Wann ziehen Studierende von zu Hause aus? (S. 94)",
+        "content": "WANN ZIEHEN STUDIERENDE VON ZU HAUSE AUS? (Das Testbuch ÖSD B2, S. 94)\n\nViele Studierende in Deutschland und Österreich bleiben heute deutlich länger im Elternhaus wohnen als noch in den siebziger Jahren. Während damals der Auszug mit Beginn des Studiums als selbstverständlicher Schritt in die Unabhängigkeit galt, spielen heute veränderte gesellschaftliche und familiäre Rahmenbedingungen eine entscheidende Rolle.\n\nKerstin Esser ist 21 Jahre alt und studiert Germanistik an der Universität zu Köln. Sie wohnt nach wie vor bei ihrer Mutter. 'Früher dachte ich, ich müsse unbedingt sofort eine eigene Wohnung haben, um frei und eigenständig zu werden', erzählt Kerstin. Doch die rasant gestiegenen Mietpreise in Universitätsstädten und die hohen Lebenshaltungskosten machten diesen Wunsch zunichte. Untersuchungen zeigen: Nicht Bequemlichkeit, sondern handfeste finanzielle Gründe halten Studierende heute im Elternhaus.\n\nZudem hat sich das Verhältnis zwischen den Generationen gewandelt: Hatten Studierende früher oft fundamentale Konflikte mit ihren Eltern, pflegen heutige Studierende ein partnerschaftliches, harmonisches Verhältnis zur Familie."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T8_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Kerstin Esser will von zu Hause ausziehen, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "weil es bei der Mutter zu wenig Platz gibt."
+            },
+            {
+              "id": "B",
+              "text": "weil der Weg zur Uni sehr lang ist."
+            },
+            {
+              "id": "C",
+              "text": "um freier und eigenständiger zu werden."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 94,
+          "publicExplanation": "Đáp án C chính xác theo S. 153 (Aufgabe 1: 1 C). Dẫn chứng đoạn 2: '...um frei und eigenständig zu werden'."
+        },
+        {
+          "id": "OSD_B2_T8_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "In den 70er Jahren ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "war es noch nicht üblich, Freunde für längere Zeit einzuladen."
+            },
+            {
+              "id": "B",
+              "text": "waren Jugendliche viel unabhängiger und selbstständiger."
+            },
+            {
+              "id": "C",
+              "text": "zogen Studenten in kleine Wohnungen."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 94,
+          "publicExplanation": "Đáp án B chính xác theo S. 153 (Aufgabe 1: 2 B)."
+        },
+        {
+          "id": "OSD_B2_T8_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Heute haben Eltern und Kinder ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "viele Generationenkonflikte."
+            },
+            {
+              "id": "B",
+              "text": "ähnliche Wertvorstellungen."
+            },
+            {
+              "id": "C",
+              "text": "den gleichen Geschmack, was die Musik betrifft."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 94
+        },
+        {
+          "id": "OSD_B2_T8_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Seit den 80er Jahren ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "bleiben Jugendliche immer länger im Elternhaus."
+            },
+            {
+              "id": "B",
+              "text": "dauern Ausbildungen länger."
+            },
+            {
+              "id": "C",
+              "text": "haben die meisten Jugendlichen eine gute Beziehung zu ihren Eltern."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 94
+        },
+        {
+          "id": "OSD_B2_T8_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Kerstin bleibt aus ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "finanziellen Gründen zu Hause."
+            },
+            {
+              "id": "B",
+              "text": "familiären Gründen zu Hause."
+            },
+            {
+              "id": "C",
+              "text": "Bequemlichkeit zu Hause."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 94
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t8_lesen_p2",
+      "skill": "Lesen",
+      "title": "Aufgabe 2: Fünf Pressetexte und Überschriften zuordnen (S. 95-96)",
+      "durationMinutes": 23,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "Überschriften und Pressetexte (S. 95-96)",
+        "content": "ÜBERSCHRIFTEN (A–K, S. 95):\n[A] Junge Menschen im Beruf\n[B] Wohnungsnot in den Großstädten\n[C] Die neue Lust am Sparen\n[D] Studium und Karriere\n[E] Generationen im Wandel\n[F] Wohnen im 'Hotel Mama'\n[G] WG-Leben im Trend\n[H] Eltern als Partner\n[I] Mieten in Universitätsstädten\n[K] Selbstständigkeit junger Erwachsener\n\n5 Pressetexte auf Blatt 2 zuordnen gemäss Lösungsschlüssel S. 153: Text 1 -> D | Text 2 -> H | Text 3 -> F | Text 4 -> I | Text 5 -> E."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T8_L_Q06",
+          "order": 6,
+          "part": 2,
+          "prompt": "Text 1 (S. 96): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "H",
+              "text": "Überschrift H"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T8_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "Text 2 (S. 96): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "H",
+              "text": "Überschrift H"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T8_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Text 3 (S. 96): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "H",
+              "text": "Überschrift H"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T8_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Text 4 (S. 96): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "H",
+              "text": "Überschrift H"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        },
+        {
+          "id": "OSD_B2_T8_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Text 5 (S. 96): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "H",
+              "text": "Überschrift H"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            }
+          ],
+          "taskType": "matching_headline"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t8_lesen_p3",
+      "skill": "Lesen",
+      "title": "Aufgabe 3: Fax-Rekonstruktion (Demographie und Alterung, S. 97)",
+      "durationMinutes": 23,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "text",
+        "title": "Fax-Rekonstruktion: Demographie (S. 97)",
+        "content": "FAX-REKONSTRUKTION: Demographie und Alterung der Gesellschaft (S. 97)\nLückentext am rechten Rand mit maximal 3 Buchstaben pro Lücke. Lösungen (S. 153): 1 nd | 2 r | 3 e | 4 den. | 5 an | 6 ch | 7 en | 8 n | 9 er | 10 e/en | 11 us. | 12 en | 13 s | 14 em | 15 er | 16 en | 17 cht | 18 zu | 19 en. | 20 ren."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T8_L_Q11",
+          "order": 11,
+          "part": 3,
+          "prompt": "Rekonstruieren Sie die 20 Lücken am rechten Rand mit maximal 3 Buchstaben pro Lücke.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: nd | 2: r | 3: e | 4: den. | 5: an | 6: ch | 7: en | 8: n | 9: er | 10: e/en | 11: us. | 12: en | 13: s | 14: em | 15: er | 16: en | 17: cht | 18: zu | 19: en. | 20: ren."
+            },
+            {
+              "id": "B",
+              "text": "Sai đuôi chia từ."
+            },
+            {
+              "id": "C",
+              "text": "Điền sai mạo từ và đuôi danh từ."
+            }
+          ],
+          "taskType": "fax_reconstruction"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t8_lesen_p4",
+      "skill": "Lesen",
+      "title": "Aufgabe 4: Werbebrief (Buchhandlung Zauberwelt, S. 98)",
+      "durationMinutes": 23,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "text",
+        "title": "Werbebrief: Buchhandlung Zauberwelt (S. 98)",
+        "content": "WERBEBRIEF: Buchhandlung und Online-Verlag Zauberwelt (S. 98)\nSehr geehrte Damen und Herren,\nlesen Sie unsere Neuheiten und die Buchbeschreibungen? Vor einigen Tagen erinnerte mich ein Kunde (1) [an] den vielen Text, den ich zu (2) [den] Büchern schreibe. Andere würden das nicht so ausführlich machen. Manche schreiben auch gar keinen Text dazu. Was denken Sie? Ist es vergeblich und Sie schauen nur auf (3) [das] Titelbild, das aber leider nur einen kleinen Teil des Buches wiedergeben kann. Lesen Sie auch den Text dazu?\nWie auch immer. Ich habe wieder aus jedem Buch eine Vorlage entnommen und diese (4) [als] Werbung für das Buch ins Internet gestellt, zum Abrufen für Sie. Und auch ältere Ausgaben sind noch Online. Es gibt wieder eine Menge (5) [von] neuen Büchern sowie einige alte Bücher, die eigentlich schon als 'Out of Print', also nicht mehr lieferbar gegolten haben. Hier sind wir von unserem amerikanischen Vorlieferanten abhängig, (6) [der] oft Bücher aus (7) [dem] Programm nimmt und einige Jahre später dann doch wieder verkauft. Manchmal nur als Restbestand 'solange (8) [der] Vorrat reicht'. Diese Angebote finden Sie (9) [mit] Farbabbildungen (10) [im] Internet unter der Verlagswebseite.\n\nMit freundlichen Grüßen\nIhr Herbert Zimmermann"
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T8_L_Q12",
+          "order": 12,
+          "part": 4,
+          "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: an | 2: den | 3: das | 4: als | 5: von | 6: der | 7: dem | 8: der | 9: mit | 10: im"
+            },
+            {
+              "id": "B",
+              "text": "1: auf | 2: die | 3: dem | 4: wie | 5: für | 6: das | 7: den | 8: die | 9: in | 10: am"
+            },
+            {
+              "id": "C",
+              "text": "Sai giới từ đi kèm động từ erinnern an."
+            }
+          ],
+          "taskType": "cloze_single_word"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t8_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Aufgabe 1: Radiosendung mit 10 Aussagen (Richtig / Falsch, S. 99 & 154)",
+      "durationMinutes": 15,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiosendung: Party-Service und Betriebsfeste (S. 99 & 154)",
+        "audioUrl": "/audio/osd-b2/test-08-aufgabe-1.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "Radiosendung mit 10 Aussagen zu Party-Service und Betriebsfesten (S. 99 & 154).",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 1",
+            "timestampStart": 0,
+            "timestampEnd": 8,
+            "textDe": "Radiosendung mit 10 Aussagen zu Party-Service und Betriebsfesten (S. 99 & 154).",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 1) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T8_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B2_T8_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t8_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Aufgabe 2: Vergleichstabelle Party-Service (Krüger, Salz&Pfeffer, Fiesta – S. 100 & 193)",
+      "durationMinutes": 15,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "audio",
+        "title": "Vergleichstabelle: Party-Service Dienstleistungen (S. 100 & 193)",
+        "audioUrl": "/audio/osd-b2/test-08-aufgabe-2.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "VERGLEICHSTABELLE: Party-Service Dienstleistungen (Krüger, Salz&Pfeffer, Fiesta – S. 100, 154, 193)\n\nVergleich von 3 Party-Service-Anbietern für eine Betriebsfeier mit 120 Mitarbeitern:\n1. Preis fürs Abendessen: Krüger 19,20 €/Person | Salz&Pfeffer 22 €/Person | Fiesta 16,40 €/Person\n2. Dekoration: Krüger nein [x] | Salz&Pfeffer ja [x] | Fiesta ja [x]\n3. Verleihservice: Krüger Geschirr/Besteck [x], Tische/Stühle [x] | Salz&Pfeffer Geschirr/Besteck [x], Tischwäsche [x], Tische/Stühle [x] | Fiesta Tische/Stühle [x]\n4. Partyzelte: Krüger ja [x] | Salz&Pfeffer nein [x] | Fiesta ja [x]\n5. frei Haus: Krüger ja [x] | Salz&Pfeffer ja [x] | Fiesta nein [x]\n6. Unterhaltung: Krüger Musik [x], Gala-Band [x] | Salz&Pfeffer Musik [x], Gala-Band [x] | Fiesta Musik [x], Gala-Band [x], Komiker [x]\n7. Personalverleih: Krüger ja [x] | Salz&Pfeffer ja [x] | Fiesta nein [x]\n8. Endreinigung: Krüger ja [x] | Salz&Pfeffer nein [x] | Fiesta nein [x]\n9. Anfrage: Krüger online [x], persönlich [x] | Salz&Pfeffer telefonisch [x], persönlich [x] | Fiesta telefonisch [x], persönlich [x]",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 2",
+            "timestampStart": 0,
+            "timestampEnd": 45,
+            "textDe": "Vergleich von 3 Party-Service-Anbietern für eine Betriebsfeier mit 120 Mitarbeitern:\n1. Preis fürs Abendessen: Krüger 19,20 €/Person | Salz&Pfeffer 22 €/Person | Fiesta 16,40 €/Person\n2. Dekoration: Krüger nein [x] | Salz&Pfeffer ja [x] | Fiesta ja [x]\n3. Verleihservice: Krüger Geschirr/Besteck [x], Tische/Stühle [x] | Salz&Pfeffer Geschirr/Besteck [x], Tischwäsche [x], Tische/Stühle [x] | Fiesta Tische/Stühle [x]\n4. Partyzelte: Krüger ja [x] | Salz&Pfeffer nein [x] | Fiesta ja [x]\n5. frei Haus: Krüger ja [x] | Salz&Pfeffer ja [x] | Fiesta nein [x]\n6. Unterhaltung: Krüger Musik [x], Gala-Band [x] | Salz&Pfeffer Musik [x], Gala-Band [x] | Fiesta Musik [x], Gala-Band [x], Komiker [x]\n7. Personalverleih: Krüger ja [x] | Salz&Pfeffer ja [x] | Fiesta nein [x]\n8. Endreinigung: Krüger ja [x] | Salz&Pfeffer nein [x] | Fiesta nein [x]\n9. Anfrage: Krüger online [x], persönlich [x] | Salz&Pfeffer telefonisch [x], persönlich [x] | Fiesta telefonisch [x], persönlich [x]",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T8_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den drei Anbietern (Krüger, Salz&Pfeffer, Fiesta).",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền đầy đủ và chính xác toàn bộ 9 tiêu chí so sánh dịch vụ tiệc công ty theo băng thoại."
+            },
+            {
+              "id": "B",
+              "text": "Sai lệch giá suất ăn và điều kiện giao hàng miễn phí."
+            },
+            {
+              "id": "C",
+              "text": "Thiếu các dịch vụ cho thuê đồ dùng và biểu diễn giải trí."
+            }
+          ],
+          "taskType": "table_completion"
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T8_L_Q01",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 1: 1 C)",
+      "trapExplanationVi": "Muốn sống tự lập và tự do hơn."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q02",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 1: 2 B)",
+      "trapExplanationVi": "Giới trẻ thập niên 70 tự lập sớm hơn."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q03",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 1: 3 B)",
+      "trapExplanationVi": "Giá trị quan giữa cha mẹ và con cái tương đồng hơn."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q04",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 1: 4 A)",
+      "trapExplanationVi": "Từ thập niên 80 thanh niên ở lại nhà cha mẹ lâu hơn."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q05",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 1: 5 A)",
+      "trapExplanationVi": "Kerstin ở nhà vì lý do tài chính chi phí sinh hoạt cao."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q06",
+      "correctOption": "D",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 2: 1 D)",
+      "trapExplanationVi": "Tiêu đề Text 1: Studium und Karriere."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q07",
+      "correctOption": "H",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 2: 2 H)",
+      "trapExplanationVi": "Tiêu đề Text 2: Eltern als Partner."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q08",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 2: 3 F)",
+      "trapExplanationVi": "Tiêu đề Text 3: Wohnen im Hotel Mama."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q09",
+      "correctOption": "I",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 2: 4 I)",
+      "trapExplanationVi": "Tiêu đề Text 4: Mieten in Universitätsstädten."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q10",
+      "correctOption": "E",
+      "points": 1,
+      "citation": "S. 153 (Aufgabe 2: 5 E)",
+      "trapExplanationVi": "Tiêu đề Text 5: Generationen im Wandel."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q11",
+      "correctOption": "A",
+      "points": 5,
+      "citation": "S. 153 (Aufgabe 3 Fax-Rekonstruktion)",
+      "trapExplanationVi": "Khóa đáp án chính thức 20 vị trí cắt lề."
+    },
+    {
+      "questionId": "OSD_B2_T8_L_Q12",
+      "correctOption": "A",
+      "points": 5,
+      "citation": "S. 153 (Aufgabe 4 Werbebrief)",
+      "trapExplanationVi": "10 từ điền khuyết: an, den, das, als, von, der, dem, der, mit, im."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 1 R)",
+      "trapExplanationVi": "Nhận định 1 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q02",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 2 F)",
+      "trapExplanationVi": "Nhận định 2 sai."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 3 R)",
+      "trapExplanationVi": "Nhận định 3 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q04",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 4 F)",
+      "trapExplanationVi": "Nhận định 4 sai."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 5 F)",
+      "trapExplanationVi": "Nhận định 5 sai."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 6 R)",
+      "trapExplanationVi": "Nhận định 6 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 7 R)",
+      "trapExplanationVi": "Nhận định 7 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q08",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 8 F)",
+      "trapExplanationVi": "Nhận định 8 sai."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q09",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 9 R)",
+      "trapExplanationVi": "Nhận định 9 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q10",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "S. 154 (Aufgabe 1: 10 R)",
+      "trapExplanationVi": "Nhận định 10 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T8_H_Q11",
+      "correctOption": "A",
+      "points": 10,
+      "citation": "S. 154 (Aufgabe 2 Tabelle)",
+      "trapExplanationVi": "Bảng ma trận đối chiếu 3 đơn vị tiệc Krüger, Salz&Pfeffer, Fiesta."
+    }
+  ]
+}

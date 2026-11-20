@@ -35,4 +35,12 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "shd_tuhoctiengduc"
     GRANT CONNECT ON DATABASE shd_test TO shd_migrator;
 EOSQL
 
+# Grant schema setup privileges required by the forward-only migrations on both databases.
+for database in shd_tuhoctiengduc shd_test; do
+    psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$database" <<-EOSQL
+        GRANT USAGE, CREATE ON SCHEMA public TO shd_migrator_owner, shd_ledger_admin, shd_attempt_mgr, shd_auth_admin, shd_exam_admin, shd_privacy_admin, shd_grader;
+        GRANT USAGE ON SCHEMA public TO shd_migrator, shd_app, shd_worker, shd_staff_api, shd_readonly;
+EOSQL
+done
+
 echo "SHD databases and roles initialized successfully."

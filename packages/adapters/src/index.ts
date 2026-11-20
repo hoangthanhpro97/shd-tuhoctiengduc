@@ -8,3 +8,4 @@ export class MockZnsAdapter implements NotificationAdapter {
   }
 }
 
+export * from './grading/postgres-grading-repository.js';

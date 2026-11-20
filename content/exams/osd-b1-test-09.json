@@ -1,0 +1,2073 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-09",
+    "slug": "osd-b1-test-09",
+    "title": "ÖSD Zertifikat B1 - Modelltest 09 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD Zertifikat B1 (Modelltest 09) tích hợp 100% ngữ liệu bài đọc, quảng cáo, ý kiến độc giả Facebook, nội quy Corpus Fitness và kịch bản lời thoại bài nghe bám sát đề thi khảo thí chính thức.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t9_lesen_p1",
+      "skill": "Lesen",
+      "title": "Teil 1: Blogbeitrag / Nebenjob als Schüler",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "AloisBlog.at – 18. November: Nebenjob als Schüler",
+        "content": "AloisBlog.at – 18. November: Nebenjob als Schüler\n\nHallo zusammen!\nHeute möchte ich von meinen ersten Erfahrungen mit einem Nebenjob berichten. Da ich mir für den Sommer eine größere Reise nach Italien vorgenommen habe, reichte mein Taschengeld einfach nicht mehr aus. Ein Bekannter vermittelte mir schließlich eine Stelle in einer kleinen Stadtteilbuchhandlung, wo ich zweimal pro Woche nachmittags für je drei Stunden Regale einräume, neue Lieferungen erfasse und Kunden an der Kasse betreue.\n\nAm Anfang war es gar nicht so einfach, Schule, Hausaufgaben und den Job unter einen Hut zu bekommen. Manchmal war ich abends ganz schön müde. Doch die Buchhändlerin Frau Lindner war von Beginn an sehr geduldig und half mir, wenn ich ein bestimmtes Buch nicht gleich im System fand. Inzwischen kenne ich mich hervorragend aus und empfehle Kunden sogar meine eigenen Lieblingskrimis.\n\nDurch den Nebenjob habe ich nicht nur gelernt, pünktlich und zuverlässig zu sein, sondern auch den Wert des Geldes viel besser zu schätzen. Ich kann jedem von euch nur raten: Ein Nebenjob ist eine großartige Schule fürs Leben!\n\nEuer Alois"
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Der Autor suchte einen Nebenjob, um Geld für eine Reise zu sparen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đáp án Richtig đúng theo đề thi (1 Richtig). Tác giả cần tiền để đi du lịch mùa hè sang Ý."
+        },
+        {
+          "id": "OSD_B1_T9_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Der Autor arbeitet jeden Tag nach der Schule in der Buchhandlung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đáp án Falsch đúng (2 Falsch). Anh chỉ làm việc 2 buổi mỗi tuần, mỗi buổi 3 tiếng."
+        },
+        {
+          "id": "OSD_B1_T9_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Die Chefin der Buchhandlung verlangte von Beginn an fehlerfreies Arbeiten ohne Hilfe.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Der Autor empfiehlt Kunden mittlerweile gerne bestimmte Bücher.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Der Job half dem Autor, Zuverlässigkeit und den Wert des Geldes zu lernen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Der Autor plant, die Schule abzubrechen, um Vollzeit im Buchhandel zu arbeiten.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_lesen_p2",
+      "skill": "Lesen",
+      "title": "Teil 2: Zwei Pressetexte (Elektromobilität & Bauernmärkte)",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Zwei Pressetexte: 'Elektromobilität' & 'Wochenmärkte'",
+        "content": "PRESSETEXT 1: Elektromobilität in den Metropolen\nDer Ausbau von Ladestationen für Elektroautos in deutschen und österreichischen Städten schreitet zügig voran. Immer mehr Stadtverwaltungen erlassen Vorgaben, um neue Wohngebäude und Parkhäuser verpflichtend mit moderner Ladeinfrastruktur auszustatten. Dadurch soll der Umstieg auf emissionsfreie Mobilität im urbanen Raum spürbar erleichtert werden.\n\nPRESSETEXT 2: Regionale Bauernmärkte boomen\nFrisches Obst, knackiges Gemüse und Brot direkt vom Erzeuger: Wochenmärkte verzeichnen in vielen Städten Rekordbesucherzahlen. Verbraucher schätzen kurze Transportwege und den Verzicht auf lange Kühlketten. Viele Landwirte bieten mittlerweile auch Vorbestellungen per App an, um Wartezeiten am Marktstand zu verkürzen."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "Worum geht es im ersten Artikel über Elektromobilität?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Um den gezielten Ausbau der städtischen Ladeinfrastruktur."
+            },
+            {
+              "id": "b",
+              "text": "Um ein komplettes Fahrverbot für E-Autos."
+            },
+            {
+              "id": "c",
+              "text": "Um die Schließung aller öffentlichen Parkhäuser."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Welche Vorgabe machen immer mehr Städte?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Benzinmotoren kostenlos umzubauen."
+            },
+            {
+              "id": "b",
+              "text": "Keine Autos mehr zuzulassen."
+            },
+            {
+              "id": "c",
+              "text": "Neue Gebäude mit Ladesäulen auszustatten."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Was soll durch die Maßnahmen erreicht werden?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Höhere Gebühren für Stromkunden."
+            },
+            {
+              "id": "b",
+              "text": "Die Verringerung der Zugverbindungen."
+            },
+            {
+              "id": "c",
+              "text": "Ein leichterer Umstieg auf emissionsfreie Mobilität."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Was schätzen Kunden besonders an Wochenmärkten?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Verpackungen aus Plastik."
+            },
+            {
+              "id": "b",
+              "text": "Frische Ware direkt vom Erzeuger mit kurzen Wegen."
+            },
+            {
+              "id": "c",
+              "text": "Billige Importware aus Übersee."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Welchen digitalen Service bieten immer mehr Marktstände an?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Vorbestellung per Smartphone-App."
+            },
+            {
+              "id": "b",
+              "text": "Kostenlose E-Mails an alle Nachbarn."
+            },
+            {
+              "id": "c",
+              "text": "Online-Kochkurse während des Einkaufs."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Welches Gesamtziel verfolgen die Wochenmärkte?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Den Handel auf Supermärkte zu verlagern."
+            },
+            {
+              "id": "b",
+              "text": "Frühaufstehern höhere Preise zu berechnen."
+            },
+            {
+              "id": "c",
+              "text": "Regionale Kreisläufe und nachhaltige Ernährung zu fördern."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_lesen_p3",
+      "skill": "Lesen",
+      "title": "Teil 3: Situationen & Anzeigen (Dienstleistungen und Kultur)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Anzeigenübersicht: Dienstleistungen und Kultur (S. 138-139)",
+        "content": "ANZEIGENÜBERSICHT: Dienstleistungen und Kultur (S. 138-139)\n\n[a] IT-Reparatur Express: Schnelle Fehlerbehebung und Datenrettung für PCs und Laptops.\n[b] Tanzakademie Swing: Tanzkurse von Walzer bis Cha-Cha-Cha für Anfänger.\n[c] Gesangsunterricht Cantabile: Professionelle Stimmbildung für Chor und Solisten.\n[d] Hundeschule Pfötchen: Welpenerziehung und Gehorsamstraining auf dem Trainingsplatz.\n[e] Malerbetrieb Farbenspiel: Maler- und Tapezierarbeiten für Wohnungen und Büros.\n[f] Umzugsdienst Blitz: Zuverlässige Möbeltransporte und Entrümpelung zu Festpreisen.\n[g] Bio-Hofladen Sonnenschein: Frisches Bio-Obst und Gemüse aus regionalem Anbau.\n[h] Autovermietung Rent-a-Car: Günstige Mietwagen und Kleinbusse für Wochenendausflüge.\n[i] Sprachenstudio Europa: Intensivkurse für Deutsch, Englisch und Spanisch.\n[j] Näh- und Änderungsatelier Fadenfein: Kleideränderungen und Maßanfertigungen."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_L_Q13",
+          "order": 13,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): 13. Ein junges Paar zieht in eine neue Wohnung und sucht professionelle Hilfe für den Möbeltransport.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q14",
+          "order": 14,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): 14. Ein Student hat Probleme mit dem Betriebssystem seines Computers und braucht Unterstützung.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q15",
+          "order": 15,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): 15. Eine Familie hat einen jungen Hund adoptiert und sucht eine qualifizierte Welpenschule.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): 16. Eine Dame sucht einen Chor, bei dem sie jeden Dienstagabend mitsingen kann.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): 17. Ein Herr möchte seine Lieblingsanzüge fachgerecht ändern und reparieren lassen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): 18. Ein Hausbesitzer möchte die Wände seines Wohnzimmers neu streichen lassen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): 19. Eine Angestellte möchte ihre Spanischkenntnisse für den Beruf in einem Abendkurs verbessern.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_lesen_p4",
+      "skill": "Lesen",
+      "title": "Teil 4: Leserbriefe (Facebook und soziale Medien)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Leserbriefe: Facebook und soziale Medien (S. 140)",
+        "content": "LESERBRIEFE ZUM THEMA: 'Sind soziale Netzwerke wie Facebook ein Gewinn für die Gesellschaft?' (S. 140)\n\n20. Sebastian (42, Bern): 'Nein. Durch soziale Medien entsteht eine ständige Scheinnormalität. Viele Menschen posten nur Urlaubsfotos, um Anerkennung zu bekommen.'\n21. Rahel (21, Klagenfurt): 'Ja! Für mich ist Facebook unverzichtbar, um mit Freunden vernetzt zu bleiben und Neuigkeiten über Konzerte und Uni-Gruppen zu erfahren.'\n22. Patrick (48, Lausanne): 'Nein. Ich beobachte bei Jugendlichen einen massiven Gruppendruck. Wer nicht mitmacht, fühlt sich ausgeschlossen.'\n23. Antonia (27, Rostock): 'Nein. Viele teilen viel zu viele private Details, ohne an Datenschutz und spätere Bewerbungen zu denken.'\n24. Nicki (35, Krems): 'Ja! Früher hatte man Freundebücher, heute hält man über Social Media Kontakt über Kontinente hinweg.'\n25. Olivia (16, Wuppertal): 'Ja! Wenn ich zu Hause bin, kann ich mich jederzeit mit Freundinnen austauschen, ohne stundenlang telefonieren zu müssen.'\n26. Giesela (44, Halle): 'Ja! Ich habe nach vielen Jahren alte Schulfreundinnen über Facebook wiedergefunden. Das war ein echtes Geschenk!'"
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_L_Q20",
+          "order": 20,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 20 – Sebastian (42, Bern)): Ist Sebastian für Facebook? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q21",
+          "order": 21,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 21 – Rahel (21, Klagenfurt)): Ist Rahel für Facebook? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q22",
+          "order": 22,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 22 – Patrick (48, Lausanne)): Ist Patrick für Facebook? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 23 – Antonia (27, Rostock)): Ist Antonia für Facebook? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 24 – Nicki (35, Krems)): Ist Nicki für Facebook? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 25 – Olivia (16, Wuppertal)): Ist Olivia cho Facebook? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T9_L_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 26 – Giesela (44, Halle)): Ist Giesela cho Facebook? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_lesen_p5",
+      "skill": "Lesen",
+      "title": "Teil 5: Benutzungsordnung (CORPUS FITNESS STUDIO)",
+      "durationMinutes": 13,
+      "totalQuestions": 4,
+      "stimulus": {
+        "type": "text",
+        "title": "Benutzungsordnung für das CORPUS FITNESS STUDIO (S. 141)",
+        "content": "BENUTZUNGSORDNUNG FÜR DAS CORPUS FITNESS STUDIO (S. 141)\n\n1. Mitgliedsausweis: Vor Trainingsbeginn sind Einzel- sowie Monatskarten den Trainern unaufgefordert vorzuzeigen. Bei Verlust des Ausweises wird für die Neuausstellung eine Bearbeitungsgebühr erhoben.\n2. Sportkleidung und Handtuchpflicht: Das Training ist ausschließlich in ordentlicher Sportkleidung und mit sauberen Hallenturnschuhen durchzuführen. Das Betreten der Trainingsfläche ohne geeignetes Schuhwerk ist untersagt. Bei allen Übungen auf Polstergeräten ist zwingend ein ausreichend großes Handtuch unterzulegen.\n3. Hygiene und Reinigung der Geräte: Nach Beendigung jeder Geräteübung sind die Griff- und Kontaktflächen mit den bereitgestellten Desinfektionstüchern sorgfältig abzuwischen.\n4. Haftung für Wertsachen: Die Benutzung des Studios erfolgt auf eigene Gefahr. Für den Verlust oder Diebstahl von mitgebrachten Wertgegenständen und Bargeld in den Umkleiden übernimmt der Verein keine Haftung."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_L_Q27",
+          "order": 27,
+          "part": 5,
+          "prompt": "Im Trainingsbereich ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "darf man auch ohne Schuhe trainieren."
+            },
+            {
+              "id": "b",
+              "text": "muss man die Griffe der Geräte nach der Benutzung sauber machen."
+            },
+            {
+              "id": "c",
+              "text": "gibt es an jedem Gerät ein großes Handtuch."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 141
+        },
+        {
+          "id": "OSD_B1_T9_L_Q28",
+          "order": 28,
+          "part": 5,
+          "prompt": "Die Benutzer müssen ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "selbst auf ihre Sachen aufpassen."
+            },
+            {
+              "id": "b",
+              "text": "ihr Auto auf den Stellplätzen parken."
+            },
+            {
+              "id": "c",
+              "text": "nicht alle gefährlichen Trainingsgeräte benutzen."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 141
+        },
+        {
+          "id": "OSD_B1_T9_L_Q29",
+          "order": 29,
+          "part": 5,
+          "prompt": "Vor dem Training ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "werden die Karten kontrolliert."
+            },
+            {
+              "id": "b",
+              "text": "kann der Verlust von Eintrittsausweisen gemeldet werden."
+            },
+            {
+              "id": "c",
+              "text": "geben die Trainer den Benutzern eine Monatskarte."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 141
+        },
+        {
+          "id": "OSD_B1_T9_L_Q30",
+          "order": 30,
+          "part": 5,
+          "prompt": "Für die Sportkleidung gilt:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Man darf nicht ohne Sportkleidung trainieren."
+            },
+            {
+              "id": "b",
+              "text": "T-Shirts muss man immer nach dem Training wechseln."
+            },
+            {
+              "id": "c",
+              "text": "Man soll keine Haut sehen können."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 141
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Teil 1: 5 Kurztexte (Alltag, Kaufhaus, Wetter, Freizeit)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Hörtexte Teil 1: 5 Durchsagen (S. 142)",
+        "audioUrl": "/audio/osd-b1/test-09-teil-1.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "AUDIO-TRANSKRIPTIONEN TEIL 1 (Aufgaben 1–10, S. 142):\n\n[Text 1] 'Achtung Kunden: In unserer Frischeabteilung bieten wir Ihnen heute frisches Obst zu Sonderpreisen an!'\n\n[Text 2] 'Fundbüro Kaufhaus: Ein verlorenes Mobiltelefon wurde an der Sammelkasse im 3. Stock abgegeben.'\n\n[Text 3] 'Wettervorhersage für Deutschland: Morgen steigen die Temperaturen auf bis zu 17 Grad.'\n\n[Text 4] 'Hallo Kathrin, hier ist Jonas! Zum Eislaufen gehst du am besten geradeaus und dann rechts.'\n\n[Text 5] 'Konzertankündigung: Sollte es am Abend regnen, findet das Open-Air-Konzert an einem anderen Ort statt.'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Text 1",
+            "timestampStart": 0,
+            "timestampEnd": 8,
+            "textDe": "Achtung Kunden: In unserer Frischeabteilung bieten wir Ihnen heute frisches Obst zu Sonderpreisen an!",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Text 1) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-2",
+            "roleSide": "Right",
+            "speakerName": "Text 2",
+            "timestampStart": 10,
+            "timestampEnd": 18,
+            "textDe": "Fundbüro Kaufhaus: Ein verlorenes Mobiltelefon wurde an der Sammelkasse im 3. Stock abgegeben.",
+            "textVi": "Bản dịch tham khảo đoạn 2 (Text 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-3",
+            "roleSide": "Left",
+            "speakerName": "Text 3",
+            "timestampStart": 20,
+            "timestampEnd": 28,
+            "textDe": "Wettervorhersage für Deutschland: Morgen steigen die Temperaturen auf bis zu 17 Grad.",
+            "textVi": "Bản dịch tham khảo đoạn 3 (Text 3) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Right",
+            "speakerName": "Text 4",
+            "timestampStart": 30,
+            "timestampEnd": 38,
+            "textDe": "Hallo Kathrin, hier ist Jonas! Zum Eislaufen gehst du am besten geradeaus und dann rechts.",
+            "textVi": "Bản dịch tham khảo đoạn 4 (Text 4) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-2",
+            "roleSide": "Left",
+            "speakerName": "Text 5",
+            "timestampStart": 40,
+            "timestampEnd": 48,
+            "textDe": "Konzertankündigung: Sollte es am Abend regnen, findet das Open-Air-Konzert an einem anderen Ort statt.",
+            "textVi": "Bản dịch tham khảo đoạn 5 (Text 5) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "In der Lebensmittelabteilung kann man etwas essen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Was ist heute im Angebot?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Wurst."
+            },
+            {
+              "id": "b",
+              "text": "Gemüse."
+            },
+            {
+              "id": "c",
+              "text": "Obst."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Es gibt Nokia-Handys im Angebot.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Wo hat man das Mobiltelefon gefunden?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Im Aufzug."
+            },
+            {
+              "id": "b",
+              "text": "An der Kasse."
+            },
+            {
+              "id": "c",
+              "text": "Im 3. Stock an der Sammelkasse."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Sie erfahren, wie das Wetter in Deutschland wird.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Die Temperatur in Deutschland wird höchstens ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "12° C."
+            },
+            {
+              "id": "b",
+              "text": "15° C."
+            },
+            {
+              "id": "c",
+              "text": "17° C."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Jonas kann nicht zum Eislaufen kommen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Wie soll Kathrin gehen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Links und rechts."
+            },
+            {
+              "id": "b",
+              "text": "Geradeaus und links."
+            },
+            {
+              "id": "c",
+              "text": "Geradeaus und rechts."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Es gibt eine Veranstaltung in Griechenland.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T9_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Wenn es regnet, ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "findet das Konzert nicht statt."
+            },
+            {
+              "id": "b",
+              "text": "findet das Konzert an einem anderen Ort statt."
+            },
+            {
+              "id": "c",
+              "text": "findet das Konzert an einem anderen Tag statt."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Führung im Mercedes-Benz-Museum Stuttgart",
+      "durationMinutes": 10,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Führung im Mercedes-Benz-Museum (S. 143)",
+        "audioUrl": "/audio/osd-b1/test-09-teil-2.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "AUDIO-TRANSKRIPTION TEIL 2: Führung im Mercedes-Benz-Museum Stuttgart (Aufgaben 11–15, S. 143)\n\n'Herzlich willkommen im Mercedes-Benz-Museum in Stuttgart-Untertürkheim! In unserem Museum präsentieren wir Ihnen über 125 Jahre Automobilgeschichte. Auf neun Ebenen können Sie 160 historische und moderne Fahrzeuge bewundern. Für den Rundgang stehen Ihnen zwei Wege zur Verfügung: der Mythos-Rundgang und die Kollektionen. Wenn Sie nach der Tour hungrig sind, unser Museumsrestaurant serviert warme Gerichte bis 18.30 Uhr.'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 2",
+            "timestampStart": 0,
+            "timestampEnd": 25,
+            "textDe": "Herzlich willkommen im Mercedes-Benz-Museum in Stuttgart-Untertürkheim! In unserem Museum präsentieren wir Ihnen über 125 Jahre Automobilgeschichte. Auf neun Ebenen können Sie 160 historische und moderne Fahrzeuge bewundern. Für den Rundgang stehen Ihnen zwei Wege zur Verfügung: der Mythos-Rundgang und die Kollektionen. Wenn Sie nach der Tour hungrig sind, unser Museumsrestaurant serviert warme Gerichte bis 18.30 Uhr.",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Wo werden die Autos produziert?",
+          "options": [
+            {
+              "id": "a",
+              "text": "In Stuttgart."
+            },
+            {
+              "id": "b",
+              "text": "In Untertürkheim."
+            },
+            {
+              "id": "c",
+              "text": "In Bremen."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 143
+        },
+        {
+          "id": "OSD_B1_T9_H_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Auf der Automobilführung erfährt man etwas über ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "die Geschichte der Firma."
+            },
+            {
+              "id": "b",
+              "text": "die spezielle Architektur des Museums."
+            },
+            {
+              "id": "c",
+              "text": "die Endmontage der Autos."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 143
+        },
+        {
+          "id": "OSD_B1_T9_H_Q13",
+          "order": 13,
+          "part": 2,
+          "prompt": "Wie viele Autos sind im Museum ausgestellt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "116."
+            },
+            {
+              "id": "b",
+              "text": "120."
+            },
+            {
+              "id": "c",
+              "text": "160."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 143
+        },
+        {
+          "id": "OSD_B1_T9_H_Q14",
+          "order": 14,
+          "part": 2,
+          "prompt": "Wie viele Möglichkeiten gibt es für den Rundgang?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Neun."
+            },
+            {
+              "id": "b",
+              "text": "Zwei."
+            },
+            {
+              "id": "c",
+              "text": "Fünf."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 143
+        },
+        {
+          "id": "OSD_B1_T9_H_Q15",
+          "order": 15,
+          "part": 2,
+          "prompt": "Bis um wie viel Uhr kann man etwas Warmes essen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bis um 18.30 Uhr."
+            },
+            {
+              "id": "b",
+              "text": "Bis um 19.00 Uhr."
+            },
+            {
+              "id": "c",
+              "text": "Bis um 18.00 Uhr."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 143
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_hoeren_p3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Gespräch an der Haltestelle über Geschwister (Ben und Eva)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Gespräch an der Haltestelle über Geschwister (S. 144)",
+        "audioUrl": "/audio/osd-b1/test-09-teil-3.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "AUDIO-TRANSKRIPTION TEIL 3: Gespräch an der Straßenbahnhaltestelle über Geschwister (Aufgaben 16–22, S. 144)\n\nBen und Eva unterhalten sich an der Haltestelle über ihre Familien und Geschwister. Eva trägt ein schickes T-Shirt, das sie aus Wien mitgebracht hat. Sie erzählt, dass ihre ältere Schwester dort studiert und sie sie gerne öfter sehen würde. Ben berichtet von seinem jüngeren Bruder, der eine Ausbildung als Mechatroniker macht und Motorräder liebt. Als Lehrling verdient er allerdings noch wenig Geld.",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 3",
+            "timestampStart": 0,
+            "timestampEnd": 28,
+            "textDe": "Ben und Eva unterhalten sich an der Haltestelle über ihre Familien und Geschwister. Eva trägt ein schickes T-Shirt, das sie aus Wien mitgebracht hat. Sie erzählt, dass ihre ältere Schwester dort studiert und sie sie gerne öfter sehen würde. Ben berichtet von seinem jüngeren Bruder, der eine Ausbildung als Mechatroniker macht und Motorräder liebt. Als Lehrling verdient er allerdings noch wenig Geld.",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 3) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_H_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Ben fährt zum Basketballtraining.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 144
+        },
+        {
+          "id": "OSD_B1_T9_H_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Das T-Shirt ist aus Wien.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 144
+        },
+        {
+          "id": "OSD_B1_T9_H_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Eva würde ihre Schwester gern öfter sehen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 144
+        },
+        {
+          "id": "OSD_B1_T9_H_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Ben und sein Bruder verstehen sich gut.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 144
+        },
+        {
+          "id": "OSD_B1_T9_H_Q20",
+          "order": 20,
+          "part": 3,
+          "prompt": "Ben muss morgens um halb sechs aufstehen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 144
+        },
+        {
+          "id": "OSD_B1_T9_H_Q21",
+          "order": 21,
+          "part": 3,
+          "prompt": "Bens Bruder findet eigentlich Autos interessanter als Motorräder.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 144
+        },
+        {
+          "id": "OSD_B1_T9_H_Q22",
+          "order": 22,
+          "part": 3,
+          "prompt": "Als Lehrling verdient Bens Bruder nicht viel Geld.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 144
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t9_hoeren_p4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiosendung 'All dä Guuggär' über Jugendgewalt",
+      "durationMinutes": 10,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiosendung 'All dä Guuggär' über Jugendgewalt (S. 145)",
+        "audioUrl": "/audio/osd-b1/test-09-teil-4.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "AUDIO-TRANSKRIPTION TEIL 4: Radiosendung 'All dä Guuggär' über Jugendgewalt (Aufgaben 23–30, S. 145)\n\nDer Moderator diskutiert mit Frau Gerber, Mutter von zwei Jugendlichen, und Frau Steiner, Direktorin einer Sekundarschule, über Ursachen und Prävention von Jugendkonflikten.",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 4",
+            "timestampStart": 0,
+            "timestampEnd": 10,
+            "textDe": "Der Moderator diskutiert mit Frau Gerber, Mutter von zwei Jugendlichen, und Frau Steiner, Direktorin einer Sekundarschule, über Ursachen und Prävention von Jugendkonflikten.",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 4) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T9_H_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "In der Schule hat Gewalt zugenommen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        },
+        {
+          "id": "OSD_B1_T9_H_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Fehlende Kontrolle von der Familie kann zu Gewalt führen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        },
+        {
+          "id": "OSD_B1_T9_H_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Ausländerkinder machen Probleme.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        },
+        {
+          "id": "OSD_B1_T9_H_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Durch die richtige Erziehung kann man mehr erreichen als durch Gesetze.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        },
+        {
+          "id": "OSD_B1_T9_H_Q27",
+          "order": 27,
+          "part": 4,
+          "prompt": "Sport kann sicher gegen Gewalt helfen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        },
+        {
+          "id": "OSD_B1_T9_H_Q28",
+          "order": 28,
+          "part": 4,
+          "prompt": "Das Gesetz unterscheidet zwischen verschiedenen alkoholischen Getränken.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        },
+        {
+          "id": "OSD_B1_T9_H_Q29",
+          "order": 29,
+          "part": 4,
+          "prompt": "Durch ein Verbot kann etwas noch attraktiver werden.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        },
+        {
+          "id": "OSD_B1_T9_H_Q30",
+          "order": 30,
+          "part": 4,
+          "prompt": "In der Schule sollten Kinder lernen, mit Konflikten umzugehen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Steiner"
+            },
+            {
+              "id": "c",
+              "text": "Frau Gerber"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 145
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T9_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 1 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q02",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 2 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 3 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q04",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 4 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 5 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q06",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 6 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q07",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 7 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 7 a."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q08",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 8 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 8 c."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q09",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 9 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 9 c."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q10",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 10 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 10 b."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q11",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 11 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 11 a."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q12",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 12 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 12 c."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q13",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 13 f",
+      "trapExplanationVi": "Khóa đáp án gốc: 13 f."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q14",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 14 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 14 a."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q15",
+      "correctOption": "d",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 15 d",
+      "trapExplanationVi": "Khóa đáp án gốc: 15 d."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q16",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 16 0",
+      "trapExplanationVi": "Không có thông báo phù hợp (0)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q17",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 17 j",
+      "trapExplanationVi": "Khóa đáp án gốc: 17 j."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q18",
+      "correctOption": "e",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 18 e",
+      "trapExplanationVi": "Khóa đáp án gốc: 18 e."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q19",
+      "correctOption": "i",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 19 i",
+      "trapExplanationVi": "Khóa đáp án gốc: 19 i."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q20",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 20 Nein",
+      "trapExplanationVi": "Sebastian phản đối (S. 140)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q21",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 21 Ja",
+      "trapExplanationVi": "Rahel ủng hộ (S. 140)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q22",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 22 Nein",
+      "trapExplanationVi": "Patrick phản đối (S. 140)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q23",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 23 Nein",
+      "trapExplanationVi": "Antonia phản đối (S. 140)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q24",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 24 Ja",
+      "trapExplanationVi": "Nicki ủng hộ (S. 140)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q25",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 25 Ja",
+      "trapExplanationVi": "Olivia ủng hộ (S. 140)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q26",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 26 Ja",
+      "trapExplanationVi": "Giesela ủng hộ (S. 140)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q27",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 27 b",
+      "trapExplanationVi": "CORPUS FITNESS: Griffe der Geräte reinigen (S. 141)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q28",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 28 a",
+      "trapExplanationVi": "Benutzer müssen selbst auf Sachen aufpassen (S. 141)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q29",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 29 a",
+      "trapExplanationVi": "Karten werden vor dem Training kontrolliert (S. 141)."
+    },
+    {
+      "questionId": "OSD_B1_T9_L_Q30",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Lesen 30 a",
+      "trapExplanationVi": "Man darf nicht ohne Sportkleidung trainieren (S. 141)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 1 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q02",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 2 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 c."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 3 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q04",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 4 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 c."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 5 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q06",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 6 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 c."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 7 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 7 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q08",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 8 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 8 c."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 9 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 9 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q10",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 10 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 10 b."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q11",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 11 b",
+      "trapExplanationVi": "Mercedes-Benz Autos in Untertürkheim (S. 143)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q12",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 12 a",
+      "trapExplanationVi": "Geschichte der Firma (S. 143)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q13",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 13 c",
+      "trapExplanationVi": "160 Autos ausgestellt (S. 143)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q14",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 14 b",
+      "trapExplanationVi": "Zwei Möglichkeiten für den Rundgang (S. 143)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q15",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 15 a",
+      "trapExplanationVi": "Warmes Essen bis 18.30 Uhr (S. 143)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q16",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 16 Falsch",
+      "trapExplanationVi": "Ben fährt nicht zum Basketballtraining (S. 144)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q17",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 17 Richtig",
+      "trapExplanationVi": "Das T-Shirt ist aus Wien (S. 144)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q18",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 18 Richtig",
+      "trapExplanationVi": "Eva würde ihre Schwester gern öfter sehen (S. 144)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 19 Falsch",
+      "trapExplanationVi": "Ben und sein Bruder streiten oft (S. 144)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q20",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 20 Falsch",
+      "trapExplanationVi": "Ben muss nicht um halb sechs aufstehen (S. 144)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q21",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 21 Falsch",
+      "trapExplanationVi": "Bens Bruder liebt Motorräder (S. 144)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q22",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 22 Richtig",
+      "trapExplanationVi": "Als Lehrling verdient er nicht viel (S. 144)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q23",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 23 b",
+      "trapExplanationVi": "Frau Steiner zur Zunahme von Konflikten (S. 145)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q24",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 24 b",
+      "trapExplanationVi": "Frau Steiner zur familiären Begleitung (S. 145)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q25",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 25 c",
+      "trapExplanationVi": "Frau Gerber zu Vorurteilen (S. 145)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q26",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 26 b",
+      "trapExplanationVi": "Frau Steiner zu Erziehung und Regeln (S. 145)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q27",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 27 c",
+      "trapExplanationVi": "Frau Gerber über Sport als Ventil (S. 145)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q28",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 28 a",
+      "trapExplanationVi": "Moderator zu gesetzlichen Regelungen (S. 145)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q29",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 29 b",
+      "trapExplanationVi": "Frau Steiner über Reiz des Verbotenen (S. 145)."
+    },
+    {
+      "questionId": "OSD_B1_T9_H_Q30",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 9: Hören 30 c",
+      "trapExplanationVi": "Frau Gerber über konstruktive Konfliktkultur (S. 145)."
+    }
+  ]
+}

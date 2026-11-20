@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@shd/config": "workspace:*",
+    "@shd/contracts": "workspace:*",
     "drizzle-orm": "0.38.3",
     "pg": "8.13.1"
   },
   "devDependencies": {
     "@types/pg": "8.11.10",
-    "drizzle-kit": "0.30.2"
+    "drizzle-kit": "0.30.2",
+    "@types/node": "^22.10.7",
+    "typescript": "~5.6.3",
+    "vitest": "^2.1.8"
   }
 }

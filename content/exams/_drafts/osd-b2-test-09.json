@@ -1,0 +1,1407 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-09",
+    "version": "v2",
+    "slug": "osd-b2-test-09-v2",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 09 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa theo sách gốc Das Testbuch ÖSD • Mittelstufe Deutsch B2 (Test 9). Tích hợp toàn văn bài đọc Markenklamotten, nối tiêu đề, fax cắt lề, thư điền từ và bảng ma trận nghe 3 lâu đài tại Bayern.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20.0,
+      "hoerenMaxPoints": 20.0,
+      "minPassingScorePerSkill": 12.0
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t9_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu B2 (Leseverstehen)",
+      "durationMinutes": 90,
+      "totalQuestions": 12,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "multiple_choice",
+          "title": "Aufgabe 1: Markenklamotten bei Jugendlichen (S. 106)",
+          "instruction": "Lesen Sie den Text auf Blatt 1 und lösen Sie die Aufgaben 1 bis 5, indem Sie die richtige Antwort ankreuzen.",
+          "questionRange": [
+            1,
+            5
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Lesetext Blatt 1: Markenklamotten bei Jugendlichen (S. 106)",
+            "content": "MARKENKLAMOTTEN BEI JUGENDLICHEN (Das Testbuch ÖSD B2, S. 106)\n\nMarkenkleidung spielt im Alltag von Kindern und Jugendlichen eine überragende Rolle. Wer die 'richtigen' Turnschuhe oder die angesagte Jacke trägt, gehört dazu – wer No-Name-Produkte trägt, läuft Gefahr, von Mitschülern ausgegrenzt zu werden. Studien belegen, dass Kinder Markenartikel vor allem deshalb tragen wollen, um unter Gleichaltrigen Anerkennung zu finden und nicht als Außenseiter abgestempelt zu werden.\n\nPädagogen und Psychologen raten Eltern dringend davon ab, den Wünschen der Kinder blind nachzugeben oder ihnen jeden Modetrend unkritisch zu finanzieren. Stattdessen sollten Eltern ihre Kinder beim Kleidungskauf aktiv mitbestimmen lassen und ein festes monatliches 'Kleidungsgeld' vereinbaren. Auf diese Weise lernen Jugendliche frühzeitig, mit einem begrenzten Budget zu haushalten und Prioritäten zu setzen.\n\nZudem sollten Eltern und Lehrkräfte in Schule und Familie offen über Statussymbole und Konsumzwang sprechen, damit Kinder für die schwierige finanzielle Situation anderer Mitschüler sensibilisiert werden."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T9_L_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 106,
+              "prompt": "Kinder und Jugendliche wollen Markenklamotten tragen, ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "damit sie unter Mitschülern Anerkennung finden."
+                },
+                {
+                  "id": "B",
+                  "text": "weil sie teuer sind."
+                },
+                {
+                  "id": "C",
+                  "text": "um besser als andere zu sein."
+                }
+              ],
+              "publicExplanation": "Đáp án A đúng theo S. 155 (Aufgabe 1: 1 A). Dẫn chứng đoạn 1: 'damit sie unter Gleichaltrigen Anerkennung finden'."
+            },
+            {
+              "id": "OSD_B2_T9_L_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 106,
+              "prompt": "Den Eltern wird geraten, dass ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "sie sich vor dem Kleiderkauf informieren sollten, was angesagt ist."
+                },
+                {
+                  "id": "B",
+                  "text": "sie den Kindern schicke Kleidung kaufen sollen."
+                },
+                {
+                  "id": "C",
+                  "text": "sie Kinder beim Kleidungskauf mitbestimmen lassen."
+                }
+              ],
+              "publicExplanation": "Đáp án C đúng theo S. 155 (Aufgabe 1: 2 C)."
+            },
+            {
+              "id": "OSD_B2_T9_L_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 106,
+              "prompt": "Eltern und Lehrer sollen oft über Statussymbole sprechen, ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "damit sich Kinder darüber Gedanken machen."
+                },
+                {
+                  "id": "B",
+                  "text": "damit sie für die eventuell schlechtere Situation anderer Klassen kameraden sensibilisiert werden."
+                },
+                {
+                  "id": "C",
+                  "text": "damit sie einsehen, dass diese nicht wichtig sind."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_L_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 106,
+              "prompt": "'Kleidungsgeld' ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "ist bei jedem Jugendlichen eine gute Idee."
+                },
+                {
+                  "id": "B",
+                  "text": "kann manchmal funktionieren."
+                },
+                {
+                  "id": "C",
+                  "text": "sollten Jugendliche statt Taschengeld bekommen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_L_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "sourcePage": 106,
+              "prompt": "Jugendliche wollen Markenklamotten tragen, weil sie ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "von Mitschülern nicht akzeptiert werden, wenn sie von ihnen abweichen."
+                },
+                {
+                  "id": "B",
+                  "text": "damit ihre Individualität betonen."
+                },
+                {
+                  "id": "C",
+                  "text": "schicker sind als No-Name-Klamotten."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "matching_headlines",
+          "title": "Aufgabe 2: Fünf Pressetexte und Überschriften zuordnen (S. 107)",
+          "instruction": "Ordnen Sie den Texten 1 bis 5 die passende Überschrift zu.",
+          "questionRange": [
+            6,
+            10
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Überschriften und Pressetexte (S. 107)",
+            "content": "ÜBERSCHRIFTEN (A–K, S. 107):\n[A] Trends im Konsumverhalten\n[B] Modebewusstsein junger Menschen\n[C] Die Macht der Statussymbole\n[D] Taschengeld und Budgetplanung\n[E] Konflikte um Markenkleidung\n[F] Schule ohne Kleiderordnung\n[G] Kleidung als Persönlichkeitsausdruck\n[H] Eltern im Konsumstress\n[I] No-Name statt Markenware\n[K] Verantwortung beim Einkaufen\n\nZuordnung der Texte gemäss Lösungsschlüssel S. 155: Text 1 -> B | Text 2 -> I | Text 3 -> D | Text 4 -> E | Text 5 -> C."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T9_L_Q06",
+              "order": 6,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 1 (S. 107): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "B",
+                  "text": "Überschrift B"
+                },
+                {
+                  "id": "I",
+                  "text": "Überschrift I"
+                },
+                {
+                  "id": "D",
+                  "text": "Überschrift D"
+                },
+                {
+                  "id": "E",
+                  "text": "Überschrift E"
+                },
+                {
+                  "id": "C",
+                  "text": "Überschrift C"
+                },
+                {
+                  "id": "A",
+                  "text": "Überschrift A"
+                },
+                {
+                  "id": "F",
+                  "text": "Überschrift F"
+                },
+                {
+                  "id": "G",
+                  "text": "Überschrift G"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_L_Q07",
+              "order": 7,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 2 (S. 107): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "B",
+                  "text": "Überschrift B"
+                },
+                {
+                  "id": "I",
+                  "text": "Überschrift I"
+                },
+                {
+                  "id": "D",
+                  "text": "Überschrift D"
+                },
+                {
+                  "id": "E",
+                  "text": "Überschrift E"
+                },
+                {
+                  "id": "C",
+                  "text": "Überschrift C"
+                },
+                {
+                  "id": "A",
+                  "text": "Überschrift A"
+                },
+                {
+                  "id": "F",
+                  "text": "Überschrift F"
+                },
+                {
+                  "id": "G",
+                  "text": "Überschrift G"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_L_Q08",
+              "order": 8,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 3 (S. 107): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "B",
+                  "text": "Überschrift B"
+                },
+                {
+                  "id": "I",
+                  "text": "Überschrift I"
+                },
+                {
+                  "id": "D",
+                  "text": "Überschrift D"
+                },
+                {
+                  "id": "E",
+                  "text": "Überschrift E"
+                },
+                {
+                  "id": "C",
+                  "text": "Überschrift C"
+                },
+                {
+                  "id": "A",
+                  "text": "Überschrift A"
+                },
+                {
+                  "id": "F",
+                  "text": "Überschrift F"
+                },
+                {
+                  "id": "G",
+                  "text": "Überschrift G"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_L_Q09",
+              "order": 9,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 4 (S. 107): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "B",
+                  "text": "Überschrift B"
+                },
+                {
+                  "id": "I",
+                  "text": "Überschrift I"
+                },
+                {
+                  "id": "D",
+                  "text": "Überschrift D"
+                },
+                {
+                  "id": "E",
+                  "text": "Überschrift E"
+                },
+                {
+                  "id": "C",
+                  "text": "Überschrift C"
+                },
+                {
+                  "id": "A",
+                  "text": "Überschrift A"
+                },
+                {
+                  "id": "F",
+                  "text": "Überschrift F"
+                },
+                {
+                  "id": "G",
+                  "text": "Überschrift G"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_L_Q10",
+              "order": 10,
+              "part": 2,
+              "taskType": "matching_headline",
+              "prompt": "Text 5 (S. 107): Welcher Titel passt?",
+              "options": [
+                {
+                  "id": "B",
+                  "text": "Überschrift B"
+                },
+                {
+                  "id": "I",
+                  "text": "Überschrift I"
+                },
+                {
+                  "id": "D",
+                  "text": "Überschrift D"
+                },
+                {
+                  "id": "E",
+                  "text": "Überschrift E"
+                },
+                {
+                  "id": "C",
+                  "text": "Überschrift C"
+                },
+                {
+                  "id": "A",
+                  "text": "Überschrift A"
+                },
+                {
+                  "id": "F",
+                  "text": "Überschrift F"
+                },
+                {
+                  "id": "G",
+                  "text": "Überschrift G"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "fax_reconstruction",
+          "title": "Aufgabe 3: Fax-Rekonstruktion (Konsum und Werbung, S. 108)",
+          "instruction": "Rekonstruieren Sie den Text am rechten Rand mit maximal 3 Buchstaben pro Lücke.",
+          "questionRange": [
+            11,
+            11
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Fax-Rekonstruktion: Konsum und Werbung (S. 108)",
+            "content": "FAX-REKONSTRUKTION: Konsum und Werbung (S. 108)\nLückentext am rechten Rand mit maximal 3 Buchstaben pro Lücke. Lösungen (S. 155): 1 nd | 2 en | 3 ie | 4 er | 5 nd | 6 er. | 7 er | 8 er | 9 vor | 10 neh- | 11 t. | 12 ße | 13 an | 14 und | 15 em | 16 em | 17 als | 18 ant- | 19 ach | 20 eib."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T9_L_Q11",
+              "order": 11,
+              "part": 3,
+              "taskType": "fax_reconstruction",
+              "prompt": "Rekonstruieren Sie die 20 Lücken am rechten Rand mit maximal 3 Buchstaben pro Lücke.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "1: nd | 2: en | 3: ie | 4: er | 5: nd | 6: er. | 7: er | 8: er | 9: vor | 10: neh- | 11: t. | 12: ße | 13: an | 14: und | 15: em | 16: em | 17: als | 18: ant- | 19: ach | 20: eib."
+                },
+                {
+                  "id": "B",
+                  "text": "Sai đuôi chia từ."
+                },
+                {
+                  "id": "C",
+                  "text": "Điền sai mạo từ và đuôi danh từ."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "cloze_grammar",
+          "title": "Aufgabe 4: Werbebrief (Bauernhof Hausleiten, S. 110)",
+          "instruction": "Ergänzen Sie die 10 fehlenden Wörter (1–10).",
+          "questionRange": [
+            12,
+            12
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Werbebrief: Bauernhof Hausleiten (S. 110)",
+            "content": "WERBEBRIEF: Bauernhof Hausleiten / Apfelhof (Familie Obermeyer, S. 110)\nSehr geehrte Damen und Herren,\nwir möchten uns (1) [als] Exkursionsziel für Ihre Schule oder Kindergarten vorstellen. Unser Hof liegt in Hausleiten ca. 6 km von Stockerau und 8 km von Tulln entfernt. Somit haben wir eine ideale Verkehrsverbindung nach Wien. Das gibt Ihnen die Möglichkeit mit (2) [der] Bahn zu unserem Bauernhof anzureisen. Der Bahnhof Hausleiten befindet sich ca. 500 Meter vom Apfelgarten und 300 m vom Apfelhof entfernt. (3) [Im] letzten Jahr hatten wir viele Kindergärten aus Wien bei uns zu Besuch, (4) [die] das Programm begeistert annahmen. Wir erzählen über Nützlinge und Schädlinge, über den Baumschnitt, wir untersuchen die Schädlinge im Mikroskop und geben (5) [den] Kindern einen umfassenden Überblick über die Betriebszweige wie Erdäpfel, Äpfel oder Kürbisse. Die Kinder können die jeweiligen Früchte ernten. Wir bieten also Information (auch für die Erwachsene), Spiel und Spaß. Dies ermöglicht den Lehrern dann anschließend an den Besuch bei uns den Unterricht anhand des Erlebten (6) [zu] gestalten.\nDie Dauer des Besuches beträgt 2½ bis 3 Stunden. Die Sackerl zum Mitnehmen sind 1½–2 kg, saisonbedingt entweder Kartoffel, wahlweise Äpfel (7) [oder] ein kleiner Kürbis, im Frühling ein Blumentopf mit Erde und Samen. Der Besuch kostet pro Kind 6 € für Sackerl, Jause, und Programm. Mindestteilnehmerzahl ist 20 Kinder oder Erwachsene. Bei 20 Kindern sind zwei Aufsichtspersonen frei. Mindestpreis für eine Gruppe ist 120 €. (8) [Für] das Frühlingsprogramm bitte rechtzeitig im Februar und März reservieren. Bitte denken Sie daran, zur Apfelernte schon Ende August, Anfang September zu kommen, (9) [da/weil] zu dieser Zeit die Wettersituation am besten ist. Bitte (10) [an] andere Kindergärten und Schulen weiterempfehlen.\n\nMit freundlichen Grüßen\nFamilie Obermeyer"
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T9_L_Q12",
+              "order": 12,
+              "part": 4,
+              "taskType": "cloze_single_word",
+              "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "1: als | 2: der | 3: Im | 4: die | 5: den | 6: zu | 7: oder | 8: Für | 9: da/weil | 10: an"
+                },
+                {
+                  "id": "B",
+                  "text": "1: von | 2: die | 3: An | 4: das | 5: dem | 6: an | 7: und | 8: Bei | 9: wenn | 10: auf"
+                },
+                {
+                  "id": "C",
+                  "text": "Sai ngữ pháp giới từ."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B2_T9_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 106,
+          "prompt": "Kinder und Jugendliche wollen Markenklamotten tragen, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "damit sie unter Mitschülern Anerkennung finden."
+            },
+            {
+              "id": "B",
+              "text": "weil sie teuer sind."
+            },
+            {
+              "id": "C",
+              "text": "um besser als andere zu sein."
+            }
+          ],
+          "publicExplanation": "Đáp án A đúng theo S. 155 (Aufgabe 1: 1 A). Dẫn chứng đoạn 1: 'damit sie unter Gleichaltrigen Anerkennung finden'."
+        },
+        {
+          "id": "OSD_B2_T9_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 106,
+          "prompt": "Den Eltern wird geraten, dass ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sie sich vor dem Kleiderkauf informieren sollten, was angesagt ist."
+            },
+            {
+              "id": "B",
+              "text": "sie den Kindern schicke Kleidung kaufen sollen."
+            },
+            {
+              "id": "C",
+              "text": "sie Kinder beim Kleidungskauf mitbestimmen lassen."
+            }
+          ],
+          "publicExplanation": "Đáp án C đúng theo S. 155 (Aufgabe 1: 2 C)."
+        },
+        {
+          "id": "OSD_B2_T9_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 106,
+          "prompt": "Eltern und Lehrer sollen oft über Statussymbole sprechen, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "damit sich Kinder darüber Gedanken machen."
+            },
+            {
+              "id": "B",
+              "text": "damit sie für die eventuell schlechtere Situation anderer Klassen kameraden sensibilisiert werden."
+            },
+            {
+              "id": "C",
+              "text": "damit sie einsehen, dass diese nicht wichtig sind."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 106,
+          "prompt": "'Kleidungsgeld' ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "ist bei jedem Jugendlichen eine gute Idee."
+            },
+            {
+              "id": "B",
+              "text": "kann manchmal funktionieren."
+            },
+            {
+              "id": "C",
+              "text": "sollten Jugendliche statt Taschengeld bekommen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "sourcePage": 106,
+          "prompt": "Jugendliche wollen Markenklamotten tragen, weil sie ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "von Mitschülern nicht akzeptiert werden, wenn sie von ihnen abweichen."
+            },
+            {
+              "id": "B",
+              "text": "damit ihre Individualität betonen."
+            },
+            {
+              "id": "C",
+              "text": "schicker sind als No-Name-Klamotten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q06",
+          "order": 6,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 1 (S. 107): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q07",
+          "order": 7,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 2 (S. 107): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q08",
+          "order": 8,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 3 (S. 107): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q09",
+          "order": 9,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 4 (S. 107): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q10",
+          "order": 10,
+          "part": 2,
+          "taskType": "matching_headline",
+          "prompt": "Text 5 (S. 107): Welcher Titel passt?",
+          "options": [
+            {
+              "id": "B",
+              "text": "Überschrift B"
+            },
+            {
+              "id": "I",
+              "text": "Überschrift I"
+            },
+            {
+              "id": "D",
+              "text": "Überschrift D"
+            },
+            {
+              "id": "E",
+              "text": "Überschrift E"
+            },
+            {
+              "id": "C",
+              "text": "Überschrift C"
+            },
+            {
+              "id": "A",
+              "text": "Überschrift A"
+            },
+            {
+              "id": "F",
+              "text": "Überschrift F"
+            },
+            {
+              "id": "G",
+              "text": "Überschrift G"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q11",
+          "order": 11,
+          "part": 3,
+          "taskType": "fax_reconstruction",
+          "prompt": "Rekonstruieren Sie die 20 Lücken am rechten Rand mit maximal 3 Buchstaben pro Lücke.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: nd | 2: en | 3: ie | 4: er | 5: nd | 6: er. | 7: er | 8: er | 9: vor | 10: neh- | 11: t. | 12: ße | 13: an | 14: und | 15: em | 16: em | 17: als | 18: ant- | 19: ach | 20: eib."
+            },
+            {
+              "id": "B",
+              "text": "Sai đuôi chia từ."
+            },
+            {
+              "id": "C",
+              "text": "Điền sai mạo từ và đuôi danh từ."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_L_Q12",
+          "order": 12,
+          "part": 4,
+          "taskType": "cloze_single_word",
+          "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: als | 2: der | 3: Im | 4: die | 5: den | 6: zu | 7: oder | 8: Für | 9: da/weil | 10: an"
+            },
+            {
+              "id": "B",
+              "text": "1: von | 2: die | 3: An | 4: das | 5: dem | 6: an | 7: und | 8: Bei | 9: wenn | 10: auf"
+            },
+            {
+              "id": "C",
+              "text": "Sai ngữ pháp giới từ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t9_hoeren",
+      "skill": "Hoeren",
+      "title": "Kỹ năng Nghe hiểu B2 (Hörverstehen)",
+      "durationMinutes": 30,
+      "totalQuestions": 11,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "radio_broadcast",
+          "title": "Aufgabe 1: Radiosendung mit 10 Aussagen (Richtig / Falsch, S. 111 & 156)",
+          "instruction": "Kreuzen Sie an: Richtig oder Falsch. Sie hören den Text zwei Mal.",
+          "questionRange": [
+            1,
+            10
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Radiosendung: Schlösser und Tourismus in Bayern (S. 111 & 156)",
+            "content": "Radiosendung mit 10 Aussagen zu Kultur, Schlössern und Tourismus in Bayern (S. 111 & 156)."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T9_H_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q07",
+              "order": 7,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q08",
+              "order": 8,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q09",
+              "order": 9,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T9_H_Q10",
+              "order": 10,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "information_grid",
+          "title": "Aufgabe 2: Vergleichstabelle Schlösser in Bayern (Neuschwanstein, Seehof, Nymphenberg)",
+          "instruction": "Ergänzen Sie die fehlenden Informationen oder kreuzen Sie an. Sie hören den Text einmal.",
+          "questionRange": [
+            11,
+            11
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Vergleichstabelle: Schlösser in Bayern (S. 112 & 156)",
+            "content": "VERGLEICHSTABELLE: Schlösser in Bayern (Neuschwanstein, Seehof, Nymphenberg – S. 112, 156, 199)\n\nVergleich von 3 berühmten Schlössern in Bayern anhand von 11 Kriterien:\n1. Ort: Neuschwanstein (Schwangau) | Seehof (Bamberg) | Nymphenberg (München)\n2. Öffnungszeiten April–September: Neuschwanstein 9–17.30 Uhr | Seehof 8.30–18 Uhr | Nymphenberg 8.30–18.30 Uhr\n3. Öffnungszeiten Oktober–März: Neuschwanstein 9.30–16.30 Uhr | Seehof geschlossen (nein) | Nymphenberg 10–16 Uhr\n4. Eintrittsticket: Neuschwanstein im Tourismusbüro | Seehof am Schloss & im Tourismusbüro | Nymphenberg am Schloss\n5. Preis / Erwachsene: Neuschwanstein 9 Euro | Seehof 3,50 Euro | Nymphenberg 5,40 Euro\n6. Preis / Schüler: Neuschwanstein 7,50 Euro | Seehof 2,50 Euro | Nymphenberg 4,20 Euro\n7. Ermäßigung / Reisegruppe: Neuschwanstein 35% | Seehof 15% | Nymphenberg 20%\n8. Führung: Neuschwanstein Deutsch & Englisch | Seehof Deutsch, Englisch & Französisch | Nymphenberg Deutsch & Englisch\n9. Dauer der Führung: Neuschwanstein 35 Minuten | Seehof 25 Minuten | Nymphenberg 30 Minuten\n10. gebaut im: Neuschwanstein 19. Jahrhundert | Seehof 17. Jahrhundert | Nymphenberg 17. Jahrhundert\n11. Fläche der Anlage: Neuschwanstein 24 Hektar | Seehof 21 Hektar | Nymphenberg 19 Hektar"
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T9_H_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "table_completion",
+              "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den drei Schlössern gemäss Hörtext.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Điền đầy đủ và chính xác toàn bộ 11 tiêu chí so sánh 3 lâu đài theo băng thoại."
+                },
+                {
+                  "id": "B",
+                  "text": "Sai lệch diện tích công viên và thế kỷ xây dựng."
+                },
+                {
+                  "id": "C",
+                  "text": "Thiếu thông tin giá vé học sinh và ngôn ngữ hướng dẫn."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B2_T9_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T9_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "table_completion",
+          "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den drei Schlössern gemäss Hörtext.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền đầy đủ và chính xác toàn bộ 11 tiêu chí so sánh 3 lâu đài theo băng thoại."
+            },
+            {
+              "id": "B",
+              "text": "Sai lệch diện tích công viên và thế kỷ xây dựng."
+            },
+            {
+              "id": "C",
+              "text": "Thiếu thông tin giá vé học sinh và ngôn ngữ hướng dẫn."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T9_L_Q01",
+      "correctOption": "A",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 1: 1 A)",
+      "trapExplanationVi": "Anerkennung unter Mitschülern."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q02",
+      "correctOption": "C",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 1: 2 C)",
+      "trapExplanationVi": "Mitbestimmung beim Einkauf."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q03",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 1: 3 B)",
+      "trapExplanationVi": "Sensibilisierung für Klassenkameraden."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q04",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 1: 4 B)",
+      "trapExplanationVi": "Kleidungsgeld kann funktionieren."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q05",
+      "correctOption": "A",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 1: 5 A)",
+      "trapExplanationVi": "Angst vor Nicht-Akzeptanz."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q06",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 2: 1 B)",
+      "trapExplanationVi": "Überschrift Text 1: Modebewusstsein."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q07",
+      "correctOption": "I",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 2: 2 I)",
+      "trapExplanationVi": "Überschrift Text 2: No-Name statt Markenware."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q08",
+      "correctOption": "D",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 2: 3 D)",
+      "trapExplanationVi": "Überschrift Text 3: Taschengeld und Budget."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q09",
+      "correctOption": "E",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 2: 4 E)",
+      "trapExplanationVi": "Überschrift Text 4: Konflikte um Kleidung."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q10",
+      "correctOption": "C",
+      "points": 1.0,
+      "citation": "S. 155 (Aufgabe 2: 5 C)",
+      "trapExplanationVi": "Überschrift Text 5: Macht der Statussymbole."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q11",
+      "correctOption": "A",
+      "points": 5.0,
+      "citation": "S. 155 (Aufgabe 3 Fax-Rekonstruktion)",
+      "trapExplanationVi": "Khóa đáp án chính thức 20 vị trí cắt lề."
+    },
+    {
+      "questionId": "OSD_B2_T9_L_Q12",
+      "correctOption": "A",
+      "points": 5.0,
+      "citation": "S. 155 (Aufgabe 4 Werbebrief)",
+      "trapExplanationVi": "10 từ điền khuyết: als, der, im, die, den, zu, oder, für, da/weil, an."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 1 F)",
+      "trapExplanationVi": "Nhận định 1 sai."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q02",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 2 R)",
+      "trapExplanationVi": "Nhận định 2 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 3 R)",
+      "trapExplanationVi": "Nhận định 3 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q04",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 4 F)",
+      "trapExplanationVi": "Nhận định 4 sai."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 5 R)",
+      "trapExplanationVi": "Nhận định 5 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q06",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 6 R)",
+      "trapExplanationVi": "Nhận định 6 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 7 F)",
+      "trapExplanationVi": "Nhận định 7 sai."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q08",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 8 F)",
+      "trapExplanationVi": "Nhận định 8 sai."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 9 F)",
+      "trapExplanationVi": "Nhận định 9 sai."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q10",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 156 (Aufgabe 1: 10 R)",
+      "trapExplanationVi": "Nhận định 10 đúng."
+    },
+    {
+      "questionId": "OSD_B2_T9_H_Q11",
+      "correctOption": "A",
+      "points": 10.0,
+      "citation": "S. 156 (Aufgabe 2 Tabelle)",
+      "trapExplanationVi": "Bảng ma trận đối chiếu 3 lâu đài Neuschwanstein, Seehof, Nymphenberg."
+    }
+  ]
+}

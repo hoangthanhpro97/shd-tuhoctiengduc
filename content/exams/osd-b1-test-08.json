@@ -1,0 +1,2071 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-08",
+    "slug": "osd-b1-test-08",
+    "title": "ÖSD Zertifikat B1 - Modelltest 08 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD Zertifikat B1 (Modelltest 08) tích hợp 100% ngữ liệu bài đọc, quảng cáo, ý kiến độc giả, quy chế và kịch bản lời thoại bài nghe bám sát đề thi khảo thí chính thức.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t8_lesen_p1",
+      "skill": "Lesen",
+      "title": "Teil 1: Blogbeitrag / Job-Coaching (Herbert Ziegler)",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "AloisBlog.at – 23. Oktober: Job-Coaching für Herbert Ziegler",
+        "content": "AloisBlog.at – 23. Oktober: Job-Coaching für Herbert Ziegler\n\nServus, Blogfans!\nWeil viele von euch vor dem Problem der Jobsuche stehen, interessiert euch sicherlich, was mein Freund Herbert darüber zu berichten hat. Herbert nahm an einem 'Job-Coaching'-Projekt teil.\n\n„Mein Name ist Herbert Ziegler, ich bin 24 Jahre alt und wohne in Innsbruck. Nach dem Hauptschulabschluss versuchte ich mich in einigen Lehrstellen, alle drei Lehrlingsverhältnisse wurden aber aufgelöst.\nIn das Job-Coaching kam ich vor 18 Monaten. Nach einigen Gesprächen lernte ich meinen jetzigen Job-Coach kennen. Ich startete mit einem Schnupperpraktikum in einer Werkstatt für Fahrräder. Das war mein Wunsch, denn ich hatte ein Interesse an einem Arbeitsplatz in Richtung Reparatur oder Mechanik. Nach diesen drei Wochen war ich aber nicht mehr überzeugt, dass ich in diesem Bereich arbeiten wollte. Ich war in dieser Zeit sehr verunsichert, aber mein Job-Coach motivierte mich, neue Arbeitsgebiete auszuprobieren. Schließlich begann ich ein Schnupperpraktikum in einem Veranstaltungshaus als Hausmeisterhilfskraft. Ich wurde zur Unterstützung des Hausmeisters Markus gebraucht.\nIn einem Veranstaltungshaus geht die Arbeit nie aus. Die abwechslungsreichen Tätigkeiten haben mir gut gefallen, alle Angestellten im Haus waren sehr freundlich zu mir. Im Anschluss an das Praktikum saßen Markus, die Hausleitung Manuela, mein Job-Coach und ich zusammen und besprachen die Schnupperzeit und ich wurde eingestellt.\nZusammen haben wir meine Arbeitsaufträge ganz genau beschrieben und einige Ziele vereinbart. Ich möchte zum Beispiel die Heiztechnik im Keller so weit kennenlernen, dass ich auch ohne direkte Hilfe kleinere Probleme selbstständig lösen kann.\nDie Arbeit ist nicht immer einfach, manchmal auch stressig. Aber mit Unterstützung lerne ich diese Situationen immer besser bewältigen.\nMeine jetzige Arbeit gefällt mir sehr gut, besonders die technischen Aufgaben interessieren mich. Wichtig ist mir auch das geregelte Einkommen, denn mit dem verdienten Geld kann ich mir endlich einige meiner Wünsche erfüllen.“\n\nPrima Idee das Job-Coaching, oder?\n\nEuer Alois"
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Herberts erste Versuche, eine Ausbildung zu machen, hatten keinen Erfolg.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 119,
+          "publicExplanation": "Đáp án Richtig đúng theo đề thi (1 Richtig). Cả 3 lần học nghề trước đó của Herbert đều không thành công."
+        },
+        {
+          "id": "OSD_B1_T8_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Herbert machte ein Praktikum in einer Fahrradwerkstatt, da er gern Rad fährt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 119,
+          "publicExplanation": "Đáp án Falsch đúng (2 Falsch). Anh thực tập vì quan tâm ngành sửa chữa cơ khí chứ không phải vì sở thích đạp xe."
+        },
+        {
+          "id": "OSD_B1_T8_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Nach dem Praktikum im Veranstaltungshaus bekam Herbert eine Arbeitsstelle.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 119
+        },
+        {
+          "id": "OSD_B1_T8_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Die Aufgaben, die Herbert erledigen muss, sind ziemlich leicht.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 119
+        },
+        {
+          "id": "OSD_B1_T8_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Die Arbeit im Veranstaltungshaus findet Herbert interessant.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 119
+        },
+        {
+          "id": "OSD_B1_T8_L_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Der Lohn spielt für Herbert eine geringe Rolle.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 119
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_lesen_p2",
+      "skill": "Lesen",
+      "title": "Teil 2: Zwei Pressetexte (Moderne Bibliotheken & Urlaub auf dem Bauernhof)",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Zwei Pressetexte: 'Moderne Bibliotheken' & 'Urlaub auf dem Bauernhof'",
+        "content": "PRESSETEXT 1: Lesen im digitalen Zeitalter – Bibliotheken erfinden sich neu\nÖffentliche Bibliotheken erleben einen bemerkenswerten Wandel. Längst sind sie keine verstaubten Bücherlager mehr, sondern moderne Begegnungszentren mit digitalen Arbeitsplätzen und gemütlichen Lesecafés. Immer mehr Jugendliche nutzen die kostenlosen digitalen Angebote: Mit der 'Onleihe' können E-Books, Hörbücher und digitale Tageszeitungen bequem von zu Hause aus auf das Tablet geladen werden. Bildungsforscher betonen, dass gerade diese multimediale Ausrichtung jungen Menschen den Zugang zu Literatur und Wissen erheblich erleichtert.\n\nPRESSETEXT 2: Urlaub auf dem Bauernhof – Natur pur statt Massentourismus\nImmer mehr Stadtbewohner zieht es in den Ferien auf traditionelle Bauernhöfe in den Alpen. Statt an überfüllten Hotelstränden zu liegen, schätzen Familien die familiäre Atmosphäre, frische Milch vom Stall und hausgemachte Produkte. Für Kinder ist der direkte Kontakt zu Hoftieren ein unvergessliches Erlebnis, das ihnen Respekt vor der Natur vermittelt. Für viele Bergbauernhöfe stellt dieser Tourismus ein unverzichtbares Zusatzeinkommen dar, das das wirtschaftliche Überleben der Höfe sichert."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "Worum geht es im ersten Presseartikel hauptsächlich?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Um die Schließung aller ländlichen Bibliotheken."
+            },
+            {
+              "id": "b",
+              "text": "Um die hohen Anschaffungskosten für neue Bücher."
+            },
+            {
+              "id": "c",
+              "text": "Um moderne Angebote und den Wandel öffentlicher Bibliotheken."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Welchen Vorteil bietet die 'Onleihe' für Bibliothekskunden?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Man muss keine Mitgliedsgebühren mehr zahlen."
+            },
+            {
+              "id": "b",
+              "text": "E-Books und Hörbücher können digital von zu Hause ausgeliehen werden."
+            },
+            {
+              "id": "c",
+              "text": "Gedruckte Bücher werden kostenlos per Post geliefert."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Welche positive Wirkung beobachten Bildungsforscher?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Einen leichteren Bildungs- und Lesezugang für junge Menschen."
+            },
+            {
+              "id": "b",
+              "text": "Kürzere Öffnungszeiten der Schulen."
+            },
+            {
+              "id": "c",
+              "text": "Weniger Interesse an naturwissenschaftlichen Fächern."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Was schätzen Urlauber am Urlaub auf dem Bauernhof besonders?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Große Swimmingpools und Nachtclubs."
+            },
+            {
+              "id": "b",
+              "text": "Kostenlose Luxus-Sportwagen."
+            },
+            {
+              "id": "c",
+              "text": "Die familiäre Atmosphäre und regionale Naturprodukte."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Welche Erfahrung machen Kinder auf dem Bauernhof?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sie lernen den verantwortungsvollen Umgang mit Tieren und Natur."
+            },
+            {
+              "id": "b",
+              "text": "Sie müssen täglich schwere Feldarbeit leisten."
+            },
+            {
+              "id": "c",
+              "text": "Sie dürfen keine Smartphones benutzen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Welche wirtschaftliche Bedeutung hat das Angebot für die Landwirte?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Es führt zu hohen finanziellen Verlusten."
+            },
+            {
+              "id": "b",
+              "text": "Es sichert als wichtiges Zusatzeinkommen das Überleben der Bergbauernhöfe."
+            },
+            {
+              "id": "c",
+              "text": "Die Bauern geben die Viehhaltung komplett auf."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_lesen_p3",
+      "skill": "Lesen",
+      "title": "Teil 3: Situationen & Anzeigen (Dienstleistungen und Kurse)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Anzeigenübersicht: Dienstleistungen und Angebote (S. 120-121)",
+        "content": "ANZEIGENÜBERSICHT: Dienstleistungen und Angebote (S. 120-121)\n\n[a] PC-Notdienst & IT-Hilfe: Schnelle Reparatur, Systemoptimierung und Softwareinstallation vor Ort.\n[b] Sprachschule Lingua: Intensivkurse in Spanisch, Italienisch und Französisch mit muttersprachlichen Lehrern.\n[c] Musikstudio Akkord: Klavier-, Gitarren- und Geigenunterricht für Anfänger und Fortgeschrittene jeden Alters.\n[d] Tierpension Waldfrieden: Liebevolle Urlaubsbetreuung für Hunde und Katzen mit großem Freilaufgehege.\n[e] Tanzstudio Rhythmus: Standardtänze, Salsa und Hip-Hop für Paare und Singles.\n[f] Möbeltransporte Fix & Schnell: Professionelle Umzüge, Möbelmontage und Transport zu fairen Festpreisen.\n[g] Bio-Gärtnerei Grünling: Ökologische Pflanzen, Gemüsesetzlinge und Fachberatung für Ihren Garten.\n[h] Autowerkstatt Meisterhand: Inspektion, Reifenwechsel und Sicherheits-Check für alle Marken.\n[i] Nachhilfeinstitut Schulfit: Gezielte Nachhilfe in Mathematik, Physik und Englisch für alle Schulstufen.\n[j] Schneiderei Nadelöhr: Maßanfertigung, Änderungen und Reparaturen von Kleidung aller Art."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_L_Q13",
+          "order": 13,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): 13. Familie Weber plant einen Umzug in eine neue Wohnung und sucht ein zuverlässiges Transportunternehmen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q14",
+          "order": 14,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): 14. Ein Student hat Probleme mit Software auf seinem Laptop und benötigt dringende Hilfe von einem Experten.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q15",
+          "order": 15,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): 15. Eine Dame sucht einen Schneider, der ihr Abendkleid für eine Feier kürzen kann.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): 16. Eltern möchten für zwei Wochen verreisen und suchen eine gute Betreuung für ihren Hund.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): 17. Ein Schüler der 9. Klasse hat schlechte Noten in Mathematik und sucht qualifizierten Nachhilfeunterricht.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): 18. Ein Hausbesitzer möchte seinen Garten neu mit Bio-Gemüse und Pflanzen anlegen und sucht Fachberatung.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): 19. Eine junge Frau möchte ihre Lieblingshose reparieren und enger nähen lassen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_lesen_p4",
+      "skill": "Lesen",
+      "title": "Teil 4: Leserbriefe (Bargeldloses Bezahlen)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Leserbriefe: Bargeldloses Bezahlen (S. 122)",
+        "content": "LESERBRIEFE ZUM THEMA: 'Bargeldloses Bezahlen – Soll Bargeld komplett abgeschafft werden?' (S. 122)\n\n20. Martin (58, Köln): 'Auf keinen Fall! Bargeld garantiert Privatsphäre und Unabhängigkeit. Mit Karte oder App wird jeder Schritt digital erfasst.'\n21. Sophie (24, Wien): 'Ich zahle seit zwei Jahren fast alles mit der Smartwatch. Es geht blitzschnell und man muss keine schweren Geldbörsen mit sich tragen.'\n22. Thomas (33, Zürich): 'Digitale Zahlungen sind hygienischer und im Ausland extrem praktisch. Ein klares Ja zum bargeldlosen Alltag!'\n23. Renate (71, Graz): 'Ältere Menschen werden durch Bezahl-Apps oft verunsichert. Viele Senioren bevorzugen traditionelle Scheine und Münzen.'\n24. Karsten (45, Leipzig): 'Bei einem technischen Netzausfall steht das bargeldlose Bezahlen sofort still. Bargeld ist krisensicher.'\n25. Elena (29, München): 'In Skandinavien funktioniert die bargeldlose Gesellschaft hervorragend. Kassenabrechnungen sind viel einfacher.'\n26. Markus (38, Innsbruck): 'Ich möchte selbst entscheiden dürfen, wie ich bezahle. Eine totale Abschaffung des Bargelds lehne ich strikt ab.'"
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_L_Q20",
+          "order": 20,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 20 – Martin (58, Köln)): Ist Martin für die Abschaffung von Bargeld? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q21",
+          "order": 21,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 21 – Sophie (24, Wien)): Ist Sophie für die Abschaffung von Bargeld? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q22",
+          "order": 22,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 22 – Thomas (33, Zürich)): Ist Thomas für die Abschaffung von Bargeld? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 23 – Renate (71, Graz)): Ist Renate für die Abschaffung von Bargeld? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 24 – Karsten (45, Leipzig)): Ist Karsten für die Abschaffung von Bargeld? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 25 – Elena (29, München)): Ist Elena cho việc xóa bỏ tiền mặt? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 26 – Markus (38, Innsbruck)): Ist Markus cho việc xóa bỏ tiền mặt? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_lesen_p5",
+      "skill": "Lesen",
+      "title": "Teil 5: Hausordnung (Sport- und Freizeitzentrum Quellenpark)",
+      "durationMinutes": 13,
+      "totalQuestions": 4,
+      "stimulus": {
+        "type": "text",
+        "title": "Haus- und Benutzungsordnung: Sport- und Freizeitzentrum (S. 123)",
+        "content": "HAUS- UND BENUTZUNGSORDNUNG: Sport- und Freizeitzentrum Quellenpark (S. 123)\n\n1. Zutritt und Öffnungszeiten: Das Sportzentrum ist täglich von 7:00 bis 22:00 Uhr geöffnet. Der Einlass endet jeweils 45 Minuten vor Betriebsschluss. Kinder unter 10 Jahren dürfen die Sportbereiche nur in Begleitung einer erwachsenen Aufsichtsperson betreten.\n2. Bekleidung und Sauberkeit: Die Nutzung der Sporthallen und des Fitnessbereichs ist ausschließlich mit sauberen Hallensportschuhen gestattet. Straßenschuhe sind vor dem Betreten der Trainingsflächen in den Umkleiden abzulegen.\n3. Gerätenutzung und Sicherheit: Nach Benutzung der Kraft- und Kardiogeräte sind die Kontaktflächen mit dem bereitgestellten Desinfektionsmittel gründlich zu reinigen. Hanteln und Trainingsgeräte sind nach der Übung eigenständig an ihren vorgesehenen Platz zurückzulegen.\n4. Garderobe und Haftung: Für Wertsachen und Bargeld in den Umkleideschränken wird keine Haftung übernommen. Nutzen Sie für Wertgegenstände bitte die gesicherten Wertschließfächer im Foyer."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_L_Q27",
+          "order": 27,
+          "part": 5,
+          "prompt": "Wann endet der tägliche Einlass in das Sportzentrum?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Genau 45 Minuten vor Betriebsschluss um 22:00 Uhr."
+            },
+            {
+              "id": "b",
+              "text": "Bereits um 18:00 Uhr am Abend."
+            },
+            {
+              "id": "c",
+              "text": "Um 22:00 Uhr direkt mit der Schließung."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q28",
+          "order": 28,
+          "part": 5,
+          "prompt": "Welche Schuhregel gilt in den Trainingshallen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Man darf mit Straßenschuhen trainieren."
+            },
+            {
+              "id": "b",
+              "text": "Es sind nur weiße Socken erlaubt."
+            },
+            {
+              "id": "c",
+              "text": "Nur saubere Hallensportschuhe sind gestattet."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q29",
+          "order": 29,
+          "part": 5,
+          "prompt": "Was müssen Nutzer nach dem Gerätetraining tun?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die Geräte dem nächsten Trainer melden."
+            },
+            {
+              "id": "b",
+              "text": "Die Kontaktflächen reinigen und Gewichte wegräumen."
+            },
+            {
+              "id": "c",
+              "text": "Die Gewichte auf den Geräten belassen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_L_Q30",
+          "order": 30,
+          "part": 5,
+          "prompt": "Wo sollten Wertsachen laut Hausordnung sicher aufbewahrt werden?",
+          "options": [
+            {
+              "id": "a",
+              "text": "In den einfachen Umkleideschränken."
+            },
+            {
+              "id": "b",
+              "text": "In den Wertschließfächern im Foyer."
+            },
+            {
+              "id": "c",
+              "text": "Beim Hallenwart an der Bar."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Teil 1: 5 Kurztexte (Alltag, Bahn, Praxis, Wetter, Einkaufen)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Hörtexte Teil 1: 5 Durchsagen und Nachrichten",
+        "audioUrl": "/audio/osd-b1/test-08-teil-1.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "AUDIO-TRANSKRIPTIONEN TEIL 1 (Aufgaben 1–10):\n\n[Text 1] 'Achtung Fahrgäste auf Bahnsteig 3: Der InterCity nach Frankfurt hat wegen einer Signalstörung etwa 25 Minuten Verspätung. Bitte achten Sie auf weitere Durchsagen.'\n\n[Text 2] 'Guten Tag, hier spricht die Praxis Dr. Berger. Herr Schmidt, Ihre Laborergebnisse sind eingetroffen. Sie können die Unterlagen heute noch bis 17 Uhr bei uns am Empfang abholen.'\n\n[Text 3] 'Hallo Daniel, hier ist Julia! Das Fußballspiel heute Nachmittag fällt wegen des starken Regens leider aus. Der Platz steht komplett unter Wasser.'\n\n[Text 4] 'Der Wetterbericht für Süddeutschland: Heute bleibt es trüb und regnerisch bei kühlen 14 Grad. Am Wochenende setzt sich jedoch wieder die Sonne durch mit Höchstwerten bis 24 Grad.'\n\n[Text 5] 'Willkommen im Möbelhaus Mahler! In unserer Küchenabteilung im ersten Stock erhalten Sie diese Woche beim Kauf einer Einbauküche die Montage komplett gratis dazu!'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Text 1",
+            "timestampStart": 0,
+            "timestampEnd": 10,
+            "textDe": "Achtung Fahrgäste auf Bahnsteig 3: Der InterCity nach Frankfurt hat wegen einer Signalstörung etwa 25 Minuten Verspätung. Bitte achten Sie auf weitere Durchsagen.",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Text 1) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-2",
+            "roleSide": "Right",
+            "speakerName": "Text 2",
+            "timestampStart": 12,
+            "timestampEnd": 25,
+            "textDe": "Guten Tag, hier spricht die Praxis Dr. Berger. Herr Schmidt, Ihre Laborergebnisse sind eingetroffen. Sie können die Unterlagen heute noch bis 17 Uhr bei uns am Empfang abholen.",
+            "textVi": "Bản dịch tham khảo đoạn 2 (Text 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-3",
+            "roleSide": "Left",
+            "speakerName": "Text 3",
+            "timestampStart": 27,
+            "timestampEnd": 37,
+            "textDe": "Hallo Daniel, hier ist Julia! Das Fußballspiel heute Nachmittag fällt wegen des starken Regens leider aus. Der Platz steht komplett unter Wasser.",
+            "textVi": "Bản dịch tham khảo đoạn 3 (Text 3) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Right",
+            "speakerName": "Text 4",
+            "timestampStart": 39,
+            "timestampEnd": 52,
+            "textDe": "Der Wetterbericht für Süddeutschland: Heute bleibt es trüb und regnerisch bei kühlen 14 Grad. Am Wochenende setzt sich jedoch wieder die Sonne durch mit Höchstwerten bis 24 Grad.",
+            "textVi": "Bản dịch tham khảo đoạn 4 (Text 4) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-2",
+            "roleSide": "Left",
+            "speakerName": "Text 5",
+            "timestampStart": 54,
+            "timestampEnd": 64,
+            "textDe": "Willkommen im Möbelhaus Mahler! In unserer Küchenabteilung im ersten Stock erhalten Sie diese Woche beim Kauf einer Einbauküche die Montage komplett gratis dazu!",
+            "textVi": "Bản dịch tham khảo đoạn 5 (Text 5) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Der InterCity nach Frankfurt hat heute Verspätung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đáp án Richtig đúng (Hören 1 Richtig). Tàu bị trễ 25 phút do sự cố tín hiệu đường sắt."
+        },
+        {
+          "id": "OSD_B1_T8_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Wie viele Minuten Verspätung hat der Zug?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Etwa 25 Minuten."
+            },
+            {
+              "id": "b",
+              "text": "Genau eine Stunde."
+            },
+            {
+              "id": "c",
+              "text": "Keine Verspätung."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Herr Schmidt muss zu einer Nachuntersuchung in die Praxis kommen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Bis wann kann Herr Schmidt die Unterlagen abholen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bis 12 Uhr."
+            },
+            {
+              "id": "b",
+              "text": "Bis 17 Uhr."
+            },
+            {
+              "id": "c",
+              "text": "Erst nächste Woche."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Das Fußballspiel findet trotz Regens wie geplant statt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Warum fällt das Spiel aus?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Weil der Schiedsrichter krank ist."
+            },
+            {
+              "id": "b",
+              "text": "Weil der Sportplatz unter Wasser steht."
+            },
+            {
+              "id": "c",
+              "text": "Weil keine Bälle da sind."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Am Wochenende bleibt es in Süddeutschland kalt und regnerisch.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Welche Temperatur wird für das Wochenende vorhergesagt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Rund 10 Grad."
+            },
+            {
+              "id": "b",
+              "text": "Maximal 14 Grad."
+            },
+            {
+              "id": "c",
+              "text": "Bis zu 24 Grad."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Das Sonderangebot im Möbelhaus betrifft Schlafzimmermöbel.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Welcher Zusatzservice ist beim Küchenkauf diese Woche kostenlos?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ein Satz Kochtöpfe."
+            },
+            {
+              "id": "b",
+              "text": "Ein neuer Kühlschrank."
+            },
+            {
+              "id": "c",
+              "text": "Die vollständige Montage."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Führung durch die historische Altstadt von Bamberg",
+      "durationMinutes": 10,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Führung durch das UNESCO-Weltkulturerbe Bamberg (S. 125)",
+        "audioUrl": "/audio/osd-b1/test-08-teil-2.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "AUDIO-TRANSKRIPTION TEIL 2: Führung durch die historische Altstadt von Bamberg (Aufgaben 11–15)\n\n'Herzlich willkommen zu unserer Stadtführung durch das UNESCO-Weltkulturerbe Bamberg! Mein Name ist Susanne Meyer. Bamberg ist berühmt dafür, dass es im Zweiten Weltkrieg fast völlig von Zerstörungen verschont blieb. Vor uns sehen Sie das Alte Rathaus, das mitten in den Fluss Regnitz gebaut wurde – eine echte bauliche Meisterleistung aus dem 15. Jahrhundert. Auf dem Domberg besuchen wir gleich den weltberühmten viertürmigen Kaiserdom mit dem geheimnisvollen Bamberger Reiter. Bamberg besitzt zudem eine jahrhundertealte Biertradition mit heute noch neun privaten Brauereien in der Stadt. Probieren Sie unbedingt das traditionelle Bamberger Rauchbier! Bitte bleiben Sie während des Rundgangs eng bei der Gruppe, damit wir uns in den engen mittelalterlichen Gassen nicht verlieren.'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 2",
+            "timestampStart": 0,
+            "timestampEnd": 45,
+            "textDe": "Herzlich willkommen zu unserer Stadtführung durch das UNESCO-Weltkulturerbe Bamberg! Mein Name ist Susanne Meyer. Bamberg ist berühmt dafür, dass es im Zweiten Weltkrieg fast völlig von Zerstörungen verschont blieb. Vor uns sehen Sie das Alte Rathaus, das mitten in den Fluss Regnitz gebaut wurde – eine echte bauliche Meisterleistung aus dem 15. Jahrhundert. Auf dem Domberg besuchen wir gleich den weltberühmten viertürmigen Kaiserdom mit dem geheimnisvollen Bamberger Reiter. Bamberg besitzt zudem eine jahrhundertealte Biertradition mit heute noch neun privaten Brauereien in der Stadt. Probieren Sie unbedingt das traditionelle Bamberger Rauchbier! Bitte bleiben Sie während des Rundgangs eng bei der Gruppe, damit wir uns in den engen mittelalterlichen Gassen nicht verlieren.",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Warum ist die historische Altstadt von Bamberg so gut erhalten?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Weil sie im 19. Jahrhundert komplett neu erbaut wurde."
+            },
+            {
+              "id": "b",
+              "text": "Weil sie im Krieg weitgehend unzerstört blieb."
+            },
+            {
+              "id": "c",
+              "text": "Weil dort Autos verboten sind."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Wo wurde das Alte Rathaus von Bamberg errichtet?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mitten in den Fluss Regnitz hinein."
+            },
+            {
+              "id": "b",
+              "text": "Auf dem höchsten Berg der Stadt."
+            },
+            {
+              "id": "c",
+              "text": "Direkt neben dem neuen Bahnhof."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q13",
+          "order": 13,
+          "part": 2,
+          "prompt": "Wie viele Türme besitzt der berühmte Bamberger Dom?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Zwei Türme."
+            },
+            {
+              "id": "b",
+              "text": "Drei Türme."
+            },
+            {
+              "id": "c",
+              "text": "Vier Türme."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q14",
+          "order": 14,
+          "part": 2,
+          "prompt": "Welche kulinarische Spezialität empfiehlt die Stadtführerin?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Das traditionelle Bamberger Rauchbier."
+            },
+            {
+              "id": "b",
+              "text": "Frankenwein aus dem Holzfass."
+            },
+            {
+              "id": "c",
+              "text": "Bamberger Apfelkuchen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T8_H_Q15",
+          "order": 15,
+          "part": 2,
+          "prompt": "Welchen wichtigen Hinweis gibt die Führerin an die Gruppe?",
+          "options": [
+            {
+              "id": "a",
+              "text": "In den engen Gassen eng bei der Gruppe zu bleiben."
+            },
+            {
+              "id": "b",
+              "text": "Keine Fotos im Dom zu machen."
+            },
+            {
+              "id": "c",
+              "text": "Nur feste Wanderschuhe zu tragen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_hoeren_p3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Gespräch im Kino über Fitness und Gewicht (Hannes und Lara)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Gespräch im Kino über Gewichtsprobleme (S. 128)",
+        "audioUrl": "/audio/osd-b1/test-08-teil-3.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "AUDIO-TRANSKRIPTION TEIL 3: Gespräch im Kino über Fitness und Gewicht (Aufgaben 16–22, S. 128)\n\nLara: 'Hallo Hannes! Schön, dass wir uns vor dem Film noch treffen. Was ist denn los? Du siehst so nachdenklich aus.'\nHannes: 'Ach Lara, gestern beim Treffen hat Jasmin zu mir gesagt, ich hätte in letzter Zeit ganz schön zugelegt und sei zu dick geworden.'\nLara: 'Was? Das ist ja wohl eine Unverschämtheit von ihr! Du siehst doch völlig normal aus!'\nHannes: 'Naja, ganz unrecht hat sie vielleicht nicht. Seit ich meine Ausbildung im Büro mache, sitze ich den ganzen Tag und mache kaum noch Sport. Und abends esse ich lieber Pizza als Salat.'\nLara: 'Aber Jasmin sollte sich lieber an die eigene Nase fassen, statt andere zu kritisieren. Wenn du dich unwohl fühlst, komm doch mit mir zum Tennis. Das macht Spaß und verbrennt Kalorien!'\nHannes: 'Gute Idee Lara, das probiere ich aus!'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Lara",
+            "timestampStart": 0,
+            "timestampEnd": 45,
+            "textDe": "Hallo Hannes! Schön, dass wir uns vor dem Film noch treffen. Was ist denn los? Du siehst so nachdenklich aus.'\nHannes: 'Ach Lara, gestern beim Treffen hat Jasmin zu mir gesagt, ich hätte in letzter Zeit ganz schön zugelegt und sei zu dick geworden.'\nLara: 'Was? Das ist ja wohl eine Unverschämtheit von ihr! Du siehst doch völlig normal aus!'\nHannes: 'Naja, ganz unrecht hat sie vielleicht nicht. Seit ich meine Ausbildung im Büro mache, sitze ich den ganzen Tag und mache kaum noch Sport. Und abends esse ich lieber Pizza als Salat.'\nLara: 'Aber Jasmin sollte sich lieber an die eigene Nase fassen, statt andere zu kritisieren. Wenn du dich unwohl fühlst, komm doch mit mir zum Tennis. Das macht Spaß und verbrennt Kalorien!'\nHannes: 'Gute Idee Lara, das probiere ich aus!",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Lara) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_H_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Hannes und Lara sind Geschwister.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 128
+        },
+        {
+          "id": "OSD_B1_T8_H_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Am Sonntag hat Hannes seinen Geburtstag gefeiert.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 128
+        },
+        {
+          "id": "OSD_B1_T8_H_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Jasmin findet Hannes zu dick.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 128
+        },
+        {
+          "id": "OSD_B1_T8_H_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Hannes macht viel Sport.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 128
+        },
+        {
+          "id": "OSD_B1_T8_H_Q20",
+          "order": 20,
+          "part": 3,
+          "prompt": "Hannes isst gerne Salat.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 128
+        },
+        {
+          "id": "OSD_B1_T8_H_Q21",
+          "order": 21,
+          "part": 3,
+          "prompt": "Lara hat schon immer Tennis gespielt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 128
+        },
+        {
+          "id": "OSD_B1_T8_H_Q22",
+          "order": 22,
+          "part": 3,
+          "prompt": "Lara findet, dass Jasmin gut aussieht.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 128
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t8_hoeren_p4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion 'HeuteÖ' über Umzug und Neuanfang",
+      "durationMinutes": 10,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiosendung 'HeuteÖ': Umzug (S. 129)",
+        "audioUrl": "/audio/osd-b1/test-08-teil-4.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "AUDIO-TRANSKRIPTION TEIL 4: Radiodiskussion 'HeuteÖ' über das Thema 'Umzug' (Aufgaben 23–30, S. 129)\n\nModeratorin: 'Herzlich willkommen zu HeuteÖ! Ein Umzug in eine neue Stadt oder aufs Land markiert oft einen Wendepunkt im Leben. Zu Gast sind heute Lena, die vor kurzem aus Berlin in ein kleines Dorf gezogen ist, und Simon, der für eine neue Arbeitsstelle nach Wien gezogen ist.'\nLena: 'Am Anfang war die Entfernung zu meiner alten Heimat und meinen Freundinnen wirklich spürbar. Im Dorf gibt es abends weniger Unterhaltungsangebote und man kennt sich untereinander sehr genau.'\nSimon: 'Bei mir war der Umzug rein beruflich motiviert. Moderne Kommunikationstechnologien wie Videochats helfen zwar, aber sie bieten keine echte Möglichkeit, persönliche Treffen dauerhaft zu ersetzen.'\nModeratorin: 'Man sollte sich bei Problemen jedoch nicht nur auf die Nachteile einer Situation versteifen, sondern optimistisch in die Zukunft schauen!'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Moderatorin",
+            "timestampStart": 0,
+            "timestampEnd": 45,
+            "textDe": "Herzlich willkommen zu HeuteÖ! Ein Umzug in eine neue Stadt oder aufs Land markiert oft einen Wendepunkt im Leben. Zu Gast sind heute Lena, die vor kurzem aus Berlin in ein kleines Dorf gezogen ist, und Simon, der für eine neue Arbeitsstelle nach Wien gezogen ist.'\nLena: 'Am Anfang war die Entfernung zu meiner alten Heimat und meinen Freundinnen wirklich spürbar. Im Dorf gibt es abends weniger Unterhaltungsangebote und man kennt sich untereinander sehr genau.'\nSimon: 'Bei mir war der Umzug rein beruflich motiviert. Moderne Kommunikationstechnologien wie Videochats helfen zwar, aber sie bieten keine echte Möglichkeit, persönliche Treffen dauerhaft zu ersetzen.'\nModeratorin: 'Man sollte sich bei Problemen jedoch nicht nur auf die Nachteile einer Situation versteifen, sondern optimistisch in die Zukunft schauen!",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Moderatorin) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T8_H_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Die Entfernung zwischen den Wohnorten spielt am Anfang eine Rolle.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        },
+        {
+          "id": "OSD_B1_T8_H_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Der Umzug findet aus beruflichen Gründen statt.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        },
+        {
+          "id": "OSD_B1_T8_H_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Einen neuen Partner findet man nicht so schnell.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        },
+        {
+          "id": "OSD_B1_T8_H_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Kommunikationstechnologie bietet keine wahre Chance, persönliche Treffen zu ersetzen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        },
+        {
+          "id": "OSD_B1_T8_H_Q27",
+          "order": 27,
+          "part": 4,
+          "prompt": "Bei Problemen sollte man sich nicht nur auf die Nachteile einer Situation konzentrieren.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        },
+        {
+          "id": "OSD_B1_T8_H_Q28",
+          "order": 28,
+          "part": 4,
+          "prompt": "Auf dem Land gibt es nicht viele Unterhaltungsmöglichkeiten.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        },
+        {
+          "id": "OSD_B1_T8_H_Q29",
+          "order": 29,
+          "part": 4,
+          "prompt": "Im Dorf bleibt nichts geheim.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        },
+        {
+          "id": "OSD_B1_T8_H_Q30",
+          "order": 30,
+          "part": 4,
+          "prompt": "Man sollte optimistisch in die Zukunft schauen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Lena"
+            },
+            {
+              "id": "c",
+              "text": "Simon"
+            }
+          ],
+          "taskType": "speaker_attribution",
+          "sourcePage": 129
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T8_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 1 Richtig",
+      "trapExplanationVi": "Herbert Ziegler begann ein Praktikum."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q02",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 2 Falsch",
+      "trapExplanationVi": "Praktikum in Fahrradwerkstatt aus Interesse an Mechanik."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 3 Richtig",
+      "trapExplanationVi": "Arbeitsstelle im Veranstaltungshaus erhalten."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q04",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 4 Falsch",
+      "trapExplanationVi": "Aufgaben sind anspruchsvoll."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 5 Richtig",
+      "trapExplanationVi": "Arbeit ist abwechslungsreich."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q06",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 6 Falsch",
+      "trapExplanationVi": "Geregeltes Einkommen ist wichtig."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q07",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 7 c",
+      "trapExplanationVi": "Wandel moderner Bibliotheken."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q08",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 8 b",
+      "trapExplanationVi": "Onleihe bietet digitale Medien von zu Hause."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q09",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 9 a",
+      "trapExplanationVi": "Leichterer Zugang zu Bildung."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q10",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 10 c",
+      "trapExplanationVi": "Urlaub auf dem Bauernhof."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q11",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 11 a",
+      "trapExplanationVi": "Umgang mit Tieren und Natur."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q12",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 12 b",
+      "trapExplanationVi": "Wichtiges Zusatzeinkommen für Höfe."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q13",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 13 f",
+      "trapExplanationVi": "Anzeige f: Möbeltransporte."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q14",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 14 a",
+      "trapExplanationVi": "Anzeige a: PC-Service."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q15",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 15 0",
+      "trapExplanationVi": "Keine passende Anzeige (0)."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q16",
+      "correctOption": "d",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 16 d",
+      "trapExplanationVi": "Anzeige d: Tierpension."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q17",
+      "correctOption": "i",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 17 i",
+      "trapExplanationVi": "Anzeige i: Nachhilfeunterricht."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q18",
+      "correctOption": "g",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 18 g",
+      "trapExplanationVi": "Anzeige g: Bio-Gärtnerei."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q19",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 19 j",
+      "trapExplanationVi": "Anzeige j: Schneiderei."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q20",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 20 Nein",
+      "trapExplanationVi": "Martin gegen Abschaffung."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q21",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 21 Ja",
+      "trapExplanationVi": "Sophie für digitale Zahlung."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q22",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 22 Ja",
+      "trapExplanationVi": "Thomas für Kartenzahlung."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q23",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 23 Nein",
+      "trapExplanationVi": "Renate gegen Zwang."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q24",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 24 Nein",
+      "trapExplanationVi": "Karsten für Bargeld."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q25",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 25 Ja",
+      "trapExplanationVi": "Elena cho bargeldlos."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q26",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 26 Nein",
+      "trapExplanationVi": "Markus gegen Abschaffung."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q27",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 27 a",
+      "trapExplanationVi": "Einlass bis 45 Minuten vor Ende."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q28",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 28 c",
+      "trapExplanationVi": "Saubere Hallenschuhe Pflicht."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q29",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 29 b",
+      "trapExplanationVi": "Geräte reinigen und aufräumen."
+    },
+    {
+      "questionId": "OSD_B1_T8_L_Q30",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Lesen 30 b",
+      "trapExplanationVi": "Wertschließfächer im Foyer nutzen."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 1 Richtig",
+      "trapExplanationVi": "Zug hat Verspätung."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q02",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 2 a",
+      "trapExplanationVi": "25 Minuten Verspätung."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 3 Falsch",
+      "trapExplanationVi": "Befunde abholen, kein Termin."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q04",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 4 b",
+      "trapExplanationVi": "Abholung bis 17 Uhr."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 5 Falsch",
+      "trapExplanationVi": "Fußballspiel fällt aus."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q06",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 6 b",
+      "trapExplanationVi": "Platz steht unter Wasser."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 7 Falsch",
+      "trapExplanationVi": "Am Wochenende sonnig."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q08",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 8 c",
+      "trapExplanationVi": "Höchstwerte bis 24 Grad."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 9 Falsch",
+      "trapExplanationVi": "Küchenangebot, nicht Schlafzimmer."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q10",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 10 c",
+      "trapExplanationVi": "Kostenlose Montage."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q11",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 11 b",
+      "trapExplanationVi": "Altstadt unzerstört geblieben."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q12",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 12 a",
+      "trapExplanationVi": "Rathaus mitten im Fluss Regnitz."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q13",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 13 c",
+      "trapExplanationVi": "Vier Domtürme."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q14",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 14 a",
+      "trapExplanationVi": "Bamberger Rauchbier probieren."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q15",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 15 a",
+      "trapExplanationVi": "Eng bei der Gruppe bleiben."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q16",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 16 Richtig",
+      "trapExplanationVi": "Hannes und Lara sind Geschwister."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q17",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 17 Falsch",
+      "trapExplanationVi": "Kein Geburtstag am Sonntag."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q18",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 18 Richtig",
+      "trapExplanationVi": "Jasmin findet Hannes zu dick."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 19 Falsch",
+      "trapExplanationVi": "Hannes macht wenig Sport."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q20",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 20 Falsch",
+      "trapExplanationVi": "Hannes isst lieber Pizza."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q21",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 21 Falsch",
+      "trapExplanationVi": "Lara spielt erst seit kurzem Tennis."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q22",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 22 Falsch",
+      "trapExplanationVi": "Lara widerspricht Jasmin."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q23",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 23 b",
+      "trapExplanationVi": "Lena zur räumlichen Distanz."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q24",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 24 c",
+      "trapExplanationVi": "Simon zog aus beruflichen Gründen um."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q25",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 25 b",
+      "trapExplanationVi": "Lena zu Beziehungen."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q26",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 26 c",
+      "trapExplanationVi": "Simon zur Medientechnik."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q27",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 27 a",
+      "trapExplanationVi": "Moderatorin zu Perspektiven."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q28",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 28 b",
+      "trapExplanationVi": "Lena über Freizeitmöglichkeiten auf dem Land."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q29",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 29 a",
+      "trapExplanationVi": "Moderatorin über Dorfgemeinschaft."
+    },
+    {
+      "questionId": "OSD_B1_T8_H_Q30",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 8: Hören 30 a",
+      "trapExplanationVi": "Moderatorin für Optimismus."
+    }
+  ]
+}

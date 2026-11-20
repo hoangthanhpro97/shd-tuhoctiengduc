@@ -1,0 +1,12 @@
+{
+  "brand": "SHD Tự học tiếng Đức",
+  "tagline": "Học tiếng Đức từng bước, dùng được mỗi ngày.",
+  "hero": { "eyebrow": "Miễn phí để bắt đầu", "title": "Tự học tiếng Đức với", "highlight": "ÖSD & Goethe Online-Test", "description": "Luyện tập ngắn gọn, xem lại tiến bộ và chọn đúng kỹ năng cần cải thiện. Nội dung minh họa giúp bạn làm quen với nhịp bài thi.", "primary": "Làm thử đề miễn phí", "secondary": "Xem lộ trình A1–C1" },
+  "features": [
+    ["Đề mô phỏng Lesen và Hören", "Làm quen cấu trúc bài đọc và bài nghe theo trình độ.", "BookOpen"],
+    ["Chép chính tả (Diktat)", "Nghe từng đoạn ngắn, viết lại và tự kiểm tra.", "AudioLines"],
+    ["Lời giải chi tiết có tiếng Việt", "Xem cách hiểu câu hỏi và từ vựng quan trọng.", "Lightbulb"],
+    ["Bài mẫu Schreiben", "Tham khảo cách triển khai ý cho các dạng bài viết.", "PenLine"]
+  ],
+  "resume": { "title": "Tiếp tục đề B1 số 02", "description": "Bạn có một phiên làm bài dở. Tiếp tục từ câu 08, không mất tiến độ." }
+}

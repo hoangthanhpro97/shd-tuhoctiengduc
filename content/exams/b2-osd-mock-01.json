@@ -1,0 +1,422 @@
+{
+  "examMetadata": {
+    "examId": "b2-osd-mock-01",
+    "slug": "b2-osd-mock-01",
+    "title": "ÖSD Zertifikat B2 - Đề Thi Mô Phỏng Số 01",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi mô phỏng định dạng khảo thí ÖSD Zertifikat B2 (Mittelstufe Deutsch) phục vụ mục đích tự học và kiểm định năng lực tại SHD Education.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu B2 (Leseverstehen)",
+      "durationMinutes": 60,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "Die Wiederentdeckung der Reparatur – Eine Gegenbewegung zur Wegwerfgesellschaft",
+        "content": "In einer Zeit, in der elektronische Haushaltsgeräte und Smartphones nach nur wenigen Jahren defekt sind und oft durch Neugeräte ersetzt werden, formiert sich zunehmend zivilgesellschaftlicher Widerstand. Sogenannte Reparier-Cafés erleben in Deutschland, Österreich und der Schweiz einen beachtlichen Zulauf. Bürgerinnen und Bürger treffen sich dort ehrenamtlich, um defekte Kaffeemaschinen, Toaster oder Fahrräder gemeinsam wieder funktionstüchtig zu machen. Im Vordergrund steht dabei nicht der primäre finanzielle Vorteil, sondern der bewusste und schonende Umgang mit wertvollen Ressourcen, die Müllvermeidung und der generationenübergreifende Wissensaustausch.\n\nKritiker und Verbraucherschützer weisen jedoch darauf hin, dass viele Hersteller moderner Konsumgüter den Reparaturprozess gezielt erschweren. Durch Spezialschrauben, fest verklebte Akkus und das bewusste Zurückhalten bezahlbarer Original-Ersatzteile wird eine fachgerechte Instandsetzung für Laien wie auch für freie Werkstätten oft technisch unmöglich oder wirtschaftlich unrentabel gemacht. Hier setzt die europäische Gesetzgebungsinitiative für ein umfassendes 'Recht auf Reparatur' an. Sie fordert, dass Hersteller gesetzlich verpflichtet werden, standardisierte Ersatzteile und verständliche Reparaturanleitungen über einen Zeitraum von mindestens zehn Jahren verbindlich bereitzustellen.\n\nAus soziologischer und ökologischer Sicht stellen diese Initiativen einen entscheidenden Bewusstseinswandel dar. Reparieren ist nicht länger ein Zeichen von Armut, sondern ein wichtiges und zukunftsfähiges Element eines nachhaltigen Lebensstils."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Teil 1: Reparier-Cafés entstanden vor allem aus der Idee heraus,...",
+          "options": [
+            {
+              "id": "A",
+              "text": "defekte Geräte wesentlich billiger als professionelle Handwerker zu reparieren."
+            },
+            {
+              "id": "B",
+              "text": "gemeinsam technisches Wissen zu teilen und natürliche Ressourcen zu schonen."
+            },
+            {
+              "id": "C",
+              "text": "arbeitslosen Handwerkern und Technikern eine bezahlte Beschäftigung zu bieten."
+            }
+          ],
+          "publicExplanation": "Đáp án B chính xác vì đoạn 1 nêu rõ: 'Im Vordergrund steht dabei nicht der primäre finanzielle Vorteil, sondern der bewusste und schonende Umgang mit wertvollen Ressourcen... und der generationenübergreifende Wissensaustausch'."
+        },
+        {
+          "id": "OSD_B2_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Teil 1: Die Hersteller moderner elektronischer Geräte werden im Text dafür kritisiert, dass...",
+          "options": [
+            {
+              "id": "A",
+              "text": "ihre Produkte so konstruiert sind, dass man Gehäuse und Bauteile kaum öffnen kann."
+            },
+            {
+              "id": "B",
+              "text": "die Verkaufspreise für Neugeräte in den letzten Jahren drastisch gesunken sind."
+            },
+            {
+              "id": "C",
+              "text": "die beigelegten Bedienungsanleitungen für Laien unverständlich formuliert sind."
+            }
+          ],
+          "publicExplanation": "Đáp án A chính xác vì bài viết chỉ trích việc nhà sản xuất dùng 'Spezialschrauben, fest verklebte Akkus', làm cho thiết bị gần như không thể tháo mở."
+        },
+        {
+          "id": "OSD_B2_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Teil 1: Das im Text erwähnte 'Recht auf Reparatur' fordert vom Gesetzgeber vor allem,...",
+          "options": [
+            {
+              "id": "A",
+              "text": "die vollkommen kostenlose Rücknahme alter Haushaltsgroßgeräte durch Händler."
+            },
+            {
+              "id": "B",
+              "text": "die garantierte Verfügbarkeit von Ersatzteilen und Anleitungen über viele Jahre."
+            },
+            {
+              "id": "C",
+              "text": "eine gesetzliche zehnjährige Garantiezeit für alle neu gekauften Elektroartikel."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Teil 1: Aus soziologischer Sicht stärken ehrenamtliche Reparatur-Initiativen...",
+          "options": [
+            {
+              "id": "A",
+              "text": "das Vertrauen der Bevölkerung in staatliche Umwelt- und Eichbehörden."
+            },
+            {
+              "id": "B",
+              "text": "den sozialen Zusammenhalt und den Dialog zwischen verschiedenen Generationen."
+            },
+            {
+              "id": "C",
+              "text": "den aggressiven Preiswettbewerb im lokalen Elektronikeinzelhandel."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Teil 1: Welches Gesamtfazit zieht der Autor bezüglich der Reparaturkultur?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sie bleibt eine kurzfristige Modeerscheinung weniger idealistischer Bürger."
+            },
+            {
+              "id": "B",
+              "text": "Sie hat ohne drastische Steuerstrafen gegen Konzerne keine reelle Zukunft."
+            },
+            {
+              "id": "C",
+              "text": "Sie ist ein wesentlicher Schritt auf dem Weg zu einem nachhaltigen Lebensstil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_hoeren_aufgabe_1_aufgabe_1",
+      "skill": "Hoeren",
+      "title": "Aufgabe 1: Radiointerview: Kreislaufwirtschaft und das 'Recht auf Reparatur' in Europa",
+      "durationMinutes": 12,
+      "totalQuestions": 2,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiointerview: Kreislaufwirtschaft und das 'Recht auf Reparatur' in Europa",
+        "audioUrl": "/audio/osd-b2/test-01-aufgabe-1.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "dialogueTranscript": [
+          {
+            "speakerId": "spk_mod",
+            "roleSide": "Left",
+            "speakerName": "Moderatorin",
+            "timestampStart": 0,
+            "timestampEnd": 6.8,
+            "textDe": "Herzlich willkommen zu unserem Ö1-Wissenschaftsmagazin. Heute sprechen wir mit Umweltökonom Dr. Thomas Berg über nachhaltigen Konsum und die europäische Kreislaufwirtschaft.",
+            "textVi": "Nhiệt liệt chào mừng quý thính giả đến với tạp chí khoa học Ö1. Hôm nay chúng ta trò chuyện với nhà kinh tế môi trường TS. Thomas Berg về tiêu dùng bền vững và kinh tế tuần hoàn châu Âu."
+          },
+          {
+            "speakerId": "spk_exp",
+            "roleSide": "Right",
+            "speakerName": "Dr. Thomas Berg",
+            "timestampStart": 7.1,
+            "timestampEnd": 16.5,
+            "textDe": "Guten Tag. Für Verbraucher liegt der entscheidende Vorteil einer echten Kreislaufwirtschaft darin, dass Produkte von Anfang an auf Langlebigkeit, Modularität und Reparierbarkeit konstruiert werden.",
+            "textVi": "Xin chào. Đối với người tiêu dùng, ưu thế quyết định của một nền kinh tế tuần hoàn thực thụ nằm ở chỗ các sản phẩm ngay từ đầu được thiết kế hướng tới độ bền, tính mô-đun và khả năng dễ sửa chữa."
+          },
+          {
+            "speakerId": "spk_mod",
+            "roleSide": "Left",
+            "speakerName": "Moderatorin",
+            "timestampStart": 16.9,
+            "timestampEnd": 23.4,
+            "textDe": "Dennoch erleben wir täglich, dass Reparaturen oft teurer sind als der Neukauf. Welche rechtlichen Rahmenbedingungen fordern Sie daher von der EU-Kommission?",
+            "textVi": "Tuy nhiên hàng ngày chúng ta đều thấy chi phí sửa chữa nhiều khi đắt hơn cả mua mới. Vậy ông đề xuất khuôn khổ pháp lý nào từ Ủy ban Châu Âu?"
+          },
+          {
+            "speakerId": "spk_exp",
+            "roleSide": "Right",
+            "speakerName": "Dr. Thomas Berg",
+            "timestampStart": 23.8,
+            "timestampEnd": 35.2,
+            "textDe": "Wir fordern ein verbindliches, einklagbares 'Recht auf Reparatur'. Hersteller müssen verpflichtet werden, Ersatzteile und Diagnosesoftware über mindestens zehn Jahre zu fairen, regulierten Preisen anzubieten.",
+            "textVi": "Chúng tôi yêu cầu ban hành một 'Quyền được sửa chữa' mang tính ràng buộc pháp lý. Các nhà sản xuất phải có trách nhiệm cung cấp linh kiện thay thế và phần mềm chẩn đoán trong ít nhất 10 năm với mức giá công bằng, được quản lý."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Teil 1: Welcher Vorteil einer Kreislaufwirtschaft steht für Konsumenten laut Dr. Berg im Vordergrund?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Produkte werden von Beginn an auf Langlebigkeit und einfache Reparierbarkeit ausgelegt."
+            },
+            {
+              "id": "B",
+              "text": "Verbraucher erhalten nach einem Jahr automatisch ein kostenloses Nachfolgemodell."
+            },
+            {
+              "id": "C",
+              "text": "Die Rohstoffkosten für die verarbeitende Industrie sinken drastisch."
+            }
+          ],
+          "publicExplanation": "Đáp án A chính xác theo lời của TS. Berg: 'Produkte von Anfang an auf Langlebigkeit, Modularität und Reparierbarkeit konstruiert werden'."
+        },
+        {
+          "id": "OSD_B2_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Teil 1: Was fordert der Experte ausdrücklich von der EU-Politik?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ein einklagbares 'Recht auf Reparatur' mit bezahlbaren Ersatzteilen über viele Jahre."
+            },
+            {
+              "id": "B",
+              "text": "Ein sofortiges Verbot aller elektronischen Haushaltsgeräte aus Kunststoff."
+            },
+            {
+              "id": "C",
+              "text": "Die staatliche Schließung unrentabler privater Reparaturbetriebe."
+            }
+          ],
+          "publicExplanation": "Đáp án A chính xác: Diễn giả nhấn mạnh yêu cầu một đạo luật bắt buộc ('einklagbares Recht auf Reparatur') đảm bảo cung cấp linh kiện với giá hợp lý trong tối thiểu 10 năm."
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_hoeren_aufgabe_1_aufgabe_2",
+      "skill": "Hoeren",
+      "title": "Aufgabe 2: Gespräch / Vergleichstabelle (Hörverstehen B2)",
+      "durationMinutes": 12,
+      "totalQuestions": 3,
+      "stimulus": {
+        "type": "audio",
+        "title": "Aufgabe 2: Gespräch / Vergleichstabelle (Hörverstehen B2)",
+        "audioUrl": "/audio/osd-b2/test-01-aufgabe-2.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_H_Q03",
+          "order": 3,
+          "part": 2,
+          "prompt": "Teil 2: Thema Fassadenbegrünung in Großstädten. Welcher Kühleffekt wird im Vortrag wissenschaftlich belegt?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Eine messbare Senkung der Umgebungstemperatur durch natürliche Verdunstungskälte."
+            },
+            {
+              "id": "B",
+              "text": "Ein signifikanter Anstieg der winterlichen Gebäudeheizkosten."
+            },
+            {
+              "id": "C",
+              "text": "Eine störende Zunahme der Lärmreflexion durch Blattwerk."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_H_Q04",
+          "order": 4,
+          "part": 2,
+          "prompt": "Teil 3: Diskussion über die 4-Tage-Woche. Welche Hauptsorge äußert die Personalleiterin?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dass die Verdichtung der Arbeitszeit zu stark erhöhtem psychischen Stress führt."
+            },
+            {
+              "id": "B",
+              "text": "Dass die Beschäftigten an freien Tagen Schwarzarbeit leisten."
+            },
+            {
+              "id": "C",
+              "text": "Dass das Unternehmen sofort neue Büroflächen anmieten muss."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_H_Q05",
+          "order": 5,
+          "part": 2,
+          "prompt": "Teil 4: Logistikreportage aus dem Binnenhafen. Was verursacht die aktuellen Lieferverzögerungen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ein unangekündigter Streik der Schleusenwärter."
+            },
+            {
+              "id": "B",
+              "text": "Ein eklatanter Mangel an qualifiziertem Fahrpersonal für den Weitertransport."
+            },
+            {
+              "id": "C",
+              "text": "Ein totaler Ausfall der zentralen Zollcomputersysteme."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_L_Q01",
+      "correctOption": "B",
+      "points": 6,
+      "citation": "bewusste und schonende Umgang mit wertvollen Ressourcen... Wissensaustausch",
+      "trapExplanationVi": "Bẫy phương án A: Tác giả nhấn mạnh yếu tố phi lợi nhuận và ý thức bảo vệ môi trường, không đặt mục tiêu cạnh tranh giá rẻ với thợ chuyên nghiệp.",
+      "tags": [
+        "Synonyms",
+        "Reading_Inference",
+        "B2_Academic"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_L_Q02",
+      "correctOption": "A",
+      "points": 6,
+      "citation": "Spezialschrauben, fest verklebte Akkus",
+      "trapExplanationVi": "Phương án A phản ánh đúng thực trạng nhà sản xuất cố tình thiết kế vỏ máy bằng ốc chuyên dụng và pin dán chặt để người dùng không thể tự mở.",
+      "tags": [
+        "Vocabulary_Trap",
+        "Detail_Check"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_L_Q03",
+      "correctOption": "B",
+      "points": 6,
+      "citation": "Ersatzteile und verständliche Reparaturanleitungen über mindestens zehn Jahre",
+      "trapExplanationVi": "Bẫy phương án C: 'Recht auf Reparatur' yêu cầu bán phụ tùng và tài liệu hướng dẫn trong 10 năm, không phải cam kết bảo hành miễn phí 10 năm.",
+      "tags": [
+        "Precision_Reading",
+        "Terminology"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_L_Q04",
+      "correctOption": "B",
+      "points": 6,
+      "citation": "generationenübergreifende Wissensaustausch",
+      "trapExplanationVi": "Giao lưu liên thế hệ và gắn kết cộng đồng là giá trị xã hội học cốt lõi của phong trào sửa chữa đồ dùng.",
+      "tags": [
+        "Paraphrasing",
+        "Sociological_Context"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_L_Q05",
+      "correctOption": "C",
+      "points": 6,
+      "citation": "entscheidenden Bewusstseinswandel... Element eines nachhaltigen Lebensstils",
+      "trapExplanationVi": "Tác giả kết luận tích cực rằng việc tự sửa chữa là mắt xích quan trọng xây dựng lối sống bền vững, phủ định phương án A (phong trào nhất thời).",
+      "tags": [
+        "Author_Tone",
+        "Conclusion_Extraction"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_H_Q01",
+      "correctOption": "A",
+      "points": 6,
+      "citation": "Langlebigkeit, Modularität und Reparierbarkeit",
+      "trapExplanationVi": "Sản phẩm kinh tế tuần hoàn được chuẩn hóa từ khâu chế tạo nhằm kéo dài vòng đời và dễ tháo lắp linh kiện.",
+      "tags": [
+        "Listening_Main_Idea",
+        "B2_Technical"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_H_Q02",
+      "correctOption": "A",
+      "points": 6,
+      "citation": "verbindliches, einklagbares 'Recht auf Reparatur'",
+      "trapExplanationVi": "Diễn giả đề xuất quyền sửa chữa có thể khởi kiện được nếu nhà sản xuất ép giá phụ tùng hoặc từ chối cung cấp.",
+      "tags": [
+        "Legal_Terminology",
+        "Key_Demand"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_H_Q03",
+      "correctOption": "A",
+      "points": 6,
+      "citation": "messbare Senkung der Umgebungstemperatur durch natürliche Verdunstungskälte",
+      "trapExplanationVi": "Cơ chế làm mát của mảng tường xanh vận hành nhờ hiệu ứng bay hơi nhiệt tự nhiên của thảm thực vật.",
+      "tags": [
+        "Scientific_Explanation",
+        "Hören_Teil2"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_H_Q04",
+      "correctOption": "A",
+      "points": 6,
+      "citation": "Verdichtung der Arbeitszeit führt zu stark erhöhtem psychischen Stress",
+      "trapExplanationVi": "Áp lực dồn 40 giờ lao động vào 4 ngày làm việc tiềm ẩn nguy cơ kiệt sức (Burnout) cho nhân viên.",
+      "tags": [
+        "Perspective_Analysis",
+        "Hören_Teil3"
+      ]
+    },
+    {
+      "questionId": "OSD_B2_H_Q05",
+      "correctOption": "B",
+      "points": 6,
+      "citation": "eklatanter Mangel an qualifiziertem Fahrpersonal",
+      "trapExplanationVi": "Nguyên nhân chính là khan hiếm tài xế xe tải/đầu kéo đủ bằng cấp vận chuyển hàng từ cảng vào đất liền.",
+      "tags": [
+        "Cause_Effect",
+        "Hören_Teil4"
+      ]
+    }
+  ]
+}

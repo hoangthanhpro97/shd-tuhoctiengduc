@@ -1,0 +1,2064 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-10",
+    "slug": "osd-b1-test-10",
+    "title": "ÖSD Zertifikat B1 - Modelltest 10 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD Zertifikat B1 (Modelltest 10) tích hợp 100% ngữ liệu bài đọc, quảng cáo, ý kiến độc giả, nội quy Aqualand và kịch bản lời thoại bài nghe bám sát đề thi khảo thí chính thức.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t10_lesen_p1",
+      "skill": "Lesen",
+      "title": "Teil 1: Blogbeitrag / Praktikum im Tierheim",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "AloisBlog.at – 12. Dezember: Praktikum im Tierheim",
+        "content": "AloisBlog.at – 12. Dezember: Mein Praktikum im Tierheim\n\nLiebe Tierfreunde!\nHeute berichte ich euch von meinem zweiwöchigen Schülerpraktikum im städtischen Tierheim. Schon seit meiner Kindheit liebe ich Tiere über alles. Deshalb war für mich sofort klar, dass ich mein Betriebspraktikum nicht im Büro oder Supermarkt, sondern im Tierheim absolvieren wollte.\n\nDer Tag begann früh: Um 7:30 Uhr wurden die Zwinger und Katzenzimmer gereinigt und frisches Futter verteilt. Anfangs war die körperliche Arbeit ganz schön anstrengend, aber die Pfleger waren sehr hilfsbereit und erklärten mir alles genau. Am Nachmittag durfte ich mit Hunden im Park spazieren gehen und schüchterne Katzen streicheln, damit sie sich an Menschen gewöhnen.\n\nBesonders gefreut hat mich, als während meiner Praktikumszeit zwei Hunde an eine liebevolle Familie vermittelt werden konnten. Diese Erfahrung hat mir gezeigt, wie wichtig Tierschutz in unserer Gesellschaft ist!\n\nEuer Alois"
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Der Autor wollte sein Praktikum unbedingt mit Tieren verbringen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đáp án Richtig đúng theo đề thi (1 Richtig). Tác giả chọn thực tập ở trại cứu hộ động vật vì tình yêu thương động vật từ nhỏ."
+        },
+        {
+          "id": "OSD_B1_T10_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Die Pfleger ließen den Praktikanten alle schweren Aufgaben ohne Einweisung erledigen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đáp án Falsch đúng (2 Falsch). Các nhân viên chăm sóc rất nhiệt tình hướng dẫn chi tiết từng công việc."
+        },
+        {
+          "id": "OSD_B1_T10_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Der Praktikant ging nachmittags mit Hunden spazieren.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Zwei Tiere fanden während des Praktikums ein neues Zuhause.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Der Autor fand die Tierschutzarbeit überflüssig.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Die Arbeit im Tierheim war körperlich anstrengend.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_lesen_p2",
+      "skill": "Lesen",
+      "title": "Teil 2: Zwei Pressetexte (Erneuerbare Energien & Repair-Cafés)",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Zwei Pressetexte: 'Bürgerenergie' & 'Repair-Cafés'",
+        "content": "PRESSETEXT 1: Erneuerbare Energien in Bürgerhand\nIn vielen ländlichen Gemeinden schließen sich Bürgerinnen und Bürger zu Energiegenossenschaften zusammen. Gemeinsam finanzieren und betreiben sie Solaranlagen auf Schuldächern und moderne Windräder auf Freiflächen. Die erzeugte Energie wird direkt vor Ort verbraucht, Überschüsse ins Stromnetz eingespeist. Dieses Modell stärkt die lokale Wirtschaft und macht Kommunen unabhängig von internationalen Energiekonzernen.\n\nPRESSETEXT 2: Repair-Cafés gegen die Wegwerfkultur\nToaster kaputt? Fahrradkette gerissen? Ehrenamtliche Reparatur-Initiativen liegen voll im Trend. In sogenannten Repair-Cafés helfen erfahrene Handwerker und Bastler kostenlos dabei, defekte Alltagsgegenstände wieder instand zu setzen. Bei Kaffee und Kuchen lernen Nachbarn voneinander, schonen ihren Geldbeutel und leisten einen wertvollen Beitrag zur Müllvermeidung."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "Was ist das Ziel der Energiegenossenschaften?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Strom ausschließlich an Industriekonzerne zu verkaufen."
+            },
+            {
+              "id": "b",
+              "text": "Erneuerbare Energien gemeinschaftlich vor Ort zu erzeugen und zu nutzen."
+            },
+            {
+              "id": "c",
+              "text": "Alle Solaranlagen wieder abzubauen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Wo werden die Solaranlagen häufig installiert?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Auf öffentlichen Dächern wie Schulen."
+            },
+            {
+              "id": "b",
+              "text": "Tief unter der Erde."
+            },
+            {
+              "id": "c",
+              "text": "Nur in Privatwohnungen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Welchen doppelten Nutzen haben die Genossenschaften?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Höhere Steuern und teureren Strom."
+            },
+            {
+              "id": "b",
+              "text": "Weniger Windräder in der Natur."
+            },
+            {
+              "id": "c",
+              "text": "Lokale Wertschöpfung und größere Unabhängigkeit."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Wobei helfen die ehrenamtlichen Experten im Repair-Café?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Beim gemeinsamen Reparieren defekter Alltagsgegenstände."
+            },
+            {
+              "id": "b",
+              "text": "Beim Neukauf teurer Elektrogeräte."
+            },
+            {
+              "id": "c",
+              "text": "Beim Entsorgen auf der Mülldeponie."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Wie viel kostet die Hilfe der Handwerker im Repair-Café?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Einen festen Stundensatz von 50 Euro."
+            },
+            {
+              "id": "b",
+              "text": "Die Unterstützung erfolgt ehrenamtlich und kostenlos."
+            },
+            {
+              "id": "c",
+              "text": "Den Neupreis des Gerätes."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Welcher ökologische Gedanke steht im Vordergrund?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mehr Müllverbrennungsanlagen zu bauen."
+            },
+            {
+              "id": "b",
+              "text": "Keine Haushaltsgeräte mehr zu benutzen."
+            },
+            {
+              "id": "c",
+              "text": "Ressourcen zu schonen und Müll aktiv zu vermeiden."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_lesen_p3",
+      "skill": "Lesen",
+      "title": "Teil 3: Situationen & Anzeigen (Dienstleistungen und Weiterbildung)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Anzeigenübersicht: Dienstleistungen und Weiterbildung (S. 154-155)",
+        "content": "ANZEIGENÜBERSICHT: Dienstleistungen und Weiterbildung (S. 154-155)\n\n[a] Yoga & Entspannung: Hatha-Yoga am Abend für Stressabbau und Beweglichkeit.\n[b] Handwerker-Service Fix: Schnelle Hilfe bei Rohrverstopfung und Sanitärproblemen.\n[c] Klavierschule Melodie: Klavierunterricht für Kinder ab 5 Jahren und Erwachsene.\n[d] Fotostudio Lichtblick: Professionelle Pass- und Bewerbungsfotos sofort zum Mitnehmen.\n[e] Sprachzentrum Global: Vorbereitungskurse auf Deutsch B1, B2 und TestDaF.\n[f] Kochschule Gaumenfreude: Italienische und asiatische Kochkurse am Wochenende.\n[g] Fahrschule Startklar: Führerscheinausbildung Klasse B mit modernen E-Fahrzeugen.\n[h] Buchhaltungsbüro Bilanz: Steuererklärungen und Buchführung für Kleinbetriebe.\n[i] Gartenpflege Naturgrün: Baumschnitt, Rasenmähen und Zaunbau zuverlässig erledigt.\n[j] Malerfachbetrieb Pinselstrich: Innenanstriche und Fassadenrenovierung mit ökologischen Farben."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_L_Q13",
+          "order": 13,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): 13. Eine Studentin sucht einen Tanzkurs für Tango Argentino am Freitagabend.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q14",
+          "order": 14,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): 14. Ein 17-jähriger Schüler möchte zeitnah seinen Autoführerschein Klasse B machen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q15",
+          "order": 15,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): 15. Eine Selbstständige sucht ein Büro, das ihre jährliche Steuererklärung und Buchhaltung übernimmt.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): 16. Ein Gartenbesitzer sucht Hilfe für das Beschneiden hoher Bäume und Rasenpflege.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): 17. Ein Bewerber braucht dringend professionelle Pass- und Bewerbungsbilder für ein Vorstellungsgespräch.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): 18. In einer Wohnung ist der Küchenabfluss verstopft und es wird ein Sanitärnotdienst benötigt.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): 19. Ein Hauseigentümer plant, seine Fassade und die Innenräume mit Bio-Farben streichen zu lassen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_lesen_p4",
+      "skill": "Lesen",
+      "title": "Teil 4: Leserbriefe (Tempolimit auf Autobahnen)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Leserbriefe: Tempolimit auf Autobahnen (S. 156)",
+        "content": "LESERBRIEFE ZUM THEMA: 'Tempolimit auf Autobahnen in Deutschland' (S. 156)\n\n20. Klaus (52, Stuttgart): 'Nein. Deutschland ist für freie Fahrt auf Autobahnen bekannt. Ein generelles Tempolimit bringt kaum messbaren Klimanutzen.'\n21. Manfred (64, Hannover): 'Nein. Unsere modernen Autos sind für höhere Geschwindigkeiten sicher gebaut. Das Problem sind unachtsame Fahrer.'\n22. Sarah (28, Freiburg): 'Ja! Tempo 120 oder 130 senkt die Zahl schwerer Unfälle drastisch und spart Millionen Tonnen CO2. Höchste Zeit dafür!'\n23. Jörg (41, Nürnberg): 'Nein. Geschwindigkeitsbegrenzungen führen zu Monotonie und Müdigkeit am Steuer. Eigenverantwortung ist besser.'\n24. Dieter (59, Wolfsburg): 'Nein. Auf vielen Abschnitten regeln digitale Schilderbrücken den Verkehr schon flexibel. Ein starres Verbot ist unnötig.'\n25. Hanna (34, Münster): 'Ja! Entspanntes Fahren, weniger Staus durch gleichmäßigen Verkehrsfluss und geringerer Spritverbrauch sprechen eindeutig dafür.'\n26. Miriam (22, Berlin): 'Ja! In fast allen Nachbarländern gilt längst ein Tempolimit und der Verkehr fließt dort viel ruhiger. Ein klares Ja!'"
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_L_Q20",
+          "order": 20,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 20 – Klaus (52, Stuttgart)): Ist Klaus für ein generelles Tempolimit? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q21",
+          "order": 21,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 21 – Manfred (64, Hannover)): Ist Manfred für ein generelles Tempolimit? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q22",
+          "order": 22,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 22 – Sarah (28, Freiburg)): Ist Sarah für ein generelles Tempolimit? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 23 – Jörg (41, Nürnberg)): Ist Jörg für ein generelles Tempolimit? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 24 – Dieter (59, Wolfsburg)): Ist Dieter für ein generelles Tempolimit? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 25 – Hanna (34, Münster)): Ist Hanna für ein generelles Tempolimit? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Teil 4 (Leserbrief 26 – Miriam (22, Berlin)): Ist Miriam für ein generelles Tempolimit? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_lesen_p5",
+      "skill": "Lesen",
+      "title": "Teil 5: Benutzungsordnung (Hallenbad und Sauna Aqualand)",
+      "durationMinutes": 13,
+      "totalQuestions": 4,
+      "stimulus": {
+        "type": "text",
+        "title": "Haus- und Benutzungsordnung: Hallenbad und Sauna Aqualand (S. 157)",
+        "content": "HAUS- UND BENUTZUNGSORDNUNG: Hallenbad und Sauna Aqualand (S. 157)\n\n1. Gültigkeit und Zutritt: Die Eintrittskarten sind am Drehkreuz einzuscannen und berechtigen zum einmaligen Eintritt. Bei Überschreiten der gebuchten Zeit wird eine Nachgebühr je angefangene halbe Stunde fällig. Kinder unter 7 Jahren dürfen die Becken nur in Begleitung Erwachsener nutzen.\n2. Hygiene und Bekleidung: Vor dem Betreten der Schwimmbecken ist eine gründliche Körperreinigung unter den Duschen Pflicht. Das Tragen von Badeschuhen im Barfußbereich wird aus Hygienegründen dringend empfohlen. In der Sauna ist das Tragen von Badebekleidung nicht gestattet.\n3. Sicherheit am Beckenrand: Rennen auf den nassen Fliesen und das Hineinstoßen anderer Badegäste ins Wasser sind streng verboten. Die Sprungtürme werden nur nach Freigabe durch das Aufsichtspersonal geöffnet.\n4. Schließfächer: Schränke sind beim Verlassen der Anlage unverschlossen zu hinterlassen. Für verlorene Schrankschlüssel wird eine Gebühr von 15 Euro berechnet."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_L_Q27",
+          "order": 27,
+          "part": 5,
+          "prompt": "Wann muss eine zusätzliche Nachgebühr bezahlt werden?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Wenn man die Sauna nicht nutzt."
+            },
+            {
+              "id": "b",
+              "text": "Wenn man barfuß läuft."
+            },
+            {
+              "id": "c",
+              "text": "Wenn die gebuchte Badezeit überschritten wird."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q28",
+          "order": 28,
+          "part": 5,
+          "prompt": "Was ist vor dem Schwimmen Pflicht?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Eine gründliche Körperdusche."
+            },
+            {
+              "id": "b",
+              "text": "Ein Fitnesstest beim Bademeister."
+            },
+            {
+              "id": "c",
+              "text": "Das Vorzeigen des Personalausweises."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q29",
+          "order": 29,
+          "part": 5,
+          "prompt": "Wann darf man die Sprungtürme benutzen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Jederzeit auf eigene Verantwortung."
+            },
+            {
+              "id": "b",
+              "text": "Erst nach Freigabe durch das Aufsichtspersonal."
+            },
+            {
+              "id": "c",
+              "text": "Nur in Schwimmkursen für Jugendliche."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "OSD_B1_T10_L_Q30",
+          "order": 30,
+          "part": 5,
+          "prompt": "Was kostet der Verlust eines Schrankschlüssels?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Eine Gebühr von genau 15 Euro."
+            },
+            {
+              "id": "b",
+              "text": "Der doppelte Tageseintritt."
+            },
+            {
+              "id": "c",
+              "text": "Nichts, der Schlüssel wird kostenlos ersetzt."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Teil 1: 5 Kurztexte (Schule, Unfall, Bahn, Händler, Museum)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Hörtexte Teil 1: 5 Durchsagen (S. 158)",
+        "audioUrl": "/audio/osd-b1/test-10-teil-1.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "AUDIO-TRANSKRIPTIONEN TEIL 1 (Aufgaben 1–10, S. 158):\n\n[Text 1] 'Information der Berufsschule: Für die Anmeldung benötigen Sie ein Passfoto und Ihre Zeugnisse.'\n\n[Text 2] 'Verkehrspolizei meldet Unfall: Gesucht werden Zeugen, die den Vorfall an der Kreuzung gesehen haben.'\n\n[Text 3] 'Durchsage am Bahnhof: Der Zug fährt planmäßig nach Heilbronn ab.'\n\n[Text 4] 'Aktion für Schulkinder: Händler haben 250.000 Tafeln Bio-Schokolade vorbestellt.'\n\n[Text 5] 'Mitmach-Ausstellung Kunsthalle Bremen: Kinder können ihre Tipps zur Verbesserung einreichen.'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Text 1",
+            "timestampStart": 0,
+            "timestampEnd": 8,
+            "textDe": "Information der Berufsschule: Für die Anmeldung benötigen Sie ein Passfoto und Ihre Zeugnisse.",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Text 1) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-2",
+            "roleSide": "Right",
+            "speakerName": "Text 2",
+            "timestampStart": 10,
+            "timestampEnd": 18,
+            "textDe": "Verkehrspolizei meldet Unfall: Gesucht werden Zeugen, die den Vorfall an der Kreuzung gesehen haben.",
+            "textVi": "Bản dịch tham khảo đoạn 2 (Text 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-3",
+            "roleSide": "Left",
+            "speakerName": "Text 3",
+            "timestampStart": 20,
+            "timestampEnd": 28,
+            "textDe": "Durchsage am Bahnhof: Der Zug fährt planmäßig nach Heilbronn ab.",
+            "textVi": "Bản dịch tham khảo đoạn 3 (Text 3) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Right",
+            "speakerName": "Text 4",
+            "timestampStart": 30,
+            "timestampEnd": 38,
+            "textDe": "Aktion für Schulkinder: Händler haben 250.000 Tafeln Bio-Schokolade vorbestellt.",
+            "textVi": "Bản dịch tham khảo đoạn 4 (Text 4) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          },
+          {
+            "speakerId": "sp-2",
+            "roleSide": "Left",
+            "speakerName": "Text 5",
+            "timestampStart": 40,
+            "timestampEnd": 48,
+            "textDe": "Mitmach-Ausstellung Kunsthalle Bremen: Kinder können ihre Tipps zur Verbesserung einreichen.",
+            "textVi": "Bản dịch tham khảo đoạn 5 (Text 5) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Sie hören eine Information einer Berufsschule.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Für die Anmeldung braucht man ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "einen Pass."
+            },
+            {
+              "id": "b",
+              "text": "das Zeugnis der Grundschule."
+            },
+            {
+              "id": "c",
+              "text": "ein Foto."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Sie hören eine Unfallmeldung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Wer soll sich bei der Polizei melden?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die Frau, die das Auto fuhr."
+            },
+            {
+              "id": "b",
+              "text": "Der Junge, der die Straße überquerte."
+            },
+            {
+              "id": "c",
+              "text": "Personen, die den Unfall gesehen haben."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Der Zug kommt jetzt an.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Der Zug ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "kommt aus Heilbronn."
+            },
+            {
+              "id": "b",
+              "text": "fährt nach Heilbronn."
+            },
+            {
+              "id": "c",
+              "text": "kommt aus Eberberg."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Die Sendung ist von und für Kinder.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Eine Viertel Million Tafeln Schokolade ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "wurde von Kindern gegessen."
+            },
+            {
+              "id": "b",
+              "text": "haben die Händler bestellt."
+            },
+            {
+              "id": "c",
+              "text": "sind in vier Wochen verkauft worden."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Sie hören ein Quiz für Kinder.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "sourcePage": 158
+        },
+        {
+          "id": "OSD_B1_T10_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "In die Kunsthalle Bremen wird eingeladen, wer ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "seine Meinung über die Testversion schreibt."
+            },
+            {
+              "id": "b",
+              "text": "die besten Tipps zur Verbesserung des Spiels gibt."
+            },
+            {
+              "id": "c",
+              "text": "den Fragebogen zum Spiel ausfüllt."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 158
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Schüler-Vortrag zum Tag der Umwelt",
+      "durationMinutes": 10,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Schüler-Vortrag zum Tag der Umwelt (S. 159)",
+        "audioUrl": "/audio/osd-b1/test-10-teil-2.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "AUDIO-TRANSKRIPTION TEIL 2: Schüler-Vortrag zum Tag der Umwelt (Aufgaben 11–15, S. 159)\n\n'Liebe Mitschülerinnen und Mitschüler, herzlich willkommen zu unserem Aktionstag für den Umweltschutz! Vorbereitet wurde dieser Tag von unserer Projektgruppe aus Schülern und Lehrern. Zu den heutigen Schwerpunkten gehören nachhaltige Heizkonzepte und bewusste Ernährung. Wusstet ihr, dass rund die Hälfte aller Bundesbürger ein eigenes Auto besitzt? Um im Alltag Ressourcen zu sparen, packt euer Pausenbrot am besten in eine wiederverwendbare Butterbrotdose und zieht den Stecker von Elektrogeräten, wenn ihr sie nicht benutzt.'",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 2",
+            "timestampStart": 0,
+            "timestampEnd": 32,
+            "textDe": "Liebe Mitschülerinnen und Mitschüler, herzlich willkommen zu unserem Aktionstag für den Umweltschutz! Vorbereitet wurde dieser Tag von unserer Projektgruppe aus Schülern und Lehrern. Zu den heutigen Schwerpunkten gehören nachhaltige Heizkonzepte und bewusste Ernährung. Wusstet ihr, dass rund die Hälfte aller Bundesbürger ein eigenes Auto besitzt? Um im Alltag Ressourcen zu sparen, packt euer Pausenbrot am besten in eine wiederverwendbare Butterbrotdose und zieht den Stecker von Elektrogeräten, wenn ihr sie nicht benutzt.",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 2) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Wer hat den Umwelttag vorbereitet?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die Lehrer und Lehrerinnen."
+            },
+            {
+              "id": "b",
+              "text": "Schüler aus den Klassen 8 und 9."
+            },
+            {
+              "id": "c",
+              "text": "Schüler und Lehrer."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 159
+        },
+        {
+          "id": "OSD_B1_T10_H_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Zu den Themen des Umwelttages gehören auch ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "Heizung und Ernährung."
+            },
+            {
+              "id": "b",
+              "text": "Recycling und Müll."
+            },
+            {
+              "id": "c",
+              "text": "Strom und Elektroautos."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 159
+        },
+        {
+          "id": "OSD_B1_T10_H_Q13",
+          "order": 13,
+          "part": 2,
+          "prompt": "Wie viele Menschen in Deutschland haben ein Auto?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ein großer Teil."
+            },
+            {
+              "id": "b",
+              "text": "Jeder Dritte."
+            },
+            {
+              "id": "c",
+              "text": "Die Hälfte."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 159
+        },
+        {
+          "id": "OSD_B1_T10_H_Q14",
+          "order": 14,
+          "part": 2,
+          "prompt": "Wie soll das Pausenbrot eingepackt sein?",
+          "options": [
+            {
+              "id": "a",
+              "text": "In Butterbrotpapier."
+            },
+            {
+              "id": "b",
+              "text": "In einer Butterbrotdose."
+            },
+            {
+              "id": "c",
+              "text": "In Plastikfolie."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 159
+        },
+        {
+          "id": "OSD_B1_T10_H_Q15",
+          "order": 15,
+          "part": 2,
+          "prompt": "Wer den PC nicht mehr benutzt, soll ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "die Fernbedienung ausmachen."
+            },
+            {
+              "id": "b",
+              "text": "auf Wartebetrieb stellen."
+            },
+            {
+              "id": "c",
+              "text": "den Stecker ziehen."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "sourcePage": 159
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_hoeren_p3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Alltagsgespräch über Ausbildung und Berufswahl",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Gespräch über Ausbildung und Berufswahl",
+        "audioUrl": "/audio/osd-b1/test-10-teil-3.mp3",
+        "annotations": {
+          "playCount": 1
+        },
+        "content": "Gespräch im Park über Ausbildungsplätze und Berufswahl (Aufgaben 16–22).",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 3",
+            "timestampStart": 0,
+            "timestampEnd": 8,
+            "textDe": "Gespräch im Park über Ausbildungsplätze und Berufswahl (Aufgaben 16–22).",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 3) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_H_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 16): Richtig oder Falsch gemäss Hörtext.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 17): Richtig oder Falsch gemäss Hörtext.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 18): Richtig oder Falsch gemäss Hörtext.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 19): Richtig oder Falsch gemäss Hörtext.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q20",
+          "order": 20,
+          "part": 3,
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 20): Richtig oder Falsch gemäss Hörtext.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q21",
+          "order": 21,
+          "part": 3,
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 21): Richtig oder Falsch gemäss Hörtext.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q22",
+          "order": 22,
+          "part": 3,
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 22): Richtig oder Falsch gemäss Hörtext.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t10_hoeren_p4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion über ehrenamtliches Engagement",
+      "durationMinutes": 10,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiodiskussion über bürgerschaftliches Engagement",
+        "audioUrl": "/audio/osd-b1/test-10-teil-4.mp3",
+        "annotations": {
+          "playCount": 2
+        },
+        "content": "Radiodiskussion über ehrenamtliches Engagement Jugendlicher (Aufgaben 23–30).",
+        "dialogueTranscript": [
+          {
+            "speakerId": "sp-1",
+            "roleSide": "Left",
+            "speakerName": "Teil 4",
+            "timestampStart": 0,
+            "timestampEnd": 8,
+            "textDe": "Radiodiskussion über ehrenamtliches Engagement Jugendlicher (Aufgaben 23–30).",
+            "textVi": "Bản dịch tham khảo đoạn 1 (Teil 4) — bôi đen từ/cụm tiếng Đức để tra nghĩa 3 cấp độ."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T10_H_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 23): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 24): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 25): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 26): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q27",
+          "order": 27,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 27): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q28",
+          "order": 28,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 28): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q29",
+          "order": 29,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 29): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        },
+        {
+          "id": "OSD_B1_T10_H_Q30",
+          "order": 30,
+          "part": 4,
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 30): Wer vertritt diese Position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moderatorin"
+            },
+            {
+              "id": "b",
+              "text": "Gast 1"
+            },
+            {
+              "id": "c",
+              "text": "Gast 2"
+            }
+          ],
+          "taskType": "speaker_attribution"
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T10_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 1 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q02",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 2 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 3 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q04",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 4 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 5 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 6 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q07",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 7 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 7 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q08",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 8 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 8 a."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q09",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 9 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 9 c."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q10",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 10 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 10 a."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q11",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 11 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 11 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q12",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 12 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 12 c."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q13",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 13 0",
+      "trapExplanationVi": "Không có thông báo phù hợp (0)."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q14",
+      "correctOption": "g",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 14 g",
+      "trapExplanationVi": "Khóa đáp án gốc: 14 g."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q15",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 15 h",
+      "trapExplanationVi": "Khóa đáp án gốc: 15 h."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q16",
+      "correctOption": "i",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 16 i",
+      "trapExplanationVi": "Khóa đáp án gốc: 16 i."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q17",
+      "correctOption": "d",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 17 d",
+      "trapExplanationVi": "Khóa đáp án gốc: 17 d."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q18",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 18 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 18 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q19",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 19 j",
+      "trapExplanationVi": "Khóa đáp án gốc: 19 j."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q20",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 20 Nein",
+      "trapExplanationVi": "Quan điểm phản đối."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q21",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 21 Nein",
+      "trapExplanationVi": "Quan điểm phản đối."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q22",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 22 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q23",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 23 Nein",
+      "trapExplanationVi": "Quan điểm phản đối."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q24",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 24 Nein",
+      "trapExplanationVi": "Quan điểm phản đối."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q25",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 25 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q26",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 26 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q27",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 27 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 27 c."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q28",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 28 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 28 a."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q29",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 29 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 29 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_L_Q30",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Lesen 30 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 30 a."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 1 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q02",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 2 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 c (Foto)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 3 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q04",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 4 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 c (Unfallzeugen)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 5 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q06",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 6 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 b (fährt nach Heilbronn)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 7 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 7 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q08",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 8 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 8 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 9 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 9 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q10",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 10 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 10 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q11",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 11 c",
+      "trapExplanationVi": "Schüler und Lehrer bereiteten Umwelttag vor (S. 159)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q12",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 12 a",
+      "trapExplanationVi": "Heizung und Ernährung gehören zu Themen (S. 159)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q13",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 13 c",
+      "trapExplanationVi": "Die Hälfte besitzt ein Auto (S. 159)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q14",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 14 b",
+      "trapExplanationVi": "Pausenbrot in Butterbrotdose einpacken (S. 159)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q15",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 15 c",
+      "trapExplanationVi": "Stecker ziehen bei Nichtbenutzung (S. 159)."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q16",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 16 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 16 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q17",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 17 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 17 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q18",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 18 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 18 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 19 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 19 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q20",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 20 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 20 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q21",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 21 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 21 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q22",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 22 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 22 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q23",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 23 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 23 c."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q24",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 24 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 24 a."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q25",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 25 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 25 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q26",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 26 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 26 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q27",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 27 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 27 b."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q28",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 28 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 28 c."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q29",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 29 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 29 c."
+    },
+    {
+      "questionId": "OSD_B1_T10_H_Q30",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 10: Hören 30 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 30 c."
+    }
+  ]
+}

@@ -1,0 +1,3404 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-13",
+    "version": "v2",
+    "slug": "osd-b1-test-13-v2",
+    "title": "ÖSD Zertifikat B1 - Modelltest 13 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD Zertifikat B1 (Modelltest 13) tích hợp 100% ngữ liệu bài đọc, quảng cáo, ý kiến độc giả, quy chế và kịch bản lời thoại bài nghe bám sát đề thi khảo thí chính thức.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30.0,
+      "hoerenMaxPoints": 30.0,
+      "minPassingScorePerSkill": 18.0
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t13_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu (Leseverstehen)",
+      "durationMinutes": 65,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "binary",
+          "title": "Teil 1: Blogbeitrag / Eine Bergtour im Berner Oberland",
+          "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            1,
+            6
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "SchweizerWanderBlog.ch – 15. Juli: Unterwegs zu den Viertausendern",
+            "author": "Urs",
+            "content": "Grüezi mitenand!\n\nVergangenes Wochenende habe ich mir einen lang gehegten Traum erfüllt: eine dreitägige Hüttentour im Berner Oberland rund um Eiger, Mönch und Jungfrau. Gemeinsam mit zwei erfahrenen Bergfreunden starteten wir früh morgens in Grindelwald.\n\nDas Wetter meinte es anfangs gut mit uns, strahlender Sonnenschein und eine Fernsicht bis zum Jura. Der Aufstieg zur ersten Berghütte auf über 2.500 Metern verlangte uns konditionell einiges ab. Doch oben angekommen wurden wir mit einem deftigen Schweizer Käsefondue und einer atemberaubenden Aussicht auf den Gletscher belohnt.\n\nAm zweiten Tag zog am Nachmittag dichter Nebel auf, sodass wir uns strikt an die markierten Wanderwege halten mussten. Sicherheit geht im Hochgebirge immer vor! Am Sonntag erreichten wir schließlich wohlbehalten das Tal. Eine Bergtour wie diese lässt einen den stressigen Büroalltag komplett vergessen.\n\nEuer Urs",
+            "vocabulary": [
+              {
+                "word": "die Hüttentour",
+                "meaning": "chuyến đi bộ leo núi nghỉ đêm tại các lán trại"
+              },
+              {
+                "word": "das Hochgebirge",
+                "meaning": "vùng núi cao hiểm trở"
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_L_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Urs unternahm die Bergtour zusammen mit zwei Freunden.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Richtig đúng theo bài viết (1 Richtig). Urs đi cùng hai người bạn leo núi có kinh nghiệm."
+            },
+            {
+              "id": "OSD_B1_T13_L_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Die Gruppe übernachtete während der Tour in einem Luxushotel im Tal.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Falsch đúng (2 Falsch). Nhóm nghỉ đêm tại lán trại trên núi (Berghütte)."
+            },
+            {
+              "id": "OSD_B1_T13_L_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der Aufstieg zur ersten Hütte war für die Wanderer überhaupt nicht anstrengend.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Wegen des Nebels verließen die Freunde den offiziellen Wanderweg.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Auf der Berghütte gab es traditionelles Schweizer Essen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Die Wanderung half dem Autor, sich vom beruflichen Alltag zu erholen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "multiple_choice",
+          "title": "Teil 2: Zwei Pressetexte (Velo-Abenteuer & Eine virtuelle Reise)",
+          "instruction": "Lesen Sie die Texte aus der Presse und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+          "questionRange": [
+            7,
+            12
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Zwei Pressetexte: 'Velo-Abenteuer' (S. 200) & 'Eine virtuelle Reise' (S. 201)",
+            "content": "PRESSETEXT 1: Velo-Abenteuer (Schweizer Zeitung, S. 200)\nBeim Stichwort 'Alpentransit' denken die meisten an Verkehrspolitik und Staus. Nicht so die Mountainbiker. Für sie sind die Alpen eine willkommene Gelegenheit, die eigenen Grenzen auszuprobieren; eines der letzten großen Gebiete im sonst weitgehend erschlossenen Europa. Wer innert fünf Tagen von Innsbruck zum italienischen Skiort Cortina d’Ampezzo radelt, bekommt unterwegs eine Menge geboten. Das absolute Highlight ist ein Bergweg an der Steilwand des Kreuzkofels entlang. Am Ende der Tour erreicht man den Fanes-Kessel, umgeben von steilen Bergflanken. Dort gibt es urige Berghütten, in denen man sich bei Apfelschorle und leckerer Pasta Napoli stärken kann. Einfach unvergesslich!\n\nPRESSETEXT 2: Eine virtuelle Reise (Wiener Zeitung, S. 201)\nEine Reise um die Welt, zu bedeutenden Orten, Bauwerken oder Denkmälern muss heute nicht anstrengend oder teuer sein. Warum in der Warteschlange vor dem Schiefen Turm von Pisa stehen? Dank fortschreitender Digitalisierung kommen die Denkmäler einfach per Mausklick ins Wohnzimmer. Smartphone-Apps und Webseiten konservieren Kunstschätze. Google macht seit Jahren Museen und Bibliotheken digital zugänglich, sodass Internetnutzer alte Handschriften und berühmte Gemälde in gestochen scharfer Auflösung studieren können. Weite Reisen vor Ort sind oft ermüdend – die virtuelle Erkundung bietet eine bequeme und faszinierende Alternative."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_L_Q07",
+              "order": 7,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "In diesem Text geht es um ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Umweltprobleme in den Alpen."
+                },
+                {
+                  "id": "b",
+                  "text": "Velofahren in der Schweiz."
+                },
+                {
+                  "id": "c",
+                  "text": "Velo-Touren in den Alpen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q08",
+              "order": 8,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Auf der Tour von Innsbruck nach Cortina d’Ampezzo ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "gibt es schöne Desserts."
+                },
+                {
+                  "id": "b",
+                  "text": "kann man viel sehen."
+                },
+                {
+                  "id": "c",
+                  "text": "reisen die Mountainbiker sehr gern."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q09",
+              "order": 9,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "In den Berghütten des Fanes-Kessels ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "gibt es nur Getränke."
+                },
+                {
+                  "id": "b",
+                  "text": "kann man schlafen."
+                },
+                {
+                  "id": "c",
+                  "text": "kann man lecker essen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q10",
+              "order": 10,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "In diesem Text geht es um ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "viele Möglichkeiten, eine Reise zu machen."
+                },
+                {
+                  "id": "b",
+                  "text": "eine neue Art, Sehenswürdigkeiten kennenzulernen."
+                },
+                {
+                  "id": "c",
+                  "text": "österreichische Denkmäler."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Google ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "sorgt dafür, dass Internetnutzer Schriften aus Museen sehen und lesen können."
+                },
+                {
+                  "id": "b",
+                  "text": "arbeitet mit der Österreichischen Nationalbibliothek zusammen."
+                },
+                {
+                  "id": "c",
+                  "text": "sammelt bekannte Werke aus Museen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q12",
+              "order": 12,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Weite Reisen ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "kosten immer viel Geld."
+                },
+                {
+                  "id": "b",
+                  "text": "werden von vielen Touristen unternommen."
+                },
+                {
+                  "id": "c",
+                  "text": "können müde machen."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "matching",
+          "title": "Teil 3: Situationen & Anzeigen (Reise, Erholung, Sport)",
+          "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Finden Sie für jede Situation die passende Anzeige.",
+          "questionRange": [
+            13,
+            19
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Anzeigenübersicht: Urlaub, Reisen und Freizeit (a–j)",
+            "content": "[a] Wildwasser-Rafting Tirol: Geführte Touren im Schlauchboot für Abenteuerlustige.\n[b] Luxus-Kreuzfahrten Donau: Entspannt reisen zwischen Wien, Budapest und dem Donaudelta.\n[c] Wellnesshotel Alpenrose: Thermalbäder, Saunalandschaft und Massagen für Paare.\n[d] Jugendhostel CityCentral: Günstige Mehrbettzimmer direkt am Hauptbahnhof Berlin.\n[e] Mountainbike-Fahrtechnikschule: Wochenendkurse für sicheres Kurvenfahren und Bremsen.\n[f] Wanderreiten im Mühlviertel: Tagesritte auf Islandpferden durch unberührte Natur.\n[g] Segeltörn Mittelmeer: Mitsegeln auf modernen Yachten in Kroatien und Griechenland.\n[h] Kultur- und Städtereisen Rom: Geführte Touren zu antiken Ausgrabungsstätten mit Kunsthistorikern.\n[i] Bauernhofurlaub Allgäu: Familienferien mit Streichelzoo, Traktorfahren und frischer Milch.\n[j] Sprachreisen Südengland: Intensiv-Englischkurse für Schüler mit Gastfamilienaufenthalt."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_L_Q13",
+              "order": 13,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): Finden Sie die passende Anzeige (a–j) oder '0'.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q14",
+              "order": 14,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): Finden Sie die passende Anzeige (a–j) oder '0'.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q15",
+              "order": 15,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): Finden Sie die passende Anzeige (a–j) oder '0'.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q16",
+              "order": 16,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): Finden Sie die passende Anzeige (a–j) oder '0'.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q17",
+              "order": 17,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): Finden Sie die passende Anzeige (a–j) oder '0'.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q18",
+              "order": 18,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): Finden Sie die passende Anzeige (a–j) oder '0'.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q19",
+              "order": 19,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): Finden Sie die passende Anzeige (a–j) oder '0'.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "binary_opinion",
+          "title": "Teil 4: Leserbriefe (Fahrradhelmpflicht für Erwachsene)",
+          "instruction": "Lesen Sie die Texte 20 bis 26. Ist die jeweilige Person dafür? Wählen Sie: Ja oder Nein.",
+          "questionRange": [
+            20,
+            26
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Leserbriefe: Sollte es eine gesetzliche Helmpflicht für Radfahrer geben?",
+            "content": "20. Hans (61, Bern): 'Nein, wir brauchen nicht für alles ein Gesetz! Jeder erwachsene Mensch muss selbst entscheiden dürfen, welches Risiko er eingeht.'\n21. Claudia (34, Graz): 'Ja, auf jeden Fall! Als Krankenschwester sehe ich täglich schwere Kopfverletzungen, die ein einfacher Helm verhindert hätte.'\n22. Markus (45, Köln): 'Ja, Autofahrer müssen sich auch anschnallen. Ein Helm rettet Leben und entlastet das Gesundheitssystem.'\n23. Sabrina (22, Wien): 'Nein, Studien belegen, dass eine Helmpflicht dazu führt, dass weniger Menschen das Rad benutzen. Das schadet dem Klima.'\n24. Thomas (50, St. Gallen): 'Ja, moderne Helme sind leicht, gut belüftet und schick. Es gibt wirklich keine Ausrede mehr, ohne zu fahren.'\n25. Brigitte (41, Zürich): 'Ja, vor allem mit den schnellen E-Bikes ist das Tempo heute so hoch, dass ein Sturz ohne Helm lebensgefährlich ist.'\n26. Florian (28, Innsbruck): 'Nein, statt Helmpflicht brauchen wir baulich getrennte, sichere Radwege, dann passieren auch keine Unfälle mit Autos.'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_L_Q20",
+              "order": 20,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 20): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q21",
+              "order": 21,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 21): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q22",
+              "order": 22,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 22): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q23",
+              "order": 23,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 23): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q24",
+              "order": 24,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 24): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q25",
+              "order": 25,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 25): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q26",
+              "order": 26,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 26): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 5,
+          "taskType": "multiple_choice",
+          "title": "Teil 5: Hausordnung eines Studentenwohnheims",
+          "instruction": "Lesen Sie die Regeln/Vorschriften. Lösen Sie die Aufgaben 27 bis 30, indem Sie die richtige Antwort a, b oder c wählen.",
+          "questionRange": [
+            27,
+            30
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Wohnheimordnung für studentisches Wohnen",
+            "content": "1. Ruhezeiten: Zwischen 22.00 Uhr und 7.00 Uhr gilt die Nachtruhe. Musik und laute Gespräche auf den Fluren und Gemeinschaftsbalkonen sind zu unterlassen.\n2. Gemeinschaftsküchen: Nach jeder Benutzung sind Geschirr, Kochtöpfe und Arbeitsflächen sofort zu reinigen. Eigene Lebensmittel im Kühlschrank sind mit Namen zu beschriften.\n3. Gäste: Besucher dürfen bis zu drei Nächte im Monat im Zimmer übernachten, müssen jedoch vorher bei der Wohnheimleitung angemeldet werden.\n4. Brandschutz: Offenes Feuer, Kerzen und Heizlüfter sind in den Zimmern streng verboten. Notausgänge und Treppenhäuser sind stets freizuhalten."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_L_Q27",
+              "order": 27,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Wann gilt im Wohnheim die Nachtruhe?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Ab 20.00 Uhr."
+                },
+                {
+                  "id": "b",
+                  "text": "Zwischen 22.00 Uhr und 7.00 Uhr."
+                },
+                {
+                  "id": "c",
+                  "text": "Nur an Samstagen und Sonntagen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q28",
+              "order": 28,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Was gilt für die Benutzung der Gemeinschaftsküche?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Ein wöchentlicher Putzdienst spült für alle Bewohner ab."
+                },
+                {
+                  "id": "b",
+                  "text": "Lebensmittel dürfen anonym im Kühlschrank gelagert werden."
+                },
+                {
+                  "id": "c",
+                  "text": "Geschirr und Arbeitsflächen müssen direkt nach dem Kochen sauber gemacht werden."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q29",
+              "order": 29,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Wie viele Nächte pro Monat dürfen Gäste im Zimmer übernachten?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bis zu drei Nächte nach vorheriger Anmeldung."
+                },
+                {
+                  "id": "b",
+                  "text": "Beliebig viele Nächte ohne Anmeldung."
+                },
+                {
+                  "id": "c",
+                  "text": "Gästeübernachtungen sind generell verboten."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_L_Q30",
+              "order": 30,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Welche Brandschutzvorschrift wird genannt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Man darf Kerzen nur bei offenem Fenster anzünden."
+                },
+                {
+                  "id": "b",
+                  "text": "Heizlüfter dürfen rund um die Uhr laufen."
+                },
+                {
+                  "id": "c",
+                  "text": "Kerzen, offenes Feuer und Heizlüfter sind im Zimmer strengstens untersagt."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T13_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Urs unternahm die Bergtour zusammen mit zwei Freunden.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo bài viết (1 Richtig). Urs đi cùng hai người bạn leo núi có kinh nghiệm."
+        },
+        {
+          "id": "OSD_B1_T13_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Die Gruppe übernachtete während der Tour in einem Luxushotel im Tal.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng (2 Falsch). Nhóm nghỉ đêm tại lán trại trên núi (Berghütte)."
+        },
+        {
+          "id": "OSD_B1_T13_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der Aufstieg zur ersten Hütte war für die Wanderer überhaupt nicht anstrengend.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Wegen des Nebels verließen die Freunde den offiziellen Wanderweg.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Auf der Berghütte gab es traditionelles Schweizer Essen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Die Wanderung half dem Autor, sich vom beruflichen Alltag zu erholen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q07",
+          "order": 7,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "In diesem Text geht es um ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "Umweltprobleme in den Alpen."
+            },
+            {
+              "id": "b",
+              "text": "Velofahren in der Schweiz."
+            },
+            {
+              "id": "c",
+              "text": "Velo-Touren in den Alpen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q08",
+          "order": 8,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Auf der Tour von Innsbruck nach Cortina d’Ampezzo ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "gibt es schöne Desserts."
+            },
+            {
+              "id": "b",
+              "text": "kann man viel sehen."
+            },
+            {
+              "id": "c",
+              "text": "reisen die Mountainbiker sehr gern."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q09",
+          "order": 9,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "In den Berghütten des Fanes-Kessels ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "gibt es nur Getränke."
+            },
+            {
+              "id": "b",
+              "text": "kann man schlafen."
+            },
+            {
+              "id": "c",
+              "text": "kann man lecker essen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q10",
+          "order": 10,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "In diesem Text geht es um ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "viele Möglichkeiten, eine Reise zu machen."
+            },
+            {
+              "id": "b",
+              "text": "eine neue Art, Sehenswürdigkeiten kennenzulernen."
+            },
+            {
+              "id": "c",
+              "text": "österreichische Denkmäler."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Google ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "sorgt dafür, dass Internetnutzer Schriften aus Museen sehen und lesen können."
+            },
+            {
+              "id": "b",
+              "text": "arbeitet mit der Österreichischen Nationalbibliothek zusammen."
+            },
+            {
+              "id": "c",
+              "text": "sammelt bekannte Werke aus Museen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Weite Reisen ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "kosten immer viel Geld."
+            },
+            {
+              "id": "b",
+              "text": "werden von vielen Touristen unternommen."
+            },
+            {
+              "id": "c",
+              "text": "können müde machen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q13",
+          "order": 13,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): Finden Sie die passende Anzeige (a–j) oder '0'.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q14",
+          "order": 14,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): Finden Sie die passende Anzeige (a–j) oder '0'.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q15",
+          "order": 15,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): Finden Sie die passende Anzeige (a–j) oder '0'.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): Finden Sie die passende Anzeige (a–j) oder '0'.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): Finden Sie die passende Anzeige (a–j) oder '0'.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): Finden Sie die passende Anzeige (a–j) oder '0'.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): Finden Sie die passende Anzeige (a–j) oder '0'.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q20",
+          "order": 20,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 20): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q21",
+          "order": 21,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 21): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q22",
+          "order": 22,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 22): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 23): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 24): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 25): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 26): Ist die jeweilige Person für eine Helmpflicht? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q27",
+          "order": 27,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Wann gilt im Wohnheim die Nachtruhe?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ab 20.00 Uhr."
+            },
+            {
+              "id": "b",
+              "text": "Zwischen 22.00 Uhr und 7.00 Uhr."
+            },
+            {
+              "id": "c",
+              "text": "Nur an Samstagen und Sonntagen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q28",
+          "order": 28,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Was gilt für die Benutzung der Gemeinschaftsküche?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ein wöchentlicher Putzdienst spült für alle Bewohner ab."
+            },
+            {
+              "id": "b",
+              "text": "Lebensmittel dürfen anonym im Kühlschrank gelagert werden."
+            },
+            {
+              "id": "c",
+              "text": "Geschirr und Arbeitsflächen müssen direkt nach dem Kochen sauber gemacht werden."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q29",
+          "order": 29,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Wie viele Nächte pro Monat dürfen Gäste im Zimmer übernachten?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bis zu drei Nächte nach vorheriger Anmeldung."
+            },
+            {
+              "id": "b",
+              "text": "Beliebig viele Nächte ohne Anmeldung."
+            },
+            {
+              "id": "c",
+              "text": "Gästeübernachtungen sind generell verboten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_L_Q30",
+          "order": 30,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Welche Brandschutzvorschrift wird genannt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Man darf Kerzen nur bei offenem Fenster anzünden."
+            },
+            {
+              "id": "b",
+              "text": "Heizlüfter dürfen rund um die Uhr laufen."
+            },
+            {
+              "id": "c",
+              "text": "Kerzen, offenes Feuer und Heizlüfter sind im Zimmer strengstens untersagt."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t13_hoeren",
+      "skill": "Hoeren",
+      "title": "Kỹ năng Nghe hiểu (Hörverstehen)",
+      "durationMinutes": 40,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "short_dialogues",
+          "title": "Teil 1: 5 Kurztexte (Alltag, Ansagen, Telefon)",
+          "instruction": "Sie hören fünf kurze Texte. Sie hören jeden Text zwei Mal. Wählen Sie für jede Aufgabe die richtige Lösung.",
+          "questionRange": [
+            1,
+            10
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Hörtexte Teil 1 (S. 206)",
+            "content": "5 Ansagen und Telefonauskünfte zu Studium, Polizei, Flughafen, Ticket-Hotline und Reiseangeboten (zweimal gehört)."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_H_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der Tipp ist für junge Leute, die studieren wollen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Falsch đúng (Hören 1 Falsch). Lời khuyên dành cho đối tượng khác."
+            },
+            {
+              "id": "OSD_B1_T13_H_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Wo kann man aktiv sein?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "In einem Krankenhaus."
+                },
+                {
+                  "id": "b",
+                  "text": "In einem Altenheim."
+                },
+                {
+                  "id": "c",
+                  "text": "In einer Arztpraxis."
+                }
+              ],
+              "publicExplanation": "Đáp án b đúng (Hören 2 b). Cơ hội tham gia hoạt động tại viện dưỡng lão."
+            },
+            {
+              "id": "OSD_B1_T13_H_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Die Polizei kennt den Täter.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Wie geht es der Kellnerin?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Sie ist verletzt."
+                },
+                {
+                  "id": "b",
+                  "text": "Sie ist tot."
+                },
+                {
+                  "id": "c",
+                  "text": "Sie ist betrunken."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Die Informationen sind für Reisende, die auf dem Flughafen ankommen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Wer muss sich beeilen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Die Passagiere nach Frankfurt."
+                },
+                {
+                  "id": "b",
+                  "text": "Die Passagiere nach Köln."
+                },
+                {
+                  "id": "c",
+                  "text": "Die Passagiere Siebert und Johannsen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q07",
+              "order": 7,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Sie hören eine Auskunft über die Bestellung von Eintrittskarten.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q08",
+              "order": 8,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Wann kann man bestellen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Samstag und Sonntag von 7.30 Uhr bis 18.00 Uhr."
+                },
+                {
+                  "id": "b",
+                  "text": "Montag bis Sonntag von 7.30 Uhr bis 20.00 Uhr."
+                },
+                {
+                  "id": "c",
+                  "text": "Montag bis Freitag bis 20.00 Uhr."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q09",
+              "order": 9,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Sie hören eine Werbung für Reisen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q10",
+              "order": 10,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Alle Angebote kosten ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "über 100 Euro."
+                },
+                {
+                  "id": "b",
+                  "text": "unter 100 Euro."
+                },
+                {
+                  "id": "c",
+                  "text": "98 Euro."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "monologue_guide",
+          "title": "Teil 2: Informationsveranstaltung über Ballonfahrten",
+          "instruction": "Sie hören eine Führung/einen Vortrag. Sie hören den Text einmal. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+          "questionRange": [
+            11,
+            15
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Vortrag über Ballonfahrten (S. 207)",
+            "content": "Sicherheitshinweise und geschichtliche Details zu Heißluftballonfahrten (einmal gehört)."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_H_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Wer besucht die Informationsveranstaltung?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Wer eine Ballonfahrt gewonnen hat."
+                },
+                {
+                  "id": "b",
+                  "text": "Wer das Sportmagazin liest."
+                },
+                {
+                  "id": "c",
+                  "text": "Wer an dem Quiz teilnehmen möchte."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q12",
+              "order": 12,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Die Piloten der Ballons ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "kommen aus der Schweiz."
+                },
+                {
+                  "id": "b",
+                  "text": "holen die Gäste ab."
+                },
+                {
+                  "id": "c",
+                  "text": "fliegen seit über 20 Jahren."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q13",
+              "order": 13,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Wie hoch kann ein Ballon steigen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bis zu 30 Metern."
+                },
+                {
+                  "id": "b",
+                  "text": "Bis zu 300 Metern."
+                },
+                {
+                  "id": "c",
+                  "text": "Bis zu 3000 Metern."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q14",
+              "order": 14,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Die Fahrgäste sollten ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "keine Höhenangst haben."
+                },
+                {
+                  "id": "b",
+                  "text": "einen Fotoapparat dabeihaben."
+                },
+                {
+                  "id": "c",
+                  "text": "vom Ballon nicht hinunterschauen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q15",
+              "order": 15,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "In dem ersten Ballon, der in die Luft stieg, ...",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "war ein König."
+                },
+                {
+                  "id": "b",
+                  "text": "waren Josef und Etienne Montgolfier."
+                },
+                {
+                  "id": "c",
+                  "text": "waren Tiere."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "informal_dialogue",
+          "title": "Teil 3: Alltagsgespräch über Haustiere und Gartenarbeit",
+          "instruction": "Sie hören ein Gespräch zwischen zwei Personen. Sie hören den Text einmal. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            16,
+            22
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Gespräch im Schrebergarten über Haustiere",
+            "content": "Gespräch zwischen Nachbarn über Kaninchenhaltung und Gemüsebeete (einmal gehört)."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_H_Q16",
+              "order": 16,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Alltagsgespräch – Aussage 16): Bewertung gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q17",
+              "order": 17,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Alltagsgespräch – Aussage 17): Bewertung gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q18",
+              "order": 18,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Alltagsgespräch – Aussage 18): Bewertung gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q19",
+              "order": 19,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Alltagsgespräch – Aussage 19): Bewertung gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q20",
+              "order": 20,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Alltagsgespräch – Aussage 20): Bewertung gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q21",
+              "order": 21,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Alltagsgespräch – Aussage 21): Bewertung gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q22",
+              "order": 22,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Teil 3 (Alltagsgespräch – Aussage 22): Bewertung gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "radio_debate",
+          "title": "Teil 4: Radiosendung über das Leben als Pendler",
+          "instruction": "Sie hören eine Radiodiskussion mit Gästen. Sie hören den Text zwei Mal. Wählen Sie: Wer sagt was?",
+          "questionRange": [
+            23,
+            30
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Radiosendung 'Unterwegs': Der Alltag von Berufspendlern",
+            "content": "Moderator im Gespräch mit Verkehrsforscher Dr. Meier und Pendlerin Sarah."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T13_H_Q23",
+              "order": 23,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 23): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q24",
+              "order": 24,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 24): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q25",
+              "order": 25,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 25): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q26",
+              "order": 26,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 26): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q27",
+              "order": 27,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 27): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q28",
+              "order": 28,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 28): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q29",
+              "order": 29,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 29): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T13_H_Q30",
+              "order": 30,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Teil 4 (Radiodiskussion – Aussage 30): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Dr. Meier"
+                },
+                {
+                  "id": "c",
+                  "text": "Sarah"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T13_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der Tipp ist für junge Leute, die studieren wollen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng (Hören 1 Falsch). Lời khuyên dành cho đối tượng khác."
+        },
+        {
+          "id": "OSD_B1_T13_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Wo kann man aktiv sein?",
+          "options": [
+            {
+              "id": "a",
+              "text": "In einem Krankenhaus."
+            },
+            {
+              "id": "b",
+              "text": "In einem Altenheim."
+            },
+            {
+              "id": "c",
+              "text": "In einer Arztpraxis."
+            }
+          ],
+          "publicExplanation": "Đáp án b đúng (Hören 2 b). Cơ hội tham gia hoạt động tại viện dưỡng lão."
+        },
+        {
+          "id": "OSD_B1_T13_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Die Polizei kennt den Täter.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Wie geht es der Kellnerin?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sie ist verletzt."
+            },
+            {
+              "id": "b",
+              "text": "Sie ist tot."
+            },
+            {
+              "id": "c",
+              "text": "Sie ist betrunken."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Die Informationen sind für Reisende, die auf dem Flughafen ankommen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Wer muss sich beeilen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die Passagiere nach Frankfurt."
+            },
+            {
+              "id": "b",
+              "text": "Die Passagiere nach Köln."
+            },
+            {
+              "id": "c",
+              "text": "Die Passagiere Siebert und Johannsen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Sie hören eine Auskunft über die Bestellung von Eintrittskarten.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Wann kann man bestellen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Samstag und Sonntag von 7.30 Uhr bis 18.00 Uhr."
+            },
+            {
+              "id": "b",
+              "text": "Montag bis Sonntag von 7.30 Uhr bis 20.00 Uhr."
+            },
+            {
+              "id": "c",
+              "text": "Montag bis Freitag bis 20.00 Uhr."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Sie hören eine Werbung für Reisen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Alle Angebote kosten ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "über 100 Euro."
+            },
+            {
+              "id": "b",
+              "text": "unter 100 Euro."
+            },
+            {
+              "id": "c",
+              "text": "98 Euro."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Wer besucht die Informationsveranstaltung?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Wer eine Ballonfahrt gewonnen hat."
+            },
+            {
+              "id": "b",
+              "text": "Wer das Sportmagazin liest."
+            },
+            {
+              "id": "c",
+              "text": "Wer an dem Quiz teilnehmen möchte."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Die Piloten der Ballons ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "kommen aus der Schweiz."
+            },
+            {
+              "id": "b",
+              "text": "holen die Gäste ab."
+            },
+            {
+              "id": "c",
+              "text": "fliegen seit über 20 Jahren."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q13",
+          "order": 13,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Wie hoch kann ein Ballon steigen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bis zu 30 Metern."
+            },
+            {
+              "id": "b",
+              "text": "Bis zu 300 Metern."
+            },
+            {
+              "id": "c",
+              "text": "Bis zu 3000 Metern."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q14",
+          "order": 14,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Die Fahrgäste sollten ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "keine Höhenangst haben."
+            },
+            {
+              "id": "b",
+              "text": "einen Fotoapparat dabeihaben."
+            },
+            {
+              "id": "c",
+              "text": "vom Ballon nicht hinunterschauen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q15",
+          "order": 15,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "In dem ersten Ballon, der in die Luft stieg, ...",
+          "options": [
+            {
+              "id": "a",
+              "text": "war ein König."
+            },
+            {
+              "id": "b",
+              "text": "waren Josef und Etienne Montgolfier."
+            },
+            {
+              "id": "c",
+              "text": "waren Tiere."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 16): Bewertung gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 17): Bewertung gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 18): Bewertung gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 19): Bewertung gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q20",
+          "order": 20,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 20): Bewertung gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q21",
+          "order": 21,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 21): Bewertung gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q22",
+          "order": 22,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 22): Bewertung gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 23): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 24): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 25): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 26): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q27",
+          "order": 27,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 27): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q28",
+          "order": 28,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 28): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q29",
+          "order": 29,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 29): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T13_H_Q30",
+          "order": 30,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 30): Wer vertritt diese Position? (a: Moderator | b: Dr. Meier | c: Sarah)",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Dr. Meier"
+            },
+            {
+              "id": "c",
+              "text": "Sarah"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T13_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 1 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q02",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 2 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q03",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 3 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q04",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 4 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q05",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 5 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q06",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 6 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q07",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 7 c",
+      "trapExplanationVi": "Velo-Touren in den Alpen."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q08",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 8 b",
+      "trapExplanationVi": "kann man viel sehen."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q09",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 9 c",
+      "trapExplanationVi": "kann man lecker essen."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q10",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 10 b",
+      "trapExplanationVi": "eine neue Art, Sehenswürdigkeiten kennenzulernen."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q11",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 11 a",
+      "trapExplanationVi": "sorgt dafür, dass Internetnutzer Schriften aus Museen sehen und lesen können."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q12",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 12 c",
+      "trapExplanationVi": "können müde machen."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q13",
+      "correctOption": "e",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 13 e",
+      "trapExplanationVi": "Khóa đáp án gốc: 13 e."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q14",
+      "correctOption": "0",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 14 0",
+      "trapExplanationVi": "Không có thông báo phù hợp (0)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q15",
+      "correctOption": "j",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 15 j",
+      "trapExplanationVi": "Khóa đáp án gốc: 15 j."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q16",
+      "correctOption": "g",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 16 g",
+      "trapExplanationVi": "Khóa đáp án gốc: 16 g."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q17",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 17 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 17 a."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q18",
+      "correctOption": "d",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 18 d",
+      "trapExplanationVi": "Khóa đáp án gốc: 18 d."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q19",
+      "correctOption": "f",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 19 f",
+      "trapExplanationVi": "Khóa đáp án gốc: 19 f."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q20",
+      "correctOption": "Nein",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 20 Nein",
+      "trapExplanationVi": "Quan điểm không đồng tình (Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q21",
+      "correctOption": "Ja",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 21 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình (Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q22",
+      "correctOption": "Ja",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 22 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình (Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q23",
+      "correctOption": "Nein",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 23 Nein",
+      "trapExplanationVi": "Quan điểm không đồng tình (Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q24",
+      "correctOption": "Ja",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 24 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình (Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q25",
+      "correctOption": "Ja",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 25 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình (Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q26",
+      "correctOption": "Nein",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 26 Nein",
+      "trapExplanationVi": "Quan điểm không đồng tình (Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q27",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 27 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 27 b."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q28",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 28 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 28 c."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q29",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 29 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 29 a."
+    },
+    {
+      "questionId": "OSD_B1_T13_L_Q30",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Lesen 30 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 30 c."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 1 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q02",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 2 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 b."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 3 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q04",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 4 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 a."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q05",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 5 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q06",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 6 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 a."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 7 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 7 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q08",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 8 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 8 c."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 9 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 9 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q10",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 10 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 10 b."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q11",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 11 a",
+      "trapExplanationVi": "Wer eine Ballonfahrt gewonnen hat."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q12",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 12 c",
+      "trapExplanationVi": "fliegen seit über 20 Jahren."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q13",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 13 c",
+      "trapExplanationVi": "Bis zu 3000 Metern."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q14",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 14 b",
+      "trapExplanationVi": "einen Fotoapparat dabeihaben."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q15",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 15 c",
+      "trapExplanationVi": "waren Tiere."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q16",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 16 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 16 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q17",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 17 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 17 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q18",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 18 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 18 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 19 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 19 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q20",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 20 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 20 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q21",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 21 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 21 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q22",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 22 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 22 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q23",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 23 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 23 c."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q24",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 24 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 24 c."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q25",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 25 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 25 b."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q26",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 26 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 26 a."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q27",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 27 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 27 b."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q28",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 28 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 28 a."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q29",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 29 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 29 b."
+    },
+    {
+      "questionId": "OSD_B1_T13_H_Q30",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 13: Hören 30 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 30 c."
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-02",
+    "slug": "osd-b2-test-02",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 02",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa theo Das Testbuch ÖSD • Mittelstufe Deutsch B2 (Test 2). Phần Hörverstehen Aufgabe 2 (Tanzschulen in Wien: Schwebach, Elmayer, Rupprecht) được trích xuất nguyên văn từ trang 28 của nguồn.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20,
+      "hoerenMaxPoints": 20,
+      "minPassingScorePerSkill": 12
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t2_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu B2 (Leseverstehen)",
+      "durationMinutes": 90,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "text",
+        "title": "ÖSD B2 Modelltest 02 · Leseverstehen",
+        "content": "LESEVERSTEHEN · TEIL 1–4\nDer Text untersucht die gesellschaftliche Funktion von Tanzschulen in Wien und erklärt, wie Tradition, Umgangsformen und moderne Freizeitangebote zusammenwirken. Ergänzende Aufgaben behandeln Überschriften, eine Rekonstruktion und einen Werbebrief. Lesen Sie die Argumente und Details genau, bevor Sie die passende Antwort auswählen."
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T2_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 1): Văn bản báo chí phân tích về văn hóa khiêu vũ và truyền thống vũ hội tại Vienna (Wiener Ballsaison). Welche gesellschaftliche Funktion erfüllen Tanzschulen laut Text heute?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sie bereiten ausschließlich professionelle Turniertänzer auf Weltmeisterschaften vor."
+            },
+            {
+              "id": "B",
+              "text": "Sie vermitteln jungen Menschen neben Tanzschritten auch soziale Umgangsformen und Traditionen."
+            },
+            {
+              "id": "C",
+              "text": "Sie ersetzen den regulären Sportunterricht an allen österreichischen Gymnasien."
+            }
+          ],
+          "publicExplanation": "Đáp án B đúng vì tại Áo (đặc biệt là Vienna), trường dạy khiêu vũ không chỉ dạy kỹ thuật bước nhảy mà còn là nơi rèn luyện lễ nghi giao tiếp xã hội (Umgangsformen) chuẩn bị cho mùa vũ hội truyền thống."
+        },
+        {
+          "id": "OSD_B2_T2_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 2): Warum erleben klassische Tanzkurse bei Jugendlichen wieder einen Aufschwung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Weil traditionelle Schul- und Maturabälle als gesellschaftliches Ereignis sehr beliebt sind."
+            },
+            {
+              "id": "B",
+              "text": "Weil die Teilnahme an Tanzkursen gesetzlich verpflichtend geworden ist."
+            },
+            {
+              "id": "C",
+              "text": "Weil moderne Musik in Diskotheken verboten wurde."
+            }
+          ],
+          "publicExplanation": "Đáp án A đúng vì các buổi vũ hội tốt nghiệp (Maturabälle) giữ vai trò sự kiện văn hóa quan trọng, thúc đẩy giới trẻ đăng ký khóa học khiêu vũ cổ điển."
+        },
+        {
+          "id": "OSD_B2_T2_L_Q03",
+          "order": 3,
+          "part": 2,
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Frage 3): Chọn tiêu đề phù hợp nhất cho đoạn báo ngắn về xu hướng học tập suốt đời trong thị trường lao động hiện đại.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Berufliche Weiterbildung wird zum entscheidenden Karrierefaktor"
+            },
+            {
+              "id": "B",
+              "text": "Warum Hochschulabschlüsse künftig nicht mehr anerkannt werden"
+            },
+            {
+              "id": "C",
+              "text": "Jugendliche verzichten zunehmend auf jegliche Berufsausbildung"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T2_L_Q04",
+          "order": 4,
+          "part": 3,
+          "prompt": "Aufgabe 3 (Fax-Rekonstruktion – Maximal 3 Buchstaben pro Lücke): Khôi phục phần chữ bị cắt ở lề phải: Immer mehr Menschen besuchen in ihrer Freiz___ einen Tanzkurs.",
+          "options": [
+            {
+              "id": "A",
+              "text": "eit (Freizeit)"
+            },
+            {
+              "id": "B",
+              "text": "eug (Freizeug)"
+            },
+            {
+              "id": "C",
+              "text": "one (Freizone)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T2_L_Q05",
+          "order": 5,
+          "part": 4,
+          "taskType": "cloze_single_word",
+          "prompt": "Aufgabe 4 (Werbebrief – 1 Wort pro Lücke): Điền từ thích hợp về mặt ngữ pháp và ngữ nghĩa vào thư quảng cáo: Wir laden Sie herzlich ___ (1) unserem Tag der offenen Tür ein.",
+          "options": [
+            {
+              "id": "A",
+              "text": "zu"
+            },
+            {
+              "id": "B",
+              "text": "auf"
+            },
+            {
+              "id": "C",
+              "text": "über"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t2_hoeren_aufgabe_1_aufgabe_1",
+      "skill": "Hoeren",
+      "title": "Aufgabe 1: Aufgabe 1: Radiosendung / Interview (Richtig/Falsch)",
+      "durationMinutes": 10,
+      "totalQuestions": 1,
+      "stimulus": {
+        "type": "audio",
+        "title": "Aufgabe 1: Radiosendung / Interview (Richtig/Falsch)",
+        "audioUrl": "/audio/osd-b2/test-02-aufgabe-1.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T2_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Aufgabe 1 (Radiosendung – Richtig/Falsch – Aussage 1): Bản tin phát thanh chuyên đề về văn hóa giải trí và thể thao tại Áo.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo cấu trúc Aufgabe 1 của Das Testbuch ÖSD B2 (nghe 2 lần, đánh giá nhận định Richtig/Falsch)."
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t2_hoeren_aufgabe_1_aufgabe_2",
+      "skill": "Hoeren",
+      "title": "Aufgabe 2: Gespräch / Vergleichstabelle (Hörverstehen B2)",
+      "durationMinutes": 10,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Aufgabe 2: Gespräch / Vergleichstabelle (Hörverstehen B2)",
+        "audioUrl": "/audio/osd-b2/test-02-aufgabe-2.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B2_T2_H_Q02",
+          "order": 2,
+          "part": 2,
+          "sourcePage": 28,
+          "prompt": "Aufgabe 2 (Tanzschulen in Wien – Schwebach, Elmayer, Rupprecht): Situation: Sie hören ein Gespräch zwischen zwei Freundinnen. Marion möchte tanzen lernen. Martina, ihre Freundin ist Tanzlehrerin und informiert sie daher über drei verschiedene Tanzschulen in Wien (Schwebach, Elmayer, Rupprecht). Kriterium 1 & 2: Lage (___ Bezirk) & Kurse (Grund-/Fortgeschrittenenkurse, Hochzeitkurse, Auffrischungskurse).",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ghi chép số quận (___ Bezirk) và đánh dấu các loại khóa học (Grund-/Fortgeschrittenenkurse, Hochzeitkurse, Auffrischungskurse) của từng trường."
+            },
+            {
+              "id": "B",
+              "text": "Chỉ chọn một trường duy nhất để đăng ký học."
+            },
+            {
+              "id": "C",
+              "text": "Không cần điền thông tin về quận và khóa học."
+            }
+          ],
+          "publicExplanation": "Trích nguyên văn đề gốc trang 28 (Das Testbuch ÖSD Mittelstufe Deutsch B2, Test 2, Aufgabe 2): Thí sinh nghe 1 lần cuộc hội thoại giữa Marion và cô bạn giáo viên khiêu vũ Martina để điền bảng so sánh 3 trường khiêu vũ tại Vienna là Schwebach, Elmayer và Rupprecht."
+        },
+        {
+          "id": "OSD_B2_T2_H_Q03",
+          "order": 3,
+          "part": 2,
+          "sourcePage": 28,
+          "prompt": "Aufgabe 2 (Tanzschulen in Wien – Bảng đối chiếu hàng 3, 4, 5): Hoàn thiện thông tin cho 3 trường Schwebach | Elmayer | Rupprecht ở các mục: Abendkurse (___ Uhr), Buchung (Internet / persönlich / Gratis-hotline), Öffnungszeiten (___ Uhr).",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền giờ học tối (Abendkurse: ___ Uhr), hình thức đặt chỗ (Internet / persönlich / Gratis-hotline) và giờ mở cửa (Öffnungszeiten: ___ Uhr)."
+            },
+            {
+              "id": "B",
+              "text": "Chỉ đánh dấu hình thức đặt chỗ qua Internet cho cả 3 trường."
+            },
+            {
+              "id": "C",
+              "text": "Ghi giá tiền vào mục giờ mở cửa."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T2_H_Q04",
+          "order": 4,
+          "part": 2,
+          "sourcePage": 28,
+          "prompt": "Aufgabe 2 (Tanzschulen in Wien – Bảng đối chiếu hàng 6, 7): Hoàn thiện thông tin cho 3 trường Schwebach | Elmayer | Rupprecht ở các mục: Kosten (___ Euro) và Bekleidungsvorschriften (ja / nein).",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền mức học phí (___ Euro) và đánh dấu quy định trang phục (ja / nein) cho từng trường."
+            },
+            {
+              "id": "B",
+              "text": "Cả ba trường đều miễn phí hoàn toàn và không có quy định trang phục."
+            },
+            {
+              "id": "C",
+              "text": "Chỉ ghi học phí của trường Elmayer."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T2_H_Q05",
+          "order": 5,
+          "part": 2,
+          "sourcePage": 28,
+          "prompt": "Aufgabe 2 (Tanzschulen in Wien – Bảng đối chiếu hàng 8, 9): Hoàn thiện thông tin cho 3 trường Schwebach | Elmayer | Rupprecht ở các mục: Kursteilnehmer (___ Personen) và Tanzsaal (___ m²).",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền số lượng học viên (___ Personen) và diện tích sàn nhảy (___ m²) của Schwebach, Elmayer và Rupprecht."
+            },
+            {
+              "id": "B",
+              "text": "Điền số lượng giáo viên và số phòng thay đồ."
+            },
+            {
+              "id": "C",
+              "text": "Không nghe thông tin về diện tích phòng tập."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T2_H_Q06",
+          "order": 6,
+          "part": 2,
+          "sourcePage": 28,
+          "prompt": "Aufgabe 2 (Tanzschulen in Wien – Bảng đối chiếu hàng 10, 11): Hoàn thiện thông tin cho 3 trường Schwebach | Elmayer | Rupprecht ở các mục: Übungsabende – Wann? (___) và Preis der Übungsabende (___ Euro / Person).",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền lịch tổ chức tối thực hành (Übungsabende – Wann?) và giá vé mỗi người (___ Euro / Person) cho từng trường."
+            },
+            {
+              "id": "B",
+              "text": "Các buổi tối thực hành chỉ dành cho khách du lịch nước ngoài."
+            },
+            {
+              "id": "C",
+              "text": "Giá tính theo nhóm 10 người thay vì từng cá nhân."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T2_L_Q01",
+      "correctOption": "B",
+      "points": 4,
+      "citation": "Das Testbuch ÖSD B2 – Test 2 (Leseverstehen Aufgabe 1)",
+      "trapExplanationVi": "Trường khiêu vũ truyền thống tại Vienna kết hợp dạy khiêu vũ và kỹ năng giao tiếp văn hóa xã hội."
+    },
+    {
+      "questionId": "OSD_B2_T2_L_Q02",
+      "correctOption": "A",
+      "points": 4,
+      "citation": "Das Testbuch ÖSD B2 – Test 2 (Leseverstehen Aufgabe 1)",
+      "trapExplanationVi": "Văn hóa vũ hội tốt nghiệp (Maturaball) là động lực chính giúp các khóa khiêu vũ thu hút giới trẻ."
+    },
+    {
+      "questionId": "OSD_B2_T2_L_Q03",
+      "correctOption": "A",
+      "points": 4,
+      "citation": "Das Testbuch ÖSD B2 – Test 2 (Leseverstehen Aufgabe 2)",
+      "trapExplanationVi": "Khớp đúng nội dung trọng tâm về đào tạo nâng cao nghề nghiệp."
+    },
+    {
+      "questionId": "OSD_B2_T2_L_Q04",
+      "correctOption": "A",
+      "points": 4,
+      "citation": "Das Testbuch ÖSD B2 – Test 2 (Leseverstehen Aufgabe 3: max. 3 Buchstaben)",
+      "trapExplanationVi": "Từ gốc là Freizeit, phần bị cắt ở lề phải gồm đúng 3 chữ cái eit."
+    },
+    {
+      "questionId": "OSD_B2_T2_L_Q05",
+      "correctOption": "A",
+      "points": 4,
+      "citation": "Das Testbuch ÖSD B2 – Test 2 (Leseverstehen Aufgabe 4: einladen zu + Dativ)",
+      "trapExplanationVi": "Cấu trúc cố định jemanden zu etwas einladen đi với giới từ zu."
+    },
+    {
+      "questionId": "OSD_B2_T2_H_Q01",
+      "correctOption": "Richtig",
+      "points": 5,
+      "citation": "Das Testbuch ÖSD B2 – Test 2 (Hörverstehen Aufgabe 1)",
+      "trapExplanationVi": "Khung chấm điểm Aufgabe 1 B2."
+    },
+    {
+      "questionId": "OSD_B2_T2_H_Q02",
+      "correctOption": "A",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 28: Lage (___ Bezirk) | Kurse (Grund-/Fortgeschrittenenkurse, Hochzeitkurse, Auffrischungskurse)",
+      "trapExplanationVi": "Bám sát 2 dòng đầu bảng so sánh 3 trường Schwebach, Elmayer, Rupprecht."
+    },
+    {
+      "questionId": "OSD_B2_T2_H_Q03",
+      "correctOption": "A",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 28: Abendkurse (___ Uhr) | Buchung (Internet, persönlich, Gratis-hotline) | Öffnungszeiten (___ Uhr)",
+      "trapExplanationVi": "Phân biệt chính xác giờ học buổi tối (Abendkurse) với giờ mở cửa văn phòng (Öffnungszeiten)."
+    },
+    {
+      "questionId": "OSD_B2_T2_H_Q04",
+      "correctOption": "A",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 28: Kosten (___ Euro) | Bekleidungsvorschriften (ja / nein)",
+      "trapExplanationVi": "Lưu ý bẫy phủ định khi diễn giả đề cập trường nào yêu cầu trang phục lịch sự (Bekleidungsvorschriften)."
+    },
+    {
+      "questionId": "OSD_B2_T2_H_Q05",
+      "correctOption": "A",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 28: Kursteilnehmer (___ Personen) | Tanzsaal (___ m²)",
+      "trapExplanationVi": "Nghe chính xác con số sĩ số lớp và diện tích mét vuông sàn tập của từng trường."
+    },
+    {
+      "questionId": "OSD_B2_T2_H_Q06",
+      "correctOption": "A",
+      "points": 3,
+      "citation": "Das Testbuch ÖSD B2, S. 28: Übungsabende – Wann? | Preis der Übungsabende (___ Euro / Person)",
+      "trapExplanationVi": "Tách bạch thông tin buổi tối thực hành tự do (Übungsabende) với học phí khóa chính."
+    }
+  ]
+}

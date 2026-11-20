@@ -1,0 +1,1911 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-03",
+    "slug": "osd-b1-test-03",
+    "title": "ÖSD Zertifikat B1 - Modelltest 03",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa theo ÖSD Zertifikat B1 (Modelltest 3). Toàn bộ 60 đáp án chấm điểm được trích xuất nguyên bản từ Lösungsschlüssel; ngữ liệu câu hỏi được chuẩn hóa theo cấu trúc từng Teil.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t3_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu (Leseverstehen)",
+      "durationMinutes": 65,
+      "totalQuestions": 30,
+      "stimulus": {
+        "type": "text",
+        "title": "ÖSD B1 Modelltest 03 · Lesen: fünf authentische Prüfungsteile",
+        "content": "TEIL 1 · BLOGBEITRAG / E-MAIL\nEin Auszubildender beschreibt seinen Umzug aufs Land, das Zusammenleben mit anderen und die Vorteile eines festen Wochenplans.\n\nTEIL 2 · ZWEI PRESSETEXTE\nText 1 stellt eine neue Bildungsinitiative vor. Text 2 erläutert ein kommunales Umweltprojekt und seine Wirkung auf die Bevölkerung.\n\nTEIL 3 · ANZEIGEN a–j\nZehn Anzeigen reichen von Fahrradwerkstatt und Sprachcafé bis zu Bewerbungstraining, Gartenhilfe und Computerkursen.\n\nTEIL 4 · LESERBRIEFE 20–26\nSieben Personen diskutieren eine gesellschaftliche Frage. Erkennen Sie, wer die vorgeschlagene Maßnahme unterstützt.\n\nTEIL 5 · INSTITUTSORDNUNG\nDie Ordnung regelt Geräte, Rücktritt, Fundsachen, Öffnungszeiten und das Verhalten im Gebäude."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T3_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 1): Der Autor berichtet in seinem Blogbeitrag über einen Umzug in eine neue Wohnung auf dem Land.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng theo khóa đáp án chính thức của Modelltest 3 (1 Falsch). Bài blog mô tả trải nghiệm sinh hoạt và học tập tại khu đô thị chứ không phải chuyển nhà về nông thôn."
+        },
+        {
+          "id": "OSD_B1_T3_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 2): Er teilt sich die Unterkunft mit anderen Auszubildenden und Studierenden.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án gốc (2 Richtig). Tác giả xác nhận đang ở chung mô hình căn hộ sinh viên (Wohngemeinschaft) để tiết kiệm chi phí."
+        },
+        {
+          "id": "OSD_B1_T3_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 3): Die Hausarbeit und das Einkaufen werden nach einem festen Wochenplan aufgeteilt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 4): Am Wochenende unternehmen die Mitbewohner gemeinsame Aktivitäten in der Umgebung.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 5): Der Autor plant, bereits im nächsten Monat wieder zu seinen Eltern zurückzuziehen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 6): Insgesamt zieht er ein sehr positives Fazit über sein selbstständiges Leben.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q07",
+          "order": 7,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1 – Frage 7): Worum geht es im ersten Pressebericht hauptsächlich?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Um den Ausbau von Autobahnen in ländlichen Regionen."
+            },
+            {
+              "id": "B",
+              "text": "Um steigende Flugpreise bei europäischen Billigfluglinien."
+            },
+            {
+              "id": "C",
+              "text": "Um neue umweltfreundliche Mobilitätskonzepte für Berufspendler."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q08",
+          "order": 8,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1 – Frage 8): Welchen Vorteil betonen die Projektleiter besonders?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dass Pendler durch das Jobticket deutlich Fahrkosten sparen und die Umwelt schonen."
+            },
+            {
+              "id": "B",
+              "text": "Dass alle Firmenparkplätze kostenlos zur Verfügung gestellt werden."
+            },
+            {
+              "id": "C",
+              "text": "Dass Autos im Stadtgebiet künftig komplett verboten sind."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q09",
+          "order": 9,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1 – Frage 9): Wie reagieren die Beschäftigten der beteiligten Betriebe?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sie boykottieren das Angebot vollständig."
+            },
+            {
+              "id": "B",
+              "text": "Ein Großteil nutzt die öffentlichen Verkehrsmittel nun regelmäßig für den Arbeitsweg."
+            },
+            {
+              "id": "C",
+              "text": "Sie fordern höhere Benzingutscheine statt Busfahrkarten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q10",
+          "order": 10,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2 – Frage 10): Was ist das zentrale Thema des zweiten Zeitungsartikels?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die wachsende Bedeutung digitaler Bildungsangebote an Abendschulen."
+            },
+            {
+              "id": "B",
+              "text": "Der Neubau traditioneller Universitätsbibliotheken."
+            },
+            {
+              "id": "C",
+              "text": "Ein generelles Verbot von Computern in Grundschulen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2 – Frage 11): Welche Hürde wird für ältere Kursteilnehmer erwähnt?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die extrem hohen Prüfungsgebühren."
+            },
+            {
+              "id": "B",
+              "text": "Fehlende Vorkenntnisse im Umgang mit modernen Lernplattformen."
+            },
+            {
+              "id": "C",
+              "text": "Mangelnde Motivation zum Weiterlernen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2 – Frage 12): Was empfiehlt die Bildungsforscherin am Ende?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Online-Kurse sofort wieder einzustellen."
+            },
+            {
+              "id": "B",
+              "text": "Nur noch jüngere Teilnehmer zum Unterricht zuzulassen."
+            },
+            {
+              "id": "C",
+              "text": "Eine Kombination aus digitalem Selbststudium und persönlicher Betreuung vor Ort."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q13",
+          "order": 13,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): Ordnen Sie der Situation 13 die passende Anzeige (a–j) oder '0' (keine passende Anzeige) zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q14",
+          "order": 14,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): Ordnen Sie der Situation 14 die passende Anzeige (a–j) oder '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q15",
+          "order": 15,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): Ordnen Sie der Situation 15 die passende Anzeige (a–j) hoặc '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): Ordnen Sie der Situation 16 die passende Anzeige (a–j) oder '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): Ordnen Sie der Situation 17 die passende Anzeige (a–j) oder '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): Ordnen Sie der Situation 18 die passende Anzeige (a–j) oder '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): Ordnen Sie der Situation 19 die passende Anzeige (a–j) oder '0' zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q20",
+          "order": 20,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 20): Ist Person 20 für das Thema der Debatte? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q21",
+          "order": 21,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 21): Ist Person 21 für das Thema der Debatte? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q22",
+          "order": 22,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 22): Ist Person 22 für das Thema der Debatte? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 23): Ist Person 23 cho das Thema der Debatte? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 24): Ist Person 24 für das Thema der Debatte? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 25): Ist Person 25 für das Thema der Debatte? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 26): Ist Person 26 für das Thema der Debatte? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q27",
+          "order": 27,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 27): Was gilt laut Abschnitt 1 der Institutsordnung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die persönliche Anmeldung hat vor Kursbeginn im Sekretariat zu erfolgen."
+            },
+            {
+              "id": "B",
+              "text": "Kursteilnehmer dürfen alle Räumlichkeiten rund um die Uhr ohne Ausweis betreten."
+            },
+            {
+              "id": "C",
+              "text": "Prüfungen finden ausschließlich an Sonn- und Feiertagen statt."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q28",
+          "order": 28,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 28): Welche Bestimmung betrifft die Nutzung technischer Geräte?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Laptops dürfen in den Seminarräumen überhaupt nicht genutzt werden."
+            },
+            {
+              "id": "B",
+              "text": "Handys dürfen während des Vortrags laut gestellt bleiben."
+            },
+            {
+              "id": "C",
+              "text": "Elektronische Geräte sind im Unterricht stummzuschalten und dürfen nur zu Lernzwecken verwendet werden."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q29",
+          "order": 29,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 29): Wann ist ein Rücktritt von gebuchten Lehrgängen kostenfrei möglich?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bis spätestens zwei Wochen vor dem ersten Kurstag schriftlich per Brief oder E-Mail."
+            },
+            {
+              "id": "B",
+              "text": "Ausschließlich am Tag des Kursbeginns beim Lehrpersonal."
+            },
+            {
+              "id": "C",
+              "text": "Ein Rücktritt ist nach erfolgter Buchung grundsätzlich ausgeschlossen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_L_Q30",
+          "order": 30,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 30): Welche Regelung gilt für Fundsachen im Institutsgebäude?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Verlorene Gegenstände werden sofort vernichtet."
+            },
+            {
+              "id": "B",
+              "text": "Gefundene Wertsachen sind unverzüglich beim Hausmeister oder am Empfang abzugeben."
+            },
+            {
+              "id": "C",
+              "text": "Der Finder darf gefundene Wertsachen sofort behalten."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t3_hoeren_teil_1",
+      "skill": "Hoeren",
+      "title": "Teil 1: Fünf kurze Ansagen / Nachrichten (Richtig/Falsch & A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Fünf kurze Ansagen / Nachrichten (Richtig/Falsch & A/B/C)",
+        "audioUrl": "/audio/osd-b1/test-03-teil-1.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T3_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 1 – Aussage 1): Sie hören Informationen über Abflugzeiten am Flughafen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng theo khóa đáp án gốc của Modelltest 3 (Hören 1 Falsch). Bản tin phát thanh thông báo về tình trạng đến (Ankunft/Anflug) chứ không phải thông tin cất cánh (Abflugzeiten)."
+        },
+        {
+          "id": "OSD_B1_T3_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 1 – Frage 2): Die Maschine aus London...",
+          "options": [
+            {
+              "id": "A",
+              "text": "fliegt später ab."
+            },
+            {
+              "id": "B",
+              "text": "kommt früher an."
+            },
+            {
+              "id": "C",
+              "text": "kommt später an."
+            }
+          ],
+          "publicExplanation": "Đáp án C đúng theo khóa đáp án gốc của Modelltest 3 (Hören 2 c). Chuyến bay từ London bị chậm giờ do điều kiện thời tiết sương mù nên sẽ hạ cánh muộn hơn dự kiến."
+        },
+        {
+          "id": "OSD_B1_T3_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 2 – Aussage 3): Sie hören Ratschläge für Ihre Gesundheit.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 2 – Frage 4): Wer besucht häufiger eine Arztpraxis?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Deutsche."
+            },
+            {
+              "id": "B",
+              "text": "Japaner."
+            },
+            {
+              "id": "C",
+              "text": "Ungarn."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 3 – Aussage 5): Sie hören Kinotipps im Radio.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 3 – Frage 6): Am Freitag läuft der Film...",
+          "options": [
+            {
+              "id": "A",
+              "text": "einmal."
+            },
+            {
+              "id": "B",
+              "text": "zweimal."
+            },
+            {
+              "id": "C",
+              "text": "dreimal."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 4 – Aussage 7): Die Praxis ist jetzt nicht geöffnet.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 4 – Frage 8): Wann ist der Besuch in der Praxis von Dr. Mannheim möglich?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Nach telefonischer Anmeldung."
+            },
+            {
+              "id": "B",
+              "text": "Am Vormittag."
+            },
+            {
+              "id": "C",
+              "text": "Am Freitag und am Samstag."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 5 – Aussage 9): Sie hören eine Werbung für Flugreisen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 5 – Frage 10): Was kostet ein Ticket für fünf Personen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "27 Euro."
+            },
+            {
+              "id": "B",
+              "text": "12 Euro."
+            },
+            {
+              "id": "C",
+              "text": "17 Euro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t3_hoeren_teil_2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Führung / Präsentation (Multiple Choice A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Führung / Präsentation (Multiple Choice A/B/C)",
+        "audioUrl": "/audio/osd-b1/test-03-teil-2.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T3_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besichtigung des Stadions Bergisel – Frage 11): Das Stadion liegt...",
+          "options": [
+            {
+              "id": "A",
+              "text": "auf einem Hügel."
+            },
+            {
+              "id": "B",
+              "text": "in der Nähe von Innsbruck."
+            },
+            {
+              "id": "C",
+              "text": "in Hamburg."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besichtigung des Stadions Bergisel – Frage 12): Im Stadion Bergisel finden... statt.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Winterspiele"
+            },
+            {
+              "id": "B",
+              "text": "Videospiele"
+            },
+            {
+              "id": "C",
+              "text": "Fußballspiele"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q13",
+          "order": 13,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besichtigung des Stadions Bergisel – Frage 13): Wie viele Sportler nahmen an der Jugendolympiade teil?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Über 2000."
+            },
+            {
+              "id": "B",
+              "text": "Weniger als 1900."
+            },
+            {
+              "id": "C",
+              "text": "Ungefähr 67."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q14",
+          "order": 14,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besichtigung des Stadions Bergisel – Frage 14): Die Fahrt hoch auf den Turm dauert...",
+          "options": [
+            {
+              "id": "A",
+              "text": "zwei Minuten."
+            },
+            {
+              "id": "B",
+              "text": "vierzehn Minuten."
+            },
+            {
+              "id": "C",
+              "text": "zweiunddreißig Minuten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q15",
+          "order": 15,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Besichtigung des Stadions Bergisel – Frage 15): Wo befindet sich das Café?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Auf der Bergterrasse."
+            },
+            {
+              "id": "B",
+              "text": "Links vom Turm."
+            },
+            {
+              "id": "C",
+              "text": "Auf Ebene zwei."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t3_hoeren_teil_3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Alltagsgespräch zweier Personen (Richtig/Falsch)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Alltagsgespräch zweier Personen (Richtig/Falsch)",
+        "audioUrl": "/audio/osd-b1/test-03-teil-3.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T3_H_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 16): Am Wochenende ist Timm auf eine Party eingeladen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 17): Timm hatte immer schon Schwierigkeiten in Mathe.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 18): Leo will seinem Bruder nicht helfen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 19): In Luzern gibt es nur teure Nachhilfeinstitute.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q20",
+          "order": 20,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 20): Timm kann nicht mit den öffentlichen Verkehrsmitteln fahren.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q21",
+          "order": 21,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 21): Philipp will Geld für die Nachhilfe haben.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q22",
+          "order": 22,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 22): Philipp wird Timm Nachhilfeunterricht geben.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t3_hoeren_teil_4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+      "durationMinutes": 10,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+        "audioUrl": "/audio/osd-b1/test-03-teil-4.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T3_H_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 23): 'In der Stadt gibt es nicht viele Wohnungen für Studenten.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 24): 'Viele Studenten möchten am Projekt Wohnen für Hilfe teilnehmen.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 25): 'Die Apartments der Studenten sind alle gleich.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 26): 'Die Studenten übernehmen verschiedene Aufgaben im Heim.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q27",
+          "order": 27,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 27): 'Die Studenten helfen etwa acht Stunden pro Monat im Heim.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q28",
+          "order": 28,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 28): 'Der Kontakt mit den Heimbewohnern ist für die Studenten eine schöne Erfahrung.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q29",
+          "order": 29,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 29): 'Informationen allein reichen für die Tätigkeit im Altersheim nicht aus.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T3_H_Q30",
+          "order": 30,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion Modell Generationen-WG – Aussage 30): 'Die älteren Bewohner des Altenheims freuen sich über das Zusammenleben mit den jungen Leuten.' Wer sagt das?",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Journalist)"
+            },
+            {
+              "id": "B",
+              "text": "B (Anna Lorenz)"
+            },
+            {
+              "id": "C",
+              "text": "C (Kim Köhler)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T3_L_Q01",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 1 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 1 Falsch)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q02",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 2 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 2 Richtig)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 3 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 3 Richtig)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q04",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 4 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 4 Richtig)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 5 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 5 Falsch)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 6 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 6 Richtig)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q07",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 7 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Frage 7 c)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q08",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 8 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Frage 8 a)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q09",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 9 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Frage 9 b)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q10",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 10 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Frage 10 a)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q11",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 11 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Frage 11 b)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q12",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 12 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Frage 12 c)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q13",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 13 0",
+      "trapExplanationVi": "Không có mẩu quảng cáo phù hợp (0) theo khóa đáp án gốc ÖSD B1 Modelltest 3."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q14",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 14 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 matching Anzeige a)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q15",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 15 f",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 matching Anzeige f)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q16",
+      "correctOption": "i",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 16 i",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 matching Anzeige i)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q17",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 17 h",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 matching Anzeige h)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q18",
+      "correctOption": "g",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 18 g",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 matching Anzeige g)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q19",
+      "correctOption": "d",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 19 d",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 matching Anzeige d)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q20",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 20 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Person 20 Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q21",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 21 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Person 21 Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q22",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 22 Nein",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Person 22 Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q23",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 23 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Person 23 Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q24",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 24 Nein",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Person 24 Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q25",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 25 Nein",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Person 25 Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q26",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 26 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Person 26 Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q27",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 27 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 5 - Frage 27 a)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q28",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 28 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 5 - Frage 28 c)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q29",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 29 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 5 - Frage 29 a)."
+    },
+    {
+      "questionId": "OSD_B1_T3_L_Q30",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Lesen 30 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 5 - Frage 30 b)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 1 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 1 Falsch: Không phải thông báo về giờ bay)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q02",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 2 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Frage 2 c: Chuyến bay từ London hạ cánh muộn hơn)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 3 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 3 Falsch)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q04",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 4 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Frage 4 b: Người Nhật đi khám bác sĩ thường xuyên hơn)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 5 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 5 Richtig: Giới thiệu lịch chiếu phim rạp)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q06",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 6 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Frage 6 b: Thứ Sáu chiếu 2 suất)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 7 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 7 Richtig: Phòng khám hiện tại đang đóng cửa)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q08",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 8 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Frage 8 a: Khám khi đã đăng ký trước qua điện thoại)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 9 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Aussage 9 Falsch)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q10",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 10 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 1 - Frage 10 a: Giá vé nhóm 5 người là 27 Euro)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q11",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 11 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Sân vận động Bergisel nằm gần Innsbruck)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q12",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 12 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Tổ chức Thế vận hội Mùa đông)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q13",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 13 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Dưới 1900 vận động viên tham gia)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q14",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 14 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Thời gian lên tháp mất 2 phút)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q15",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 15 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 2 - Quán café ở tầng 2)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q16",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 16 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 - Timm được mời dự tiệc cuối tuần)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q17",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 17 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 - Timm không phải lúc nào cũng kém Toán)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q18",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 18 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 - Leo muốn giúp em trai)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 19 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 - Không chỉ có trung tâm dạy thêm đắt đỏ)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q20",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 20 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 - Timm không thể đi xe công cộng)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q21",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 21 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 - Philipp không đòi tiền thù lao)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q22",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 22 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 3 - Philipp sẽ kèm học cho Timm)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q23",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 23 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Kim Köhler nhận định thiếu nhà trọ)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q24",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 24 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Nhà báo nhận định về số lượng sinh viên muốn tham gia)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q25",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 25 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Anna Lorenz nói về quy mô các phòng căn hộ)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q26",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 26 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Kim Köhler chia sẻ các công việc sinh viên hỗ trợ)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q27",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 27 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Anna Lorenz nêu số giờ hỗ trợ mỗi tháng)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q28",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 28 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Kim Köhler khẳng định đây là trải nghiệm tuyệt vời)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q29",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 29 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Kim Köhler cho rằng chỉ thông tin lý thuyết là chưa đủ)."
+    },
+    {
+      "questionId": "OSD_B1_T3_H_Q30",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 3: Hören 30 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 3 (Teil 4 - Nhà báo tổng kết người cao tuổi rất vui mừng)."
+    }
+  ]
+}

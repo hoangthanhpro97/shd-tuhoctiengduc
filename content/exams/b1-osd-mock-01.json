@@ -1,0 +1,1967 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-mock-01",
+    "slug": "osd-b1-mock-01",
+    "title": "Đề thi mô phỏng chuẩn khảo thí ÖSD Zertifikat B1 - Đề số 01",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi mô phỏng định dạng khảo thí ÖSD Zertifikat B1 (ZB1/ZDÖ) phục vụ ôn luyện và khảo sát năng lực.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_b1_lesen-part-1",
+      "skill": "Lesen",
+      "title": "Teil 1: Blogbeitrag / E-Mail (Richtig/Falsch)",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Blog von Michael: Mein Umzug und mein neues Leben in Berlin",
+        "content": "Hallo Leute, ich bin vor zwei Wochen nach Berlin umgezogen. Am Anfang war es ganz schön stressig, weil ich keine Wohnung finden konnte. Überall waren die Mieten viel zu hoch. Zum Glück hat mir mein Kollege geholfen: Jetzt wohne ich in einer netten 3er-WG in Kreuzberg! Mein Zimmer ist zwar klein, aber sehr hell und hat einen schönen Blick auf den Park. Meine Mitbewohner, Sara und Jonas, sind supernett. Wir kochen fast jeden Abend zusammen und am Wochenende zeigen sie mir die Stadt. Nächste Woche fängt mein neuer Job als Webentwickler an. Ich bin schon ziemlich nervös, aber ich freue mich auch riesig darauf."
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_L_T1_Q01",
+          "order": 1,
+          "questionType": "binary",
+          "prompt": "Michael berichtet über seinen Umzug in eine neue Stadt.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig. Trong bài đọc, câu đầu tiên Michael đã viết rõ ràng: 'ich bin vor zwei Wochen nach Berlin umgezogen'.",
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_L_T1_Q02",
+          "order": 2,
+          "questionType": "binary",
+          "prompt": "Es war für ihn von Beginn an einfach, eine Wohnung zu bekommen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch. Michael kể: 'Am Anfang war es ganz schön stressig, weil ich keine Wohnung finden konnte. Überall waren die Mieten viel zu hoch'.",
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_L_T1_Q03",
+          "order": 3,
+          "questionType": "binary",
+          "prompt": "Michael wohnt derzeit alleine in einer kleinen Wohnung.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_L_T1_Q04",
+          "order": 4,
+          "questionType": "binary",
+          "prompt": "Aus seinem Zimmer kann man einen Park sehen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_L_T1_Q05",
+          "order": 5,
+          "questionType": "binary",
+          "prompt": "Mit seinen Mitbewohnern hat er nur selten Kontakt.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_L_T1_Q06",
+          "order": 6,
+          "questionType": "binary",
+          "prompt": "Er arbeitet bereits seit zwei Wochen in seiner neuen Firma.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_lesen-part-2",
+      "skill": "Lesen",
+      "title": "Teil 2: Zwei Pressetexte (Multiple Choice A/B/C)",
+      "durationMinutes": 13,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Text 1: Mobiles Arbeiten und flexible Arbeitszeiten & Text 2: Fahrradfreundliche Städte",
+        "content": "Text 1: Immer mehr Berufstätige in Österreich und Deutschland schätzen flexible Arbeitszeitmodelle und die Möglichkeit des Homeoffice. Eine aktuelle Erhebung zeigt, dass sich vor allem Familie und Beruf dadurch harmonischer verbinden lassen. Unternehmen betonen jedoch, dass eine transparente Zielvereinbarung Voraussetzung für das Vertrauen ist.\n\nText 2: In vielen österreichischen Städten fordern Bürgerinitiativen den konsequenten Ausbau sicherer Radwege. Zwar befürchten Einzelhändler im Stadtzentrum den Verlust von Pkw-Parkplätzen, doch die Erfahrungen zeigen, dass attraktive Radinfrastrukturen die Lebensqualität steigern und Pendler zum Umstieg bewegen."
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_L_T2_Q07",
+          "order": 7,
+          "questionType": "multiple_choice",
+          "prompt": "Viele Beschäftigte wünschen sich heute flexible Arbeitszeiten, weil...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sie weniger Stunden arbeiten möchten."
+            },
+            {
+              "id": "B",
+              "text": "sich Familie und Beruf so besser vereinbaren lassen."
+            },
+            {
+              "id": "C",
+              "text": "sie die Fahrtkosten ins Büro sparen wollen."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_L_T2_Q08",
+          "order": 8,
+          "questionType": "multiple_choice",
+          "prompt": "Aus der Studie geht hervor, dass mobiles Arbeiten...",
+          "options": [
+            {
+              "id": "A",
+              "text": "die Motivation vieler Mitarbeiter gesteigert hat."
+            },
+            {
+              "id": "B",
+              "text": "zu mehr Konflikten mit den Vorgesetzten führt."
+            },
+            {
+              "id": "C",
+              "text": "nur in Großkonzernen erfolgreich funktioniert."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_L_T2_Q09",
+          "order": 9,
+          "questionType": "multiple_choice",
+          "prompt": "Arbeitgeber fordern im Gegenzug für das Homeoffice...",
+          "options": [
+            {
+              "id": "A",
+              "text": "die ständige telefonische Erreichbarkeit rund um die Uhr."
+            },
+            {
+              "id": "B",
+              "text": "eine strikte Einhaltung der vereinbarten Projektziele."
+            },
+            {
+              "id": "C",
+              "text": "den Verzicht auf bezahlte Urlaubstage."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_L_T2_Q10",
+          "order": 10,
+          "questionType": "multiple_choice",
+          "prompt": "Die Initiative 'Fahrradstadt' plant vor allem...",
+          "options": [
+            {
+              "id": "A",
+              "text": "den kompletten Verbot von Pkw im gesamten Zentrum."
+            },
+            {
+              "id": "B",
+              "text": "den Ausbau sicherer und breiter Fahrradwege."
+            },
+            {
+              "id": "C",
+              "text": "kostenlose Elektro-Fahrräder für alle Touristen."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_L_T2_Q11",
+          "order": 11,
+          "questionType": "multiple_choice",
+          "prompt": "Kritik an dem neuen Verkehrskonzept kommt von...",
+          "options": [
+            {
+              "id": "A",
+              "text": "vielen Geschäftsleuten, die fehlende Parkplätze befürchten."
+            },
+            {
+              "id": "B",
+              "text": "den örtlichen Umweltverbänden."
+            },
+            {
+              "id": "C",
+              "text": "den Verkehrsbetrieben der Stadt."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_L_T2_Q12",
+          "order": 12,
+          "questionType": "multiple_choice",
+          "prompt": "Erste Ergebnisse zeigen, dass durch die neuen Radwege...",
+          "options": [
+            {
+              "id": "A",
+              "text": "die Zahl der Verkehrsunfälle deutlich gesunken ist."
+            },
+            {
+              "id": "B",
+              "text": "die Nutzung der Busse drastisch abgenommen hat."
+            },
+            {
+              "id": "C",
+              "text": "mehr Pendler das Auto dauerhaft stehen lassen."
+            }
+          ],
+          "part": 2
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_lesen-part-3",
+      "skill": "Lesen",
+      "title": "Teil 3: Anzeigen zuordnen (Matching)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "matching_catalog",
+        "title": "Anzeigenübersicht (Anzeigen a - j)",
+        "content": "Anzeige a: Sprachschule Dialog - Deutschkurse für Beruf & Alltag\nAnzeige b: Möbelbörse Leipzig - Günstige gebrauchte Möbel für Studierende\nAnzeige c: IT-Support 24/7 - Schnelle Hilfe bei Computer- und Softwareproblemen\nAnzeige d: Bio-Lieferservice Grünland - Frisches Obst & Gemüse direkt nach Hause\nAnzeige e: WG-Zimmer frei in Graz - Helles Zimmer in ruhiger Lage\nAnzeige f: Fitnessstudio Aktiv - Training & Sauna ab 25 Euro monatlich\nAnzeige g: Reparatur-Café - Gemeinsam Fahrräder und Haushaltsgeräte reparieren\nAnzeige h: Tierpension Fellnase - Liebevolle Betreuung für Hunde und Katzen\nAnzeige i: Nachhilfezentrum Wien - Mathematik und Sprachen für Schüler\nAnzeige j: Reisebüro Alpentour - Günstige Wochenendausflüge in Österreich"
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_L_T3_Q13",
+          "order": 13,
+          "questionType": "matching",
+          "prompt": "Situation 13: Peter sucht jemanden, der ihm hilft, sein altes Mountainbike wieder fahrtüchtig zu machen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_L_T3_Q14",
+          "order": 14,
+          "questionType": "matching",
+          "prompt": "Situation 14: Claudia fährt für fünf Tage auf Dienstreise und braucht einen Betreuungsplatz für ihre Katze.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_L_T3_Q15",
+          "order": 15,
+          "questionType": "matching",
+          "prompt": "Situation 15: Stefan möchte sein Deutsch für Vorstellungsgespräche in Österreich verbessern.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_L_T3_Q16",
+          "order": 16,
+          "questionType": "matching",
+          "prompt": "Situation 16: Maria möchte ihren alten PKW verkaufen und sucht einen Autohändler.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_L_T3_Q17",
+          "order": 17,
+          "questionType": "matching",
+          "prompt": "Situation 17: Familie Weber plant eine dreitägige Bergtour in den Tiroler Alpen mit Führung.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_L_T3_Q18",
+          "order": 18,
+          "questionType": "matching",
+          "prompt": "Situation 18: Lukas hat einen Computervirus auf seinem Laptop und kann keine Mails mehr empfangen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_L_T3_Q19",
+          "order": 19,
+          "questionType": "matching",
+          "prompt": "Situation 19: Johanna studiert ab Herbst in Graz und sucht ein bezahlbares Zimmer.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "part": 3
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_lesen-part-4",
+      "skill": "Lesen",
+      "title": "Teil 4: Leserbriefe (Ja/Nein Meinungen)",
+      "durationMinutes": 13,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Diskussionsforum: Sollte das Tragen von Schuluniformen an allen Schulen Pflicht werden?",
+        "content": "Leserbrief 20 (Markus, 38, Linz): 'Absolut dafür! Uniformen verhindern den sozialen Markendruck unter Kindern.'\nLeserbrief 21 (Sabine, 22, Wien): 'Dagegen. Schüler müssen ihre Persönlichkeit und Individualität auch über Kleidung ausdrücken können.'\nLeserbrief 22 (Thomas, 45, Graz): 'Eine einheitliche Kleidung schafft Gemeinschaftssinn und erspart morgendliche Streitigkeiten.'\nLeserbrief 23 (Julia, 17, Salzburg): 'Schuluniformen sind altmodisch und verändern soziale Ungerechtigkeiten keineswegs.'\nLeserbrief 24 (Christian, 50, Innsbruck): 'Klare Vorteile: Die Disziplin im Unterricht steigt nachweislich bei einheitlicher Kleidung.'\nLeserbrief 25 (Laura, 19, Klagenfurt): 'Uniformen sind teuer in der Anschaffung und lösen kein einziges pädagogisches Problem.'\nLeserbrief 26 (Felix, 29, Bregenz): 'Freie Kleiderwahl gehört zu einer demokratischen und offenen Schulkultur.'"
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_L_T4_Q20",
+          "order": 20,
+          "questionType": "binary_opinion",
+          "prompt": "Findet Markus Schuluniformen sinnvoll?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_L_T4_Q21",
+          "order": 21,
+          "questionType": "binary_opinion",
+          "prompt": "Ist Sabine für Schuluniformen?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_L_T4_Q22",
+          "order": 22,
+          "questionType": "binary_opinion",
+          "prompt": "Befürwortet Thomas die Einführung von Schulkleidung?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_L_T4_Q23",
+          "order": 23,
+          "questionType": "binary_opinion",
+          "prompt": "Hält Julia Schuluniformen für eine zeitgemäße Maßnahme?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_L_T4_Q24",
+          "order": 24,
+          "questionType": "binary_opinion",
+          "prompt": "Befürwortet Christian eine Uniformpflicht an Schulen?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_L_T4_Q25",
+          "order": 25,
+          "questionType": "binary_opinion",
+          "prompt": "Glaubt Laura, dass Uniformen Schulprobleme verringern?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_L_T4_Q26",
+          "order": 26,
+          "questionType": "binary_opinion",
+          "prompt": "Befürwortet Felix die Einschränkung der Kleiderwahl?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "part": 4
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_lesen-part-5",
+      "skill": "Lesen",
+      "title": "Teil 5: Hausordnung / Betriebsanleitung (Multiple Choice A/B/C)",
+      "durationMinutes": 13,
+      "totalQuestions": 4,
+      "stimulus": {
+        "type": "text",
+        "title": "Benutzungsordnung der Universitätsbibliothek Wien",
+        "content": "1. Zutritt und Ausweis: Zur Ausleihe von Medien ist ein gültiger Bibliotheksausweis erforderlich. Taschen und Rucksäcke müssen vor dem Betreten der Lesesäle in den Garderobenschränken eingeschlossen werden.\n2. Ruhezone: In allen Lesesälen gilt absolute Ruhe. Das Telefonieren mit Mobiltelefonen ist strikt untersagt; Geräte sind lautlos zu schalten.\n3. Speisen und Getränke: Die Mitnahme von Speisen ist verboten. Wasser in verschließbaren transparenten Flaschen ist gestattet.\n4. Leihfristen und Rückgabe: Bücher können für 30 Tage entlehnt werden. Eine Verlängerung ist bis zu dreimal online möglich, sofern keine Vormerkung anderer Leser vorliegt."
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_L_T5_Q27",
+          "order": 27,
+          "questionType": "multiple_choice",
+          "prompt": "Was gilt bezüglich Taschen und Rucksäcken im Lesesaal?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Kleine Taschen dürfen an den Leseplatz mitgenommen werden."
+            },
+            {
+              "id": "B",
+              "text": "Rucksäcke müssen an der Hauptkasse abgegeben werden."
+            },
+            {
+              "id": "C",
+              "text": "Alle Taschen müssen in den Schließfächern versperrt werden."
+            }
+          ],
+          "part": 5
+        },
+        {
+          "id": "B1_OSD_L_T5_Q28",
+          "order": 28,
+          "questionType": "multiple_choice",
+          "prompt": "Wie dürfen Mobiltelefone in der Bibliothek genutzt werden?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Kurze Anrufe sind im Eingangsbereich erlaubt."
+            },
+            {
+              "id": "B",
+              "text": "Telefone müssen lautlos sein und Anrufe sind untersagt."
+            },
+            {
+              "id": "C",
+              "text": "Handys dürfen nur zum Musikhören mit Kopfhörern genutzt werden."
+            }
+          ],
+          "part": 5
+        },
+        {
+          "id": "B1_OSD_L_T5_Q29",
+          "order": 29,
+          "questionType": "multiple_choice",
+          "prompt": "Welche Regelung gilt für Getränke am Arbeitsplatz?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Nur Heißgetränke mit Deckel sind gestattet."
+            },
+            {
+              "id": "B",
+              "text": "Wasser in verschlossenen Flaschen ist erlaubt."
+            },
+            {
+              "id": "C",
+              "text": "Jegliche Getränke sind streng verboten."
+            }
+          ],
+          "part": 5
+        },
+        {
+          "id": "B1_OSD_L_T5_Q30",
+          "order": 30,
+          "questionType": "multiple_choice",
+          "prompt": "Unter welcher Bedingung kann die Leihfrist verlängert werden?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Man muss persönlich am Schalter erscheinen."
+            },
+            {
+              "id": "B",
+              "text": "Verlängerungen sind maximal einmal zulässig."
+            },
+            {
+              "id": "C",
+              "text": "Kein anderer Bibliotheksnutzer hat das Buch vorgemerkt."
+            }
+          ],
+          "part": 5
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_hoeren-part-1",
+      "skill": "Hoeren",
+      "title": "Teil 1: Fünf kurze Ansagen / Nachrichten (Richtig/Falsch & A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Kurze Alltagsansagen",
+        "audioUrl": "/audio/osd-b1/test-01-teil-1.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_H_T1_Q01",
+          "order": 1,
+          "questionType": "binary",
+          "prompt": "Text 1: Die Züge nach Salzburg fahren heute planmäßig von Gleis 4 ab.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig theo thông báo tại nhà ga trung tâm.",
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q02",
+          "order": 2,
+          "questionType": "multiple_choice",
+          "prompt": "Text 1: Fahrgäste mit Fahrrädern sollten...",
+          "options": [
+            {
+              "id": "A",
+              "text": "den Wagenbereich B am Zugende nutzen."
+            },
+            {
+              "id": "B",
+              "text": "ihre Fahrräder im Gepäckwagen aufgeben."
+            },
+            {
+              "id": "C",
+              "text": "auf den nächsten Regionalzug warten."
+            }
+          ],
+          "publicExplanation": "Đáp án A. Thông báo chỉ dẫn khu vực để xe đạp tại toa B.",
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q03",
+          "order": 3,
+          "questionType": "binary",
+          "prompt": "Text 2: Das Museum schließt heute wegen Umbauarbeiten bereits um 16 Uhr.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q04",
+          "order": 4,
+          "questionType": "multiple_choice",
+          "prompt": "Text 2: Studenten erhalten den ermäßigten Eintritt...",
+          "options": [
+            {
+              "id": "A",
+              "text": "nur bei vorheriger Online-Buchung."
+            },
+            {
+              "id": "B",
+              "text": "ausschließlich an Wochenenden."
+            },
+            {
+              "id": "C",
+              "text": "bei Vorlage eines gültigen Studentenausweises."
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q05",
+          "order": 5,
+          "questionType": "binary",
+          "prompt": "Text 3: Der Radiosprecher kündigt für das Wochenende Regen und Sturm an.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q06",
+          "order": 6,
+          "questionType": "multiple_choice",
+          "prompt": "Text 3: Am Sonntag steigen die Temperaturen voraussichtlich auf...",
+          "options": [
+            {
+              "id": "A",
+              "text": "knapp 15 Grad."
+            },
+            {
+              "id": "B",
+              "text": "über 30 Grad."
+            },
+            {
+              "id": "C",
+              "text": "angenehme 22 bis 24 Grad."
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q07",
+          "order": 7,
+          "questionType": "binary",
+          "prompt": "Text 4: Die Sprachschule bietet ab Montag Intensivkurse am Abend an.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q08",
+          "order": 8,
+          "questionType": "multiple_choice",
+          "prompt": "Text 4: Der Einstufungstest für neue Teilnehmer findet statt...",
+          "options": [
+            {
+              "id": "A",
+              "text": "nur samstags online."
+            },
+            {
+              "id": "B",
+              "text": "am Freitag um 14 Uhr vor Ort."
+            },
+            {
+              "id": "C",
+              "text": "erst nach Beginn des Kurses."
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q09",
+          "order": 9,
+          "questionType": "binary",
+          "prompt": "Text 5: Der Supermarkt hat am Feiertag bis 18 Uhr geöffnet.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 1
+        },
+        {
+          "id": "B1_OSD_H_T1_Q10",
+          "order": 10,
+          "questionType": "multiple_choice",
+          "prompt": "Text 5: Sonderangebote gibt es derzeit besonders bei...",
+          "options": [
+            {
+              "id": "A",
+              "text": "Elektrogeräten und Werkzeug."
+            },
+            {
+              "id": "B",
+              "text": "frischem Obst und Molkereiprodukten."
+            },
+            {
+              "id": "C",
+              "text": "Schreibwaren für Schüler."
+            }
+          ],
+          "part": 1
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_hoeren-part-2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Führung / Präsentation (Multiple Choice A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Führung durch das historische Schloss Schönbrunn",
+        "audioUrl": "/audio/osd-b1/test-01-teil-2.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_H_T2_Q11",
+          "order": 11,
+          "questionType": "multiple_choice",
+          "prompt": "Die Führung durch die Schlossräume dauert...",
+          "options": [
+            {
+              "id": "A",
+              "text": "rund 30 Minuten."
+            },
+            {
+              "id": "B",
+              "text": "zwei volle Stunden."
+            },
+            {
+              "id": "C",
+              "text": "etwa 50 Minuten."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_H_T2_Q12",
+          "order": 12,
+          "questionType": "multiple_choice",
+          "prompt": "Besucher dürfen in den historischen Prunksälen...",
+          "options": [
+            {
+              "id": "A",
+              "text": "nur ohne Blitzlicht fotografieren."
+            },
+            {
+              "id": "B",
+              "text": "keinerlei Aufnahmen machen."
+            },
+            {
+              "id": "C",
+              "text": "kurze Videofilme aufnehmen."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_H_T2_Q13",
+          "order": 13,
+          "questionType": "multiple_choice",
+          "prompt": "Der Schlosspark ist für die Öffentlichkeit...",
+          "options": [
+            {
+              "id": "A",
+              "text": "nur mit Eintrittskarte zugänglich."
+            },
+            {
+              "id": "B",
+              "text": "tagsüber kostenfrei geöffnet."
+            },
+            {
+              "id": "C",
+              "text": "nur am Wochenende geöffnet."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_H_T2_Q14",
+          "order": 14,
+          "questionType": "multiple_choice",
+          "prompt": "Das Schlosscafé befindet sich...",
+          "options": [
+            {
+              "id": "A",
+              "text": "im östlichen Flügel im Erdgeschoss."
+            },
+            {
+              "id": "B",
+              "text": "direkt neben dem Haupteingang."
+            },
+            {
+              "id": "C",
+              "text": "oben auf der Gloriette."
+            }
+          ],
+          "part": 2
+        },
+        {
+          "id": "B1_OSD_H_T2_Q15",
+          "order": 15,
+          "questionType": "multiple_choice",
+          "prompt": "Audioguides werden angeboten in...",
+          "options": [
+            {
+              "id": "A",
+              "text": "drei Sprachen."
+            },
+            {
+              "id": "B",
+              "text": "mehr als zehn verschiedenen Sprachen."
+            },
+            {
+              "id": "C",
+              "text": "nur auf Deutsch und Englisch."
+            }
+          ],
+          "part": 2
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_hoeren-part-3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Alltagsgespräch zweier Personen (Richtig/Falsch)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Gespräch im Café über Urlaubspläne",
+        "audioUrl": "/audio/osd-b1/test-01-teil-3.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_H_T3_Q16",
+          "order": 16,
+          "questionType": "binary",
+          "prompt": "Katja und Florian möchten im Sommer gemeinsam verreisen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_H_T3_Q17",
+          "order": 17,
+          "questionType": "binary",
+          "prompt": "Florian schlägt vor, mit dem Nachtzug nach Italien zu fahren.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_H_T3_Q18",
+          "order": 18,
+          "questionType": "binary",
+          "prompt": "Katja möchte unbedingt in einem teuren Luxushotel übernachten.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_H_T3_Q19",
+          "order": 19,
+          "questionType": "binary",
+          "prompt": "Sie einigen sich darauf, eine Ferienwohnung am Meer zu mieten.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_H_T3_Q20",
+          "order": 20,
+          "questionType": "binary",
+          "prompt": "Florian kümmert sich heute Abend um die Zugtickets.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_H_T3_Q21",
+          "order": 21,
+          "questionType": "binary",
+          "prompt": "Katja hat bereits einen Reiseführer für die Region besorgt.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 3
+        },
+        {
+          "id": "B1_OSD_H_T3_Q22",
+          "order": 22,
+          "questionType": "binary",
+          "prompt": "Die Reise soll insgesamt länger als drei Wochen dauern.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "part": 3
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_b1_hoeren-part-4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+      "durationMinutes": 10,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiosendung zum Thema: Leben ohne Plastik - Utopie oder Machbarkeit?",
+        "audioUrl": "/audio/osd-b1/test-01-teil-4.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "B1_OSD_H_T4_Q23",
+          "order": 23,
+          "questionType": "multiple_choice",
+          "prompt": "Wer meint, dass der Verzicht auf Plastikverpackungen im Alltag sehr schwierig ist?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Frau Dr. Berg (Umweltexpertin)"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber (Inhaber eines Unverpackt-Ladens)"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_H_T4_Q24",
+          "order": 24,
+          "questionType": "multiple_choice",
+          "prompt": "Wer betont die Notwendigkeit strengerer Gesetze und Steuern auf Einwegplastik?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Frau Dr. Berg"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_H_T4_Q25",
+          "order": 25,
+          "questionType": "multiple_choice",
+          "prompt": "Wer berichtet von den positiven Reaktionen der Kunden beim plastikfreien Einkauf?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Frau Dr. Berg"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_H_T4_Q26",
+          "order": 26,
+          "questionType": "multiple_choice",
+          "prompt": "Wer fasst am Ende die Kernaussagen der Debatte zusammen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Frau Dr. Berg"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_H_T4_Q27",
+          "order": 27,
+          "questionType": "multiple_choice",
+          "prompt": "Wer sieht in wiederverwendbaren Behältern die beste Sofortmaßnahme?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Frau Dr. Berg"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_H_T4_Q28",
+          "order": 28,
+          "questionType": "multiple_choice",
+          "prompt": "Wer fordert mehr Aufklärung bereits in Kindergarten und Schule?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Frau Dr. Berg"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_H_T4_Q29",
+          "order": 29,
+          "questionType": "multiple_choice",
+          "prompt": "Wer weist auf die wirtschaftlichen Mehrkosten für kleine Betriebe hin?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Frau Dr. Berg"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber"
+            }
+          ],
+          "part": 4
+        },
+        {
+          "id": "B1_OSD_H_T4_Q30",
+          "order": 30,
+          "questionType": "multiple_choice",
+          "prompt": "Wer bedankt sich bei den Studiogästen für das aufschlussreiche Gespräch?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Frau Dr. Berg"
+            },
+            {
+              "id": "B",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "C",
+              "text": "Herr Gruber"
+            }
+          ],
+          "part": 4
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "B1_OSD_L_T1_Q01",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "ich bin vor zwei Wochen nach Berlin umgezogen.",
+      "trapExplanationVi": "Michael nêu rõ hành động chuyển nhà đến Berlin."
+    },
+    {
+      "questionId": "B1_OSD_L_T1_Q02",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Am Anfang war es ganz schön stressig, weil ich keine Wohnung finden konnte.",
+      "trapExplanationVi": "Ban đầu rất căng thẳng vì không tìm được nhà, ngược lại với từ 'einfach'."
+    },
+    {
+      "questionId": "B1_OSD_L_T1_Q03",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Jetzt wohne ich in einer netten 3er-WG in Kreuzberg!",
+      "trapExplanationVi": "Anh ấy ở nhà ghép 3 người (WG) chứ không ở một mình (alleine)."
+    },
+    {
+      "questionId": "B1_OSD_L_T1_Q04",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "hat einen schönen Blick auf den Park.",
+      "trapExplanationVi": "Phòng nhìn thẳng ra công viên."
+    },
+    {
+      "questionId": "B1_OSD_L_T1_Q05",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Wir kochen fast jeden Abend zusammen und am Wochenende zeigen sie mir die Stadt.",
+      "trapExplanationVi": "Họ nấu ăn chung gần như mỗi tối và đi chơi cuối tuần, không phải hiếm khi (selten)."
+    },
+    {
+      "questionId": "B1_OSD_L_T1_Q06",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Nächste Woche fängt mein neuer Job als Webentwickler an.",
+      "trapExplanationVi": "Tuần tới mới bắt đầu đi làm, chưa phải đã làm được 2 tuần."
+    },
+    {
+      "questionId": "B1_OSD_L_T2_Q07",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "vor allem Familie und Beruf dadurch harmonischer verbinden lassen.",
+      "trapExplanationVi": "Lợi ích cốt lõi là cân bằng gia đình và công việc."
+    },
+    {
+      "questionId": "B1_OSD_L_T2_Q08",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "die Motivation vieler Mitarbeiter gesteigert hat.",
+      "trapExplanationVi": "Động lực làm việc của nhân viên tăng lên."
+    },
+    {
+      "questionId": "B1_OSD_L_T2_Q09",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "eine transparente Zielvereinbarung Voraussetzung für das Vertrauen ist.",
+      "trapExplanationVi": "Nhà tuyển dụng yêu cầu tuân thủ đúng mục tiêu đã thỏa thuận."
+    },
+    {
+      "questionId": "B1_OSD_L_T2_Q10",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "den konsequenten Ausbau sicherer Radwege.",
+      "trapExplanationVi": "Dự án tập trung mở rộng làn đường an toàn cho xe đạp."
+    },
+    {
+      "questionId": "B1_OSD_L_T2_Q11",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "befürchten Einzelhändler im Stadtzentrum den Verlust von Pkw-Parkplätzen.",
+      "trapExplanationVi": "Tiểu thương lo ngại mất bãi đỗ xe cho khách mua sắm."
+    },
+    {
+      "questionId": "B1_OSD_L_T2_Q12",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Pendler zum Umstieg bewegen.",
+      "trapExplanationVi": "Người đi làm chuyển sang xe đạp, để xe hơi ở nhà."
+    },
+    {
+      "questionId": "B1_OSD_L_T3_Q13",
+      "correctOption": "g",
+      "points": 1,
+      "citation": "Reparatur-Café - Gemeinsam Fahrräder reparieren",
+      "trapExplanationVi": "Sửa xe đạp tự lực khớp với Anzeige g."
+    },
+    {
+      "questionId": "B1_OSD_L_T3_Q14",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Tierpension Fellnase - Betreuung für Hunde und Katzen",
+      "trapExplanationVi": "Gửi chăm sóc mèo khi đi công tác khớp Anzeige h."
+    },
+    {
+      "questionId": "B1_OSD_L_T3_Q15",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Sprachschule Dialog - Deutschkurse für Beruf",
+      "trapExplanationVi": "Học tiếng Đức cho công việc khớp Anzeige a."
+    },
+    {
+      "questionId": "B1_OSD_L_T3_Q16",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Không có thông tin mua bán ô tô cũ trong danh sách",
+      "trapExplanationVi": "Không có quảng cáo nào khớp nhu cầu bán xe hơi -> chọn 0."
+    },
+    {
+      "questionId": "B1_OSD_L_T3_Q17",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Reisebüro Alpentour - Wochenendausflüge in Österreich",
+      "trapExplanationVi": "Tour leo núi dã ngoại tại Áo khớp Anzeige j."
+    },
+    {
+      "questionId": "B1_OSD_L_T3_Q18",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "IT-Support 24/7 - Schnelle Hilfe bei Computerproblemen",
+      "trapExplanationVi": "Sửa máy tính diệt virus khớp Anzeige c."
+    },
+    {
+      "questionId": "B1_OSD_L_T3_Q19",
+      "correctOption": "e",
+      "points": 1,
+      "citation": "WG-Zimmer frei in Graz",
+      "trapExplanationVi": "Tìm phòng trọ sinh viên tại Graz khớp Anzeige e."
+    },
+    {
+      "questionId": "B1_OSD_L_T4_Q20",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Absolut dafür! Uniformen verhindern den sozialen Markendruck.",
+      "trapExplanationVi": "Markus hoàn toàn ủng hộ (Ja)."
+    },
+    {
+      "questionId": "B1_OSD_L_T4_Q21",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Dagegen. Schüler müssen ihre Persönlichkeit ausdrücken können.",
+      "trapExplanationVi": "Sabine phản đối vì muốn cá tính riêng (Nein)."
+    },
+    {
+      "questionId": "B1_OSD_L_T4_Q22",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "schafft Gemeinschaftssinn und erspart Streitigkeiten.",
+      "trapExplanationVi": "Thomas ủng hộ vì tạo tính đoàn kết (Ja)."
+    },
+    {
+      "questionId": "B1_OSD_L_T4_Q23",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Uniformen sind altmodisch und verändern nichts.",
+      "trapExplanationVi": "Julia cho rằng lỗi thời (Nein)."
+    },
+    {
+      "questionId": "B1_OSD_L_T4_Q24",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Klare Vorteile: Die Disziplin steigt nachweislich.",
+      "trapExplanationVi": "Christian chỉ ra ưu điểm về kỷ luật (Ja)."
+    },
+    {
+      "questionId": "B1_OSD_L_T4_Q25",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Uniformen sind teuer und lösen kein Problem.",
+      "trapExplanationVi": "Laura phản đối vì tốn kém (Nein)."
+    },
+    {
+      "questionId": "B1_OSD_L_T4_Q26",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Freie Kleiderwahl gehört zu einer offenen Schulkultur.",
+      "trapExplanationVi": "Felix bảo vệ văn hóa tự do trang phục (Nein)."
+    },
+    {
+      "questionId": "B1_OSD_L_T5_Q27",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "müssen in den Garderobenschränken eingeschlossen werden.",
+      "trapExplanationVi": "Tất cả ba lô túi xách phải gửi vào tủ khóa."
+    },
+    {
+      "questionId": "B1_OSD_L_T5_Q28",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Das Telefonieren ist strikt untersagt; Geräte sind lautlos zu schalten.",
+      "trapExplanationVi": "Cấm nghe gọi, điện thoại phải tắt chuông."
+    },
+    {
+      "questionId": "B1_OSD_L_T5_Q29",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Wasser in verschließbaren transparenten Flaschen ist gestattet.",
+      "trapExplanationVi": "Chỉ cho phép mang nước lọc đóng chai trong suốt."
+    },
+    {
+      "questionId": "B1_OSD_L_T5_Q30",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "sofern keine Vormerkung anderer Leser vorliegt.",
+      "trapExplanationVi": "Chỉ được gia hạn online nếu không ai đặt trước sách."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q01",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Züge nach Salzburg von Gleis 4",
+      "trapExplanationVi": "Khớp thông tin phát thanh tại nhà ga."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q02",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Wagenbereich B am Zugende für Fahrräder",
+      "trapExplanationVi": "Khu vực toa B dành cho xe đạp."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q03",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Museum bleibt bis 19 Uhr geöffnet",
+      "trapExplanationVi": "Bảo tàng mở đến 19h, không đóng sớm 16h."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q04",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "bei Vorlage eines gültigen Studentenausweises",
+      "trapExplanationVi": "Cần xuất trình thẻ sinh viên hợp lệ."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q05",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Regen und Sturm am Wochenende erwartet",
+      "trapExplanationVi": "Dự báo cuối tuần có mưa bão."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q06",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "angenehme 22 bis 24 Grad am Sonntag",
+      "trapExplanationVi": "Nhiệt độ chủ nhật dao động 22 - 24 độ."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q07",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Intensivkurse am Abend starten ab Montag",
+      "trapExplanationVi": "Lớp học cấp tốc buổi tối khai giảng thứ hai."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q08",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Einstufungstest am Freitag um 14 Uhr vor Ort",
+      "trapExplanationVi": "Thi xếp lớp trực tiếp vào chiều thứ sáu."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q09",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "am Feiertag geschlossen",
+      "trapExplanationVi": "Ngày lễ siêu thị đóng cửa hoàn toàn."
+    },
+    {
+      "questionId": "B1_OSD_H_T1_Q10",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Sonderangebote bei Obst und Molkereiprodukten",
+      "trapExplanationVi": "Khuyến mãi giảm giá đồ tươi và sữa."
+    },
+    {
+      "questionId": "B1_OSD_H_T2_Q11",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Die Führung dauert rund 50 Minuten.",
+      "trapExplanationVi": "Thời lượng chuyến tham quan là 50 phút."
+    },
+    {
+      "questionId": "B1_OSD_H_T2_Q12",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Fotografieren ohne Blitz gestattet.",
+      "trapExplanationVi": "Được chụp ảnh không dùng đèn flash."
+    },
+    {
+      "questionId": "B1_OSD_H_T2_Q13",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Der Schlosspark ist tagsüber kostenfrei geöffnet.",
+      "trapExplanationVi": "Công viên cung điện mở cửa miễn phí ban ngày."
+    },
+    {
+      "questionId": "B1_OSD_H_T2_Q14",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "im östlichen Flügel im Erdgeschoss",
+      "trapExplanationVi": "Quán cà phê ở tầng trệt cánh phía đông."
+    },
+    {
+      "questionId": "B1_OSD_H_T2_Q15",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Audioguides in mehr als zehn Sprachen verfügbar",
+      "trapExplanationVi": "Có thiết bị thuyết minh hơn 10 ngôn ngữ."
+    },
+    {
+      "questionId": "B1_OSD_H_T3_Q16",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Katja und Florian planen gemeinsame Reise",
+      "trapExplanationVi": "Hai bạn lên kế hoạch đi du lịch chung."
+    },
+    {
+      "questionId": "B1_OSD_H_T3_Q17",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Florian schlägt Nachtzug nach Italien vor",
+      "trapExplanationVi": "Florian đề xuất đi tàu đêm đến Ý."
+    },
+    {
+      "questionId": "B1_OSD_H_T3_Q18",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Katja bevorzugt günstige Ferienwohnung",
+      "trapExplanationVi": "Katja muốn thuê căn hộ giá hợp lý, không đòi khách sạn sang."
+    },
+    {
+      "questionId": "B1_OSD_H_T3_Q19",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Einigung auf Ferienwohnung am Meer",
+      "trapExplanationVi": "Thống nhất thuê nhà ven biển."
+    },
+    {
+      "questionId": "B1_OSD_H_T3_Q20",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Florian bucht heute Abend die Tickets",
+      "trapExplanationVi": "Florian nhận việc đặt vé tàu tối nay."
+    },
+    {
+      "questionId": "B1_OSD_H_T3_Q21",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Katja hat Reiseführer besorgt",
+      "trapExplanationVi": "Katja đã mượn được cẩm nang du lịch."
+    },
+    {
+      "questionId": "B1_OSD_H_T3_Q22",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Reise dauert genau zwei Wochen",
+      "trapExplanationVi": "Chuyến đi 2 tuần, không kéo dài trên 3 tuần."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q23",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Moderator leitet mit Schwierigkeiten im Alltag ein",
+      "trapExplanationVi": "Người dẫn chương trình nêu lên khó khăn khi bỏ nhựa."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q24",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Frau Dr. Berg fordert gesetzliche Maßnahmen",
+      "trapExplanationVi": "Chuyên gia môi trường đòi hỏi luật pháp nghiêm ngặt."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q25",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Herr Gruber schildert Begeisterung der Kunden",
+      "trapExplanationVi": "Chủ tiệm bán hàng không túi kể về sự hào hứng của khách."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q26",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Moderator resümiert die Standpunkte",
+      "trapExplanationVi": "Người dẫn chương trình tổng kết các luận điểm."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q27",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Frau Dr. Berg rät zu Mehrwegbehältern",
+      "trapExplanationVi": "Bà Berg khuyến nghị dùng hộp đựng tái sử dụng nhiều lần."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q28",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Herr Gruber plädiert für Bildung in Kitas und Schulen",
+      "trapExplanationVi": "Ông Gruber đề xuất giáo dục sớm cho trẻ em."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q29",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Herr Gruber rechnet finanzielle Belastung vor",
+      "trapExplanationVi": "Chủ doanh nghiệp nhỏ chỉ ra gánh nặng chi phí."
+    },
+    {
+      "questionId": "B1_OSD_H_T4_Q30",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Moderator verabschiedet Gäste und Zuhörer",
+      "trapExplanationVi": "Người dẫn chương trình gửi lời cảm ơn và chào tạm biệt."
+    }
+  ]
+}

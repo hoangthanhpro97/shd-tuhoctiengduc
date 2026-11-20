@@ -54,6 +54,19 @@ const expectedViews = [
   'v_readonly_contactable_leads',
 ];
 
+const expectedFunctions = [
+  'load_grading_snapshot',
+  'persist_grading_result',
+  'submit_attempt',
+  'finalize_expired_attempts',
+  'save_attempt_answer',
+  'get_attempt_state',
+  'get_attempt_review',
+  'get_attempt_result',
+  'create_guardian',
+  'get_verified_otp_learner',
+];
+
 const protectedTables = [
   'visitors', 'exam_attempts', 'attempt_section_timers', 'attempt_answers',
   'attempt_audio_plays', 'attempt_entitlements', 'learners', 'guardians',
@@ -145,6 +158,34 @@ async function checkDrift() {
     }
     console.log('✓ Bất biến INV-01: answer_keys được cô lập tuyệt đối khỏi toàn bộ connecting roles.');
 
+    const ownerRes = await client.query(`
+      SELECT c.relname AS table_name, r.rolname AS owner
+      FROM pg_class c JOIN pg_roles r ON r.oid = c.relowner
+      WHERE c.relnamespace = 'public'::regnamespace
+        AND c.relname IN ('answer_keys', 'results', 'result_section_scores', 'result_item_scores')
+    `);
+    const expectedOwners = new Map([
+      ['answer_keys', 'shd_grader'],
+      ['results', 'shd_grader'],
+      ['result_section_scores', 'shd_grader'],
+      ['result_item_scores', 'shd_grader'],
+    ]);
+    for (const row of ownerRes.rows) {
+      if (expectedOwners.get(row.table_name) !== row.owner) throw new Error(`Sai owner cho ${row.table_name}: ${row.owner}`);
+    }
+    console.log('✓ answer_keys và result tables thuộc owner role shd_grader.');
+
+    const functionRes = await client.query(`
+      SELECT p.proname AS function_name
+      FROM pg_proc p
+      JOIN pg_namespace n ON n.oid = p.pronamespace
+      WHERE n.nspname = 'public' AND p.proname = ANY($1::text[])
+    `, [expectedFunctions]);
+    const actualFunctions = new Set(functionRes.rows.map((row) => row.function_name));
+    const missingFunctions = expectedFunctions.filter((name) => !actualFunctions.has(name));
+    if (missingFunctions.length > 0) throw new Error(`Thiếu grading functions: ${missingFunctions.join(', ')}`);
+    console.log('✓ Grading security functions tồn tại.');
+
     console.log('✅ KIỂM TRA DRIFT & MA TRẬN PHÂN QUYỀN THÀNH CÔNG 100%!');
   } catch (err) {
     console.error('❌ Kiểm tra Drift thất bại:', err.message);
@@ -155,4 +196,3 @@ async function checkDrift() {
 }
 
 checkDrift();
-

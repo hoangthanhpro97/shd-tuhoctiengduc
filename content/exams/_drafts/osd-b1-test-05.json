@@ -1,0 +1,3406 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-05",
+    "version": "v2",
+    "slug": "osd-b1-test-05-v2",
+    "title": "ÖSD Zertifikat B1 - Modelltest 05 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD Zertifikat B1 (Modelltest 05) tích hợp 100% ngữ liệu bài đọc, quảng cáo, ý kiến độc giả, quy chế và kịch bản lời thoại bài nghe bám sát đề thi khảo thí chính thức.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30.0,
+      "hoerenMaxPoints": 30.0,
+      "minPassingScorePerSkill": 18.0
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t5_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu (Leseverstehen)",
+      "durationMinutes": 65,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "binary",
+          "title": "Teil 1: Blogbeitrag / Persönlicher Bericht (Mehrgenerationen-Wohnen)",
+          "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            1,
+            6
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "AloisBlog.de – 15. Mai: Ein Jahr Mehrgenerationen-Wohnen",
+            "author": "Alois",
+            "content": "Liebe Nachbarschaft und Freunde des Mehrgenerationen-Wohnens,\n\nheute jährt sich mein Einzug in unser genossenschaftliches Mehrgenerationen-Wohnheim im grünen Stadtteil Bogenhausen. Als ich vor einem Jahr den Entschluss fasste, meine alte Eigentumswohnung aufzugeben und in dieses neue Wohnprojekt zu ziehen, waren viele Freunde skeptisch. Ein Wohnhaus, in dem 60 Menschen zwischen 2 und 84 Jahren unter einem gemeinsamen Dach leben – kann das gutgehen?\n\nHeute kann ich aus vollstem Herzen sagen: Ja, und wie! Das Herzstück unseres Hauses ist der 500 Quadratmeter große Gemeinschaftsgarten mit Hochbeeten, Holzpavillon und Kinderspielplatz. Hier treffen wir uns fast täglich nach Feierabend. Während die älteren Bewohner den Kindern zeigen, wie man Tomaten zieht und Erdbeeren pflegt, helfen wir Jüngeren den Senioren beim Einkaufen, tragen schwere Getränkekisten oder richten ihre Smartphones und Tablets ein.\n\nNatürlich erfordert ein solches Modell gegenseitige Rücksichtnahme. Es gibt keine starren Putzpläne, aber jeder bringt sich nach seinen Fähigkeiten ein. Einmal im Monat findet unser 'Haus-Plenum' statt, bei dem wir bei Kaffee und selbstgebackenem Kuchen alle anstehenden Fragen und kleine Reibereien offen ansprechen. Für mich ist dieses Wohnprojekt die perfekte Antwort auf die zunehmende Anonymität und Einsamkeit in unseren modernen Großstädten.\n\nHerzliche Grüße\nEuer Alois",
+            "vocabulary": [
+              {
+                "word": "das Mehrgenerationen-Wohnen",
+                "meaning": "mô hình nhà ở đa thế hệ"
+              },
+              {
+                "word": "die Genossenschaft",
+                "meaning": "hợp tác xã / mô hình đồng sở hữu"
+              },
+              {
+                "word": "das Haus-Plenum",
+                "meaning": "cuộc họp toàn thể cư dân"
+              }
+            ]
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_L_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der Autor berichtet in seinem Blogbeitrag über einen Umzug in ein Generationen-Wohnheim und seine neuen Nachbarn.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Richtig đúng theo đề thi (1 Richtig). Tác giả chia sẻ câu chuyện và trải nghiệm khi chuyển vào sinh sống tại mô hình khu nhà ở đa thế hệ."
+            },
+            {
+              "id": "OSD_B1_T5_L_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der Autor lebte zuvor in einer ländlichen Region ohne gute Infrastruktur.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Falsch đúng (2 Falsch). Trước khi chuyển nhà, tác giả sống tại thành phố chứ không phải vùng nông thôn hẻo lánh."
+            },
+            {
+              "id": "OSD_B1_T5_L_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Alle Bewohner des Hauses müssen die Hausarbeiten strikt nach einem festen Plan erledigen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Die älteren Bewohner haben kaum Kontakt zu den jüngeren Familien im Wohnheim.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Ein großer Gemeinschaftsgarten dient als beliebter Treffpunkt für alle Generationen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der Autor hält das Projekt für eine gelungene Alternative zur städtischen Anonymität.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "multiple_choice",
+          "title": "Teil 2: Zwei Pressetexte (Schulgärten & Ländliches Carsharing)",
+          "instruction": "Lesen Sie die Texte aus der Presse und die Aufgaben 7 bis 12 dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+          "questionRange": [
+            7,
+            12
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Zwei Pressetexte: 'Schulgärten' & 'Carsharing in Kleinstädten'",
+            "content": "PRESSETEXT 1: Schulgärten als Lernort der Zukunft – Ökologische Bildung in der Praxis\nImmer mehr Schulen in Bayern und Österreich legen eigene Schulgärten an, um Natur und Landwirtschaft wieder fest im Alltag der Schüler zu verankern. In Zeiten fortschreitender Urbanisierung und ständiger digitaler Reizüberflutung wissen viele Kinder gar nicht mehr, wie Gemüse wächst oder wann welche Obstsorten reifen. Im Rahmen von fächerübergreifenden Projekten säen, pflegen und ernten Grund- und Realschüler Kräuter, Kartoffeln und Beeren selbst. Biologie- und Sachunterricht werden so zu einem greifbaren Erlebnis. Pädagogen beobachten, dass die praktische Arbeit an der frischen Luft nicht nur die Konzentrationsfähigkeit steigert, sondern auch das Verantwortungsgefühl für gesunde Ernährung und Umwelt nachhaltig stärkt.\n\nPRESSETEXT 2: Carsharing erobert auch ländliche Kleinstädte\nWährend Carsharing in Großstädten wie Berlin oder Wien seit Jahren zum Alltag gehört, setzt sich das Modell des geteilten Autos nun auch in kleineren Landgemeinden durch. Oft tun sich Bürgervereine, Stadtwerke und Gemeindeverwaltungen zusammen, um Elektrofahrzeuge anzuschaffen, die von allen Einwohnern per Smartphone-App gebucht werden können. Besonders für Familien, die kein zweites Auto besitzen, oder für Senioren, die nur gelegentlich größere Einkäufe tätigen müssen, ist das Angebot eine ideale und kostengünstige Lösung. Die Gemeinden sparen teure Straßeninfrastruktur und Parkflächen, während die Umwelt durch weniger Abgase und Lärm spürbar entlastet wird."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_L_Q07",
+              "order": 7,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Was ist der Schwerpunkt des ersten Presseartikels über Umweltbildung an Schulen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Die vollständige Schließung alter naturwissenschaftlicher Labore."
+                },
+                {
+                  "id": "b",
+                  "text": "Praxisorientierte Schulgärten und ökologische Projekte im Unterricht."
+                },
+                {
+                  "id": "c",
+                  "text": "Ein generelles Verbot von Schulausflügen in die Natur."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q08",
+              "order": 8,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Welche positive Wirkung beobachten die Lehrkräfte bei den Schülern?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Ein deutlich gestiegenes Verantwortungsbewusstsein für Natur und Ernährung."
+                },
+                {
+                  "id": "b",
+                  "text": "Höhere Fehlzeiten im regulären Mathematikunterricht."
+                },
+                {
+                  "id": "c",
+                  "text": "Wenig Interesse an praktischer Gruppenarbeit im Freien."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q09",
+              "order": 9,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Was fordern die Initiatoren für die Zukunft des Projekts?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Die Reduzierung der Unterrichtsstunden auf die Hälfte."
+                },
+                {
+                  "id": "b",
+                  "text": "Den Verzicht auf jegliche staatliche Fördermittel."
+                },
+                {
+                  "id": "c",
+                  "text": "Eine feste Verankerung von Nachhaltigkeitsthemen in den Lehrplänen aller Bundesländer."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q10",
+              "order": 10,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Worum geht es im zweiten Artikel über Carsharing in Kleinstädten?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Um die zunehmende Verbreitung von geteilten Elektroautos auf dem Land."
+                },
+                {
+                  "id": "b",
+                  "text": "Um ein gesetzliches Fahrverbot für private Autos in Gemeinden."
+                },
+                {
+                  "id": "c",
+                  "text": "Um die Schließung aller öffentlichen Bahnhöfe."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Für welche Personengruppen ist das ländliche Carsharing besonders vorteilhaft?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Für Familien ohne Zweitwagen und Senioren für gelegentliche Fahrten."
+                },
+                {
+                  "id": "b",
+                  "text": "Ausschließlich für Berufspendler mit täglich weiten Strecken."
+                },
+                {
+                  "id": "c",
+                  "text": "Nur für Touristen aus dem Ausland."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q12",
+              "order": 12,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Welchen doppelten Nutzen hat das Projekt für die Kommunen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Höhere Bußgelder für Falschparker und mehr Tankstellen."
+                },
+                {
+                  "id": "b",
+                  "text": "Weniger Parkflächenbedarf und geringere Umweltbelastung durch Abgase."
+                },
+                {
+                  "id": "c",
+                  "text": "Kostenlose Autos für alle Gemeindemitarbeiter."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "matching",
+          "title": "Teil 3: Situationen & Anzeigen (Feriencamps für Kinder und Jugendliche)",
+          "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen a bis j. Finden Sie für jede Situation die passende Anzeige.",
+          "questionRange": [
+            13,
+            19
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Anzeigenübersicht: Sommer- und Feriencamps (S. 74-75)",
+            "content": "ANZEIGENÜBERSICHT: Sommer- und Feriencamps für Kinder und Jugendliche (S. 74-75)\n\n[a] Abenteuercamp Schwarzwald: Klettern, Floßbau und Überlebenstraining im Wald für 10-14 Jahre.\n[b] Fußballakademie Kickers: Professionelles Fußballtraining mit lizenzierten DFB-Trainern.\n[c] Zirkusschule Salto: Akrobatik, Jonglieren, Zaubern und Einradfahren für Kinder von 6 bis 12 Jahren.\n[d] Englisch-Camp Lakeview: Spielerisches Sprachenlernen mit Muttersprachlern am Badesee.\n[e] Segel- und Surfschule Ostsee: Segelkurse und Windsurfen für Einsteiger inklusive Jugend-Segelschein.\n[f] Reit- und Pferdehof Rosenau: Reitferien mit eigenem Pflegepferd, Ausritten und Stallarbeit.\n[g] Theater- und Musicalcamp Bühne Frei: Schauspiel, Gesang und Tanz mit großer Abschlussgala.\n[h] Forscher- und Erfinderwerkstatt: Roboter bauen, Elektronik löten und Experimente für Tüftler.\n[i] Töpfer- und Kreativwerkstatt Ton & Stein: Töpfern an der Drehscheibe und Malen für Kinder.\n[j] Kochcamp Junge Meisterköche: Kochen, Backen und gesunde Ernährung mit echten Küchenchefs."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_L_Q13",
+              "order": 13,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): 13. Ein 12-jähriger Junge möchte in den Sommerferien an der See segeln lernen und einen Segelschein machen.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q14",
+              "order": 14,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): 14. Eine Mutter sucht für ihre kreative Tochter einen Ferienkurs, in dem sie mit Ton modellieren kann.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q15",
+              "order": 15,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): 15. Eltern suchen für ihren Sohn ein Ferienlager, in dem er seine Englischkenntnisse am See verbessern kann.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q16",
+              "order": 16,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): 16. Ein technikbegeistertes Mädchen möchte in den Ferien lernen, wie man kleine Roboter programmiert.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q17",
+              "order": 17,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): 17. Ein 11-jähriger Schüler kocht zu Hause leidenschaftlich gerne und möchte neue Rezepte lernen.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q18",
+              "order": 18,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): 18. Ein pferdebegeistertes Mädchen wünscht sich Reiterferien mit täglicher Pflege eines Ponys.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q19",
+              "order": 19,
+              "part": 3,
+              "taskType": "matching",
+              "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): 19. Ein Student sucht für sich einen anspruchsvollen Tauchkurs mit Höhlentauchen im Mittelmeer.",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Anzeige a"
+                },
+                {
+                  "id": "b",
+                  "text": "Anzeige b"
+                },
+                {
+                  "id": "c",
+                  "text": "Anzeige c"
+                },
+                {
+                  "id": "d",
+                  "text": "Anzeige d"
+                },
+                {
+                  "id": "e",
+                  "text": "Anzeige e"
+                },
+                {
+                  "id": "f",
+                  "text": "Anzeige f"
+                },
+                {
+                  "id": "g",
+                  "text": "Anzeige g"
+                },
+                {
+                  "id": "h",
+                  "text": "Anzeige h"
+                },
+                {
+                  "id": "i",
+                  "text": "Anzeige i"
+                },
+                {
+                  "id": "j",
+                  "text": "Anzeige j"
+                },
+                {
+                  "id": "0",
+                  "text": "Keine passende Anzeige (0)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "binary_opinion",
+          "title": "Teil 4: Leserbriefe (Von der Stadt aufs Land ziehen)",
+          "instruction": "Lesen Sie die Texte 20 bis 26. Ist die jeweilige Person dafür, aufs Land zu ziehen? Wählen Sie: Ja oder Nein.",
+          "questionRange": [
+            20,
+            26
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Leserbriefe: Von der Stadt aufs Land ziehen? (S. 76)",
+            "content": "LESERBRIEFE ZUM TREND: 'Von der Stadt aufs Land ziehen' (S. 76)\n\n20. Dörthe (14, Augsburg): 'Auf gar keinen Fall! Auf dem Land ist doch tote Hose. Es gibt kein Kino, keine Shopping-Malls und der letzte Bus fährt um 18 Uhr. Ich brauche das Leben in der Stadt!'\n21. Alexander (40, Hamburg): 'Wir sind vor zwei Jahren mit unseren drei Kindern aufs Dorf gezogen und haben es keine Sekunde bereut. Frische Luft, ein großer Garten und die Kinder können gefahrlos draußen spielen.'\n22. Norbert (62, Wien): 'Nach 40 Jahren Berufsleben in der hektischen Stadt genieße ich die absolute Ruhe auf dem Land in vollen Zügen. Stadtstress und Lärm brauche ich wirklich nicht mehr.'\n23. Julius (23, Berlin): 'Für mich als junger Mensch kommt das Landleben nicht infrage. Alle meine Freunde, Kneipen, Konzerte und die Universität sind hier in der Metropole.'\n24. Laura (31, München): 'Die ländliche Idylle wird oft verklärt. Man ist für jeden Einkauf und jeden Arztbesuch aufs Auto angewiesen. Das ständige Pendeln zur Arbeit raubt enorm viel Lebenszeit.'\n25. Yvette (48, Graz): 'Ohne schnelles Internet und gute Infrastruktur kann man auf dem Land kaum arbeiten. Viele Dörfer sind infrastrukturell völlig abgehängt.'\n26. Nicola (35, Salzburg): 'Das Landleben bietet die beste Lebensqualität für Familien. Die Nachbarschaft ist herzlich und die Mieten sind bezahlbar. Ein klares Ja zum Leben auf dem Land!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_L_Q20",
+              "order": 20,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 20 – Dörthe (14, Augsburg)): Ist Dörthe dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q21",
+              "order": 21,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 21 – Alexander (40, Hamburg)): Ist Alexander dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q22",
+              "order": 22,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 22 – Norbert (62, Wien)): Ist Norbert dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q23",
+              "order": 23,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 23 – Julius (23, Berlin)): Ist Julius dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q24",
+              "order": 24,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 24 – Laura (31, München)): Ist Laura dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q25",
+              "order": 25,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 25 – Yvette (48, Graz)): Ist Yvette dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q26",
+              "order": 26,
+              "part": 4,
+              "taskType": "binary_opinion",
+              "prompt": "Teil 4 (Leserbrief 26 – Nicola (35, Salzburg)): Ist Nicola dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+              "options": [
+                {
+                  "id": "Ja",
+                  "text": "Ja"
+                },
+                {
+                  "id": "Nein",
+                  "text": "Nein"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 5,
+          "taskType": "multiple_choice",
+          "title": "Teil 5: Nutzungsbedingungen (Citybike Wien)",
+          "instruction": "Lesen Sie die Nutzungsbedingungen. Lösen Sie die Aufgaben 27 bis 30, indem Sie die richtige Antwort a, b oder c wählen.",
+          "questionRange": [
+            27,
+            30
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Nutzungsbedingungen: Citybike Wien (S. 77)",
+            "content": "NUTZUNGSBEDINGUNGEN: Öffentliches Fahrrad-Leihsystem Citybike Wien (S. 77)\n\n1. Registrierung und Benutzerkonto: Die Nutzung der Citybikes erfordert eine einmalige Online-Registrierung. Zur Freischaltung ist die Hinterlegung einer gültigen Kreditkarte oder Maestro-Bankkarte erforderlich. Die Registrierungsgebühr von 1,00 Euro wird bei der Erstanmeldung direkt vom Konto abgebucht.\n2. Ausleihe und Rückgabe an den Stationen: An über 120 Stationen im Stadtgebiet können Fahrräder rund um die Uhr entliehen werden. Zum Entleihen halten Sie Ihre Kundenkarte an das Terminal der Station und wählen ein verfügbares Rad aus. Die Rückgabe kann an jeder beliebigen freien Box einer beliebigen Citybike-Station erfolgen. Das Fahrrad muss fest in die Verriegelungsbox geschoben werden, bis das grüne Licht aufleuchtet und ein akustisches Bestätigungssignal ertönt.\n3. Tarifstruktur und Nutzungsgebühren: Die erste Stunde jeder Fahrt ist absolut kostenlos! Ab der zweiten Stunde fallen Nutzungsgebühren an: 2. Stunde: 1,00 Euro | 3. Stunde: 2,00 Euro | ab der 4. Stunde: 4,00 Euro pro angefangene Stunde. Nach einer Pause von mindestens 15 Minuten zwischen Rückgabe und erneuter Ausleihe beginnt wieder eine kostenlose Erststunde.\n4. Schadensmeldung und Haftung: Eventuelle Mängel oder Beschädigungen am Fahrrad sind unverzüglich über das Terminal oder die Hotline zu melden. Bei Verlust oder Diebstahl des Rades infolge grober Fahrlässigkeit haftet der Nutzer bis zu einem Höchstbetrag von 300 Euro."
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_L_Q27",
+              "order": 27,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Wie hoch ist die einmalige Registrierungsgebühr für Neukunden bei Citybike Wien?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Die Registrierung ist komplett kostenlos."
+                },
+                {
+                  "id": "b",
+                  "text": "Genau 10,00 Euro Jahresgebühr."
+                },
+                {
+                  "id": "c",
+                  "text": "Genau 1,00 Euro, abgebucht von der Zahlungskarte."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q28",
+              "order": 28,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Woran erkennt der Nutzer die erfolgreiche und ordnungsgemäße Rückgabe des Rades?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "An einem gedruckten Beleg aus dem Terminal."
+                },
+                {
+                  "id": "b",
+                  "text": "Am Aufleuchten des grünen Lichts und einem Tonsignal an der Box."
+                },
+                {
+                  "id": "c",
+                  "text": "An einer Bestätigungs-SMS auf dem Handy."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q29",
+              "order": 29,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Wie viel kostet die erste Nutzungsstunde bei jeder Fahrt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Die erste Stunde ist grundsätzlich kostenlos."
+                },
+                {
+                  "id": "b",
+                  "text": "Genau 1,00 Euro ab der ersten Minute."
+                },
+                {
+                  "id": "c",
+                  "text": "Pauschal 2,00 Euro Servicepauschale."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_L_Q30",
+              "order": 30,
+              "part": 5,
+              "taskType": "multiple_choice",
+              "prompt": "Bis zu welchem Betrag haftet der Nutzer bei grob fahrlässigem Verlust des Rades?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Bis zu 50 Euro Schutzgebühr."
+                },
+                {
+                  "id": "b",
+                  "text": "In unbegrenzter Höhe für den Neuwert."
+                },
+                {
+                  "id": "c",
+                  "text": "Bis zu einem Höchstbetrag von 300 Euro."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T5_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der Autor berichtet in seinem Blogbeitrag über einen Umzug in ein Generationen-Wohnheim und seine neuen Nachbarn.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo đề thi (1 Richtig). Tác giả chia sẻ câu chuyện và trải nghiệm khi chuyển vào sinh sống tại mô hình khu nhà ở đa thế hệ."
+        },
+        {
+          "id": "OSD_B1_T5_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der Autor lebte zuvor in einer ländlichen Region ohne gute Infrastruktur.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng (2 Falsch). Trước khi chuyển nhà, tác giả sống tại thành phố chứ không phải vùng nông thôn hẻo lánh."
+        },
+        {
+          "id": "OSD_B1_T5_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Alle Bewohner des Hauses müssen die Hausarbeiten strikt nach einem festen Plan erledigen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Die älteren Bewohner haben kaum Kontakt zu den jüngeren Familien im Wohnheim.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Ein großer Gemeinschaftsgarten dient als beliebter Treffpunkt für alle Generationen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der Autor hält das Projekt für eine gelungene Alternative zur städtischen Anonymität.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q07",
+          "order": 7,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Was ist der Schwerpunkt des ersten Presseartikels über Umweltbildung an Schulen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die vollständige Schließung alter naturwissenschaftlicher Labore."
+            },
+            {
+              "id": "b",
+              "text": "Praxisorientierte Schulgärten und ökologische Projekte im Unterricht."
+            },
+            {
+              "id": "c",
+              "text": "Ein generelles Verbot von Schulausflügen in die Natur."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q08",
+          "order": 8,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Welche positive Wirkung beobachten die Lehrkräfte bei den Schülern?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ein deutlich gestiegenes Verantwortungsbewusstsein für Natur und Ernährung."
+            },
+            {
+              "id": "b",
+              "text": "Höhere Fehlzeiten im regulären Mathematikunterricht."
+            },
+            {
+              "id": "c",
+              "text": "Wenig Interesse an praktischer Gruppenarbeit im Freien."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q09",
+          "order": 9,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Was fordern die Initiatoren für die Zukunft des Projekts?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die Reduzierung der Unterrichtsstunden auf die Hälfte."
+            },
+            {
+              "id": "b",
+              "text": "Den Verzicht auf jegliche staatliche Fördermittel."
+            },
+            {
+              "id": "c",
+              "text": "Eine feste Verankerung von Nachhaltigkeitsthemen in den Lehrplänen aller Bundesländer."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q10",
+          "order": 10,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Worum geht es im zweiten Artikel über Carsharing in Kleinstädten?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Um die zunehmende Verbreitung von geteilten Elektroautos auf dem Land."
+            },
+            {
+              "id": "b",
+              "text": "Um ein gesetzliches Fahrverbot für private Autos in Gemeinden."
+            },
+            {
+              "id": "c",
+              "text": "Um die Schließung aller öffentlichen Bahnhöfe."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Für welche Personengruppen ist das ländliche Carsharing besonders vorteilhaft?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Für Familien ohne Zweitwagen und Senioren für gelegentliche Fahrten."
+            },
+            {
+              "id": "b",
+              "text": "Ausschließlich für Berufspendler mit täglich weiten Strecken."
+            },
+            {
+              "id": "c",
+              "text": "Nur für Touristen aus dem Ausland."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Welchen doppelten Nutzen hat das Projekt für die Kommunen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Höhere Bußgelder für Falschparker und mehr Tankstellen."
+            },
+            {
+              "id": "b",
+              "text": "Weniger Parkflächenbedarf und geringere Umweltbelastung durch Abgase."
+            },
+            {
+              "id": "c",
+              "text": "Kostenlose Autos für alle Gemeindemitarbeiter."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q13",
+          "order": 13,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): 13. Ein 12-jähriger Junge möchte in den Sommerferien an der See segeln lernen und einen Segelschein machen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q14",
+          "order": 14,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): 14. Eine Mutter sucht für ihre kreative Tochter einen Ferienkurs, in dem sie mit Ton modellieren kann.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q15",
+          "order": 15,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): 15. Eltern suchen für ihren Sohn ein Ferienlager, in dem er seine Englischkenntnisse am See verbessern kann.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): 16. Ein technikbegeistertes Mädchen möchte in den Ferien lernen, wie man kleine Roboter programmiert.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): 17. Ein 11-jähriger Schüler kocht zu Hause leidenschaftlich gerne und möchte neue Rezepte lernen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): 18. Ein pferdebegeistertes Mädchen wünscht sich Reiterferien mit täglicher Pflege eines Ponys.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): 19. Ein Student sucht für sich einen anspruchsvollen Tauchkurs mit Höhlentauchen im Mittelmeer.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q20",
+          "order": 20,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 20 – Dörthe (14, Augsburg)): Ist Dörthe dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q21",
+          "order": 21,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 21 – Alexander (40, Hamburg)): Ist Alexander dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q22",
+          "order": 22,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 22 – Norbert (62, Wien)): Ist Norbert dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 23 – Julius (23, Berlin)): Ist Julius dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 24 – Laura (31, München)): Ist Laura dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 25 – Yvette (48, Graz)): Ist Yvette dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbrief 26 – Nicola (35, Salzburg)): Ist Nicola dafür, wieder aufs Land zu ziehen? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q27",
+          "order": 27,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Wie hoch ist die einmalige Registrierungsgebühr für Neukunden bei Citybike Wien?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die Registrierung ist komplett kostenlos."
+            },
+            {
+              "id": "b",
+              "text": "Genau 10,00 Euro Jahresgebühr."
+            },
+            {
+              "id": "c",
+              "text": "Genau 1,00 Euro, abgebucht von der Zahlungskarte."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q28",
+          "order": 28,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Woran erkennt der Nutzer die erfolgreiche und ordnungsgemäße Rückgabe des Rades?",
+          "options": [
+            {
+              "id": "a",
+              "text": "An einem gedruckten Beleg aus dem Terminal."
+            },
+            {
+              "id": "b",
+              "text": "Am Aufleuchten des grünen Lichts und einem Tonsignal an der Box."
+            },
+            {
+              "id": "c",
+              "text": "An einer Bestätigungs-SMS auf dem Handy."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q29",
+          "order": 29,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Wie viel kostet die erste Nutzungsstunde bei jeder Fahrt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die erste Stunde ist grundsätzlich kostenlos."
+            },
+            {
+              "id": "b",
+              "text": "Genau 1,00 Euro ab der ersten Minute."
+            },
+            {
+              "id": "c",
+              "text": "Pauschal 2,00 Euro Servicepauschale."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_L_Q30",
+          "order": 30,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Bis zu welchem Betrag haftet der Nutzer bei grob fahrlässigem Verlust des Rades?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bis zu 50 Euro Schutzgebühr."
+            },
+            {
+              "id": "b",
+              "text": "In unbegrenzter Höhe für den Neuwert."
+            },
+            {
+              "id": "c",
+              "text": "Bis zu einem Höchstbetrag von 300 Euro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t5_hoeren",
+      "skill": "Hoeren",
+      "title": "Kỹ năng Nghe hiểu (Hörverstehen)",
+      "durationMinutes": 40,
+      "totalQuestions": 30,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "short_dialogues",
+          "title": "Teil 1: 5 Kurztexte (Alltag, Praxis, Wetter, Einkaufen)",
+          "instruction": "Sie hören fünf kurze Texte. Sie hören jeden Text zwei Mal. Wählen Sie für jede Aufgabe die richtige Lösung.",
+          "questionRange": [
+            1,
+            10
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Hörtexte Teil 1: 5 Durchsagen und Telefonnachrichten",
+            "content": "AUDIO-TRANSKRIPTIONEN TEIL 1 (Aufgaben 1–10):\n\n[Text 1] 'Achtung an Gleis 2: Der Regional-Express aus Salzburg mit Planankunft um 14:15 Uhr fährt heute auf Gleis 4 ein. Grund dafür sind kurzfristige Gleisbauarbeiten im Weichenbereich.'\n\n[Text 2] 'Guten Tag, hier ist die Zahnarztpraxis Dr. Seidel. Frau Hoffmann, wir müssen Ihren Kontrolltermin für morgen Vormittag leider verschieben, da Dr. Seidel erkrankt ist. Bitte rufen Sie uns zurück, um einen Ersatztermin für nächste Woche zu vereinbaren.'\n\n[Text 3] 'Hallo Felix, hier ist Anna! Ich habe eben zwei Karten für die Operetten-Gala am Freitag reserviert. Die Kasse schließt um 18 Uhr. Kannst du die Tickets auf dem Heimweg von der Arbeit abholen?'\n\n[Text 4] 'Der Wetterbericht für die Alpenregion: Morgen erwartet uns im Bergland überwiegend freundliches Wetter mit viel Sonnenschein und Temperaturen bis zu 22 Grad. Erst am späten Nachmittag können sich einzelne Gewitter bilden.'\n\n[Text 5] 'Großer Lagerräumungsverkauf bei MediaMarkt! Nur heute und morgen erhalten Sie 25 Prozent Rabatt auf alle Haushaltsgroßgeräte wie Waschmaschinen und Kühlschränke!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_H_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der Regional-Express aus Salzburg fährt heute wie geplant auf Gleis 2 ein.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ],
+              "publicExplanation": "Đáp án Falsch đúng (Hören 1 Falsch). Tàu chuyển sang đường ray số 4 do đang sửa đường ray."
+            },
+            {
+              "id": "OSD_B1_T5_H_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Auf welchem Gleis kommt der Zug aus Salzburg an?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Auf Gleis 4."
+                },
+                {
+                  "id": "b",
+                  "text": "Auf Gleis 1."
+                },
+                {
+                  "id": "c",
+                  "text": "Auf Gleis 6."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der morgige Termin bei Dr. Seidel muss verschoben werden.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Warum wird der Kontrolltermin abgesagt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Weil die Praxis renoviert wird."
+                },
+                {
+                  "id": "b",
+                  "text": "Weil der Arzt erkrankt ist."
+                },
+                {
+                  "id": "c",
+                  "text": "Weil Frau Hoffmann zu spät kam."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Anna bittet Felix, die Theaterkarten am Freitag nach der Vorstellung zu bezahlen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Was soll Felix vor 18 Uhr tun?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Die reservierten Karten an der Theaterkasse abholen."
+                },
+                {
+                  "id": "b",
+                  "text": "Das Abendessen für Freitag kochen."
+                },
+                {
+                  "id": "c",
+                  "text": "Neue Opernkarten im Internet bestellen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q07",
+              "order": 7,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Im Alpenraum scheint morgen tagsüber überwiegend die Sonne.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q08",
+              "order": 8,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Welches Wetterphänomen droht am späten Nachmittag in den Bergen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Starker Schneefall und Frost."
+                },
+                {
+                  "id": "b",
+                  "text": "Einzelne Gewitter."
+                },
+                {
+                  "id": "c",
+                  "text": "Dauerhafter Nebel."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q09",
+              "order": 9,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Der Rabatt bei MediaMarkt gilt auf alle Computer und Smartphones.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q10",
+              "order": 10,
+              "part": 1,
+              "taskType": "multiple_choice",
+              "prompt": "Auf welche Produkte wird ein Rabatt von 25 Prozent gewährt?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Auf Kaffeemaschinen und Toaster."
+                },
+                {
+                  "id": "b",
+                  "text": "Auf Fernsehgeräte."
+                },
+                {
+                  "id": "c",
+                  "text": "Auf Haushaltsgroßgeräte wie Waschmaschinen und Kühlschränke."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "monologue_guide",
+          "title": "Teil 2: Führung im barocken Stift Melk in der Wachau",
+          "instruction": "Sie hören eine Führung. Sie hören den Text einmal. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+          "questionRange": [
+            11,
+            15
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Führung im Stift Melk in der Wachau (S. 79)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 2: Führung durch das historische Stift Melk in der Wachau (Aufgaben 11–15)\n\n'Sehr geehrte Damen und Herren, herzlich willkommen im barocken Benediktinerstift Melk hoch über der Donau! Mein Name ist Pater Markus und ich freue mich, Sie durch unsere über 900 Jahre alte Klosteranlage führen zu dürfen. Das Stift, wie wir es heute sehen, wurde zwischen 1702 und 1736 nach Plänen des berühmten Baumeisters Jakob Prandtauer errichtet und gilt als eines der vollkommensten Barockbauwerke Europas. Wir beginnen unseren Rundgang im Prälatenhof und betreten gleich das Stiftsmuseum in den ehemaligen Kaiserzimmern. Der absolute Höhepunkt unseres Klosters ist zweifellos die weltberühmte Stiftsbibliothek. Hier bewahren wir über 100.000 wertvolle Bände auf, darunter fast 2.000 handgeschriebene Handschriften aus dem Mittelalter. Das prächtige Deckenfresko von Paul Troger zeigt die Weisheit Gottes und ist weltberühmt. Von der Bibliotheksgalerie aus genießen Sie anschließend einen traumhaften Blick über die Flusslandschaft der Wachau. Bitte berühren Sie in den Schauräumen keine Exponate und beachten Sie das strikte Rauchverbot in allen Innenräumen. Folgen Sie mir nun bitte in den Kaisertrakt!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_H_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Wer erbaute das barocke Stift Melk in seiner heutigen Form?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der berühmte Barockbaumeister Jakob Prandtauer."
+                },
+                {
+                  "id": "b",
+                  "text": "Der Maler Paul Troger."
+                },
+                {
+                  "id": "c",
+                  "text": "Ein italienischer Kaiser im Mittelalter."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q12",
+              "order": 12,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Wo beginnt der geführte Rundgang durch das Kloster?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Im Prälatenhof und Stiftsmuseum."
+                },
+                {
+                  "id": "b",
+                  "text": "Direkt in der Stiftskirche."
+                },
+                {
+                  "id": "c",
+                  "text": "Im Weinkeller an der Donau."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q13",
+              "order": 13,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Wie viele Bände umfasst die historische Stiftsbibliothek?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Genau 10.000 Bücher."
+                },
+                {
+                  "id": "b",
+                  "text": "Rund 50.000 Bände."
+                },
+                {
+                  "id": "c",
+                  "text": "Über 100.000 wertvolle Bände."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q14",
+              "order": 14,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Was stellt das berühmte Deckenfresko von Paul Troger in der Bibliothek dar?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Die Schlacht am Bergisel."
+                },
+                {
+                  "id": "b",
+                  "text": "Das Leben der Benediktinermönche."
+                },
+                {
+                  "id": "c",
+                  "text": "Die Weisheit Gottes."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q15",
+              "order": 15,
+              "part": 2,
+              "taskType": "multiple_choice",
+              "prompt": "Welche wichtige Regel müssen Besucher im Kloster beachten?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Mobiltelefone müssen abgegeben werden."
+                },
+                {
+                  "id": "b",
+                  "text": "Das Berühren von Exponaten und das Rauchen sind streng verboten."
+                },
+                {
+                  "id": "c",
+                  "text": "Man darf nur im Flüsterton sprechen."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "informal_dialogue",
+          "title": "Teil 3: Gespräch über Küchenrenovierung und Umzug",
+          "instruction": "Sie hören ein Gespräch zwischen Freunden. Sie hören den Text einmal. Wählen Sie: Sind die Aussagen richtig oder falsch?",
+          "questionRange": [
+            16,
+            22
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Gespräch über Küchenrenovierung (S. 80)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 3: Gespräch über Küchenrenovierung und Umzug (Aufgaben 16–22)\n\nTobias: 'Hallo Lena! Gut, dass ich dich treffe. Hast du am Samstagnachmittag vielleicht zwei Stunden Zeit? Ich brauche dringend deine Hilfe.'\nLena: 'Hi Tobias! Kommt darauf an – worum geht es denn?'\nTobias: 'Ich renoviere doch gerade meine Küche in der neuen Wohnung. Die Wände sind schon gestrichen, aber am Samstag kommen die neuen Küchenschränke und die Arbeitsplatte von IKEA.'\nLena: 'Möbel aufbauen ist eigentlich nicht gerade meine Spezialität. Fragst du nicht lieber deinen Bruder Markus? Der ist doch Tischler!'\nTobias: 'Markus hat sich leider beim Fußballspielen am Knie verletzt und kann im Moment kaum Treppen steigen. Du musst ja auch keine schweren Hängeschränke montieren – ich brauche jemanden, der mir die Werkzeuge reicht und beim Festhalten der Arbeitsplatte hilft.'\nLena: 'Ach so, das kriege ich hin! Wenn du danach für eine leckere Pizza und kühle Getränke sorgst, bin ich ab 14 Uhr bei dir.'\nTobias: 'Abgemacht, vielen Dank Lena! Das ist eine riesige Erleichterung für mich!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_H_Q16",
+              "order": 16,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Tobias bittet Lena um Hilfe bei der Küchenrenovierung am Samstag.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q17",
+              "order": 17,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Die Wände in Tobias' Küche müssen noch gestrichen werden.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q18",
+              "order": 18,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Lena baut leidenschaftlich gerne und oft Möbel auf.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q19",
+              "order": 19,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Markus kann nicht helfen, weil er im Urlaub verreist ist.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q20",
+              "order": 20,
+              "part": 2,
+              "taskType": "binary",
+              "prompt": "Markus hat eine Knieverletzung vom Sport.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q21",
+              "order": 21,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Lena lehnt Tobias' Bitte um Hilfe entschieden ab.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q22",
+              "order": 22,
+              "part": 3,
+              "taskType": "binary",
+              "prompt": "Tobias verspricht, Lena nach der Arbeit zum Pizzaessen einzuladen.",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "radio_debate",
+          "title": "Teil 4: Radiosendung über Schüleraustausch und Auslandsjahr",
+          "instruction": "Sie hören eine Radiosendung mit Gästen. Sie hören den Text zwei Mal. Wählen Sie: Wer sagt was?",
+          "questionRange": [
+            23,
+            30
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Radiosendung 'Bildung & Jugend': Schüleraustausch (S. 81)",
+            "content": "AUDIO-TRANSKRIPTION TEIL 4: Radiosendung über Schüleraustausch und Sprachreisen (Aufgaben 23–30)\n\nModerator: 'Willkommen bei unserer Bildungs- und Jugendsendung! Heute geht es um Auslandserfahrungen während der Schulzeit. Bei mir im Studio sind Frau Beate Walter von einer Austauschorganisation und der 16-jährige Gymnasiast Lukas Keller.'\nLukas: 'Hallo! Ich habe das gesamte letzte Schuljahr an einer Highschool in Kanada verbracht. Am Anfang hatte ich furchtbares Heimweh und meine Englischkenntnisse waren ziemlich holprig. Aber nach zwei Monaten platzte der Knoten und ich habe echte Freunde fürs Leben gefunden.'\nFrau Walter: 'Lukas' Erfahrung ist typisch. Ein Schuljahr im Ausland fördert die Selbstständigkeit, das interkulturelle Verständnis und die Persönlichkeitsentwicklung enorm. Man lernt, sich in einer völlig neuen Umgebung zurechtzufinden.'\nModerator: 'Frau Walter, viele Familien schrecken vor den hohen Kosten zurück. Ein Schuljahr in den USA oder Kanada kostet schnell über 10.000 Euro. Gibt es da Unterstützung?'\nFrau Walter: 'Auf jeden Fall! Es gibt zahlreiche Teilstipendien, zum Beispiel vom Deutschen Bundestag (das Parlamentarische Patenschafts-Programm) oder von Stiftungen. Niemand sollte seinen Traum vom Austausch nur aus finanziellen Gründen aufgeben müssen.'\nLukas: 'Ich kann wirklich jedem Schüler raten: Bewerbt euch um Stipendien und traut euch!'"
+          },
+          "questions": [
+            {
+              "id": "OSD_B1_T5_H_Q23",
+              "order": 23,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer berichtet von anfänglichem Heimweh und Startschwierigkeiten mit der Fremdsprache?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Lukas Keller"
+                },
+                {
+                  "id": "c",
+                  "text": "Frau Beate Walter"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q24",
+              "order": 24,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer hebt hervor, dass ein Auslandsjahr vor allem die persönliche Reife und Selbstständigkeit fördert?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Lukas Keller"
+                },
+                {
+                  "id": "c",
+                  "text": "Frau Beate Walter"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q25",
+              "order": 25,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer weist auf die hohen finanziellen Belastungen für Eltern hin?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Lukas Keller"
+                },
+                {
+                  "id": "b",
+                  "text": "Frau Beate Walter"
+                },
+                {
+                  "id": "c",
+                  "text": "Der Moderator"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q26",
+              "order": 26,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer informiert über Stipendienprogramme des Bundestages und privater Stiftungen?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Frau Beate Walter"
+                },
+                {
+                  "id": "c",
+                  "text": "Lukas Keller"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q27",
+              "order": 27,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer ermutigt andere Jugendliche aktiv dazu, sich trotz Zweifeln für ein Austauschjahr zu bewerben?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Lukas Keller"
+                },
+                {
+                  "id": "b",
+                  "text": "Frau Beate Walter"
+                },
+                {
+                  "id": "c",
+                  "text": "Der Moderator"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q28",
+              "order": 28,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer eröffnet die Radiosendung und stellt das Thema Auslandsschuljahr vor?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Frau Beate Walter"
+                },
+                {
+                  "id": "c",
+                  "text": "Lukas Keller"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q29",
+              "order": 29,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer berichtet von kanadischen Highschools und den dort geknüpften Freundschaften?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Frau Beate Walter"
+                },
+                {
+                  "id": "c",
+                  "text": "Lukas Keller"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B1_T5_H_Q30",
+              "order": 30,
+              "part": 4,
+              "taskType": "speaker_attribution",
+              "prompt": "Wer vertritt professionell eine Vermittlungsorganisation für Schüleraustausch?",
+              "options": [
+                {
+                  "id": "a",
+                  "text": "Der Moderator"
+                },
+                {
+                  "id": "b",
+                  "text": "Frau Beate Walter"
+                },
+                {
+                  "id": "c",
+                  "text": "Lukas Keller"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B1_T5_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der Regional-Express aus Salzburg fährt heute wie geplant auf Gleis 2 ein.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Falsch đúng (Hören 1 Falsch). Tàu chuyển sang đường ray số 4 do đang sửa đường ray."
+        },
+        {
+          "id": "OSD_B1_T5_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Auf welchem Gleis kommt der Zug aus Salzburg an?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Auf Gleis 4."
+            },
+            {
+              "id": "b",
+              "text": "Auf Gleis 1."
+            },
+            {
+              "id": "c",
+              "text": "Auf Gleis 6."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der morgige Termin bei Dr. Seidel muss verschoben werden.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Warum wird der Kontrolltermin abgesagt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Weil die Praxis renoviert wird."
+            },
+            {
+              "id": "b",
+              "text": "Weil der Arzt erkrankt ist."
+            },
+            {
+              "id": "c",
+              "text": "Weil Frau Hoffmann zu spät kam."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Anna bittet Felix, die Theaterkarten am Freitag nach der Vorstellung zu bezahlen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Was soll Felix vor 18 Uhr tun?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die reservierten Karten an der Theaterkasse abholen."
+            },
+            {
+              "id": "b",
+              "text": "Das Abendessen für Freitag kochen."
+            },
+            {
+              "id": "c",
+              "text": "Neue Opernkarten im Internet bestellen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Im Alpenraum scheint morgen tagsüber überwiegend die Sonne.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Welches Wetterphänomen droht am späten Nachmittag in den Bergen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Starker Schneefall und Frost."
+            },
+            {
+              "id": "b",
+              "text": "Einzelne Gewitter."
+            },
+            {
+              "id": "c",
+              "text": "Dauerhafter Nebel."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Der Rabatt bei MediaMarkt gilt auf alle Computer und Smartphones.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Auf welche Produkte wird ein Rabatt von 25 Prozent gewährt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Auf Kaffeemaschinen und Toaster."
+            },
+            {
+              "id": "b",
+              "text": "Auf Fernsehgeräte."
+            },
+            {
+              "id": "c",
+              "text": "Auf Haushaltsgroßgeräte wie Waschmaschinen und Kühlschränke."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Wer erbaute das barocke Stift Melk in seiner heutigen Form?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der berühmte Barockbaumeister Jakob Prandtauer."
+            },
+            {
+              "id": "b",
+              "text": "Der Maler Paul Troger."
+            },
+            {
+              "id": "c",
+              "text": "Ein italienischer Kaiser im Mittelalter."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Wo beginnt der geführte Rundgang durch das Kloster?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Im Prälatenhof und Stiftsmuseum."
+            },
+            {
+              "id": "b",
+              "text": "Direkt in der Stiftskirche."
+            },
+            {
+              "id": "c",
+              "text": "Im Weinkeller an der Donau."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q13",
+          "order": 13,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Wie viele Bände umfasst die historische Stiftsbibliothek?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Genau 10.000 Bücher."
+            },
+            {
+              "id": "b",
+              "text": "Rund 50.000 Bände."
+            },
+            {
+              "id": "c",
+              "text": "Über 100.000 wertvolle Bände."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q14",
+          "order": 14,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Was stellt das berühmte Deckenfresko von Paul Troger in der Bibliothek dar?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Die Schlacht am Bergisel."
+            },
+            {
+              "id": "b",
+              "text": "Das Leben der Benediktinermönche."
+            },
+            {
+              "id": "c",
+              "text": "Die Weisheit Gottes."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q15",
+          "order": 15,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Welche wichtige Regel müssen Besucher im Kloster beachten?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mobiltelefone müssen abgegeben werden."
+            },
+            {
+              "id": "b",
+              "text": "Das Berühren von Exponaten und das Rauchen sind streng verboten."
+            },
+            {
+              "id": "c",
+              "text": "Man darf nur im Flüsterton sprechen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Tobias bittet Lena um Hilfe bei der Küchenrenovierung am Samstag.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Die Wände in Tobias' Küche müssen noch gestrichen werden.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Lena baut leidenschaftlich gerne und oft Möbel auf.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Markus kann nicht helfen, weil er im Urlaub verreist ist.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q20",
+          "order": 20,
+          "part": 2,
+          "taskType": "binary",
+          "prompt": "Markus hat eine Knieverletzung vom Sport.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q21",
+          "order": 21,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Lena lehnt Tobias' Bitte um Hilfe entschieden ab.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q22",
+          "order": 22,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Tobias verspricht, Lena nach der Arbeit zum Pizzaessen einzuladen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer berichtet von anfänglichem Heimweh und Startschwierigkeiten mit der Fremdsprache?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Lukas Keller"
+            },
+            {
+              "id": "c",
+              "text": "Frau Beate Walter"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer hebt hervor, dass ein Auslandsjahr vor allem die persönliche Reife und Selbstständigkeit fördert?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Lukas Keller"
+            },
+            {
+              "id": "c",
+              "text": "Frau Beate Walter"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer weist auf die hohen finanziellen Belastungen für Eltern hin?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Lukas Keller"
+            },
+            {
+              "id": "b",
+              "text": "Frau Beate Walter"
+            },
+            {
+              "id": "c",
+              "text": "Der Moderator"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer informiert über Stipendienprogramme des Bundestages und privater Stiftungen?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Beate Walter"
+            },
+            {
+              "id": "c",
+              "text": "Lukas Keller"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q27",
+          "order": 27,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer ermutigt andere Jugendliche aktiv dazu, sich trotz Zweifeln für ein Austauschjahr zu bewerben?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Lukas Keller"
+            },
+            {
+              "id": "b",
+              "text": "Frau Beate Walter"
+            },
+            {
+              "id": "c",
+              "text": "Der Moderator"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q28",
+          "order": 28,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer eröffnet die Radiosendung und stellt das Thema Auslandsschuljahr vor?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Beate Walter"
+            },
+            {
+              "id": "c",
+              "text": "Lukas Keller"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q29",
+          "order": 29,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer berichtet von kanadischen Highschools und den dort geknüpften Freundschaften?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Beate Walter"
+            },
+            {
+              "id": "c",
+              "text": "Lukas Keller"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T5_H_Q30",
+          "order": 30,
+          "part": 4,
+          "taskType": "speaker_attribution",
+          "prompt": "Wer vertritt professionell eine Vermittlungsorganisation für Schüleraustausch?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Der Moderator"
+            },
+            {
+              "id": "b",
+              "text": "Frau Beate Walter"
+            },
+            {
+              "id": "c",
+              "text": "Lukas Keller"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T5_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 1 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q02",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 2 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q03",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 3 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q04",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 4 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q05",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 5 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q06",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 6 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q07",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 7 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 7 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q08",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 8 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 8 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q09",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 9 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 9 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q10",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 10 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 10 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q11",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 11 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 11 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q12",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 12 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 12 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q13",
+      "correctOption": "e",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 13 e",
+      "trapExplanationVi": "Khóa đáp án gốc: 13 e."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q14",
+      "correctOption": "i",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 14 i",
+      "trapExplanationVi": "Khóa đáp án gốc: 14 i."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q15",
+      "correctOption": "d",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 15 d",
+      "trapExplanationVi": "Khóa đáp án gốc: 15 d."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q16",
+      "correctOption": "h",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 16 h",
+      "trapExplanationVi": "Khóa đáp án gốc: 16 h."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q17",
+      "correctOption": "j",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 17 j",
+      "trapExplanationVi": "Khóa đáp án gốc: 17 j."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q18",
+      "correctOption": "f",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 18 f",
+      "trapExplanationVi": "Khóa đáp án gốc: 18 f."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q19",
+      "correctOption": "0",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 19 0",
+      "trapExplanationVi": "Không có thông báo phù hợp (0)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q20",
+      "correctOption": "Nein",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 20 Nein",
+      "trapExplanationVi": "Quan điểm không đồng tình (Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q21",
+      "correctOption": "Ja",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 21 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình (Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q22",
+      "correctOption": "Ja",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 22 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình (Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q23",
+      "correctOption": "Nein",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 23 Nein",
+      "trapExplanationVi": "Quan điểm không đồng tình (Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q24",
+      "correctOption": "Nein",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 24 Nein",
+      "trapExplanationVi": "Quan điểm không đồng tình (Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q25",
+      "correctOption": "Nein",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 25 Nein",
+      "trapExplanationVi": "Quan điểm không đồng tình (Nein)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q26",
+      "correctOption": "Ja",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 26 Ja",
+      "trapExplanationVi": "Quan điểm đồng tình (Ja)."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q27",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 27 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 27 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q28",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 28 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 28 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q29",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 29 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 29 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_L_Q30",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Lesen 30 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 30 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q01",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 1 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 1 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q02",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 2 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 2 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 3 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 3 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q04",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 4 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 4 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q05",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 5 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 5 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q06",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 6 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 6 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 7 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 7 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q08",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 8 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 8 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 9 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 9 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q10",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 10 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 10 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q11",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 11 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 11 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q12",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 12 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 12 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q13",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 13 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 13 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q14",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 14 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 14 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q15",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 15 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 15 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q16",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 16 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 16 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q17",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 17 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 17 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q18",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 18 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 18 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 19 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 19 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q20",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 20 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 20 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q21",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 21 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc: 21 Falsch."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q22",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 22 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc: 22 Richtig."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q23",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 23 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 23 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q24",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 24 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 24 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q25",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 25 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 25 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q26",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 26 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 26 b."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q27",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 27 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 27 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q28",
+      "correctOption": "a",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 28 a",
+      "trapExplanationVi": "Khóa đáp án gốc: 28 a."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q29",
+      "correctOption": "c",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 29 c",
+      "trapExplanationVi": "Khóa đáp án gốc: 29 c."
+    },
+    {
+      "questionId": "OSD_B1_T5_H_Q30",
+      "correctOption": "b",
+      "points": 1.0,
+      "citation": "Lösungsschlüssel Modelltest 5: Hören 30 b",
+      "trapExplanationVi": "Khóa đáp án gốc: 30 b."
+    }
+  ]
+}

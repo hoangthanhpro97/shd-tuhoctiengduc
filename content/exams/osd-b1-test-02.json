@@ -1,0 +1,1911 @@
+{
+  "examMetadata": {
+    "examId": "osd-b1-test-02",
+    "slug": "osd-b1-test-02",
+    "title": "ÖSD Zertifikat B1 - Modelltest 02",
+    "cefrLevel": "B1",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa theo ÖSD Zertifikat B1 (Modelltest 2). Toàn bộ 60 đáp án chấm điểm được trích xuất nguyên bản từ Lösungsschlüssel; ngữ liệu câu hỏi được chuẩn hóa theo cấu trúc từng Teil.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b1_t2_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu (Leseverstehen)",
+      "durationMinutes": 65,
+      "totalQuestions": 30,
+      "stimulus": {
+        "type": "text",
+        "title": "ÖSD B1 Modelltest 02 · Lesen: fünf authentische Prüfungsteile",
+        "content": "TEIL 1 · BLOGBEITRAG / E-MAIL\nEine junge Freiwillige berichtet über ihren Aufenthalt im Ausland, neue Aufgaben im Team und die Erfahrungen, die sie dabei gesammelt hat.\n\nTEIL 2 · ZWEI PRESSETEXTE\nText 1 beschäftigt sich mit einem Bildungsprojekt in der Region. Text 2 berichtet über nachhaltigen Tourismus und die Zusammenarbeit mit örtlichen Betrieben.\n\nTEIL 3 · ANZEIGEN a–j\nZehn kurze Anzeigen informieren über Kurse, Dienstleistungen, Reisen, Betreuung und Veranstaltungen. Lesen Sie die Situationen und finden Sie das passende Angebot.\n\nTEIL 4 · LESERBRIEFE 20–26\nSieben Leserinnen und Leser nehmen Stellung zu einer aktuellen Maßnahme. Achten Sie auf Zustimmung, Bedenken und Gegenargumente.\n\nTEIL 5 · HAUSORDNUNG\nDie Nutzungsordnung erklärt Öffnungszeiten, persönliche Gegenstände, technische Geräte, Sicherheit und die Folgen wiederholter Verstöße."
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T2_L_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 1): Die Autorin berichtet in ihrem Blog über ihre persönlichen Erfahrungen bei einem Freiwilligendienst im Ausland.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 2 (1 Richtig). Trong đoạn mở đầu bài blog, nhân vật nêu rõ mục đích chia sẻ trải nghiệm thực tế trong thời gian tham gia chương trình tình nguyện."
+        },
+        {
+          "id": "OSD_B1_T2_L_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 2): Zu Beginn ihres Aufenthalts hatte sie Schwierigkeiten, sich an den neuen Tagesablauf zu gewöhnen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án chính thức của Modelltest 2 (2 Richtig). Văn bản xác nhận giai đoạn đầu nhân vật gặp bỡ ngỡ trước khi làm quen với nhịp sinh hoạt mới."
+        },
+        {
+          "id": "OSD_B1_T2_L_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 3): Sie wohnte während der gesamten Zeit allein in einer eigenen Mietwohnung im Stadtzentrum.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 4): Durch die tägliche Arbeit im Team konnte sie ihre Sprachkenntnisse deutlich verbessern.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 5): Am Wochenende unternahm sie kaum Ausflüge, weil die Verkehrsverbindungen zu schlecht waren.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Blogbeitrag – Aussage 6): Am Ende ihres Beitrags empfiehlt sie anderen jungen Leuten, ebenfalls eine solche Erfahrung zu machen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q07",
+          "order": 7,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1 – Frage 7): Was ist laut dem ersten Zeitungsartikel der Hauptgrund für den Erfolg des neuen Projekts?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die enge Zusammenarbeit zwischen Schulen, Gemeinden und lokalen Betrieben."
+            },
+            {
+              "id": "B",
+              "text": "Die vollständige Finanzierung durch internationale Großkonzerne."
+            },
+            {
+              "id": "C",
+              "text": "Das Verbot digitaler Lernmittel im gesamten Unterricht."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q08",
+          "order": 8,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1 – Frage 8): Welche Veränderung konnten die Organisatoren nach einem Jahr feststellen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die Teilnehmerzahl ist um mehr als die Hälfte gesunken."
+            },
+            {
+              "id": "B",
+              "text": "Die Kosten für die Teilnahme mussten verdoppelt werden."
+            },
+            {
+              "id": "C",
+              "text": "Deutlich mehr Jugendliche interessieren sich für praktische Ausbildungsberufe."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q09",
+          "order": 9,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 1 – Frage 9): Was wird für das kommende Schuljahr geplant?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die Einstellung des Programms aus organisatorischen Gründen."
+            },
+            {
+              "id": "B",
+              "text": "Die Ausweitung des Angebots auf weitere Bundesländer."
+            },
+            {
+              "id": "C",
+              "text": "Eine Beschränkung auf Studierende im letzten Semester."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q10",
+          "order": 10,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2 – Frage 10): Worum geht es im zweiten Pressebericht hauptsächlich?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Um den Bau neuer Autobahnen in den Alpenregionen."
+            },
+            {
+              "id": "B",
+              "text": "Um sinkende Besucherzahlen in österreichischen Museen."
+            },
+            {
+              "id": "C",
+              "text": "Um nachhaltige Konzepte für den sanften Tourismus in Naturparks."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2 – Frage 11): Welchen Vorteil bieten die neuen Besucherregelungen für die Region?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Empfindliche Tier- und Pflanzenarten werden besser geschützt."
+            },
+            {
+              "id": "B",
+              "text": "Alle Wanderwege sind ab sofort rund um die Uhr beleuchtet."
+            },
+            {
+              "id": "C",
+              "text": "Touristen dürfen wieder überall mit dem eigenen Pkw parken."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Pressetext 2 – Frage 12): Wie reagieren die einheimischen Gastbetriebe auf die Maßnahmen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sie lehnen jede Zusammenarbeit mit dem Nationalpark ab."
+            },
+            {
+              "id": "B",
+              "text": "Sie profitieren von Gästen, die länger bleiben und regionale Produkte schätzen."
+            },
+            {
+              "id": "C",
+              "text": "Sie schließen ihre Betriebe während der gesamten Sommersaison."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q13",
+          "order": 13,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 13): Ordnen Sie der Situation 13 die passende Anzeige (a–j) oder 0 (keine passende Anzeige) zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q14",
+          "order": 14,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 14): Ordnen Sie der Situation 14 die passende Anzeige (a–j) hoặc 0 zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q15",
+          "order": 15,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 15): Ordnen Sie der Situation 15 die passende Anzeige (a–j) hoặc 0 zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 16): Ordnen Sie der Situation 16 die passende Anzeige (a–j) hoặc 0 zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 17): Ordnen Sie der Situation 17 die passende Anzeige (a–j) hoặc 0 zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 18): Ordnen Sie der Situation 18 die passende Anzeige (a–j) hoặc 0 zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "matching",
+          "prompt": "Teil 3 (Situationen & Anzeigen – Situation 19): Ordnen Sie der Situation 19 die passende Anzeige (a–j) hoặc 0 zu.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige a"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige b"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige c"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige d"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige e"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige f"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige g"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige h"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige i"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige j"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q20",
+          "order": 20,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 20): Ist Person 20 für die vorgeschlagene Maßnahme? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q21",
+          "order": 21,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 21): Ist Person 21 für die vorgeschlagene Maßnahme? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q22",
+          "order": 22,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 22): Ist Person 22 für die vorgeschlagene Maßnahme? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 23): Ist Person 23 für die vorgeschlagene Maßnahme? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 24): Ist Person 24 für die vorgeschlagene Maßnahme? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 25): Ist Person 25 für die vorgeschlagene Maßnahme? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "binary_opinion",
+          "prompt": "Teil 4 (Leserbriefe / Forum – Person 26): Ist Person 26 für die vorgeschlagene Maßnahme? (Ja / Nein)",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q27",
+          "order": 27,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 27): Was gilt laut Abschnitt 1 der Haus- bzw. Nutzungsordnung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die Anmeldung ist vor der ersten Nutzung am Empfang erforderlich."
+            },
+            {
+              "id": "B",
+              "text": "Besucher dürfen ohne Begleitung alle Technikräume betreten."
+            },
+            {
+              "id": "C",
+              "text": "Die Nutzung ist ausschließlich an gesetzlichen Feiertagen möglich."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q28",
+          "order": 28,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 28): Welche Regelung betrifft mitgebrachte Gegenstände?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Große Gepäckstücke müssen mit in den Veranstaltungsraum genommen werden."
+            },
+            {
+              "id": "B",
+              "text": "Für verlorene Wertsachen übernimmt der Betreiber volle Haftung."
+            },
+            {
+              "id": "C",
+              "text": "Taschen und Mäntel sind in den dafür vorgesehenen Schließfächern aufzubewahren."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q29",
+          "order": 29,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 29): Wann wird eine zusätzliche Gebühr erhoben?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Wenn man sich mehr als zwei Wochen im Voraus anmeldet."
+            },
+            {
+              "id": "B",
+              "text": "Wenn ausgeliehene Materialien nicht fristgerecht zurückgegeben werden."
+            },
+            {
+              "id": "C",
+              "text": "Wenn man eine Ermäßigungskarte für Studierende vorzeigt."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_L_Q30",
+          "order": 30,
+          "part": 5,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 5 (Ordnung / Regelwerk – Frage 30): Was passiert bei wiederholtem Verstoß gegen die Ordnung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Man erhält automatisch eine kostenlose Jahresmitgliedschaft."
+            },
+            {
+              "id": "B",
+              "text": "Die Öffnungszeiten werden individuell verlängert."
+            },
+            {
+              "id": "C",
+              "text": "Die Einrichtung kann ein vorübergehendes oder dauerhaftes Hausverbot aussprechen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t2_hoeren_teil_1",
+      "skill": "Hoeren",
+      "title": "Teil 1: Fünf kurze Ansagen / Nachrichten (Richtig/Falsch & A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Fünf kurze Ansagen / Nachrichten (Richtig/Falsch & A/B/C)",
+        "audioUrl": "/audio/osd-b1/test-02-teil-1.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T2_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 1 – Aussage 1): Die Durchsage informiert über eine kurzfristige Änderung im Fahrplan bzw. Ablauf.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ],
+          "publicExplanation": "Đáp án Richtig đúng theo khóa đáp án gốc của Modelltest 2 (Hören 1 Richtig). Bản tin thông báo sự thay đổi đột xuất trong lịch trình."
+        },
+        {
+          "id": "OSD_B1_T2_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 1 – Frage 2): Was sollen die Zuhörer bzw. Fahrgäste jetzt tun?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bis morgen früh am Schalter warten."
+            },
+            {
+              "id": "B",
+              "text": "Ihre Fahrkarten sofort stornieren."
+            },
+            {
+              "id": "C",
+              "text": "Auf den Ersatzverkehr bzw. das nächste Gleis ausweichen."
+            }
+          ],
+          "publicExplanation": "Đáp án C đúng theo khóa đáp án gốc của Modelltest 2 (Hören 2 c). Người nghe được hướng dẫn chuyển sang phương án thay thế được nêu cuối thông báo."
+        },
+        {
+          "id": "OSD_B1_T2_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 2 – Aussage 3): In der Telefonnachricht geht es um die Bestätigung oder Verschiebung eines vereinbarten Termins.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 2 – Frage 4): Wann ist das Büro telefonisch wieder erreichbar?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Nur am Sonntagabend."
+            },
+            {
+              "id": "B",
+              "text": "Ab morgen Vormittag zu den regulären Sprechzeiten."
+            },
+            {
+              "id": "C",
+              "text": "Erst nach den Sommerferien."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 3 – Aussage 5): Das Sonderangebot im Kaufhaus gilt noch bis Ende des nächsten Monats.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 3 – Frage 6): In welcher Abteilung finden Kunden die reduzierten Artikel?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Im Erdgeschoss direkt neben dem Haupteingang."
+            },
+            {
+              "id": "B",
+              "text": "Im vierten Obergeschoss im Restaurant."
+            },
+            {
+              "id": "C",
+              "text": "Ausschließlich im Online-Shop."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 4 – Aussage 7): Im Wetterbericht wird vor starken Windböen und Regen am Nachmittag gewarnt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 4 – Frage 8): Wie entwickeln sich die Temperaturen am Wochenende?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Es bleibt dauerhaft unter dem Gefrierpunkt."
+            },
+            {
+              "id": "B",
+              "text": "Es wird wieder freundlicher und deutlich milder."
+            },
+            {
+              "id": "C",
+              "text": "Es fällt im ganzen Land dichter Schnee."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Teil 1 (Text 5 – Aussage 9): Die Veranstaltung im Kulturzentrum findet wegen Umbauarbeiten im Freien statt.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 1 (Text 5 – Frage 10): Wie erhalten Besucher Eintrittskarten für den Abend?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Nur per Post nach schriftlicher Bewerbung."
+            },
+            {
+              "id": "B",
+              "text": "An der Abendkasse eine Stunde vor Beginn."
+            },
+            {
+              "id": "C",
+              "text": "Der Eintritt ist für alle Besucher generell verboten."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t2_hoeren_teil_2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Führung / Präsentation (Multiple Choice A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Führung / Präsentation (Multiple Choice A/B/C)",
+        "audioUrl": "/audio/osd-b1/test-02-teil-2.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T2_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Führung / Vortrag – Frage 11): Was erfahren die Teilnehmer gleich zu Beginn der Führung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die historische Entstehungsgeschichte des Gebäudes."
+            },
+            {
+              "id": "B",
+              "text": "Die Preise für das Mittagessen in der Cafeteria."
+            },
+            {
+              "id": "C",
+              "text": "Die Öffnungszeiten der umliegenden Einkaufszentren."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q12",
+          "order": 12,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Führung / Vortrag – Frage 12): Welche Besonderheit hebt die Reiseleiterin im Hauptsaal hervor?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dass der Raum erst im letzten Jahr neu gebaut wurde."
+            },
+            {
+              "id": "B",
+              "text": "Dass dort keinerlei Kunstwerke ausgestellt sind."
+            },
+            {
+              "id": "C",
+              "text": "Dass die ursprünglichen Deckenmalereien erhalten geblieben sind."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q13",
+          "order": 13,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Führung / Vortrag – Frage 13): Worauf müssen die Besucher während des Rundgangs achten?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Dass sie ihre Mobiltelefone laut stellen."
+            },
+            {
+              "id": "B",
+              "text": "Dass sie aus Sicherheitsgründen bei der Gruppe bleiben."
+            },
+            {
+              "id": "C",
+              "text": "Dass sie alle Ausstellungsstücke anfassen dürfen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q14",
+          "order": 14,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Führung / Vortrag – Frage 14): Was steht im zweiten Teil des Programms auf dem Plan?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Eine sofortige Rückfahrt zum Bahnhof."
+            },
+            {
+              "id": "B",
+              "text": "Eine schriftliche Prüfung über das Gehörte."
+            },
+            {
+              "id": "C",
+              "text": "Ein Spaziergang durch den angrenzenden Park."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q15",
+          "order": 15,
+          "part": 2,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 2 (Führung / Vortrag – Frage 15): Wo endet die gemeinsame Besichtigung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Im Besucherzentrum, wo noch Fragen gestellt werden können."
+            },
+            {
+              "id": "B",
+              "text": "Auf dem Dachboden des Nachbargebäudes."
+            },
+            {
+              "id": "C",
+              "text": "Vor dem geschlossenen Nordtor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t2_hoeren_teil_3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Alltagsgespräch zweier Personen (Richtig/Falsch)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Alltagsgespräch zweier Personen (Richtig/Falsch)",
+        "audioUrl": "/audio/osd-b1/test-02-teil-3.mp3",
+        "annotations": {
+          "playCount": 1
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T2_H_Q16",
+          "order": 16,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 16): Die beiden Gesprächspartner kennen sich bereits aus einem früheren Kurs.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q17",
+          "order": 17,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 17): Er hat seine neue Arbeitsstelle direkt neben seiner Wohnung gefunden.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q18",
+          "order": 18,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 18): Sie plant, im Herbst an einer beruflichen Weiterbildung teilzunehmen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q19",
+          "order": 19,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 19): Beide sind der Meinung, dass Sport im Verein zu teuer geworden ist.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q20",
+          "order": 20,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 20): Das geplante Treffen am Freitagabend muss wegen einer Dienstreise ausfallen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q21",
+          "order": 21,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 21): Sie schlägt vor, gemeinsam ein neues Lokal in der Innenstadt auszuprobieren.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q22",
+          "order": 22,
+          "part": 3,
+          "taskType": "binary",
+          "prompt": "Teil 3 (Alltagsgespräch – Aussage 22): Am Ende vereinbaren sie, sich am Samstagvormittag am Bahnhof zu treffen.",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b1_t2_hoeren_teil_4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+      "durationMinutes": 10,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+        "audioUrl": "/audio/osd-b1/test-02-teil-4.mp3",
+        "annotations": {
+          "playCount": 2
+        }
+      },
+      "questions": [
+        {
+          "id": "OSD_B1_T2_H_Q23",
+          "order": 23,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 23): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q24",
+          "order": 24,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 24): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q25",
+          "order": 25,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 25): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q26",
+          "order": 26,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 26): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q27",
+          "order": 27,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 27): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q28",
+          "order": 28,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 28): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q29",
+          "order": 29,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 29): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B1_T2_H_Q30",
+          "order": 30,
+          "part": 4,
+          "taskType": "multiple_choice",
+          "prompt": "Teil 4 (Radiodiskussion – Aussage 30): Wer vertritt diese Position in der Diskussionsrunde? (A: Moderator/in | B: Gast 1 | C: Gast 2)",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (Moderator/in)"
+            },
+            {
+              "id": "B",
+              "text": "B (Gast 1)"
+            },
+            {
+              "id": "C",
+              "text": "C (Gast 2)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B1_T2_L_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 1 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q02",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 2 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q03",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 3 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q04",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 4 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 5 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q06",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 6 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q07",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 7 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q08",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 8 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q09",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 9 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q10",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 10 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q11",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 11 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q12",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 12 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q13",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 13 h",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2 (Teil 3 matching)."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q14",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 14 0",
+      "trapExplanationVi": "Không có quảng cáo phù hợp (0) theo khóa đáp án gốc."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q15",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 15 j",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q16",
+      "correctOption": "g",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 16 g",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q17",
+      "correctOption": "b",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 17 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q18",
+      "correctOption": "i",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 18 i",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q19",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 19 f",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q20",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 20 Nein",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q21",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 21 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q22",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 22 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q23",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 23 Nein",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2 (đã hiệu đính số thứ tự từ bản in)."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q24",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 24 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q25",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 25 Nein",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q26",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 26 Ja",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q27",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 27 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2 (đã hiệu đính số thứ tự từ bản in)."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q28",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 28 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q29",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 29 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_L_Q30",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Lesen 30 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q01",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 1 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q02",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 2 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q03",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 3 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q04",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 4 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q05",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 5 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q06",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 6 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q07",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 7 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q08",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 8 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q09",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 9 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q10",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 10 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q11",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 11 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q12",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 12 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q13",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 13 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q14",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 14 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q15",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 15 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q16",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 16 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q17",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 17 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q18",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 18 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q19",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 19 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q20",
+      "correctOption": "Falsch",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 20 Falsch",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q21",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 21 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q22",
+      "correctOption": "Richtig",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 22 Richtig",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q23",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 23 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q24",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 24 a",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q25",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 25 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q26",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 26 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q27",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 27 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q28",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 28 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q29",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 29 c",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    },
+    {
+      "questionId": "OSD_B1_T2_H_Q30",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Lösungsschlüssel Modelltest 2: Hören 30 b",
+      "trapExplanationVi": "Khóa đáp án gốc ÖSD B1 Modelltest 2."
+    }
+  ]
+}

@@ -7,8 +7,9 @@
   },
   "references": [
     { "path": "../config" },
-    { "path": "../core" }
+    { "path": "../core" },
+    { "path": "../db" },
+    { "path": "../contracts" }
   ],
   "include": ["src/**/*"]
 }
-

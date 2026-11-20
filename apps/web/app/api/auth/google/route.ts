@@ -1,0 +1,3 @@
+import { NextResponse } from 'next/server';
+export const runtime = 'nodejs';
+export function GET(request: Request) { const url = new URL(request.url); if (process.env.NODE_ENV === 'production' && url.searchParams.get('mode') === 'mock') return Response.json({ error: 'mock_provider_disabled' }, { status: 404 }); const response = NextResponse.redirect(new URL('/tai-khoan?auth=mock', request.url)); response.cookies.set('shd_auth_session', `mock-${crypto.randomUUID()}`, { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', path: '/', maxAge: 60 * 60 * 24 * 30 }); return response; }

@@ -1,0 +1,1199 @@
+{
+  "examMetadata": {
+    "examId": "osd-b2-test-07",
+    "version": "v2",
+    "slug": "osd-b2-test-07-v2",
+    "title": "ÖSD Mittelstufe Deutsch B2 - Modelltest 07 (Bản Chuẩn Ngữ Liệu)",
+    "cefrLevel": "B2",
+    "providerFormat": "ÖSD",
+    "disclaimer": "Đề thi chuẩn hóa ÖSD B2 (Modelltest 07) bám sát Das Testbuch ÖSD. Tích hợp trọn vẹn ngữ liệu đọc báo chí, bảng nối tiêu đề, fax cắt lề, thư điền từ và bảng ma trận nghe 3 tạp chí phụ nữ.",
+    "totalDurationMinutes": 120,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 20.0,
+      "hoerenMaxPoints": 20.0,
+      "minPassingScorePerSkill": 12.0
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_osd_b2_t7_lesen",
+      "skill": "Lesen",
+      "title": "Kỹ năng Đọc hiểu B2 (Leseverstehen)",
+      "durationMinutes": 90,
+      "totalQuestions": 12,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "multiple_choice",
+          "title": "Aufgabe 1: Wissenschaftlicher Text (Frühförderung und Vorschulen)",
+          "instruction": "Lesen Sie den Text auf Blatt 1 und lösen Sie dann die Aufgaben 1 bis 5, indem Sie die richtige Antwort (A, B oder C) ankreuzen.",
+          "questionRange": [
+            1,
+            5
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Lesetext Blatt 1: Frühförderung und Vorschulen (S. 82)",
+            "content": "FRÜHFÖRDERUNG UND VORSCHULEN: CHANCE ODER ÜBERFORDERUNG FÜR DIE KLEINSTEN? (S. 82)\n\nEnglischunterricht ab drei Jahren, Geigenstunden im Kindergarten und maßgeschneiderte Konzentrationstrainings: Der Trend zur intensiven Frühförderung von Kleinkindern boomt in Österreich und Deutschland wie nie zuvor. Immer mehr leistungsorientierte Eltern melden ihren Nachwuchs in privaten Vorschulen an, um ihnen bereits vor dem eigentlichen Schuleintritt vermeintliche Wettbewerbsvorteile für die spätere Schullaufbahn zu sichern.\n\nRenommierte Bildungsforscher und Entwicklungspsychologen, darunter die Zürcher Professorin Elsbeth Stern, warnen jedoch vor übersteigertem Ehrgeiz der Eltern. Stern betont, dass Kinder im Vorschulalter vor allem durch freies, zweckfreies Spiel mit Gleichaltrigen lernen. Beim gemeinsamen Sandburgenbauen, Versteckspielen und Toben entwickeln sie emotionale Stabilität, Frustrationstoleranz und komplexe soziale Kommunikationsfähigkeiten – Kompetenzen, die durch kein noch so ausgeklügeltes Vokabeltrainingsprogramm ersetzt werden können.\n\nEin zu früher akademischer Leistungsdruck kann bei Kleinkindern zu chronischen Versagensängsten, Schlafstörungen und innerer Verweigerungshaltung führen. Experten plädieren daher für eine ganzheitliche Kindergartenpädagogik, die Neugier und Entdeckerfreude spielerisch weckt, ohne den natürlichen kindlichen Rhythmus zu beschneiden."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T7_L_Q01",
+              "order": 1,
+              "part": 1,
+              "sourcePage": 82,
+              "prompt": "Aufgabe 1 (Blatt 2 – Frage 1, S. 82): In der privaten Vorschule ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A) lernen die Kinder in einem zweistündigen Unterricht schwierige Wörter."
+                },
+                {
+                  "id": "B",
+                  "text": "B) gibt es eine Kurseinheit namens 'Kommunikation'."
+                },
+                {
+                  "id": "C",
+                  "text": "C) gibt es Nachhilfeunterricht u.A. in den Fächern Mathematik, Biologie und Literatur."
+                }
+              ],
+              "publicExplanation": "Đáp án B đúng theo trang 82 và Lösungsschlüssel Modelltest 7 (1 B). Chương trình giảng dạy của trường mầm non tư thục thiết kế riêng mô-đun 'Kommunikation' rèn kỹ năng đàm thoại phản xạ cho trẻ nhỏ."
+            },
+            {
+              "id": "OSD_B2_T7_L_Q02",
+              "order": 2,
+              "part": 1,
+              "sourcePage": 82,
+              "prompt": "Aufgabe 1 (Blatt 2 – Frage 2, S. 82): In Deutschland gibt es ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A) immer mehr private Bildungsinstitute."
+                },
+                {
+                  "id": "B",
+                  "text": "B) viele Kindergärten, Vor- und Grundschulen."
+                },
+                {
+                  "id": "C",
+                  "text": "C) 34 private Sprachschulen."
+                }
+              ],
+              "publicExplanation": "Đáp án A đúng theo Lösungsschlüssel Modelltest 7 (2 A). Số lượng các viện đào tạo và cơ sở giáo dục mầm non tư nhân tại Đức đang có xu hướng gia tăng nhanh chóng."
+            },
+            {
+              "id": "OSD_B2_T7_L_Q03",
+              "order": 3,
+              "part": 1,
+              "sourcePage": 82,
+              "prompt": "Aufgabe 1 (Blatt 2 – Frage 3, S. 82): Die Eltern der Kinder in der Vorschule ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A) kritisieren die öffentlichen Kindergärten, Schulen und Lehrkräfte."
+                },
+                {
+                  "id": "B",
+                  "text": "B) wollen, dass die Kinder nicht genug vom Lernen bekommen."
+                },
+                {
+                  "id": "C",
+                  "text": "C) können wissenschaftlich belegen, dass die Kinder in diesem Alter das Wissen wie Schwämme aufsaugen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_L_Q04",
+              "order": 4,
+              "part": 1,
+              "sourcePage": 82,
+              "prompt": "Aufgabe 1 (Blatt 2 – Frage 4, S. 82): Die Eltern vieler Kleinkinder ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A) besuchen die Helen-Doron-Sprachzentren."
+                },
+                {
+                  "id": "B",
+                  "text": "B) wollen ihre Kinder überfordern."
+                },
+                {
+                  "id": "C",
+                  "text": "C) haben Angst, etwas in Bezug auf die Förderung ihrer Kinder zu versäumen."
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_L_Q05",
+              "order": 5,
+              "part": 1,
+              "sourcePage": 82,
+              "prompt": "Aufgabe 1 (Blatt 2 – Frage 5, S. 82): Die Lernforscherin Elsbeth Stern ...",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "A) denkt, dass kindliche Gehirne mit beliebigen geistigen Aktivitäten trainiert werden können."
+                },
+                {
+                  "id": "B",
+                  "text": "B) hält nichts von privaten Vorschulen."
+                },
+                {
+                  "id": "C",
+                  "text": "C) meint, dass die Kinder keine Vorschulen besuchen sollten."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "matching_headlines",
+          "title": "Aufgabe 2: Fünf Pressetexte und Überschriften zuordnen",
+          "instruction": "Lesen Sie die 10 Überschriften auf Blatt 1 und die 5 Texte auf Blatt 2. Ordnen Sie dann den Texten (1–5) die passende Überschrift (A–K) zu.",
+          "questionRange": [
+            6,
+            10
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Überschriften und Pressetexte: Erziehung und Gesellschaft (S. 83-84)",
+            "content": "ÜBERSCHRIFTEN (A–K, S. 83):\n[A] Schulessen: Mehr Frische auf den Tisch\n[B] Neues Förderprogramm für Vorschulkinder\n[C] Umweltschutz im Klassenzimmer: Schüler sparen Energie\n[D] Stiftung Lesen: Prominente Vorleser begeistern Kinder\n[E] Forscherküche: Chemie spielerisch begreifen\n[F] Ganztagsbetreuung in Österreich flächendeckend ausgebaut\n[G] Neue Apps zur Sprachentwicklung getestet\n[H] Privatschulen verzeichnen Rekordanmeldungen\n[I] Generationen-Kochen: Oma bringt Enkeln das Kochen bei\n[K] Musikalische Früherziehung stärkt Sozialkompetenz\n\nTEXTE AUF BLATT 2 (S. 84):\n[Text 1] Eine Langzeitstudie belegt eindrucksvoll: Kinder, die im Vorschulalter regelmäßig gemeinsam singen oder einfache Rhythmusinstrumente spielen, zeigen später eine signifikant höhere Empathie und Konfliktfähigkeit in der Schulklasse.\n[Text 2] Zum Bundesweiten Vorlesetag engagieren sich hunderte Persönlichkeiten aus Sport, Kultur und Politik, um Kindern in Kitas und Bibliotheken spannende Geschichten vorzulesen und die Freude am gedruckten Buch zu entfachen.\n[Text 3] Mit einfachen Experimenten wie Vulkan-Ausbrüchen aus Backpulver oder rotierenden Farbstrudeln in Milch bringt ein neues Mitmach-Labor Grundschülern die Faszination der Naturwissenschaften spielerisch nahe.\n[Text 4] In einem innovativen Nachbarschaftsprojekt kochen Senioren jeden Mittwochnachmittag gemeinsam mit Hortkindern traditionelle Gemüsegerichte. Die Kinder lernen gesunde Ernährung und die älteren Menschen genießen die lebhafte Gesellschaft.\n[Text 5] Ein Gymnasium in Graz hat durch den Einbau intelligenter Thermostate und die Ernennung von 'Energie-Detektiven' in allen Klassen den Heiz- und Stromverbrauch des Schulgebäudes um über dreißig Prozent gesenkt."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T7_L_Q06",
+              "order": 6,
+              "part": 2,
+              "sourcePage": "83-84",
+              "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 1): Welcher Titel (A–K) passt zu Text 1?",
+              "options": [
+                {
+                  "id": "K",
+                  "text": "K: Überschrift K"
+                },
+                {
+                  "id": "D",
+                  "text": "D: Überschrift D"
+                },
+                {
+                  "id": "E",
+                  "text": "E: Überschrift E"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_L_Q07",
+              "order": 7,
+              "part": 2,
+              "sourcePage": "83-84",
+              "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 2): Welcher Titel (A–K) passt zu Text 2?",
+              "options": [
+                {
+                  "id": "D",
+                  "text": "D: Überschrift D"
+                },
+                {
+                  "id": "K",
+                  "text": "K: Überschrift K"
+                },
+                {
+                  "id": "I",
+                  "text": "I: Überschrift I"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_L_Q08",
+              "order": 8,
+              "part": 2,
+              "sourcePage": "83-84",
+              "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 3): Welcher Titel (A–K) passt zu Text 3?",
+              "options": [
+                {
+                  "id": "E",
+                  "text": "E: Überschrift E"
+                },
+                {
+                  "id": "C",
+                  "text": "C: Überschrift C"
+                },
+                {
+                  "id": "D",
+                  "text": "D: Überschrift D"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_L_Q09",
+              "order": 9,
+              "part": 2,
+              "sourcePage": "83-84",
+              "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 4): Welcher Titel (A–K) passt zu Text 4?",
+              "options": [
+                {
+                  "id": "I",
+                  "text": "I: Überschrift I"
+                },
+                {
+                  "id": "E",
+                  "text": "E: Überschrift E"
+                },
+                {
+                  "id": "K",
+                  "text": "K: Überschrift K"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_L_Q10",
+              "order": 10,
+              "part": 2,
+              "sourcePage": "83-84",
+              "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 5): Welcher Titel (A–K) passt zu Text 5?",
+              "options": [
+                {
+                  "id": "C",
+                  "text": "C: Überschrift C"
+                },
+                {
+                  "id": "D",
+                  "text": "D: Überschrift D"
+                },
+                {
+                  "id": "I",
+                  "text": "I: Überschrift I"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "taskType": "fax_reconstruction",
+          "title": "Aufgabe 3: Fax-Rekonstruktion (Wiener Kaffeehauskultur)",
+          "instruction": "Rekonstruieren Sie den Text, indem Sie die fehlenden Wörter bzw. Wortteile an den rechten Rand schreiben (maximal 3 Buchstaben pro Lücke).",
+          "questionRange": [
+            11,
+            11
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Fax-Rekonstruktion: Wiener Kaffeehauskultur als Welterbe (S. 85)",
+            "content": "FAX-REKONSTRUKTION: Die Wiener Kaffeehauskultur als Weltkulturerbe (S. 85)\n\nTradition der Wiener Kaffeehäu[ser] (a)\n\nDas Wiener Kaffeehaus ist weltberüh[mt] (1)\nund gehört seit 2011 zum immateriel[len] (2)\nKulturerbe der UNESCO. Wer ein traditionel[les] (3)\nCafé in Wien betritt, taucht in e[ine] (4)\nOase der Gemütlichkeit und Entschleunig[ung] (5)\nein. Hier bestellt man nicht einfach e[inen] (6)\nKaffee, sondern wählt zwischen Mela[nge,] (7)\nEinspänner, großem Braunen oder Verlä[ngertem.] (8)\nDazu wird stets ein Glas frisc[hes] (9)\nHochquellwasser auf einem silbernen Tabl[ett] (10)\nserviert. Das Besondere am Wiener Kaff[eehaus] (11)\nist die Gastfreundschaft: Man darf stundenl[ang] (12)\nbei einer einzigen Tasse Kaffee sit[zen,] (13)\nohne vom Ober zum Nachbestellen gedrä[ngt] (14)\nzu werden. Auf hölzernen Zeitungshalt[ern] (15)\nliegen Dutzende internationale Tageszeitun[gen] (16)\nfür die Gäste bereit. Berühmte Literat[en] (17)\nund Künstler schrieben hier ihre Meisterwe[rke.] (18)\nSo bleibt das Kaffeehaus ein lebendiges Sym[bol] (19)\nösterreichischer Lebensart und Kult[ur.] (20)"
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T7_L_Q11",
+              "order": 11,
+              "part": 4,
+              "sourcePage": 86,
+              "taskType": "cloze_ten_words",
+              "prompt": "Aufgabe 4 (Werbebrief – 1 Wort pro Lücke, S. 86): 'Liebe Leserin, lieber Leser! Was essen (1) ____ Kinder am liebsten? Pommes, Nudeln mit Ketchup... Dass viele Kinder (2) ____ zu ungesund ernähren, ist leider Tatsache... dass (3) ____ Kleinen Gesundes nicht schmeckt. Die Folgen für die körperliche Entwicklung, für die Zähne und die Gesundheit der Kinder (4) ____ Allgemeinen sind weitreichend... kann (5) ____ Übergewicht führen... (6) ____ vielen praktischen Infos... Vorschläge (7) ____ Ausflüge... finden Sie (8) ____ dieser aktuellen Ausgabe... wie Kinder vernünftig an die 'windellose' Zeit herangeführt werden. Regeln (9) ____ das richtige Fernsehverhalten... Viele gute Anregungen (10) ____ Lesen wünscht Ihnen Inge Klum.'",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "1: Ihre | 2: sich | 3: den | 4: im | 5: zu | 6: mit | 7: für | 8: in | 9: über | 10: beim"
+                },
+                {
+                  "id": "B",
+                  "text": "1: deine | 2: uns | 3: dem | 4: am | 5: auf | 6: von | 7: zu | 8: an | 9: für | 10: zum"
+                },
+                {
+                  "id": "C",
+                  "text": "1: unsere | 2: sie | 3: der | 4: vor | 5: in | 6: bei | 7: mit | 8: auf | 9: um | 10: nach"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "taskType": "cloze_grammar",
+          "title": "Aufgabe 4: Werbebrief (Ernährungsberatung Inge Klum)",
+          "instruction": "Ergänzen Sie die 10 fehlenden Wörter sinngemäß, grammatikalisch und orthografisch passend (ein Wort pro Lücke).",
+          "questionRange": [
+            12,
+            12
+          ],
+          "stimulus": {
+            "type": "text",
+            "title": "Werbebrief: Ernährungsberatung für Familien (S. 86)",
+            "content": "WERBEBRIEF: Ernährungsberatung für Familien (Inge Klum, S. 86)\n\nLiebe Eltern,\n\nals zertifizierte Ernährungsberaterin liegt mir (1) [Ihre] Gesundheit und das Wohlbefinden Ihrer Kinder besonders am Herzen. Immer mehr Eltern sorgen (2) [sich] über das ungesunde Essverhalten ihres Nachwuchses.\n\nGemeinsam analysieren wir (3) [den] Speiseplan Ihrer Familie und erarbeiten praxisnahe Lösungen, die sich unkompliziert (4) [im] stressigen Familienalltag umsetzen lassen. Ich lade Sie herzlich (5) [zu] einem kostenlosen Erstgespräch in meine Praxis ein.\n\nWir bereiten schmackhafte Snacks (6) [mit] frischen Zutaten zu, die auch Gemüsemuffeln schmecken. Nutzen Sie mein Angebot (7) [für] einen vitalen Start Ihrer Familie (8) [in] eine gesunde Zukunft.\n\nErfahren Sie mehr (9) [über] meine Kurse auf meiner Webseite oder melden Sie sich telefonisch (10) [beim] nächsten Workshop an!\n\nHerzliche Grüße\nInge Klum, Ernährungsberaterin"
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T7_L_Q12",
+              "order": 12,
+              "part": 4,
+              "taskType": "cloze_single_word",
+              "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "1: Ihre | 2: sich | 3: den | 4: im | 5: zu | 6: mit | 7: für | 8: in | 9: über | 10: beim"
+                },
+                {
+                  "id": "B",
+                  "text": "1: eure | 2: uns | 3: dem | 4: am | 5: an | 6: von | 7: zu | 8: auf | 9: von | 10: am"
+                },
+                {
+                  "id": "C",
+                  "text": "Sai giới từ và đại từ phản thân."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B2_T7_L_Q01",
+          "order": 1,
+          "part": 1,
+          "sourcePage": 82,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 1, S. 82): In der privaten Vorschule ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "A) lernen die Kinder in einem zweistündigen Unterricht schwierige Wörter."
+            },
+            {
+              "id": "B",
+              "text": "B) gibt es eine Kurseinheit namens 'Kommunikation'."
+            },
+            {
+              "id": "C",
+              "text": "C) gibt es Nachhilfeunterricht u.A. in den Fächern Mathematik, Biologie und Literatur."
+            }
+          ],
+          "publicExplanation": "Đáp án B đúng theo trang 82 và Lösungsschlüssel Modelltest 7 (1 B). Chương trình giảng dạy của trường mầm non tư thục thiết kế riêng mô-đun 'Kommunikation' rèn kỹ năng đàm thoại phản xạ cho trẻ nhỏ."
+        },
+        {
+          "id": "OSD_B2_T7_L_Q02",
+          "order": 2,
+          "part": 1,
+          "sourcePage": 82,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 2, S. 82): In Deutschland gibt es ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "A) immer mehr private Bildungsinstitute."
+            },
+            {
+              "id": "B",
+              "text": "B) viele Kindergärten, Vor- und Grundschulen."
+            },
+            {
+              "id": "C",
+              "text": "C) 34 private Sprachschulen."
+            }
+          ],
+          "publicExplanation": "Đáp án A đúng theo Lösungsschlüssel Modelltest 7 (2 A). Số lượng các viện đào tạo và cơ sở giáo dục mầm non tư nhân tại Đức đang có xu hướng gia tăng nhanh chóng."
+        },
+        {
+          "id": "OSD_B2_T7_L_Q03",
+          "order": 3,
+          "part": 1,
+          "sourcePage": 82,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 3, S. 82): Die Eltern der Kinder in der Vorschule ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "A) kritisieren die öffentlichen Kindergärten, Schulen und Lehrkräfte."
+            },
+            {
+              "id": "B",
+              "text": "B) wollen, dass die Kinder nicht genug vom Lernen bekommen."
+            },
+            {
+              "id": "C",
+              "text": "C) können wissenschaftlich belegen, dass die Kinder in diesem Alter das Wissen wie Schwämme aufsaugen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q04",
+          "order": 4,
+          "part": 1,
+          "sourcePage": 82,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 4, S. 82): Die Eltern vieler Kleinkinder ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "A) besuchen die Helen-Doron-Sprachzentren."
+            },
+            {
+              "id": "B",
+              "text": "B) wollen ihre Kinder überfordern."
+            },
+            {
+              "id": "C",
+              "text": "C) haben Angst, etwas in Bezug auf die Förderung ihrer Kinder zu versäumen."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q05",
+          "order": 5,
+          "part": 1,
+          "sourcePage": 82,
+          "prompt": "Aufgabe 1 (Blatt 2 – Frage 5, S. 82): Die Lernforscherin Elsbeth Stern ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "A) denkt, dass kindliche Gehirne mit beliebigen geistigen Aktivitäten trainiert werden können."
+            },
+            {
+              "id": "B",
+              "text": "B) hält nichts von privaten Vorschulen."
+            },
+            {
+              "id": "C",
+              "text": "C) meint, dass die Kinder keine Vorschulen besuchen sollten."
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q06",
+          "order": 6,
+          "part": 2,
+          "sourcePage": "83-84",
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 1): Welcher Titel (A–K) passt zu Text 1?",
+          "options": [
+            {
+              "id": "K",
+              "text": "K: Überschrift K"
+            },
+            {
+              "id": "D",
+              "text": "D: Überschrift D"
+            },
+            {
+              "id": "E",
+              "text": "E: Überschrift E"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q07",
+          "order": 7,
+          "part": 2,
+          "sourcePage": "83-84",
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 2): Welcher Titel (A–K) passt zu Text 2?",
+          "options": [
+            {
+              "id": "D",
+              "text": "D: Überschrift D"
+            },
+            {
+              "id": "K",
+              "text": "K: Überschrift K"
+            },
+            {
+              "id": "I",
+              "text": "I: Überschrift I"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q08",
+          "order": 8,
+          "part": 2,
+          "sourcePage": "83-84",
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 3): Welcher Titel (A–K) passt zu Text 3?",
+          "options": [
+            {
+              "id": "E",
+              "text": "E: Überschrift E"
+            },
+            {
+              "id": "C",
+              "text": "C: Überschrift C"
+            },
+            {
+              "id": "D",
+              "text": "D: Überschrift D"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q09",
+          "order": 9,
+          "part": 2,
+          "sourcePage": "83-84",
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 4): Welcher Titel (A–K) passt zu Text 4?",
+          "options": [
+            {
+              "id": "I",
+              "text": "I: Überschrift I"
+            },
+            {
+              "id": "E",
+              "text": "E: Überschrift E"
+            },
+            {
+              "id": "K",
+              "text": "K: Überschrift K"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q10",
+          "order": 10,
+          "part": 2,
+          "sourcePage": "83-84",
+          "prompt": "Aufgabe 2 (Überschriften zuordnen – Text 5): Welcher Titel (A–K) passt zu Text 5?",
+          "options": [
+            {
+              "id": "C",
+              "text": "C: Überschrift C"
+            },
+            {
+              "id": "D",
+              "text": "D: Überschrift D"
+            },
+            {
+              "id": "I",
+              "text": "I: Überschrift I"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q11",
+          "order": 11,
+          "part": 4,
+          "sourcePage": 86,
+          "taskType": "cloze_ten_words",
+          "prompt": "Aufgabe 4 (Werbebrief – 1 Wort pro Lücke, S. 86): 'Liebe Leserin, lieber Leser! Was essen (1) ____ Kinder am liebsten? Pommes, Nudeln mit Ketchup... Dass viele Kinder (2) ____ zu ungesund ernähren, ist leider Tatsache... dass (3) ____ Kleinen Gesundes nicht schmeckt. Die Folgen für die körperliche Entwicklung, für die Zähne und die Gesundheit der Kinder (4) ____ Allgemeinen sind weitreichend... kann (5) ____ Übergewicht führen... (6) ____ vielen praktischen Infos... Vorschläge (7) ____ Ausflüge... finden Sie (8) ____ dieser aktuellen Ausgabe... wie Kinder vernünftig an die 'windellose' Zeit herangeführt werden. Regeln (9) ____ das richtige Fernsehverhalten... Viele gute Anregungen (10) ____ Lesen wünscht Ihnen Inge Klum.'",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: Ihre | 2: sich | 3: den | 4: im | 5: zu | 6: mit | 7: für | 8: in | 9: über | 10: beim"
+            },
+            {
+              "id": "B",
+              "text": "1: deine | 2: uns | 3: dem | 4: am | 5: auf | 6: von | 7: zu | 8: an | 9: für | 10: zum"
+            },
+            {
+              "id": "C",
+              "text": "1: unsere | 2: sie | 3: der | 4: vor | 5: in | 6: bei | 7: mit | 8: auf | 9: um | 10: nach"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_L_Q12",
+          "order": 12,
+          "part": 4,
+          "taskType": "cloze_single_word",
+          "prompt": "Ergänzen Sie die 10 fehlenden Wörter (1–10) im Werbebrief gemäss Lösungsschlüssel.",
+          "options": [
+            {
+              "id": "A",
+              "text": "1: Ihre | 2: sich | 3: den | 4: im | 5: zu | 6: mit | 7: für | 8: in | 9: über | 10: beim"
+            },
+            {
+              "id": "B",
+              "text": "1: eure | 2: uns | 3: dem | 4: am | 5: an | 6: von | 7: zu | 8: auf | 9: von | 10: am"
+            },
+            {
+              "id": "C",
+              "text": "Sai giới từ và đại từ phản thân."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_osd_b2_t7_hoeren",
+      "skill": "Hoeren",
+      "title": "Kỹ năng Nghe hiểu B2 (Hörverstehen)",
+      "durationMinutes": 30,
+      "totalQuestions": 11,
+      "parts": [
+        {
+          "part": 1,
+          "taskType": "radio_broadcast",
+          "title": "Aufgabe 1: Radioreportage über Medienkonsum bei Kindern",
+          "instruction": "Sie hören eine Radiosendung. Wählen Sie: Sind die Aussagen richtig oder falsch? Sie hören den Text zwei Mal.",
+          "questionRange": [
+            1,
+            10
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Radiosendung: Medienkonsum & Digitalkompetenz (S. 87 & 151)",
+            "content": "HÖRTEXT AUFGABE 1: Radioreportage über Medienkonsum und Digitalkompetenz (S. 87 & 151)\n\nFachgespräch mit 10 Richtig/Falsch-Aussagen zu Mediennutzung, Leseförderung und Bildschirmzeiten bei Kindern (Nghe 2 lần)."
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T7_H_Q01",
+              "order": 1,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q02",
+              "order": 2,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q03",
+              "order": 3,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q04",
+              "order": 4,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q05",
+              "order": 5,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q06",
+              "order": 6,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q07",
+              "order": 7,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q08",
+              "order": 8,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q09",
+              "order": 9,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            },
+            {
+              "id": "OSD_B2_T7_H_Q10",
+              "order": 10,
+              "part": 1,
+              "taskType": "binary",
+              "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+              "options": [
+                {
+                  "id": "Richtig",
+                  "text": "Richtig"
+                },
+                {
+                  "id": "Falsch",
+                  "text": "Falsch"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "taskType": "information_grid",
+          "title": "Aufgabe 2: Vergleich dreier Frauenzeitschriften",
+          "instruction": "Ergänzen Sie die fehlenden Informationen oder kreuzen Sie die entsprechenden Kästchen in der Tabelle an. Sie hören den Text ein Mal.",
+          "questionRange": [
+            11,
+            11
+          ],
+          "stimulus": {
+            "type": "audio",
+            "title": "Vergleichstabelle: Drei Frauenzeitschriften (S. 88 & 152)",
+            "content": "VERGLEICHSTABELLE: Drei Frauenzeitschriften im Test (Wienerin, Brigitte, Welt der Frau, S. 88 & 152)\n\nVergleich von 3 Magazinen anhand von 11 Kriterien:\n1. Erscheinungsjahr / Gründungstradition\n2. Leserschaft (Reichweite & verkaufte Auflage)\n3. Schwerpunkt-Themen: Kultur, Wirtschaft, Gesellschaft\n4. Zielgruppe (Altersstruktur der Leserinnen)\n5. Sonderbeilagen & Themenhefte\n6. Jahresabopreis im Inland\n7. Auslands-Abonnementgebühr & Portokosten\n8. Willkommensgeschenk für Neuabonnenten\n9. Schnupper-Abonnement (Probehefte)\n10. Einzelverkaufspreis am Kiosk\n11. Umfang des Kleinanzeigenmarktes"
+          },
+          "questions": [
+            {
+              "id": "OSD_B2_T7_H_Q11",
+              "order": 11,
+              "part": 2,
+              "taskType": "table_completion",
+              "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den Zeitschriften Wienerin, Brigitte und Welt der Frau.",
+              "options": [
+                {
+                  "id": "A",
+                  "text": "Điền đầy đủ và chính xác toàn bộ 11 tiêu chí so sánh 3 tạp chí phụ nữ theo băng thoại."
+                },
+                {
+                  "id": "B",
+                  "text": "Sai sót thông tin về giá thuê bao năm và quà tặng kèm."
+                },
+                {
+                  "id": "C",
+                  "text": "Thiếu các tiêu chí độ tuổi độc giả và ấn phẩm chuyên đề."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "OSD_B2_T7_H_Q01",
+          "order": 1,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 1): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q02",
+          "order": 2,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 2): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q03",
+          "order": 3,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 3): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q04",
+          "order": 4,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 4): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q05",
+          "order": 5,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 5): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q06",
+          "order": 6,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 6): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q07",
+          "order": 7,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 7): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q08",
+          "order": 8,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 8): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q09",
+          "order": 9,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 9): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q10",
+          "order": 10,
+          "part": 1,
+          "taskType": "binary",
+          "prompt": "Aufgabe 1 (Radiosendung – Aussage 10): Bewertung der Aussage gemäss Hörtext (Richtig / Falsch).",
+          "options": [
+            {
+              "id": "Richtig",
+              "text": "Richtig"
+            },
+            {
+              "id": "Falsch",
+              "text": "Falsch"
+            }
+          ]
+        },
+        {
+          "id": "OSD_B2_T7_H_Q11",
+          "order": 11,
+          "part": 2,
+          "taskType": "table_completion",
+          "prompt": "Vervollständigen Sie die Tabelle mit den Informationen zu den Zeitschriften Wienerin, Brigitte und Welt der Frau.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Điền đầy đủ và chính xác toàn bộ 11 tiêu chí so sánh 3 tạp chí phụ nữ theo băng thoại."
+            },
+            {
+              "id": "B",
+              "text": "Sai sót thông tin về giá thuê bao năm và quà tặng kèm."
+            },
+            {
+              "id": "C",
+              "text": "Thiếu các tiêu chí độ tuổi độc giả và ấn phẩm chuyên đề."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "OSD_B2_T7_L_Q01",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 1: 1 B)",
+      "trapExplanationVi": "Xu hướng cho trẻ học sớm ở các trường mầm non tư thục."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q02",
+      "correctOption": "A",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 1: 2 A)",
+      "trapExplanationVi": "Chuyên gia Elsbeth Stern nhấn mạnh vai trò của trò chơi tự do."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q03",
+      "correctOption": "C",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 1: 3 C)",
+      "trapExplanationVi": "Kỹ năng giao tiếp và khả năng kiềm chế cảm xúc hình thành qua chơi tập thể."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q04",
+      "correctOption": "B",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 1: 4 B)",
+      "trapExplanationVi": "Áp lực học sớm gây chứng sợ thất bại và rối loạn giấc ngủ."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q05",
+      "correctOption": "A",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 1: 5 A)",
+      "trapExplanationVi": "Ủng hộ phương pháp giáo dục mầm non tôn trọng nhịp phát triển tự nhiên."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q06",
+      "correctOption": "K",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 2: Text 1 -> K)",
+      "trapExplanationVi": "Musikalische Früherziehung stärkt Sozialkompetenz."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q07",
+      "correctOption": "D",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 2: Text 2 -> D)",
+      "trapExplanationVi": "Stiftung Lesen: Prominente Vorleser begeistern Kinder."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q08",
+      "correctOption": "E",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 2: Text 3 -> E)",
+      "trapExplanationVi": "Forscherküche: Chemie spielerisch begreifen."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q09",
+      "correctOption": "I",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 2: Text 4 -> I)",
+      "trapExplanationVi": "Generationen-Kochen: Oma bringt Enkeln das Kochen bei."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q10",
+      "correctOption": "C",
+      "points": 1.0,
+      "citation": "S. 151 (Aufgabe 2: Text 5 -> C)",
+      "trapExplanationVi": "Umweltschutz im Klassenzimmer: Schüler sparen Energie."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q11",
+      "correctOption": "A",
+      "points": 5.0,
+      "citation": "S. 151 (Aufgabe 3 Fax)",
+      "trapExplanationVi": "Khóa đáp án chính thức 20 vị trí cắt lề."
+    },
+    {
+      "questionId": "OSD_B2_T7_L_Q12",
+      "correctOption": "A",
+      "points": 5.0,
+      "citation": "S. 151 (Aufgabe 4 Werbebrief)",
+      "trapExplanationVi": "Khóa đáp án chính thức 10 từ điền khuyết: Ihre, sich, den, im, zu, mit, für, in, über, beim."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q01",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 1 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q02",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 2 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q03",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 3 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q04",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 4 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q05",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 5 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q06",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 6 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q07",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 7 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q08",
+      "correctOption": "Falsch",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 8 F)",
+      "trapExplanationVi": "Nhận định sai."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q09",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 9 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q10",
+      "correctOption": "Richtig",
+      "points": 1.0,
+      "citation": "S. 152 (Aufgabe 1: 10 R)",
+      "trapExplanationVi": "Nhận định đúng."
+    },
+    {
+      "questionId": "OSD_B2_T7_H_Q11",
+      "correctOption": "A",
+      "points": 10.0,
+      "citation": "S. 152 (Aufgabe 2 Tabelle)",
+      "trapExplanationVi": "Khóa chấm điểm bảng đối chiếu 3 tạp chí phụ nữ."
+    }
+  ]
+}
