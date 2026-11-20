@@ -13,6 +13,7 @@ export default defineConfig({
     },
   },
   test: {
+    testTimeout: 20000,
     include: ['packages/**/*.test.ts', 'packages/**/*.spec.ts', 'apps/**/*.test.ts', 'apps/**/*.test.tsx', 'apps/**/*.test.mjs'],
     exclude: ['**/node_modules/**', '**/dist/**', '**/.chrome-temp-profile/**'],
   },

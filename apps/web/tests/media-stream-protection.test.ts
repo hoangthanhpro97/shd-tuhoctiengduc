@@ -16,10 +16,15 @@ describe('Media Stream Protection API & Utils', () => {
     fs.writeFileSync(testFixtureFile, Buffer.alloc(2048, 0x41));
   });
 
-  afterAll(() => {
+  afterAll(async () => {
+    await new Promise((resolve) => setTimeout(resolve, 50));
     try {
       if (fs.existsSync(testFixtureFile)) fs.unlinkSync(testFixtureFile);
       if (fs.existsSync(testFixtureDir)) fs.rmdirSync(testFixtureDir);
+      const audioDir = path.resolve(__dirname, '../public/audio');
+      if (fs.existsSync(audioDir) && fs.readdirSync(audioDir).length === 0) {
+        fs.rmdirSync(audioDir);
+      }
     } catch {
       // ignore
     }

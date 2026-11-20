@@ -121,6 +121,13 @@ export async function GET(request: Request): Promise<Response> {
 
 export async function HEAD(request: Request): Promise<Response> {
   const getResponse = await GET(request);
+  if (getResponse.body) {
+    try {
+      await getResponse.body.cancel();
+    } catch {
+      // ignore
+    }
+  }
   return new Response(null, {
     status: getResponse.status,
     headers: getResponse.headers,

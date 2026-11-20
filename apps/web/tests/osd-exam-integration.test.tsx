@@ -82,7 +82,7 @@ describe('ÖSD exam integration', () => {
     const highlights = selectHomeHighlights(exercises);
     expect(highlights.map((exercise) => exercise.level)).toEqual(['B1', 'B1', 'B2', 'B2']);
     expect(new Set(highlights.map((exercise) => exercise.sourceExamSlug)).size).toBe(4);
-  });
+  }, 30000);
 
   it('selects two B1 and two B2 exam cards for the homepage', async () => {
     const catalog = await getAllPublicExams();

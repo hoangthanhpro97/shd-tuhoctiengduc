@@ -28,8 +28,12 @@ export function isPublicExam(exam: ExamPublicPayload) {
 
 let cache: ExamPublicPayload[] | null = null;
 
+export function clearExamContentCache(): void {
+  cache = null;
+}
+
 async function loadAll() {
-  if (cache && process.env.NODE_ENV === 'production') return cache;
+  if (cache && (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test')) return cache;
   const { readdir } = await import('node:fs/promises');
   let contentDirectory = contentDirectories[0];
   let fileNames: string[] = [];
