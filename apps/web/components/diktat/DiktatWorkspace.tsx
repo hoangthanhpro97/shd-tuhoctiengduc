@@ -73,6 +73,7 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
         id: `legacy-${idx}`,
         textDe: de,
         textVi: 'Câu luyện tập chép chính tả tiếng Đức thực tế.',
+        voice: 'male' as const,
         audioUrlMale: null,
         audioUrlFemale: null,
         audioUrl: '',
@@ -101,20 +102,14 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
   const [showQuestionPalette, setShowQuestionPalette] = useState(true);
   const [difficulty, setDifficulty] = useState<DifficultyLevel>('easy');
 
-  // Voice Selection for current sentence (male vs female)
+  // Active Sentence & Audio URL
   const currentSentence = items[currentIndex];
-  const [preferredVoice, setPreferredVoice] = useState<'male' | 'female'>('male');
 
-  // Determine active raw audio URL
+  // Determine active raw audio URL (each sentence item has a dedicated audio recording)
   const activeRawAudioUrl = useMemo(() => {
     if (!currentSentence) return '';
-    if (currentSentence.audioUrlMale && currentSentence.audioUrlFemale) {
-      return preferredVoice === 'female'
-        ? currentSentence.audioUrlFemale
-        : currentSentence.audioUrlMale;
-    }
     return currentSentence.audioUrl || currentSentence.audioUrlMale || currentSentence.audioUrlFemale || '';
-  }, [currentSentence, preferredVoice]);
+  }, [currentSentence]);
 
   // Anti-IDM Protected Audio Blob URL
   const { blobUrl, isLoadingAudio } = useProtectedAudioBlobUrl(activeRawAudioUrl || undefined);
@@ -212,7 +207,7 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
       setIsPlaying(false);
       setCurrentTime(0);
     }
-  }, [currentIndex, preferredVoice]);
+  }, [currentIndex]);
 
   // Global keyboard shortcuts
   useEffect(() => {
@@ -786,32 +781,20 @@ export function DiktatWorkspace({ exercise, sentences }: DiktatWorkspaceProps) {
                     <Repeat size={14} />
                   </button>
 
-                  {/* Dual Voice Switcher (if sentence has both male and female recordings) */}
-                  {currentSentence?.audioUrlMale && currentSentence?.audioUrlFemale && (
-                    <div className="flex items-center bg-white border border-gray-200 rounded-lg p-0.5 text-xs font-semibold">
-                      <button
-                        type="button"
-                        onClick={() => setPreferredVoice('male')}
-                        className={`px-2 py-0.5 rounded transition-colors ${
-                          preferredVoice === 'male'
-                            ? 'bg-[#da2527] text-white'
-                            : 'text-gray-600 hover:text-gray-900'
-                        }`}
-                      >
-                        ♂ Nam
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setPreferredVoice('female')}
-                        className={`px-2 py-0.5 rounded transition-colors ${
-                          preferredVoice === 'female'
-                            ? 'bg-[#da2527] text-white'
-                            : 'text-gray-600 hover:text-gray-900'
-                        }`}
-                      >
-                        ♀ Nữ
-                      </button>
-                    </div>
+                  {/* Static Voice Badge */}
+                  {currentSentence && (
+                    <span
+                      className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 px-2 py-1 text-xs font-semibold text-slate-700"
+                      title={
+                        currentSentence.voice === 'female' || currentSentence.audioUrl?.includes('nu-')
+                          ? 'Bản thu âm giọng Nữ'
+                          : 'Bản thu âm giọng Nam'
+                      }
+                    >
+                      {currentSentence.voice === 'female' || currentSentence.audioUrl?.includes('nu-')
+                        ? '♀ Giọng Nữ'
+                        : '♂ Giọng Nam'}
+                    </span>
                   )}
                 </div>
               </div>

@@ -10,16 +10,15 @@ const targetDataFile = path.join(root, 'apps', 'web', 'data', 'diktat-imported.t
 
 if (!fs.existsSync(targetDiktatDir)) {
   fs.mkdirSync(targetDiktatDir, { recursive: true });
+} else {
+  // Clear old files before exporting new files
+  const existingFiles = fs.readdirSync(targetDiktatDir);
+  for (const f of existingFiles) {
+    if (f.endsWith('.mp3')) {
+      fs.unlinkSync(path.join(targetDiktatDir, f));
+    }
+  }
 }
-
-// 1. Scan and copy all NAM files (75) and NU files (17)
-const rawNamFiles = fs.readdirSync(rawNamDir).filter((f) => f.endsWith('.mp3')).sort();
-const rawNuFiles = fs.readdirSync(rawNuDir).filter((f) => f.endsWith('.mp3')).sort();
-
-console.log(`Found ${rawNamFiles.length} raw NAM files and ${rawNuFiles.length} raw NU files.`);
-
-const namUrlMap = new Map(); // key -> url
-const nuUrlMap = new Map(); // key -> url
 
 function normalizeKey(str) {
   return str
@@ -30,29 +29,42 @@ function normalizeKey(str) {
     .toLowerCase();
 }
 
-rawNamFiles.forEach((file, index) => {
-  const paddedIndex = String(index + 1).padStart(2, '0');
+// 1. Scan and copy all NAM files and NU files dynamically
+const rawNamFiles = fs.readdirSync(rawNamDir).filter((f) => f.endsWith('.mp3')).sort();
+const rawNuFiles = fs.readdirSync(rawNuDir).filter((f) => f.endsWith('.mp3')).sort();
+
+console.log(`Found ${rawNamFiles.length} raw NAM files and ${rawNuFiles.length} raw NU files.`);
+
+const namItems = rawNamFiles.map((file, index) => {
+  const paddedIndex = String(index + 1).padStart(3, '0');
   const targetName = `nam-${paddedIndex}.mp3`;
   const src = path.join(rawNamDir, file);
   const dest = path.join(targetDiktatDir, targetName);
   fs.copyFileSync(src, dest);
-  const key = normalizeKey(file);
-  namUrlMap.set(key, `/audio/diktat/${targetName}`);
+  return {
+    rawFile: file,
+    key: normalizeKey(file),
+    voice: 'male',
+    audioUrl: `/audio/diktat/${targetName}`,
+  };
 });
 
-rawNuFiles.forEach((file, index) => {
-  const paddedIndex = String(index + 1).padStart(2, '0');
+const nuItems = rawNuFiles.map((file, index) => {
+  const paddedIndex = String(index + 1).padStart(3, '0');
   const targetName = `nu-${paddedIndex}.mp3`;
   const src = path.join(rawNuDir, file);
   const dest = path.join(targetDiktatDir, targetName);
   fs.copyFileSync(src, dest);
-  const key = normalizeKey(file);
-  nuUrlMap.set(key, `/audio/diktat/${targetName}`);
+  return {
+    rawFile: file,
+    key: normalizeKey(file),
+    voice: 'female',
+    audioUrl: `/audio/diktat/${targetName}`,
+  };
 });
 
-console.log(`Copied ${rawNamFiles.length} nam files and ${rawNuFiles.length} nu files to ${targetDiktatDir}`);
+console.log(`Copied ${namItems.length} nam files and ${nuItems.length} nu files to ${targetDiktatDir}`);
 
-// Curated definitions for all 77 unique sentences with proper German punctuation, Vietnamese translations, and rich vocabulary:
 export const SENTENCE_METADATA = {
   // === 15 DUAL-VOICE SENTENCES ===
   'arbeit ist ein wichtiger teil des lebens': {
@@ -707,154 +719,993 @@ export const SENTENCE_METADATA = {
       { term: 'bewerten', ipa: '/bəˈveːɐ̯tn̩/', meaning: 'đánh giá, thẩm định' },
     ],
   },
+
+  // === 40 DUAL-VOICE EXTENDED SENTENCES ===
+  'bitte zieh deine schuhe aus': {
+      "textDe": "Bitte zieh deine Schuhe aus.",
+      "textVi": "Làm ơn hãy cởi giày của bạn ra.",
+      "vocabulary": [
+          {
+              "term": "der Schuh",
+              "article": "der",
+              "ipa": "/ʃuː/",
+              "meaning": "chiếc giày"
+          },
+          {
+              "term": "ausziehen",
+              "ipa": "/ˈaʊ̯sˌtsiːən/",
+              "meaning": "cởi ra (giày, áo)"
+          },
+          {
+              "term": "bitte",
+              "ipa": "/ˈbɪtə/",
+              "meaning": "làm ơn, xin vui lòng"
+          }
+      ]
+  },
+  'blau ist meine lieblingsfarbe': {
+      "textDe": "Blau ist meine Lieblingsfarbe.",
+      "textVi": "Màu xanh da trời là màu yêu thích của tôi.",
+      "vocabulary": [
+          {
+              "term": "die Lieblingsfarbe",
+              "article": "die",
+              "ipa": "/ˈliːblɪŋsˌfaʁbə/",
+              "meaning": "màu sắc yêu thích"
+          },
+          {
+              "term": "blau",
+              "ipa": "/blaʊ̯/",
+              "meaning": "xanh lam, xanh da trời"
+          }
+      ]
+  },
+  'der lehrer ist der leiter im klassenzimmer': {
+      "textDe": "Der Lehrer ist der Leiter im Klassenzimmer.",
+      "textVi": "Thầy giáo là người quản lý trong lớp học.",
+      "vocabulary": [
+          {
+              "term": "der Lehrer",
+              "article": "der",
+              "ipa": "/ˈleːʁɐ/",
+              "meaning": "thầy giáo"
+          },
+          {
+              "term": "der Leiter",
+              "article": "der",
+              "ipa": "/ˈlaɪ̯tɐ/",
+              "meaning": "người phụ trách, người đứng đầu"
+          },
+          {
+              "term": "das Klassenzimmer",
+              "article": "das",
+              "ipa": "/ˈklasn̩ˌtsɪmɐ/",
+              "meaning": "phòng học, lớp học"
+          }
+      ]
+  },
+  'die lebenskosten in san francisco steigen': {
+      "textDe": "Die Lebenskosten in San Francisco steigen.",
+      "textVi": "Chi phí sinh hoạt tại San Francisco đang tăng lên.",
+      "vocabulary": [
+          {
+              "term": "die Lebenskosten",
+              "article": "die",
+              "ipa": "/ˈleːbn̩sˌkɔstn̩/",
+              "meaning": "chi phí sinh hoạt"
+          },
+          {
+              "term": "steigen",
+              "ipa": "/ˈʃtaɪ̯ɡn̩/",
+              "meaning": "tăng lên, leo thang"
+          }
+      ]
+  },
+  'diese schlangen sind tödlich': {
+      "textDe": "Diese Schlangen sind tödlich.",
+      "textVi": "Những con rắn này có độc chết người.",
+      "vocabulary": [
+          {
+              "term": "die Schlange",
+              "article": "die",
+              "ipa": "/ˈʃlaŋə/",
+              "meaning": "con rắn"
+          },
+          {
+              "term": "tödlich",
+              "ipa": "/ˈtøːtlɪç/",
+              "meaning": "gây chết người, nguy hiểm trí mạng"
+          }
+      ]
+  },
+  'du machst jeden tag andere sachen': {
+      "textDe": "Du machst jeden Tag andere Sachen.",
+      "textVi": "Mỗi ngày bạn đều làm những việc khác nhau.",
+      "vocabulary": [
+          {
+              "term": "der Tag",
+              "article": "der",
+              "ipa": "/taːk/",
+              "meaning": "ngày"
+          },
+          {
+              "term": "die Sache",
+              "article": "die",
+              "ipa": "/ˈzaxə/",
+              "meaning": "việc, đồ vật"
+          },
+          {
+              "term": "anders",
+              "ipa": "/ˈandɐs/",
+              "meaning": "khác, khác biệt"
+          }
+      ]
+  },
+  'er arbeitet immer spät': {
+      "textDe": "Er arbeitet immer spät.",
+      "textVi": "Anh ấy luôn luôn làm việc đến muộn.",
+      "vocabulary": [
+          {
+              "term": "arbeiten",
+              "ipa": "/ˈaʁbaɪ̯tn̩/",
+              "meaning": "làm việc"
+          },
+          {
+              "term": "immer",
+              "ipa": "/ˈɪmɐ/",
+              "meaning": "luôn luôn"
+          },
+          {
+              "term": "spät",
+              "ipa": "/ʃpɛːt/",
+              "meaning": "muộn, trễ"
+          }
+      ]
+  },
+  'er hat sie zum ersten mal geküsst': {
+      "textDe": "Er hat sie zum ersten Mal geküsst.",
+      "textVi": "Anh ấy đã trao cho cô ấy nụ hôn đầu tiên.",
+      "vocabulary": [
+          {
+              "term": "das Mal",
+              "article": "das",
+              "ipa": "/maːl/",
+              "meaning": "lần"
+          },
+          {
+              "term": "küssen",
+              "ipa": "/ˈkʏsn̩/",
+              "meaning": "hôn"
+          },
+          {
+              "term": "erst",
+              "ipa": "/eːɐ̯st/",
+              "meaning": "đầu tiên"
+          }
+      ]
+  },
+  'erfolg ist das ergebnis harter arbeit': {
+      "textDe": "Erfolg ist das Ergebnis harter Arbeit.",
+      "textVi": "Thành công chính là kết quả của sự nỗ lực làm việc chăm chỉ.",
+      "vocabulary": [
+          {
+              "term": "der Erfolg",
+              "article": "der",
+              "ipa": "/ɛɐ̯ˈfɔlk/",
+              "meaning": "thành công"
+          },
+          {
+              "term": "das Ergebnis",
+              "article": "das",
+              "ipa": "/ɛɐ̯ˈɡeːpnɪs/",
+              "meaning": "kết quả"
+          },
+          {
+              "term": "die Arbeit",
+              "article": "die",
+              "ipa": "/ˈaʁbaɪ̯t/",
+              "meaning": "lao động, công việc"
+          },
+          {
+              "term": "hart",
+              "ipa": "/haʁt/",
+              "meaning": "chăm chỉ, gian khổ"
+          }
+      ]
+  },
+  'hast du jon gesehen -- er ist im badezimmer': {
+      "textDe": "Hast du Jon gesehen? – Er ist im Badezimmer.",
+      "textVi": "Bạn có thấy Jon đâu không? – Cậu ấy đang ở trong phòng tắm.",
+      "vocabulary": [
+          {
+              "term": "das Badezimmer",
+              "article": "das",
+              "ipa": "/ˈbaːdəˌtsɪmɐ/",
+              "meaning": "phòng tắm"
+          },
+          {
+              "term": "sehen",
+              "ipa": "/ˈzeːən/",
+              "meaning": "nhìn thấy, trông thấy"
+          }
+      ]
+  },
+  'hast du schon in diesem restaurant gegessen': {
+      "textDe": "Hast du schon in diesem Restaurant gegessen?",
+      "textVi": "Bạn đã từng ăn tại nhà hàng này bao giờ chưa?",
+      "vocabulary": [
+          {
+              "term": "das Restaurant",
+              "article": "das",
+              "ipa": "/ʁɛstoˈʁãː/",
+              "meaning": "nhà hàng"
+          },
+          {
+              "term": "essen",
+              "ipa": "/ˈɛsn̩/",
+              "meaning": "ăn uống"
+          },
+          {
+              "term": "schon",
+              "ipa": "/ʃoːn/",
+              "meaning": "đã, từng"
+          }
+      ]
+  },
+  'ich bin optimistisch über die zukunft': {
+      "textDe": "Ich bin optimistisch über die Zukunft.",
+      "textVi": "Tôi rất lạc quan về tương lai.",
+      "vocabulary": [
+          {
+              "term": "die Zukunft",
+              "article": "die",
+              "ipa": "/ˈtsuːkʊnft/",
+              "meaning": "tương lai"
+          },
+          {
+              "term": "optimistisch",
+              "ipa": "/ɔptiˈmɪstɪʃ/",
+              "meaning": "lạc quan"
+          }
+      ]
+  },
+  'ich fahre in vier tagen nach hause': {
+      "textDe": "Ich fahre in vier Tagen nach Hause.",
+      "textVi": "Tôi sẽ trở về nhà trong bốn ngày tới.",
+      "vocabulary": [
+          {
+              "term": "der Tag",
+              "article": "der",
+              "ipa": "/taːk/",
+              "meaning": "ngày"
+          },
+          {
+              "term": "nach Hause",
+              "ipa": "/naːx ˈhaʊ̯zə/",
+              "meaning": "về nhà"
+          },
+          {
+              "term": "fahren",
+              "ipa": "/ˈfaːʁən/",
+              "meaning": "lái xe, đi xe"
+          }
+      ]
+  },
+  'ich habe ein handyladegerät': {
+      "textDe": "Ich habe ein Handyladegerät.",
+      "textVi": "Tôi có một bộ sạc điện thoại di động.",
+      "vocabulary": [
+          {
+              "term": "das Handyladegerät",
+              "article": "das",
+              "ipa": "/ˈhɛndiˌlaːdəɡəˌʁɛːt/",
+              "meaning": "cục sạc điện thoại"
+          },
+          {
+              "term": "das Handy",
+              "article": "das",
+              "ipa": "/ˈhɛndi/",
+              "meaning": "điện thoại di động"
+          },
+          {
+              "term": "haben",
+              "ipa": "/ˈhaːbn̩/",
+              "meaning": "có"
+          }
+      ]
+  },
+  'ich muss meine schuhe zubinden': {
+      "textDe": "Ich muss meine Schuhe zubinden.",
+      "textVi": "Tôi phải buộc lại dây giày của mình.",
+      "vocabulary": [
+          {
+              "term": "die Schuhe",
+              "article": "die",
+              "ipa": "/ˈʃuːə/",
+              "meaning": "đôi giày (số nhiều)"
+          },
+          {
+              "term": "zubinden",
+              "ipa": "/ˈtsuːˌbɪndn̩/",
+              "meaning": "buộc lại, thắt lại"
+          },
+          {
+              "term": "müssen",
+              "ipa": "/ˈmʏsn̩/",
+              "meaning": "phải"
+          }
+      ]
+  },
+  'ich will ein aufregendes abenteuer': {
+      "textDe": "Ich will ein aufregendes Abenteuer.",
+      "textVi": "Tôi muốn có một chuyến phiêu lưu thật thú vị.",
+      "vocabulary": [
+          {
+              "term": "das Abenteuer",
+              "article": "das",
+              "ipa": "/ˈaːbn̩ˌtɔɪ̯ɐ/",
+              "meaning": "chuyến phiêu lưu"
+          },
+          {
+              "term": "aufregend",
+              "ipa": "/ˈaʊ̯fˌʁeːɡn̩t/",
+              "meaning": "thú vị, hấp dẫn"
+          },
+          {
+              "term": "wollen",
+              "ipa": "/ˈvɔlən/",
+              "meaning": "muốn"
+          }
+      ]
+  },
+  'ihr auto ist auf dem weg zum flughafen': {
+      "textDe": "Ihr Auto ist auf dem Weg zum Flughafen.",
+      "textVi": "Chiếc ô tô của họ đang trên đường tới sân bay.",
+      "vocabulary": [
+          {
+              "term": "das Auto",
+              "article": "das",
+              "ipa": "/ˈaʊ̯to/",
+              "meaning": "ô tô, xe hơi"
+          },
+          {
+              "term": "der Weg",
+              "article": "der",
+              "ipa": "/veːk/",
+              "meaning": "đường đi"
+          },
+          {
+              "term": "der Flughafen",
+              "article": "der",
+              "ipa": "/ˈfluːkˌhaːfn̩/",
+              "meaning": "sân bay, phi trường"
+          }
+      ]
+  },
+  'interessierst du dich für amerikanische politik': {
+      "textDe": "Interessierst du dich für amerikanische Politik?",
+      "textVi": "Bạn có quan tâm đến chính trị nước Mỹ không?",
+      "vocabulary": [
+          {
+              "term": "die Politik",
+              "article": "die",
+              "ipa": "/poliˈtiːk/",
+              "meaning": "chính trị"
+          },
+          {
+              "term": "sich interessieren für",
+              "ipa": "/zɪç ɪntəʁɛˈsiːʁən fyːɐ̯/",
+              "meaning": "quan tâm đến"
+          },
+          {
+              "term": "amerikanisch",
+              "ipa": "/ameʁiˈkaːnɪʃ/",
+              "meaning": "thuộc về nước Mỹ"
+          }
+      ]
+  },
+  'jemand schwimmt im see': {
+      "textDe": "Jemand schwimmt im See.",
+      "textVi": "Có ai đó đang bơi ở dưới hồ.",
+      "vocabulary": [
+          {
+              "term": "der See",
+              "article": "der",
+              "ipa": "/zeː/",
+              "meaning": "hồ nước"
+          },
+          {
+              "term": "schwimmen",
+              "ipa": "/ˈʃvɪmən/",
+              "meaning": "bơi lội"
+          },
+          {
+              "term": "jemand",
+              "ipa": "/ˈjeːmant/",
+              "meaning": "ai đó, người nào đó"
+          }
+      ]
+  },
+  'kannst du den mann auf dem bild identifizieren': {
+      "textDe": "Kannst du den Mann auf dem Bild identifizieren?",
+      "textVi": "Bạn có thể nhận dạng được người đàn ông trong bức ảnh không?",
+      "vocabulary": [
+          {
+              "term": "der Mann",
+              "article": "der",
+              "ipa": "/man/",
+              "meaning": "người đàn ông"
+          },
+          {
+              "term": "das Bild",
+              "article": "das",
+              "ipa": "/bɪlt/",
+              "meaning": "bức tranh, bức ảnh"
+          },
+          {
+              "term": "identifizieren",
+              "ipa": "/idɛntifiˈtsiːʁən/",
+              "meaning": "nhận diện, xác định"
+          }
+      ]
+  },
+  'leben wir in derselben staße': {
+      "textDe": "Leben wir in derselben Straße?",
+      "textVi": "Chúng ta có đang sống trên cùng một con phố không?",
+      "vocabulary": [
+          {
+              "term": "die Straße",
+              "article": "die",
+              "ipa": "/ˈʃtʁaːsə/",
+              "meaning": "con đường, đường phố"
+          },
+          {
+              "term": "leben",
+              "ipa": "/ˈleːbn̩/",
+              "meaning": "sống, cư trú"
+          },
+          {
+              "term": "derselbe",
+              "ipa": "/deːɐ̯ˈzɛlbə/",
+              "meaning": "cùng một"
+          }
+      ]
+  },
+  'linguistik ist die studie der sprache': {
+      "textDe": "Linguistik ist die Studie der Sprache.",
+      "textVi": "Ngôn ngữ học là công trình nghiên cứu về ngôn ngữ.",
+      "vocabulary": [
+          {
+              "term": "die Linguistik",
+              "article": "die",
+              "ipa": "/lɪŋˈɡu̯ɪstɪk/",
+              "meaning": "ngôn ngữ học"
+          },
+          {
+              "term": "die Studie",
+              "article": "die",
+              "ipa": "/ˈʃtuːdi̯ə/",
+              "meaning": "nghiên cứu, khảo sát"
+          },
+          {
+              "term": "die Sprache",
+              "article": "die",
+              "ipa": "/ˈʃpʁaːxə/",
+              "meaning": "ngôn ngữ"
+          }
+      ]
+  },
+  'rennt er oft draußen': {
+      "textDe": "Rennt er oft draußen?",
+      "textVi": "Cậu ấy có hay chạy bộ ở bên ngoài trời không?",
+      "vocabulary": [
+          {
+              "term": "rennen",
+              "ipa": "/ˈʁɛnən/",
+              "meaning": "chạy"
+          },
+          {
+              "term": "oft",
+              "ipa": "/ɔft/",
+              "meaning": "thường xuyên"
+          },
+          {
+              "term": "draußen",
+              "ipa": "/ˈdʁaʊ̯sn̩/",
+              "meaning": "ở bên ngoài trời"
+          }
+      ]
+  },
+  'schach ist ein strategisches spiel': {
+      "textDe": "Schach ist ein strategisches Spiel.",
+      "textVi": "Cờ vua là một trò chơi mang tính chiến thuật.",
+      "vocabulary": [
+          {
+              "term": "das Schach",
+              "article": "das",
+              "ipa": "/ʃax/",
+              "meaning": "cờ vua"
+          },
+          {
+              "term": "das Spiel",
+              "article": "das",
+              "ipa": "/ʃpiːl/",
+              "meaning": "trò chơi"
+          },
+          {
+              "term": "strategisch",
+              "ipa": "/ʃtʁaˈteːɡɪʃ/",
+              "meaning": "có tính chiến lược"
+          }
+      ]
+  },
+  'sei vorsichtig am kamin': {
+      "textDe": "Sei vorsichtig am Kamin.",
+      "textVi": "Hãy cẩn thận khi đứng gần lò sưởi.",
+      "vocabulary": [
+          {
+              "term": "der Kamin",
+              "article": "der",
+              "ipa": "/kaˈmiːn/",
+              "meaning": "lò sưởi"
+          },
+          {
+              "term": "vorsichtig",
+              "ipa": "/ˈfoːɐ̯ˌzɪçtɪç/",
+              "meaning": "cẩn thận, cẩn trọng"
+          }
+      ]
+  },
+  'sie frühstückt oft nicht': {
+      "textDe": "Sie frühstückt oft nicht.",
+      "textVi": "Cô ấy thường xuyên bỏ bữa ăn sáng.",
+      "vocabulary": [
+          {
+              "term": "frühstücken",
+              "ipa": "/ˈfʁyːˌʃtʏkn̩/",
+              "meaning": "ăn sáng"
+          },
+          {
+              "term": "oft",
+              "ipa": "/ɔft/",
+              "meaning": "thường xuyên"
+          }
+      ]
+  },
+  'sie rasten die strecke entlang': {
+      "textDe": "Sie rasten die Strecke entlang.",
+      "textVi": "Họ phóng xe lao vút dọc theo con đường.",
+      "vocabulary": [
+          {
+              "term": "die Strecke",
+              "article": "die",
+              "ipa": "/ˈʃtʁɛkə/",
+              "meaning": "chặng đường, tuyến đường"
+          },
+          {
+              "term": "rasen",
+              "ipa": "/ˈʁaːzn̩/",
+              "meaning": "phóng nhanh, lao nhanh"
+          },
+          {
+              "term": "entlang",
+              "ipa": "/ɛntˈlaŋ/",
+              "meaning": "dọc theo"
+          }
+      ]
+  },
+  'verzeihung, was hast du gesagt': {
+      "textDe": "Verzeihung, was hast du gesagt?",
+      "textVi": "Xin lỗi, bạn vừa nói điều gì thế?",
+      "vocabulary": [
+          {
+              "term": "die Verzeihung",
+              "article": "die",
+              "ipa": "/fɛɐ̯ˈtsaɪ̯ʊŋ/",
+              "meaning": "sự tha thứ, xin lỗi"
+          },
+          {
+              "term": "sagen",
+              "ipa": "/ˈzaːɡn̩/",
+              "meaning": "nói"
+          }
+      ]
+  },
+  'wann hat jeff den müll rausgebracht': {
+      "textDe": "Wann hat Jeff den Müll rausgebracht?",
+      "textVi": "Jeff đã đem rác đi đổ lúc mấy giờ?",
+      "vocabulary": [
+          {
+              "term": "der Müll",
+              "article": "der",
+              "ipa": "/mʏl/",
+              "meaning": "rác rưởi"
+          },
+          {
+              "term": "rausbringen",
+              "ipa": "/ˈʁaʊ̯sˌbʁɪŋən/",
+              "meaning": "đem ra ngoài, mang đi đổ"
+          },
+          {
+              "term": "wann",
+              "ipa": "/van/",
+              "meaning": "khi nào"
+          }
+      ]
+  },
+  'wann schließt das museum': {
+      "textDe": "Wann schließt das Museum?",
+      "textVi": "Khi nào thì bảo tàng đóng cửa?",
+      "vocabulary": [
+          {
+              "term": "das Museum",
+              "article": "das",
+              "ipa": "/muˈzeːʊm/",
+              "meaning": "viện bảo tàng"
+          },
+          {
+              "term": "schließen",
+              "ipa": "/ˈʃliːsn̩/",
+              "meaning": "đóng cửa"
+          },
+          {
+              "term": "wann",
+              "ipa": "/van/",
+              "meaning": "khi nào"
+          }
+      ]
+  },
+  'warst du gestern abend in der bibliothek': {
+      "textDe": "Warst du gestern Abend in der Bibliothek?",
+      "textVi": "Tối hôm qua bạn có ở thư viện không?",
+      "vocabulary": [
+          {
+              "term": "die Bibliothek",
+              "article": "die",
+              "ipa": "/biblioˈteːk/",
+              "meaning": "thư viện"
+          },
+          {
+              "term": "gestern Abend",
+              "ipa": "/ˈɡɛstɐn ˈaːbn̩t/",
+              "meaning": "tối hôm qua"
+          }
+      ]
+  },
+  'warst du von den guten neuigkeiten überrascht': {
+      "textDe": "Warst du von den guten Neuigkeiten überrascht?",
+      "textVi": "Bạn có cảm thấy ngạc nhiên trước những tin tức tốt lành đó không?",
+      "vocabulary": [
+          {
+              "term": "die Neuigkeit",
+              "article": "die",
+              "ipa": "/ˈnɔɪ̯ɪçkaɪ̯t/",
+              "meaning": "tin tức mới, tin vui"
+          },
+          {
+              "term": "überrascht",
+              "ipa": "/yːbɐˈʁaʃt/",
+              "meaning": "bất ngờ, ngạc nhiên"
+          }
+      ]
+  },
+  'weißt du, wie man zum hotel kommt': {
+      "textDe": "Weißt du, wie man zum Hotel kommt?",
+      "textVi": "Bạn có biết đường đi đến khách sạn như thế nào không?",
+      "vocabulary": [
+          {
+              "term": "das Hotel",
+              "article": "das",
+              "ipa": "/hoˈtɛl/",
+              "meaning": "khách sạn"
+          },
+          {
+              "term": "wissen",
+              "ipa": "/ˈvɪsn̩/",
+              "meaning": "biết"
+          },
+          {
+              "term": "kommen",
+              "ipa": "/ˈkɔmən/",
+              "meaning": "đi đến, tới"
+          }
+      ]
+  },
+  'wie geht es ihnen jetzt': {
+      "textDe": "Wie geht es Ihnen jetzt?",
+      "textVi": "Bây giờ ngài cảm thấy như thế nào rồi?",
+      "vocabulary": [
+          {
+              "term": "wie geht es",
+              "ipa": "/viː ɡeːt ɛs/",
+              "meaning": "sức khỏe thế nào, ra sao"
+          },
+          {
+              "term": "jetzt",
+              "ipa": "/jɛtst/",
+              "meaning": "bây giờ, hiện tại"
+          }
+      ]
+  },
+  'wie war das wetter als du auf hawaii warst': {
+      "textDe": "Wie war das Wetter, als du auf Hawaii warst?",
+      "textVi": "Thời tiết thế nào khi bạn ở Hawaii?",
+      "vocabulary": [
+          {
+              "term": "das Wetter",
+              "article": "das",
+              "ipa": "/ˈvɛtɐ/",
+              "meaning": "thời tiết"
+          },
+          {
+              "term": "als",
+              "ipa": "/als/",
+              "meaning": "khi (trong quá khứ)"
+          }
+      ]
+  },
+  'wieviel hat das zugticket gekostet': {
+      "textDe": "Wie viel hat das Zugticket gekostet?",
+      "textVi": "Chiếc vé tàu hỏa có giá bao nhiêu tiền?",
+      "vocabulary": [
+          {
+              "term": "das Zugticket",
+              "article": "das",
+              "ipa": "/ˈtsuːkˌtɪkət/",
+              "meaning": "vé tàu hỏa"
+          },
+          {
+              "term": "kosten",
+              "ipa": "/ˈkɔstn̩/",
+              "meaning": "có giá, trị giá"
+          },
+          {
+              "term": "wie viel",
+              "ipa": "/viː fiːl/",
+              "meaning": "bao nhiêu"
+          }
+      ]
+  },
+  'wir haben rita gesehen, aber nicht javier': {
+      "textDe": "Wir haben Rita gesehen, aber nicht Javier.",
+      "textVi": "Chúng tôi đã gặp Rita, nhưng không gặp Javier.",
+      "vocabulary": [
+          {
+              "term": "sehen",
+              "ipa": "/ˈzeːən/",
+              "meaning": "thấy, trông thấy"
+          },
+          {
+              "term": "aber",
+              "ipa": "/ˈaːbɐ/",
+              "meaning": "nhưng"
+          }
+      ]
+  },
+  'wo ist das nächste restaurant': {
+      "textDe": "Wo ist das nächste Restaurant?",
+      "textVi": "Nhà hàng gần nhất nằm ở đâu vậy?",
+      "vocabulary": [
+          {
+              "term": "das Restaurant",
+              "article": "das",
+              "ipa": "/ʁɛstoˈʁãː/",
+              "meaning": "nhà hàng"
+          },
+          {
+              "term": "nah",
+              "ipa": "/naː/",
+              "meaning": "gần (nächst: gần nhất)"
+          },
+          {
+              "term": "wo",
+              "ipa": "/voː/",
+              "meaning": "ở đâu"
+          }
+      ]
+  },
+  'wo war sie am samstagmorgen': {
+      "textDe": "Wo war sie am Samstagmorgen?",
+      "textVi": "Cô ấy đã ở đâu vào sáng thứ Bảy?",
+      "vocabulary": [
+          {
+              "term": "der Samstagmorgen",
+              "article": "der",
+              "ipa": "/ˈzamstaːkˌmɔʁɡn̩/",
+              "meaning": "sáng thứ Bảy"
+          },
+          {
+              "term": "wo",
+              "ipa": "/voː/",
+              "meaning": "ở đâu"
+          }
+      ]
+  },
+  'würdest du gerne einen film ausleihen': {
+      "textDe": "Würdest du gerne einen Film ausleihen?",
+      "textVi": "Bạn có muốn mượn một bộ phim về xem không?",
+      "vocabulary": [
+          {
+              "term": "der Film",
+              "article": "der",
+              "ipa": "/fɪlm/",
+              "meaning": "bộ phim"
+          },
+          {
+              "term": "ausleihen",
+              "ipa": "/ˈaʊ̯sˌlaɪ̯ən/",
+              "meaning": "mượn, thuê"
+          },
+          {
+              "term": "gerne",
+              "ipa": "/ˈɡɛʁnə/",
+              "meaning": "thích, sẵn lòng"
+          }
+      ]
+  },
 };
 
-// Check that every single key in namUrlMap and nuUrlMap is present in SENTENCE_METADATA:
-const allKeys = new Set([...namUrlMap.keys(), ...nuUrlMap.keys()]);
-console.log(`Total unique sentence keys to import: ${allKeys.size}`);
+// Check that every single key in namItems and nuItems is present in SENTENCE_METADATA:
+const allScannedKeys = new Set([...namItems.map((i) => i.key), ...nuItems.map((i) => i.key)]);
+console.log(`Total unique sentence keys to import: ${allScannedKeys.size}`);
 
-for (const k of allKeys) {
+for (const k of allScannedKeys) {
   if (!SENTENCE_METADATA[k]) {
     throw new Error(`Missing metadata for sentence key: "${k}"`);
   }
 }
 
-// 5 Exercise partitions
-const exerciseConfigs = [
+// Map key -> items
+const namItemMap = new Map(namItems.map((it) => [it.key, it]));
+const nuItemMap = new Map(nuItems.map((it) => [it.key, it]));
+
+const nuKeySet = new Set(nuItems.map((i) => i.key));
+const namKeySet = new Set(namItems.map((i) => i.key));
+
+const commonKeys = [...namKeySet].filter((k) => nuKeySet.has(k)).sort();
+const namOnlyKeys = [...namKeySet].filter((k) => !nuKeySet.has(k)).sort();
+const nuOnlyKeys = [...nuKeySet].filter((k) => !namKeySet.has(k)).sort();
+
+console.log(`Found ${commonKeys.length} common keys, ${namOnlyKeys.length} NAM-only, ${nuOnlyKeys.length} NU-only.`);
+
+// 11 Packages distribution:
+// Total items = 172.
+// Packages 1-7: 16 items each (10-11 male, 5-6 female)
+// Packages 8-11: 15 items each (10 male, 5 female)
+const NUM_PACKAGES = 11;
+const packageBuckets = Array.from({ length: NUM_PACKAGES }, () => ({
+  maleItems: [],
+  femaleItems: [],
+}));
+
+// Distribute common keys:
+// female item in pF = i % 11
+// male item in pM = (i + 5) % 11
+// Guaranteed: (i + 5) % 11 !== i % 11, so common sentences NEVER land in the same package!
+commonKeys.forEach((k, i) => {
+  const pF = i % NUM_PACKAGES;
+  const pM = (i + 5) % NUM_PACKAGES;
+  packageBuckets[pF].femaleItems.push(nuItemMap.get(k));
+  packageBuckets[pM].maleItems.push(namItemMap.get(k));
+});
+
+// Distribute the 2 nu-only keys to packages 0 and 1:
+nuOnlyKeys.forEach((k, i) => {
+  packageBuckets[i % NUM_PACKAGES].femaleItems.push(nuItemMap.get(k));
+});
+
+// Distribute nam-only keys (60 items) to hit target totals:
+// Target totals: 7 packages of 16, 4 packages of 15
+const targetTotals = [16, 16, 16, 16, 16, 16, 16, 15, 15, 15, 15];
+let remainingNamOnly = [...namOnlyKeys];
+
+for (let p = 0; p < NUM_PACKAGES; p++) {
+  const currentCount = packageBuckets[p].maleItems.length + packageBuckets[p].femaleItems.length;
+  const needed = targetTotals[p] - currentCount;
+  for (let n = 0; n < needed; n++) {
+    const k = remainingNamOnly.shift();
+    if (!k) break;
+    packageBuckets[p].maleItems.push(namItemMap.get(k));
+  }
+}
+
+if (remainingNamOnly.length > 0) {
+  throw new Error(`Leftover nam-only keys: ${remainingNamOnly.length}`);
+}
+
+const packageConfigs = [
   {
-    slug: 'diktat-b1-phan-xa-song-giong',
-    title: 'Phản xạ nghe chép 2 giọng Nam – Nữ',
-    subtitle: 'Luyện phản xạ chép chính tả đối chiếu 2 ngữ điệu Nam và Nữ',
-    level: 'B1',
-    keys: [
-      'arbeit ist ein wichtiger teil des lebens',
-      'bring mir bitte mein hemd',
-      'das ist das erste mal, das ich hier bin',
-      'das lernen einer sprache macht mir spaß',
-      'die auswirkungen der droge sind unbekannt',
-      'er war auf dem weg zum basketballtraining',
-      'ich nehme oft den bus zur schule',
-      'ich schätze das du eine krankenschwester bist',
-      'ich würde gerne ein auto mieten',
-      'ist es heute heiß -- ja, ist es',
-      'mein vater arbeitet in einer bank',
-      'russland ist ein sehr großes land',
-      'um wieviel uhr bist du schlafen gegangen',
-      'wenn es dir gefällt kann ich mehr kaufen',
-      'würdest du gerne mit mir zu abend essen',
-    ], // 15 items
+    slug: 'diktat-b1-bai-01',
+    title: 'Bài 01: Phản xạ giao tiếp hàng ngày',
+    subtitle: 'Luyện nghe chép các mẫu câu hội thoại và giao tiếp cơ bản',
   },
   {
-    slug: 'diktat-b1-giao-tiep-phan-xa',
-    title: 'Giao tiếp & Câu hỏi phản xạ đời sống',
-    subtitle: 'Các câu hỏi Ja/Nein và W-Fragen phản xạ trong giao tiếp hàng ngày',
-    level: 'B1',
-    keys: [
-      'bist du lehrer -- ja, bin ich',
-      'hast du dich schon beim college beworben',
-      'hast du die nummer für ein taxi',
-      'hörst du ihr gerade zu',
-      'ist keenan dort - ja, er ist gerade angekommen',
-      'kannst du das für mich wegwerfen',
-      'legst du das bitte für mich ins auto',
-      'magst du deine arbeitskollegen',
-      'magst du gruselige filme',
-      'regnet es hier oft',
-      'seit wann lebst du hier',
-      'um wieviel uhr öffnet der laden',
-      'warum bist du so dramatisch',
-      'wer ist der bekannteste prominente',
-      'wo arbeitet dein bruder',
-      'wo ist das nächste krankenhaus',
-    ], // 16 items
+    slug: 'diktat-b1-bai-02',
+    title: 'Bài 02: Cuộc sống & Môi trường',
+    subtitle: 'Chủ đề sinh hoạt đời sống, tự nhiên và môi trường xung quanh',
   },
   {
-    slug: 'diktat-b1-truong-hoc-cong-viec',
-    title: 'Trường học, Công việc & Sinh hoạt hàng ngày',
-    subtitle: 'Chủ đề học đường, trường đại học, công sở và đời sống thường nhật',
-    level: 'B1',
-    keys: [
-      'bitte füllen sie dieses formular aus',
-      'catherine arbeitet sehr hart',
-      'das schuljahr endet im juni',
-      'dem stuhl fehlt ein bein',
-      'die universität hat eine menge studenten',
-      'diese stadt hat drei kirchen',
-      'er geht immer früh zur arbeit',
-      'es gibt viele dinge in der schule',
-      'es ist eine restaurant hier in der nähe',
-      'es tut mir leid, ich habe keinen stift',
-      'ich habe den müll bereits rausgebracht',
-      'ich habe nach meinem geldbeutel gesucht',
-      'ich habe noch nicht zu mittag gegessen',
-      'ich muss jetzt gehen. tschüss',
-      'sie isst eine orange',
-    ], // 15 items
+    slug: 'diktat-b1-bai-03',
+    title: 'Bài 03: Học tập & Công sở',
+    subtitle: 'Luyện từ vựng và câu văn trong môi trường làm việc, trường học',
   },
   {
-    slug: 'diktat-b1-tinh-huong-xa-hoi',
-    title: 'Tình huống xã hội & Bày tỏ quan điểm',
-    subtitle: 'Xử lý tình huống giao tiếp, cảm xúc và trao đổi quan điểm',
-    level: 'B1',
-    keys: [
-      'danke für deine fortdauernde unterstützung',
-      'die dorfbewohner haben den wald zerstört',
-      'es gab einen autounfall',
-      'es ist länger als 2 meilen',
-      'gold ist ein seltenes element',
-      'heute ist es draußen sonnig',
-      'kinder mögen normalerweise süßigkeiten',
-      'mein freund hat drei hunde',
-      'mein lehrer ist so nett zu mir',
-      'newton fand die theorie der schwerkraft',
-      'oktober ist mein lieblingsmonat',
-      'schmetterlinge haben zwei flügel',
-      'sie haben früher kontaktlinsen benutzt',
-      'sie mögen post-rock-musik',
-      'sie sitzt auf dem sofa',
-      'tom hat seinen geruchssinn verloren',
-    ], // 16 items
+    slug: 'diktat-b1-bai-04',
+    title: 'Bài 04: Thói quen & Hoạt động thường nhật',
+    subtitle: 'Các thói quen sinh hoạt, sở thích và hoạt động hàng ngày',
   },
   {
-    slug: 'diktat-b1-cau-phuc-menh-de-phu',
-    title: 'Cấu trúc câu phức & Mệnh đề phụ tiếng Đức',
-    subtitle: 'Mệnh đề quan hệ, mệnh đề dass/weil/wenn và cấu trúc Konjunktiv II',
-    level: 'B1',
-    keys: [
-      'ich bin mir sicher, dass sie recht hat',
-      'ich dachte, er hätte etwas anderes gesagt',
-      'ich finde die situation eigenartig',
-      'ich glaube, dass ich zum arzt muss',
-      'ich werde diesen moment niemals vergessen',
-      'ich würde gerne eine reservierung vornehmen',
-      'ich würde gerne mit dir reden, bitte',
-      'sie ist die anführererin des gruppenprojekts',
-      'sie ist eine exzellenter köchin',
-      'was bedeutet es amerikanisch zu sein',
-      'was ist der herkömmliche weg das zu tun',
-      'was ist hier die primäre attraktion',
-      'was machen leute hier normalerweise',
-      'was machst du unter dem tisch',
-      'wie würdest du die situation bewerten',
-    ], // 15 items
+    slug: 'diktat-b1-bai-05',
+    title: 'Bài 05: Đi lại & Di chuyển công cộng',
+    subtitle: 'Từ vựng và cấu trúc về phương tiện, đường sá và du lịch',
+  },
+  {
+    slug: 'diktat-b1-bai-06',
+    title: 'Bài 06: Mua sắm, Ẩm thực & Dịch vụ',
+    subtitle: 'Các tình huống gọi món, mua hàng và sử dụng dịch vụ tiện ích',
+  },
+  {
+    slug: 'diktat-b1-bai-07',
+    title: 'Bài 07: Cảm xúc, Thái độ & Tương tác xã hội',
+    subtitle: 'Bày tỏ cảm xúc, quan điểm cá nhân và tương tác với bạn bè',
+  },
+  {
+    slug: 'diktat-b1-bai-08',
+    title: 'Bài 08: Câu hỏi nghi vấn & Đảo ngữ phản xạ',
+    subtitle: 'Rèn luyện phản xạ nghe bắt các dạng câu hỏi Ja/Nein và W-Fragen',
+  },
+  {
+    slug: 'diktat-b1-bai-09',
+    title: 'Bài 09: Đối thoại phản xạ & Tình huống giao tiếp',
+    subtitle: 'Các câu hội thoại hỏi đáp thực tế với nhịp độ tự nhiên',
+  },
+  {
+    slug: 'diktat-b1-bai-10',
+    title: 'Bài 10: Mệnh đề phụ & Cấu trúc câu ghép',
+    subtitle: 'Chinh phục mệnh đề dass, weil, wenn và cấu trúc liên từ',
+  },
+  {
+    slug: 'diktat-b1-bai-11',
+    title: 'Bài 11: Cấu trúc nâng cao & Diễn đạt học thuật',
+    subtitle: 'Nâng cao độ chính xác chính tả với các cấu trúc ngữ pháp B1 vững chắc',
   },
 ];
 
 let globalSentenceId = 1;
-const exercises = exerciseConfigs.map((cfg) => {
-  const items = cfg.keys.map((k) => {
-    const meta = SENTENCE_METADATA[k];
+const exercises = packageConfigs.map((cfg, pIdx) => {
+  const bucket = packageBuckets[pIdx];
+  const m = [...bucket.maleItems];
+  const f = [...bucket.femaleItems];
+  const interleaved = [];
+
+  // Interleave male and female items smoothly: e.g. 2 M, 1 F, 2 M, 1 F...
+  while (m.length > 0 || f.length > 0) {
+    if (m.length > 0) interleaved.push(m.shift());
+    if (m.length > 0 && f.length < m.length / 2) interleaved.push(m.shift());
+    if (f.length > 0) interleaved.push(f.shift());
+  }
+
+  // Verify no key collision in this package
+  const seenKeys = new Set();
+  interleaved.forEach((item) => {
+    if (seenKeys.has(item.key)) {
+      throw new Error(`CRITICAL: Duplicate sentence key "${item.key}" in package ${cfg.slug}`);
+    }
+    seenKeys.add(item.key);
+  });
+
+  const items = interleaved.map((raw) => {
+    const meta = SENTENCE_METADATA[raw.key];
     const words = meta.textDe.split(/\s+/u).filter(Boolean);
-    const id = `diktat-s${String(globalSentenceId++).padStart(2, '0')}`;
-    const male = namUrlMap.get(k) ?? null;
-    const female = nuUrlMap.get(k) ?? null;
+    const id = `diktat-s${String(globalSentenceId++).padStart(3, '0')}`;
     return {
       id,
       textDe: meta.textDe,
       textVi: meta.textVi,
-      audioUrlMale: male,
-      audioUrlFemale: female,
-      audioUrl: male ?? female ?? '',
+      voice: raw.voice,
+      audioUrlMale: raw.voice === 'male' ? raw.audioUrl : null,
+      audioUrlFemale: raw.voice === 'female' ? raw.audioUrl : null,
+      audioUrl: raw.audioUrl,
       wordCount: words.length,
       vocabulary: meta.vocabulary,
     };
@@ -864,7 +1715,7 @@ const exercises = exerciseConfigs.map((cfg) => {
     slug: cfg.slug,
     title: cfg.title,
     subtitle: cfg.subtitle,
-    level: cfg.level,
+    level: 'B1',
     questionCount: items.length,
     items,
   };
@@ -872,7 +1723,7 @@ const exercises = exerciseConfigs.map((cfg) => {
 
 const fileContent = `/**
  * AUTO-GENERATED BY scripts/import-diktat-audio.mjs
- * DO NOT EDIT MANUALLY. 77 UNIQUE B1 GERMAN SENTENCES WITH DUAL/SINGLE AUDIO.
+ * DO NOT EDIT MANUALLY. 172 INDEPENDENT B1 GERMAN SENTENCES ACROSS 11 PACKAGES.
  */
 
 export interface DiktatVocabularyItem {
@@ -886,6 +1737,7 @@ export interface DiktatSentenceItem {
   id: string;
   textDe: string;
   textVi: string;
+  voice?: 'male' | 'female';
   audioUrlMale: string | null;
   audioUrlFemale: string | null;
   audioUrl: string;
@@ -904,10 +1756,19 @@ export interface DiktatExercisePackage {
 
 export const importedDiktatPackages: DiktatExercisePackage[] = ${JSON.stringify(exercises, null, 2)};
 
+const legacySlugAliasMap: Record<string, string> = {
+  'diktat-b1-phan-xa-song-giong': 'diktat-b1-bai-01',
+  'diktat-b1-giao-tiep-phan-xa': 'diktat-b1-bai-02',
+  'diktat-b1-truong-hoc-cong-viec': 'diktat-b1-bai-03',
+  'diktat-b1-tinh-huong-xa-hoi': 'diktat-b1-bai-04',
+  'diktat-b1-cau-phuc-menh-de-phu': 'diktat-b1-bai-10',
+};
+
 export function getDiktatExerciseBySlug(slug: string): DiktatExercisePackage | undefined {
-  return importedDiktatPackages.find((pkg) => pkg.slug === slug);
+  const resolvedSlug = legacySlugAliasMap[slug] || slug;
+  return importedDiktatPackages.find((pkg) => pkg.slug === resolvedSlug);
 }
 `;
 
 fs.writeFileSync(targetDataFile, fileContent, 'utf8');
-console.log(`Successfully generated ${targetDataFile} with ${exercises.length} exercises and ${globalSentenceId - 1} sentences.`);
+console.log(`Successfully generated ${targetDataFile} with ${exercises.length} packages and ${globalSentenceId - 1} sentences.`);

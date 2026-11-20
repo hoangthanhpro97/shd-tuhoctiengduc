@@ -52,6 +52,7 @@ export default async function DiktatPracticeRoomPage({
       id: `legacy-${idx + 1}`,
       textDe: sentence,
       textVi: 'Bản dịch đang được cập nhật.',
+      voice: 'male' as const,
       audioUrlMale: null,
       audioUrlFemale: null,
       audioUrl: '',
