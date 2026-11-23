@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Mic2, PenLine, Sparkles } from 'lucide-react';
-import { speakingProviderLabels, speakingTaskTypeLabels, speakingTasks } from '../../data/speaking-fixtures';
-import { writingProviderLabels, writingTaskTypeLabels, writingTasks } from '../../data/writing-fixtures';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { speakingTasks } from '../../data/speaking-fixtures';
+import { writingTasks } from '../../data/writing-fixtures';
 import { DynamicTopicThumbnail } from '../thumbnails/DynamicTopicThumbnail';
 
 export type Provider = 'goethe' | 'osd' | 'telc';
@@ -25,7 +25,6 @@ const providerLabels: Record<Provider, string> = {
 interface ProviderHeaderConfig {
   name: string;
   fullName: string;
-  accentBadgeClass: string;
   descriptionLine1: string;
   descriptionLine2: string;
   descriptionLine3: string;
@@ -35,7 +34,6 @@ const providerHeaderConfigs: Record<Provider, ProviderHeaderConfig> = {
   osd: {
     name: 'ÖSD',
     fullName: 'ÖSD Zertifikat',
-    accentBadgeClass: 'border-sky-200/80 bg-sky-50 text-sky-700',
     descriptionLine1: 'Kho bài mẫu Sprechen & Schreiben miễn phí chuẩn cấu trúc đề thi ÖSD Zertifikat B1 - B2.',
     descriptionLine2: 'Cung cấp dàn ý chi tiết, cấu trúc đề chuẩn Áo, mẫu câu Redemittel ăn điểm',
     descriptionLine3: 'đi kèm và trải nghiệm luyện thi trực tiếp chất lượng cao.',
@@ -43,7 +41,6 @@ const providerHeaderConfigs: Record<Provider, ProviderHeaderConfig> = {
   goethe: {
     name: 'Goethe',
     fullName: 'Goethe-Zertifikat',
-    accentBadgeClass: 'border-emerald-200/80 bg-emerald-50 text-emerald-700',
     descriptionLine1: 'Kho bài mẫu Sprechen & Schreiben miễn phí chuẩn cấu trúc đề thi Goethe-Zertifikat B1 - B2.',
     descriptionLine2: 'Cung cấp dàn ý chi tiết, cấu trúc đề chuẩn Goethe-Institut, mẫu câu Redemittel ăn điểm',
     descriptionLine3: 'đi kèm và trải nghiệm luyện thi trực tiếp chất lượng cao.',
@@ -51,7 +48,6 @@ const providerHeaderConfigs: Record<Provider, ProviderHeaderConfig> = {
   telc: {
     name: 'telc',
     fullName: 'telc Deutsch',
-    accentBadgeClass: 'border-rose-200/80 bg-rose-50 text-[#da2527]',
     descriptionLine1: 'Kho bài mẫu Sprechen & Schreiben miễn phí chuẩn cấu trúc đề thi telc Deutsch B1 - B2.',
     descriptionLine2: 'Cung cấp dàn ý chi tiết, cấu trúc đề chuẩn telc, mẫu câu Redemittel ăn điểm',
     descriptionLine3: 'đi kèm và trải nghiệm luyện thi trực tiếp chất lượng cao.',
@@ -163,51 +159,27 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
             Tìm hiểu khoá học
           </a>
         </div>
-
-        {/* Quick Navigation Anchor Bar */}
-        <nav
-          className="mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3"
-          aria-label={`Khu vực bài mẫu ${providerLabel}`}
-        >
-          {sections.map((section) => {
-            const isWriting = section.startsWith('schreiben');
-            const level = section.endsWith('b1') ? 'B1' : 'B2';
-            const count = isWriting
-              ? writingTasks.filter((t) => t.level === level && sampleProviderMatches(provider, t.examProvider)).length
-              : speakingTasks.filter((t) => t.level === level && sampleProviderMatches(provider, t.examProvider)).length;
-
-            return (
-              <a
-                key={section}
-                href={`#${section}`}
-                className="group inline-flex items-center gap-2 rounded-full border border-slate-200/90 bg-white px-4 py-2 text-xs font-bold text-slate-700 shadow-xs transition-all hover:border-[#da2527] hover:text-[#da2527] hover:shadow-sm"
-              >
-                {isWriting ? (
-                  <PenLine size={13} className="text-[#da2527] transition-transform group-hover:scale-110" aria-hidden="true" />
-                ) : (
-                  <Mic2 size={13} className="text-[#da2527] transition-transform group-hover:scale-110" aria-hidden="true" />
-                )}
-                <span>{sectionLabels[section]}</span>
-                <span
-                  className={`rounded-full px-2 py-0.5 text-[10px] font-extrabold ${
-                    count > 0 ? 'bg-rose-50 text-[#da2527]' : 'bg-slate-100 text-slate-400'
-                  }`}
-                >
-                  {count > 0 ? `${count} bài` : 'Sắp ra mắt'}
-                </span>
-                <ArrowRight
-                  size={13}
-                  className="text-slate-400 transition-transform group-hover:translate-x-0.5 group-hover:text-[#da2527]"
-                  aria-hidden="true"
-                />
-              </a>
-            );
-          })}
-        </nav>
       </header>
 
-      {/* Main Content Sections */}
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      {/* Main Content Area */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {/* Quick Navigation Anchor Bar - Kéo xuống ngay trên vạch đỏ phân loại bài, bỏ số lượng và ký tự */}
+        <nav
+          className="mb-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4"
+          aria-label={`Khu vực bài mẫu ${providerLabel}`}
+        >
+          {sections.map((section) => (
+            <a
+              key={section}
+              href={`#${section}`}
+              className="rounded-full border border-slate-200/90 bg-white px-5 py-2.5 text-xs font-bold text-slate-700 shadow-xs transition-all hover:border-[#da2527] hover:text-[#da2527] hover:shadow-sm"
+            >
+              {sectionLabels[section]}
+            </a>
+          ))}
+        </nav>
+
+        {/* Content Sections */}
         <div className="space-y-16">
           {sections.map((section) => {
             const isWriting = section.startsWith('schreiben');
@@ -222,32 +194,11 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
 
             return (
               <section id={section} key={section} className="scroll-mt-28">
-                {/* Section Header */}
-                <div className="mb-6 flex flex-col gap-2 border-b border-slate-100 pb-4 sm:flex-row sm:items-end sm:justify-between">
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`inline-flex items-center rounded-md px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wider ${config.accentBadgeClass}`}
-                      >
-                        {providerLabel} · {level}
-                      </span>
-                      <span className="text-xs font-medium text-slate-400">
-                        {isWriting ? 'Kỹ năng Viết (Schreiben)' : 'Kỹ năng Nói (Sprechen)'}
-                      </span>
-                    </div>
-                    <h2 className="mt-1.5 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">
-                      {sectionLabels[section]}
-                    </h2>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span
-                      className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold ${
-                        itemCount > 0 ? 'bg-rose-50 text-[#da2527]' : 'bg-slate-100 text-slate-500'
-                      }`}
-                    >
-                      {itemCount > 0 ? `${itemCount} bài mẫu` : 'Đang cập nhật'}
-                    </span>
-                  </div>
+                {/* Section Header - Tinh gọn: chỉ còn tiêu đề lớn, bỏ eyebrow và số lượng bài */}
+                <div className="mb-6 border-b border-slate-100 pb-3">
+                  <h2 className="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">
+                    {sectionLabels[section]}
+                  </h2>
                 </div>
 
                 {/* Section Content: Grid or Upcoming */}
@@ -269,30 +220,14 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
                               badgeText={`${providerLabel} · ${level}`}
                             />
                             <div className="mt-3 flex flex-1 flex-col justify-between">
-                              <div>
-                                <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-500">
-                                  <span className="inline-flex items-center gap-1 text-[#da2527]">
-                                    <PenLine size={12} aria-hidden="true" />
-                                    <span>{writingProviderLabels[task.examProvider]}</span>
-                                  </span>
-                                  <span>•</span>
-                                  <span>{task.partLabel}</span>
-                                </div>
-                                <h3 className="mt-1.5 line-clamp-2 min-h-[2.65rem] text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
-                                  {task.title}
-                                </h3>
-                                <p className="mt-1 line-clamp-1 text-xs text-slate-500">
-                                  {writingTaskTypeLabels[task.taskType]} · {task.writingTarget.textTypeLabel} · {Math.max(1, Math.ceil(task.durationSeconds / 60))} phút
-                                </p>
-                              </div>
-                              <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3">
+                              <h3 className="line-clamp-2 min-h-[2.65rem] text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
+                                {task.title}
+                              </h3>
+                              <div className="mt-3 flex items-center border-t border-slate-100 pt-3">
                                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-1">
                                   <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-rose-50 text-[9px]">▶</span>
                                   <span>Xem bài mẫu viết</span>
                                   <ArrowRight size={13} aria-hidden="true" />
-                                </span>
-                                <span className="rounded-md bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-500">
-                                  Dàn ý + Redemittel
                                 </span>
                               </div>
                             </div>
@@ -313,30 +248,14 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
                               badgeText={`${providerLabel} · ${level}`}
                             />
                             <div className="mt-3 flex flex-1 flex-col justify-between">
-                              <div>
-                                <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-500">
-                                  <span className="inline-flex items-center gap-1 text-[#da2527]">
-                                    <Mic2 size={12} aria-hidden="true" />
-                                    <span>{speakingProviderLabels[task.examProvider]}</span>
-                                  </span>
-                                  <span>•</span>
-                                  <span>Teil {task.part}</span>
-                                </div>
-                                <h3 className="mt-1.5 line-clamp-2 min-h-[2.65rem] text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
-                                  {task.title}
-                                </h3>
-                                <p className="mt-1 line-clamp-1 text-xs text-slate-500">
-                                  {speakingTaskTypeLabels[task.taskType]} · {Math.max(1, Math.ceil(task.durationSeconds / 60))} phút · Có Audio mẫu
-                                </p>
-                              </div>
-                              <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3">
+                              <h3 className="line-clamp-2 min-h-[2.65rem] text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
+                                {task.title}
+                              </h3>
+                              <div className="mt-3 flex items-center border-t border-slate-100 pt-3">
                                 <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-1">
                                   <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-rose-50 text-[9px]">▶</span>
                                   <span>Luyện nói &amp; Nghe Audio</span>
                                   <ArrowRight size={13} aria-hidden="true" />
-                                </span>
-                                <span className="rounded-md bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700">
-                                  Audio bản ngữ
                                 </span>
                               </div>
                             </div>
