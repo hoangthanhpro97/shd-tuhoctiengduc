@@ -3,7 +3,8 @@ import 'server-only';
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { parseExamFixture, type ExamPublicPayload, type QuestionKeyDetail } from '@shd/contracts';
-import { getBookSetExamSlugs, getExamBookSet } from '../../data/exam-book-sets';
+import { buildGoetheBookSets, examBookSets, getBookSetExamSlugs, getExamBookSet, type ExamBookSet } from '../../data/exam-book-sets';
+import { getPublicExamsByProviderLevel } from './exam-content-loader';
 import { getPublicExamBySlug } from './exam-service';
 
 export type StudySkill = 'lesen' | 'hoeren';
@@ -37,6 +38,7 @@ export type ExamStudyPayload = {
   level: ExamPublicPayload['examMetadata']['cefrLevel'];
   skill: StudySkill;
   sections: StudySection[];
+  relatedBookSets: ExamBookSet[];
 };
 
 const contentDirectories = [
@@ -63,8 +65,8 @@ async function readRawFixture(sourceSlug: string) {
   return null;
 }
 
-function canonicalSlugFor(sourceSlug: string, requestedSlug: string) {
-  const set = getExamBookSet(requestedSlug) ?? getExamBookSet(sourceSlug);
+function canonicalSlugFor(sourceSlug: string, requestedSlug: string, dynamicSets: ExamBookSet[]) {
+  const set = getExamBookSet(requestedSlug, dynamicSets) ?? getExamBookSet(sourceSlug, dynamicSets);
   return set?.examSlugs.find((slug) => slug === requestedSlug || slug.endsWith(sourceSlug.match(/(\d+)$/)?.[1] ?? '')) ?? requestedSlug;
 }
 
@@ -73,12 +75,17 @@ function answerText(question: ExamPublicPayload['sections'][number]['questions']
 }
 
 export async function getExamStudyPayload(requestedSlug: string, skill: StudySkill): Promise<ExamStudyPayload | null> {
-  const bookSet = getExamBookSet(requestedSlug);
+  const goetheB1 = await getPublicExamsByProviderLevel('goethe', 'B1');
+  const goetheBookSets = buildGoetheBookSets(goetheB1);
+  const bookSet = getExamBookSet(requestedSlug, goetheBookSets);
   const bookSetSlugs = bookSet ? getBookSetExamSlugs(bookSet) : [];
   const requestedChild = bookSetSlugs.find((item) => item.canonicalSlug === requestedSlug || item.sourceSlug === requestedSlug);
   const firstSourceSlug = requestedChild?.sourceSlug ?? (bookSet ? bookSetSlugs[0]?.sourceSlug : requestedSlug);
   const exam = await getPublicExamBySlug(firstSourceSlug ?? requestedSlug);
   if (!exam) return null;
+
+  const isGoethe = exam.examMetadata.providerFormat.toLowerCase().includes('goethe');
+  const relatedBookSets = isGoethe ? goetheBookSets : examBookSets;
 
   const raw = await readRawFixture(exam.examMetadata.slug);
   if (!raw) return null;
@@ -114,9 +121,10 @@ export async function getExamStudyPayload(requestedSlug: string, skill: StudySki
   return {
     exam,
     sourceSlug: exam.examMetadata.slug,
-    canonicalSlug: canonicalSlugFor(exam.examMetadata.slug, requestedSlug),
+    canonicalSlug: canonicalSlugFor(exam.examMetadata.slug, requestedSlug, goetheBookSets),
     level: exam.examMetadata.cefrLevel,
     skill,
     sections,
+    relatedBookSets,
   };
 }

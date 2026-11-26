@@ -18,7 +18,7 @@ type ChoiceItem = { value: string; label: string; note?: string };
 
 const staticChoices: Record<'level' | 'provider', readonly ChoiceItem[]> = {
   level: [{ value: 'B1', label: 'B1' }, { value: 'B2', label: 'B2' }, { value: 'A1', label: 'A1', note: 'Sắp ra mắt' }, { value: 'A2', label: 'A2', note: 'Sắp ra mắt' }],
-  provider: [{ value: 'ÖSD', label: 'ÖSD Zertifikat' }, { value: 'Goethe', label: 'Goethe-Zertifikat', note: 'Sắp ra mắt' }, { value: 'TELC', label: 'telc Deutsch', note: 'Sắp ra mắt' }],
+  provider: [{ value: 'ÖSD', label: 'ÖSD Zertifikat' }, { value: 'Goethe', label: 'Goethe-Zertifikat' }, { value: 'TELC', label: 'telc Deutsch', note: 'Sắp ra mắt' }],
 };
 
 function CheckboxGroup({ title, group, items, selected, onToggle }: { title: string; group: FilterGroup; items: readonly ChoiceItem[]; selected: string[]; onToggle: (group: FilterGroup, value: string) => void }) {

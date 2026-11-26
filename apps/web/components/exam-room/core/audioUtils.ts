@@ -20,6 +20,7 @@ export function resolveExamAudioUrl({
       audioUrl.startsWith('https://') ||
       audioUrl.startsWith('/audio/osd-b1/') ||
       audioUrl.startsWith('/audio/osd-b2/') ||
+      audioUrl.startsWith('/audio/goethe-b1/') ||
       audioUrl.startsWith('/audio/raw-b1/') ||
       audioUrl.startsWith('/audio/raw-b2/')
     ) {

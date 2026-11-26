@@ -18,6 +18,11 @@ function testNumber(slug: string) {
 }
 
 function RelatedBookCard({ bookSet }: { bookSet: ExamBookSet }) {
+  const stageClassName = bookSet.provider === 'goethe'
+    ? 'bg-emerald-100/80'
+    : bookSet.level === 'B1'
+      ? 'bg-sky-100/80'
+      : 'bg-rose-100/75';
   return (
     <article className="flex min-w-0 items-center gap-3 rounded-xl border border-slate-200 bg-white p-3">
       <Link href={`/de-thi/${bookSet.slug}`} className="group relative h-36 w-28 shrink-0 overflow-hidden rounded-lg bg-slate-100" aria-label={`Mở ${bookSet.title}`}>
@@ -25,9 +30,9 @@ function RelatedBookCard({ bookSet }: { bookSet: ExamBookSet }) {
           <ExamBookCover
             className="h-52 w-36 rounded-xl"
             level={bookSet.level}
-            provider="osd"
+            provider={bookSet.provider}
             simulationNumber={bookSet.volumeNumber}
-            stageClassName={bookSet.level === 'B1' ? 'bg-sky-100/80' : 'bg-rose-100/75'}
+            stageClassName={stageClassName}
             title={bookSet.title}
           />
         </div>
@@ -43,7 +48,7 @@ function RelatedBookCard({ bookSet }: { bookSet: ExamBookSet }) {
   );
 }
 
-export function ExamDetailView({ exam, requestedSlug, bookSet, tests }: { exam: ExamPublicPayload; requestedSlug: string; bookSet: ExamBookSet | null; tests: TestRow[] }) {
+export function ExamDetailView({ exam, requestedSlug, bookSet, tests, relatedBookSets }: { exam: ExamPublicPayload; requestedSlug: string; bookSet: ExamBookSet | null; tests: TestRow[]; relatedBookSets?: ExamBookSet[] }) {
   const { user, ready } = useAuth();
   const [authOpen, setAuthOpen] = useState(false);
   const [pdfMessage, setPdfMessage] = useState(false);
@@ -69,8 +74,13 @@ export function ExamDetailView({ exam, requestedSlug, bookSet, tests }: { exam: 
     }
     window.open(`/de-thi/${bookSet?.slug ?? requestedSlug}/de-va-dap-an?skill=lesen&print=1`, '_blank', 'noopener,noreferrer');
   };
+  const provider = bookSet?.provider ?? (exam.examMetadata.providerFormat.toLowerCase().includes('goethe') ? 'goethe' : 'osd');
+  const isGoethe = provider === 'goethe';
+  const setsToShow = relatedBookSets?.length ? relatedBookSets : (isGoethe ? (bookSet ? [bookSet] : []) : examBookSets);
   const testCount = tests.length || bookSet?.examSlugs.length || 1;
-  const academicDescription = `${title} với ${testCount} đề thi ÖSD Lesen & Hören được thiết kế chuẩn định dạng Viện Khảo thí ÖSD Áo dưới dạng bài thi thử Online-Test kèm Answer Key, giải thích chi tiết bằng phương pháp độc quyền SHD Kontext-Methode, danh sách từ vựng trọng tâm (Wortschatz) và Free PDF Download.`;
+  const academicDescription = isGoethe
+    ? `${title} với ${testCount} đề thi Goethe Lesen & Hören được thiết kế chuẩn định dạng Viện Goethe dưới dạng bài thi thử Online-Test kèm Answer Key, giải thích chi tiết bằng phương pháp độc quyền SHD Kontext-Methode, danh sách từ vựng trọng tâm (Wortschatz) và Free PDF Download.`
+    : `${title} với ${testCount} đề thi ÖSD Lesen & Hören được thiết kế chuẩn định dạng Viện Khảo thí ÖSD Áo dưới dạng bài thi thử Online-Test kèm Answer Key, giải thích chi tiết bằng phương pháp độc quyền SHD Kontext-Methode, danh sách từ vựng trọng tâm (Wortschatz) và Free PDF Download.`;
 
   return (
     <main className="min-h-screen overflow-x-clip bg-gradient-to-b from-[#fde8e8]/70 via-[#fef2f2]/45 to-white pb-16">
@@ -80,12 +90,12 @@ export function ExamDetailView({ exam, requestedSlug, bookSet, tests }: { exam: 
           <span aria-hidden="true">&gt;</span>
           <Link href="/de-thi" className="hover:text-[#da2527]">ÖSD &amp; Goethe Online-Test</Link>
           <span aria-hidden="true">&gt;</span>
-          <Link href="/de-thi/osd" className="hover:text-[#da2527]">ÖSD Online-Test</Link>
+          <Link href={isGoethe ? '/de-thi/goethe' : '/de-thi/osd'} className="hover:text-[#da2527]">{isGoethe ? 'Goethe Online-Test' : 'ÖSD Online-Test'}</Link>
           <span aria-hidden="true">&gt;</span>
           <span className="min-w-0 truncate font-bold text-slate-900" aria-current="page">{title}</span>
         </nav>
 
-        {bookSet && <ExamSiblingSlider bookSet={bookSet} />}
+        {bookSet && <ExamSiblingSlider bookSet={bookSet} bookSets={setsToShow} />}
 
         <div className="mt-6 grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
           <section className="min-w-0 lg:col-span-8">
@@ -95,7 +105,7 @@ export function ExamDetailView({ exam, requestedSlug, bookSet, tests }: { exam: 
                   <ExamBookCover
                     className="h-52 w-36 rounded-2xl"
                     level={exam.examMetadata.cefrLevel === 'C1' ? 'B2' : exam.examMetadata.cefrLevel}
-                    provider="osd"
+                    provider={provider}
                     simulationNumber={bookSet ? bookSet.volumeNumber : testNumber(canonicalActive)}
                     stageClassName="bg-white/65"
                     title={title}
@@ -103,7 +113,7 @@ export function ExamDetailView({ exam, requestedSlug, bookSet, tests }: { exam: 
                 </div>
               </div>
               <div className="min-w-0">
-                <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#0284c7]">ÖSD Zertifikat {exam.examMetadata.cefrLevel}</p>
+                <p className={`text-[11px] font-extrabold uppercase tracking-[0.16em] ${isGoethe ? 'text-[#16a34a]' : 'text-[#0284c7]'}`}>{isGoethe ? 'Goethe-Zertifikat' : 'ÖSD Zertifikat'} {exam.examMetadata.cefrLevel}</p>
                 <h1 className="mt-1 text-2xl font-black leading-tight tracking-tight text-slate-900 sm:text-3xl">{title}</h1>
                 <p className="mt-3 text-xs font-bold leading-relaxed text-slate-600 sm:text-sm">{testCount} bài test · 2 kỹ năng Lesen &amp; Hören · {exam.examMetadata.passPercentage}% đạt</p>
                 <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -140,9 +150,9 @@ export function ExamDetailView({ exam, requestedSlug, bookSet, tests }: { exam: 
         </div>
       </div>
       <section className="mx-auto mt-14 mb-16 max-w-6xl px-4" aria-labelledby="related-books-title">
-        <h2 id="related-books-title" className="mb-6 text-xl font-extrabold text-slate-900 sm:text-2xl">Sách cùng bộ ÖSD Zertifikat</h2>
+        <h2 id="related-books-title" className="mb-6 text-xl font-extrabold text-slate-900 sm:text-2xl">Sách cùng bộ {isGoethe ? 'Goethe-Zertifikat' : 'ÖSD Zertifikat'}</h2>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {examBookSets.map((set) => <RelatedBookCard key={set.slug} bookSet={set} />)}
+          {setsToShow.map((set) => <RelatedBookCard key={set.slug} bookSet={set} />)}
         </div>
       </section>
       {authOpen && <AuthModal message={pdfMessage ? 'Đăng ký miễn phí để tải trọn bộ đề PDF & danh sách từ vựng' : undefined} onClose={() => { setAuthOpen(false); setPdfMessage(false); }} />}

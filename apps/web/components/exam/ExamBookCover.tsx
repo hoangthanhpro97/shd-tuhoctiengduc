@@ -10,6 +10,7 @@ export interface ExamBookCoverProps {
   className?: string;
   stageClassName?: string;
   coverImageUrl?: string;
+  eager?: boolean;
 }
 
 // Rotating photo gallery for ÖSD (Vienna / Austrian academic & cultural context)
@@ -93,6 +94,7 @@ export function ExamBookCover({
   className,
   stageClassName,
   coverImageUrl,
+  eager = false,
 }: ExamBookCoverProps) {
   const [imgError, setImgError] = useState(false);
 
@@ -181,7 +183,7 @@ export function ExamBookCover({
               src={photoUrl}
               alt={title}
               className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
+              loading={eager ? 'eager' : 'lazy'}
               decoding="async"
               onError={() => setImgError(true)}
             />

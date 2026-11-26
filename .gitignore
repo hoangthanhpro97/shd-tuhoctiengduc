@@ -20,7 +20,10 @@ scratch/
 # Large exam audio assets (generated/raw MP3s)
 apps/web/public/audio/osd-b1/
 apps/web/public/audio/osd-b2/
+apps/web/public/audio/goethe-b1/
 apps/web/public/audio/diktat/
 apps/web/public/audio/raw-*/
 apps/web/public/audio/raw-diktat/
+apps/web/public/audio/raw-goethe-b1/
+screenshots/desktop/homepage-motion-trace.zip
 

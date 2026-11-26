@@ -25,7 +25,7 @@ function isPublicExamRow(row: Pick<ExamRow, 'slug' | 'title' | 'provider_format'
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/gu, '')
     .toLowerCase();
-  return (searchable.includes('osd') || searchable.includes('oesd')) && !syntheticExamPattern.test(searchable);
+  return (searchable.includes('osd') || searchable.includes('oesd') || searchable.includes('goethe')) && !syntheticExamPattern.test(searchable);
 }
 
 export async function getPublicExamBySlug(slug: string) {

@@ -2,4 +2,7 @@ import { SkillProviderAcademicPage } from '../../../../components/learning/Skill
 import { getSkillExercises } from '../../../../lib/server/exam-content-loader';
 
 export const dynamic = 'force-dynamic';
-export default async function OsdListeningSummaryPage() { return <SkillProviderAcademicPage skill="Hoeren" items={await getSkillExercises('Hoeren')} />; }
+export default async function OsdListeningSummaryPage() {
+  const items = (await getSkillExercises('Hoeren')).filter((item) => item.provider === 'ÖSD');
+  return <SkillProviderAcademicPage skill="Hoeren" items={items} provider="osd" />;
+}

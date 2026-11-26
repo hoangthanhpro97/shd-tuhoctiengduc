@@ -1,7 +1,7 @@
 import { BookOpenCheck, Check, Clock3, ExternalLink, Headphones, Lightbulb, Play } from 'lucide-react';
 import Link from 'next/link';
 import type { ExamStudyPayload, StudySection } from '../../lib/server/exam-answer-key-loader';
-import { examBookSets } from '../../data/exam-book-sets';
+import { examBookSets, type ExamBookSet } from '../../data/exam-book-sets';
 import { ExamBookCover } from './ExamBookCover';
 import { StartExamButton } from './StartExamButton';
 
@@ -124,12 +124,17 @@ function SectionBlock({ payload, section, index }: { payload: ExamStudyPayload; 
   );
 }
 
-function RelatedBookCard({ bookSet }: { bookSet: (typeof examBookSets)[number] }) {
+function RelatedBookCard({ bookSet }: { bookSet: ExamBookSet }) {
+  const stageClassName = bookSet.provider === 'goethe'
+    ? 'bg-emerald-100/80'
+    : bookSet.level === 'B1'
+      ? 'bg-sky-100/80'
+      : 'bg-rose-100/75';
   return (
     <article className="flex min-w-0 items-center gap-3 rounded-2xl border border-slate-200 bg-white p-3 transition-shadow hover:shadow-md">
       <Link className="relative h-32 w-24 shrink-0 overflow-hidden rounded-xl bg-slate-100" href={`/de-thi/${bookSet.slug}`} aria-label={`Mở ${bookSet.title}`}>
         <div className="origin-top-left scale-[0.59]">
-          <ExamBookCover className="h-52 w-36 rounded-xl" level={bookSet.level} provider="osd" simulationNumber={bookSet.volumeNumber} stageClassName={bookSet.level === 'B1' ? 'bg-sky-100/80' : 'bg-rose-100/75'} title={bookSet.title} />
+          <ExamBookCover className="h-52 w-36 rounded-xl" level={bookSet.level} provider={bookSet.provider} simulationNumber={bookSet.volumeNumber} stageClassName={stageClassName} title={bookSet.title} />
         </div>
       </Link>
       <div className="min-w-0">
@@ -145,7 +150,10 @@ export function ExamFullKeyView({ payload }: { payload: ExamStudyPayload }) {
   const skillLabel = payload.skill === 'lesen' ? 'Lesen' : 'Hören';
   const coverLevel = payload.level === 'C1' ? 'B2' : payload.level;
   const num = (payload.canonicalSlug.match(/(\d+)$/)?.[1] ?? '01').padStart(2, '0');
-  const title = `ÖSD Zertifikat ${payload.level} · Modelltest ${num}`;
+  const isGoethe = payload.exam.examMetadata.providerFormat.toLowerCase().includes('goethe');
+  const provider = isGoethe ? 'goethe' : 'osd';
+  const title = isGoethe ? `Goethe-Zertifikat ${payload.level} · Modellsatz ${num}` : `ÖSD Zertifikat ${payload.level} · Modelltest ${num}`;
+  const relatedBookSets = payload.relatedBookSets ?? (isGoethe ? [] : examBookSets);
 
   return (
     <main className="min-h-screen overflow-x-clip bg-gradient-to-b from-[#fff1f1]/75 via-white to-slate-50 pb-16">
@@ -162,9 +170,9 @@ export function ExamFullKeyView({ payload }: { payload: ExamStudyPayload }) {
 
         <header className="mx-auto max-w-3xl pt-8 text-center sm:pt-10">
           <div className="mx-auto w-52 rounded-[2rem] bg-gradient-to-br from-rose-100 via-amber-50 to-sky-100 p-3 shadow-sm sm:w-60">
-            <ExamBookCover className="h-60 rounded-[1.5rem] p-4" stageClassName="bg-white/55" level={coverLevel} provider="osd" simulationNumber={num} title={title} />
+            <ExamBookCover className="h-60 rounded-[1.5rem] p-4" stageClassName="bg-white/55" level={coverLevel} provider={provider} simulationNumber={num} title={title} />
           </div>
-          <p className="mt-6 text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#0284c7]">SHD Kontext-Methode · {skillLabel}</p>
+          <p className={`mt-6 text-[11px] font-extrabold uppercase tracking-[0.18em] ${isGoethe ? 'text-[#16a34a]' : 'text-[#0284c7]'}`}>SHD Kontext-Methode · {skillLabel}</p>
            <h1 className="mt-2 text-2xl font-black leading-tight tracking-tight text-slate-900 sm:text-4xl">{title} — Đề thi và đáp án {skillLabel}</h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-600">Xem trọn ngữ liệu, toàn bộ câu hỏi và đáp án được đối chiếu theo từng Teil. Luyện riêng {skillLabel} hoặc bắt đầu một phiên thi thử ngay.</p>
           <div className="mt-5 flex flex-wrap justify-center gap-2" aria-label="Chọn kỹ năng">
@@ -206,12 +214,12 @@ export function ExamFullKeyView({ payload }: { payload: ExamStudyPayload }) {
       <section className="mx-auto mt-12 max-w-6xl px-4" aria-labelledby="related-books-title">
         <div className="mb-5 flex items-end justify-between gap-3">
           <div>
-            <p className="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#0284c7]">ÖSD Online-Test</p>
+            <p className={`text-[10px] font-extrabold uppercase tracking-[0.16em] ${isGoethe ? 'text-[#16a34a]' : 'text-[#0284c7]'}`}>{isGoethe ? 'Goethe Online-Test' : 'ÖSD Online-Test'}</p>
             <h2 className="mt-1 text-xl font-black text-slate-900" id="related-books-title">Bộ đề liên quan</h2>
           </div>
           <Link className="inline-flex items-center gap-1 text-xs font-extrabold text-[#da2527]" href="/de-thi">Xem tất cả <ExternalLink size={12} /></Link>
         </div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">{examBookSets.map((bookSet) => <RelatedBookCard bookSet={bookSet} key={bookSet.slug} />)}</div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">{relatedBookSets.map((bookSet) => <RelatedBookCard bookSet={bookSet} key={bookSet.slug} />)}</div>
       </section>
     </main>
   );

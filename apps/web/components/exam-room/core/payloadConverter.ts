@@ -88,6 +88,10 @@ function formatExamDisplayTitle(slug: string, level: WorkstationLevel, fallbackT
     const testNum = parseInt(numMatch[1], 10);
     return `ÖSD Zertifikat ${level} – Modelltest ${testNum}`;
   }
+  if (lowerSlug.includes('goethe') && numMatch) {
+    const testNum = parseInt(numMatch[1], 10);
+    return `Goethe-Zertifikat ${level} – Modellsatz ${testNum}`;
+  }
   return fallbackTitle;
 }
 
@@ -199,9 +203,10 @@ export function convertExamToWorkstationPayload(
 
     if (skill === 'lesen') {
       const needsGeneratedStimulus =
-        /osd-(?:b1|b2)-test-0[234]/.test(state.slug) ||
-        isCombinedSection ||
-        (!matchingSection?.stimulus?.content && matchingSection?.skill === 'Lesen');
+        !/goethe/i.test(state.slug) &&
+        (/osd-(?:b1|b2)-test-0[234]/.test(state.slug) ||
+          isCombinedSection ||
+          (!matchingSection?.stimulus?.content && matchingSection?.skill === 'Lesen'));
 
       const readingStimulus =
         needsGeneratedStimulus && matchingSection
@@ -237,6 +242,8 @@ export function convertExamToWorkstationPayload(
         part,
         matchingSection?.stimulus?.annotations
       );
+      const audioIncludesRepetition =
+        matchingSection?.stimulus?.annotations?.audioIncludesRepetition === true ? true : undefined;
 
       stimulus = {
         type: 'audio',
@@ -249,6 +256,7 @@ export function convertExamToWorkstationPayload(
         // Read original audioUrl verbatim from exam JSON without altering source files
         audioUrl: matchingSection?.stimulus?.audioUrl,
         playCount,
+        ...(audioIncludesRepetition ? { audioIncludesRepetition } : {}),
         situationDe: sectionTitle,
         transcriptTurns,
       };
@@ -384,6 +392,8 @@ export function convertSkillExerciseToWorkstationPayload(
       part,
       matchedSection?.stimulus?.annotations
     );
+    const audioIncludesRepetition =
+      matchedSection?.stimulus?.annotations?.audioIncludesRepetition === true ? true : undefined;
 
     return {
       part,
@@ -399,6 +409,7 @@ export function convertSkillExerciseToWorkstationPayload(
         ),
         audioUrl: matchedSection?.stimulus?.audioUrl ?? exercise.audioUrl,
         playCount,
+        ...(audioIncludesRepetition ? { audioIncludesRepetition } : {}),
         situationDe: sectionTitle,
         transcriptTurns,
       },

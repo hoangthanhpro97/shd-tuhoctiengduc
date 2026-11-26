@@ -1,0 +1,2773 @@
+{
+  "examMetadata": {
+    "examId": "goethe-b1-test-09",
+    "slug": "goethe-b1-test-09",
+    "title": "Goethe-Zertifikat B1 - Modellsatz 09",
+    "cefrLevel": "B1",
+    "providerFormat": "Goethe",
+    "disclaimer": "Bộ đề ôn luyện chuẩn Goethe-Zertifikat B1 (Modellsatz 09 – Alltag, Berufsorientierung und Gesellschaft) gồm đủ 5 phần Đọc (Lesen · 30 câu · 65 phút) và 4 phần Nghe (Hören · 30 câu · 40 phút), kèm khóa đáp án kiểm chứng 100% và bản chép lời song ngữ Đức–Việt.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_goethe_b1_t09_lesen_p1",
+      "skill": "Lesen",
+      "title": "Teil 1: Noras Alltagsblog: Die erste Wäsche",
+      "durationMinutes": 10,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Noras Alltagsblog: Die erste Wäsche",
+        "content": "Noras Alltagsblog: Die erste Wäsche\n\nSamstag\n\nIn unserem Haus teilen sich acht Wohnungen einen Waschraum im Keller. Das klappt meistens gut, bis unsere alte Maschine mitten im Programm stehen blieb. Der Techniker schraubte lange daran herum und versuchte, sie wieder zum Laufen zu bringen. Schließlich erklärte er der Hausverwaltung, dass nichts mehr zu machen sei.\n\nDeshalb wurde letzte Woche eine neue Waschmaschine geliefert.\n\nGestern war ich zum ersten Mal dran. Neben der Maschine hing eine Anleitung mit einem Hinweis auf eine App.\n\nMein Handy lag noch oben in der Wohnung, also schaute ich mir zunächst die Tasten am Gerät an. Damit konnte ich das Programm auswählen und alles Weitere einstellen. Die App hatte ich zu diesem Zeitpunkt noch gar nicht auf meinem Telefon.\n\nAuf dem Bildschirm stand 14:30 Uhr. Prima, dachte ich, dann ist die Wäsche rechtzeitig vor meinem Besuch bei meiner Schwester fertig. Doch nachdem ich die Tür geschlossen hatte, blieb es still. Ich wartete etwas und las dann genauer nach. Die Uhrzeit zeigte an, wann die Maschine anfangen sollte! Mit einer Taste konnte ich auf „Sofort starten“ wechseln. Endlich hörte ich Wasser in die Trommel laufen und ging wieder nach oben.\n\nSpäter bekam ich eine Nachricht von meinem Nachbarn Paul. Er war gerade im Keller gewesen und hatte gesehen, dass mein Programm beendet war. Daraufhin holte ich den leeren Korb aus dem Flur, ging hinunter und nahm meine Sachen aus der Maschine. Paul traf ich dort noch kurz beim Sortieren seiner Hemden.\n\nAm Nachmittag schrieb ich der Hausverwaltung von meinem kleinen Missverständnis. Gerade die Uhrzeit auf dem Bildschirm sollte in der Anleitung besser erklärt werden. Als ich heute wieder im Waschraum war, hing dort schon ein neues Blatt. Unter dem Bild des Displays stand jetzt genau, wie man den Beginn eines Programms einstellt.\n\nUnsere Waschzeiten können wir weiterhin entweder in den Papierplan an der Wand oder über die App eintragen. Ich bleibe beim Blatt im Keller, das sehe ich sowieso regelmäßig. Vielleicht lade ich mir die App trotzdem herunter: Eine Nachricht, sobald alles fertig ist, wäre praktisch. Paul kann schließlich nicht jedes Mal für mich nachsehen!\n\nBis bald\n\nEure Nora"
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Die Hausverwaltung ersetzte die Waschmaschine, weil die alte nicht mehr repariert werden konnte.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đúng: thợ kỹ thuật kết luận máy cũ không thể sửa được nữa nên ban quản lý mới thay máy giặt mới."
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Nora musste eine App installieren, bevor sie zum ersten Mal waschen konnte.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Sai điều kiện: điện thoại để trên căn hộ và Nora còn chưa cài ứng dụng vẫn bấm nút chọn chương trình trực tiếp trên máy -> Sai (F)."
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Nora hielt die angezeigte Uhrzeit zunächst für das Ende des Waschprogramms.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Paul nahm Noras Wäsche aus der Maschine.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Nach einem Hinweis von Nora wurde die Anleitung im Waschraum ergänzt.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Nora möchte ihre Waschtermine künftig über die App reservieren.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_lesen_p2",
+      "skill": "Lesen",
+      "title": "Teil 2: Pressetexte (Aufgaben 7–12)",
+      "durationMinutes": 20,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Zwei Pressetexte (Aufgaben 7–12)",
+        "content": "TEXT 1\n\nEine Antwort, die Raum lässt\n\nSoll ich meiner Freundin sagen, was mich an ihrer Besuchsplanung stört? Wie erkläre ich meiner Familie, dass ich an den Feiertagen verreisen möchte? Solche Fragen erreichen Eva Lind, die Redakteurin der Stadtteilzeitung „Rund ums Viertel“. Auf einer Beratungsseite beschäftigt sich ihr Team mit Beziehungen und Entscheidungen im Erwachsenenleben. Im Gespräch erläutert Lind, wie daraus ein Beitrag entsteht.\n\nBei der Auswahl schaut die Redaktion über den einzelnen Fall hinaus. Hinter einem Streit um einen Besuch kann zum Beispiel die Schwierigkeit stehen, eigene Wünsche auszusprechen. Mit solchen Situationen können sich auch Menschen beschäftigen, deren Alltag ganz anders aussieht. Deshalb eignen sich diese Fragen besonders für die Seite.\n\nVor dem Druck wird sorgfältig am Text gearbeitet. Namen, genaue Arbeitsstellen und andere Angaben, durch die jemand erkannt werden könnte, entfernt das Team. Anschließend bekommt die Person, die geschrieben hat, die bearbeitete Fassung per Brief oder E-Mail. Erst mit ihrer schriftlichen Zustimmung zu diesem Wortlaut darf der Beitrag erscheinen. Den Termin dafür legt die Redaktion fest.\n\nAuch bei den Antworten ist Zurückhaltung wichtig. Das Team beschreibt verschiedene Möglichkeiten und ihre möglichen Folgen. Die Entscheidung bleibt bei den Ratsuchenden. Wer über einen bestimmten Teil seines Privatlebens nichts erzählen möchte, muss das nicht tun. Lind sieht die Aufgabe der Seite darin, das Nachdenken zu erleichtern und einen nächsten Schritt zu ermöglichen.\n\nTEXT 2\n\nWie sieht ein Arbeitstag wirklich aus?\n\nEin Beruf kann interessant klingen und im Alltag ganz anders aussehen als erwartet. Der Verein „Neue Wege im Viertel“ lädt deshalb Erwachsene, die über einen beruflichen Wechsel nachdenken, zu einem Gesprächsabend ein. In kleinen Gruppen erzählen Beschäftigte aus verschiedenen Berufen von ihren Aufgaben. Die Besucher können nachfragen und überlegen, welche Tätigkeiten zu ihren eigenen Interessen passen.\n\nDabei geht es auch um weniger bekannte Seiten der Arbeit: Wie viel Zeit verbringt man mit Vorbereitungen?\n\nArbeitet man überwiegend allein oder im Team? Solche konkreten Erfahrungen sollen helfen, sich einen normalen Arbeitstag vorzustellen. Nach jeder Gesprächsrunde können die Gäste an einen anderen Tisch wechseln.\n\nAuf dem Anmeldeformular tragen Interessierte zwei Berufsfelder ein, über die sie mehr erfahren möchten. Aus diesen Angaben stellt der Verein die Liste der Gesprächsgäste zusammen. Wenn beispielsweise mehrere Besucher Fragen zur Arbeit in einer Küche haben, sucht das Organisationsteam eine Person, die dort beschäftigt ist und darüber berichten kann.\n\nManchmal entsteht im Gespräch der Wunsch, einen Arbeitsplatz selbst kennenzulernen. Dafür können Besucher anschließend mit ihrem Gesprächspartner einen kurzen Besuch vereinbaren. Zunächst muss jedoch dessen Arbeitgeber zustimmen. Die Einzelheiten werden nach dem Abend direkt miteinander geklärt.\n\nZum Abschluss gibt es Zeit für persönliche Notizen. So können die Gäste festhalten, was sie überrascht hat und welche Fragen sie als Nächstes verfolgen möchten."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "Im ersten Text geht es hauptsächlich darum, wie eine Beratungsredaktion …",
+          "options": [
+            {
+              "id": "A",
+              "text": "neue Mitarbeitende für persönliche Gespräche ausbildet."
+            },
+            {
+              "id": "B",
+              "text": "Leserfragen beantwortet und dabei persönliche Grenzen achtet."
+            },
+            {
+              "id": "C",
+              "text": "aus ihrer Zeitungsseite eine öffentliche Gesprächsrunde macht."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Welche Fragen wählt die Redaktion für die Veröffentlichung aus?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Fragen, die besonders schnell beantwortet werden können."
+            },
+            {
+              "id": "B",
+              "text": "Fragen, zu denen bereits viele Antworten eingegangen sind."
+            },
+            {
+              "id": "C",
+              "text": "Fragen, die auch für andere Menschen wichtig sein können."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Bevor eine persönliche Frage gedruckt wird, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "stimmt die betroffene Person der bearbeiteten Fassung zu."
+            },
+            {
+              "id": "B",
+              "text": "bespricht die betroffene Person sie persönlich im Redaktionsbüro."
+            },
+            {
+              "id": "C",
+              "text": "wählt die betroffene Person einen Termin für die Veröffentlichung."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Im zweiten Text geht es hauptsächlich um …",
+          "options": [
+            {
+              "id": "A",
+              "text": "eine Sammlung von Bewerbungsunterlagen für soziale Berufe."
+            },
+            {
+              "id": "B",
+              "text": "die Vermittlung freier Arbeitsplätze durch einen Verein."
+            },
+            {
+              "id": "C",
+              "text": "Gespräche mit Berufstätigen als Hilfe bei der beruflichen Orientierung."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Warum nennen die Gäste bei ihrer Anmeldung zwei Berufsfelder?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Damit der Verein passende Gesprächspartner einladen kann."
+            },
+            {
+              "id": "B",
+              "text": "Damit der Verein ihre beruflichen Kenntnisse prüfen kann."
+            },
+            {
+              "id": "C",
+              "text": "Damit der Verein ihnen passende Stellenangebote schicken kann."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Wer nach dem Gespräch einen Arbeitsplatz kennenlernen möchte, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "erhält mit der Anmeldung einen festen Besuchstermin."
+            },
+            {
+              "id": "B",
+              "text": "kann einen Besuch vereinbaren, wenn der jeweilige Betrieb zustimmt."
+            },
+            {
+              "id": "C",
+              "text": "nimmt zunächst an einem Vorbereitungskurs des Vereins teil."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_lesen_p3",
+      "skill": "Lesen",
+      "title": "Teil 3: Anzeigen zuordnen (A–J & 0)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Anzeigenübersicht (Anzeigen A–J)",
+        "content": "Anzeige A\nHelfende Hände fürs Kulturwochenende gesucht! Am Freitag ab 18 Uhr stellen wir gemeinsam Tische auf und bauen die Marktstände auf. Erwachsene, die ehrenamtlich mitmachen möchten, sind herzlich willkommen.\nGeld können wir nicht zahlen, aber für ein gemeinsames Abendessen ist gesorgt. Anmeldung beim Kulturverein Brückenplatz.\n\nAnzeige B\nKleine Münzen, lange Geschichten: Unser Bildervortrag führt durch die Welt historischer Zahlungsmittel, darunter Münzen aus dem Osmanischen Reich. Donnerstag, 19 Uhr, Kulturhaus Süd. Eintritt 8 Euro. Bitte beachten Sie: Mitgebrachte Stücke werden weder untersucht noch bewertet. Der Abend vermittelt allgemeines Wissen anhand ausgewählter Abbildungen.\n\nAnzeige C\nPapierwerkstatt Berger: Ihre historische Landkarte hat beim letzten Umzug einen Riss bekommen? Wir erhalten und reparieren alte Arbeiten auf Papier mit geeigneten Materialien und fachlicher Sorgfalt. Auch einzelne Stücke aus Privatbesitz nehmen wir gern an. Vereinbaren Sie einen Termin zur Besichtigung und Kostenschätzung.\n\nAnzeige D\nVon Hafen zu Hafen: Entdecken Sie unsere Ausstellung über historische Handelswege. Jeden Sonntag um 11 Uhr begleitet Sie eine Mitarbeiterin durch die Räume und erklärt Karten, Waren und Reiseausrüstung. Die Führung dauert eine Stunde und ist im Eintritt enthalten. Treffpunkt an der Museumskasse.\n\nAnzeige E\nGeschichte groß zeigen! Unser Medienlager verleiht Vereinen großformatige Nachdrucke von Karten historischer Handelswege. Die Karten lassen sich gut vor einer Gruppe aufhängen. Leihdauer bis zu sieben Tage. Abholung nach Vereinbarung im Lager; die Rückgabe erfolgt dort spätestens am letzten Leihtag bis 17 Uhr.\n\nAnzeige F\nNeu im Leseregal: „Unterwegs in früheren Zeiten“. Dieser Band versammelt Reiseberichte aus vergangenen Jahrhunderten in deutscher Sprache, auch über Reisen durch das Osmanische Reich. Ungewohnte Wörter werden direkt am Seitenrand erläutert. So bleibt Zeit, den Erlebnissen der Reisenden zu folgen. Erhältlich in unserer Buchhandlung.\n\nAnzeige G\nSie planen ein Fest? Standservice Nord liefert Marktstände und Tische für Ihre Veranstaltung. Unser eigenes Team übernimmt Aufstellung und Abbau. Sie buchen die gewünschte Anzahl und erhalten ein Angebot mit sämtlichen Kosten. Besonders geeignet für Vereinsfeste und Kulturmärkte. Frühzeitige Reservierung empfohlen.\n\nAnzeige H\nMuster auf Keramik: Am Samstag von 10 bis 14 Uhr gestalten Erwachsene ihre ersten bemalten Fliesen. Wir zeigen jeden Schritt, vom Entwurf bis zum Auftragen der Farbe. Vorkenntnisse brauchen Sie keine. Material und Brennen sind im Preis enthalten. Gemeinsam mit Freunden oder Geschwistern anmelden!\n\nAnzeige I\nNeue Techniken für erfahrene Fliesenmaler: Dienstags von 17 bis 20 Uhr arbeiten wir an anspruchsvollen Mustern und mehrteiligen Bildern. Der Kurs setzt sichere Kenntnisse im Umgang mit Keramikfarben voraus.\nBringen Sie bitte zwei eigene Arbeiten zum ersten Termin mit. Sechs Abende in der Werkstatt Farbenhof.\n\nAnzeige J\nGeschichte auf dem Bildschirm: Unsere aufgezeichneten Vorträge auf Deutsch beschäftigen sich mit Wohnen, Essen und Arbeiten im Osmanischen Reich. Nach der Buchung können Sie die Videos zu Hause jederzeit ansehen. Sie bestimmen selbst, wann Sie beginnen, eine Pause machen oder eine Stelle erneut anschauen."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_L_Q13",
+          "order": 13,
+          "part": 3,
+          "prompt": "Situation 13: Selma möchte mit ihrer erwachsenen Schwester selbst Fliesen bemalen. Beide haben nur am Samstag Zeit und noch keine Erfahrung.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q14",
+          "order": 14,
+          "part": 3,
+          "prompt": "Situation 14: Robert besitzt eine alte Landkarte mit einem Riss. Er sucht jemanden, der sie fachgerecht repariert.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q15",
+          "order": 15,
+          "part": 3,
+          "prompt": "Situation 15: Aylin möchte alte Reiseberichte auf Deutsch lesen. Sie sucht ein Buch mit Erklärungen zu schwierigen Wörtern.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Situation 16: David will bei einem Kulturfest helfen. Er kann am Freitagabend unbezahlt beim Aufbau mitarbeiten.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Situation 17: Mina kann wegen ihrer wechselnden Arbeitszeiten keine festen Termine einhalten. Sie möchte zu Hause Vorträge über den Alltag im Osmanischen Reich ansehen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Situation 18: Georg organisiert für seinen Verein einen Abend über historische Handelswege. Dafür möchte er große Karten ausleihen und anschließend zurückgeben.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Situation 19: Luisa hat eine alte osmanische Münze geerbt. Sie möchte gegen Bezahlung feststellen lassen, ob sie echt ist.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_lesen_p4",
+      "skill": "Lesen",
+      "title": "Teil 4: Leserbriefe (Ja/Nein Meinungen)",
+      "durationMinutes": 15,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Leserbriefe (Aufgaben 20–26)",
+        "content": "In einer Zeitschrift lesen Sie Kommentare zu dem Vorschlag, die Haltung von Affen in privaten Haushalten zu verbieten. Das vorgeschlagene Verbot betrifft keine Zoos oder anerkannten Auffangstationen. Lesen Sie die Texte 20 bis 26. Wählen Sie bei jeder Person: Ist sie für dieses Verbot? Ja bedeutet: für das Verbot. Nein bedeutet: gegen das Verbot. Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?\n\nLeserbrief 20 (Annika):\nWer jahrelang mit einem Tier gelebt hat, wird es nicht einfach weggeben wollen. Das verstehe ich gut, und ich würde den Besitzern auch nicht unterstellen, dass ihnen ihre Affen gleichgültig sind. Trotzdem reicht eine enge Beziehung für mich als Begründung nicht aus. Solche Tiere gehören in Einrichtungen, die auf sie vorbereitet sind. Deshalb sollte die Haltung in Privatwohnungen künftig ausgeschlossen sein.\n\nLeserbrief 21 (Cem):\nMich stört, dass offenbar schon der Wunsch nach einem ungewöhnlichen Haustier genügen soll. Wer einen Affen halten möchte, sollte vorher zeigen müssen, wie das Tier untergebracht und versorgt wird. Dazu gehören für mich regelmäßige Besuche durch Fachleute. Wenn dabei alles in Ordnung ist, sollte die Erlaubnis bestehen bleiben. Ein Haushalt kann schließlich sehr unterschiedliche Möglichkeiten haben. Diese Unterschiede würde ein allgemeines Verbot gar nicht berücksichtigen.\n\nLeserbrief 22 (Ruth):\nEin Affe in meiner Wohnung? Bei diesem Gedanken fühle ich mich überhaupt nicht wohl. Ich hätte ständig Sorge, etwas falsch zu machen, und möchte diese Verantwortung keinesfalls übernehmen. Aber meine eigenen Grenzen sind kein ausreichender Grund, es allen anderen zu untersagen. Ich würde lieber jeden Haushalt einzeln prüfen lassen. Wo die Bedingungen stimmen, sehe ich keinen Anlass, die Haltung grundsätzlich zu beenden.\n\nLeserbrief 23 (Felix):\nBeim ersten Lesen dachte ich an die Auffangstation, die ich gelegentlich mit einer Spende unterstütze. Müsste sie dann ihre Türen schließen? Das hätte ich sehr problematisch gefunden. Inzwischen habe ich mir den Vorschlag genauer angesehen: Anerkannte Stationen dürfen weiterarbeiten. Damit fällt mein Einwand weg. Dass Affen künftig nicht mehr in privaten Haushalten gehalten werden dürfen, halte ich unter diesen Bedingungen für einen richtigen Schritt.\n\nLeserbrief 24 (Marta):\nWir sollten die vorgeschlagene Regel beschließen. Gleichzeitig muss geklärt werden, was mit den Affen passiert, die bereits bei Privatleuten leben. Von heute auf morgen lassen sich passende Plätze wohl kaum organisieren. Ich wünsche mir deshalb eine ausreichende Übergangszeit und eine feste Zusammenarbeit mit spezialisierten Einrichtungen. Das gehört zu einer vernünftigen Umsetzung. Am Ziel, die private Haltung zu beenden, möchte ich deshalb keineswegs etwas ändern.\n\nLeserbrief 25 (Jonas):\nWenn jemand seinen Affen auf einer Bühne vorführt oder für Werbefotos zur Verfügung stellt, sollte man das untersagen. Ein Tier ist für mich kein Mittel, um Publikum anzulocken. Die Frage, wo es lebt, ist aber eine andere. Kann ein privater Besitzer eine angemessene Versorgung nachweisen, sollte er das Tier weiterhin halten dürfen. Die vorgeschlagene Regel geht mir deshalb weiter, als es nötig wäre.\n\nLeserbrief 26 (Leonie):\nFrüher dachte ich: Wer seinen Affen liebt und sich jeden Tag viel Zeit nimmt, darf ihn auch zu Hause behalten. Bei einem Besuch in einer Auffangstation sprach ich länger mit einer Mitarbeiterin über den Tagesablauf dort. Danach merkte ich, wie einseitig ich die Sache betrachtet hatte. Heute würde ich anders abstimmen als damals. Für mich ist es richtig, die Haltung in privaten Haushalten künftig zu verbieten."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_L_Q20",
+          "order": 20,
+          "part": 4,
+          "prompt": "Annika: Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q21",
+          "order": 21,
+          "part": 4,
+          "prompt": "Cem: Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q22",
+          "order": 22,
+          "part": 4,
+          "prompt": "Ruth: Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Felix: Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Marta: Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Jonas: Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Leonie: Ist die Person für ein Verbot, Affen in privaten Haushalten zu halten?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_lesen_p5",
+      "skill": "Lesen",
+      "title": "Teil 5: Haus der Stadtgeschichte: Hausordnung",
+      "durationMinutes": 10,
+      "totalQuestions": 4,
+      "stimulus": {
+        "type": "text",
+        "title": "Haus der Stadtgeschichte: Hausordnung",
+        "content": "Haus der Stadtgeschichte: Hausordnung\n\nWillkommen\n\nUnser Haus zeigt Ausstellungen und lädt zu Gesprächen mit Menschen ein, die vom Alltag im geteilten Deutschland berichten. Bitte nehmen Sie Rücksicht auf andere Gäste und befolgen Sie die Hinweise unserer Mitarbeitenden. Die ausgeschilderten Rettungswege sind stets freizuhalten.\n\nReservierte Plätze\n\nFür Gesprächsveranstaltungen können Sie kostenlos einen Sitzplatz reservieren. Melden Sie sich spätestens zehn Minuten vor Veranstaltungsbeginn an der Rezeption. Ohne diese persönliche Anmeldung verfällt Ihre Reservierung, und wir vergeben den Platz an wartende Gäste. Die Bestätigung auf Ihrem Handy allein hält den Platz nicht frei. Eine verspätete Ankunft bedeutet daher, dass ein Sitzplatz nicht mehr garantiert ist.\n\nZugang ohne Treppen\n\nWer keine Treppen benutzen kann, verwendet bitte den Seiteneingang im Hof. Dort führt ein ebener Weg direkt zum Gesprächsraum. Der Eingang ist während der Öffnungszeiten frei zugänglich; eine vorherige Anmeldung ist nicht erforderlich. Der Haupteingang hat mehrere Stufen. Unsere Mitarbeitenden helfen Ihnen gern bei der Orientierung im Haus.\n\nEigene Erinnerungsstücke\n\nZu angekündigten Gesprächsrunden können Sie passende Fotografien aus Ihrer Familie mitbringen. Diese bleiben während Ihres Besuchs in Ihrer Obhut. Warten Sie mit dem Zeigen, bis die Gesprächsleitung Sie dazu auffordert. So können alle Beiträge nacheinander besprochen werden. Bitte berühren Sie fremde Fotos nur mit Zustimmung ihrer Besitzer.\n\nBesuche mit Gruppen\n\nGruppen ab acht Personen müssen ihren Ausstellungsbesuch mindestens drei Werktage vorher telefonisch anmelden. Diese Anmeldung ist auch dann erforderlich, wenn Sie die Ausstellung selbstständig und ohne Führung ansehen möchten. Für kleinere Gruppen ist sie freiwillig. Nennen Sie bei der Anmeldung bitte die Personenzahl und die gewünschte Ankunftszeit, damit wir den Besuch vorbereiten können.\n\nZum Abschluss\n\nPrüfen Sie vor dem Gehen, ob Sie alle persönlichen Gegenstände eingepackt haben. Gefundene Sachen können an der Rezeption abgegeben werden."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_L_Q27",
+          "order": 27,
+          "part": 5,
+          "prompt": "Wer einen Sitzplatz reserviert hat, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "muss spätestens zehn Minuten vor Beginn persönlich seine Ankunft melden."
+            },
+            {
+              "id": "B",
+              "text": "muss seinen Besuch mindestens drei Werktage vorher telefonisch anmelden."
+            },
+            {
+              "id": "C",
+              "text": "muss spätestens zehn Minuten vor Beginn am Seiteneingang im Hof warten."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q28",
+          "order": 28,
+          "part": 5,
+          "prompt": "Gäste, die einen Zugang ohne Treppen brauchen, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "müssen ihren Besuch vorher telefonisch anmelden."
+            },
+            {
+              "id": "B",
+              "text": "sollen den Haupteingang benutzen."
+            },
+            {
+              "id": "C",
+              "text": "können während der Öffnungszeiten direkt den Seiteneingang nutzen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q29",
+          "order": 29,
+          "part": 5,
+          "prompt": "Für eigene Familienfotos, die Gäste zum Gespräch mitbringen, gilt:",
+          "options": [
+            {
+              "id": "A",
+              "text": "Die Fotos bleiben in der Obhut der Gesprächsleitung und werden von ihr nacheinander allen Gästen gezeigt."
+            },
+            {
+              "id": "B",
+              "text": "Die Fotos bleiben in der Obhut der Gäste und dürfen erst nach Aufforderung durch die Gesprächsleitung gezeigt werden."
+            },
+            {
+              "id": "C",
+              "text": "Die Fotos werden vor Beginn an der Rezeption abgegeben und erst mit Zustimmung der Gesprächsleitung angesehen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_L_Q30",
+          "order": 30,
+          "part": 5,
+          "prompt": "Eine Gruppe von zehn Personen möchte die Ausstellung ohne Führung besuchen. Sie muss …",
+          "options": [
+            {
+              "id": "A",
+              "text": "den Besuch mindestens drei Werktage vorher telefonisch anmelden."
+            },
+            {
+              "id": "B",
+              "text": "sich spätestens zehn Minuten vor Beginn persönlich an der Rezeption anmelden."
+            },
+            {
+              "id": "C",
+              "text": "den Besuch nicht telefonisch anmelden, weil das für Gruppen ihrer Größe freiwillig ist. eTER rtig? Scan this code: your score and every mistake, in seconds."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Teil 1: Fünf kurze Texte (Richtig/Falsch & A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Fünf kurze Alltagstexte",
+        "content": "Teil 1: Fünf kurze Texte (Richtig/Falsch & A/B/C)",
+        "audioUrl": "/audio/goethe-b1/test-09-teil-1.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 23,
+            "textDe": "Teil eins. Sie hören fünf kurze Texte. Sie hören jeden Text zweimal. Lösen Sie zu jedem Text zwei Aufgaben. Wählen Sie bei den Aussagen richtig oder falsch und bei den Fragen A, B oder C. Lesen Sie zuerst das Beispiel. Dazu haben Sie 10 Sekunden Zeit. Beispiel.",
+            "textVi": "Phần một. Nghe năm đoạn văn ngắn hai lần và giải hai câu hỏi cho mỗi đoạn. Đọc trước ví dụ trong 10 giây."
+          },
+          {
+            "speakerId": "SPR_1",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 38,
+            "timestampEnd": 89,
+            "textDe": "Hallo Anne, hier ist Luis. Danke, dass du morgen meine Pflanzen gießt. Den Wohnungsschlüssel habe ich bei meinem Nachbarn Herrn Berg abgegeben. Er wohnt direkt gegenüber und ist den ganzen Nachmittag da. Auf dem Küchentisch steht eine kleine Gießkanne. Die Pflanzen am Fenster brauchen etwas mehr Wasser als die im Flur. Ich bin am Montag wieder zurück und hole den Schlüssel dann selbst bei dir ab. Hab ein schönes Wochenende. Hallo Anne, hier ist Luis. Danke, dass du morgen meine Pflanzen gießt. Den Wohnungsschlüssel habe ich bei meinem Nachbarn Herrn Berg abgegeben. Er wohnt direkt gegenüber und ist den ganzen Nachmittag da. Auf dem Küchentisch steht eine kleine Gießkanne. Die Pflanzen am Fenster brauchen etwas mehr Wasser als die im Flur. Ich bin am Montag wieder zurück und hole den Schlüssel dann selbst bei dir ab. Hab ein schönes Wochenende.",
+            "textVi": "Chào Anne, mình là Luis. Cảm ơn cậu ngày mai sang tưới cây giúp mình nhé. Chìa khóa căn hộ mình gửi bác hàng xóm Berg đối diện nhà, bác ấy ở nhà cả buổi chiều. Trên bàn bếp có sẵn bình tưới nhỏ; mấy chậu cạnh cửa sổ cần nhiều nước hơn ngoài hành lang một chút. Thứ Hai mình về và tự ghé lấy lại chìa khóa. Chúc cuối tuần vui vẻ. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "SPR_2",
+            "roleSide": "Left",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 90,
+            "timestampEnd": 411,
+            "textDe": "Aufgaben eins, zwei. Guten Tag, Herr Weber. Hier ist Simone Keller von der Berufsberatung. Sie interessieren sich für technische Berufe. Deshalb möchte ich Sie auf unseren Nachmittag zur Windenergie aufmerksam machen. Dort können Sie herausfinden, welche Aufgaben zu Ihnen passen könnten. Beschäftigte eines Betriebs erzählen in kleinen Gesprächsrunden, wie ein normaler Arbeitstag bei Ihnen aussieht und beantworten ihre Fragen. Wir beginnen am Donnerstag um 14 Uhr in unserem Beratungszentrum. Den genauen Ablauf schicke ich Ihnen gleich per Mail. Guten Tag, Herr Weber. Hier ist Simone Keller von der Berufsberatung. Sie interessieren sich für technische Berufe. Deshalb möchte ich Sie auf unseren Nachmittag zur Windenergie aufmerksam machen. Dort können Sie herausfinden, welche Aufgaben zu Ihnen passen könnten. Beschäftigte eines Betriebs erzählen in kleinen Gesprächsrunden, wie ein normaler Arbeitstag bei Ihnen aussieht und beantworten ihre Fragen. Wir beginnen am Donnerstag um 14 Uhr in unseren Beratungszentrum. Den genauen Ablauf schicke ich Ihnen gleich per Mail. Aufgaben drei, vier. Und nun die Wetteraussichten für morgen, Mittwoch. Im Süden beginnt der Tag mit Nebel, der sich im Laufe des Vormittags auflöst. Schon gegen 11 Uhr kommt dort die Sonne heraus und bleibt bis zum Abend. Die Temperaturen erreichen 18 Grad. Im Nordwesten dagegen ziehen am Nachmittag Regenwolken auf. Dort wird es mit 13 Grad deutlich kühler. In der Mitte bleibt der Himmel wechselnd bewölkt. In der folgenden Nacht lässt der Wind überall nach. Und nun die Wetteraussichten für morgen, Mittwoch. Im Süden beginnt der Tag mit Nebel, der sich im Laufe des Vormittags auflöst. Schon gegen 11 Uhr kommt dort die Sonne heraus und bleibt bis zum Abend. Die Temperaturen erreichen 18 Grad. Im Nordwesten dagegen ziehen am Nachmittag Regenwolken auf. Dort wird es mit 13 Grad deutlich kühler. In der Mitte bleibt der Himmel wechselnd bewölkt. In der folgenden Nacht lässt der Wind überall nach. Aufgaben fünf, sechs. Guten Tag, Frau Brandt. Hier ist das Büro der Kochschule Löffel. Für Ihren gebuchten Kurs am Freitag haben wir noch einen kleinen Hinweis. Packen Sie bitte zwei gut schließende Dosen ein. Wir bereiten mehrere Gerichte zu und einen Teil davon bekommen Sie am Ende mit nach Hause. Eine Schürze liegt hier für Sie bereit. Der Unterricht beginnt um 18 Uhr. Kommen Sie gern etwas früher, dann können Sie in Ruhe Ihren Arbeitsplatz kennenlernen. Bis Freitag. Guten Tag, Frau Brandt. Hier ist das Büro der Kochschule Löffel. Für Ihren gebuchten Kurs am Freitag haben wir noch einen kleinen Hinweis. Packen Sie bitte zwei gut schließende Dosen ein. Wir bereiten mehrere Gerichte zu und einen Teil davon bekommen Sie am Ende mit nach Hause. Eine Schürze liegt hier für Sie bereit. Der Unterricht beginnt um 18 Uhr. Kommen Sie gern etwas früher, dann können Sie in Ruhe Ihren Arbeitsplatz kennenlernen. Bis Freitag. Aufgaben sieben, acht. Hallo, hier ist Nora. Ich freue mich auf Sonntag. Allerdings muss ich gegen 16:30 Uhr wieder los, weil ich abends meine Schwester vom Flughafen abhole. Mit unserem gemeinsamen Abendessen wird es also leider nichts. Zum Kaffee komme ich wie besprochen. Das Album mit den Bildern von unserer ersten gemeinsamen Wohnung liegt schon in meiner Tasche. Beim Einpacken musste ich über unsere damaligen Möbel lachen. Das schauen wir uns am Sonntag zusammen an. Bis dann. Hallo, hier ist Nora. Ich freue mich auf Sonntag. Allerdings muss ich gegen 16:30 Uhr wieder los, weil ich abends meine Schwester vom Flughafen abhole. Mit unserem gemeinsamen Abendessen wird es also leider nichts. Zum Kaffee komme ich wie besprochen. Das Album mit den Bildern von unserer ersten gemeinsamen Wohnung liegt schon in meiner Tasche. Beim Einpacken musste ich über unsere damaligen Möbel lachen. Das schauen wir uns am Sonntag zusammen an. Bis dann.",
+            "textVi": "Câu 1, 2 (Simone Keller bên hướng nghiệp giới thiệu cho ông Weber buổi chiều tìm hiểu nghề kỹ thuật năng lượng gió vào thứ Năm lúc 14h với các tọa đàm nhóm nhỏ cùng nhân viên trong ngành) · Câu 3, 4 (Dự báo thời tiết thứ Tư: miền Nam sáng sương mù nhưng đến 11 giờ trời hửng nắng suốt tới tối đạt 18 độ, còn Tây Bắc chiều có mưa 13 độ) · Câu 5, 6 (Trường dạy nấu ăn Löffel dặn chị Brandt tham dự khóa thứ Sáu nhớ mang theo hai hộp đựng đậy kín để mang bớt món nấu dư về nhà) · Câu 7, 8 (Nora nhắn Chủ nhật tới uống cà phê bình thường kèm mang album ảnh căn hộ chung đầu tiên, nhưng 16:30 phải về đón em gái ở sân bay nên không ở lại ăn tối). (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 411,
+            "timestampEnd": 414,
+            "textDe": "Aufgaben neun, zehn.",
+            "textVi": "Câu hỏi 9 và 10."
+          },
+          {
+            "speakerId": "SPR_3",
+            "roleSide": "Left",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 429,
+            "timestampEnd": 485,
+            "textDe": "Liebe Zuschauerinnen und Zuschauer, in wenigen Minuten beginnt die Spielpause. Getränke erhalten Sie im Foyer, die Toiletten finden Sie hinter Block C. Wenn Sie während der Pause nach draußen gehen möchten, lassen Sie sich bitte beim Ausgang einen Stempel auf die Hand geben. Zeigen Sie diesen beim Zurückkommen vor, damit Sie in dieser Pause wieder in die Halle gelangen. Unser Team steht an beiden Türen bereit. Bitte halten Sie die Treppen frei. Vielen Dank. Liebe Zuschauerinnen und Zuschauer, in wenigen Minuten beginnt die Spielpause. Getränke erhalten Sie im Foyer, die Toiletten finden Sie hinter Block C. Wenn Sie während der Pause nach draußen gehen möchten, lassen Sie sich bitte beim Ausgang einen Stempel auf die Hand geben. Zeigen Sie diesen beim Zurückkommen vor, damit Sie in dieser Pause wieder in die Halle gelangen. Unser Team steht an beiden Türen bereit. Bitte halten Sie die Treppen frei. Vielen Dank.",
+            "textVi": "Kính chào quý khán giả, chỉ ít phút nữa sẽ đến giờ nghỉ giải lao giữa trận. Đồ uống có ở tiền sảnh, nhà vệ sinh ở sau khu C. Nếu muốn ra ngoài hít thở trong giờ nghỉ, quý vị vui lòng nhận con dấu đóng lên tay ngay tại lối ra và xuất trình lại dấu đó khi quay vào trong thời gian nghỉ để được trở lại nhà thi đấu. Đội ngũ nhân viên túc trực ở cả hai cửa; xin giữ thông thoáng lối cầu thang. Xin cảm ơn. (Lặp lại lần 2)"
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 2,
+          "audioIncludesRepetition": true,
+          "playbackNote": "File âm thanh đề chuẩn Goethe B1 cho Teil này đã ghép sẵn 2 lần đọc liên tiếp."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Text 1: Die Nachricht informiert Herrn Weber über ein Angebot zur Berufsorientierung.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đúng: cô nhân viên hướng nghiệp giới thiệu buổi chiều tìm hiểu ngành nghề trong lĩnh vực điện gió."
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Text 1: Was gehört zum Programm?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ein Gespräch mit Beschäftigten."
+            },
+            {
+              "id": "B",
+              "text": "Ein Besuch bei einer Hochschule."
+            },
+            {
+              "id": "C",
+              "text": "Eine Fahrt zu einer Windanlage."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "publicExplanation": "Đúng A: chương trình gồm các nhóm trò chuyện nhỏ với người đang làm việc trực tiếp tại doanh nghiệp."
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Text 2: Sie hören einen Wetterbericht.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Text 2: Wie wird das Wetter morgen Mittag im Süden?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Es regnet längere Zeit."
+            },
+            {
+              "id": "B",
+              "text": "Es bleibt neblig."
+            },
+            {
+              "id": "C",
+              "text": "Die Sonne kommt heraus."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Text 3: Die Nachricht richtet sich an die Kursleitung des Kochkurses.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Text 3: Warum sollen die Teilnehmenden eigene Behälter mitbringen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Damit sie Zutaten für den Kurs transportieren können."
+            },
+            {
+              "id": "B",
+              "text": "Damit sie fertiges Essen mitnehmen können."
+            },
+            {
+              "id": "C",
+              "text": "Damit sie Lebensmittel im Kursraum aufbewahren können."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Text 4: Nora bleibt am Sonntag zum Abendessen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Text 4: Was bringt Nora mit?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Einen Kuchen."
+            },
+            {
+              "id": "B",
+              "text": "Ein Gesellschaftsspiel."
+            },
+            {
+              "id": "C",
+              "text": "Ein Fotoalbum."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Text 5: Sie hören Werbung für ein neues Sportangebot.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Text 5: Wer darf während der Spielpause in die Halle zurück?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Personen mit einem Stempel auf der Hand."
+            },
+            {
+              "id": "B",
+              "text": "Personen mit einer Platznummer auf dem Ticket."
+            },
+            {
+              "id": "C",
+              "text": "Personen mit einer Mitgliedskarte des Vereins."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Informationstext / Führung",
+      "durationMinutes": 8,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Sie nehmen an einer Führung durch eine Vogelstation teil. Sie hören den Text einmal. Lesen Sie jetzt die Aufgaben 11 bis",
+        "content": "Sie nehmen an einer Führung durch eine Vogelstation teil. Sie hören den Text einmal. Lesen Sie jetzt die Aufgaben 11 bis 15. Dazu haben Sie 60 Sekunden Zeit. Wählen Sie bei jeder Aufgabe a, b oder c.",
+        "audioUrl": "/audio/goethe-b1/test-09-teil-2.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 23,
+            "textDe": "Teil zwei. Sie nehmen an einer Führung durch eine Vogelstation teil. Sie hören den Text einmal. Lesen Sie jetzt die Aufgaben 11 bis 15. Dazu haben Sie 60 Sekunden Zeit. Wählen Sie bei jeder Aufgabe A, B oder C. Aufgaben 11, 12, 13, 14, 15.",
+            "textVi": "Phần hai. Tham quan trạm quan sát chim. Chọn A, B hoặc C cho câu 11 đến 15. Đọc trước 60 giây. Các câu hỏi 11 đến 15."
+          },
+          {
+            "speakerId": "GUIDE",
+            "roleSide": "Right",
+            "speakerName": "Eva (Führung)",
+            "timestampStart": 84,
+            "timestampEnd": 219,
+            "textDe": "Guten Morgen und willkommen in unserer Vogelstation am Schilfsee. Ich bin Eva und begleite Sie heute. Wir werden ungefähr eine Stunde zusammen unterwegs sein. Wer kein eigenes Fernglas dabei hat, kann sich hier eines ausleihen. Sagen Sie meiner Kollegin bitte Ihren Namen, damit Sie ihn neben der Gerätenummer in Ihre Liste schreiben kann. Dafür müssen Sie nichts bezahlen. Ihren Ausweis können Sie eingesteckt lassen. Stellen Sie zunächst den Abstand zwischen den beiden Gläsern ein. Meine Kollegin hilft Ihnen gern, wenn Sie damit noch keine Erfahrung haben. Bevor wir weitergehen, noch etwas zu dem Gerät neben der Eingangstür. Das ist unsere kleine Drohne. Unser Gebäude steht direkt unter hohen Bäumen. Nach einem Sturm können Äste auf das Dach gefallen sein und von unten sehen wir mögliche Schäden schlecht. Mit der Kamera der Drohne können wir prüfen, ob oben alles in Ordnung ist. So haben wir letzte Woche eine kaputte Dachplatte entdeckt. Die Bilder sehen wir uns anschließend am Computer an und geben Sie bei Bedarf an den Dachdecker weiter. Jetzt gehen wir in den Raum mit unserer Federsammlung. Auf dem großen Arbeitstisch liegen einzelne Federn für Sie bereit. Nehmen Sie diese ruhig in die Hand und vergleichen Sie, wie leicht oder fest sie sind. Legen Sie sie anschließend wieder auf die Unterlage, damit auch die nächste Gruppe damit arbeiten kann. Die besonders empfindlichen Stücke bewahren wir hinter Glas auf. Dort können Sie auch ganz kleine Federn sehen, die sonst leicht verloren gehen würden. Danach führt unser Weg zur Beobachtungshütte am Wasser. Dort haben wir vor kurzem etwas umgebaut. Einige Fenster beginnen jetzt weiter unten. Früher musste man zum Beobachten meistens aufstehen. Nun haben Sie auch von den Stühlen aus einen guten Blick aufs Ufer. Wir setzen uns dort für eine Weile hin und schauen, welche Vögel heute zu sehen sind. Bitte sprechen Sie dabei leise, denn Geräusche hört man am Wasser ziemlich weit. In der Hütte endet dann meine Führung. Wenn Sie anschließend noch weiter beobachten möchten, können Sie einfach dort bleiben. Sie brauchen sich dafür nirgendwo einzutragen. Erst wenn unsere Station um 17 Uhr schließt, müssen auch die letzten Besucher die Hütte verlassen. Geben Sie geliehene Ferngläser vor dem Heimgehen wieder hier am Eingang ab. So, haben alle ein Gerät? Dann kommen Sie bitte mit.",
+            "textVi": "Chào buổi sáng và chào mừng quý vị tới trạm quan sát chim tại hồ Schilfsee. Tôi là Eva và hôm nay tôi dẫn đoàn đi khoảng một tiếng. Ai chưa có ống nhòm riêng có thể mượn tại đây miễn phí – chỉ cần báo tên cho đồng nghiệp tôi ghi cạnh mã số thiết bị vào danh sách, quý vị không cần đặt lại giấy tờ tùy thân. Hãy chỉnh khoảng cách hai mắt kính trước; nếu chưa quen đồng nghiệp tôi sẽ phụ giúp. Trước khi đi, xin giới thiệu chiếc máy bay không người lái (drone) nhỏ cạnh cửa: trạm nằm dưới các tán cây cao nên sau bão có thể gãy cành rơi lên mái mà đứng dưới đất khó phát hiện hư hỏng; nhờ camera của drone chúng tôi kiểm tra mái nhà dễ dàng (tuần trước mới phát hiện một tấm lợp bị nứt hỏng nhờ cách này để gửi ảnh cho thợ mái). Giờ mời cả đoàn sang phòng trưng bày bộ sưu tập lông chim: trên bàn lớn có đặt sẵn từng chiếc lông để mọi người cầm lên so sánh độ nặng nhẹ và độ cứng (xem xong đặt lại khay cho đoàn sau), còn những chiếc lông nhỏ mỏng manh dễ thất lạc thì bày trong tủ kính. Sau đó ta đi ra chòi quan sát ven mặt nước mới được cải tạo lại phần cửa sổ hạ thấp hơn trước để mọi người ngồi ngay trên ghế cũng nhìn rõ bờ hồ chứ không phải đứng lên nữa; vào chòi xin nói khẽ vì âm thanh vang rất xa trên mặt nước. Chuyến tham quan kết thúc ngay tại chòi; ai muốn ngắm chim thêm cứ thoải mái nán lại không cần đăng ký với ai cho đến khi trạm đóng cửa lúc 17 giờ, chỉ nhớ trả lại ống nhòm mượn tại cửa ra vào trước khi về. Nào, đủ máy hết rồi thì mời quý vị cùng đi."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 1,
+          "audioIncludesRepetition": false,
+          "playbackNote": "Theo quy chuẩn đề thi Goethe-Zertifikat B1, Teil này chỉ được nghe 1 lần duy nhất."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Wer bei der Führung ein Fernglas ausleiht, muss …",
+          "options": [
+            {
+              "id": "A",
+              "text": "eine Gebühr bezahlen."
+            },
+            {
+              "id": "B",
+              "text": "den Namen aufschreiben lassen."
+            },
+            {
+              "id": "C",
+              "text": "einen Ausweis abgeben."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Wofür nutzt die Station ihre Drohne?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sie kontrolliert damit Schäden am Dach."
+            },
+            {
+              "id": "B",
+              "text": "Sie filmt damit die Besuchergruppen."
+            },
+            {
+              "id": "C",
+              "text": "Sie sucht damit Vögel auf den Wiesen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q13",
+          "order": 13,
+          "part": 2,
+          "prompt": "Im Raum mit den Federn dürfen die Teilnehmenden …",
+          "options": [
+            {
+              "id": "A",
+              "text": "eine Feder als Erinnerung mitnehmen."
+            },
+            {
+              "id": "B",
+              "text": "ausgewählte Federn aus den Schränken nehmen."
+            },
+            {
+              "id": "C",
+              "text": "die Federn auf dem Arbeitstisch anfassen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q14",
+          "order": 14,
+          "part": 2,
+          "prompt": "Was wurde an der Beobachtungshütte verändert?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sie steht jetzt näher am Wasser."
+            },
+            {
+              "id": "B",
+              "text": "Einige Fenster sind jetzt niedriger."
+            },
+            {
+              "id": "C",
+              "text": "Sie bietet jetzt mehr Sitzplätze."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q15",
+          "order": 15,
+          "part": 2,
+          "prompt": "Wer nach der Führung länger in der Beobachtungshütte bleiben möchte, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "muss sich einer zweiten Führung anschließen."
+            },
+            {
+              "id": "B",
+              "text": "muss vorher am Empfang Bescheid sagen."
+            },
+            {
+              "id": "C",
+              "text": "kann dort bis zur Schließung bleiben."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_hoeren_p3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Alltagsgespräch zweier Personen (Richtig/Falsch)",
+      "durationMinutes": 8,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Sie sitzen im Hof einer Musikschule und hören ein Gespräch zwischen Klara und Ben über Klaras Gitarrenunterricht",
+        "content": "Sie sitzen im Hof einer Musikschule und hören ein Gespräch zwischen Klara und Ben über Klaras Gitarrenunterricht. Sie hören das Gespräch einmal. Lesen Sie jetzt die Aufgaben 16 bis 22. Dazu haben Sie 60 Sekunden Zeit. Entscheiden Sie bei jeder Aufgabe: Richtig oder Falsch?",
+        "audioUrl": "/audio/goethe-b1/test-09-teil-3.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 23,
+            "textDe": "Teil drei. Sie sitzen im Hof einer Musikschule und hören ein Gespräch zwischen Clara und Ben über Claras Gitarrenunterricht. Sie hören das Gespräch einmal. Lesen Sie jetzt die Aufgaben 16 bis 22. Dazu haben Sie 60 Sekunden Zeit. Entscheiden Sie bei jeder Aufgabe richtig oder falsch.",
+            "textVi": "Phần ba. Nghe cuộc trò chuyện ở sân trường nhạc giữa Klara và Ben về lớp học đàn guitar. Chọn đúng hay sai cho câu 16 đến 22. Đọc trước 60 giây."
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 24,
+            "timestampEnd": 32,
+            "textDe": "Aufgaben 16, 17, 18, 19, 20, 21, 22.",
+            "textVi": "Câu hỏi 16, 17, 18, 19, 20, 21, 22."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Klara",
+            "timestampStart": 93,
+            "timestampEnd": 99,
+            "textDe": "Hallo Clara, sitzt du schon lange hier? Ich habe dich durch das Tor gesehen. Kommst du gerade vom Gitarrenunterricht?",
+            "textVi": "Chào Klara, cậu ngồi đây lâu chưa? Tớ nhìn qua cổng thấy cậu ngay. Cậu vừa học xong giờ đàn guitar à?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Ben",
+            "timestampStart": 100,
+            "timestampEnd": 113,
+            "textDe": "Ja, ich genieße noch ein bisschen die Sonne. Bei uns hat sich einiges geändert. Herr Winter gibt seine wöchentlichen Stunden ab. Er möchte mehr Zeit für sich haben. Ein paar Wochenend-Workshops wird er aber weiterhin hier leiten.",
+            "textVi": "Ừ, tớ nán lại sưởi nắng chút. Bên lớp tớ vừa có vài thay đổi: thầy Winter dừng dạy các buổi cố định hàng tuần vì muốn dành thêm thời gian cho bản thân. Tuy vậy thầy vẫn giữ lại phụ trách vài workshop cuối tuần tại trường."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Klara",
+            "timestampStart": 113,
+            "timestampEnd": 119,
+            "textDe": "Ach, bei ihm hattest du doch schon ziemlich lange Unterricht. Hat er euch das in der letzten Stunde erzählt?",
+            "textVi": "À, cậu học với thầy lâu lắm rồi nhỉ. Thầy mới báo cho tụi cậu ngay trong buổi học cuối hôm đó à?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Ben",
+            "timestampStart": 120,
+            "timestampEnd": 132,
+            "textDe": "Da wussten wir es schon. Seine Mail kam am Dienstag und am Donnerstag war meine letzte Stunde bei ihm. So konnte ich mir vorher überlegen, was ich ihn noch fragen wollte. Wir haben auch besprochen, woran ich weiterarbeiten sollte.",
+            "textVi": "Trước đó tụi tớ đã biết rồi. Email của thầy gửi từ thứ Ba, còn thứ Năm mới là buổi học cuối cùng với thầy, nên tớ kịp nghĩ sẵn mấy thắc mắc định hỏi và thầy trò cũng thống nhất phần cần luyện tiếp."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Klara",
+            "timestampStart": 132,
+            "timestampEnd": 136,
+            "textDe": "Und wie geht es jetzt weiter? Hast du schon jemanden gefunden?",
+            "textVi": "Thế sắp tới tính sao? Cậu tìm được giáo viên mới chưa?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Ben",
+            "timestampStart": 136,
+            "timestampEnd": 156,
+            "textDe": "Ich war heute zur Probestunde bei Frau Sommer. Am Anfang waren meine Hände ganz kalt vor Aufregung, aber nach ein paar Minuten habe ich das vergessen. Ich konnte bei jeder Kleinigkeit nachfragen. Wir haben sogar eine schwierige Stelle ausprobiert, vor der ich mich sonst drücke. Als es endlich klappte, musste ich lachen. Die Stunde war viel zu schnell vorbei.",
+            "textVi": "Hôm nay tớ vừa đi học thử một buổi với cô Sommer. Lúc mới vào tay tớ lạnh cóng vì hồi hộp, nhưng chỉ vài phút sau là quên sạch. Chỗ nhỏ nào chưa rõ tớ đều hỏi ngay được, thậm chí tụi tớ còn tập qua một đoạn khó mà trước giờ tớ toàn né; đến lúc đánh trơn tru được tớ bật cười sung sướng luôn. Buổi học trôi nhanh đến mức tiếc ngơ ngẩn."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Klara",
+            "timestampStart": 157,
+            "timestampEnd": 173,
+            "textDe": "So jemanden könnte ich auch gebrauchen. Ich suche mir bisher Videos im Internet und versuche dann allein alles nachzuspielen. Manchmal komme ich damit weiter, manchmal überhaupt nicht. Deshalb überlege ich, mir regelmäßigen Unterricht zu suchen. Bisher habe ich mich aber noch nirgends angemeldet.",
+            "textVi": "Nghe mê thật, tớ cũng đang cần người dạy bài bản thế. Trước giờ tớ toàn tự mò video trên mạng rồi bắt chước đánh theo, lúc thì tiến bộ lúc lại tắc tị hoàn toàn. Bởi vậy tớ đang tính tìm lớp học định kỳ, chỉ là hiện tại chưa đăng ký ở đâu cả."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Ben",
+            "timestampStart": 174,
+            "timestampEnd": 190,
+            "textDe": "Vielleicht wäre Frau Sommer etwas für dich. Mit ihrer Art zu erklären komme ich wirklich gut zurecht. Nur der Beginn um 5:30 Uhr ist für mich ungünstig. Ich arbeite bis 5 Uhr und muss dann direkt los. Heute habe ich unterwegs schnell ein Brot gegessen. Auf Dauer wird mir das zu hektisch.",
+            "textVi": "Hay cậu thử học với cô Sommer xem, cách cô giảng dễ hiểu cực kỳ luôn. Chỉ có giờ bắt đầu lúc 5 giờ 30 chiều là hơi bất tiện cho tớ, vì tớ làm tới 5 giờ phải chạy thẳng ra lớp, hôm nay phải gặm vội bánh mì dọc đường, về lâu dài chắc hơi cập rập quá."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Klara",
+            "timestampStart": 191,
+            "timestampEnd": 201,
+            "textDe": "Das verstehe ich. Diese Workshops bei deinem bisherigen Lehrer klingen auch interessant. Könnte ich damit machen? Die Gitarre, mit der ich gerade übe, gehört meinem Bruder. Der braucht sie bald wieder.",
+            "textVi": "Tớ hiểu. Nhưng mấy khóa workshop cuối tuần của thầy cũ cậu nghe cũng hấp dẫn đấy chứ. Tớ có đăng ký tham gia được không nhỉ? Cây đàn tớ đang tập ở nhà là mượn của anh trai, sắp tới anh ấy cần lấy lại rồi."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Ben",
+            "timestampStart": 202,
+            "timestampEnd": 213,
+            "textDe": "Für den nächsten Workshop kannst du vorher ein Instrument von der Schule reservieren. Du musst also nicht erst selbst eines kaufen. Ich habe den Aushang vorhin gelesen. Die Gitarren werden am Morgen im Unterrichtsraum ausgegeben.",
+            "textVi": "Cho khóa workshop sắp tới cậu có thể đặt mượn trước đàn ngay tại trường nên chưa cần mua vội đâu. Nãy tớ mới đọc bảng thông báo thấy ghi sáng hôm đó trường phát đàn ngay tại phòng học."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Klara",
+            "timestampStart": 214,
+            "timestampEnd": 219,
+            "textDe": "Gut zu wissen. Würdest du fragen, ob noch ein Platz frei ist? Das Büro ist doch gleich hier.",
+            "textVi": "May quá biết thông tin này. Cậu vào hỏi giúp tớ xem còn chỗ trống không được không? Văn phòng ngay sát đây mà."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Ben",
+            "timestampStart": 220,
+            "timestampEnd": 229,
+            "textDe": "Ja, ich gehe gleich hinein und frage für dich nach. Sobald die Schule deinen Platz bestätigt hat, melde ich mich bei dir. Dann können wir auch die Sache mit der Leihgitarre festmachen.",
+            "textVi": "Được chứ, tớ vào hỏi giúp luôn cho. Ngay khi trường xác nhận giữ chỗ cho cậu tớ nhắn lại ngay, rồi mình chốt luôn chuyện mượn cây đàn nhé."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Klara",
+            "timestampStart": 229,
+            "timestampEnd": 231,
+            "textDe": "Danke. Dann warte ich auf deine Nachricht.",
+            "textVi": "Cảm ơn cậu. Vậy tớ ngồi đợi tin của cậu nha."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 1,
+          "audioIncludesRepetition": false,
+          "playbackNote": "Theo quy chuẩn đề thi Goethe-Zertifikat B1, Teil này chỉ được nghe 1 lần duy nhất."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_H_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Klaras Gitarrenlehrer hört ganz mit dem Unterrichten auf.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Klara wusste schon vor der letzten Unterrichtsstunde von der Veränderung.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Klara hat sich im Unterricht bei der neuen Lehrerin wohlgefühlt.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Ben nimmt bereits regelmäßig Gitarrenunterricht.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q20",
+          "order": 20,
+          "part": 3,
+          "prompt": "Klara findet die neue Unterrichtszeit unpraktisch.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q21",
+          "order": 21,
+          "part": 3,
+          "prompt": "Für den Workshop braucht Ben eine eigene Gitarre.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q22",
+          "order": 22,
+          "part": 3,
+          "prompt": "Klara will Ben informieren, sobald die Schule seinen Platz bestätigt hat.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t09_hoeren_p4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+      "durationMinutes": 14,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Sie hören eine Radiodiskussion zum Thema „Alte Kleinwagen als Hobby“",
+        "content": "Sie hören eine Radiodiskussion zum Thema „Alte Kleinwagen als Hobby“. Der Moderator spricht mit Dana Schneider und Florian Bader, die beide einen alten Kleinwagen besitzen. Sie hören die Diskussion zweimal. Lesen Sie jetzt die Aussagen 23 bis 30. Dazu haben Sie 60 Sekunden Zeit. Wer sagt was? Wählen Sie bei jeder Aufgabe a, b oder c.",
+        "audioUrl": "/audio/goethe-b1/test-09-teil-4.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 39,
+            "textDe": "Teil vier. Sie hören einer Radio-Diskussion zum Thema alte Kleinwagen als Hobby. Der Moderator spricht mit Dana Schneider und Florian Bader, die beide einen alten Kleinwagen besitzen. Sie hören die Diskussion zweimal. Lesen Sie jetzt die Aussagen 23 bis 30. Dazu haben Sie 60 Sekunden Zeit. Wer sagt was? Wählen Sie bei jeder Aufgabe A, B oder C. Aufgaben 22 23 24 25 26 27 28 29 30.",
+            "textVi": "Phần bốn. Nghe tọa đàm 'Thú chơi xe hơi cỡ nhỏ cổ (Oldtimer)' giữa Moderator, Dana Schneider và Florian Bader. Ghép câu 23 đến 30 cho A, B hoặc C. Nghe hai lần."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 100,
+            "timestampEnd": 116,
+            "textDe": "Willkommen bei Freizeit im Gespräch. Heute stehen zwei kleine Autos vor unserem Studio, die schon viele Jahre unterwegs sind. Sie gehören unseren Gästen Dana Schneider und Florian Bader. Frau Schneider, wie ist ihr Wagen eigentlich zu Ihnen gekommen?",
+            "textVi": "Chào mừng quý vị tới chương trình 'Freizeit im Gespräch'. Hôm nay trước phòng thu có hai chiếc xe hơi nhỏ đã lăn bánh nhiều năm của hai khách mời Dana Schneider và Florian Bader. Thưa cô Schneider, chiếc xe đến với cô thế nào?"
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 117,
+            "timestampEnd": 134,
+            "textDe": "Den habe ich von meiner Tante übernommen. Als Kind durfte ich manchmal bei ihr mitfahren. Deshalb hängen für mich viele Erinnerungen daran. Auf dem Rücksitz lag damals immer eine Wolldecke und genau diese Decke liegt heute noch dort. Wenn ich die Tür öffne, denke ich sofort an unsere Sonntagsausflüge.",
+            "textVi": "Tôi nhận lại xe từ dì mình. Hồi nhỏ thi thoảng tôi được dì cho đi ké, nên xe chứa đầy kỷ niệm: chiếc chăn len trên ghế sau ngày ấy đến tận giờ vẫn nằm nguyên chỗ cũ, cứ mở cửa xe là nhớ ngay những chuyến đi chơi Chủ nhật."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 135,
+            "timestampEnd": 141,
+            "textDe": "Manche Besitzer verbringen viel Zeit damit, ihr Auto für Ausstellungen vorzubereiten. Wie ist das bei Ihnen?",
+            "textVi": "Nhiều chủ xe tốn hàng giờ đánh bóng chuẩn bị cho triển lãm. Cô thì sao?"
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 142,
+            "timestampEnd": 160,
+            "textDe": "An meiner Tür sind kleine Kratzer und der Stoff auf dem Fahrersitz ist etwas abgenutzt. Das darf man ruhig sehen. Ich möchte damit fahren und mich wohlfühlen. Wenn ich bei jedem Einsteigen Angst um den Lack hätte, würde mir die Freude vergehen. Natürlich kümmere ich mich um Roststellen, damit daraus kein größerer Schaden wird.",
+            "textVi": "Cửa xe tôi có vài vết xước nhỏ và vải ghế lái cũng sờn đi ít nhiều. Tôi thấy cứ để tự nhiên thế chẳng sao, tôi muốn lái nó mà tận hưởng thoải mái chứ bước lên xe mà lúc nào cũng nơm nớp sợ trầy sơn thì mất vui; tất nhiên chỗ nào rỉ sét tôi vẫn xử lý ngay để khỏi hư nặng thêm."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 161,
+            "timestampEnd": 180,
+            "textDe": "Die Pflege beginnt für mich schon mit der Frage, wo der Wagen steht. Ich habe nach meinem Kauf monatelang eine geeignete Garage gesucht. Die erste war feucht, die zweite viel zu weit weg. Wer sich so ein Auto anschaffen möchte, sollte vorher ausrechnen, was ein Platz kostet, an dem es trocken steht. Das gehört für mich genauso in die Rechnung wie der Kaufpreis.",
+            "textVi": "Với tôi việc chăm xe bắt đầu ngay từ câu hỏi đỗ xe ở đâu. Mua xong xe tôi mất nhiều tháng tìm gara phù hợp: chỗ đầu tiên ẩm thấp, chỗ thứ hai quá xa. Ai định tậu xe cổ trước hết nên tính tiền thuê chỗ đỗ khô ráo – chi phí đó quan trọng chẳng kém giá mua xe."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 181,
+            "timestampEnd": 197,
+            "textDe": "Genau solche Erfahrungen interessieren mich persönlich besonders. Wie bekommt man den Wagen und die praktischen Aufgaben drumherum in seinem normalen Leben unter? Über Motorleistung könnte man lange reden, aber ich möchte erfahren, wie ein gewöhnlicher Samstag bei Ihnen aussieht.",
+            "textVi": "Đúng là những trải nghiệm thực tế như vậy khiến cá nhân tôi tò mò nhất: làm sao dung hòa chiếc xe và công việc chăm sóc nó trong nhịp sống hàng ngày? Động cơ mã lực nói mãi được, nhưng tôi muốn biết một ngày thứ Bảy bình thường của hai vị diễn ra thế nào."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 198,
+            "timestampEnd": 224,
+            "textDe": "Oft treffen wir uns zu dritt in einer gemieteten Werkstatt. Einer kennt sich mit dem Motor aus, eine Bekannte kann gut nähen und hat schon Sitze repariert. Ich besorge Teile und helfe beim Einbauen. Wir zeigen uns gegenseitig, wie etwas geht. Diese Stunden, in denen wir zusammen ein Problem lösen, bedeuten mir mehr als alles andere an diesem Hobby. Eine Fahrt ist schön, aber auf das gemeinsame Arbeiten freue ich mich am meisten.",
+            "textVi": "Thường tụi tôi ba người hẹn nhau trong xưởng thuê chung: một người rành máy móc, một chị bạn khéo may vá từng sửa lại cả ghế xe, còn tôi tìm mua phụ tùng phụ lắp. Chúng tôi chỉ dẫn lẫn nhau; chính những giờ cùng nhau tháo gỡ một trục trặc mới là điều tôi thích nhất, lái xe đi dạo rất vui nhưng cùng xắn tay sửa xe vẫn khiến tôi mong chờ hơn cả."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 225,
+            "timestampEnd": 248,
+            "textDe": "Bei mir bleibt die Arbeit am Auto eher überschaubar. Wenn es kompliziert wird, bringe ich es in eine Werkstatt. Dafür fahre ich gern auf kleinen Straßen in die Nachbardörfer. Zum Urlaub an die Küste nehme ich allerdings lieber die Bahn. Nach mehreren Stunden im alten Wagen bin ich müde und viel Gepäck passt auch nicht hinein. Für einen Nachmittag in der Umgebung ist der genau richtig.",
+            "textVi": "Về phần tôi thì công việc đụng chạm kỹ thuật ít hơn nhiều, hễ phức tạp là tôi đem ra tiệm. Đổi lại tôi rất thích thong thả lái xe theo các con đường nhỏ về làng lân cận. Còn đi nghỉ tận bờ biển thì tôi chọn đi tàu hỏa cho khỏe vì ngồi xe cũ nhiều tiếng rất mệt mà cốp lại chứa được ít hành lý."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 248,
+            "timestampEnd": 255,
+            "textDe": "Im nächsten Monat veranstaltet Ihr Verein ein Treffen. Was erwartet Menschen, die selbst keinen alten Wagen besitzen?",
+            "textVi": "Tháng tới câu lạc bộ của ông tổ chức ngày hội giao lưu. Khách chưa có xe cổ tới đó sẽ trải nghiệm gì?"
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 256,
+            "timestampEnd": 275,
+            "textDe": "Wir stellen die Fahrzeuge auf dem Vereinsgelände auf. Die Besitzer beantworten Fragen und zu jedem Modell gibt es ein kleines Schild. Außerdem bieten einige Mitglieder kurze Rundfahrten an. Dafür hängt am Eingang eine Liste, in die sich Besucher eintragen können. Unser Gelände liegt etwas außerhalb, sodass die Runde gleich durch die Felder führt.",
+            "textVi": "Chúng tôi bày xe trong khuôn viên hội, chủ xe đứng giải đáp thắc mắc kèm bảng thông tin từng mẫu xe, ngoài ra vài hội viên còn nhận chở khách chạy một vòng trải nghiệm ngắn quanh cánh đồng ngoại ô ngay gần đó theo danh sách đăng ký ở cổng."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 276,
+            "timestampEnd": 294,
+            "textDe": "Da würde ich mich als Besucher wohl zuerst eintragen. Auf dem Beifahrersitz das Geräusch hören und merken, wie sich so ein Wagen bewegt, wäre für mich reizvoller, als die Reihe abgestellter Fahrzeuge entlang zu gehen. Frau Schneider, bei Ihrem Auto ist kürzlich etwas ersetzt worden. War das schwierig?",
+            "textVi": "Nghe vậy nếu đi xem chắc chắn tôi đăng ký ngồi thử ngay đầu tiên. Ngồi ghế phụ nghe tiếng máy và cảm nhận độ rung khi xe chạy lăn bánh với tôi hấp dẫn hơn nhiều so với chỉ đi dạo ngắm hàng xe đậu im. Thưa cô Schneider, gần đây xe cô mới phải thay một bộ phận, chuyện tìm đồ có khó không?"
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 295,
+            "timestampEnd": 318,
+            "textDe": "Eine kleine Pumpe war kaputt. Ein altes Ersatzteil zu finden, hätte lange gedauert. Meine Werkstatt hat eine passende neue Pumpe eingebaut, die zuverlässig arbeitet. Für mich ist es immer noch derselbe Wagen mit demselben Klang und demselben Gefühl beim Fahren. Ein einzelnes Bauteil aus heutiger Herstellung nimmt ihm doch nicht seine besondere Art. Hauptsache es passt technisch.",
+            "textVi": "Một cái bơm nhỏ bị hỏng. Chờ tìm phụ tùng đời cũ chắc mất thời gian lâu lắm, nên tiệm đã lắp giúp tôi một cái bơm đời mới tương thích chạy cực kỳ ổn định. Với tôi nó vẫn là chiếc xe ấy với âm thanh và cảm giác lái y hệt, một linh kiện sản xuất ngày nay chẳng làm mất chất riêng miễn là khớp kỹ thuật."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 319,
+            "timestampEnd": 324,
+            "textDe": "Und was passiert, wenn jemand nicht nur mitfahren, sondern selbst ans Steuer möchte, Herr Bader?",
+            "textVi": "Và nếu có người không chỉ muốn ngồi ké mà đòi tự cầm lái xe của ông thì sao, thưa ông Bader?"
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 325,
+            "timestampEnd": 346,
+            "textDe": "Dann fahren wir zuerst gemeinsam auf einen ruhigen Platz und üben. Die Schaltung fühlt sich anders an und einige Schalter sitzen an ungewohnten Stellen. Erst wenn die Person unter meiner Anleitung damit gefahren ist, würde ich ihr den Schlüssel für eine eigene Fahrt geben. Auch mein bester Freund müsste das machen. Man soll schließlich unterwegs nicht erst nach dem richtigen Hebel suchen.",
+            "textVi": "Thế thì trước hết hai người phải cùng lái ra một bãi đất trống yên tĩnh để tập quen tay trước đã, vì hộp số cảm giác khác hẳn và nhiều công tắc đặt ở vị trí lạ. Chỉ khi người đó tập thành thạo dưới sự hướng dẫn của tôi thì tôi mới giao chìa khóa cho tự lái – bạn thân nhất của tôi cũng không ngoại lệ."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 347,
+            "timestampEnd": 363,
+            "textDe": "Vielen Dank für die Einblicke. Wer unsere Gäste und ihre Wagen kennenlernen möchte, findet die Angaben zum Vereinstreffen auf unserer Sendungsseite. Für heute verabschieden wir uns. Einen schönen Abend.",
+            "textVi": "Cảm ơn hai vị về những chia sẻ thú vị. Thông tin chi tiết ngày hội câu lạc bộ có trên website chương trình. Chào tạm biệt và chúc buổi tối vui vẻ."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 364,
+            "timestampEnd": 379,
+            "textDe": "Willkommen bei Freizeit im Gespräch. Heute stehen zwei kleine Autos vor unserem Studio, die schon viele Jahre unterwegs sind. Sie gehören unseren Gästen Dana Schneider und Florian Bader. Frau Schneider, wie ist ihr Wagen eigentlich zu Ihnen gekommen?",
+            "textVi": "(Lần nghe 2) Chào mừng quý vị tới chương trình 'Freizeit im Gespräch'..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 380,
+            "timestampEnd": 397,
+            "textDe": "Den habe ich von meiner Tante übernommen. Als Kind durfte ich manchmal bei ihr mitfahren. Deshalb hängen für mich viele Erinnerungen daran. Auf dem Rücksitz lag damals immer eine Wolldecke und genau diese Decke liegt heute noch dort. Wenn ich die Tür öffne, denke ich sofort an unsere Sonntagsausflüge.",
+            "textVi": "(Lần nghe 2) Tôi nhận lại xe từ dì mình. Hồi nhỏ thi thoảng tôi được dì cho đi ké..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 398,
+            "timestampEnd": 405,
+            "textDe": "Manche Besitzer verbringen viel Zeit damit, ihr Auto für Ausstellungen vorzubereiten. Wie ist das bei Ihnen?",
+            "textVi": "(Lần nghe 2) Nhiều chủ xe tốn hàng giờ đánh bóng chuẩn bị cho triển lãm..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 405,
+            "timestampEnd": 423,
+            "textDe": "An meiner Tür sind kleine Kratzer und der Stoff auf dem Fahrersitz ist etwas abgenutzt. Das darf man ruhig sehen. Ich möchte damit fahren und mich wohlfühlen. Wenn ich bei jedem Einsteigen Angst um den Lack hätte, würde mir die Freude vergehen. Natürlich kümmere ich mich um Roststellen, damit daraus kein größerer Schaden wird.",
+            "textVi": "(Lần nghe 2) Cửa xe tôi có vài vết xước nhỏ và vải ghế lái cũng sờn đi ít nhiều..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 424,
+            "timestampEnd": 444,
+            "textDe": "Die Pflege beginnt für mich schon mit der Frage, wo der Wagen steht. Ich habe nach meinem Kauf monatelang eine geeignete Garage gesucht. Die erste war feucht, die zweite viel zu weit weg. Wer sich so ein Auto anschaffen möchte, sollte vorher ausrechnen, was ein Platz kostet, an dem es trocken steht. Das gehört für mich genauso in die Rechnung wie der Kaufpreis.",
+            "textVi": "(Lần nghe 2) Với tôi việc chăm xe bắt đầu ngay từ câu hỏi đỗ xe ở đâu..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 445,
+            "timestampEnd": 461,
+            "textDe": "Genau solche Erfahrungen interessieren mich persönlich besonders. Wie bekommt man den Wagen und die praktischen Aufgaben drumherum in seinem normalen Leben unter? Über Motorleistung könnte man lange reden, aber ich möchte erfahren, wie ein gewöhnlicher Samstag bei Ihnen aussieht.",
+            "textVi": "(Lần nghe 2) Đúng là những trải nghiệm thực tế như vậy khiến cá nhân tôi tò mò nhất..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 462,
+            "timestampEnd": 488,
+            "textDe": "Oft treffen wir uns zu dritt in einer gemieteten Werkstatt. Einer kennt sich mit dem Motor aus, eine Bekannte kann gut nähen und hat schon Sitze repariert. Ich besorge Teile und helfe beim Einbauen. Wir zeigen uns gegenseitig, wie etwas geht. Diese Stunden, in denen wir zusammen ein Problem lösen, bedeuten mir mehr als alles andere an diesem Hobby. Eine Fahrt ist schön, aber auf das gemeinsame Arbeiten freue ich mich am meisten.",
+            "textVi": "(Lần nghe 2) Thường tụi tôi ba người hẹn nhau trong xưởng thuê chung..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 488,
+            "timestampEnd": 511,
+            "textDe": "Bei mir bleibt die Arbeit am Auto eher überschaubar. Wenn es kompliziert wird, bringe ich es in eine Werkstatt. Dafür fahre ich gern auf kleinen Straßen in die Nachbarorte. Zum Urlaub an die Küste nehme ich allerdings lieber die Bahn. Nach mehreren Stunden im alten Wagen bin ich müde und viel Gepäck passt auch nicht hinein. Für einen Nachmittag in der Umgebung ist der genau richtig.",
+            "textVi": "(Lần nghe 2) Về phần tôi thì công việc đụng chạm kỹ thuật ít hơn nhiều..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 512,
+            "timestampEnd": 518,
+            "textDe": "Im nächsten Monat veranstaltet Ihr Verein ein Treffen. Was erwartet Menschen, die selbst keinen alten Wagen besitzen?",
+            "textVi": "(Lần nghe 2) Tháng tới câu lạc bộ của ông tổ chức ngày hội giao lưu..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 519,
+            "timestampEnd": 538,
+            "textDe": "Wir stellen die Fahrzeuge auf dem Vereinsgelände auf. Die Besitzer beantworten Fragen und zu jedem Modell gibt es ein kleines Schild. Außerdem bieten einige Mitglieder kurze Rundfahrten an. Dafür hängt am Eingang eine Liste, in die sich Besucher eintragen können. Unser Gelände liegt etwas außerhalb, sodass die Runde gleich durch die Felder führt.",
+            "textVi": "(Lần nghe 2) Chúng tôi bày xe trong khuôn viên hội..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 538,
+            "timestampEnd": 557,
+            "textDe": "Da würde ich mich als Besucher wohl zuerst eintragen. Auf dem Beifahrersitz das Geräusch hören und merken, wie sich so ein Wagen bewegt, wäre für mich reizvoller, als die Reihe abgestellter Fahrzeuge entlang zu gehen. Frau Schneider, bei Ihrem Auto ist kürzlich etwas ersetzt worden. War das schwierig?",
+            "textVi": "(Lần nghe 2) Nghe vậy nếu đi xem chắc chắn tôi đăng ký ngồi thử ngay đầu tiên..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 558,
+            "timestampEnd": 581,
+            "textDe": "Eine kleine Pumpe war kaputt. Ein altes Ersatzteil zu finden, hätte lange gedauert. Meine Werkstatt hat eine passende neue Pumpe eingebaut, die zuverlässig arbeitet. Für mich ist es immer noch derselbe Wagen mit dem selben Klang und dem selben Gefühl beim Fahren. Ein einzelnes Bauteil aus heutiger Herstellung nimmt ihm doch nicht seine besondere Art. Hauptsache es passt technisch.",
+            "textVi": "(Lần nghe 2) Một cái bơm nhỏ bị hỏng. Chờ tìm phụ tùng đời cũ chắc mất thời gian lâu..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 582,
+            "timestampEnd": 588,
+            "textDe": "Und was passiert, wenn jemand nicht nur mitfahren, sondern selbst ans Steuer möchte, Herr Bader?",
+            "textVi": "(Lần nghe 2) Và nếu có người không chỉ muốn ngồi ké mà đòi tự cầm lái xe..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 589,
+            "timestampEnd": 609,
+            "textDe": "Dann fahren wir zuerst gemeinsam auf einen ruhigen Platz und üben. Die Schaltung fühlt sich anders an und einige Schalter sitzen an ungewohnten Stellen. Erst wenn die Person unter meiner Anleitung damit gefahren ist, würde ich ihr den Schlüssel für eine eigene Fahrt geben. Auch mein besser Freund müsste das machen. Man soll schließlich unterwegs nicht erst nach dem richtigen Hebel suchen.",
+            "textVi": "(Lần nghe 2) Thế thì trước hết hai người phải cùng lái ra một bãi đất trống yên tĩnh..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 610,
+            "timestampEnd": 621,
+            "textDe": "Vielen Dank für die Einblicke. Wer unsere Gäste und ihre Wagen kennenlernen möchte, findet die Angaben zum Vereinstreffen auf unserer Sendungsseite. Für heute verabschieden wir uns. Einen schönen Abend.",
+            "textVi": "(Lần nghe 2) Cảm ơn hai vị về những chia sẻ thú vị..."
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 622,
+            "timestampEnd": 626,
+            "textDe": "Sie haben jetzt fünf Minuten Zeit, Ihre Lösungen auf den Antwortbogen zu übertragen.",
+            "textVi": "Bạn hiện có năm phút để chép đáp án vào phiếu trả lời."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 2,
+          "audioIncludesRepetition": true,
+          "playbackNote": "File âm thanh đề chuẩn Goethe B1 cho Teil này đã ghép sẵn 2 lần đọc liên tiếp."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T09_H_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Ein alter Kleinwagen muss für mich nicht perfekt aussehen.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Vor dem Kauf sollte man die Kosten für einen trockenen Stellplatz berechnen.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Mich interessiert besonders, wie die Besitzer im Alltag mit ihren alten Autos zurechtkommen.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Gemeinsame Reparaturen sind für mich der wichtigste Teil des Hobbys.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q27",
+          "order": 27,
+          "part": 4,
+          "prompt": "Für längere Reisen nehme ich lieber ein anderes Verkehrsmittel.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q28",
+          "order": 28,
+          "part": 4,
+          "prompt": "Bei einem Treffen würde ich lieber mitfahren als nur Autos anschauen.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q29",
+          "order": 29,
+          "part": 4,
+          "prompt": "Auch mit einem modernen Ersatzteil kann ein altes Auto seinen Charakter behalten.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T09_H_Q30",
+          "order": 30,
+          "part": 4,
+          "prompt": "Ich würde mein Auto nur jemandem leihen, der vorher mit mir geübt hat.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "GOETHE_B1_T09_L_Q01",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Schließlich erklärte er der Hausverwaltung, dass nichts mehr zu machen sei. Deshalb wurde letzte Woche eine neue Waschmaschine geliefert.",
+      "trapExplanationVi": "Đúng: thợ kỹ thuật kết luận máy cũ không thể sửa được nữa nên ban quản lý mới thay máy giặt mới.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q02",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Die App hatte ich zu diesem Zeitpunkt noch gar nicht auf meinem Telefon.",
+      "trapExplanationVi": "Sai điều kiện: điện thoại để trên căn hộ và Nora còn chưa cài ứng dụng vẫn bấm nút chọn chương trình trực tiếp trên máy -> Sai (F).",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q03",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Auf dem Bildschirm stand 14:30 Uhr. Prima, dachte ich, dann ist die Wäsche rechtzeitig vor meinem Besuch bei meiner Schwester fertig.",
+      "trapExplanationVi": "Đúng: Nora hiểu nhầm mốc 14:30 trên màn hình là giờ giặt xong, thực chất đó là giờ hẹn bắt đầu chạy.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q04",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Daraufhin holte ich den leeren Korb aus dem Flur, ging hinunter und nahm meine Sachen aus der Maschine.",
+      "trapExplanationVi": "Tráo hành động: Paul chỉ nhắn tin báo máy đã giặt xong, chính Nora mang giỏ xuống lấy đồ của mình ra -> Sai (F).",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q05",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Als ich heute wieder im Waschraum war, hing dort schon ein neues Blatt. Unter dem Bild des Displays stand jetzt genau, wie man den Beginn eines Programms einstellt.",
+      "trapExplanationVi": "Đúng: sau góp ý của Nora, ban quản lý đã treo bản hướng dẫn mới giải thích rõ cách chỉnh giờ bắt đầu.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q06",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Ich bleibe beim Blatt im Keller, das sehe ich sowieso regelmäßig.",
+      "trapExplanationVi": "Bẫy phần kết: Nora có thể tải app để nhận báo khi giặt xong nhưng lịch đặt giờ giặt cô vẫn dùng bảng giấy treo ở tầng hầm -> Sai (F).",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q07",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Auf einer Beratungsseite beschäftigt sich ihr Team mit Beziehungen und Entscheidungen im Erwachsenenleben.",
+      "trapExplanationVi": "Đúng B: bài viết nói về cách mục tư vấn trên báo địa phương trả lời thư bạn đọc đồng thời bảo vệ thông tin riêng tư và quyền tự quyết.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q08",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Mit solchen Situationen können sich auch Menschen beschäftigen, deren Alltag ganz anders aussieht. Deshalb eignen sich diese Fragen besonders für die Seite.",
+      "trapExplanationVi": "Đúng C: tòa soạn chọn những câu hỏi phản ánh vấn đề phổ quát mà nhiều người khác cũng có thể suy ngẫm.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q09",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Erst mit ihrer schriftlichen Zustimmung zu diesem Wortlaut darf der Beitrag erscheinen.",
+      "trapExplanationVi": "Đúng A: câu chữ sau khi biên tập ẩn danh phải gửi lại để người gửi đồng ý bằng văn bản mới được đăng (lịch đăng do tòa soạn quyết định).",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q10",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "In kleinen Gruppen erzählen Beschäftigte aus verschiedenen Berufen von ihren Aufgaben.",
+      "trapExplanationVi": "Đúng C: buổi tối trò chuyện cùng người đang làm các nghề khác nhau giúp người lớn hình dung thực tế khi định hướng đổi nghề.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q11",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Auf dem Anmeldeformular tragen Interessierte zwei Berufsfelder ein, über die sie mehr erfahren möchten. Aus diesen Angaben stellt der Verein die Liste der Gesprächsgäste zusammen.",
+      "trapExplanationVi": "Đúng A: dựa trên 2 nhóm ngành người tham gia chọn khi đăng ký để mời khách mời diễn giả đúng lĩnh vực.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q12",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Dafür können Besucher anschließend mit ihrem Gesprächspartner einen kurzen Besuch vereinbaren. Zunächst muss jedoch dessen Arbeitgeber zustimmen.",
+      "trapExplanationVi": "Đúng B: muốn ghé tham quan ngắn nơi làm việc sau buổi gặp thì trước tiên phải được doanh nghiệp sử dụng lao động đó đồng ý.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q13",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Am Samstag von 10 bis 14 Uhr gestalten Erwachsene ihre ersten bemalten Fliesen.",
+      "trapExplanationVi": "Khớp H: khóa vẽ gạch men cho người mới không cần kinh nghiệm vào sáng thứ Bảy cho nhóm bạn bè hoặc chị em (tránh I đòi kinh nghiệm và học tối thứ Ba).",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q14",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Ihre historische Landkarte hat beim letzten Umzug einen Riss bekommen? Wir erhalten und reparieren alte Arbeiten auf Papier",
+      "trapExplanationVi": "Khớp C: xưởng phục chế giấy nhận sửa tấm bản đồ cổ bị rách.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q15",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Dieser Band versammelt Reiseberichte aus vergangenen Jahrhunderten in deutscher Sprache, auch über Reisen durch das Osmanische Reich. Ungewohnte Wörter werden direkt am Seitenrand erläutert.",
+      "trapExplanationVi": "Khớp F: sách tập hợp du ký lịch sử tiếng Đức có chú giải từ lạ ngay bên lề trang.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q16",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Helfende Hände fürs Kulturwochenende gesucht! Am Freitag ab 18 Uhr stellen wir gemeinsam Tische auf und bauen die Marktstände auf. Erwachsene, die ehrenamtlich mitmachen möchten",
+      "trapExplanationVi": "Khớp A: cần tình nguyện viên không lương tối thứ Sáu dựng bàn và quầy hàng lễ hội văn hóa (khác G là dịch vụ thuê làm trọn gói).",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q17",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Unsere aufgezeichneten Vorträge auf Deutsch beschäftigen sich mit Wohnen, Essen und Arbeiten im Osmanischen Reich. Nach der Buchung können Sie die Videos zu Hause jederzeit ansehen.",
+      "trapExplanationVi": "Khớp J: chuỗi bài giảng thu hình sẵn giúp tự xem tại nhà bất cứ lúc nào hợp người làm ca kíp.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q18",
+      "correctOption": "e",
+      "points": 1,
+      "citation": "Unser Medienlager verleiht Vereinen großformatige Nachdrucke von Karten historischer Handelswege.",
+      "trapExplanationVi": "Khớp E: kho tư liệu cho các câu lạc bộ mượn bản đồ khổ lớn các tuyến thương mại cổ tối đa 7 ngày rồi trả lại.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q19",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Mitgebrachte Stücke werden weder untersucht noch bewertet.",
+      "trapExplanationVi": "Bẫy quảng cáo B: buổi nói chuyện về tiền xu cổ nêu rõ KHÔNG nhận kiểm tra hay định giá đồng xu mang theo -> chọn 0.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q20",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Deshalb sollte die Haltung in Privatwohnungen künftig ausgeschlossen sein.",
+      "trapExplanationVi": "Annika ủng hộ lệnh cấm vì cho rằng khỉ cần môi trường chuyên biệt chứ không phù hợp căn hộ tư nhân.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q21",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Diese Unterschiede würde ein allgemeines Verbot gar nicht berücksichtigen.",
+      "trapExplanationVi": "Cem phản đối cấm chung, đề nghị kiểm tra điều kiện nuôi và thanh tra định kỳ từng hộ.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q22",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Aber meine eigenen Grenzen sind kein ausreichender Grund, es allen anderen zu untersagen.",
+      "trapExplanationVi": "Ruth cá nhân không dám nuôi khỉ nhưng phản đối áp đặt lệnh cấm cho tất cả những nơi đủ điều kiện.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q23",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Dass Affen künftig nicht mehr in privaten Haushalten gehalten werden dürfen, halte ich unter diesen Bedingungen für einen richtigen Schritt.",
+      "trapExplanationVi": "Felix yên tâm khi biết trạm cứu hộ vẫn hoạt động bình thường nên ủng hộ cấm nuôi khỉ ở hộ gia đình.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q24",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Am Ziel, die private Haltung zu beenden, möchte ich deshalb keineswegs etwas ändern.",
+      "trapExplanationVi": "Marta đồng tình với mục tiêu chấm dứt nuôi tại nhà, chỉ đề nghị thêm giai đoạn chuyển tiếp cho động vật đang được nuôi.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q25",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Die vorgeschlagene Regel geht mir deshalb weiter, als es nötig wäre.",
+      "trapExplanationVi": "Jonas chỉ muốn cấm lạm dụng biểu diễn chụp ảnh quảng cáo, còn việc nuôi tại nhà nếu đảm bảo chăm sóc thì không nên cấm.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q26",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Für mich ist es richtig, die Haltung in privaten Haushalten künftig zu verbieten.",
+      "trapExplanationVi": "Leonie sau khi trò chuyện với nhân viên trạm cứu hộ đã đổi quan điểm sang ủng hộ lệnh cấm.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q27",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Melden Sie sich spätestens zehn Minuten vor Veranstaltungsbeginn an der Rezeption. Ohne diese persönliche Anmeldung verfällt Ihre Reservierung",
+      "trapExplanationVi": "Đúng A: dù có xác nhận trên điện thoại vẫn phải tới quầy lễ tân trình diện trước ít nhất 10 phút kẻo mất chỗ đặt trước.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q28",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Der Eingang ist während der Öffnungszeiten frei zugänglich; eine vorherige Anmeldung ist nicht erforderlich.",
+      "trapExplanationVi": "Đúng C: lối vào bên cạnh sân có đường bằng phẳng không bậc thang, tự do sử dụng trong giờ mở cửa không cần báo trước.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q29",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Diese bleiben während Ihres Besuchs in Ihrer Obhut. Warten Sie mit dem Zeigen, bis die Gesprächsleitung Sie dazu auffordert.",
+      "trapExplanationVi": "Đúng B: ảnh gia đình vẫn do khách tự giữ bên mình và chỉ đưa ra xem khi người điều phối buổi trò chuyện mời tới lượt.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_L_Q30",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Gruppen ab acht Personen müssen ihren Ausstellungsbesuch mindestens drei Werktage vorher telefonisch anmelden. Diese Anmeldung ist auch dann erforderlich, wenn Sie die Ausstellung selbstständig und ohne Führung ansehen möchten.",
+      "trapExplanationVi": "Đúng A: nhóm từ 8 người trở lên (nên nhóm 10 người bắt buộc phải đăng ký điện thoại trước ít nhất 3 ngày làm việc kể cả không thuê thuyết minh).",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q01",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Deshalb möchte ich Sie auf unseren Nachmittag zur Windenergie aufmerksam machen. Dort können Sie herausfinden, welche Aufgaben zu Ihnen passen könnten.",
+      "trapExplanationVi": "Đúng: cô nhân viên hướng nghiệp giới thiệu buổi chiều tìm hiểu ngành nghề trong lĩnh vực điện gió.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q02",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Beschäftigte eines Betriebs erzählen in kleinen Gesprächsrunden, wie ein normaler Arbeitstag bei Ihnen aussieht",
+      "trapExplanationVi": "Đúng A: chương trình gồm các nhóm trò chuyện nhỏ với người đang làm việc trực tiếp tại doanh nghiệp.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q03",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Und nun die Wetteraussichten für morgen, Mittwoch.",
+      "trapExplanationVi": "Đúng: bản tin dự báo thời tiết cho ngày mai (thứ Tư).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q04",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Schon gegen 11 Uhr kommt dort die Sonne heraus und bleibt bis zum Abend.",
+      "trapExplanationVi": "Đúng C: sương mù miền Nam tan vào buổi sáng và tới khoảng 11 giờ (gần trưa) trời nắng suốt chiều tối (mưa chỉ có ở Tây Bắc).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q05",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Für Ihren gebuchten Kurs am Freitag haben wir noch einen kleinen Hinweis.",
+      "trapExplanationVi": "Sai đối tượng nhận tin: văn phòng trường nấu ăn nhắn cho học viên (bà Brandt) đã đặt lớp chứ không phải giảng viên -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q06",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Wir bereiten mehrere Gerichte zu und einen Teil davon bekommen Sie am Ende mit nach Hause.",
+      "trapExplanationVi": "Đúng B: học viên mang hai hộp đậy kín để đựng phần đồ ăn nấu xong mang về nhà.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q07",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Mit unserem gemeinsamen Abendessen wird es also leider nichts. Zum Kaffee komme ich wie besprochen.",
+      "trapExplanationVi": "Sai khung giờ: 16:30 Nora phải đi đón em gái ở sân bay nên chỉ tới uống cà phê chứ không ở lại ăn tối -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q08",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Das Album mit den Bildern von unserer ersten gemeinsamen Wohnung liegt schon in meiner Tasche.",
+      "trapExplanationVi": "Đúng C: Nora mang theo cuốn album ảnh chụp căn hộ chung đầu tiên của họ.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q09",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Liebe Zuschauerinnen und Zuschauer, in wenigen Minuten beginnt die Spielpause.",
+      "trapExplanationVi": "Sai loại tin: đây là thông báo hướng dẫn cho khán giả đang xem trận đấu trong giờ nghỉ giải lao, không phải quảng cáo khóa tập -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q10",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "lassen Sie sich bitte beim Ausgang einen Stempel auf die Hand geben. Zeigen Sie diesen beim Zurückkommen vor",
+      "trapExplanationVi": "Đúng A: muốn ra ngoài trong giờ nghỉ rồi quay lại vào trong phải xin đóng dấu lên tay ở cửa ra.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q11",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Sagen Sie meiner Kollegin bitte Ihren Namen, damit Sie ihn neben der Gerätenummer in Ihre Liste schreiben kann.",
+      "trapExplanationVi": "Bẫy phủ định: mượn ống nhòm miễn phí và không cần để lại giấy tờ tùy thân, chỉ cần báo tên cho nhân viên ghi sổ -> chọn B.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q12",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Mit der Kamera der Drohne können wir prüfen, ob oben alles in Ordnung ist. So haben wir letzte Woche eine kaputte Dachplatte entdeckt.",
+      "trapExplanationVi": "Đúng A: trạm dùng camera gắn trên drone để kiểm tra mái nhà dưới tán cây cao xem có hư hỏng hay cành gãy không.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q13",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Auf dem großen Arbeitstisch liegen einzelne Federn für Sie bereit. Nehmen Sie diese ruhig in die Hand",
+      "trapExplanationVi": "Đúng C: được chạm tay cầm thử từng chiếc lông chim bày sẵn trên bàn làm việc lớn (tủ kính chỉ nhìn, không được lấy mang về).",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q14",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Einige Fenster beginnen jetzt weiter unten.",
+      "trapExplanationVi": "Đúng B: chòi quan sát mới hạ thấp một số ô cửa sổ xuống để khách ngồi trên ghế cũng ngắm rõ mặt hồ.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q15",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Erst wenn unsere Station um 17 Uhr schließt, müssen auch die letzten Besucher die Hütte verlassen.",
+      "trapExplanationVi": "Đúng C: kết thúc tour khách có thể ngồi lại chòi ngắm chim tiếp cho đến tận giờ đóng cửa lúc 17 giờ mà không cần đăng ký.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q16",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Ein paar Wochenend-Workshops wird er aber weiterhin hier leiten.",
+      "trapExplanationVi": "Bẫy bán phần: thầy Winter chỉ nghỉ các lớp hàng tuần chứ vẫn tiếp tục dạy một số workshop cuối tuần -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q17",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Da wussten wir es schon. Seine Mail kam am Dienstag und am Donnerstag war meine letzte Stunde bei ihm.",
+      "trapExplanationVi": "Đúng: email báo từ thứ Ba trước buổi học cuối hôm thứ Năm nên học viên đã biết trước rồi.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q18",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Die Stunde war viel zu schnell vorbei.",
+      "trapExplanationVi": "Đúng: ban đầu hơi run nhưng chỉ vài phút sau Klara thấy cực kỳ thoải mái, hỏi gì cũng được và học vui đến mức thấy giờ trôi nhanh.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q19",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Bisher habe ich mich aber noch nirgends angemeldet.",
+      "trapExplanationVi": "Hiện trạng ngược: Ben hiện chỉ tự tập theo video trên mạng và chưa hề đăng ký học lớp định kỳ nào -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q20",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Nur der Beginn um 5:30 Uhr ist für mich ungünstig. Ich arbeite bis 5 Uhr und muss dann direkt los.",
+      "trapExplanationVi": "Đúng: tan làm lúc 5 giờ mà lớp bắt đầu lúc 5 giờ rưỡi khiến Klara thấy về lâu dài sẽ quá vội.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q21",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Für den nächsten Workshop kannst du vorher ein Instrument von der Schule reservieren. Du musst also nicht erst selbst eines kaufen.",
+      "trapExplanationVi": "Phủ định rõ: Ben có thể đặt mượn đàn guitar từ trường cho workshop chứ không cần đàn riêng -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q22",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Sobald die Schule deinen Platz bestätigt hat, melde ich mich bei dir.",
+      "trapExplanationVi": "Đúng: Klara hứa vào văn phòng hỏi ngay và sẽ báo tin lại ngay khi trường xác nhận chỗ.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q23",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "An meiner Tür sind kleine Kratzer und der Stoff auf dem Fahrersitz ist etwas abgenutzt. Das darf man ruhig sehen.",
+      "trapExplanationVi": "Dana Schneider không cần xe đẹp không tì vết, thấy vài vết xước hay sờn ghế là điều bình thường miễn xe không bị rỉ nặng.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q24",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Wer sich so ein Auto anschaffen möchte, sollte vorher ausrechnen, was ein Platz kostet, an dem es trocken steht.",
+      "trapExplanationVi": "Florian Bader nhấn mạnh phải tính trước chi phí chỗ đỗ có mái che khô ráo ngay khi dự định mua xe cổ.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q25",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Wie bekommt man den Wagen und die praktischen Aufgaben drumherum in seinem normalen Leben unter?",
+      "trapExplanationVi": "Moderator bày tỏ mối quan tâm nhất tới cách chủ xe xoay xở xoay quanh chiếc xe cổ trong sinh hoạt hàng ngày.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q26",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Diese Stunden, in denen wir zusammen ein Problem lösen, bedeuten mir mehr als alles andere an diesem Hobby.",
+      "trapExplanationVi": "Florian Bader coi những buổi cuối tuần cùng bạn bè sửa chữa xe là niềm vui lớn nhất của thú chơi này.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q27",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Zum Urlaub an die Küste nehme ich allerdings lieber die Bahn.",
+      "trapExplanationVi": "Dana Schneider chỉ dùng xe cổ chạy quanh vùng lân cận, còn đi nghỉ xa tới bờ biển bà chọn đi tàu hỏa.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q28",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Auf dem Beifahrersitz das Geräusch hören und merken, wie sich so ein Wagen bewegt, wäre für mich reizvoller, als die Reihe abgestellter Fahrzeuge entlang zu gehen.",
+      "trapExplanationVi": "Moderator thích đăng ký ngồi thử cảm nhận chuyển động của xe hơn là chỉ đi dạo xem xe đỗ tĩnh.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q29",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Ein einzelnes Bauteil aus heutiger Herstellung nimmt ihm doch nicht seine besondere Art. Hauptsache es passt technisch.",
+      "trapExplanationVi": "Dana Schneider cho rằng thay một linh kiện mới ngày nay không làm mất đi nét đặc trưng của xe cổ miễn tương thích kỹ thuật.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T09_H_Q30",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Erst wenn die Person unter meiner Anleitung damit gefahren ist, würde ich ihr den Schlüssel für eine eigene Fahrt geben.",
+      "trapExplanationVi": "Florian Bader chỉ giao chìa khóa cho người khác tự lái sau khi người đó đã tập lái thành thạo dưới sự hướng dẫn của ông.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    }
+  ]
+}

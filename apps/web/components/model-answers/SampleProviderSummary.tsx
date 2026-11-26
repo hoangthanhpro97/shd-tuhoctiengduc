@@ -62,6 +62,47 @@ function sampleProviderMatches(provider: Provider, taskProvider: string) {
     : taskProvider.startsWith('telc');
 }
 
+function SampleTaskCard({
+  href,
+  skill,
+  title,
+  slug,
+  topLeftText,
+  badgeText,
+  ctaLabel,
+}: {
+  href: string;
+  skill: 'schreiben' | 'sprechen';
+  title: string;
+  slug: string;
+  topLeftText: string;
+  badgeText: string;
+  ctaLabel: string;
+}) {
+  return (
+    <Link href={href} className="group block min-w-0" title={title}>
+      <DynamicTopicThumbnail
+        skill={skill}
+        title={title}
+        itemKey={slug}
+        topLeftText={topLeftText}
+        badgeText={badgeText}
+      />
+      <h3
+        className="mt-2.5 line-clamp-2 min-h-[2.65rem] text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]"
+        lang="de"
+      >
+        {title}
+      </h3>
+      <div className="mt-1.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-0.5">
+        <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-rose-50 text-[9px]">▶</span>
+        <span>{ctaLabel}</span>
+        <ArrowRight size={13} aria-hidden="true" />
+      </div>
+    </Link>
+  );
+}
+
 function UpcomingProviderSection({
   provider,
   level,
@@ -134,7 +175,6 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
 
   return (
     <main className="bg-white">
-      {/* Hero Banner Section */}
       <header className="relative bg-gradient-to-b from-[#fde8e8]/85 via-[#fef2f2]/75 to-white px-4 pb-12 pt-24 text-center sm:pt-28">
         <h1 className="text-3xl font-black leading-[1.18] tracking-tight text-slate-900 sm:text-5xl lg:text-[48px]">
           <span className="block">
@@ -161,9 +201,7 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
         </div>
       </header>
 
-      {/* Main Content Area */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        {/* Quick Navigation Anchor Bar - Kéo xuống ngay trên vạch đỏ phân loại bài, bỏ số lượng và ký tự */}
         <nav
           className="mb-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4"
           aria-label={`Khu vực bài mẫu ${providerLabel}`}
@@ -179,7 +217,6 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
           ))}
         </nav>
 
-        {/* Content Sections */}
         <div className="space-y-16">
           {sections.map((section) => {
             const isWriting = section.startsWith('schreiben');
@@ -194,72 +231,38 @@ export function SampleProviderSummary({ provider }: { provider: Provider }) {
 
             return (
               <section id={section} key={section} className="scroll-mt-28">
-                {/* Section Header - Tinh gọn: chỉ còn tiêu đề lớn, bỏ eyebrow và số lượng bài */}
                 <div className="mb-6 border-b border-slate-100 pb-3">
                   <h2 className="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">
                     {sectionLabels[section]}
                   </h2>
                 </div>
 
-                {/* Section Content: Grid or Upcoming */}
                 {itemCount > 0 ? (
-                  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
                     {isWriting
                       ? writingItems.map((task) => (
-                          <Link
+                          <SampleTaskCard
                             key={task.id}
                             href={`/bai-mau-schreiben/${task.slug}`}
-                            className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-3 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#da2527]/40 hover:shadow-lg"
+                            skill="schreiben"
                             title={task.title}
-                          >
-                            <DynamicTopicThumbnail
-                              skill="schreiben"
-                              title={task.title}
-                              itemKey={task.slug}
-                              topLeftText={task.partLabel}
-                              badgeText={`${providerLabel} · ${level}`}
-                            />
-                            <div className="mt-3 flex flex-1 flex-col justify-between">
-                              <h3 className="line-clamp-2 min-h-[2.65rem] text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
-                                {task.title}
-                              </h3>
-                              <div className="mt-3 flex items-center border-t border-slate-100 pt-3">
-                                <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-1">
-                                  <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-rose-50 text-[9px]">▶</span>
-                                  <span>Xem bài mẫu viết</span>
-                                  <ArrowRight size={13} aria-hidden="true" />
-                                </span>
-                              </div>
-                            </div>
-                          </Link>
+                            slug={task.slug}
+                            topLeftText={task.partLabel}
+                            badgeText={`${providerLabel} · ${level}`}
+                            ctaLabel="Xem bài mẫu viết"
+                          />
                         ))
                       : speakingItems.map((task) => (
-                          <Link
+                          <SampleTaskCard
                             key={task.id}
                             href={`/bai-mau-sprechen/${task.slug}`}
-                            className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-3 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#da2527]/40 hover:shadow-lg"
+                            skill="sprechen"
                             title={task.title}
-                          >
-                            <DynamicTopicThumbnail
-                              skill="sprechen"
-                              title={task.title}
-                              itemKey={task.slug}
-                              topLeftText={`Teil ${task.part}`}
-                              badgeText={`${providerLabel} · ${level}`}
-                            />
-                            <div className="mt-3 flex flex-1 flex-col justify-between">
-                              <h3 className="line-clamp-2 min-h-[2.65rem] text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
-                                {task.title}
-                              </h3>
-                              <div className="mt-3 flex items-center border-t border-slate-100 pt-3">
-                                <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-1">
-                                  <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-rose-50 text-[9px]">▶</span>
-                                  <span>Luyện nói &amp; Nghe Audio</span>
-                                  <ArrowRight size={13} aria-hidden="true" />
-                                </span>
-                              </div>
-                            </div>
-                          </Link>
+                            slug={task.slug}
+                            topLeftText={`Teil ${task.part}`}
+                            badgeText={`${providerLabel} · ${level}`}
+                            ctaLabel="Luyện nói & Nghe Audio"
+                          />
                         ))}
                   </div>
                 ) : (

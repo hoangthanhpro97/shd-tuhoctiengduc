@@ -23,7 +23,7 @@ function searchableExamMetadata(exam: ExamPublicPayload) {
 
 export function isPublicExam(exam: ExamPublicPayload) {
   const searchable = searchableExamMetadata(exam);
-  return (searchable.includes('osd') || searchable.includes('oesd')) && !syntheticExamPattern.test(searchable);
+  return (searchable.includes('osd') || searchable.includes('oesd') || searchable.includes('goethe')) && !syntheticExamPattern.test(searchable);
 }
 
 let cache: ExamPublicPayload[] | null = null;
@@ -55,7 +55,11 @@ async function loadAll() {
       console.warn(`Skipping invalid exam content ${fileName}:`, error instanceof Error ? error.message : error);
     }
   }
+  const providerRank = (exam: ExamPublicPayload) => (
+    exam.examMetadata.providerFormat.toLowerCase().includes('goethe') ? 1 : 0
+  );
   cache = exams.sort((a, b) => a.examMetadata.cefrLevel.localeCompare(b.examMetadata.cefrLevel)
+    || providerRank(a) - providerRank(b)
     || Number(a.examMetadata.slug.match(/(\d+)$/)?.[1] ?? 0) - Number(b.examMetadata.slug.match(/(\d+)$/)?.[1] ?? 0)
     || a.examMetadata.slug.localeCompare(b.examMetadata.slug));
   return cache;

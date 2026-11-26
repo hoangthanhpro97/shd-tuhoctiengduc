@@ -8,7 +8,7 @@ import { TopAnnouncementBar } from '../layout/TopAnnouncementBar';
 import { ExamBookCover } from './ExamBookCover';
 import { ExamBookSetCard } from './ExamBookSetCard';
 import { RecentAttemptsSection } from './RecentAttemptsSection';
-import { examBookSets, sourceExamSlug } from '../../data/exam-book-sets';
+import { buildGoetheBookSets, examBookSets, sourceExamSlug } from '../../data/exam-book-sets';
 import { useAuth } from '../auth/AuthProvider';
 
 export type PublicExamListItem = {
@@ -21,19 +21,19 @@ export type PublicExamListItem = {
   passPercentage: number;
   questionCount: number;
   sectionCount: number;
-  provider: 'osd';
+  provider: 'osd' | 'goethe';
 };
 
 type PreviewProvider = 'goethe' | 'telc';
 
 const levelOrder: Record<PublicExamListItem['cefrLevel'], number> = { A1: 1, A2: 2, B1: 3, B2: 4, C1: 5 };
 const recentExamSlugs = [
+  'goethe-b1-test-01',
+  'goethe-b1-test-02',
   'osd-b1-test-15',
   'osd-b2-test-10',
   'osd-b1-test-14',
   'osd-b2-test-09',
-  'osd-b1-test-13',
-  'osd-b2-test-08',
 ];
 
 function testNumber(slug: string) {
@@ -41,7 +41,9 @@ function testNumber(slug: string) {
 }
 
 function displayTitle(exam: PublicExamListItem) {
-  return `ÖSD ${exam.cefrLevel} · Modelltest ${testNumber(exam.slug)}`;
+  return exam.provider === 'goethe'
+    ? `Goethe ${exam.cefrLevel} · Modellsatz ${testNumber(exam.slug)}`
+    : `ÖSD ${exam.cefrLevel} · Modelltest ${testNumber(exam.slug)}`;
 }
 
 function DolFeature({
@@ -78,10 +80,10 @@ function SectionHeading({ title, count, tone, trailing }: { title: string; count
   );
 }
 
-function LevelHeading({ level, title }: { level: 'B1' | 'B2'; title: string }) {
+function LevelHeading({ level, title, badgeClassName = 'bg-[#0284c7]' }: { level: 'B1' | 'B2'; title: string; badgeClassName?: string }) {
   return (
     <h3 className="mb-3.5 flex flex-wrap items-center gap-2.5">
-      <span className="rounded-md bg-[#0284c7] px-2.5 py-1 text-xs font-black text-white">{level}</span>
+      <span className={`rounded-md px-2.5 py-1 text-xs font-black text-white ${badgeClassName}`}>{level}</span>
       <span className="text-lg font-extrabold text-slate-800">{title}</span>
     </h3>
   );
@@ -125,8 +127,12 @@ export function ExamCatalog({ exams }: { exams: PublicExamListItem[] }) {
   const { user } = useAuth();
   const [authOpen, setAuthOpen] = useState(false);
   const sorted = [...exams].sort((a, b) => levelOrder[a.cefrLevel] - levelOrder[b.cefrLevel] || Number(testNumber(a.slug)) - Number(testNumber(b.slug)));
-  const b1 = sorted.filter((exam) => exam.cefrLevel === 'B1');
-  const b2 = sorted.filter((exam) => exam.cefrLevel === 'B2');
+  const osdExams = sorted.filter((exam) => exam.provider === 'osd');
+  const goetheExams = sorted.filter((exam) => exam.provider === 'goethe');
+  const b1 = osdExams.filter((exam) => exam.cefrLevel === 'B1');
+  const b2 = osdExams.filter((exam) => exam.cefrLevel === 'B2');
+  const goetheB1 = goetheExams.filter((exam) => exam.cefrLevel === 'B1');
+  const goetheB1Sets = buildGoetheBookSets(goetheB1);
   const examsBySlug = new Map(sorted.map((exam) => [exam.slug, exam]));
   const recentExams = recentExamSlugs.map((slug) => examsBySlug.get(slug)).filter((exam): exam is PublicExamListItem => Boolean(exam));
 
@@ -180,12 +186,12 @@ export function ExamCatalog({ exams }: { exams: PublicExamListItem[] }) {
           <Link href="#osd" className="rounded-full border border-[#da2527] bg-[#da2527] px-4 py-2 text-xs font-bold text-white">Tất cả ({sorted.length})</Link>
           <Link href="#osd-b1" className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-700 transition-colors hover:border-[#da2527] hover:text-[#da2527]">ÖSD B1 ({b1.length})</Link>
           <Link href="#osd-b2" className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-700 transition-colors hover:border-[#da2527] hover:text-[#da2527]">ÖSD B2 ({b2.length})</Link>
-          <Link href="#goethe" className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-700 transition-colors hover:border-[#da2527] hover:text-[#da2527]">Goethe · Sắp ra mắt</Link>
+          <Link href="#goethe" className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-700 transition-colors hover:border-[#16a34a] hover:text-[#16a34a]">{goetheB1.length ? `Goethe B1 (${goetheB1.length})` : 'Goethe · Sắp ra mắt'}</Link>
           <Link href="#telc" className="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-700 transition-colors hover:border-[#da2527] hover:text-[#da2527]">telc · Sắp ra mắt</Link>
         </nav>
         <SectionHeading
           title="Bài test từ ÖSD Zertifikat"
-          count={`${sorted.length} đề chính thức`}
+          count={`${osdExams.length} đề chính thức`}
           tone="osd"
           trailing={<Link className="group inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-colors hover:text-[#b81e20] sm:text-sm" href="/de-thi/osd"><span>Xem thêm</span><span className="transition-transform group-hover:translate-x-0.5">→</span></Link>}
         />
@@ -200,8 +206,34 @@ export function ExamCatalog({ exams }: { exams: PublicExamListItem[] }) {
       </section>
 
       <section id="goethe" className="mx-auto mt-12 max-w-6xl scroll-mt-24 px-4">
-        <SectionHeading title="Bài test từ Goethe-Zertifikat" count="Sắp ra mắt" tone="goethe" />
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2"><PreviewCard provider="goethe" level="B1" /><PreviewCard provider="goethe" level="B2" /></div>
+        <SectionHeading
+          title="Bài test từ Goethe-Zertifikat"
+          count={goetheExams.length ? `${goetheExams.length} đề chính thức` : 'Sắp ra mắt'}
+          tone="goethe"
+          trailing={goetheExams.length ? <Link className="group inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-colors hover:text-[#b81e20] sm:text-sm" href="/de-thi/goethe"><span>Xem thêm</span><span className="transition-transform group-hover:translate-x-0.5">→</span></Link> : undefined}
+        />
+        {goetheB1Sets.length > 0 ? (
+          <>
+            <div id="goethe-b1" className="scroll-mt-24">
+              <LevelHeading level="B1" title="Goethe-Zertifikat B1 (Lesen & Hören)" badgeClassName="bg-[#16a34a]" />
+              <div className="grid grid-cols-1 gap-x-5 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+                {goetheB1Sets.map((bookSet) => (
+                  <ExamBookSetCard
+                    key={bookSet.slug}
+                    bookSet={bookSet}
+                    exams={bookSet.examSlugs.map((slug) => goetheB1.find((exam) => exam.slug === slug)).filter((exam): exam is PublicExamListItem => Boolean(exam))}
+                  />
+                ))}
+              </div>
+            </div>
+            <div id="goethe-b2" className="mt-8 scroll-mt-24">
+              <LevelHeading level="B2" title="Goethe-Zertifikat B2" badgeClassName="bg-[#16a34a]" />
+              <div className="grid grid-cols-1 gap-6 lg:grid-cols-2"><PreviewCard provider="goethe" level="B2" /></div>
+            </div>
+          </>
+        ) : (
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2"><PreviewCard provider="goethe" level="B1" /><PreviewCard provider="goethe" level="B2" /></div>
+        )}
       </section>
 
       <section id="telc" className="mx-auto mt-10 max-w-6xl scroll-mt-24 px-4">

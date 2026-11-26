@@ -57,7 +57,7 @@ export function RecentAttemptsSection({ exams }: { exams: PublicExamListItem[] }
           const href = attempt?.status === 'in_progress' ? `/lam-bai/${attempt.attemptId}` : attempt ? `/ket-qua/${attempt.attemptId}` : `/de-thi/${exam.slug}`;
           const label = attempt?.status === 'in_progress' ? '▶ Làm tiếp →' : attempt ? 'Xem kết quả →' : '▶ Làm bài →';
           return (
-            <article key={exam.slug} className="rounded-xl border border-slate-100 bg-white py-1">
+            <article key={exam.slug} className="bg-white py-1">
               <h3 className="line-clamp-1 text-[15px] font-bold text-slate-900">{exam.title}</h3>
               <p className="mt-1 text-xs text-slate-500">{exam.sectionCount} phần thi · {exam.durationMinutes} phút · {exam.passPercentage ?? 60}% đạt</p>
               <div className="mt-2 flex flex-wrap items-center gap-2">

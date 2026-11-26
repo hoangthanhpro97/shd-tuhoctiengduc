@@ -1,0 +1,2854 @@
+{
+  "examMetadata": {
+    "examId": "goethe-b1-test-02",
+    "slug": "goethe-b1-test-02",
+    "title": "Goethe-Zertifikat B1 - Modellsatz 02",
+    "cefrLevel": "B1",
+    "providerFormat": "Goethe",
+    "disclaimer": "Bộ đề ôn luyện chuẩn Goethe-Zertifikat B1 (Modellsatz 02 – Digitale Welten, Arbeitsalltag und Stadtleben) gồm đủ 5 phần Đọc (Lesen · 30 câu · 65 phút) và 4 phần Nghe (Hören · 30 câu · 40 phút), kèm khóa đáp án kiểm chứng 100% và bản chép lời song ngữ Đức–Việt.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_goethe_b1_t02_lesen_p1",
+      "skill": "Lesen",
+      "title": "Teil 1: Janas Technik-Blog: Ein Nachmittag in einer anderen Welt Freitag, 4. September Gestern hat mich mein Bruder Malik zu einer Vorführung in ein kleines Studio eingeladen. Dort konnte man ein neues Spiel mit einer besonderen Brille, Kopfhörern und zwei Handgeräten ausprobieren. Solche Geräte sind mir für zu Hause noch zu teuer. Deshalb war ich froh, dass die gesamte Ausrüstung dem Studio gehörte und wir sie dort benutzen durften.",
+      "durationMinutes": 10,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Janas Technik-Blog: Ein Nachmittag in einer anderen Welt Freitag, 4. September Gestern hat mich mein Bruder Malik zu einer Vorführung in ein kleines Studio eingeladen. Dort konnte man ein neues Spiel mit einer besonderen Brille, Kopfhörern und zwei Handgeräten ausprobieren. Solche Geräte sind mir für zu Hause noch zu teuer. Deshalb war ich froh, dass die gesamte Ausrüstung dem Studio gehörte und wir sie dort benutzen durften.",
+        "content": "Janas Technik-Blog: Ein Nachmittag in einer anderen Welt Freitag, 4. September Gestern hat mich mein Bruder Malik zu einer Vorführung in ein kleines Studio eingeladen. Dort konnte man ein neues Spiel mit einer besonderen Brille, Kopfhörern und zwei Handgeräten ausprobieren. Solche Geräte sind mir für zu Hause noch zu teuer. Deshalb war ich froh, dass die gesamte Ausrüstung dem Studio gehörte und wir sie dort benutzen durften.\n\nFrau Richter, die im Studio arbeitet, erklärte uns zuerst alles. Dann setzte ich die Brille auf und stand plötzlich mitten in einer fremden Landschaft. Vor mir lagen hohe Felsen, leuchtende Pflanzen und ein alter Weg. Meine Aufgabe war nicht, gegen andere Figuren zu kämpfen. Ich musste die Gegend genau untersuchen und Rätsel lösen: Einmal sollte ich Steine in die richtige Reihenfolge bringen, später musste ich mit Lichtstrahlen eine Tür öffnen.\n\nNach einigen Minuten hörte ich ein leises Klopfen. Weil ich Kopfhörer trug, war ich sicher, dass das Geräusch aus dem Spiel kam. Ich suchte hinter einem virtuellen Baum und ging sogar zu einer Höhle. Erst als Malik meine Schulter berührte, nahm ich die Brille kurz ab. Da bemerkte ich, dass tatsächlich jemand an die Tür des Studios geklopft hatte.\n\nKurz danach blieb das Bild plötzlich stehen. Frau Richter kam sofort zu uns und stellte die Grafik etwas niedriger ein.\n\nDanach lief das Spiel wieder ohne Probleme. Ich fand den Unterschied in der Bildqualität übrigens kaum sichtbar.\n\nMalik war am Ende völlig begeistert. Auf dem Heimweg sagte er mehrmals, dass er dieses System am liebsten sofort kaufen würde. Ich selbst möchte damit noch warten. Erst wenn die Technik mit meinem jetzigen Computer funktioniert, denke ich über einen Kauf nach.\n\nTrotzdem hat mich der Nachmittag beeindruckt. Die Landschaft wirkte so echt, dass ich manchmal vergaß, wo ich wirklich war. Für gelegentliche Abenteuer würde ich gern wiederkommen. Bei unseren regelmäßigen Spieleabenden ist mir aber etwas anderes wichtiger: Ich möchte meine Freunde tatsächlich neben mir sitzen haben, gemeinsam lachen und ihre Reaktionen direkt sehen. Eine perfekte digitale Welt kann das für mich nicht ersetzen."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Jana testete die neue Spieltechnik auf einem Gerät, das sie selbst gekauft hatte.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Bẫy sở hữu: toàn bộ thiết bị kính VR thuộc về studio chứ không phải do Jana tự mua."
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "In dem Spiel standen das Erkunden einer Landschaft und das Lösen von Rätseln im Mittelpunkt.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Đúng: trọng tâm trò chơi là khám phá cảnh quan và giải các câu đố."
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Jana hielt das Klopfen an der Studiotür zunächst für ein Geräusch aus dem Spiel.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Nach dem kurzen Bildstillstand stellte Frau Richter eine höhere Bildqualität ein.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Malik wollte mit dem Kauf warten, Jana dagegen das Spiel sofort kaufen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Trotz ihrer Begeisterung möchte Jana Spieleabende lieber gemeinsam mit anderen in einem Raum erleben.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_lesen_p2",
+      "skill": "Lesen",
+      "title": "Teil 2: Pressetexte (Aufgaben 7–12)",
+      "durationMinutes": 20,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Zwei Pressetexte (Aufgaben 7–12)",
+        "content": "TEXT 1\n\nNeue Pausenidee bei Nordwerk\n\nDas Unternehmen Nordwerk erweitert sein freiwilliges Angebot „Pause offline“. Es soll Beschäftigten helfen, sich während eines anstrengenden Arbeitstages kurz zu erholen. Seit dem Frühjahr können sie ihre Pause in einem ruhigen Raum verbringen, in dem weder Computer noch andere Bildschirme genutzt werden. Stattdessen gibt es dort bequeme Sessel, Zeitschriften und einige Pflanzen. Gespräche sind möglich, sollen aber leise bleiben.\n\nDie Teilnahme ist freiwillig. Wer den Raum betritt, legt jedoch sein Mobiltelefon für die Dauer der Pause in eines der Schließfächer neben dem Eingang. Die Geräte bleiben dort sicher verwahrt und können beim Verlassen wieder mitgenommen werden. Die Projektleiterin erklärt, dass manche Menschen bei Stress ständig auf neue Nachrichten reagieren. Ohne das Telefon könnten sie leichter abschalten. Andere Beschäftigte erholen sich dagegen lieber bei einem Gespräch oder einem kurzen Spaziergang und nutzen den Raum deshalb nicht.\n\nAnfangs war der Raum nur am Vormittag und während der üblichen Mittagspause geöffnet. Beschäftigte aus späteren Schichten konnten das Angebot kaum nutzen. Mehrere von ihnen baten darum, auch gegen Ende ihres Arbeitstages eine ruhige Pause machen zu können. Nordwerk führte daraufhin einen zusätzlichen Termin am späten Nachmittag ein.\n\nInzwischen gibt es „Pause offline“ auch in zwei kleineren Niederlassungen. Das Unternehmen will beobachten, wann und von wem die Räume genutzt werden. Eine Verpflichtung zur Teilnahme ist weiterhin nicht geplant.\n\nTEXT 2\n\nNach der Arbeit noch kurz ins Beet\n\nDie Stadt Lindenau hat in der Nähe des Bahnhofs das Projekt „Feierabend-Beete“ eröffnet. Es richtet sich vor allem an Erwachsene, die sich nach einem anstrengenden Tag bei leichter Gartenarbeit erholen möchten, aber keinen eigenen Garten besitzen. Sie können Gemüse, Kräuter oder Blumen anbauen und die gemeinsamen Beete pflegen, wenn es ihr Alltag erlaubt. Eine feste Gruppe mit wöchentlichen Terminen gibt es nicht.\n\nDie Organisatoren betonen, dass Menschen sehr unterschiedlich mit Belastungen umgehen. Während einige nach der Arbeit Ruhe brauchen, entspannen sich andere besser bei Bewegung und einer praktischen Aufgabe. Das Gartenprojekt ist deshalb nur ein freiwilliges Angebot und keine Behandlung. Erfahrungen mit Gartenarbeit sind nicht nötig.\n\nVor Ort stehen Gießkannen, kleine Schaufeln und weitere Gartengeräte bereit. Auch Wasser ist direkt an den Beeten verfügbar. Interessierte müssen daher nichts von zu Hause mitbringen. An einigen Abenden helfen freiwillige Mitglieder des Organisationsteams bei Fragen. Außerhalb dieser Zeiten dürfen angemeldete Teilnehmer selbstständig arbeiten.\n\nDer Platz neben dem Bahnhof wurde bewusst gewählt. Viele Berufstätige kommen dort auf dem Heimweg vorbei. Sie können aus dem Zug oder der Straßenbahn steigen, zehn oder zwanzig Minuten bei den Pflanzen verbringen und anschließend weiter nach Hause fahren. So soll die Teilnahme auch für Menschen möglich sein, die wenig freie Zeit haben.\n\nGeerntet wird gemeinsam. Falls das Angebot gut angenommen wird, sollen im nächsten Jahr weitere Beete in anderen Stadtteilen entstehen."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "In diesem Text geht es darum, dass ein Unternehmen …",
+          "options": [
+            {
+              "id": "A",
+              "text": "private Mobiltelefone am Arbeitsplatz vollständig verboten hat."
+            },
+            {
+              "id": "B",
+              "text": "ein freiwilliges Angebot für erholsame, bildschirmfreie Pausen erweitert hat."
+            },
+            {
+              "id": "C",
+              "text": "alle Pausen durch gemeinsame Spaziergänge ersetzen möchte."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Wer den Ruheraum nutzt, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "muss an jedem Arbeitstag dorthin gehen."
+            },
+            {
+              "id": "B",
+              "text": "darf das lautlose Mobiltelefon mit hineinnehmen."
+            },
+            {
+              "id": "C",
+              "text": "legt das Mobiltelefon vorher in ein Schließfach."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Die bildschirmfreie Pause wird jetzt auch am späten Nachmittag angeboten, weil …",
+          "options": [
+            {
+              "id": "A",
+              "text": "Beschäftigte aus späteren Schichten darum gebeten haben."
+            },
+            {
+              "id": "B",
+              "text": "der Raum am Vormittag regelmäßig besetzt ist."
+            },
+            {
+              "id": "C",
+              "text": "am Nachmittag keine Teambesprechungen mehr stattfinden sollen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "In diesem Text geht es um …",
+          "options": [
+            {
+              "id": "A",
+              "text": "eine medizinische Behandlung für erschöpfte Berufstätige."
+            },
+            {
+              "id": "B",
+              "text": "den vollständigen Umbau eines Bahnhofsvorplatzes."
+            },
+            {
+              "id": "C",
+              "text": "ein flexibles Gartenangebot zur Erholung vom Alltagsstress."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Die Teilnehmerinnen und Teilnehmer …",
+          "options": [
+            {
+              "id": "A",
+              "text": "bekommen Werkzeug und Wasser vor Ort."
+            },
+            {
+              "id": "B",
+              "text": "müssen jede Woche zu einem festen Termin kommen."
+            },
+            {
+              "id": "C",
+              "text": "brauchen bereits Erfahrung mit Gartenarbeit."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Die Beete liegen in der Nähe des Bahnhofs, damit …",
+          "options": [
+            {
+              "id": "A",
+              "text": "die Stadt für die Fläche weniger bezahlen muss."
+            },
+            {
+              "id": "B",
+              "text": "Pendler auf dem Heimweg kurz mitarbeiten können."
+            },
+            {
+              "id": "C",
+              "text": "Schulklassen sie am Wochenende betreuen können."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_lesen_p3",
+      "skill": "Lesen",
+      "title": "Teil 3: Anzeigen zuordnen (A–J & 0)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Anzeigenübersicht (Anzeigen A–J)",
+        "content": "Anzeige A\nFeierabendküche: Kochen für absolute Anfänger. Lernen Sie einfache Alltagsgerichte Schritt für Schritt kennen.\nMittwochs von 18.45 bis 21.00 Uhr, alle Zutaten inklusive. Anmeldung beim Kochstudio Löffelweise.\n\nAnzeige B\nNeu in Lindenstadt? Unser Rundgang zeigt Ihnen wichtige Ämter, günstige Einkaufsmöglichkeiten und schöne Treffpunkte. Jeden ersten Samstag im Monat um 14 Uhr, Dauer etwa zwei Stunden.\n\nAnzeige C\nRadwerk West repariert Cityräder und E-Bikes. Reparaturannahme montags bis freitags ab 8 Uhr, donnerstags sogar bis 20 Uhr. Kleine Reparaturen erledigen wir häufig noch am selben Abend.\n\nAnzeige D\nLauftreff „Langsam los“ für Anfängerinnen und Anfänger. Wir treffen uns sonntags um 9.30 Uhr im Stadtpark. Das gemeinsame Laufen zählt, nicht die Geschwindigkeit. Teilnahme kostenlos.\n\nAnzeige E\nDeutsch sprechen ohne Lehrbuch: Offenes Sprachcafé für Erwachsene, immer dienstags von 19 bis 21 Uhr. Verschiedene Sprachniveaus willkommen. Eine Kinderbetreuung können wir leider nicht anbieten.\n\nAnzeige F\nCoworking Ruhepunkt: ruhige Schreibtische tageweise buchen, ohne Mitgliedschaft. Schnelles Internet und ein zusätzlicher Computerbildschirm sind im Tagespreis enthalten. Geöffnet montags bis samstags.\n\nAnzeige G\nSamstagsprogramm im Familienzentrum: Kinder von drei bis sechs Jahren malen, bauen und spielen von 10 bis 12 Uhr.\nDie Eltern verlassen während der Betreuung das Zentrum.\n\nAnzeige H\nMöbliertes Zimmer zur Zwischenmiete, frei für genau drei Monate. Küche und Bad werden geteilt. Die Anmeldung der Adresse beim Bürgeramt ist ausdrücklich möglich. Nähe Innenstadt.\n\nAnzeige I\nHelles, unmöbliertes Zimmer in einer Wohngemeinschaft. Mindestmietdauer sechs Monate. Eine Anmeldung unter dieser Adresse ist wegen des Hauptmietvertrags nicht möglich. Besichtigung nach Vereinbarung.\n\nAnzeige J\nDas flexible Stadt-Abo gilt einen Monat lang in allen Bussen und Straßenbahnen von Lindenstadt. Es verlängert sich jeweils um einen Monat und kann monatlich gekündigt werden."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_L_Q13",
+          "order": 13,
+          "part": 3,
+          "prompt": "Situation 13: Amina ist für drei Monate neu in der Stadt. Sie sucht ein möbliertes Zimmer, in dem sie sich auch offiziell anmelden kann.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q14",
+          "order": 14,
+          "part": 3,
+          "prompt": "Situation 14: Daniel fährt täglich mit dem Fahrrad zur neuen Arbeit. Er sucht eine Werkstatt, die auch nach 18.30 Uhr noch Reparaturen annimmt.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q15",
+          "order": 15,
+          "part": 3,
+          "prompt": "Situation 15: Sofia möchte samstags Deutsch sprechen üben. Währenddessen braucht sie eine Betreuung für ihre vierjährige Tochter.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Situation 16: Leon fährt in seiner neuen Stadt mit Bus und Straßenbahn. Er möchte eine Monatskarte, die er jeden Monat kündigen kann.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Situation 17: Mira kann noch nicht gut kochen. Sie sucht einen Anfängerkurs, der an einem Werktag nach der Arbeit stattfindet.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Situation 18: Pavel arbeitet nur für einzelne Tage im Homeoffice. Er sucht dann einen ruhigen Arbeitsplatz mit einem zusätzlichen Bildschirm.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Situation 19: Elena möchte sonntagmorgens mit dem Laufen beginnen und sucht dafür eine Gruppe ohne Leistungsdruck.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_lesen_p4",
+      "skill": "Lesen",
+      "title": "Teil 4: Leserbriefe (Ja/Nein Meinungen)",
+      "durationMinutes": 15,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Leserbriefe (Aufgaben 20–26)",
+        "content": "In einer Zeitschrift lesen Sie Kommentare zu der Frage, ob Einweggrills in Stadtparks verboten werden sollen. Lesen Sie die Texte 20 bis 26. Entscheiden Sie bei jeder Person, ob sie für ein Verbot ist. Ist die Person für ein Verbot?\n\nLeserbrief 20 (Lena):\nIch grille im Sommer selbst gern im Park. Einweggrills stehen jedoch direkt auf dem Rasen, hinterlassen verbrannte Stellen und landen nach dem Essen oft neben vollen Papierkörben. Deshalb sollten sie dort nicht mehr erlaubt sein. Auf das Grillen muss trotzdem niemand verzichten: In mehreren Parks gibt es feste öffentliche Grillstationen, die sicherer sind und von vielen Menschen gemeinsam genutzt werden können.\n\nLeserbrief 21 (Tobias):\nEin vollständiges Verbot halte ich für übertrieben. Das eigentliche Problem sind doch Besucher, die ihren Platz schmutzig verlassen. Die Stadt sollte mehr Behälter für heiße Kohle und andere Abfälle aufstellen. Außerdem müsste häufiger kontrolliert werden, ob die Leute nach dem Grillen alles mitnehmen. Wer Müll liegen lässt, sollte zahlen. Verantwortungsvolle Besucher dürfen ihren Einweggrill meiner Meinung nach weiter benutzen.\n\nLeserbrief 22 (Meral):\nTreffen mit Freunden und gemeinsames Essen im Park gehören für mich zum Sommer. Trotzdem bin ich für das Verbot von Einweggrills. Man benutzt sie nur einmal, und danach bleiben Metall, Kohle und Verpackungen zurück. Es gibt eine vernünftige Alternative: Kleine wiederverwendbare Grills lassen sich mehrfach verwenden und sicher transportieren. Ein Verbot beendet also nicht das Grillen, sondern fördert nur eine bessere Ausstattung.\n\nLeserbrief 23 (Jonas):\nWenn es wochenlang nicht regnet und der Boden sehr trocken ist, kann schon ein Funke gefährlich werden. In solchen Zeiten akzeptiere ich vorübergehende Einschränkungen für Einweggrills. Ein allgemeines Verbot für die ganze Grillsaison geht mir aber zu weit. Nach mehreren Regentagen ist die Situation völlig anders. Die Stadt sollte ihre Regeln deshalb an die aktuelle Brandgefahr anpassen, statt alles dauerhaft zu untersagen.\n\nLeserbrief 24 (Heike):\nSeit Jahren stehen in unserem Park Schilder mit Warnungen. Trotzdem sehe ich nach fast jedem sonnigen Wochenende schwarze Brandstellen und zurückgelassene Einweggrills. Offenbar reichen freundliche Hinweise nicht aus. Auch zusätzliche Mülleimer lösen das Problem nicht, wenn heiße Grills einfach auf dem Rasen stehen bleiben. Nach diesen Erfahrungen sehe ich nur noch eine wirksame Lösung: Einweggrills müssen in den Stadtparks verboten werden.\n\nLeserbrief 25 (Rashid):\nMit einem Verbot erreicht man vor allem, dass Menschen mit wenig Geld seltener gemeinsam draußen essen können. Ich würde Einweggrills deshalb nicht verbieten. Die Stadt könnte stattdessen an den Parkeingängen wiederverwendbare Grills für eine kleine Gebühr verleihen. Wer den Grill sauber zurückbringt, bekommt einen Teil des Geldes zurück. So ändern die Besucher ihr Verhalten, ohne dass eine beliebte Freizeitaktivität untersagt wird.\n\nLeserbrief 26 (Claudia):\nIch unterstütze das Verbot, weil Einweggrills zu viel Abfall verursachen und den Boden beschädigen können. Eine neue Regel allein genügt allerdings nicht. An allen Eingängen muss deutlich stehen, was verboten ist und wo sich erlaubte Grillplätze befinden. Außerdem sollte die Stadt regelmäßig kontrollieren. Wenn niemand die Einhaltung prüft, werden einige Besucher ihre Einweggrills weiterhin mitbringen, und im Park ändert sich kaum etwas."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_L_Q20",
+          "order": 20,
+          "part": 4,
+          "prompt": "Lena: Ist die Person für ein Verbot?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q21",
+          "order": 21,
+          "part": 4,
+          "prompt": "Tobias: Ist die Person für ein Verbot?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q22",
+          "order": 22,
+          "part": 4,
+          "prompt": "Meral: Ist die Person für ein Verbot?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Jonas: Ist die Person für ein Verbot?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Heike: Ist die Person für ein Verbot?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Rashid: Ist die Person für ein Verbot?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Claudia: Ist die Person für ein Verbot?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_lesen_p5",
+      "skill": "Lesen",
+      "title": "Teil 5: Hausordnung für die Proben des Stadtteilchors",
+      "durationMinutes": 10,
+      "totalQuestions": 4,
+      "stimulus": {
+        "type": "text",
+        "title": "Hausordnung für die Proben des Stadtteilchors",
+        "content": "Hausordnung für die Proben des Stadtteilchors\n\nProbenzeiten und Abmeldungen\n\nDie Proben beginnen pünktlich. Bitte kommen Sie früh genug, damit Jacken und Taschen vor Beginn in der Garderobe abgelegt werden können. Wer an einer Probe nicht teilnehmen kann, informiert spätestens bis 12.00 Uhr am jeweiligen Probentag das Chorbüro. Nachrichten an andere Chormitglieder ersetzen diese Abmeldung nicht. Bei längerem Fehlen wenden Sie sich bitte zusätzlich an die Chorleitung.\n\nProbenraum und Pausen\n\nIm Probenraum sind Speisen und Getränke grundsätzlich nicht erlaubt. Eine Ausnahme gilt für Wasser in sicher verschließbaren Flaschen. Die Flaschen müssen während des Singens neben dem eigenen Stuhl stehen und nach der Probe mitgenommen werden. Kaffee, Tee, Saft und Speisen dürfen ausschließlich während der Pause im Foyer konsumiert werden. Bitte hinterlassen Sie Tische und Sitzplätze dort sauber.\n\nAufnahmen\n\nTonaufnahmen können beim persönlichen Üben helfen, dürfen während einer Probe aber nur unter zwei Bedingungen gemacht werden: Die Chorleitung muss vorher zugestimmt haben, und alle anwesenden Personen müssen über die geplante Aufnahme informiert worden sein. Das gilt auch für kurze Aufnahmen mit dem Mobiltelefon. Fotos und Videos sind während der Proben nicht gestattet. Offizielle Konzertaufnahmen werden gesondert organisiert.\n\nGäste\n\nBesucherinnen und Besucher dürfen nur zu Proben kommen, die ausdrücklich als offene Proben angekündigt wurden.\n\nZusätzlich ist vor dem Termin eine Anmeldung beim Chorbüro erforderlich. Eine persönliche Einladung durch ein Chormitglied allein genügt nicht. Bei regulären Proben bleiben die Räume ausschließlich den angemeldeten Sängerinnen und Sängern sowie dem Leitungsteam vorbehalten.\n\nWeitere Hinweise\n\nMobiltelefone müssen lautlos gestellt werden. Fluchtwege und Türen sind stets freizuhalten. Noten können für die Dauer des Chorprojekts ausgeliehen werden und sind nach dem Abschluss vollständig zurückzugeben. Schäden an Räumen oder ausgeliehenem Material sind dem Chorbüro sofort zu melden. Das Kulturhaus haftet nicht für persönliche Gegenstände, die unbeaufsichtigt im Gebäude liegen bleiben."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_L_Q27",
+          "order": 27,
+          "part": 5,
+          "prompt": "Wer an einer Probe nicht teilnehmen kann, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "muss das Chorbüro spätestens am Mittag des Probentags informieren."
+            },
+            {
+              "id": "B",
+              "text": "kann sich bis zum Probenbeginn bei der eigenen Stimmgruppe abmelden."
+            },
+            {
+              "id": "C",
+              "text": "muss bereits am Vortag der Chorleitung Bescheid geben."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q28",
+          "order": 28,
+          "part": 5,
+          "prompt": "Im Probenraum …",
+          "options": [
+            {
+              "id": "A",
+              "text": "ist nur Wasser in verschließbaren Flaschen erlaubt."
+            },
+            {
+              "id": "B",
+              "text": "darf man während der Probe Kaffee trinken."
+            },
+            {
+              "id": "C",
+              "text": "kann man mitgebrachte Speisen hinten im Raum essen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q29",
+          "order": 29,
+          "part": 5,
+          "prompt": "Tonaufnahmen während einer Probe …",
+          "options": [
+            {
+              "id": "A",
+              "text": "brauchen nur die Zustimmung der Personen, die deutlich zu hören sind."
+            },
+            {
+              "id": "B",
+              "text": "brauchen die Erlaubnis der Chorleitung und eine Information an alle Anwesenden."
+            },
+            {
+              "id": "C",
+              "text": "sind nur im letzten Teil der Probe und nach einer Ankündigung erlaubt."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_L_Q30",
+          "order": 30,
+          "part": 5,
+          "prompt": "Gäste …",
+          "options": [
+            {
+              "id": "A",
+              "text": "können nach vorheriger Anmeldung bei einer regulären Probe zuhören."
+            },
+            {
+              "id": "B",
+              "text": "dürfen ohne Anmeldung zu angekündigten offenen Proben kommen."
+            },
+            {
+              "id": "C",
+              "text": "können nach einer Anmeldung zu einer offenen Probe kommen. Faust Fertig? Scan this code: your score and every mistake, in seconds."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Teil 1: Fünf kurze Texte (Richtig/Falsch & A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Fünf kurze Alltagstexte",
+        "content": "Teil 1: Fünf kurze Texte (Richtig/Falsch & A/B/C)",
+        "audioUrl": "/audio/goethe-b1/test-02-teil-1.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 10,
+            "textDe": "Teil eins. Lösen Sie zu jedem kurzen Hörtext zwei Aufgaben und wählen Sie jeweils die richtige Lösung. Sie hören jeden Text zweimal.",
+            "textVi": "Phần một. Giải hai nhiệm vụ cho mỗi đoạn nghe ngắn và chọn đáp án đúng tương ứng. Bạn sẽ nghe mỗi đoạn hai lần."
+          },
+          {
+            "speakerId": "SPR_1",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 11,
+            "timestampEnd": 11,
+            "textDe": "Beispiel.",
+            "textVi": "Ví dụ."
+          },
+          {
+            "speakerId": "SPR_2",
+            "roleSide": "Left",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 27,
+            "timestampEnd": 73,
+            "textDe": "Hallo Nina, hier ist Daniel. Für unseren Ausflug am Sonntag habe ich schon zwei Zugkarten gekauft. Das Hotel war mir zu teuer, deshalb habe ich Zimmer in einer kleinen Pension reserviert. Sie liegt direkt am See. Bitte bring deine Wanderschuhe mit, denn am Nachmittag möchte ich mit dir zur alten Burg laufen. Ruf mich heute Abend noch einmal an. Bis dann. Hallo Nina, hier ist Daniel. Für unseren Ausflug am Sonntag habe ich schon zwei Zugkarten gekauft. Das Hotel war mir zu teuer, deshalb habe ich Zimmer in einer kleinen Pension reserviert. Sie liegt direkt am See. Bitte bring deine Wanderschuhe mit, denn am Nachmittag möchte ich mit dir zur alten Burg laufen. Ruf mich heute Abend noch einmal an. Bis dann.",
+            "textVi": "Chào Nina, mình là Daniel. Cho chuyến dã ngoại Chủ nhật tới mình đã mua hai vé tàu rồi. Khách sạn hơi đắt với mình nên mình đã đặt phòng ở một nhà nghỉ nhỏ nằm ngay bên hồ. Nhớ mang giày leo núi nhé vì buổi chiều mình muốn đi bộ cùng cậu lên tòa thành cổ. Tối nay gọi lại cho mình nha. Hẹn gặp sau. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 73,
+            "timestampEnd": 75,
+            "textDe": "Aufgaben eins, zwei.",
+            "textVi": "Câu hỏi 1 và 2."
+          },
+          {
+            "speakerId": "SPR_3",
+            "roleSide": "Left",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 91,
+            "timestampEnd": 154,
+            "textDe": "Und nun das Wetter für Samstag. Am Vormittag bleibt es rund um Falkenberg noch freundlich. Ab dem Nachmittag ziehen jedoch dunkle Wolken auf. Während des Freiluftkonzerts am Abend muss immer wieder mit kurzen, kräftigen Schauern gerechnet werden. Der Veranstalter hält trotzdem am geplanten Beginn um 19 Uhr fest. Damit die Musiker und ihre Instrumente geschützt sind, lässt er bis Samstag ein festes Dach über der Bühne aufbauen. Das Publikum bleibt weiterhin auf der Wiese. Und nun das Wetter für Samstag. Am Nachmittag bleibt es rund um Falkenberg noch freundlich. Ab dem Nachmittag ziehen jedoch dunkle Wolken auf. Während des Freiluftkonzerts am Abend muss immer wieder mit kurzen, kräftigen Wolken gerechnet werden. Der Veranstalter hält trotzdem am geplanten Beginn um 19 Uhr fest. Damit die Musiker und ihre Instrumente geschützt sind, lässt er bis Samstag ein festes Dach über der Bühne aufbauen. Das Publikum bleibt weiterhin auf der Wiese.",
+            "textVi": "Và sau đây là dự báo thời tiết cho thứ Bảy. Buổi sáng quanh khu vực Falkenberg trời vẫn dễ chịu. Tuy nhiên từ buổi chiều mây đen sẽ kéo đến. Trong buổi hòa nhạc ngoài trời vào buổi tối có thể liên tục xuất hiện những cơn mưa rào ngắn nhưng nặng hạt. Dù vậy ban tổ chức vẫn giữ nguyên giờ bắt đầu dự kiến lúc 19 giờ. Để các nhạc công và nhạc cụ được che chắn, đến thứ Bảy họ sẽ dựng một mái che cố định phía trên sân khấu. Khán giả vẫn ngồi ngoài bãi cỏ. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 155,
+            "timestampEnd": 157,
+            "textDe": "Aufgaben drei, vier.",
+            "textVi": "Câu hỏi 3 và 4."
+          },
+          {
+            "speakerId": "SPR_4",
+            "roleSide": "Left",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 172,
+            "timestampEnd": 233,
+            "textDe": "Hallo Jonas, hier ist Mara. Unsere Aufnahme zum Vereinsjubiläum ist endlich fertig. Sie kommt in den verschlossenen Umschlag für das Stadtarchiv und darf erst bei unserem Jubiläum in zehn Jahren öffentlich gespielt werden. Für die Feier nächste Woche nehmen wir also ein anderes Lied. Könntest du den Umschlag am Freitagvormittag hinbringen? Das Archiv schließt freitags schon um 12 Uhr, aber vorher nimmt Frau Reuter ihn persönlich entgegen. Ruf mich bitte kurz an, wenn alles geklappt hat. Hallo Jonas, hier ist Mara. Unsere Aufnahme zum Vereinsjubiläum ist endlich fertig. Sie kommt in den verschlossenen Umschlag für das Stadtarchiv und darf erst bei unserem Jubiläum in zehn Jahren öffentlich gespielt werden. Für die Feier nächste Woche nehmen wir also ein anderes Lied. Könntest du den Umschlag am Freitagvormittag hinbringen? Das Archiv schließt freitags schon um 12 Uhr, aber vorher nimmt Frau Reuter ihn persönlich entgegen. Ruf mich bitte kurz an, wenn alles geklappt hat.",
+            "textVi": "Chào Jonas, mình là Mara đây. Bản thu âm kỷ niệm thành lập hội của tụi mình cuối cùng cũng xong rồi. Nó sẽ được cho vào phong bì niêm phong gửi vào kho lưu trữ thành phố và chỉ được phát công khai vào dịp kỷ niệm 10 năm tới thôi. Vì vậy cho buổi lễ tuần sau tụi mình sẽ dùng một bài hát khác. Cậu có thể mang phong bì đến vào sáng thứ Sáu được không? Thứ Sáu kho lưu trữ đóng cửa từ 12 giờ, nhưng trước đó bà Reuter sẽ trực tiếp nhận giúp mình. Xong xuôi cậu nhắn ngắn báo mình nhé. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "SPR_3",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 233,
+            "timestampEnd": 322,
+            "textDe": "Aufgaben. Wie klingt ihr Leben heute? Für unsere Aktion Stimmen für morgen sammeln wir persönliche Audiobotschaften aus der Region. Erzählen Sie uns in höchstens zwei Minuten von einem besonderen Ort, einem wichtigen Menschen oder Ihrem Alltag. Eine Auswahl der Aufnahmen wird verschlossen aufbewahrt und genau zehn Jahre später in einer Radiosendung ausgestrahlt. Mitmachen können alle, die mindestens 18 Jahre alt sind und im Sendegebiet von Radiowelle wohnen. Beiträge können bis Monatsende über unsere Internetseite hochgeladen werden. Wie klingt ihr Leben heute? Für unsere Aktion Stimmen für morgen sammeln wir persönliche Audiobotschaften aus der Region. Erzählen Sie uns in höchstens zwei Minuten von einem besonderen Ort, einem wichtigen Menschen oder Ihrem Alltag. Eine Auswahl der Aufnahmen wird verschlossen aufbewahrt und genau zehn Jahre später in einer Radiosendung ausgestrahlt. Mitmachen können alle, die mindestens 18 Jahre alt sind und im Sendegebiet von Radiowelle wohnen. Beiträge können bis Monatsende über unsere Internetseite hochgeladen werden.",
+            "textVi": "Câu hỏi 5 và 6. Cuộc sống hôm nay của bạn vang lên âm thanh gì? Cho chiến dịch 'Tiếng nói cho ngày mai', chúng tôi thu thập các thông điệp âm thanh cá nhân trong khu vực. Hãy kể trong tối đa hai phút về một địa điểm đặc biệt, một người quan trọng hoặc sinh hoạt thường nhật của bạn. Một số bản thu tuyển chọn sẽ được cất giữ niêm phong và phát sóng trên đài đúng mười năm sau. Mọi người từ đủ 18 tuổi trở lên và sinh sống trong vùng phủ sóng của Radiowelle đều có thể tham gia. Bài gửi được tải lên website của chúng tôi đến hết cuối tháng. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 323,
+            "timestampEnd": 325,
+            "textDe": "Aufgaben sieben, acht.",
+            "textVi": "Câu hỏi 7 và 8."
+          },
+          {
+            "speakerId": "SPR_5",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 340,
+            "timestampEnd": 406,
+            "textDe": "Hier sind die Aussichten für Hessen. Im Norden des Landes bleibt der Nebel am Vormittag dicht und löst sich voraussichtlich erst gegen Mittag auf. Danach zeigt sich dort zunehmend die Sonne. In Mittelhessen wechseln Wolken und sonnige Abschnitte. Der Süden bekommt tagsüber das freundlichste Wetter. Nach Sonnenuntergang sinken die Temperaturen allerdings rasch. Besonders in den südlichen Tälern kann sich am Abend bereits leichter Bodenfrost bilden. Autofahrer sollten dort vorsichtig sein. Hier sind die Aussichten für Hessen. Im Norden des Landes bleibt der Nebel am Vormittag dicht und löst sich voraussichtlich erst gegen Mittag auf. Danach zeigt sich dort zunehmend die Sonne. In Mittelhessen wechseln Wolken und sonnige Abschnitte. Der Süden bekommt tagsüber das freundlichste Wetter. Nach Sonnenuntergang sinken die Temperaturen allerdings rasch. Besonders in den südlichen Tälern kann sich am Abend bereits leichter Bodenfrost bilden. Autofahrer sollten dort vorsichtig sein.",
+            "textVi": "Sau đây là dự báo cho bang Hessen. Ở phía bắc bang, buổi sáng sương mù còn dày và dự kiến đến gần trưa mới tan. Sau đó trời hửng nắng dần. Ở miền Trung Hessen trời xen kẽ mây và nắng. Phía nam ban ngày thời tiết dễ chịu nhất. Tuy nhiên sau khi mặt trời lặn nhiệt độ giảm nhanh. Đặc biệt tại các thung lũng phía nam, buổi tối đã có thể xuất hiện sương muối nhẹ trên mặt đất. Tài xế ở đó nên lái xe cẩn thận. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 407,
+            "timestampEnd": 409,
+            "textDe": "Aufgaben neun, zehn.",
+            "textVi": "Câu hỏi 9 và 10."
+          },
+          {
+            "speakerId": "SPR_6",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 424,
+            "timestampEnd": 482,
+            "textDe": "Guten Tag, Herr Jelmas. Hier spricht Keller von der Musikwerkstatt Klangwerk. Das Ersatzteil für Ihren Plattenspieler ist heute angekommen. Unser Techniker baut es gerade ein, braucht für die Einstellung aber noch etwas Zeit. Das Gerät ist deshalb noch nicht fertig. Morgen schließen wir die Reparatur ab. Sie könnten den Plattenspieler dann am Samstag abholen. Bitte geben Sie mir bis morgen um 12 Uhr Bescheid, ob dieser Termin für Sie passt. Unsere Telefonnummer steht auf Ihrem Reparaturschein. Guten Tag, Herr Jelmas. Hier spricht Keller von der Musikwerkstatt Klangwerk. Das Ersatzteil für Ihren Plattenspieler ist heute angekommen. Unser Techniker baut es gerade ein, braucht für die Einstellung aber noch etwas Zeit. Das Gerät ist deshalb noch nicht fertig. Morgen schließen wir die Reparatur ab. Sie könnten den Plattenspieler dann am Samstag abholen. Bitte geben Sie mir bis morgen um 12 Uhr Bescheid, ob dieser Termin für Sie passt. Unsere Telefonnummer steht auf Ihrem Reparaturschein.",
+            "textVi": "Xin chào ông Yilmaz. Tôi là Keller bên tiệm sửa nhạc cụ Klangwerk. Linh kiện thay thế cho máy quay đĩa của ông hôm nay đã về tới nơi. Kỹ thuật viên của chúng tôi đang lắp vào, nhưng còn cần thêm chút thời gian căn chỉnh nên thiết bị hiện vẫn chưa xong. Ngày mai chúng tôi sẽ hoàn tất việc sửa chữa. Ông có thể đến lấy máy quay đĩa vào thứ Bảy. Xin ông vui lòng báo lại cho tôi chậm nhất đến 12 giờ trưa mai xem lịch hẹn đó có phù hợp với ông không. Số điện thoại của chúng tôi có trên biên nhận sửa chữa của ông. (Lặp lại lần 2)"
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 2,
+          "audioIncludesRepetition": true,
+          "playbackNote": "File âm thanh đề chuẩn Goethe B1 cho Teil này đã ghép sẵn 2 lần đọc liên tiếp."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Text 1: Am Samstagabend bleibt es während des Open-Air-Konzerts trocken.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Bẫy thời gian: buổi sáng còn tạnh ráo nhưng tối diễn ra hòa nhạc ngoài trời sẽ có nhiều cơn mưa rào mạnh -> Sai (F)."
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Text 1: Was plant der Veranstalter wegen des Wetters?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Er lässt die Bühne überdachen."
+            },
+            {
+              "id": "B",
+              "text": "Er verlegt den Beginn auf den Nachmittag."
+            },
+            {
+              "id": "C",
+              "text": "Er zieht mit dem Konzert in das Konzerthaus um."
+            }
+          ],
+          "taskType": "multiple_choice",
+          "publicExplanation": "Đúng A: ban tổ chức cho dựng mái che cố định phía trên sân khấu để bảo vệ nhạc công và nhạc cụ (khán giả vẫn ở ngoài bãi cỏ)."
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Text 2: Mara möchte das neue Lied schon beim Vereinsfest vorspielen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Text 2: Wann kann Jonas den Umschlag im Stadtarchiv abgeben?",
+          "options": [
+            {
+              "id": "A",
+              "text": "am Freitagvormittag"
+            },
+            {
+              "id": "B",
+              "text": "am Freitagnachmittag"
+            },
+            {
+              "id": "C",
+              "text": "am Samstagvormittag"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Text 3: Der Radiosender sammelt persönliche Erinnerungen für eine Sendung in zehn Jahren.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Text 3: Wer darf bei der Aktion mitmachen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Volljährige Personen aus der Region"
+            },
+            {
+              "id": "B",
+              "text": "Jugendliche aus dem Sendegebiet"
+            },
+            {
+              "id": "C",
+              "text": "Volljährige Personen aus ganz Deutschland"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Text 4: In Nordhessen scheint schon am Vormittag die Sonne.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Text 4: Wo kann es am Abend Bodenfrost geben?",
+          "options": [
+            {
+              "id": "A",
+              "text": "in den südlichen Tälern"
+            },
+            {
+              "id": "B",
+              "text": "in Mittelhessen"
+            },
+            {
+              "id": "C",
+              "text": "im Norden des Landes"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Text 5: Der Plattenspieler von Herrn Yilmaz ist schon fertig repariert.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Text 5: Was soll Herr Yilmaz tun?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Bis morgen Mittag Bescheid geben, ob der Abholtermin passt"
+            },
+            {
+              "id": "B",
+              "text": "Eine Anzahlung überweisen"
+            },
+            {
+              "id": "C",
+              "text": "Das Stromkabel in die Werkstatt bringen"
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Informationstext / Führung",
+      "durationMinutes": 8,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Lösen Sie die Aufgaben 11 bis 15. Wählen Sie bei jeder Aufgabe a, b oder c.",
+        "content": "Lösen Sie die Aufgaben 11 bis 15. Wählen Sie bei jeder Aufgabe a, b oder c. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit.",
+        "audioUrl": "/audio/goethe-b1/test-02-teil-2.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 24,
+            "textDe": "Teil zwei. Lösen Sie die Aufgaben 11 bis 15. Wählen Sie bei jeder Aufgabe A, B oder C. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit. Aufgaben 11, 12, 13, 14, 15.",
+            "textVi": "Phần hai. Giải các câu hỏi từ 11 đến 15. Chọn A, B hoặc C cho mỗi câu. Bạn chỉ nghe đoạn văn một lần. Hãy đọc trước các câu hỏi trong 60 giây. Các câu hỏi 11, 12, 13, 14, 15."
+          },
+          {
+            "speakerId": "GUIDE",
+            "roleSide": "Right",
+            "speakerName": "Führungsperson",
+            "timestampStart": 85,
+            "timestampEnd": 242,
+            "textDe": "Herzlich willkommen bei Velora. Mein Name ist Nora Weiß. Ich leite unsere Personalabteilung und begleite Sie heute durch den Betrieb. Einige von Ihnen überlegen vielleicht, sich bei uns zu bewerben. Mein Rat ist, melden Sie sich zunächst für einen Probearbeitstag an. Dabei lernen Sie einen Arbeitsplatz wirklich kennen und können danach besser entscheiden, ob Sie eine Bewerbung schicken möchten. Einen solchen Tag vereinbaren Sie direkt mit meinem Team. Velora baut Fahrräder und bietet außerdem Reparaturen für Privatkunden und Firmen an. Insgesamt arbeiten hier etwa 180 Menschen. Allerdings müssen auch wir sparen, weil Material und Energie teurer geworden sind und weniger neue Fahrräder bestellt werden. Deshalb wurden zwei Produktionsbereiche zusammengelegt. Einige befristete Verträge in der Produktion laufen aus und frei werdende Stellen werden dort vorerst nicht neu besetzt. Gleichzeitig wächst das Reparaturgeschäft. Zusätzliche Mitarbeiterinnen und Mitarbeiter suchen wir deshalb im Kundenservice. Dort beantwortet das Team Fragen zu Bestellungen, vereinbart Werkstatttermine und hilft, wenn ein Fahrrad nicht rechtzeitig geliefert wurde. Fremdsprachenkenntnisse sind in diesem Bereich besonders willkommen. Zuerst besichtigen wir die Montagehalle. Danach gehen wir durch das Lager und sehen uns einige fertige Modelle an. Gegen 10:30 Uhr machen wir eine Pause. Kaffee und Wasser bekommen Sie in der Kantine. Ihre Jacken können Sie hier im Besucherraum lassen. Nach der Pause treffen wir uns bitte nicht wieder an der Kantine, sondern im Schulungsraum im ersten Stock. Dort zeigt Ihnen ein Kollege, wie neue Mitarbeiter eingearbeitet werden. Bevor wir starten, möchte ich Ihnen noch etwas zur Entwicklung des Unternehmens erzählen. Viele Menschen lassen ihre Fahrräder heute regelmäßig kontrollieren, statt erst bei einem Schaden in die Werkstatt zu kommen. Deshalb stieg die Nachfrage nach Wartungen deutlich. Im vergangenen Jahr haben wir darauf reagiert und unser Reparaturzentrum erweitert. Es hat nun 12 statt früher sieben Arbeitsplätze. Ein neues Lager ist zwar geplant, der Bau beginnt aber frühestens im kommenden Frühjahr. Uns ist wichtig, dass Beschäftigte sich trotz der Veränderungen fachlich weiterentwickeln können. Wer beispielsweise einen Kurs zu Elektrofahrrädern oder zur Kundenberatung findet, bespricht das vorher mit seiner Teamleitung. Wird die Fortbildung genehmigt, darf sie während der bezahlten Arbeitszeit besucht werden. Für rein private Kurse gilt diese Regel natürlich nicht. Außerdem übernehmen wir bei anerkannten beruflichen Angeboten meistens die Kurskosten. So, jetzt setzen Sie bitte Ihre Schutzbrillen auf, dann können wir die Montagehalle betreten.",
+            "textVi": "Nhiệt liệt chào mừng quý vị đến với Velora. Tôi là Nora Weiß, trưởng phòng nhân sự và hôm nay tôi sẽ dẫn quý vị đi tham quan nhà máy. Có lẽ một số bạn đang cân nhắc nộp đơn ứng tuyển vào công ty. Lời khuyên của tôi là trước tiên hãy đăng ký tham gia một ngày làm thử. Qua đó bạn thực sự hiểu rõ một vị trí công việc và dễ quyết định hơn xem có muốn gửi hồ sơ hay không. Ngày làm thử như vậy bạn có thể hẹn trực tiếp với đội ngũ của tôi. Velora sản xuất xe đạp và đồng thời nhận sửa chữa cho khách cá nhân lẫn doanh nghiệp. Tổng cộng có khoảng 180 người đang làm việc tại đây. Tuy nhiên chúng tôi cũng phải tiết kiệm do chi phí vật liệu và năng lượng tăng cao trong khi đơn đặt mua xe đạp mới giảm đi. Vì thế hai bộ phận sản xuất đã được sáp nhập lại; một số hợp đồng có thời hạn ở khâu sản xuất hết hạn sẽ tạm thời không tuyển bù ngay. Song song đó mảng dịch vụ sửa chữa lại phát triển mạnh. Do vậy chúng tôi đang tìm thêm nhân sự cho bộ phận chăm sóc khách hàng. Tại đây nhân viên giải đáp thắc mắc về đơn hàng, sắp xếp lịch sửa xưởng và hỗ trợ khi xe đạp giao chậm. Khả năng ngoại ngữ đặc biệt được chào đón ở vị trí này. Đầu tiên chúng ta sẽ tham quan xưởng lắp ráp, tiếp theo đi qua kho hàng và xem vài mẫu xe hoàn thiện. Khoảng 10:30 chúng ta nghỉ giải lao. Cà phê và nước uống có sẵn ở căng tin; áo khoác quý vị có thể để lại ngay tại phòng tiếp khách này. Sau giờ nghỉ xin mời tập trung tại phòng đào tạo trên tầng một chứ không quay lại căng tin. Ở đó một đồng nghiệp sẽ trình bày cách hướng dẫn nhân viên mới. Trước khi xuất phát tôi xin chia sẻ thêm về định hướng công ty: ngày càng nhiều người đem xe đi bảo dưỡng định kỳ thay vì đợi hỏng mới vào tiệm nên nhu cầu kiểm tra tăng rõ rệt. Năm ngoái chúng tôi đã mở rộng trung tâm sửa chữa từ 7 lên 12 vị trí làm việc. Một nhà kho mới cũng đã lên kế hoạch nhưng sớm nhất mùa xuân năm sau mới khởi công. Với chúng tôi việc nhân viên trau dồi chuyên môn dù công ty thay đổi là rất quan trọng. Nếu nhân viên tìm được khóa học về xe đạp điện hay tư vấn khách hàng và trao đổi trước với trưởng nhóm để được phê duyệt, họ có thể tham gia khóa học ngay trong giờ làm việc hưởng lương; còn các khóa học thuần túy cá nhân đương nhiên không áp dụng quy định này. Ngoài ra công ty thường chi trả học phí cho các khóa đào tạo nghề được công nhận. Nào, bây giờ mời quý vị đeo kính bảo hộ để chúng ta bước vào xưởng lắp ráp."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 1,
+          "audioIncludesRepetition": false,
+          "playbackNote": "Theo quy chuẩn đề thi Goethe-Zertifikat B1, Teil này chỉ được nghe 1 lần duy nhất."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Was empfiehlt die Leiterin Interessierten vor einer Bewerbung?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sofort das Onlineformular auszufüllen"
+            },
+            {
+              "id": "B",
+              "text": "An einem Schnuppertag teilzunehmen"
+            },
+            {
+              "id": "C",
+              "text": "Alle Zeugnisse per Post zu schicken"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "In welchem Bereich sucht Velora derzeit zusätzliche Mitarbeitende?",
+          "options": [
+            {
+              "id": "A",
+              "text": "in der Endmontage"
+            },
+            {
+              "id": "B",
+              "text": "im Kundendienst"
+            },
+            {
+              "id": "C",
+              "text": "im Lager"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q13",
+          "order": 13,
+          "part": 2,
+          "prompt": "Wo trifft sich die Gruppe nach der Pause?",
+          "options": [
+            {
+              "id": "A",
+              "text": "im Schulungsraum"
+            },
+            {
+              "id": "B",
+              "text": "in der Montagehalle"
+            },
+            {
+              "id": "C",
+              "text": "im Innenhof"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q14",
+          "order": 14,
+          "part": 2,
+          "prompt": "Was hat das Unternehmen im vergangenen Jahr verändert?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Es hat sein Reparaturzentrum erweitert."
+            },
+            {
+              "id": "B",
+              "text": "Es hat eine Nachtschicht eingeführt."
+            },
+            {
+              "id": "C",
+              "text": "Es hat den Versand an eine andere Firma abgegeben."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q15",
+          "order": 15,
+          "part": 2,
+          "prompt": "Was können die Beschäftigten während ihrer Arbeitszeit machen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "An genehmigten beruflichen Weiterbildungen teilnehmen"
+            },
+            {
+              "id": "B",
+              "text": "Ihre privaten Fahrräder reparieren"
+            },
+            {
+              "id": "C",
+              "text": "Führungen für ihre Familien anbieten"
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_hoeren_p3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Alltagsgespräch zweier Personen (Richtig/Falsch)",
+      "durationMinutes": 8,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Entscheiden Sie bei den Aufgaben 16 bis 22, ob die Aussagen Richtig oder Falsch sind",
+        "content": "Entscheiden Sie bei den Aufgaben 16 bis 22, ob die Aussagen Richtig oder Falsch sind. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit.",
+        "audioUrl": "/audio/goethe-b1/test-02-teil-3.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 25,
+            "textDe": "Teil drei. Entscheiden Sie bei den Aufgaben 16 bis 22, ob die Aufgaben richtig oder falsch sind. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit. Aufgaben 16, 17, 18, 19, 20, 21, 22.",
+            "textVi": "Phần ba. Quyết định đúng hay sai cho các câu 16 đến 22. Bạn nghe một lần và có 60 giây đọc trước câu hỏi. Các câu hỏi 16, 17, 18, 19, 20, 21, 22."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 86,
+            "timestampEnd": 91,
+            "textDe": "Leila, sind die Umzugskartons für dich? Ich wusste gar nicht, dass du eine neue Wohnung suchst.",
+            "textVi": "Leyla à, mấy thùng chuyển nhà đó là của cậu đấy à? Tớ không hề biết cậu đang tìm căn hộ mới đấy."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 92,
+            "timestampEnd": 121,
+            "textDe": "Ja, das ging ziemlich schnell. Aber keine Sorge, mein Vermieter hat mir nicht gekündigt. Die Entscheidung kam von mir. In Lindenstadt habe ich eine Wohnung gefunden, die größer als meine jetzige und trotzdem deutlich billiger ist. Deshalb ziehe ich freiwillig aus der Großstadt weg. Bei der Besichtigung habe ich erfahren, dass Lindenstadt lange Einwohner verloren hat. Jetzt baut die Stadt leere Gebäude zu Wohnungen um und möchte damit neue Bewohner gewinnen. Meine Wohnung liegt in einer ehemaligen Schule.",
+            "textVi": "Ừ, chuyện diễn ra khá nhanh. Nhưng đừng lo, chủ nhà cũ không chấm dứt hợp đồng với tớ đâu. Quyết định là từ phía tớ. Ở Lindenstadt tớ tìm được căn hộ rộng hơn căn hiện tại mà tiền thuê lại rẻ hơn hẳn. Vì thế tớ chủ động chuyển khỏi thành phố lớn. Lúc đi xem nhà tớ mới biết Lindenstadt từng sụt dân số suốt thời gian dài, nên giờ thành phố cải tạo các tòa nhà bỏ trống thành căn hộ nhằm thu hút cư dân mới. Nhà của tớ nằm trong một ngôi trường học cũ."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 122,
+            "timestampEnd": 144,
+            "textDe": "Das ist interessant. Viele große Städte wachsen weiter, während kleinere Orte um Einwohner kämpfen. Lindenstadt? Früher dachte ich immer, kleinere Städte wären langweilig. Vor einem Monat war ich aber für ein Wochenende in einer ähnlich großen Stadt. Da gab es schöne Cafés, einen Markt und überall Menschen auf den Straßen. Seitdem sehe ich das wirklich anders.",
+            "textVi": "Thú vị thật đấy. Nhiều thành phố lớn cứ đông mãi lên trong khi các đô thị nhỏ phải chật vật giữ dân. Lindenstadt ư? Trước đây tớ luôn nghĩ thị trấn nhỏ thì buồn chán lắm. Nhưng tháng trước tớ có đi chơi cuối tuần ở một thành phố cỡ tương tự. Ở đó có nhiều quán cà phê xinh xắn, chợ phiên và người dân đi lại tấp nập. Từ đó tớ thay đổi hẳn suy nghĩ."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 145,
+            "timestampEnd": 152,
+            "textDe": "Genau. Lindenstadt wirkt lebendig, ohne so laut zu sein. Und beruflich ändert sich für mich weniger, als du vielleicht denkst.",
+            "textVi": "Đúng vậy. Lindenstadt rất có sức sống mà lại không quá ồn ào. Về công việc thì với tớ thay đổi ít hơn cậu tưởng đấy."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 153,
+            "timestampEnd": 154,
+            "textDe": "Du bleibst also bei deiner Firma?",
+            "textVi": "Vậy là cậu vẫn làm ở công ty cũ sao?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 155,
+            "timestampEnd": 169,
+            "textDe": "Ja. Ich arbeite weiterhin für denselben Arbeitgeber. Wir haben vereinbart, dass ich an vier Tagen pro Woche von zu Hause aus arbeite. Nur dienstags fahre ich ins Büro. Für wichtige Besprechungen muss ich manchmal zusätzlich kommen, aber das wird nicht oft sein.",
+            "textVi": "Ừ. Tớ tiếp tục làm cho sếp cũ. Tụi tớ đã thỏa thuận là mỗi tuần tớ làm việc từ xa tại nhà bốn ngày, chỉ thứ Ba mới lên văn phòng thôi. Thỉnh thoảng có cuộc họp quan trọng thì phải lên thêm, nhưng chuyện đó không nhiều đâu."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 170,
+            "timestampEnd": 172,
+            "textDe": "Und Sami zieht auch mit dir um?",
+            "textVi": "Thế Sami cũng chuyển đi cùng cậu chứ?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 173,
+            "timestampEnd": 186,
+            "textDe": "Grundsätzlich schon, nur nicht am selben Tag. Er betreut hier noch sechs Wochen lang ein Projekt für seine Firma. Zuerst ziehe ich allein ein und einige Wochen später bringt er seine Sachen nach. In dieser Zeit kann ich schon einmal die Küche einrichten.",
+            "textVi": "Về cơ bản là có, chỉ khác ngày chuyển thôi. Anh ấy còn phải phụ trách một dự án cho công ty ở đây thêm sáu tuần nữa. Trước mắt tớ dọn sang ở một mình rồi vài tuần sau anh ấy mới mang đồ sang nốt. Trong lúc đó tớ tranh thủ bày biện xong căn bếp."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 187,
+            "timestampEnd": 191,
+            "textDe": "Dann musst du für deine Bürotage ziemlich lange mit dem Zug fahren, oder?",
+            "textVi": "Nhưng vào những ngày lên văn phòng chắc cậu phải đi tàu hỏa khá lâu nhỉ?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 191,
+            "timestampEnd": 207,
+            "textDe": "Die Zugfahrt dauert etwas länger. Dafür spare ich den Weg zum Bahnhof. Von meiner jetzigen Wohnung brauche ich mit dem Bus fast 35 Minuten dorthin. In Lindenstadt sind es von der neuen Wohnung nur sieben Minuten zu Fuß bis zum Bahnhof. Insgesamt verliere ich deshalb kaum Zeit.",
+            "textVi": "Chặng ngồi tàu có lâu hơn một chút, bù lại tớ tiết kiệm được thời gian ra ga. Từ chỗ ở hiện tại tớ đi xe buýt ra ga mất gần 35 phút. Ở Lindenstadt từ nhà mới đi bộ ra ga chỉ mất 7 phút thôi. Tính tổng cộng thì tớ hầu như không mất thêm thời gian đi lại."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 208,
+            "timestampEnd": 211,
+            "textDe": "Das klingt praktisch. Was gefällt dir dort sonst noch?",
+            "textVi": "Nghe tiện quá. Ở đó cậu còn thích điểm nào nữa?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 212,
+            "timestampEnd": 229,
+            "textDe": "Der Fluss ist gleich hinter dem Haus. Die Geschäfte sind gut erreichbar und die Nachbarn habe ich schon kennengelernt. Nur beim Kulturangebot bin ich noch unsicher. Es gibt zwar ein kleines Kino und manchmal Konzerte, aber vielleicht ist mir das auf Dauer zu wenig. Hier gehe ich oft ins Theater oder in Ausstellungen.",
+            "textVi": "Con sông nằm ngay sau nhà. Cửa hàng mua sắm tiện lợi và tớ cũng đã làm quen với hàng xóm rồi. Chỉ có hoạt động văn hóa là tớ hơi băn khoăn chút. Ở đó có rạp chiếu phim nhỏ và đôi khi có hòa nhạc, nhưng về lâu dài có lẽ hơi ít với tớ, vì ở đây tớ hay đi xem kịch và triển lãm."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 229,
+            "timestampEnd": 234,
+            "textDe": "Du kannst ja gelegentlich für einen Theaterabend zurückkommen. Wann ist der Umzug?",
+            "textVi": "Thỉnh thoảng cậu quay lại đây xem kịch buổi tối cũng được mà. Khi nào cậu chuyển nhà?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 235,
+            "timestampEnd": 241,
+            "textDe": "Am letzten Samstag im Monat. Meine Schwester und zwei Freunde helfen. Danach stehen wahrscheinlich überall noch Kisten herum.",
+            "textVi": "Vào thứ Bảy cuối cùng của tháng. Em gái tớ và hai người bạn sẽ sang phụ. Sau hôm đó chắc đồ đạc thùng hộp vẫn còn ngổn ngang khắp nơi."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 242,
+            "timestampEnd": 253,
+            "textDe": "Dann lasse ich dir ein bisschen Zeit. Sobald du ausgepackt hast und dich richtig zu Hause fühlst, komme ich dich besuchen. Vielleicht schon zwei Wochen später? Du zeigst mir die Stadt und ich bringe Kuchen mit.",
+            "textVi": "Vậy tớ để cậu thư thả chút nhé. Ngay khi cậu dọn dẹp xong và thấy thoải mái như ở nhà rồi tớ sẽ qua thăm. Có thể ngay hai tuần sau chẳng hạn? Cậu dẫn tớ đi dạo thành phố còn tớ mang bánh sang."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 254,
+            "timestampEnd": 262,
+            "textDe": "Sehr gern. Dann kannst du selbst prüfen, ob Lindenstadt wirklich nicht langweilig ist. Schick mir vorher einfach eine Nachricht, damit wir einen passenden Tag finden.",
+            "textVi": "Rất hoan nghênh luôn. Khi ấy cậu tự kiểm chứng xem Lindenstadt có thực sự không hề buồn chán nhé. Trước khi sang cứ nhắn tớ một tiếng để mình chọn ngày hợp."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Tobias",
+            "timestampStart": 262,
+            "timestampEnd": 267,
+            "textDe": "Mache ich. Und wenn du noch jemanden zum Tragen brauchst, sag ebenfalls Bescheid.",
+            "textVi": "Nhất trí. Mà nếu cần thêm người phụ khuân vác thì cũng cứ gọi tớ đấy."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Leyla",
+            "timestampStart": 267,
+            "timestampEnd": 273,
+            "textDe": "Danke, Tobias. Im Moment reicht die Hilfe, aber beim Aufbau des großen Schranks komme ich vielleicht auf dein Angebot zurück.",
+            "textVi": "Cảm ơn Tobias. Hiện tại người giúp đủ rồi, nhưng lúc lắp chiếc tủ lớn có khi tớ sẽ nhờ tới lời đề nghị của cậu."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 1,
+          "audioIncludesRepetition": false,
+          "playbackNote": "Theo quy chuẩn đề thi Goethe-Zertifikat B1, Teil này chỉ được nghe 1 lần duy nhất."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_H_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Leyla zieht um, weil ihr Vermieter die Wohnung gekündigt hat.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Tobias hat seine Meinung über das Leben in kleineren Städten geändert.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Leyla wird nach dem Umzug bei einem neuen Arbeitgeber anfangen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Leylas Partner zieht erst einige Wochen später in die neue Wohnung.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q20",
+          "order": 20,
+          "part": 3,
+          "prompt": "Von der neuen Wohnung kommt Leyla schneller zum Bahnhof als bisher.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q21",
+          "order": 21,
+          "part": 3,
+          "prompt": "Leyla macht sich Sorgen, dass es am neuen Wohnort zu wenig Kulturangebote gibt.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q22",
+          "order": 22,
+          "part": 3,
+          "prompt": "Tobias möchte Leyla kurz nach dem Umzug besuchen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t02_hoeren_p4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+      "durationMinutes": 14,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Ordnen Sie die Aussagen 23 bis 30 dem Moderator, Dana Schneider oder Florian Bader zu",
+        "content": "Ordnen Sie die Aussagen 23 bis 30 dem Moderator, Dana Schneider oder Florian Bader zu. Sie hören den Text zweimal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit.",
+        "audioUrl": "/audio/goethe-b1/test-02-teil-4.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 28,
+            "textDe": "Teil vier. Ordnen Sie die Aussagen 23 bis 30 dem Moderator Dana Schneider oder Florian Bader zu. Sie hören den Text zweimal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit. Aufgaben 23 24 25 26 27 28 29 30.",
+            "textVi": "Phần bốn. Hãy ghép các phát biểu 23 đến 30 cho Moderator, Dana Schneider hoặc Florian Bader. Bạn nghe hai lần và có 60 giây đọc trước câu hỏi."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 88,
+            "timestampEnd": 118,
+            "textDe": "Guten Abend und willkommen zu unserer Sendung Arbeit und Alltag. Heute fragen wir, wie viel regionale Küche gehört in eine Betriebskantine? Darüber spreche ich mit Dana Schneider, die in Potsdam ein Restaurant mit Gerichten aus Brandenburg führt und mit Florian Bader, dem Vertreter der Beschäftigten eines großen Büro- und Produktionsbetriebs. Frau Schneider, viele Menschen denken bei regionalen Speisen an schwere Mahlzeiten mit viel Fett. Passen solche Gerichte überhaupt in die Mittagspause?",
+            "textVi": "Chào buổi tối và chào mừng quý vị đến với chương trình 'Arbeit und Alltag'. Hôm nay chúng ta đặt câu hỏi: ẩm thực địa phương nên chiếm bao nhiêu phần trong thực đơn căng tin công ty? Tôi thảo luận cùng bà Dana Schneider, chủ một nhà hàng phục vụ món ăn vùng Brandenburg tại Potsdam, và ông Florian Bader, đại diện cho người lao động tại một doanh nghiệp lớn gồm khối văn phòng và sản xuất. Thưa bà Schneider, nhiều người nghe đến món địa phương thường nghĩ ngay tới bữa ăn nặng bụng nhiều dầu mỡ. Liệu những món đó có phù hợp cho giờ nghỉ trưa không?"
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 119,
+            "timestampEnd": 145,
+            "textDe": "Aus meiner Erfahrung in der Küche eindeutig ja. Man muss alte Rezepte nicht genauso kochen wie vor 100 Jahren. Wir verwenden z.B. weniger Fett, mehr frisches Gemüse und kleinere Mengen Fleisch. Gewürze und typische Zutaten sorgen trotzdem dafür, dass ein Gericht klar aus unserer Region kommt. Die Speisen werden dadurch leichter, ohne ihren besonderen Charakter zu verlieren. Meine Gäste erkennen sie noch immer als brandenburgische Küche.",
+            "textVi": "Từ kinh nghiệm đứng bếp của tôi thì câu trả lời chắc chắn là có. Ta không nhất thiết phải nấu công thức cổ giống hệt 100 năm trước. Chúng tôi dùng ít chất béo hơn, nhiều rau tươi hơn và giảm lượng thịt. Gia vị và nguyên liệu đặc trưng vẫn đủ giữ cho món ăn mang đậm dấu ấn vùng miền. Món ăn trở nên thanh nhẹ hơn mà không đánh mất bản sắc riêng. Thực khách vẫn nhận ra ngay đó là ẩm thực Brandenburg."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 146,
+            "timestampEnd": 150,
+            "textDe": "Herr Bader, was erwarten die Beschäftigten ihrer Firma vom Mittagessen?",
+            "textVi": "Thưa ông Bader, người lao động trong công ty ông kỳ vọng điều gì nhất ở bữa trưa?"
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 151,
+            "timestampEnd": 178,
+            "textDe": "Vor allem muss es bezahlbar sein. Viele Kolleginnen und Kollegen essen jeden Arbeitstag in der Kantine. Schon ein kleiner Preisunterschied macht sich am Monatsende bemerkbar. Ob die Kartoffel von einem Hof in der Nähe oder aus einem anderen Teil Deutschlands kommt, ist für die meisten weniger wichtig. Wenn die Kantine wählen muss, sollte ein niedriger Preis Vorrang vor der regionalen Herkunft der Zutaten haben. Qualität und Geschmack dürfen natürlich nicht schlecht werden.",
+            "textVi": "Trước hết bữa ăn phải có giá cả phải chăng. Nhiều đồng nghiệp ăn ở căng tin mỗi ngày làm việc. Chỉ cần chênh lệch giá một chút thôi là cuối tháng đã thấy rõ rệt. Khoai tây đến từ trang trại lân cận hay từ vùng khác của nước Đức đối với đa số không quá quan trọng. Nếu căng tin phải lựa chọn, giá thành thấp nên được ưu tiên trước xuất xứ địa phương của nguyên liệu. Đương nhiên chất lượng và hương vị vẫn không được phép kém."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 179,
+            "timestampEnd": 202,
+            "textDe": "Eine vollständige Umstellung wäre also eine große Entscheidung. Ich hätte einen vorsichtigeren Vorschlag. Die Kantine könnte zunächst ein einziges neues Gericht aus der Region als Wochenangebot testen. Erst wenn klar ist, wie viele Gäste es bestellen und wie die Küche damit zurecht kommt, würde man über einen festen Platz auf dem Speiseplan entscheiden. So ließen sich auch Rückmeldungen sammeln.",
+            "textVi": "Vậy thay đổi toàn bộ ngay lập tức sẽ là quyết định lớn. Tôi có một đề xuất thận trọng hơn: căng tin có thể thử nghiệm trước một món địa phương mới duy nhất theo thực đơn tuần. Chỉ khi thấy rõ số lượng khách gọi món và khả năng đáp ứng của nhà bếp, người ta mới quyết định đưa vào thực đơn cố định. Làm vậy cũng thu thập được phản hồi thực tế."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 203,
+            "timestampEnd": 234,
+            "textDe": "Bei solchen Entscheidungen darf man die Produzenten nicht vergessen. Kleine Höfe oder Bäckereien können nicht heute 100 Portionen liefern und nächste Woche plötzlich gar nichts. Sie müssen Saatgut, Personal und Transport rechtzeitig organisieren. Dafür brauchen sie längerfristige Abnahmeverträge. Nur mit solchen festen Zusagen können sie Mengen und Liefertermine verlässlich planen. Wenn eine Kantine jede Woche spontan woanders einkauft, ist die Zusammenarbeit für kleine Betriebe kaum möglich.",
+            "textVi": "Với những quyết định như thế không thể quên người sản xuất. Các nông trại hay tiệm bánh nhỏ không thể hôm nay giao 100 suất rồi tuần sau bỗng dưng không giao chút nào. Họ phải chuẩn bị hạt giống, nhân lực và vận chuyển đúng lúc nên rất cần hợp đồng bao tiêu dài hạn. Chỉ với cam kết ổn định như vậy họ mới tính toán được sản lượng và lịch giao chắc chắn. Nếu tuần nào căng tin cũng tùy hứng mua chỗ khác thì các cơ sở nhỏ khó lòng hợp tác."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 235,
+            "timestampEnd": 265,
+            "textDe": "Mir ist außerdem wichtig, wer in unserem Unternehmen arbeitet. Viele Beschäftigte sind nicht in Brandenburg aufgewachsen. Einige kommen aus Bayern oder Norddeutschland, andere aus Polen, Italien oder der Türkei. Sie sollen in der Kantine ebenfalls Speisen finden, die ihnen vertraut sind. Ein ausschließlich regionaler Speiseplan würde die Vielfalt unserer Belegschaft nicht zeigen. Regionale Angebote sind willkommen, aber bekannte Gerichte aus anderen Gegenden müssen erhalten bleiben.",
+            "textVi": "Ngoài ra với tôi điều quan trọng là đối tượng nhân sự làm việc trong công ty. Nhiều nhân viên không sinh ra lớn lên ở Brandenburg. Có người đến từ Bayern hay miền Bắc Đức, số khác từ Ba Lan, Ý hoặc Thổ Nhĩ Kỳ. Họ cũng cần tìm thấy ở căng tin những món ăn quen thuộc với mình. Một thực đơn thuần địa phương sẽ không phản ánh được sự đa dạng của tập thể lao động. Món vùng miền rất đáng hoan nghênh, nhưng các món quen thuộc từ vùng khác vẫn phải được giữ lại."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 265,
+            "timestampEnd": 288,
+            "textDe": "Manche Gäste bestellen wahrscheinlich immer dasselbe, weil ihnen ein Name wie Kneiperkohle nicht sagt. Man könnte auf dem Speiseplan zwei kurze Sätze ergänzen. Woher stammt das Gericht und welche Zutaten enthält es? Solche knappen Informationen könnten neugierig machen und den Gästen die Entscheidung erleichtern. Eine lange historische Erklärung wäre beim Mittagessen sicher unnötig.",
+            "textVi": "Có lẽ nhiều khách cứ gọi mãi một món quen vì những tên gọi như Kneiperkohle chẳng gợi cho họ hình dung gì. Người ta có thể bổ sung hai câu ngắn trên thực đơn: món này có nguồn gốc từ đâu và gồm nguyên liệu gì? Thông tin súc tích như vậy dễ khơi gợi sự tò mò và giúp khách chọn món dễ hơn, chứ giải thích lịch sử dài dòng vào giờ nghỉ trưa thì chắc chắn không cần thiết."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 289,
+            "timestampEnd": 300,
+            "textDe": "In meinem Restaurant fragen Gäste tatsächlich oft nach, wenn sie einen Namen nicht kennen. In einer Kantine ist die Situation aber anders, weil in kurzer Zeit sehr viele Menschen essen möchten.",
+            "textVi": "Ở nhà hàng của tôi khách đúng là hay hỏi khi thấy tên món lạ. Nhưng ở căng tin tình huống khác hẳn vì có rất đông người cần ăn trong thời gian ngắn."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 301,
+            "timestampEnd": 330,
+            "textDe": "Genau dieser Zeitdruck betrifft auch die Küche. Unsere Kantinenmitarbeiter beginnen früh, aber sie müssen bis zur Mittagszeit mehrere 100 Portionen fertig haben. Einige traditionelle Gerichte benötigen viele einzelne Arbeitsschritte oder müssen stundenlang vorbereitet werden. Dafür reicht die vorhandene Vorbereitungszeit nicht. Die Küche kann solche Speisen daher nicht vollständig selbst und nach alter Art herstellen. Einfach mehr Personal einzustellen, würde wiederum die Preise erhöhen.",
+            "textVi": "Chính áp lực thời gian đó cũng tác động tới khu bếp. Nhân viên căng tin bên chúng tôi bắt đầu làm từ sáng sớm nhưng đến giờ trưa phải hoàn tất hàng trăm suất ăn. Một số món truyền thống đòi hỏi quá nhiều công đoạn tỉ mỉ hoặc phải chuẩn bị hàng giờ liền. Quỹ thời gian chuẩn bị hiện tại không đủ cho việc đó. Vì vậy bếp không thể tự làm hoàn toàn theo kiểu cổ xưa được. Mà đơn giản thuê thêm nhân sự thì giá suất ăn lại tăng theo."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 330,
+            "timestampEnd": 335,
+            "textDe": "Frau Schneider, gefährden solche praktischen Änderungen nicht irgendwann die Tradition?",
+            "textVi": "Thưa bà Schneider, liệu những điều chỉnh thực tế như vậy lâu dần có làm mai một truyền thống không?"
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 337,
+            "timestampEnd": 367,
+            "textDe": "Tradition bedeutet für mich nicht, jedes Rezept unverändert zu wiederholen. Auch frühere Generationen haben mit den Zutaten gekocht, die verfügbar waren und ihre Methoden angepasst. Eine regionale Küche bleibt nur lebendig, wenn sie sich behutsam weiterentwickelt. Natürlich sollte man wissen, woher ein Gericht kommt. Aber wenn niemand es mehr kocht oder essen möchte, hilft die genaueste alte Anleitung nichts. Veränderung kann also gerade dazu beitragen, das Wesentliche zu bewahren.",
+            "textVi": "Với tôi truyền thống không có nghĩa là lặp lại y nguyên từng công thức không chút thay đổi. Các thế hệ trước cũng nấu bằng những nguyên liệu sẵn có và điều chỉnh phương pháp của họ. Ẩm thực địa phương chỉ sống tiếp nếu được phát triển một cách tinh tế, cẩn trọng. Tất nhiên cần biết món ăn xuất phát từ đâu, nhưng nếu chẳng còn ai nấu hay muốn ăn thì công thức cổ chính xác đến mấy cũng vô ích. Vậy nên thay đổi chính là cách góp phần giữ lại tinh hoa cốt lõi."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 368,
+            "timestampEnd": 379,
+            "textDe": "Für unseren Betrieb wünsche ich mir am Ende vor allem einen abwechslungsreichen Speiseplan, den sich die Beschäftigten regelmäßig leisten können. Dann dürfen dort gern immer wieder Spezialitäten auftauchen.",
+            "textVi": "Cho doanh nghiệp của mình, cuối cùng tôi mong nhất là một thực đơn phong phú mà người lao động có thể chi trả thường xuyên. Khi đó các đặc sản vùng miền hoàn toàn có thể luân phiên xuất hiện."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 379,
+            "timestampEnd": 406,
+            "textDe": "Damit sind wir am Ende unserer Diskussion. Es geht offenbar nicht nur um Geschmack, sondern auch um Kosten, Arbeitsabläufe, Lieferbeziehungen und die unterschiedlichen Wünsche der Gäste. Ich bedanke mich bei Dana Schneider und Florian Bader für das Gespräch. Ihnen, liebe Hörerinnen und Hörer, wünsche ich einen guten Abend.",
+            "textVi": "Như vậy chúng ta đã đi đến phần kết của buổi thảo luận. Rõ ràng chuyện không chỉ xoay quanh hương vị, mà còn liên quan chi phí, quy trình bếp, hợp đồng cung ứng và nhu cầu đa dạng của thực khách. Xin cảm ơn bà Dana Schneider và ông Florian Bader về cuộc trò chuyện. Kính chúc quý vị thính giả một buổi tối tốt lành."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 407,
+            "timestampEnd": 434,
+            "textDe": "Guten Abend und willkommen zu unserer Sendung Arbeit und Alltag. Heute fragen wir, wie viel regionale Küche gehört in eine Betriebskantine? Darüber spreche ich mit Dana Schneider, die in Potsdam ein Restaurant mit Gerichten aus Brandenburg führt und mit Florian Bader, dem Vertreter der Beschäftigten eines großen Büro- und Produktionsbetriebs. Frau Schneider, viele Menschen denken bei regionalen Speisen an schwere Mahlzeiten mit viel Fett. Passen solche Gerichte überhaupt in die Mittagspause?",
+            "textVi": "(Lần nghe 2) Chào buổi tối và chào mừng quý vị đến với chương trình 'Arbeit und Alltag'. Hôm nay chúng ta đặt câu hỏi: ẩm thực địa phương nên chiếm bao nhiêu phần trong thực đơn căng tin công ty?..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 435,
+            "timestampEnd": 461,
+            "textDe": "Aus meiner Erfahrung in der Küche eindeutig ja. Man muss alte Rezepte nicht genauso kochen wie vor 100 Jahren. Wir verwenden z.B. weniger Fett, mehr frisches Gemüse und kleinere Mengen Fleisch. Gewürze und typische Zutaten sorgen trotzdem dafür, dass ein Gericht klar aus unserer Region kommt. Die Speisen werden dadurch leichter, ohne ihren besonderen Charakter zu verlieren. Meine Gäste erkennen sie noch immer als brandenburgische Küche.",
+            "textVi": "(Lần nghe 2) Từ kinh nghiệm đứng bếp của tôi thì câu trả lời chắc chắn là có. Ta không nhất thiết phải nấu công thức cổ giống hệt 100 năm trước..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 462,
+            "timestampEnd": 466,
+            "textDe": "Herr Bader, was erwarten die Beschäftigten ihrer Firma vom Mittagessen?",
+            "textVi": "(Lần nghe 2) Thưa ông Bader, người lao động trong công ty ông kỳ vọng điều gì nhất ở bữa trưa?"
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 467,
+            "timestampEnd": 494,
+            "textDe": "Vor allem muss es bezahlbar sein. Viele Kolleginnen und Kollegen essen jeden Arbeitstag in der Kantine. Schon ein kleiner Preisunterschied macht sich am Monatsende bemerkbar. Ob die Kartoffel von einem Hof in der Nähe oder aus einem anderen Teil Deutschlands kommt, ist für die meisten weniger wichtig. Wenn die Kantine wählen muss, sollte ein niedriger Preis Vorrang vor der regionalen Herkunft der Zutaten haben. Qualität und Geschmack dürfen natürlich nicht schlecht werden.",
+            "textVi": "(Lần nghe 2) Trước hết bữa ăn phải có giá cả phải chăng. Nhiều đồng nghiệp ăn ở căng tin mỗi ngày làm việc..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 495,
+            "timestampEnd": 518,
+            "textDe": "Eine vollständige Umstellung wäre also eine große Entscheidung. Ich hätte einen vorsichtigeren Vorschlag. Die Kantine könnte zunächst ein einziges neues Gericht aus der Region als Wochenangebot testen. Erst wenn klar ist, wie viele Gäste es bestellen und wie die Küche damit zurecht kommt, würde man über einen festen Platz auf dem Speiseplan entscheiden. So ließen sich auch Rückmeldungen sammeln.",
+            "textVi": "(Lần nghe 2) Vậy thay đổi toàn bộ ngay lập tức sẽ là quyết định lớn. Tôi có một đề xuất thận trọng hơn..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 519,
+            "timestampEnd": 550,
+            "textDe": "Bei solchen Entscheidungen darf man die Produzenten nicht vergessen. Kleine Höfe oder Bäckereien können nicht heute 100 Portionen liefern und nächste Woche plötzlich gar nichts. Sie müssen Saatgut, Personal und Transport rechtzeitig organisieren. Dafür brauchen sie längerfristige Abnahmeverträge. Nur mit solchen festen Zusagen können sie Mengen und Liefertermine verlässlich planen. Wenn eine Kantine jede Woche spontan woanders einkauft, ist die Zusammenarbeit für kleine Betriebe kaum möglich.",
+            "textVi": "(Lần nghe 2) Với những quyết định như thế không thể quên người sản xuất. Các nông trại hay tiệm bánh nhỏ..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 551,
+            "timestampEnd": 581,
+            "textDe": "Mir ist außerdem wichtig, wer in unserem Unternehmen arbeitet. Viele Beschäftigte sind nicht in Brandenburg aufgewachsen. Einige kommen aus Bayern oder Norddeutschland, andere aus Polen, Italien oder der Türkei. Sie sollen in der Kantine ebenfalls Speisen finden, die ihnen vertraut sind. Ein ausschließe regionaler Speiseplan würde die Vielfalt unserer Belegschaft nicht zeigen. Regionale Angebote sind willkommen, aber bekannte Gerichte aus anderen Gegenden müssen erhalten bleiben.",
+            "textVi": "(Lần nghe 2) Ngoài ra với tôi điều quan trọng là đối tượng nhân sự làm việc trong công ty. Nhiều nhân viên không sinh ra ở Brandenburg..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 581,
+            "timestampEnd": 604,
+            "textDe": "Manche Gäste bestellen wahrscheinlich immer dasselbe, weil ihnen ein Name wie Kneiperkohle nicht sagt. Man könnte auf dem Speiseplan zwei kurze Sätze ergänzen. Woher stammt das Gericht und welche Zutaten enthält es? Solche knappen Informationen könnten neugierig machen und den Gästen die Entscheidung erleichtern. Eine lange historische Erklärung wäre beim Mittagessen sicher unnötig.",
+            "textVi": "(Lần nghe 2) Có lẽ nhiều khách cứ gọi mãi một món quen vì những tên gọi như Kneiperkohle chẳng gợi cho họ hình dung gì..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 605,
+            "timestampEnd": 616,
+            "textDe": "In meinem Restaurant fragen Gäste tatsächlich oft nach, wenn sie einen Namen nicht kennen. In einer Kantine ist die Situation aber anders, weil in kurzer Zeit sehr viele Menschen essen möchten.",
+            "textVi": "(Lần nghe 2) Ở nhà hàng của tôi khách đúng là hay hỏi khi thấy tên món lạ..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 617,
+            "timestampEnd": 646,
+            "textDe": "Genau dieser Zeitdruck betrifft auch die Küche. Unsere Kantinenmitarbeiter beginnen früh, aber sie müssen bis zur Mittagszeit mehrere 100 Portionen fertig haben. Einige traditionelle Gerichte benötigen viele einzelne Arbeitsschritte oder müssen stundenlang vorbereitet werden. Dafür reicht die vorhandene Vorbereitungszeit nicht. Die Küche kann solche Speisen daher nicht vollständig selbst und nach alter Art herstellen. Einfach mehr Personal einzustellen, würde wiederum die Preise erhöhen.",
+            "textVi": "(Lần nghe 2) Chính áp lực thời gian đó cũng tác động tới khu bếp. Nhân viên căng tin bên chúng tôi bắt đầu làm từ sáng sớm..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 646,
+            "timestampEnd": 651,
+            "textDe": "Frau Schneider, gefährden solche praktischen Änderungen nicht irgendwann die Tradition?",
+            "textVi": "(Lần nghe 2) Thưa bà Schneider, liệu những điều chỉnh thực tế như vậy lâu dần có làm mai một truyền thống không?"
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 653,
+            "timestampEnd": 683,
+            "textDe": "Tradition bedeutet für mich nicht, jedes Rezept unverändert zu wiederholen. Auch frühere Generationen haben mit den Zutaten gekocht, die verfügbar waren und ihre Methoden angepasst. Eine regionale Küche bleibt nur lebendig, wenn sie sich behutsam weiterentwickelt. Natürlich sollte man wissen, woher ein Gericht kommt. Aber wenn niemand es mehr kocht oder essen möchte, hilft die genaueste alte Anleitung nichts. Veränderung kann also gerade dazu beitragen, das Wesentliche zu bewahren.",
+            "textVi": "(Lần nghe 2) Với tôi truyền thống không có nghĩa là lặp lại y nguyên từng công thức không chút thay đổi..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 684,
+            "timestampEnd": 695,
+            "textDe": "Für unseren Betrieb wünsche ich mir am Ende vor allem einen abwechslungsreichen Speiseplan, den sich die Beschäftigten regelmäßig leisten können. Dann dürfen dort gern immer wieder Spezialitäten auftauchen.",
+            "textVi": "(Lần nghe 2) Cho doanh nghiệp của mình, cuối cùng tôi mong nhất là một thực đơn phong phú..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 695,
+            "timestampEnd": 714,
+            "textDe": "Damit sind wir am Ende unserer Diskussion. Es geht offenbar nicht nur um Geschmack, sondern auch um Kosten, Abläufe, Lieferbeziehungen und die unterschiedlichen Wünsche der Gäste. Ich bedanke mich bei Dana Schneider und Florian Bader für das Gespräch. Ihnen, liebe Hörerinnen und Hörer, wünsche ich einen guten Abend.",
+            "textVi": "(Lần nghe 2) Như vậy chúng ta đã đi đến phần kết của buổi thảo luận. Xin cảm ơn bà Dana Schneider và ông Florian Bader..."
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 715,
+            "timestampEnd": 720,
+            "textDe": "Sie haben jetzt fünf Minuten Zeit, ihre Lösungen auf den Antwortbogen zu übertragen.",
+            "textVi": "Bạn hiện có năm phút để chép đáp án vào phiếu trả lời."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 2,
+          "audioIncludesRepetition": true,
+          "playbackNote": "File âm thanh đề chuẩn Goethe B1 cho Teil này đã ghép sẵn 2 lần đọc liên tiếp."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T02_H_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Mit weniger Fett kann ein Gericht weiterhin typisch für seine Region sein.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Ein günstiges Mittagessen ist wichtiger als Zutaten aus der Umgebung.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Bevor ein regionales Gericht dauerhaft angeboten wird, sollte man erst die Reaktion der Gäste prüfen.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Kleine Anbieter können ihre Lieferungen nur mit langfristigen Zusagen sicher organisieren.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q27",
+          "order": 27,
+          "part": 4,
+          "prompt": "Der Speiseplan soll auch zur unterschiedlichen Herkunft der Belegschaft passen.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q28",
+          "order": 28,
+          "part": 4,
+          "prompt": "Hinweise zu Herkunft und Zutaten können die Wahl einer unbekannten Speise erleichtern.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q29",
+          "order": 29,
+          "part": 4,
+          "prompt": "Wegen des Zeitdrucks kann eine Großküche bestimmte alte Rezepte nicht auf die ursprüngliche Art zubereiten.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T02_H_Q30",
+          "order": 30,
+          "part": 4,
+          "prompt": "Eine kulinarische Tradition überlebt nicht, wenn jede Veränderung abgelehnt wird.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "GOETHE_B1_T02_L_Q01",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Deshalb war ich froh, dass die gesamte Ausrüstung dem Studio gehörte",
+      "trapExplanationVi": "Bẫy sở hữu: toàn bộ thiết bị kính VR thuộc về studio chứ không phải do Jana tự mua.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q02",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Meine Aufgabe war nicht, gegen andere Figuren zu kämpfen. Ich musste die Gegend genau untersuchen und Rätsel lösen",
+      "trapExplanationVi": "Đúng: trọng tâm trò chơi là khám phá cảnh quan và giải các câu đố.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q03",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Weil ich Kopfhörer trug, war ich sicher, dass das Geräusch aus dem Spiel kam.",
+      "trapExplanationVi": "Đúng: vì đang đeo tai nghe nên Jana tưởng tiếng gõ cửa phòng thu phát ra từ trong trò chơi.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q04",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Frau Richter kam sofort zu uns und stellte die Grafik etwas niedriger ein.",
+      "trapExplanationVi": "Đảo chiều thông tin: cô Richter hạ thấp mức đồ họa (niedriger) chứ không nâng cao (höher) để hình chạy mượt lại -> Sai (F).",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q05",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Auf dem Heimweg sagte er mehrmals, dass er dieses System am liebsten sofort kaufen würde. Ich selbst möchte damit noch warten.",
+      "trapExplanationVi": "Đảo ngược hai nhân vật: chính Malik mới là người muốn mua ngay, còn Jana muốn chờ -> Sai (F).",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q06",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Ich möchte meine Freunde tatsächlich neben mir sitzen haben, gemeinsam lachen und ihre Reaktionen direkt sehen.",
+      "trapExplanationVi": "Đúng: dù ấn tượng với thế giới ảo, các buổi chơi định kỳ Jana vẫn thích ngồi cùng bạn bè trực tiếp.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q07",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Das Unternehmen Nordwerk erweitert sein freiwilliges Angebot „Pause offline“.",
+      "trapExplanationVi": "Đúng B: công ty mở rộng mô hình tự nguyện nghỉ giải lao không dùng màn hình; không hề cấm điện thoại (A) hay bắt buộc đi dạo (C).",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q08",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Wer den Raum betritt, legt jedoch sein Mobiltelefon für die Dauer der Pause in eines der Schließfächer neben dem Eingang.",
+      "trapExplanationVi": "Đúng C: người vào phòng yên tĩnh phải cất điện thoại vào tủ khóa cạnh cửa vào suốt thời gian nghỉ.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q09",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Beschäftigte aus späteren Schichten konnten das Angebot kaum nutzen. Mehrere von ihnen baten darum, auch gegen Ende ihres Arbeitstages eine ruhige Pause machen zu können.",
+      "trapExplanationVi": "Đúng A: công nhân ca muộn không dùng được khung giờ sáng/trưa nên đã đề nghị bổ sung giờ mở cuối buổi chiều.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q10",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Es richtet sich vor allem an Erwachsene, die sich nach einem anstrengenden Tag bei leichter Gartenarbeit erholen möchten",
+      "trapExplanationVi": "Đúng C: bài viết về dự án làm vườn cộng đồng linh hoạt giúp người trưởng thành thư giãn sau giờ làm (bài ghi rõ không phải điều trị y tế).",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q11",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Vor Ort stehen Gießkannen, kleine Schaufeln und weitere Gartengeräte bereit. Auch Wasser ist direkt an den Beeten verfügbar.",
+      "trapExplanationVi": "Đúng A: dụng cụ làm vườn và nước tưới đã có sẵn tại chỗ, không cần lịch cố định hay kinh nghiệm.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q12",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Viele Berufstätige kommen dort auf dem Heimweg vorbei. Sie können aus dem Zug oder der Straßenbahn steigen, zehn oder zwanzig Minuten bei den Pflanzen verbringen",
+      "trapExplanationVi": "Đúng B: vị trí cạnh nhà ga giúp người đi làm tạt vào chăm vườn 10–20 phút trên đường về nhà.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q13",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Möbliertes Zimmer zur Zwischenmiete, frei für genau drei Monate.",
+      "trapExplanationVi": "Khớp H: phòng có sẵn nội thất thuê 3 tháng và nêu rõ được phép đăng ký hộ khẩu tạm trú ('Anmeldung beim Bürgeramt').",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q14",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Reparaturannahme montags bis freitags ab 8 Uhr, donnerstags sogar bis 20 Uhr.",
+      "trapExplanationVi": "Khớp C: tiệm sửa xe đạp nhận sửa đến 20 giờ tối thứ Năm (sau mốc 18:30).",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q15",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Eine Kinderbetreuung können wir leider nicht anbieten.",
+      "trapExplanationVi": "Bẫy quảng cáo E và G: lớp tiếng Đức E học tối thứ Ba không trông trẻ, còn G trông trẻ thứ Bảy lại không dạy tiếng Đức -> chọn 0.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q16",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "Das flexible Stadt-Abo gilt einen Monat lang in allen Bussen und Straßenbahnen von Lindenstadt.",
+      "trapExplanationVi": "Khớp J: vé tháng xe buýt & tàu điện có thể gia hạn và hủy từng tháng một.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q17",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Feierabendküche: Kochen für absolute Anfänger.",
+      "trapExplanationVi": "Khớp A: khóa nấu ăn cho người mới bắt đầu vào tối thứ Tư 18:45–21:00 (ngày làm việc sau giờ hành chính).",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q18",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "ruhige Schreibtische tageweise buchen, ohne Mitgliedschaft. Schnelles Internet und ein zusätzlicher Computerbildschirm sind im Tagespreis enthalten.",
+      "trapExplanationVi": "Khớp F: thuê bàn làm việc yên tĩnh theo ngày có sẵn màn hình phụ.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q19",
+      "correctOption": "d",
+      "points": 1,
+      "citation": "Lauftreff „Langsam los“ für Anfängerinnen und Anfänger. Wir treffen uns sonntags um 9.30 Uhr im Stadtpark.",
+      "trapExplanationVi": "Khớp D: nhóm chạy bộ sáng Chủ nhật cho người mới bắt đầu, không đặt nặng tốc độ.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q20",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Deshalb sollten sie dort nicht mehr erlaubt sein.",
+      "trapExplanationVi": "Lena ủng hộ lệnh cấm: bếp nướng dùng một lần gây cháy cỏ và rác bừa bãi.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q21",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Ein vollständiges Verbot halte ich für übertrieben.",
+      "trapExplanationVi": "Tobias phản đối: cho rằng lỗi nằm ở ý thức xả rác chứ không nên cấm tuyệt đối người dùng có trách nhiệm.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q22",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Trotzdem bin ich für das Verbot von Einweggrills.",
+      "trapExplanationVi": "Meral ủng hộ lệnh cấm vì rác thải lãng phí và gợi ý dùng bếp nhỏ tái sử dụng.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q23",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Ein allgemeines Verbot für die ganze Grillsaison geht mir aber zu weit.",
+      "trapExplanationVi": "Jonas phản đối lệnh cấm chung cho cả mùa, chỉ đồng ý hạn chế tạm thời khi quá khô hạn.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q24",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Einweggrills müssen in den Stadtparks verboten werden.",
+      "trapExplanationVi": "Heike ủng hộ lệnh cấm vì biển cảnh báo và thêm thùng rác không mang lại hiệu quả.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q25",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Ich würde Einweggrills deshalb nicht verbieten.",
+      "trapExplanationVi": "Rashid phản đối cấm vì ngại người thu nhập thấp khó tụ tập ăn ngoài trời, đề xuất cho thuê bếp tái sử dụng.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q26",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Ich unterstütze das Verbot, weil Einweggrills zu viel Abfall verursachen und den Boden beschädigen können.",
+      "trapExplanationVi": "Claudia ủng hộ lệnh cấm đồng thời yêu cầu ghi biển rõ ràng và kiểm tra thường xuyên.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q27",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Wer an einer Probe nicht teilnehmen kann, informiert spätestens bis 12.00 Uhr am jeweiligen Probentag das Chorbüro.",
+      "trapExplanationVi": "Bẫy đồng nghiệp: nhắn cho thành viên khác không thay thế việc báo nghỉ cho văn phòng chậm nhất 12 giờ trưa ngày tập.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q28",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Im Probenraum sind Speisen und Getränke grundsätzlich nicht erlaubt. Eine Ausnahme gilt für Wasser in sicher verschließbaren Flaschen.",
+      "trapExplanationVi": "Đúng A: trong phòng tập chỉ được mang nước lọc trong chai đậy nắp kín; cà phê và đồ ăn chỉ dùng ở tiền sảnh giờ nghỉ.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q29",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Die Chorleitung muss vorher zugestimmt haben, und alle anwesenden Personen müssen über die geplante Aufnahme informiert worden sein.",
+      "trapExplanationVi": "Đúng B: cần cả hai điều kiện: chỉ huy hợp xướng đồng ý trước và thông báo cho tất cả người có mặt.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_L_Q30",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Besucherinnen und Besucher dürfen nur zu Proben kommen, die ausdrücklich als offene Proben angekündigt wurden. Zusätzlich ist vor dem Termin eine Anmeldung beim Chorbüro erforderlich.",
+      "trapExplanationVi": "Đúng C: khách chỉ được dự các buổi tập mở có thông báo trước và vẫn phải đăng ký với văn phòng.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q01",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Während des Freiluftkonzerts am Abend muss immer wieder mit kurzen, kräftigen Schauern gerechnet werden.",
+      "trapExplanationVi": "Bẫy thời gian: buổi sáng còn tạnh ráo nhưng tối diễn ra hòa nhạc ngoài trời sẽ có nhiều cơn mưa rào mạnh -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q02",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "lässt er bis Samstag ein festes Dach über der Bühne aufbauen.",
+      "trapExplanationVi": "Đúng A: ban tổ chức cho dựng mái che cố định phía trên sân khấu để bảo vệ nhạc công và nhạc cụ (khán giả vẫn ở ngoài bãi cỏ).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q03",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "darf erst bei unserem Jubiläum in zehn Jahren öffentlich gespielt werden. Für die Feier nächste Woche nehmen wir also ein anderes Lied.",
+      "trapExplanationVi": "Bẫy thời mốc: bản thu giữ niêm phong 10 năm sau mới phát, tuần tới họ chọn bài hát khác -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q04",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Könntest du den Umschlag am Freitagvormittag hinbringen? Das Archiv schließt freitags schon um 12 Uhr",
+      "trapExplanationVi": "Đúng A: sáng thứ Sáu (trước khi kho lưu trữ đóng cửa lúc 12 giờ trưa).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q05",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Eine Auswahl der Aufnahmen wird verschlossen aufbewahrt und genau zehn Jahre später in einer Radiosendung ausgestrahlt.",
+      "trapExplanationVi": "Đúng: chiến dịch thu thập lời nhắn cá nhân để phát lại sau đúng 10 năm.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q06",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Mitmachen können alle, die mindestens 18 Jahre alt sind und im Sendegebiet von Radiowelle wohnen.",
+      "trapExplanationVi": "Đúng A: điều kiện tham gia là đủ 18 tuổi (volljährig) và sống trong khu vực phủ sóng của đài.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q07",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Im Norden des Landes bleibt der Nebel am Vormittag dicht und löst sich voraussichtlich erst gegen Mittag auf.",
+      "trapExplanationVi": "Đảo khu vực: miền Bắc Hessen buổi sáng sương mù dày, trưa mới tan chứ không nắng từ sáng -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q08",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Besonders in den südlichen Tälern kann sich am Abend bereits leichter Bodenfrost bilden.",
+      "trapExplanationVi": "Đúng A: các thung lũng phía nam buổi tối có thể có sương muối nhẹ trên mặt đất.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q09",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Das Gerät ist deshalb noch nicht fertig. Morgen schließen wir die Reparatur ab.",
+      "trapExplanationVi": "Đúng-sai: linh kiện vừa về tới hôm nay, máy chưa sửa xong nên ngày mai mới hoàn tất -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q10",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Bitte geben Sie mir bis morgen um 12 Uhr Bescheid, ob dieser Termin für Sie passt.",
+      "trapExplanationVi": "Đúng A: báo lại chậm nhất trước 12 giờ trưa mai xem có lấy máy vào thứ Bảy được không.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q11",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Mein Rat ist, melden Sie sich zunächst für einen Probearbeitstag an.",
+      "trapExplanationVi": "Từ đồng nghĩa: 'Probearbeitstag' trong bài nghe tương ứng với 'Schnuppertag' (ngày làm thử) ở phương án B.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q12",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Zusätzliche Mitarbeiterinnen und Mitarbeiter suchen wir deshalb im Kundenservice.",
+      "trapExplanationVi": "Đúng B: bộ phận sản xuất thu gọn, còn công ty đang cần tuyển thêm ở mảng chăm sóc khách hàng (Kundenservice = Kundendienst).",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q13",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Nach der Pause treffen wir uns bitte nicht wieder an der Kantine, sondern im Schulungsraum im ersten Stock.",
+      "trapExplanationVi": "Bẫy phủ định: KHÔNG quay lại căng tin (nơi nghỉ giải lao) mà tập trung tại phòng đào tạo tầng một -> chọn A.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q14",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Im vergangenen Jahr haben wir darauf reagiert und unser Reparaturzentrum erweitert.",
+      "trapExplanationVi": "Đúng A: năm ngoái công ty mở rộng trung tâm sửa chữa từ 7 lên 12 vị trí (còn nhà kho mới sang năm mới xây).",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q15",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Wird die Fortbildung genehmigt, darf sie während der bezahlten Arbeitszeit besucht werden.",
+      "trapExplanationVi": "Đúng A: các khóa học nghề được phê duyệt có thể tham gia ngay trong giờ làm việc hưởng lương.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q16",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "mein Vermieter hat mir nicht gekündigt. Die Entscheidung kam von mir.",
+      "trapExplanationVi": "Phủ định trực tiếp: không phải bị chủ nhà đòi lại nhà mà Leyla tự quyết định chuyển đi -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q17",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Seitdem sehe ich das wirklich anders.",
+      "trapExplanationVi": "Đúng: trước kia Tobias nghĩ thị trấn nhỏ chán, sau chuyến đi tháng trước anh đã thay đổi hoàn toàn suy nghĩ.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q18",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Ich arbeite weiterhin für denselben Arbeitgeber.",
+      "trapExplanationVi": "Đúng-sai: Leyla vẫn làm cho sếp/công ty cũ (chỉ đổi sang làm việc từ xa 4 ngày/tuần) -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q19",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Zuerst ziehe ich allein ein und einige Wochen später bringt er seine Sachen nach.",
+      "trapExplanationVi": "Đúng: bạn đời Sami còn dự án 6 tuần nên vài tuần sau mới chuyển đồ vào cùng.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q20",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "In Lindenstadt sind es von der neuen Wohnung nur sieben Minuten zu Fuß bis zum Bahnhof.",
+      "trapExplanationVi": "Đúng: từ nhà cũ mất 35 phút đi buýt ra ga, còn ở nhà mới chỉ đi bộ 7 phút tới ga.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q21",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Nur beim Kulturangebot bin ich noch unsicher. Es gibt zwar ein kleines Kino und manchmal Konzerte, aber vielleicht ist mir das auf Dauer zu wenig.",
+      "trapExplanationVi": "Đúng: Leyla lo hoạt động văn hóa ở thị trấn mới về lâu dài sẽ hơi ít đối với mình.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q22",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Sobald du ausgepackt hast und dich richtig zu Hause fühlst, komme ich dich besuchen. Vielleicht schon zwei Wochen später?",
+      "trapExplanationVi": "Đúng: Tobias muốn qua thăm ngay sau khi Leyla dọn đồ xong ('có thể ngay hai tuần sau').",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q23",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Die Speisen werden dadurch leichter, ohne ihren besonderen Charakter zu verlieren.",
+      "trapExplanationVi": "Dana Schneider chia sẻ dùng ít mỡ, nhiều rau giúp món địa phương nhẹ bụng mà vẫn giữ bản sắc.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q24",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Wenn die Kantine wählen muss, sollte ein niedriger Preis Vorrang vor der regionalen Herkunft der Zutaten haben.",
+      "trapExplanationVi": "Florian Bader khẳng định giá rẻ phải được ưu tiên hơn nguồn gốc địa phương đối với người ăn căng tin hàng ngày.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q25",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Die Kantine könnte zunächst ein einziges neues Gericht aus der Region als Wochenangebot testen.",
+      "trapExplanationVi": "Moderator đề xuất thử nghiệm một món địa phương theo tuần trước khi chốt vào thực đơn lâu dài.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q26",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Dafür brauchen sie längerfristige Abnahmeverträge. Nur mit solchen festen Zusagen können sie Mengen und Liefertermine verlässlich planen.",
+      "trapExplanationVi": "Dana Schneider nêu các nông trại và tiệm bánh nhỏ cần hợp đồng bao tiêu dài hạn mới sắp xếp được nguồn cung.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q27",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Ein ausschließlich regionaler Speiseplan würde die Vielfalt unserer Belegschaft nicht zeigen.",
+      "trapExplanationVi": "Florian Bader lưu ý thực đơn cần phản ánh sự đa dạng xuất thân của nhân viên từ nhiều vùng và quốc gia khác nhau.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q28",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Man könnte auf dem Speiseplan zwei kurze Sätze ergänzen. Woher stammt das Gericht und welche Zutaten enthält es?",
+      "trapExplanationVi": "Moderator gợi ý ghi hai câu ngắn về nguồn gốc và thành phần để thực khách dễ chọn món tên lạ.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q29",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Die Küche kann solche Speisen daher nicht vollständig selbst und nach alter Art herstellen.",
+      "trapExplanationVi": "Florian Bader giải thích bếp căng tin phải làm hàng trăm suất dưới áp lực thời gian nên không thể nấu hoàn toàn theo kiểu cổ truyền.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T02_H_Q30",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Eine regionale Küche bleibt nur lebendig, wenn sie sich behutsam weiterentwickelt.",
+      "trapExplanationVi": "Dana Schneider khẳng định truyền thống ẩm thực chỉ sống tiếp nếu biết đổi mới cẩn trọng theo thời cuộc.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    }
+  ]
+}

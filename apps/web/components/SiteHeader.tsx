@@ -142,7 +142,7 @@ export function SiteHeader() {
   ];
 
   return <>
-    <header className="site-header relative z-50 bg-white"><div className="header-inner relative z-50 flex w-full items-center justify-between px-6 lg:px-12">
+    <header className="site-header relative z-50 border-b border-slate-200/85 bg-white"><div className="header-inner relative z-50 flex w-full items-center justify-between px-4 lg:px-8">
       <a href="/" className="brand" onClick={navigate}><img className="brand-logo" src="/logo-shd-tu-hoc-tieng-duc.png" alt={copy.brand} /></a>
       <nav className="nav text-[15px] font-semibold text-slate-700 lg:text-base" aria-label="Điều hướng chính"><a className={`nav-home ${pathname === '/' ? 'text-[#da2527]' : ''}`} href="/" onClick={navigate}>Trang chủ</a>{menuItems.map((item) => { const active = pathname.startsWith(item.href); return <div className="relative" key={item.label} onMouseEnter={() => item.kind && setActiveMenu(item.label)} onMouseLeave={() => item.kind && setActiveMenu(null)}><a className={`${active ? 'text-[#da2527]' : ''}`} href={item.href} onClick={navigate}>{item.label}{item.kind && <ChevronDown className="ml-1 inline" size={12} />}</a>{item.kind && activeMenu === item.label && <MegaMenu kind={item.kind} onNavigate={navigate} pathname={pathname} />}</div>; })}</nav>
       <label className="search"><Search size={15} aria-hidden="true" /><span className="sr-only">Tìm kiếm</span><input placeholder="Tìm kiếm bài học" aria-label="Tìm kiếm bài học" /></label>

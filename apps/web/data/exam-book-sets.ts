@@ -1,8 +1,8 @@
 export type ExamBookSet = {
   slug: string;
-  provider: 'osd';
+  provider: 'osd' | 'goethe';
   level: 'B1' | 'B2';
-  code: 'ZB1' | 'ZB2';
+  code: 'ZB1' | 'ZB2' | 'B1' | 'B2';
   volumeNumber: string;
   shortTitle: string;
   title: string;
@@ -109,9 +109,35 @@ export function canonicalExamSlug(slug: string) {
   return entry?.[0] ?? slug;
 }
 
-export function getExamBookSet(slug: string) {
+export function buildGoetheBookSets(exams: Array<{ slug: string; cefrLevel?: string }>): ExamBookSet[] {
+  const b1Sorted = exams
+    .filter((exam) => !exam.cefrLevel || exam.cefrLevel === 'B1')
+    .sort((a, b) => Number(a.slug.match(/(\d+)$/)?.[1] ?? 0) - Number(b.slug.match(/(\d+)$/)?.[1] ?? 0));
+  const sets: ExamBookSet[] = [];
+  for (let index = 0; index < b1Sorted.length; index += 4) {
+    const chunk = b1Sorted.slice(index, index + 4);
+    const volumeIndex = Math.floor(index / 4) + 1;
+    const firstNum = (chunk[0]?.slug.match(/(\d+)$/)?.[1] ?? '01').padStart(2, '0');
+    const lastNum = (chunk[chunk.length - 1]?.slug.match(/(\d+)$/)?.[1] ?? firstNum).padStart(2, '0');
+    const rangeText = firstNum === lastNum ? `Modelltest ${firstNum}` : `Modelltest ${firstNum}–${lastNum}`;
+    sets.push({
+      slug: `goethe-b1-tap-${volumeIndex}`,
+      provider: 'goethe',
+      level: 'B1',
+      code: 'B1',
+      volumeNumber: String(volumeIndex).padStart(2, '0'),
+      shortTitle: `B1 · Tập ${volumeIndex}`,
+      title: `Goethe-Zertifikat B1 · Tập ${volumeIndex}`,
+      description: `Trọn bộ ${chunk.length} đề luyện thi Goethe-Zertifikat B1 (${rangeText}) chuẩn Viện Goethe, hỗ trợ Lesen & Hören kèm đáp án và giải thích chi tiết.`,
+      examSlugs: chunk.map((exam) => exam.slug),
+    });
+  }
+  return sets;
+}
+
+export function getExamBookSet(slug: string, dynamicSets: ExamBookSet[] = []) {
   const canonical = canonicalExamSlug(slug);
-  return examBookSets.find((set) => set.slug === canonical || set.examSlugs.includes(canonical)) ?? null;
+  return [...examBookSets, ...dynamicSets].find((set) => set.slug === canonical || set.examSlugs.includes(canonical)) ?? null;
 }
 
 export function getBookSetExamSlugs(set: ExamBookSet) {

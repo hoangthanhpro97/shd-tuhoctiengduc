@@ -19,7 +19,7 @@ vi.mock('../lib/server/db', () => ({ getAppPool: () => ({ query: dbQuery }) }));
 const repoRoot = process.cwd().replace(/\\/g, '/').endsWith('apps/web') ? resolve(process.cwd(), '../..') : process.cwd();
 const examDirectory = resolve(repoRoot, 'content/exams');
 const fixtures = readdirSync(examDirectory).filter((file) => file.endsWith('.json')).map((file) => createPublicExamPayload(JSON.parse(readFileSync(resolve(examDirectory, file), 'utf8'))));
-const expectedSlugs = [
+const expectedOsdB1Slugs = [
   'osd-b1-mock-01',
   'osd-b1-test-02',
   'osd-b1-test-03',
@@ -35,6 +35,12 @@ const expectedSlugs = [
   'osd-b1-test-13',
   'osd-b1-test-14',
   'osd-b1-test-15',
+];
+const expectedGoetheB1Slugs = readdirSync(examDirectory)
+  .filter((file) => /^goethe-b1-test-\d+\.json$/u.test(file))
+  .map((file) => file.replace(/\.json$/u, ''))
+  .sort((a, b) => Number(a.match(/(\d+)$/)?.[1] ?? 0) - Number(b.match(/(\d+)$/)?.[1] ?? 0));
+const expectedOsdB2Slugs = [
   'b2-osd-mock-01',
   'osd-b2-test-02',
   'osd-b2-test-03',
@@ -46,14 +52,19 @@ const expectedSlugs = [
   'osd-b2-test-09',
   'osd-b2-test-10',
 ];
+const expectedSlugs = [
+  ...expectedOsdB1Slugs,
+  ...expectedGoetheB1Slugs,
+  ...expectedOsdB2Slugs,
+];
 
 describe('ÖSD exam integration', () => {
   beforeEach(() => { useExamSessionStore.getState().reset(); dbQuery.mockReset(); });
 
-  it('loads all 25 real exams (15 B1 + 10 B2) in level and test order without private grading keys', async () => {
+  it('loads all real ÖSD and Goethe exams in level and provider order without private grading keys', async () => {
     const catalog = await getAllPublicExams();
     expect(catalog.map((exam) => exam.slug)).toEqual(expectedSlugs);
-    expect(catalog.filter((exam) => exam.cefrLevel === 'B1')).toHaveLength(15);
+    expect(catalog.filter((exam) => exam.cefrLevel === 'B1')).toHaveLength(15 + expectedGoetheB1Slugs.length);
     expect(catalog.filter((exam) => exam.cefrLevel === 'B2')).toHaveLength(10);
     for (const slug of expectedSlugs) {
       const exam = await getExamBySlug(slug);

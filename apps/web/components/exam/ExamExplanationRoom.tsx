@@ -73,7 +73,9 @@ export function ExamExplanationRoom({ payload }: { payload: ExamStudyPayload }) 
           </Link>
           <span className="shrink-0 text-sm font-black tracking-tight text-[#da2527]">SHD</span>
           <div className="min-w-0">
-            <strong className="block truncate text-sm text-slate-900">ÖSD {payload.level} · Modelltest {testNumber} - {payload.skill === 'lesen' ? 'Lesen' : 'Hören'}</strong>
+            <strong className="block truncate text-sm text-slate-900">
+              {(payload.exam.examMetadata.providerFormat.toLowerCase().includes('goethe') ? 'Goethe' : 'ÖSD')} {payload.level} · {payload.exam.examMetadata.providerFormat.toLowerCase().includes('goethe') ? 'Modellsatz' : 'Modelltest'} {testNumber} - {payload.skill === 'lesen' ? 'Lesen' : 'Hören'}
+            </strong>
             <small className="block truncate text-[10px] text-slate-500">SHD Kontext-Methode · {current.title}</small>
           </div>
         </div>

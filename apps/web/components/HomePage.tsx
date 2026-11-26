@@ -1,112 +1,277 @@
 'use client';
 
-import { ArrowRight, Flame, Target, Trophy } from 'lucide-react';
+import { ArrowRight, BookOpenCheck, Headphones, PenLine, Sparkles } from 'lucide-react';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { getHomeData, selectHomeHighlights } from '../data/access';
+import { useEffect, useRef, useState } from 'react';
+import { getHomeData } from '../data/access';
 import type { HomeData } from '../data/access';
+import { AuthModal } from './auth/AuthModal';
 import { useAuth } from './auth/AuthProvider';
-import { DictationCard, ExamCard, ListeningCard, ReadingCard, SpeakingCard, WritingCard } from './Cards';
+import { BookArtCover } from './home/BookArtCover';
+import {
+  FloatingBooksBackground,
+  FloatingLibraryMotionToggle,
+  FloatingLibraryProvider,
+} from './home/FloatingBooksBackground';
 import { HeroQuickFilter } from './home/HeroQuickFilter';
+import {
+  CefrLevelRoadmapSection,
+  DiktatStudioSection,
+  ProductiveAtelierSection,
+  ProviderExamShowcase,
+  SkillSpotlightSection,
+} from './home/HomeLearningShowcase';
+import { RevealOnScroll } from './home/RevealOnScroll';
 import { StudentDashboard } from './home/StudentDashboard';
 
 const homepageSpeakingCards = [
-  { title: 'Goethe B1 Teil 1', provider: 'Goethe B1', part: 'Teil 1', itemKey: 'goethe-b1-teil-1', href: '/bai-mau-sprechen/goethe-b1-teil-1-party-planen' },
-  { title: 'Goethe B1 Teil 2', provider: 'Goethe B1', part: 'Teil 2', itemKey: 'goethe-b1-teil-2', href: '/bai-mau-sprechen/goethe-b1-teil-2-kinder-und-mobiltelefone' },
-  { title: 'ÖSD ZDÖ B1 Teil 1', provider: 'ÖSD ZDÖ B1', part: 'Teil 1', itemKey: 'osd-zdo-b1-teil-1', href: '/bai-mau-sprechen/osd-zdo-b1-teil-1-kennenlernen' },
-  { title: 'Goethe B2 Teil 1', provider: 'Goethe B2', part: 'Teil 1', itemKey: 'goethe-b2-teil-1', href: '/bai-mau-sprechen' },
+  { title: 'Goethe B1 Teil 1 · Gemeinsam etwas planen', provider: 'Goethe B1', part: 'Teil 1', itemKey: 'goethe-b1-teil-1', href: '/bai-mau-sprechen/goethe-b1-teil-1-party-planen' },
+  { title: 'Goethe B1 Teil 2 · Kinder und Mobiltelefone', provider: 'Goethe B1', part: 'Teil 2', itemKey: 'goethe-b1-teil-2', href: '/bai-mau-sprechen/goethe-b1-teil-2-kinder-und-mobiltelefone' },
+  { title: 'ÖSD ZDÖ B1 Teil 1 · Sich kennenlernen', provider: 'ÖSD ZDÖ B1', part: 'Teil 1', itemKey: 'osd-zdo-b1-teil-1', href: '/bai-mau-sprechen/osd-zdo-b1-teil-1-kennenlernen' },
+  { title: 'Goethe B2 Teil 1 · Präsentation', provider: 'Goethe B2', part: 'Teil 1', itemKey: 'goethe-b2-teil-1', href: '/bai-mau-sprechen' },
 ];
 
 const homepageWritingCards = [
-  { title: 'Goethe B1 Aufgabe 1', provider: 'Goethe B1', part: 'Aufgabe 1', itemKey: 'goethe-b1-aufgabe-1', href: '/bai-mau-schreiben/goethe-b1-aufgabe-1-ausflug-nach-da-lat' },
-  { title: 'Goethe B1 Aufgabe 2', provider: 'Goethe B1', part: 'Aufgabe 2', itemKey: 'goethe-b1-aufgabe-2', href: '/bai-mau-schreiben/goethe-b1-aufgabe-2-handys-in-der-schule' },
-  { title: 'Goethe B1 Aufgabe 3', provider: 'Goethe B1', part: 'Aufgabe 3', itemKey: 'goethe-b1-aufgabe-3', href: '/bai-mau-schreiben/goethe-b1-aufgabe-3-termin-verschieben' },
-  { title: 'ÖSD B1 Schreiben', provider: 'ÖSD B1', part: 'Schreiben', itemKey: 'osd-b1-schreiben', href: '/bai-mau-schreiben/osd-zdo-b1-schreiben-kursbeginn' },
+  { title: 'Goethe B1 Aufgabe 1 · Wochenendausflug', provider: 'Goethe B1', part: 'Aufgabe 1', itemKey: 'goethe-b1-aufgabe-1', href: '/bai-mau-schreiben/goethe-b1-aufgabe-1-ausflug-nach-da-lat' },
+  { title: 'Goethe B1 Aufgabe 2 · Handys in der Schule', provider: 'Goethe B1', part: 'Aufgabe 2', itemKey: 'goethe-b1-aufgabe-2', href: '/bai-mau-schreiben/goethe-b1-aufgabe-2-handys-in-der-schule' },
+  { title: 'Goethe B1 Aufgabe 3 · Termin verschieben', provider: 'Goethe B1', part: 'Aufgabe 3', itemKey: 'goethe-b1-aufgabe-3', href: '/bai-mau-schreiben/goethe-b1-aufgabe-3-termin-verschieben' },
+  { title: 'ÖSD B1 Schreiben · Kursbeginn', provider: 'ÖSD B1', part: 'Schreiben', itemKey: 'osd-b1-schreiben', href: '/bai-mau-schreiben/osd-zdo-b1-schreiben-kursbeginn' },
 ];
 
-const homepageListeningKeys = ['thong-bao-nha-ga', 'mot-ngay-di-lam', 'hen-gap-cuoi-tuan', 'lop-hoc-buoi-toi'];
-const homepageReadingKeys = ['lich-hoc-cua-ban', 'thong-tin-tuyen-dung', 'loi-moi', 'tin-nhan-trong-ngay'];
-const homepageDictationKeys = ['im-alltag', 'am-arbeitsplatz', 'in-der-stadt', 'gute-gewohnheiten'];
-
-const dolFeatures = [
-  { icon: '📖', iconClass: 'bg-purple-50 text-purple-600', title: 'Đề mô phỏng ÖSD, Goethe', description: 'Đề thi mô phỏng chuẩn định dạng khảo thí, kèm đáp án và phân tích bẫy tư duy chi tiết.', href: '/de-thi' },
-  { icon: '🎧', iconClass: 'bg-blue-50 text-blue-600', title: 'Luyện tập Hören & Lesen', description: 'Kho bài luyện Nghe - Đọc phân cấp A1 đến B2 theo từng dạng bài và chủ đề thực tế.', href: '/luyen-nghe' },
-  { icon: '✏️', iconClass: 'bg-amber-50 text-amber-600', title: 'Nghe chép chính tả (Diktat)', description: 'Luyện phản xạ bắt âm từng câu ngắt tự động, hỗ trợ nhận diện và sửa lỗi sai chính xác.', href: '/chep-chinh-ta' },
-  { icon: '📝', iconClass: 'bg-emerald-50 text-emerald-600', title: 'Bài mẫu Schreiben & Sprechen', description: 'Tổng hợp bài mẫu song ngữ, dàn ý triển khai và danh mục mẫu câu Redemittel đắt giá.', href: '/bai-mau' },
+const shdPillars = [
+  {
+    icon: BookOpenCheck,
+    iconClass: 'bg-rose-50 text-[#da2527]',
+    title: 'Đề mô phỏng ÖSD, Goethe & TELC',
+    description: 'Đề thi mô phỏng chuẩn định dạng khảo thí, kèm đáp án, dẫn chứng verbatim và phân tích bẫy tư duy chi tiết.',
+    href: '/de-thi',
+  },
+  {
+    icon: Headphones,
+    iconClass: 'bg-sky-50 text-[#0284c7]',
+    title: 'Luyện tập Hören & Lesen',
+    description: 'Kho bài luyện Nghe – Đọc phân cấp A1 đến B2 theo từng Teil, chủ đề thực tế kèm transcript song ngữ.',
+    href: '/luyen-nghe',
+  },
+  {
+    icon: Sparkles,
+    iconClass: 'bg-amber-50 text-amber-700',
+    title: 'Nghe chép chính tả (Diktat)',
+    description: 'Luyện phản xạ bắt âm từng câu ngắt tự động, phát hiện lỗi từng từ và luyện nhại giọng Shadowing.',
+    href: '/chep-chinh-ta',
+  },
+  {
+    icon: PenLine,
+    iconClass: 'bg-emerald-50 text-emerald-700',
+    title: 'Bài mẫu Schreiben & Sprechen',
+    description: 'Tổng hợp bài mẫu song ngữ, dàn ý triển khai từng bước và danh mục mẫu câu Redemittel ăn điểm.',
+    href: '/bai-mau',
+  },
 ] as const;
 
-function GuestHome({ data, user }: { data: HomeData | null; user?: unknown }) {
+function GuestHome({ data }: { data: HomeData | null }) {
   const [cookie, setCookie] = useState(true);
-  return <>
-    <main className="guest-home">
-      <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#fde8e8]/85 via-[#fef2f2]/70 to-white pb-14 pt-10 sm:pb-16 sm:pt-12 lg:pt-14" data-testid="hero-section">
-        <div className="relative z-30 mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
-          <div className="flex translate-y-10 flex-col justify-center sm:translate-y-12 lg:col-span-7 lg:translate-y-14">
-            <h1 className="mb-4 text-3xl font-extrabold leading-[1.2] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              <span className="block text-slate-900 xl:whitespace-nowrap">Nền tảng tự học</span>
-              <span className="mt-1 block text-[#da2527] xl:whitespace-nowrap">Tiếng Đức Online - 4 kỹ năng</span>
-              <span className="mt-1 block font-normal text-slate-700 xl:whitespace-nowrap">Miễn phí và chất lượng</span>
-            </h1>
-            <p className="mb-8 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">SHD Tự Học Tiếng Đức cung cấp đầy đủ nội dung chất lượng gồm đề thi mô phỏng chuẩn ÖSD, Goethe &amp; TELC, luyện đề Lesen, Hören &amp; bài mẫu Schreiben, Sprechen kết hợp nghe chép chính tả Diktat được phát triển bởi SHD Education.</p>
-            <div className="flex items-center gap-4">
-              <Link className="flex h-12 items-center justify-center gap-2 rounded-xl bg-[#da2527] px-8 text-sm font-bold text-white shadow-md transition-all hover:bg-[#b81e20] hover:shadow-lg" href="/de-thi">
-                <span>{user ? 'Tiếp tục luyện đề ngay' : 'Đăng ký miễn phí ngay'}</span>
-                <span className="text-base">→</span>
-              </Link>
+  const [authOpen, setAuthOpen] = useState(false);
+
+  const heroRef = useRef<HTMLElement>(null);
+  const featuresRef = useRef<HTMLElement>(null);
+  const roadmapWrapRef = useRef<HTMLDivElement>(null);
+
+  return (
+    <>
+      <FloatingLibraryProvider>
+        <main className="guest-home bg-white">
+          {/* ================= 1. CENTERED HERO + 3-LAYER FLOATING IMAGE GALLERY ================= */}
+          <section
+            ref={heroRef}
+            className="shd-fb-scene relative flex min-h-[640px] w-full items-center justify-center border-b border-slate-200/75 bg-white sm:min-h-[680px] lg:min-h-[710px]"
+            data-testid="hero-section"
+          >
+            {/* 3-Plane Interactive Mouse-Parallax & Autonomous Drifting Books */}
+            <FloatingBooksBackground sceneRef={heroRef} variant="hero" />
+
+            {/* Truly Centered Hero Content Block (Horizontally & Vertically Centered below TopAnnouncementBar) */}
+            <div className="shd-fb-content mx-auto flex w-full max-w-3xl flex-col items-center justify-center px-4 pb-16 pt-[96px] text-center sm:px-6 sm:pb-20 sm:pt-[108px]">
+              <h1 className="text-3xl font-black leading-[1.14] tracking-tight text-slate-900 sm:text-5xl lg:text-[52px]">
+                <span className="block text-slate-900 sm:whitespace-nowrap">Nền tảng tự học</span>
+                <span className="mt-1.5 block text-[#da2527] sm:whitespace-nowrap">Tiếng Đức Online - 4 kỹ năng</span>
+                <span className="mt-2 block font-medium text-slate-800 sm:whitespace-nowrap">Miễn phí và chất lượng</span>
+              </h1>
+
+              <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
+                SHD Tự Học Tiếng Đức cung cấp đầy đủ nội dung chất lượng gồm đề thi mô phỏng chuẩn ÖSD, Goethe &amp; TELC, luyện đề Lesen, Hören &amp; bài mẫu Schreiben, Sprechen kết hợp nghe chép chính tả Diktat được phát triển bởi SHD Education.
+              </p>
+
+              <div className="mt-8 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setAuthOpen(true)}
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-[#da2527] px-8 text-sm font-bold text-white transition-colors hover:bg-[#b81e20]"
+                >
+                  <span>Đăng ký miễn phí ngay</span>
+                  <ArrowRight size={16} aria-hidden="true" />
+                </button>
+              </div>
+            </div>
+
+            {/* Discreet accessibility pause/resume motion control centered cleanly at bottom margin */}
+            <FloatingLibraryMotionToggle className="!absolute bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap" />
+          </section>
+
+          {/* ================= 2. FLAT FEATURES ON WHITE: TỰ HỌC TIẾNG ĐỨC CỦA SHD CÓ GÌ? ================= */}
+          <section
+            ref={featuresRef}
+            className="shd-fb-scene relative py-16 sm:py-20"
+            id="explore"
+          >
+            <FloatingBooksBackground sceneRef={featuresRef} variant="features" />
+
+            <div className="shd-fb-content mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+              <RevealOnScroll>
+                <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
+                  <div className="lg:col-span-4">
+                    <h2 className="text-3xl font-extrabold leading-[1.2] tracking-tight text-slate-900 sm:text-4xl lg:text-[40px]">
+                      Tự học Tiếng Đức <br />của <span className="text-[#da2527]">SHD</span> có gì
+                      <span className="ml-2 inline-block align-baseline text-5xl font-black text-[#da2527] lg:text-6xl">?</span>
+                    </h2>
+                    <p className="mt-4 max-w-sm text-xs leading-relaxed text-slate-600 sm:text-sm">
+                      Kết hợp phòng thi mô phỏng sát thực tế, giải thích đáp án đối chiếu dẫn chứng verbatim và hệ thống rèn luyện 4 kỹ năng chuyên biệt.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-x-10 gap-y-9 sm:grid-cols-2 lg:col-span-8">
+                    {shdPillars.map((feature) => {
+                      const Icon = feature.icon;
+                      return (
+                        <Link
+                          key={feature.title}
+                          href={feature.href}
+                          data-testid="dol-feature-card"
+                          className="group flex flex-col justify-between py-1"
+                        >
+                          <div>
+                            <div
+                              className={`mb-3.5 inline-flex h-11 w-11 items-center justify-center rounded-xl transition-transform duration-200 group-hover:scale-105 ${feature.iconClass}`}
+                            >
+                              <Icon size={20} strokeWidth={2.2} aria-hidden="true" />
+                            </div>
+                            <h3 className="text-base font-extrabold text-slate-900 transition-colors group-hover:text-[#da2527] sm:text-lg">
+                              {feature.title}
+                            </h3>
+                            <p className="mt-1.5 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                              {feature.description}
+                            </p>
+                          </div>
+                          <span className="mt-3.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-1 sm:text-sm">
+                            <span>Khám phá</span>
+                            <ArrowRight size={13} aria-hidden="true" />
+                          </span>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              </RevealOnScroll>
+            </div>
+          </section>
+
+          {/* ================= 3. QUICK GOAL FILTER ================= */}
+          <section className="px-4 pb-6 sm:px-6 lg:px-8">
+            <HeroQuickFilter exams={data?.exams} />
+          </section>
+
+          {/* ================= 4. ĐỀ THI ÖSD, GOETHE & TELC + FLOATING BOOKS ================= */}
+          <ProviderExamShowcase exams={data?.exams ?? []} />
+
+          {/* ================= 5. LUYỆN HÖREN & LESEN EDITORIAL SPOTLIGHT ================= */}
+          <SkillSpotlightSection data={data} />
+
+          {/* ================= 6. BÀI MẪU SCHREIBEN & SPRECHEN FLAT STUDIO ================= */}
+          <ProductiveAtelierSection speakingCards={homepageSpeakingCards} writingCards={homepageWritingCards} />
+
+          {/* ================= 7. NGHE CHÉP CHÍNH TẢ DIKTAT ================= */}
+          <DiktatStudioSection />
+
+          {/* ================= 8. LỘ TRÌNH CEFR A1 – B2 + FLOATING TRANSITION ================= */}
+          <div ref={roadmapWrapRef} className="shd-fb-scene relative">
+            <FloatingBooksBackground sceneRef={roadmapWrapRef} variant="roadmap" />
+            <div className="shd-fb-content">
+              <CefrLevelRoadmapSection />
             </div>
           </div>
-          <div className="relative hidden min-h-[360px] items-center justify-center lg:col-span-5 lg:flex" />
+
+          {/* ================= 9. ACCOUNT REGISTRATION CTA ================= */}
+          <section className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8" id="contact" aria-labelledby="cta-register-heading">
+            <RevealOnScroll>
+              <div className="relative overflow-hidden rounded-2xl bg-[#0f172a] p-7 text-white sm:p-10 lg:p-12">
+                <div className="relative z-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+                  <div className="lg:col-span-6 lg:pr-4">
+                    <h2 id="cta-register-heading" className="text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
+                      Lưu tiến độ làm bài và học trọn vẹn <span className="text-[#f87171]">miễn phí.</span>
+                    </h2>
+
+                    <p className="mt-3 max-w-xl text-xs leading-relaxed text-slate-300 sm:text-sm">
+                      Tạo tài khoản miễn phí để tiếp tục bài thi đang làm dở trên mọi thiết bị, theo dõi lịch sử điểm số theo từng Teil và nhận gợi ý lộ trình phù hợp mục tiêu A1 – B2.
+                    </p>
+
+                    <div className="mt-6 flex flex-wrap items-center gap-3.5">
+                      <button
+                        type="button"
+                        onClick={() => setAuthOpen(true)}
+                        className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-[#da2527] px-7 text-sm font-bold text-white transition-colors hover:bg-[#b81e20]"
+                      >
+                        <span>Đăng ký tài khoản miễn phí</span>
+                        <ArrowRight size={15} aria-hidden="true" />
+                      </button>
+                      <Link
+                        href="/de-thi"
+                        className="inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-white/25 px-6 text-sm font-bold text-white transition-colors hover:bg-white/10"
+                      >
+                        <span>Làm test thử ngay</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Tactile German Textbooks Trio Composition */}
+                  <div className="hidden items-center justify-center lg:col-span-6 lg:flex" aria-hidden="true">
+                    <div className="relative flex h-64 w-full items-center justify-center">
+                      <div className="-translate-x-10 -rotate-[10deg] scale-[0.84] opacity-85 transition-transform duration-500 hover:-rotate-[6deg]">
+                        <BookArtCover item={{ kind: 'textbook', bookId: 'menschen-a1' }} compact />
+                      </div>
+                      <div className="z-10 translate-y-2 rotate-[3deg] scale-[0.94] transition-transform duration-500 hover:rotate-0">
+                        <BookArtCover item={{ kind: 'textbook', bookId: 'netzwerk-b1' }} compact />
+                      </div>
+                      <div className="translate-x-10 rotate-[10deg] scale-[0.84] opacity-90 transition-transform duration-500 hover:rotate-[6deg]">
+                        <BookArtCover item={{ kind: 'textbook', bookId: 'goethe-b2-erfolg' }} compact />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </RevealOnScroll>
+          </section>
+        </main>
+      </FloatingLibraryProvider>
+
+      {cookie && (
+        <div className="cookie" role="status">
+          <p>SHD dùng cookie cần thiết để lưu phiên học tập và cải thiện trải nghiệm.</p>
+          <button className="button button-primary shrink-0" type="button" onClick={() => setCookie(false)}>
+            Đã hiểu
+          </button>
         </div>
-      </section>
+      )}
 
-      <section className="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20" id="explore">
-        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <h2 className="text-3xl font-extrabold leading-[1.25] tracking-tight text-slate-900 sm:text-4xl lg:text-[42px]">Tự học Tiếng Đức <br />của <span className="text-[#da2527]">SHD</span> có gì<span className="ml-2 inline-block align-baseline text-5xl font-black text-[#da2527] lg:text-6xl">?</span></h2>
-          </div>
-          <div className="grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 lg:col-span-8">
-            {dolFeatures.map((feature) => <div className="group flex flex-col items-start" data-testid="dol-feature-card" key={feature.title}>
-              <div className={`mb-3 flex h-12 w-12 items-center justify-center rounded-2xl text-xl transition-transform group-hover:scale-110 ${feature.iconClass}`}>{feature.icon}</div>
-              <h3 className="mb-1.5 text-lg font-bold text-slate-900 transition-colors group-hover:text-[#da2527]">{feature.title}</h3>
-              <p className="text-xs text-slate-500 leading-snug line-clamp-2 mt-1 mb-2.5 sm:text-sm">{feature.description}</p>
-              <Link className="inline-flex items-center gap-1.5 text-sm font-bold text-[#da2527] transition-transform group-hover:translate-x-1" href={feature.href}><span>Khám phá</span><span>→</span></Link>
-            </div>)}
-          </div>
-        </div>
-      </section>
-
-      <section className="my-10 lg:my-14">
-         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8"><HeroQuickFilter exams={data?.exams} /></div>
-      </section>
-
-      <div className="mx-auto max-w-7xl px-4 font-sans sm:px-6 lg:px-8">
-         <HomeContent data={data} />
-         <section className="contact-cta" id="contact"><div><div className="eyebrow">Không biết bắt đầu từ đâu?</div><h2>Để SHD giúp bạn chọn đúng <span>lộ trình.</span></h2><p>Làm bài kiểm tra nhanh và nhận gợi ý cấp độ, kỹ năng nên ưu tiên cùng tài liệu phù hợp.</p><a className="button button-primary" href="/de-thi">Làm test đầu vào <ArrowRight size={15} /></a></div><div className="collage"><div><Target size={20} /><br />Chọn mục tiêu</div><div><Trophy size={20} /><br />Theo dõi tiến bộ</div><div><Flame size={20} /><br />Duy trì thói quen</div></div></section>
-       </div>
-    </main>
-    {cookie && <div className="cookie"><p>SHD dùng cookie cần thiết để lưu phiên học tập và cải thiện trải nghiệm.</p><button className="button button-primary" type="button" onClick={() => setCookie(false)}>Đã hiểu</button></div>}
-  </>;
-}
-
-function HomeContent({ data }: { data: HomeData | null }) {
-  if (!data) return <div className="home-loading" aria-label="Đang tải nội dung"><span /><span /><span /></div>;
-  return <div className="home-content">
-      <ContentSection id="exams" title="Đề thi mô phỏng ÖSD & Goethe" accent="" href="/de-thi/osd">{selectHomeHighlights(data.exams).map((exam) => <ExamCard exam={exam} key={exam.slug} />)}</ContentSection>
-     <ContentSection id="listening" title="Luyện nghe" accent="Hören" href="/luyen-nghe/osd">{selectHomeHighlights(data.listening).map((item, index) => <ListeningCard item={item} itemKey={homepageListeningKeys[index]} key={item.slug ?? item.title} />)}</ContentSection>
-     <ContentSection id="reading" title="Luyện đọc" accent="Lesen" href="/luyen-doc/osd">{selectHomeHighlights(data.reading).map((item, index) => <ReadingCard item={item} itemKey={homepageReadingKeys[index]} key={item.slug ?? item.title} />)}</ContentSection>
-     <ContentSection id="speaking" title="Luyện nói" accent="Sprechen" href="/bai-mau-sprechen">{homepageSpeakingCards.slice(0, 4).map((item) => <SpeakingCard {...item} key={item.title} />)}</ContentSection>
-     <ContentSection id="writing" title="Luyện viết" accent="Schreiben" href="/bai-mau-schreiben">{homepageWritingCards.slice(0, 4).map((item) => <WritingCard {...item} key={item.title} />)}</ContentSection>
-     <ContentSection id="dictation" title="Chép chính tả" accent="Diktat" href="/chep-chinh-ta">{data.dictations.slice(0, 4).map((item, index) => <DictationCard item={item} itemKey={homepageDictationKeys[index]} key={item.title} />)}</ContentSection>
-  </div>;
+      {authOpen && <AuthModal onClose={() => setAuthOpen(false)} />}
+    </>
+  );
 }
 
 export function HomePage() {
   const { user } = useAuth();
   const [data, setData] = useState<HomeData | null>(null);
-  useEffect(() => { getHomeData().then(setData); }, []);
+  useEffect(() => {
+    getHomeData().then(setData);
+  }, []);
   return user ? <StudentDashboard data={data} user={user} /> : <GuestHome data={data} />;
-}
-
-function ContentSection({ id, title, accent, href, children }: { id: string; title: string; accent: string; href: string; children: React.ReactNode }) {
-   return <section className="content-section py-5 sm:py-6" id={id}><div className="mb-3.5 flex items-end justify-between gap-4 sm:mb-4"><h2 className="m-0 text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">{title}{accent && <> <span className="text-[#da2527]">{accent}</span></>}</h2><a className="flex items-center gap-1 whitespace-nowrap text-xs font-semibold text-slate-500 hover:text-[#da2527] sm:text-sm" href={href}>Xem tất cả <ArrowRight size={14} /></a></div><div className="horizontal-scroll">{children}</div></section>;
 }

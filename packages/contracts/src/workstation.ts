@@ -32,6 +32,7 @@ export const WorkstationListeningStimulusSchema = z
     title: z.string().optional(),
     audioUrl: z.string().optional(),
     playCount: z.union([z.literal(1), z.literal(2)]).default(2),
+    audioIncludesRepetition: z.boolean().optional(),
     situationDe: z.string().optional(),
     situationVi: z.string().optional(),
     transcriptTurns: z.array(WorkstationTranscriptTurnSchema).optional(),

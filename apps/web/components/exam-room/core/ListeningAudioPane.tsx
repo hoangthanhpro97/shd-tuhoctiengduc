@@ -116,6 +116,7 @@ export function ListeningAudioPane({
   const [hoverBarIndex, setHoverBarIndex] = useState<number | null>(null);
 
   const maxPlayCount = stimulus?.playCount ?? (section.part === 3 ? 1 : 2);
+  const enforceMaxPlayCount = stimulus?.audioIncludesRepetition ? 1 : maxPlayCount;
 
   // Transcript state
   const [transcriptOpen, setTranscriptOpen] = useState(false);
@@ -167,12 +168,12 @@ export function ListeningAudioPane({
     return () => window.clearInterval(interval);
   }, [isPlaying]);
 
-  const playLocked = policy.enforcePlayCount && playCount >= maxPlayCount;
+  const playLocked = policy.enforcePlayCount && playCount >= enforceMaxPlayCount;
 
   // Handle Play/Pause
   const togglePlay = useCallback(() => {
     if (!audioRef.current || !blobUrl || isLoadingAudio) return;
-    if (policy.enforcePlayCount && playCount >= maxPlayCount && !isPlaying) {
+    if (policy.enforcePlayCount && playCount >= enforceMaxPlayCount && !isPlaying) {
       return;
     }
     if (isPlaying) {
@@ -190,7 +191,7 @@ export function ListeningAudioPane({
           setIsPlaying(false);
         });
     }
-  }, [blobUrl, isLoadingAudio, isPlaying, maxPlayCount, playCount, policy.enforcePlayCount]);
+  }, [blobUrl, enforceMaxPlayCount, isLoadingAudio, isPlaying, playCount, policy.enforcePlayCount]);
 
   // Keyboard shortcut: Space toggles play/pause when not typing in input/textarea
   useEffect(() => {
@@ -396,7 +397,7 @@ export function ListeningAudioPane({
                 <div className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1">
                   <span className="text-[11px] font-semibold text-slate-500">Lượt nghe</span>
                   <span className="flex items-center gap-1" aria-hidden="true">
-                    {Array.from({ length: maxPlayCount }).map((_, idx) => {
+                    {Array.from({ length: enforceMaxPlayCount }).map((_, idx) => {
                       const used = idx < playCount;
                       const activeNow = isPlaying && idx === playCount;
                       return (
@@ -414,7 +415,7 @@ export function ListeningAudioPane({
                     })}
                   </span>
                   <span className="font-mono text-[11px] font-bold text-slate-800">
-                    {playCount}/{maxPlayCount}
+                    {playCount}/{enforceMaxPlayCount}
                   </span>
                 </div>
               )}

@@ -1,0 +1,15 @@
+/* Merge these styles into the existing Hero; avoid changing its typography. */
+.shd-fb-scene { position:relative; isolation:isolate; overflow:hidden; }
+.shd-fb-background { position:absolute; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
+.shd-fb-content { position:relative; z-index:2; }
+.shd-fb-plane { position:absolute; inset:0; will-change:transform; pointer-events:none; }
+.shd-fb-book { position:absolute; left:var(--x); top:var(--y); width:clamp(58px,var(--w),215px); opacity:var(--opacity); filter:blur(var(--blur)); transform:translate(-50%,-50%); }
+.shd-fb-book img { display:block; width:100%; height:auto; transform:rotate(var(--angle)); filter:drop-shadow(3px 6px 6px #16243424); animation:shd-fb-drift var(--duration) ease-in-out var(--delay) infinite alternate; animation-play-state:paused; }
+.shd-fb-background[data-running="true"] .shd-fb-book img { animation-play-state:running; }
+@keyframes shd-fb-drift { from {transform:translate3d(-4px,calc(var(--drift) * -.5),0) rotate(var(--angle));} to {transform:translate3d(5px,var(--drift),0) rotate(calc(var(--angle) + 4deg));} }
+/* Match --shd-hero-bg to the actual Hero background. Mask protects the headline. */
+.shd-fb-mask { position:absolute; inset:0; background:radial-gradient(ellipse 39% 75% at 50% 50%,var(--shd-hero-bg,#fdfbf8) 43%,transparent 100%); }
+.shd-fb-pause { position:absolute; z-index:3; right:12px; bottom:10px; color:inherit; background:transparent; border:0; font:inherit; font-size:11px; text-decoration:underline; cursor:pointer; opacity:.7; }
+.shd-fb-pause[hidden] {display:none;}
+@media(max-width:767px){ .shd-fb-book[data-depth="2"],.shd-fb-book[data-depth="1"] {display:none;} .shd-fb-book {opacity:.22;width:clamp(55px,17vw,100px);} .shd-fb-mask {background:radial-gradient(ellipse 62% 90% at center,var(--shd-hero-bg,#fdfbf8) 45%,transparent 100%);} }
+@media(prefers-reduced-motion:reduce){ .shd-fb-book img {animation:none!important;} .shd-fb-plane {transform:none!important;will-change:auto;} .shd-fb-pause{display:none;} }

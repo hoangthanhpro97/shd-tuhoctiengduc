@@ -4,10 +4,10 @@ import Link from 'next/link';
 import type { ExamBookSet } from '../../data/exam-book-sets';
 import { examBookSets } from '../../data/exam-book-sets';
 
-export function ExamSiblingSlider({ bookSet }: { bookSet: ExamBookSet }) {
+export function ExamSiblingSlider({ bookSet, bookSets = examBookSets }: { bookSet: ExamBookSet; bookSets?: ExamBookSet[] }) {
   return (
-    <nav className="mt-3 flex flex-wrap gap-2" aria-label="Chọn bộ đề ÖSD">
-      {examBookSets.map((set) => {
+    <nav className="mt-3 flex flex-wrap gap-2" aria-label={bookSet.provider === 'goethe' ? 'Chọn bộ đề Goethe' : 'Chọn bộ đề ÖSD'}>
+      {bookSets.map((set) => {
         const active = set.slug === bookSet.slug;
         return (
           <Link

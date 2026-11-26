@@ -30,34 +30,112 @@ function displayExamTitle(exam: Exam) {
 
 export function ExamCard({ exam }: { exam: Exam }) {
   const title = displayExamTitle(exam);
-  return <a className="content-card group" href={`/de-thi/${exam.slug}`}><ExamBookCover level={coverLevel(exam.level)} provider={providerFromExam(exam)} simulationNumber={simulationNumber(exam.slug)} title={title} /><div className="flex flex-1 flex-col justify-between p-4"><h3 className="line-clamp-2 text-sm font-bold leading-snug text-slate-800 transition-colors group-hover:text-[#da2527]">{title}</h3><div className="mt-4 flex items-center justify-end border-t border-slate-100 pt-3"><span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#da2527] transition-transform group-hover:translate-x-1"><span>Xem đề</span><span className="text-base leading-none">→</span></span></div></div></a>;
+  return (
+    <a className="group block min-w-0" href={`/de-thi/${exam.slug}`} title={title}>
+      <ExamBookCover level={coverLevel(exam.level)} provider={providerFromExam(exam)} simulationNumber={simulationNumber(exam.slug)} title={title} />
+      <h3 className="mt-2.5 line-clamp-2 min-h-[2.5rem] text-sm font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
+        {title}
+      </h3>
+      <div className="mt-1.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-0.5">
+        <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-rose-50 text-[9px]">▶</span>
+        <span>Xem đề →</span>
+      </div>
+    </a>
+  );
 }
 
-export function ListeningCard({ item, itemKey }: { item: { title: string; teil: number; duration?: string; slug?: string }; itemKey: string }) { return <a className="content-card group" href={item.slug ? `/luyen-nghe/${item.slug}` : '/luyen-nghe'}><DynamicTopicThumbnail skill="horen" title={item.title} itemKey={item.slug ?? itemKey} badgeText={`Teil ${item.teil}`} /><div className="card-body"><h3 className="media-card-title mt-2 line-clamp-1 text-base font-normal text-slate-800 sm:text-lg">{item.title}</h3><div className="flex items-center justify-end border-t border-slate-100 pt-3"><span className="inline-flex items-center gap-1.5 text-sm font-bold leading-none text-[#da2527]"><span>Làm bài</span><span className="text-base leading-none">→</span></span></div></div></a>; }
-export function ReadingCard({ item, itemKey }: { item: { title: string; teil: number; slug?: string }; itemKey: string }) { return <a className="content-card group" href={item.slug ? `/luyen-doc/${item.slug}` : '/luyen-doc'}><DynamicTopicThumbnail skill="lesen" title={item.title} itemKey={item.slug ?? itemKey} badgeText={`Teil ${item.teil}`} /><div className="card-body"><h3 className="media-card-title mt-2 line-clamp-1 text-base font-normal text-slate-800 sm:text-lg">{item.title}</h3><div className="flex items-center justify-end border-t border-slate-100 pt-3"><span className="inline-flex items-center gap-1.5 text-sm font-bold leading-none text-[#da2527]"><span>Làm bài</span><span className="text-base leading-none">→</span></span></div></div></a>; }
-export function DictationCard({ item, itemKey }: { item: { title: string; questions: number; duration: string }; itemKey: string }) {
-  return <a className="content-card group" href="/chep-chinh-ta">
-    <DynamicTopicThumbnail skill="diktat" title={item.title} itemKey={itemKey} badgeText="Diktat" />
-    <div className="card-body">
-      <h3 className="media-card-title mt-2 line-clamp-1 text-base font-normal text-slate-800 sm:text-lg">{item.title}</h3>
-      <div className="mt-4 flex items-center justify-end border-t border-slate-100 pt-3">
-        <span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#da2527] transition-transform group-hover:translate-x-1"><span>Chép bài</span><span className="text-base leading-none">→</span></span>
+function MediaTopicCard({
+  href,
+  skill,
+  title,
+  itemKey,
+  badgeText,
+  ctaLabel,
+}: {
+  href: string;
+  skill: 'horen' | 'lesen' | 'sprechen' | 'schreiben' | 'diktat';
+  title: string;
+  itemKey: string;
+  badgeText: string;
+  ctaLabel: string;
+}) {
+  return (
+    <a className="group block min-w-0" href={href} title={title}>
+      <DynamicTopicThumbnail skill={skill} title={title} itemKey={itemKey} badgeText={badgeText} />
+      <h3 className="mt-2.5 line-clamp-1 text-[15px] font-bold leading-snug text-slate-900 transition-colors group-hover:text-[#da2527]">
+        {title}
+      </h3>
+      <div className="mt-1.5 inline-flex items-center gap-1.5 text-xs font-bold text-[#da2527] transition-transform group-hover:translate-x-0.5">
+        <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-rose-50 text-[9px]">▶</span>
+        <span>{ctaLabel} →</span>
       </div>
-    </div>
-  </a>;
+    </a>
+  );
 }
+
+export function ListeningCard({ item, itemKey }: { item: { title: string; teil: number; duration?: string; slug?: string }; itemKey: string }) {
+  return (
+    <MediaTopicCard
+      href={item.slug ? `/luyen-nghe/${item.slug}` : '/luyen-nghe'}
+      skill="horen"
+      title={item.title}
+      itemKey={item.slug ?? itemKey}
+      badgeText={`Teil ${item.teil}`}
+      ctaLabel="Làm bài"
+    />
+  );
+}
+
+export function ReadingCard({ item, itemKey }: { item: { title: string; teil: number; slug?: string }; itemKey: string }) {
+  return (
+    <MediaTopicCard
+      href={item.slug ? `/luyen-doc/${item.slug}` : '/luyen-doc'}
+      skill="lesen"
+      title={item.title}
+      itemKey={item.slug ?? itemKey}
+      badgeText={`Teil ${item.teil}`}
+      ctaLabel="Làm bài"
+    />
+  );
+}
+
+export function DictationCard({ item, itemKey }: { item: { title: string; questions: number; duration: string }; itemKey: string }) {
+  return (
+    <MediaTopicCard
+      href="/chep-chinh-ta"
+      skill="diktat"
+      title={item.title}
+      itemKey={itemKey}
+      badgeText="Diktat"
+      ctaLabel="Chép bài"
+    />
+  );
+}
+
 type SkillCardProps = { title: string; provider: string; part: string; href: string; itemKey: string };
 
 export function SpeakingCard({ title, part, href, itemKey }: SkillCardProps) {
-  return <a className="content-card skill-card group" href={href}>
-    <DynamicTopicThumbnail skill="sprechen" title={title} itemKey={itemKey} badgeText={part} />
-    <div className="card-body"><h3 className="skill-card-title line-clamp-1 text-base font-normal group-hover:text-[#da2527]">{title}</h3><div className="flex items-center justify-end border-t border-slate-100 pt-3"><span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#da2527]"><span>Luyện nói</span><span className="text-base leading-none">→</span></span></div></div>
-  </a>;
+  return (
+    <MediaTopicCard
+      href={href}
+      skill="sprechen"
+      title={title}
+      itemKey={itemKey}
+      badgeText={part}
+      ctaLabel="Luyện nói"
+    />
+  );
 }
 
 export function WritingCard({ title, part, href, itemKey }: SkillCardProps) {
-  return <a className="content-card skill-card group" href={href}>
-    <DynamicTopicThumbnail skill="schreiben" title={title} itemKey={itemKey} badgeText={part} />
-    <div className="card-body"><h3 className="skill-card-title line-clamp-1 text-base font-normal group-hover:text-[#da2527]">{title}</h3><div className="flex items-center justify-end border-t border-slate-100 pt-3"><span className="inline-flex items-center gap-1.5 text-sm font-bold text-[#da2527]"><span>Luyện viết</span><span className="text-base leading-none">→</span></span></div></div>
-  </a>;
+  return (
+    <MediaTopicCard
+      href={href}
+      skill="schreiben"
+      title={title}
+      itemKey={itemKey}
+      badgeText={part}
+      ctaLabel="Luyện viết"
+    />
+  );
 }

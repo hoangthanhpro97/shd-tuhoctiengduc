@@ -1,0 +1,2809 @@
+{
+  "examMetadata": {
+    "examId": "goethe-b1-test-01",
+    "slug": "goethe-b1-test-01",
+    "title": "Goethe-Zertifikat B1 - Modellsatz 01",
+    "cefrLevel": "B1",
+    "providerFormat": "Goethe",
+    "disclaimer": "Bộ đề ôn luyện chuẩn Goethe-Zertifikat B1 (Modellsatz 01 – Technik, Ehrenamt und Stadtleben) gồm đủ 5 phần Đọc (Lesen · 30 câu · 65 phút) và 4 phần Nghe (Hören · 30 câu · 40 phút), kèm khóa đáp án kiểm chứng 100% và bản chép lời song ngữ Đức–Việt.",
+    "totalDurationMinutes": 105,
+    "passPercentage": 60,
+    "scoringPolicy": {
+      "lesenMaxPoints": 30,
+      "hoerenMaxPoints": 30,
+      "minPassingScorePerSkill": 18
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "sec_goethe_b1_t01_lesen_p1",
+      "skill": "Lesen",
+      "title": "Teil 1: Technik im Kinderzimmer: unsere Testwoche",
+      "durationMinutes": 10,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Technik im Kinderzimmer: unsere Testwoche",
+        "content": "Technik im Kinderzimmer: unsere Testwoche\n\nFreitag, 4. September\n\nAls unsere Tochter Lina bald zum ersten Mal in ihrem eigenen Zimmer schlafen sollte, wurde ich plötzlich unsicher.\n\nWürde ich nachts hören, wenn sie mich braucht? Deshalb begann ich, mich für technische Geräte zur Überwachung im Kinderzimmer zu interessieren. Mein Partner David war zunächst viel entspannter als ich. Trotzdem wollten wir gemeinsam herausfinden, was uns wirklich hilft.\n\nZum Glück hatte meine Schwester Mia nach der Geburt ihres Sohnes verschiedene Geräte gekauft. Sie lieh uns für eine Woche eine Sensormatte, eine Kamera und ein Babybett, das sich automatisch bewegt. Wir wollten erst alles in Ruhe ausprobieren und danach entscheiden, ob wir selbst etwas davon kaufen.\n\nSchon in der ersten Nacht gab die Sensormatte einen lauten Alarm. David und ich sprangen sofort auf und liefen zu Lina.\n\nSie schlief ruhig und atmete ganz normal. Beim Nachsehen bemerkten wir, dass die Matte unter der Matratze verrutscht war. Deshalb hatte sie keine Bewegung registriert und uns gewarnt. Natürlich waren wir froh, aber danach konnte ich lange nicht mehr einschlafen.\n\nAuch auf die Kamera reagierten David und ich ganz unterschiedlich. Ihn beruhigten die Bilder: Ein kurzer Blick auf den Bildschirm genügte ihm. Bei mir war es genau umgekehrt. Ich kontrollierte das Livebild immer häufiger. Wenn Lina sich nur ein wenig bewegte, ging ich gleich in ihr Zimmer. Dabei weckte ich sie manchmal sogar auf.\n\nBesonders neugierig waren wir auf das automatisch schaukelnde Bett. Wir hatten gehofft, dass Lina darin leichter einschlafen würde. Tatsächlich schlief sie dort aber unruhiger als in ihrem normalen Bett. Nach dem Ende unserer Testwoche gaben wir es deshalb zusammen mit den anderen Geräten an Mia zurück.\n\nMein Fazit: Nicht jede Technik passt zu jeder Familie. Eltern sollten überlegen, was sie persönlich brauchen, und nicht einfach alles kaufen, was Sicherheit verspricht. Vielleicht reicht schon ein einfaches Gerät, mit dem man nur die Geräusche aus dem Kinderzimmer hört. Bei uns ist das jedenfalls so: David und ich benutzen inzwischen nur noch ein gewöhnliches Babyfon ohne Kamera. Damit können wir Lina hören, ohne ständig auf einen Bildschirm zu schauen – und wir schlafen alle ruhiger."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_L_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Jana beschäftigte sich mit technischen Geräten, weil ihre Tochter erstmals in einem eigenen Zimmer schlafen sollte.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Jana giải thích ngay đoạn đầu rằng việc con gái Lina sắp ra ngủ riêng khiến cô bắt đầu tìm hiểu các thiết bị theo dõi kỹ thuật trong phòng trẻ em."
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Jana kaufte sämtliche Geräte, bevor sie diese zu Hause ausprobierte.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Trong đoạn hai, Jana viết rằng chị gái Mia đã cho vợ chồng cô mượn thảm cảm biến, camera và cũi tự đung đưa để thử trước khi mua."
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Beim ersten nächtlichen Alarm hatte Lina tatsächlich Probleme mit der Atmung.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Die Bilder der Kamera machten David ruhiger, während Jana dadurch häufiger nach dem Baby sah.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Jana und David gaben das automatisch schaukelnde Bett zurück, weil Lina darin schlechter schlief.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Jana rät anderen Eltern, zunächst zu prüfen, ob ein einfaches Audiogerät für ihre Bedürfnisse ausreicht.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_lesen_p2",
+      "skill": "Lesen",
+      "title": "Teil 2: Pressetexte (Aufgaben 7–12)",
+      "durationMinutes": 20,
+      "totalQuestions": 6,
+      "stimulus": {
+        "type": "text",
+        "title": "Zwei Pressetexte (Aufgaben 7–12)",
+        "content": "TEXT 1\n\nDie Bierkugel kehrt zurück\n\nViele Kundinnen und Kunden der Metzgerei Huber erinnern sich noch an die Bierkugel, eine runde Dauerwurst, die früher bei Ausflügen und Familienfesten oft auf den Tisch kam. Vor einigen Jahren verschwand sie aus dem Angebot.\n\nNun bringt der Familienbetrieb aus Rosenheim das traditionelle Produkt zurück – allerdings in einer kleineren Verpackung.\n\nDer Grund für die neue Größe kam aus dem Ladenalltag. Immer mehr Menschen leben allein oder zu zweit und wollten keine große Wurst kaufen. Inhaber Thomas Huber entschied sich deshalb für eine Packung, die sich schneller verbrauchen lässt. Am Geschmack sollte sich dagegen nichts ändern. Die Bierkugel wird weiterhin in der eigenen Werkstatt hergestellt. Dort arbeiten die Beschäftigten nach dem alten Rezept der Familie und führen viele Arbeitsschritte von Hand aus.\n\nFür die Rückkehr wurde nur die Verpackung neu gestaltet. Auf ihr ist nun eine Zeichnung des ersten Geschäfts der Familie zu sehen. Die Metzgerei möchte damit zeigen, wie eng das Produkt mit ihrer Geschichte verbunden ist.\n\nWer die Herstellung kennenlernen möchte, kann die Werkstatt am kommenden Samstag besichtigen. Während des Rundgangs erklären Mitarbeitende, wie die Zutaten vorbereitet und die Würste geformt werden. Da in den Produktionsräumen nur wenig Platz ist, ist die Zahl der Gäste begrenzt. Teilnehmen können ausschließlich Erwachsene, die sich vorher telefonisch oder über die Internetseite der Metzgerei anmelden.\n\nTEXT 2\n\nGeschirr ausleihen statt wegwerfen\n\nWer im Viertel ein Straßenfest oder ein gemeinsames Essen organisiert, braucht oft große Mengen Geschirr. Dafür hat die Stadt Lindenau jetzt einen neuen Verleih eingerichtet. Das sogenannte MehrwegMobil stellt Teller, Becher und Besteck bereit, die nach der Veranstaltung gereinigt und erneut benutzt werden können.\n\nDas Angebot richtet sich zunächst an private Gruppen, Vereine und Nachbarschaftsinitiativen. Sie reservieren die benötigte Menge online und holen die Kisten an einem städtischen Lager ab. Bei der Abholung zahlt jeder Veranstalter ein Pfand. Dieses Geld ist keine Leihgebühr: Sobald das vollständige Geschirrset zurückgebracht und kontrolliert worden ist, wird der Betrag zurückgezahlt. Fehlen einzelne Teile, werden nur deren Kosten abgezogen.\n\nNach Angaben der Stadt soll der Verleih kleine Feste einfacher machen und zugleich verhindern, dass nach wenigen Stunden viele Einwegteller und Plastikbecher im Müll landen. Für die Reinigung gibt es neben dem Lager eine große Spülmaschine. Gruppen können das Geschirr selbst sauber zurückbringen oder gegen eine Gebühr den Spüldienst nutzen.\n\nMehrwegMobil beginnt als einjähriges Pilotprojekt. In dieser Zeit will die Stadt Erfahrungen mit Reservierung, Transport und Reinigung sammeln. Läuft das erste Jahr gut, soll der Kreis der Nutzer erweitert werden. Dann dürfen auch Händlerinnen und Händler vom Wochenmarkt Teller und Becher für ihre Verkaufsstände ausleihen."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_L_Q07",
+          "order": 7,
+          "part": 2,
+          "prompt": "In diesem Text geht es darum, dass ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "eine Metzgerei mit einem neuen Versandangebot mehr Kundschaft erreichen möchte."
+            },
+            {
+              "id": "B",
+              "text": "eine Metzgerei eine traditionelle Wurst an heutige Einkaufsgewohnheiten anpasst."
+            },
+            {
+              "id": "C",
+              "text": "eine Metzgerei bei Werkstattbesuchen traditionelle Wurstherstellung zeigt."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q08",
+          "order": 8,
+          "part": 2,
+          "prompt": "Bei der Herstellung der Bierkugel ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "arbeitet die Metzgerei weiterhin nach ihrem Familienrezept."
+            },
+            {
+              "id": "B",
+              "text": "lässt die Metzgerei die Wurst jetzt von einem anderen Betrieb produzieren."
+            },
+            {
+              "id": "C",
+              "text": "hat die Metzgerei die Gewürzmischung an den heutigen Geschmack angepasst."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q09",
+          "order": 9,
+          "part": 2,
+          "prompt": "Wer die offene Werkstatt besuchen möchte, muss ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sich vorher anmelden."
+            },
+            {
+              "id": "B",
+              "text": "eine Teilnahmegebühr bezahlen."
+            },
+            {
+              "id": "C",
+              "text": "Mitglied im regionalen Handwerksverein sein."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q10",
+          "order": 10,
+          "part": 2,
+          "prompt": "Im zweiten Text geht es vor allem um ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "neue Vorschriften für private Feiern in der Innenstadt."
+            },
+            {
+              "id": "B",
+              "text": "einen Wettbewerb für besonders umweltfreundliche Restaurants."
+            },
+            {
+              "id": "C",
+              "text": "einen neuen Verleih für wiederverwendbares Geschirr bei Stadtteilfesten."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Die Veranstalter müssen ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "eine Kaution bezahlen."
+            },
+            {
+              "id": "B",
+              "text": "als gemeinnütziger Verein registriert sein."
+            },
+            {
+              "id": "C",
+              "text": "das Geschirr noch am Tag der Feier zurückgeben."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Wenn das erste Jahr erfolgreich ist, soll das Angebot ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "nur noch für große Veranstaltungen gelten."
+            },
+            {
+              "id": "B",
+              "text": "auch den Verkaufsständen auf dem Wochenmarkt offenstehen."
+            },
+            {
+              "id": "C",
+              "text": "von den teilnehmenden Restaurants übernommen werden."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_lesen_p3",
+      "skill": "Lesen",
+      "title": "Teil 3: Anzeigen zuordnen (A–J & 0)",
+      "durationMinutes": 10,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Anzeigenübersicht (Anzeigen A–J)",
+        "content": "Anzeige A\nLinux für Einsteiger\nAbendkurs dienstags und donnerstags, 18.30–20.30 Uhr. Sie lernen Installation, Programme und sichere Einstellungen kennen. Alle Teilnehmenden arbeiten im Kurs mit dem eigenen Notebook. Keine Vorkenntnisse nötig.\n\nAnzeige B\nElektronik verstehen – Videokurs\nLernen Sie mit aufgezeichneten Lektionen die Grundlagen von Stromkreisen und Bauteilen. Zugriff rund um die Uhr für drei Monate. Kein Liveunterricht und keine praktischen Lötübungen.\n\nAnzeige C\nNotebook startet nicht?\nUnser Fachbetrieb rettet Fotos, Dokumente und andere Dateien von defekten Geräten. Wenn Sie Ihr Notebook nicht zu uns bringen können, holen wir es bei Ihnen zu Hause ab. Kostenvoranschlag nach erster Prüfung.\n\nAnzeige D\nProfi-Notebooks zur Miete\nSchnelle Geräte für Videoschnitt, Grafik und große Datenmengen. Mietdauer flexibel: von einer Woche bis zu sechs Monaten. Technische Unterstützung ist im Preis enthalten. Lieferung im Stadtgebiet möglich.\n\nAnzeige E\nSicher mit dem Tablet\nVormittagskurs für ältere Einsteigerinnen und Einsteiger. Wir üben E-Mail, Videoanrufe und Fahrplanauskünfte. Tablets stehen im Unterricht kostenlos zur Verfügung. Montag bis Freitag, 9 bis 12 Uhr.\n\nAnzeige F\nGeneralüberholtes Notebook – 379 Euro\nGeprüftes Gebrauchtgerät mit neuem Akku, 16 GB Arbeitsspeicher und aktuellem Betriebssystem. Zwölf Monate Garantie auf technische Defekte. Besichtigung und Abholung in unserem Geschäft möglich.\n\nAnzeige G\nSmartphone selbst reparieren\nSamstags zeigen Fachleute in unserer Werkstatt, wie man Display und Akku austauscht. Für Personen mit ersten Reparaturkenntnissen. Eigenes Werkzeug und ein geeignetes Smartphone müssen mitgebracht werden.\n\nAnzeige H\nBaue deinen Mini-Computer\nWochenendwerkstatt für erwachsene Anfängerinnen und Anfänger: Unter fachlicher Anleitung setzen Sie aus einzelnen Komponenten einen kleinen tragbaren Computer zusammen. Sämtliche Werkzeuge und Bauteile liegen bei uns bereit.\nSamstag und Sonntag, jeweils 10 bis 16 Uhr.\n\nAnzeige I\nLeistungsstarker Büro-PC\nNeuer Desktopcomputer mit großem Bildschirm, Tastatur und Maus für 699 Euro. Geeignet für Büroarbeit und Bildbearbeitung. Zwei Jahre Herstellergarantie. Nur Verkauf, keine Vermietung.\n\nAnzeige J\nComputer bedienen trotz eingeschränkter Handbewegung Wir beraten Sie persönlich und ohne Zeitdruck. In unserem barrierefreien Beratungsraum können Sie verschiedene angepasste Tastaturen testen. Einzeltermine nach telefonischer Vereinbarung."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_L_Q13",
+          "order": 13,
+          "part": 3,
+          "prompt": "Situation 13: Aylin möchte an einem Wochenende unter Anleitung einen kleinen tragbaren Computer aus einzelnen Teilen bauen. Werkzeug besitzt sie nicht.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q14",
+          "order": 14,
+          "part": 3,
+          "prompt": "Situation 14: Bens Notebook startet nicht mehr. Er möchte seine Dateien retten lassen und kann das Gerät nicht selbst in die Werkstatt bringen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q15",
+          "order": 15,
+          "part": 3,
+          "prompt": "Situation 15: Carla sucht für höchstens 400 Euro ein gebrauchtes Notebook. Wichtig ist ihr, dass sie bei einem Defekt eine Garantie hat.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Situation 16: Dario möchte Linux kennenlernen. Er kann nur abends an einem Anfängerkurs teilnehmen und will dabei sein eigenes Notebook benutzen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Situation 17: Elena kann ihre Hände nur eingeschränkt bewegen und sucht eine persönliche Beratung zu einer geeigneten Tastatur.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Situation 18: Farid braucht für vier Wochen ein leistungsfähiges Notebook, um ein Videoprojekt zu bearbeiten. Er möchte kein Gerät kaufen.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Situation 19: Greta möchte sonntags von zu Hause aus live lernen, wie man elektronische Bauteile lötet.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Anzeige A"
+            },
+            {
+              "id": "b",
+              "text": "Anzeige B"
+            },
+            {
+              "id": "c",
+              "text": "Anzeige C"
+            },
+            {
+              "id": "d",
+              "text": "Anzeige D"
+            },
+            {
+              "id": "e",
+              "text": "Anzeige E"
+            },
+            {
+              "id": "f",
+              "text": "Anzeige F"
+            },
+            {
+              "id": "g",
+              "text": "Anzeige G"
+            },
+            {
+              "id": "h",
+              "text": "Anzeige H"
+            },
+            {
+              "id": "i",
+              "text": "Anzeige I"
+            },
+            {
+              "id": "j",
+              "text": "Anzeige J"
+            },
+            {
+              "id": "0",
+              "text": "Keine passende Anzeige (0)"
+            }
+          ],
+          "taskType": "matching"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_lesen_p4",
+      "skill": "Lesen",
+      "title": "Teil 4: Leserbriefe (Ja/Nein Meinungen)",
+      "durationMinutes": 15,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "text",
+        "title": "Leserbriefe (Aufgaben 20–26)",
+        "content": "In einer Kulturzeitschrift lesen Sie Kommentare zur Frage, ob Besucherinnen und Besucher in Kunstausstellungen nicht mehr fotografieren dürfen. Lesen Sie die Texte 20 bis 26. Entscheiden Sie bei jeder Person, ob sie für ein Verbot ist. Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?\n\nLeserbrief 20 (Lea):\nEin allgemeines Fotografierverbot geht mir zu weit. Viele Menschen möchten eine Erinnerung an ein besonderes Bild mitnehmen, und ein schnelles Foto mit dem Handy stört meistens niemanden. Strenge Regeln für Blitzlicht und Stative finde ich dagegen richtig. Ein Blitz kann andere Besucher erschrecken und möglicherweise empfindlichen Werken schaden. Stative stehen außerdem oft im Weg. Solche konkreten Probleme sollte man regeln, statt jede Aufnahme zu verbieten.\n\nLeserbrief 21 (Martin):\nIch bin klar für das Verbot. Bei meinem letzten Museumsbesuch standen ständig Menschen mit ihren Telefonen direkt vor den Bildern. Sie blockierten die Sicht und blieben so lange stehen, bis die Aufnahme perfekt war. Andere Besucher konnten die Kunst kaum in Ruhe betrachten. Eine Ausstellung ist kein Fotostudio. Wenn dort niemand mehr fotografieren darf, haben alle wieder genug Platz und können sich auf die Werke konzentrieren.\n\nLeserbrief 22 (Aylin):\nEin vollständiges Verbot halte ich nicht für nötig. Museen könnten bestimmte Zeiten festlegen, in denen Aufnahmen erlaubt sind. Wer nicht gestört werden möchte, kommt einfach zu einer anderen Zeit. Außerdem sollte ein kleines Zeichen neben jedem Werk zeigen, ob man es fotografieren darf. So lassen sich die Interessen der Künstlerinnen und Künstler schützen, ohne allen Besucherinnen und Besuchern das Fotografieren grundsätzlich zu untersagen.\n\nLeserbrief 23 (Robert):\nKunst wirkt anders, wenn man wirklich vor einem Bild steht und sich Zeit dafür nimmt. Wer sofort zur Kamera greift, beschäftigt sich vor allem mit dem Bildschirm und nicht mit dem Werk. Auch leise Aufnahmen lenken ab, weil man ständig nach dem besten Bild sucht. Deshalb sollte das Fotografieren in der gesamten Ausstellung untersagt sein. Die Erinnerung an einen Museumsbesuch muss nicht aus hundert Handyfotos bestehen.\n\nLeserbrief 24 (Sofia):\nIch fotografiere manchmal einzelne Werke leise mit dem Handy. Später helfen mir diese Bilder, mich an die Ausstellung zu erinnern oder den Namen einer Künstlerin wiederzufinden. Darum bin ich gegen ein grundsätzliches Verbot. Blitzlicht sollte allerdings nicht erlaubt sein. Es stört die ruhige Atmosphäre und kann bei manchen Objekten problematisch sein. Ein Handyfoto ohne Blitz ist für mich etwas ganz anderes und sollte möglich bleiben.\n\nLeserbrief 25 (Daniel):\nGerade in vollen Ausstellungen braucht man eine klare Regel. Wenn manche Bilder fotografiert werden dürfen und andere nicht, entstehen dauernd Diskussionen. Das Personal muss dann jedes Mal erklären, welches Zeichen gilt oder ob ein Blitz eingeschaltet war. Ein Fotografierverbot für alle Ausstellungsräume ist leicht zu verstehen und ebenso leicht zu kontrollieren. Deshalb unterstütze ich diese Lösung, auch wenn einzelne Besucher sie vielleicht zu streng finden.\n\nLeserbrief 26 (Miriam):\nNicht jede Ausstellung und nicht jedes Kunstwerk braucht denselben Schutz. In einem Raum mit empfindlichen Zeichnungen können Aufnahmen problematisch sein, während sie bei modernen Objekten vielleicht gar nicht stören. Deshalb sollte es kein einheitliches Fotografierverbot geben. Jedes Museum sollte für einzelne Räume oder Werke entscheiden, welche Einschränkungen notwendig sind. So kann es auf die konkrete Situation reagieren, statt überall dieselbe Regel anzuwenden."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_L_Q20",
+          "order": 20,
+          "part": 4,
+          "prompt": "Lea: Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q21",
+          "order": 21,
+          "part": 4,
+          "prompt": "Martin: Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q22",
+          "order": 22,
+          "part": 4,
+          "prompt": "Aylin: Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Robert: Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Sofia: Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Daniel: Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Miriam: Ist die Person für ein Fotografierverbot für Besucherinnen und Besucher?",
+          "options": [
+            {
+              "id": "Ja",
+              "text": "Ja"
+            },
+            {
+              "id": "Nein",
+              "text": "Nein"
+            }
+          ],
+          "taskType": "binary_opinion"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_lesen_p5",
+      "skill": "Lesen",
+      "title": "Teil 5: Hausordnung für das Wohnprojekt Alte Mühle",
+      "durationMinutes": 10,
+      "totalQuestions": 4,
+      "stimulus": {
+        "type": "text",
+        "title": "Hausordnung für das Wohnprojekt Alte Mühle",
+        "content": "Hausordnung für das Wohnprojekt Alte Mühle\n\nDie Alte Mühle wird gemeinsam von den künftigen Bewohnerinnen und Bewohnern renoviert. Damit alle sicher arbeiten können und die Nachbarschaft möglichst wenig belastet wird, gelten auf der Baustelle folgende Regeln.\n\nArbeitsbereiche und Sicherheit\n\nDie Werkstatt und die Lagerräume dürfen nur von Personen betreten werden, die am Wohnprojekt beteiligt sind.\n\nElektrische Sägen, Bohrmaschinen und ähnliche Geräte dürfen erst benutzt werden, nachdem die Werkstattleitung eine Sicherheitseinweisung durchgeführt hat. Diese Einweisung wird jeden Mittwoch angeboten. Schutzbrillen und Gehörschutz liegen in der Werkstatt bereit und müssen bei den entsprechend gekennzeichneten Arbeiten getragen werden. Defekte Geräte sind sofort auszuschalten und der Werkstattleitung zu melden.\n\nArbeitszeiten und Ruhe\n\nRenovierungsarbeiten mit starkem Lärm sind montags bis freitags von 8 bis 12 Uhr und von 14 bis 19 Uhr erlaubt.\n\nSamstags darf nur zwischen 9 und 15 Uhr gebohrt, gesägt oder gehämmert werden. Sonntags sind alle lärmintensiven Arbeiten untersagt. Leise Tätigkeiten wie Streichen oder das Planen der nächsten Arbeiten sind auch am Sonntag möglich, sofern andere Hausbewohner nicht gestört werden.\n\nBauschutt und Sauberkeit\n\nWer bei seiner Arbeit Bauschutt produziert, ist selbst für dessen Entsorgung verantwortlich. Im Hof stehen deutlich beschriftete Container für Holz, Metall, mineralischen Bauschutt und Restmüll. Jede Person muss ihre Abfälle persönlich sortieren und in den richtigen Behälter legen. Arbeitswege und Treppen sind nach jeder Schicht freizuräumen.\n\nGefährliche Stoffe wie alte Farben dürfen nicht in die normalen Container; dafür ist die Bauleitung zu informieren.\n\nTransport im Gebäude\n\nBaumaterialien, Werkzeuge und Bauschutt werden grundsätzlich mit dem Lastenaufzug transportiert. Der Personenaufzug darf dafür nicht benutzt werden. Falls ein besonders langes oder empfindliches Material nicht sicher in den Lastenaufzug passt, kann die Bauleitung vorher eine Ausnahme erlauben. Ohne diese Genehmigung bleibt der Transport von Baumaterial im Personenaufzug verboten.\n\nBeim Verlassen der Baustelle müssen Fenster geschlossen, Lampen ausgeschaltet und die Außentüren abgeschlossen werden. Unfälle und Schäden sind unabhängig von ihrer Größe sofort im Baubüro zu melden."
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_L_Q27",
+          "order": 27,
+          "part": 5,
+          "prompt": "Elektrische Maschinen dürfen Bewohnerinnen und Bewohner benutzen, wenn sie ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "vorher an einer Sicherheitseinweisung teilgenommen haben."
+            },
+            {
+              "id": "B",
+              "text": "die Maschine vorher im Werkstattkalender reserviert haben."
+            },
+            {
+              "id": "C",
+              "text": "nur während der normalen Arbeitswoche damit arbeiten."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q28",
+          "order": 28,
+          "part": 5,
+          "prompt": "Lärmintensive Renovierungsarbeiten ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "sind am Wochenende grundsätzlich erlaubt."
+            },
+            {
+              "id": "B",
+              "text": "dürfen sonntags nicht durchgeführt werden."
+            },
+            {
+              "id": "C",
+              "text": "müssen jeden Abend um 18 Uhr enden."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q29",
+          "order": 29,
+          "part": 5,
+          "prompt": "Wer bei den Arbeiten Bauschutt produziert, muss ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "dessen Abholung privat organisieren."
+            },
+            {
+              "id": "B",
+              "text": "ihn im Keller bis zum nächsten Arbeitstag lagern."
+            },
+            {
+              "id": "C",
+              "text": "ihn selbst in die gekennzeichneten Behälter sortieren."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_L_Q30",
+          "order": 30,
+          "part": 5,
+          "prompt": "Baumaterial darf im Personenaufzug transportiert werden, ...",
+          "options": [
+            {
+              "id": "A",
+              "text": "wenn der Lastenaufzug außer Betrieb ist."
+            },
+            {
+              "id": "B",
+              "text": "wenn das Material vollständig verpackt wurde."
+            },
+            {
+              "id": "C",
+              "text": "wenn die Bauleitung vorher eine Ausnahme erlaubt hat. Faust Fertig? Scan this code: your score and every mistake, in seconds."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_hoeren_p1",
+      "skill": "Hoeren",
+      "title": "Teil 1: Fünf kurze Texte (Richtig/Falsch & A/B/C)",
+      "durationMinutes": 10,
+      "totalQuestions": 10,
+      "stimulus": {
+        "type": "audio",
+        "title": "Fünf kurze Alltagstexte",
+        "content": "Teil 1: Fünf kurze Texte (Richtig/Falsch & A/B/C)",
+        "audioUrl": "/audio/goethe-b1/test-01-teil-1.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 12,
+            "textDe": "Teil eins. Lösen Sie zu jedem der fünf kurzen Texte zwei Aufgaben und wählen Sie jeweils die richtige Lösung. Sie hören jeden Text zweimal. Beispiel.",
+            "textVi": "Phần một. Ở mỗi đoạn văn ngắn, bạn hãy giải hai nhiệm vụ và chọn đáp án đúng tương ứng. Bạn sẽ nghe mỗi đoạn hai lần. Ví dụ."
+          },
+          {
+            "speakerId": "SPR_1",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 28,
+            "timestampEnd": 73,
+            "textDe": "Hallo Frau Jansen, hier ist die Bäckerei Korn. Ihre bestellte Geburtstagstorte ist fertig. Sie können sie morgen ab 10 Uhr abholen. Bitte bringen Sie den Bestellschein mit. Bezahlen können Sie bar oder mit Karte. Falls Sie erst nach 16 Uhr kommen, rufen Sie uns bitte kurz an, damit wir die Torte für Sie im Kühlraum lassen. Vielen Dank und auf Wiederhören. Hallo Frau Jansen, hier ist die Bäckerei Korn. Ihre bestellte Geburtstagstorte ist fertig. Sie können Sie morgen ab 10 Uhr abholen. Bitte bringen Sie den Bestellschein mit. Bezahlen können Sie bar oder mit Karte. Falls Sie erst nach 16 Uhr kommen, rufen Sie uns bitte kurz an, damit wir die Torte für Sie im Kühlraum lassen. Vielen Dank und auf Wiederhören.",
+            "textVi": "Chào cô Jansen, đây là tiệm bánh Korn. Chiếc bánh sinh nhật cô đặt đã làm xong rồi ạ. Ngày mai cô có thể đến lấy từ 10 giờ. Xin vui lòng mang theo phiếu đặt hàng. Cô có thể thanh toán bằng tiền mặt hoặc thẻ. Nếu sau 16 giờ cô mới đến được, xin hãy gọi ngắn cho chúng tôi để chúng tôi giữ bánh trong tủ lạnh giúp cô. Xin cảm ơn và chào tạm biệt. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 74,
+            "timestampEnd": 76,
+            "textDe": "Aufgaben eins, zwei.",
+            "textVi": "Câu hỏi 1 và 2."
+          },
+          {
+            "speakerId": "SPR_2",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 92,
+            "timestampEnd": 150,
+            "textDe": "Und nun das Bergwetter für alle, die heute eine Wanderung planen. Am Vormittag scheint in den Alpen häufig die Sonne und schon gegen Mittag werden mehr als 30 Grad erreicht. Nehmen Sie deshalb genügend Wasser mit und vermeiden Sie anstrengende Wege ohne Schatten. Am Nachmittag bilden sich über den Bergen zunehmend dunkle Wolken. Dann sind örtlich kräftige Gewitter möglich. Kehren Sie also rechtzeitig ins Tal zurück. Am Abend beruhigt sich das Wetter wieder. Und nun das Bergwetter für alle, die heute eine Wanderung planen. Am Vormittag scheint in den Alpen häufig die Sonne und schon gegen Mittag werden mehr als 30 Grad erreicht. Nehmen Sie deshalb genügend Wasser mit und vermeiden Sie anstrengende Wege ohne Schatten. Am Nachmittag bilden sich über den Bergen zunehmend dunkle Wolken. Dann sind örtlich kräftige Gewitter möglich. Kehren Sie also rechtzeitig ins Tal zurück. Am Abend beruhigt sich das Wetter wieder.",
+            "textVi": "Và sau đây là dự báo thời tiết vùng núi cho tất cả những ai có kế hoạch đi bộ đường dài hôm nay. Buổi sáng ở dãy Alps trời thường nắng và đến trưa nhiệt độ đã vượt quá 30 độ C. Vì vậy hãy mang đủ nước uống và tránh các cung đường vất vả không có bóng râm. Vào buổi chiều, mây đen dần kéo đến trên vùng núi. Khi đó có thể xuất hiện giông mạnh cục bộ. Do đó hãy quay xuống thung lũng kịp thời. Đến tối thời tiết sẽ dịu lại. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 151,
+            "timestampEnd": 153,
+            "textDe": "Aufgaben drei, vier.",
+            "textVi": "Câu hỏi 3 và 4."
+          },
+          {
+            "speakerId": "SPR_3",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 168,
+            "timestampEnd": 229,
+            "textDe": "Guten Tag, Frau Vogt. Hier ist die Fahrradwerkstatt Radweg. Sie wollten Ihr Fahrrad am Mittwoch abholen. Leider schaffen wir die Reparatur bis dahin nicht. Beim Prüfen der Schaltung haben wir festgestellt, dass wir noch ein Ersatzteil benötigen. Unser Lieferant kann es uns erst am Donnerstag bringen. Wir bauen es gleich nach der Lieferung ein, so dass Ihr Rad am Freitag abholbereit ist. Wegen der späteren Abholung entstehen Ihnen natürlich keine zusätzlichen Kosten. Auf Wiederhören. Guten Tag, Frau Vogt. Hier ist die Fahrradwerkstatt Radweg. Sie wollten Ihr Fahrrad am Mittwoch abholen. Leider schaffen wir die Reparatur bis dahin nicht. Beim Prüfen der Schaltung haben wir festgestellt, dass wir noch ein Ersatzteil benötigen. Unser Lieferant kann es uns erst am Donnerstag bringen. Wir bauen es gleich nach der Lieferung ein, so dass Ihr Rad am Freitag abholbereit ist. Wegen der späteren Abholung entstehen Ihnen natürlich keine zusätzlichen Kosten. Auf Wiederhören.",
+            "textVi": "Xin chào cô Vogt. Đây là tiệm sửa xe đạp Radweg. Cô hẹn lấy xe đạp vào thứ Tư. Rất tiếc là đến lúc đó chúng tôi chưa thể hoàn thành việc sửa chữa. Khi kiểm tra bộ đề, chúng tôi phát hiện vẫn còn thiếu một phụ tùng thay thế. Nhà cung cấp chỉ có thể giao cho chúng tôi vào thứ Năm. Chúng tôi sẽ lắp ngay sau khi hàng về để thứ Sáu xe của cô sẵn sàng bàn giao. Tất nhiên cô sẽ không phải trả thêm chi phí nào do nhận xe muộn hơn. Chào tạm biệt. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 230,
+            "timestampEnd": 232,
+            "textDe": "Aufgaben fünf, sechs.",
+            "textVi": "Câu hỏi 5 và 6."
+          },
+          {
+            "speakerId": "SPR_4",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 247,
+            "timestampEnd": 310,
+            "textDe": "Hallo zusammen. Hier ist Mira wegen unseres Nachbarschaftsfests am Samstag. Danke, dass Ihr bei den Vorbereitungen helft. Wir treffen uns um 9 Uhr vor dem Gemeinschaftshaus. Zuerst stellen wir die Tische und Bänke auf. Danach hängen wir die Wegweiser auf und prüfen die Bühne. Da für Samstag große Hitze angekündigt ist, richten wir zusätzlich eine Station mit kostenlosem Trinkwasser ein. Bringt bitte, wenn möglich, eine wiederverwendbare Flasche für euch selbst mit. Bis Samstag. Hallo zusammen. Hier ist Mira wegen unseres Nachbarschaftsfests am Samstag. Danke, dass Ihr bei den Vorbereitungen helft. Wir treffen uns um 9 Uhr vor dem Gemeinschaftshaus. Zuerst stellen wir die Tische und Bänke auf. Danach hängen wir die Wegweiser auf und prüfen die Bühne. Da für Samstag große Hitze angekündigt ist, richten wir zusätzlich eine Station mit kostenlosem Trinkwasser ein. Bringt bitte, wenn möglich, eine wiederverwendbare Flasche für euch selbst mit. Bis Samstag.",
+            "textVi": "Chào mọi người. Mình là Mira gọi về lễ hội khu phố vào thứ Bảy này. Cảm ơn các bạn đã hỗ trợ khâu chuẩn bị. Chúng ta gặp nhau lúc 9 giờ trước nhà sinh hoạt cộng đồng. Trước hết chúng ta kê bàn ghế. Sau đó treo biển chỉ đường và kiểm tra sân khấu. Vì thứ Bảy được dự báo rất nóng nên chúng ta sẽ bố trí thêm một trạm nước uống miễn phí. Nếu có thể, các bạn nhớ tự mang theo chai nước dùng nhiều lần cho mình nhé. Hẹn gặp thứ Bảy. (Lặp lại lần 2)"
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 311,
+            "timestampEnd": 312,
+            "textDe": "Aufgaben sieben, acht.",
+            "textVi": "Câu hỏi 7 và 8."
+          },
+          {
+            "speakerId": "SPR_5",
+            "roleSide": "Right",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 328,
+            "timestampEnd": 390,
+            "textDe": "Guten Tag, Herr Demir. Hier ist Frau Lorenz von der Hausverwaltung. Es geht um das Ablesen und Kontrollieren Ihres Wasserzählers. Der Termin war ursprünglich für Dienstag vorgesehen. Der Techniker kann an diesem Tag jedoch nicht kommen und wird nun am Mittwoch zwischen 14 und 16 Uhr bei Ihnen sein. Bitte rufen Sie uns zurück und bestätigen Sie, dass entweder Sie selbst oder eine von Ihnen beauftragte Person dem Techniker die Wohnung öffnen kann. Unsere Nummer steht in Ihrem Mietvertrag. Guten Tag, Herr Demir. Hier ist Frau Lorenz von der Hausverwaltung. Es geht um das Ablesen und Kontrollieren Ihres Wasserzählers. Der Termin war ursprünglich für Dienstag vorgesehen. Der Techniker kann an diesem Tag jedoch nicht kommen und wird nun am Mittwoch zwischen 14 und 16 Uhr bei Ihnen sein. Bitte rufen Sie uns zurück und bestätigen Sie, dass entweder Sie selbst oder eine von Ihnen beauftragte Person dem Techniker die Wohnung öffnen kann. Unsere Nummer steht in Ihrem Mietvertrag. Aufgaben neun, zehn.",
+            "textVi": "Xin chào ông Demir. Tôi là bà Lorenz bên ban quản lý nhà ở. Tôi gọi về việc ghi chỉ số và kiểm tra đồng hồ nước nhà ông. Lịch hẹn ban đầu dự kiến vào thứ Ba. Tuy nhiên kỹ thuật viên không thể đến vào ngày đó nên sẽ sang vào thứ Tư từ 14 đến 16 giờ. Xin ông vui lòng gọi lại xác nhận xem chính ông hay người được ông ủy quyền có thể mở cửa căn hộ cho kỹ thuật viên được không. Số điện thoại của chúng tôi có ghi trong hợp đồng thuê nhà của ông. (Lặp lại lần 2) · Câu hỏi 9 và 10."
+          },
+          {
+            "speakerId": "SPR_6",
+            "roleSide": "Left",
+            "speakerName": "Hörtext / Sprecher",
+            "timestampStart": 406,
+            "timestampEnd": 466,
+            "textDe": "Guten Tag, Herr Rot. Hier ist das Kino Lichtblick. Ich bestätige Ihre telefonische Reservierung für diesen Samstag. Zwei Karten für den Film Der letzte Garten in der Vorstellung um 19:45 Uhr. Die Plätze befinden sich in Reihe acht. Wir halten die Karten an der Abendkasse bis 19:15 Uhr für Sie bereit. Danach geben wir nicht abgeholte Karten weiter. Bitte nennen Sie an der Kasse einfach Ihren Namen. Wir wünschen Ihnen einen schönen Kinoabend. Guten Tag, Herr Rot. Hier ist das Kino Lichtblick. Ich bestätige Ihre telefonische Reservierung für diesen Samstag. Zwei Karten für den Film Der letzte Garten in der Vorstellung um 19:45 Uhr. Die Plätze befinden sich in Reihe acht. Wir halten die Karten an der Abendkasse bis 19:15 Uhr für Sie bereit. Danach geben wir nicht abgeholte Karten weiter. Bitte nennen Sie an der Kasse einfach Ihren Namen. Wir wünschen Ihnen einen schönen Kinoabend.",
+            "textVi": "Xin chào ông Roth. Đây là rạp chiếu phim Lichtblick. Tôi xác nhận đặt chỗ qua điện thoại của ông cho thứ Bảy tuần này: hai vé xem phim 'Der letzte Garten' suất chiếu lúc 19:45. Ghế ngồi ở hàng số 8. Chúng tôi sẽ giữ vé tại quầy vé buổi tối cho đến 19:15. Sau giờ đó, vé chưa lấy sẽ được nhượng lại cho người khác. Tại quầy vé ông chỉ cần nêu tên của mình. Chúc ông có một buổi tối xem phim vui vẻ. (Lặp lại lần 2)"
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 2,
+          "audioIncludesRepetition": true,
+          "playbackNote": "File âm thanh đề chuẩn Goethe B1 cho Teil này đã ghép sẵn 2 lần đọc liên tiếp."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_H_Q01",
+          "order": 1,
+          "part": 1,
+          "prompt": "Text 1: Im Wetterbericht geht es besonders um das Wanderwetter in den Bergen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary",
+          "publicExplanation": "Người dẫn thông báo ngay câu mở đầu rằng đây là bản tin thời tiết vùng núi dành cho người có kế hoạch leo núi dạo bộ."
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q02",
+          "order": 2,
+          "part": 1,
+          "prompt": "Text 1: Womit muss man am Nachmittag rechnen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "mit Dauerregen nördlich der Donau"
+            },
+            {
+              "id": "B",
+              "text": "mit dichtem Nebel in den Tälern"
+            },
+            {
+              "id": "C",
+              "text": "mit Gewittern in den Alpen"
+            }
+          ],
+          "taskType": "multiple_choice",
+          "publicExplanation": "Thông tin thời tiết chiều nêu rõ mây đen kéo tới trên vùng núi và có khả năng xuất hiện giông mạnh cục bộ."
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q03",
+          "order": 3,
+          "part": 1,
+          "prompt": "Text 2: Frau Vogt kann ihr Fahrrad früher abholen als geplant.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q04",
+          "order": 4,
+          "part": 1,
+          "prompt": "Text 2: Warum dauert die Reparatur länger?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Ein Ersatzteil kommt erst am Donnerstag."
+            },
+            {
+              "id": "B",
+              "text": "Das Fahrrad muss noch einmal geprüft werden."
+            },
+            {
+              "id": "C",
+              "text": "Die Werkstatt bleibt zwei Tage geschlossen."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q05",
+          "order": 5,
+          "part": 1,
+          "prompt": "Text 3: Die Nachricht richtet sich an Personen, die bei einem Nachbarschaftsfest helfen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q06",
+          "order": 6,
+          "part": 1,
+          "prompt": "Text 3: Was wird wegen der Hitze zusätzlich aufgebaut?",
+          "options": [
+            {
+              "id": "A",
+              "text": "eine zweite Bühne"
+            },
+            {
+              "id": "B",
+              "text": "eine Trinkwasserstation"
+            },
+            {
+              "id": "C",
+              "text": "ein Informationsstand"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q07",
+          "order": 7,
+          "part": 1,
+          "prompt": "Text 4: Der Termin zum Ablesen des Wasserzählers bleibt am Dienstag.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q08",
+          "order": 8,
+          "part": 1,
+          "prompt": "Text 4: Was soll Herr Demir tun?",
+          "options": [
+            {
+              "id": "A",
+              "text": "den Zählerstand per E-Mail schicken"
+            },
+            {
+              "id": "B",
+              "text": "seinen Wohnungsschlüssel im Büro abgeben"
+            },
+            {
+              "id": "C",
+              "text": "zurückrufen und den Zugang zur Wohnung bestätigen"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q09",
+          "order": 9,
+          "part": 1,
+          "prompt": "Text 5: Sie hören eine Reservierungsbestätigung des Kinos.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q10",
+          "order": 10,
+          "part": 1,
+          "prompt": "Text 5: Bis wann muss Herr Roth die Karten abholen?",
+          "options": [
+            {
+              "id": "A",
+              "text": "bis 19.15 Uhr"
+            },
+            {
+              "id": "B",
+              "text": "bis 19.30 Uhr"
+            },
+            {
+              "id": "C",
+              "text": "bis 20.00 Uhr"
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_hoeren_p2",
+      "skill": "Hoeren",
+      "title": "Teil 2: Informationstext / Führung",
+      "durationMinutes": 8,
+      "totalQuestions": 5,
+      "stimulus": {
+        "type": "audio",
+        "title": "Lösen Sie die Aufgaben 11 bis 15. Wählen Sie bei jeder Aufgabe a, b oder c.",
+        "content": "Lösen Sie die Aufgaben 11 bis 15. Wählen Sie bei jeder Aufgabe a, b oder c. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit.",
+        "audioUrl": "/audio/goethe-b1/test-01-teil-2.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 23,
+            "textDe": "Teil zwei. Lösen Sie die Aufgaben 11 bis 15. Wählen Sie bei jeder Aufgabe A, B oder C. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit. Aufgaben 11, 12, 13, 14, 15.",
+            "textVi": "Phần hai. Hãy giải các câu hỏi từ 11 đến 15. Chọn A, B hoặc C cho mỗi câu. Bạn chỉ nghe đoạn văn một lần. Hãy đọc các câu hỏi trước khi nghe. Bạn có 60 giây. Các câu hỏi 11, 12, 13, 14, 15."
+          },
+          {
+            "speakerId": "GUIDE",
+            "roleSide": "Right",
+            "speakerName": "Führungsperson",
+            "timestampStart": 84,
+            "timestampEnd": 222,
+            "textDe": "Guten Abend und herzlich willkommen im städtischen Tierheim. Mein Name ist Miriam Keller und ich arbeite hier in der Katzenpflege. Schön, dass so viele von Ihnen zu unserem Informationsabend gekommen sind. Einige möchten sich zunächst nur über Katzenhaltung informieren, andere denken bereits über eine Adoption nach. Wenn Sie sich für eine unserer Katzen interessieren, können Sie das Tier heute kennenlernen. Eine Adoption wird heute Abend aber noch nicht vereinbart. Zuerst benötigen Sie einen persönlichen Beratungstermin mit einer Mitarbeiterin oder einem Mitarbeiter. Dabei sprechen wir unter anderem über ihre Wohnsituation, ihre Arbeitszeiten und darüber, welche Katze zu Ihrem Alltag passen könnte. Unser Abend beginnt gleich hier im Veranstaltungsraum. Gemeinsam sehen wir uns die Angaben auf mehreren Packungen Katzenfutter an und vergleichen sie. Auf den Packungen stehen z.B. die Zusammensetzung, die empfohlene Tagesmenge und Hinweise zum Alter der Tiere. Viele Begriffe klingen kompliziert. Ich erkläre Ihnen deshalb, welche Angaben für eine praktische Entscheidung wichtig sind. Es geht dabei nicht darum, eine bestimmte Marke zu empfehlen, sondern darum, Verpackungsinformationen besser zu verstehen. Anschließend besuchen wir die Katzenräume. Damit es dort ruhig bleibt und die Tiere nicht durch zu viele fremde Menschen gestresst werden, gehen wir in kleinen Gruppen hinein. In jeder Gruppe dürfen höchstens sechs Personen sein. Vor der Tür liegt später eine Liste aus, in die sie sich für eine Gruppe eintragen können. Während eine Gruppe bei den Katzen ist, kann die nächste hier Fragen an meinen Kollegen richten. Bei unserem Rundgang sehen Sie auch, wie wir ein Tier an anderes Futter gewöhnen. Wir ersetzen das bisherige Futter nicht plötzlich. Über mehrere Tage geben wir zunächst nur eine kleine Menge des neuen Futters zum gewohnten Futter. Dann erhöhen wir die neuen Anteile schrittweise, bis die Katze schließlich nur noch das neue Produkt bekommt. So können wir beobachten, ob sie es verträgt und ihr Verdauungssystem hat Zeit, sich umzustellen. Nach dem Rundgang treffen wir uns wieder hier. Allgemeine Fragen beantworten wir direkt. Falls Sie eine persönliche Beratung zur Ernährung Ihrer eigenen Katze wünschen, melden Sie sich bitte spätestens bis Freitag per E-Mail an. Die Adresse finden Sie auf dem Informationsblatt am Ausgang. Nach Ihrer Anmeldung schicken wir Ihnen einen individuellen Termin. Solche Gespräche dauern etwa 20 Minuten und finden in der kommenden Woche statt. Nun beginnen wir mit den Futterpackungen auf dem vorderen Tisch.",
+            "textVi": "Xin chào buổi tối và nhiệt liệt chào mừng quý vị đến với trại cứu hộ động vật thành phố. Tôi là Miriam Keller và công tác tại bộ phận chăm sóc mèo. Rất vui vì đông đảo quý vị đã tới buổi tối cung cấp thông tin hôm nay. Một số người trước mắt chỉ muốn tìm hiểu về việc nuôi mèo, số khác đã nghĩ đến việc nhận nuôi. Nếu quý vị quan tâm tới một chú mèo của chúng tôi, hôm nay quý vị có thể làm quen với bé. Tuy nhiên việc nhận nuôi sẽ chưa được chốt ngay tối nay. Trước tiên quý vị cần một buổi hẹn tư vấn trực tiếp với nhân viên của trại. Khi đó chúng ta sẽ trao đổi về hoàn cảnh nhà ở, giờ giấc làm việc và xem chú mèo nào phù hợp với sinh hoạt hàng ngày của quý vị. Buổi tối hôm nay bắt đầu ngay tại phòng hội thảo này. Chúng ta sẽ cùng xem và so sánh thông tin trên nhiều bao bì thức ăn cho mèo. Trên bao bì có ghi thành phần, khẩu phần khuyến nghị theo ngày và hướng dẫn độ tuổi. Nhiều thuật ngữ nghe khá phức tạp, vì vậy tôi sẽ giải thích thông tin nào quan trọng cho quyết định thực tế, chứ không nhằm giới thiệu một nhãn hiệu cụ thể nào mà để hiểu rõ hơn thông tin bao bì. Tiếp theo chúng ta sẽ tham quan khu phòng mèo. Để không gian yên tĩnh và các bé không bị căng thẳng vì quá nhiều người lạ, chúng ta sẽ chia nhóm nhỏ vào trong, mỗi nhóm tối đa 6 người. Lát nữa ngoài cửa có danh sách để quý vị điền tên vào nhóm. Trong lúc một nhóm ở bên khu mèo, nhóm tiếp theo có thể hỏi đồng nghiệp của tôi tại đây. Trong chuyến tham quan quý vị cũng sẽ thấy cách chúng tôi tập cho mèo quen với loại thức ăn mới. Chúng tôi không thay đột ngột toàn bộ thức ăn cũ. Trong vài ngày đầu chỉ trộn một lượng nhỏ thức ăn mới vào khẩu phần quen thuộc, rồi tăng dần tỷ lệ theo từng bước cho đến khi mèo ăn hoàn toàn sản phẩm mới. Cách này giúp theo dõi xem mèo có hợp không và hệ tiêu hóa có thời gian thích nghi. Sau khi tham quan, chúng ta quay lại đây. Các câu hỏi chung sẽ được giải đáp ngay. Nếu quý vị muốn được tư vấn riêng về dinh dưỡng cho chú mèo của mình, vui lòng đăng ký qua e-mail chậm nhất vào thứ Sáu. Địa chỉ e-mail có trên tờ thông tin ở lối ra. Sau khi đăng ký, chúng tôi sẽ gửi lịch hẹn cá nhân dài khoảng 20 phút vào tuần tới. Bây giờ mời quý vị bắt đầu với các gói thức ăn trên bàn phía trước."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 1,
+          "audioIncludesRepetition": false,
+          "playbackNote": "Theo quy chuẩn đề thi Goethe-Zertifikat B1, Teil này chỉ được nghe 1 lần duy nhất."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_H_Q11",
+          "order": 11,
+          "part": 2,
+          "prompt": "Wer sich nach dem Informationsabend für eine Katze interessiert, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "kann das Tier sofort mitnehmen."
+            },
+            {
+              "id": "B",
+              "text": "vereinbart zuerst ein Beratungsgespräch."
+            },
+            {
+              "id": "C",
+              "text": "muss bereits eine zweite Katze haben."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q12",
+          "order": 12,
+          "part": 2,
+          "prompt": "Womit beschäftigen sich die Teilnehmenden zu Beginn?",
+          "options": [
+            {
+              "id": "A",
+              "text": "mit Angaben auf Futterpackungen"
+            },
+            {
+              "id": "B",
+              "text": "mit den Schlafplätzen im Katzenhaus"
+            },
+            {
+              "id": "C",
+              "text": "mit Fragen an die Tierärztin"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q13",
+          "order": 13,
+          "part": 2,
+          "prompt": "Für den Rundgang durch das Katzenhaus gilt: Die Teilnehmenden …",
+          "options": [
+            {
+              "id": "A",
+              "text": "melden sich erst am nächsten Tag an."
+            },
+            {
+              "id": "B",
+              "text": "gehen in Gruppen von höchstens sechs Personen."
+            },
+            {
+              "id": "C",
+              "text": "dürfen die Katzen währenddessen füttern."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q14",
+          "order": 14,
+          "part": 2,
+          "prompt": "Wie beschreibt Miriam Keller die Umstellung auf ein neues Futter?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Altes und neues Futter werden einige Tage lang gemischt."
+            },
+            {
+              "id": "B",
+              "text": "Die Katze erhält das alte Futter, bis sie es ablehnt."
+            },
+            {
+              "id": "C",
+              "text": "Bei jeder Mahlzeit wird eine andere Futtersorte gegeben."
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q15",
+          "order": 15,
+          "part": 2,
+          "prompt": "Wer eine persönliche Futterberatung möchte, …",
+          "options": [
+            {
+              "id": "A",
+              "text": "wartet nach der Veranstaltung vor dem Katzenhaus."
+            },
+            {
+              "id": "B",
+              "text": "bezahlt die Beratung heute an der Information."
+            },
+            {
+              "id": "C",
+              "text": "meldet sich bis Freitag per E-Mail an."
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_hoeren_p3",
+      "skill": "Hoeren",
+      "title": "Teil 3: Alltagsgespräch zweier Personen (Richtig/Falsch)",
+      "durationMinutes": 8,
+      "totalQuestions": 7,
+      "stimulus": {
+        "type": "audio",
+        "title": "Sie sitzen in einem Café und hören ein Gespräch zwischen Lena Hoffmann und Markus Klein über das Programm eines Nachbarschaftszentrums",
+        "content": "Sie sitzen in einem Café und hören ein Gespräch zwischen Lena Hoffmann und Markus Klein über das Programm eines Nachbarschaftszentrums. Entscheiden Sie zu den Aufgaben 16 bis 22, ob die Aussagen Richtig oder Falsch sind. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit.",
+        "audioUrl": "/audio/goethe-b1/test-01-teil-3.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 35,
+            "textDe": "Teil drei. Sie sitzen in einem Café und hören ein Gespräch zwischen Lena Hoffmann und Markus Klein über das Programm eines Nachbarschaftszentrums. Entscheiden Sie zu den Aufgaben 16 bis 22, ob die Aussagen richtig oder falsch sind. Sie hören den Text einmal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit. Aufgaben 16, 17, 18, 19, 20, 21, 22.",
+            "textVi": "Phần ba. Bạn đang ngồi trong quán cà phê và nghe cuộc trò chuyện giữa Lena Hoffmann và Markus Klein về chương trình hoạt động của một trung tâm khu phố. Với các câu 16 đến 22, hãy quyết định nhận định đúng hay sai. Bạn nghe một lần. Bạn có 60 giây đọc trước câu hỏi."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Markus Klein",
+            "timestampStart": 95,
+            "timestampEnd": 104,
+            "textDe": "Hallo Lena, gut, dass ich dich treffe. Im Viertel erzählen alle, das Nachbarschaftszentrum müsse wegen der Finanzprobleme der Stadt schließen. Stimmt das wirklich?",
+            "textVi": "Chào Lena, may quá gặp được cậu. Ở khu mình ai cũng đồn là trung tâm khu phố sắp phải đóng cửa vì thành phố thiếu kinh phí. Chuyện đó có thật không?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Lena Hoffmann",
+            "timestampStart": 105,
+            "timestampEnd": 114,
+            "textDe": "Nein, so schlimm ist es nicht. Die Stadt kürzt zwar unseren Zuschuss, aber das Zentrum bleibt geöffnet. Wir werden nur ein kleineres Programm anbieten können.",
+            "textVi": "Không, không tệ đến mức đó đâu. Đúng là thành phố cắt giảm khoản trợ cấp cho bên mình, nhưng trung tâm vẫn mở cửa bình thường. Chỉ là tụi mình sẽ phải thu gọn quy mô chương trình lại thôi."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Markus Klein",
+            "timestampStart": 114,
+            "timestampEnd": 119,
+            "textDe": "Das beruhigt mich. Woher weiß du Genaueres? Stand das schon in der Zeitung?",
+            "textVi": "Nghe vậy tớ đỡ lo hẳn. Sao cậu biết rõ vậy? Tin này đã đăng báo chưa?"
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Lena Hoffmann",
+            "timestampStart": 119,
+            "timestampEnd": 130,
+            "textDe": "Nein, unsere Leitung hat uns Beschäftigten die Kürzungen am Dienstag in einer Teamsitzung erklärt. Die öffentliche Mitteilung kommt wohl erst nächste Woche. Seitdem rechnen wir, was noch möglich ist.",
+            "textVi": "Chưa đâu, ban lãnh đạo mới giải thích cho nhân viên bọn tớ về việc cắt giảm hôm thứ Ba trong buổi họp nhóm. Thông báo công khai chắc tuần sau mới ra. Từ hôm đó bọn tớ vẫn đang tính xem còn làm được những gì."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Markus Klein",
+            "timestampStart": 131,
+            "timestampEnd": 135,
+            "textDe": "Dann betrifft es wahrscheinlich auch den Musikraum. Ihr wolltet ihn doch im Herbst renovieren.",
+            "textVi": "Vậy chắc cũng ảnh hưởng đến phòng âm nhạc nhỉ. Cậu từng nói định sửa sang lại vào mùa thu này mà."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Lena Hoffmann",
+            "timestampStart": 135,
+            "timestampEnd": 149,
+            "textDe": "Ja, dafür waren neue Lampen und ein besserer Boden geplant. Die Arbeiten beginnen nun aber nicht mehr in diesem Herbst. Wir mussten die Renovierung auf das nächste Jahr verschieben. Der Raum kann bis dahin weiter genutzt werden, nur eben im alten Zustand.",
+            "textVi": "Ừ, trước đây bên mình định thay đèn mới và lát sàn tốt hơn. Nhưng công việc sẽ không bắt đầu vào mùa thu này nữa. Bọn mình buộc phải hoãn việc cải tạo sang năm sau. Tạm thời phòng vẫn dùng tiếp được, chỉ là giữ nguyên hiện trạng cũ thôi."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Markus Klein",
+            "timestampStart": 149,
+            "timestampEnd": 154,
+            "textDe": "Und was passiert mit den Kursen? Meine Tochter liebt die Theatergruppe am Mittwoch.",
+            "textVi": "Thế còn các khóa học thì sao? Con gái tớ mê lớp kịch vào thứ Tư lắm."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Lena Hoffmann",
+            "timestampStart": 154,
+            "timestampEnd": 169,
+            "textDe": "Die Angebote für Kinder laufen alle weiter. Dort wollen wir nichts streichen. Bei den Erwachsenen müssen wir dagegen sparen. Zwei kleinere Abendkurse, Zeichnen und kreatives Schreiben, werden zu einem gemeinsamen Kurs zusammengelegt. Er findet dann nur noch einmal pro Woche statt.",
+            "textVi": "Các chương trình dành cho trẻ em đều giữ nguyên hết. Ở mảng đó bọn tớ không muốn cắt bỏ gì cả. Ngược lại, bên mảng người lớn phải tiết kiệm. Hai lớp buổi tối ít học viên là lớp vẽ và viết sáng tạo sẽ được gộp thành một khóa chung, chỉ học mỗi tuần một buổi thôi."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Markus Klein",
+            "timestampStart": 170,
+            "timestampEnd": 175,
+            "textDe": "Verstehe. Und das Nachbarschaftsfest? Jemand sagte gestern, es solle ganz ausfallen.",
+            "textVi": "Tớ hiểu rồi. Thế còn lễ hội khu phố thì sao? Hôm qua có người bảo sẽ hủy hoàn toàn."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Lena Hoffmann",
+            "timestampStart": 175,
+            "timestampEnd": 185,
+            "textDe": "Das ist noch nicht entschieden. Die große Bühne, die Toilettenwagen und die zusätzliche Technik kosten viel Geld. Einige im Team meinen deshalb, eine Absage sei am einfachsten.",
+            "textVi": "Chuyện đó vẫn chưa chốt đâu. Sân khấu lớn, xe vệ sinh lưu động và thiết bị âm thanh bổ sung tốn rất nhiều tiền. Vì vậy vài người trong nhóm nghĩ hủy đi cho gọn."
+          },
+          {
+            "speakerId": "SPK_A",
+            "roleSide": "Left",
+            "speakerName": "Markus Klein",
+            "timestampStart": 185,
+            "timestampEnd": 198,
+            "textDe": "Das finde ich schade. Wir sollten das Fest nicht komplett streichen. Machen wir es kleiner. Ohne gemietete Bühne, mit weniger Technik und vielleicht nur auf dem Hof des Zentrums. Musik könnte es trotzdem geben, nur eben akustisch.",
+            "textVi": "Vậy thì tiếc quá. Đừng bỏ hẳn lễ hội. Mình làm quy mô nhỏ lại đi: không thuê sân khấu lớn, ít thiết bị kỹ thuật hơn và tổ chức gọn trong sân trung tâm thôi. Nhạc vẫn có thể chơi được, chỉ là chơi mộc không dùng dàn âm thanh lớn."
+          },
+          {
+            "speakerId": "SPK_B",
+            "roleSide": "Right",
+            "speakerName": "Lena Hoffmann",
+            "timestampStart": 199,
+            "timestampEnd": 258,
+            "textDe": "Die Idee gefällt mir. Allerdings brauchen wir dann viele Menschen, die selbst mitanpacken. Ein bisschen Unterstützung gibt es bereits. Ich habe bei den Geschäften in der Umgebung nachgefragt. Der Baumarkt bietet Farbe und Papier an, das Café leiht uns Stühle und weitere Läden würden ähnliche Materialien geben. Geld hat bisher allerdings noch keiner angeboten. Auch Sachspenden helfen. Vielleicht finden wir zusätzlich Freiwillige für den Aufbau, das Kinderprogramm und das Aufräumen. Du kennst doch viele Leute im Viertel. Ich kann heute einen Aufruf in unsere Nachbarschaftsgruppe stellen. Darin sollten wir gleich einen Termin nennen, an dem wir die Arbeit verteilen. Wie wäre es mit Samstagvormittag im Zentrum? Um 10 Uhr ist der große Raum frei. Dann können alle Interessierten kommen und wir teilen gemeinsam die nötigen Aufgaben auf. Samstag um 10 Uhr passt. Ich schreibe, dass wir uns im Nachbarschaftszentrum treffen. Dann sehen wir auch, wie viele Helferinnen und Helfer wirklich dabei sind. Prima. Wenn genügend Leute kommen, kann das kleinere Fest bestimmt stattfinden. Danke Markus. Jetzt sieht die Lage schon besser aus.",
+            "textVi": "Ý tưởng đó hay đấy. Tuy nhiên khi ấy sẽ cần nhiều người trực tiếp xắn tay giúp sức. Hiện đã có chút hỗ trợ ban đầu rồi: mình có hỏi các cửa hàng quanh đây thì tiệm vật liệu xây dựng tặng sơn và giấy, quán cà phê cho mượn ghế, vài tiệm khác cũng góp đồ dùng tương tự. Dù vậy tiền mặt thì đến giờ vẫn chưa ai tài trợ. Nhưng hiện vật cũng giúp ích nhiều rồi. Biết đâu mình còn tìm thêm được tình nguyện viên dựng đồ, lo chương trình thiếu nhi và dọn dẹp. Cậu quen biết nhiều người trong khu mà. Hôm nay mình có thể đăng bài kêu gọi vào nhóm khu phố, ghi luôn lịch hẹn để phân công công việc. Sáng thứ Bảy tại trung tâm thì sao? 10 giờ phòng lớn đang trống, mọi người quan tâm có thể tới cùng chia việc. 10 giờ thứ Bảy rất hợp lý. Mình sẽ viết thông báo hẹn gặp ở trung tâm khu phố để xem có bao nhiêu người đăng ký giúp thật. Tuyệt quá. Nếu đủ người tham gia, lễ hội quy mô nhỏ chắc chắn tổ chức được. Cảm ơn Markus nhé. Tình hình giờ nghe khả quan hơn hẳn rồi."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 1,
+          "audioIncludesRepetition": false,
+          "playbackNote": "Theo quy chuẩn đề thi Goethe-Zertifikat B1, Teil này chỉ được nghe 1 lần duy nhất."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_H_Q16",
+          "order": 16,
+          "part": 3,
+          "prompt": "Die Stadt will das Nachbarschaftszentrum vollständig schließen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q17",
+          "order": 17,
+          "part": 3,
+          "prompt": "Lena hat bei einer Teamsitzung von den Kürzungen erfahren.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q18",
+          "order": 18,
+          "part": 3,
+          "prompt": "Die Renovierung des Musikraums wird auf das nächste Jahr verschoben.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q19",
+          "order": 19,
+          "part": 3,
+          "prompt": "Von den Kürzungen sind nur die Kinderkurse betroffen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q20",
+          "order": 20,
+          "part": 3,
+          "prompt": "Markus möchte das Nachbarschaftsfest ganz absagen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q21",
+          "order": 21,
+          "part": 3,
+          "prompt": "Die Geschäfte aus dem Viertel haben bisher Material und Gegenstände als Hilfe angeboten, aber kein Geld.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q22",
+          "order": 22,
+          "part": 3,
+          "prompt": "Lena und Markus wollen am Samstagvormittag Freiwillige treffen.",
+          "options": [
+            {
+              "id": "R",
+              "text": "Richtig"
+            },
+            {
+              "id": "F",
+              "text": "Falsch"
+            }
+          ],
+          "taskType": "binary"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec_goethe_b1_t01_hoeren_p4",
+      "skill": "Hoeren",
+      "title": "Teil 4: Radiodiskussion mit Moderator und zwei Gästen (Zuordnung)",
+      "durationMinutes": 14,
+      "totalQuestions": 8,
+      "stimulus": {
+        "type": "audio",
+        "title": "Sie hören eine Radiodiskussion zum Thema „Wie sollen Städte mit beschädigten Erinnerungsorten umgehen?“",
+        "content": "Sie hören eine Radiodiskussion zum Thema „Wie sollen Städte mit beschädigten Erinnerungsorten umgehen?“. Ordnen Sie die Aussagen 23 bis 30 dem Moderator, Dana Schneider oder Florian Bader zu. Sie hören den Text zweimal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit.",
+        "audioUrl": "/audio/goethe-b1/test-01-teil-4.mp3",
+        "dialogueTranscript": [
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 0,
+            "timestampEnd": 36,
+            "textDe": "Teil vier. Sie hören eine Radio-Diskussion zum Thema, wie sollen Städte mit beschädigten Erinnerungsorten umgehen? Ordnen Sie die Aussagen 23 bis 30 dem Moderator Dana Schneider oder Florian Bader zu. Sie hören den Text zweimal. Lesen Sie vor dem Hören die Aufgaben. Dazu haben Sie 60 Sekunden Zeit. Aufgaben 23, 24, 25, 26, 27, 28, 29, 30.",
+            "textVi": "Phần bốn. Bạn sẽ nghe một cuộc tọa đàm trên đài phát thanh với chủ đề thành phố nên ứng xử ra sao với các địa điểm tưởng niệm bị hư hại? Hãy ghép các phát biểu 23 đến 30 cho người dẫn chương trình (Moderator), bà Dana Schneider hoặc ông Florian Bader. Bạn nghe đoạn thảo luận hai lần. Bạn có 60 giây đọc trước câu hỏi."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 96,
+            "timestampEnd": 129,
+            "textDe": "Guten Abend und willkommen zu Stadtgespräch. An vielen Orten erinnern Tafeln, Denkmäler oder Kunstwerke an wichtige Personen und Ereignisse. Was soll geschehen, wenn solche Zeichen absichtlich oder durch einen Unfall beschädigt werden? Darüber diskutiere ich heute mit Dana Schneider, Museumspädagogin im Stadtmuseum und Florian Bader vom Verein Nachbarschaft im Wandel. Frau Schneider, vor wenigen Tagen wurde eine Gedenktafel am alten Bahnhof stark zerkratzt. Was wäre für Sie jetzt der richtige Schritt?",
+            "textVi": "Chào buổi tối và mừng quý vị đến với chương trình Stadtgespräch. Ở nhiều nơi, các tấm biển, tượng đài hay tác phẩm nghệ thuật gợi nhắc về những nhân vật và sự kiện quan trọng. Điều gì nên xảy ra khi những dấu tích này bị hư hại do cố ý hoặc tai nạn? Hôm nay tôi thảo luận vấn đề này với bà Dana Schneider, nhà giáo dục bảo tàng tại Bảo tàng Thành phố, và ông Florian Bader thuộc hội 'Nachbarschaft im Wandel'. Thưa bà Schneider, vài ngày trước một tấm biển tưởng niệm ở ga cũ bị cào xước nặng. Theo bà bước đi đúng đắn lúc này là gì?"
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 129,
+            "timestampEnd": 157,
+            "textDe": "Die Stadt sollte zunächst Fachleute den Schaden untersuchen lassen und dann rasch handeln. Solche Tafeln, Skulpturen und andere Erinnerungszeichen gehören zum öffentlichen Raum. Bleiben sie monatelang beschädigt, entsteht leicht der Eindruck, ihr Inhalt sei niemandem wichtig. Deshalb bin ich dafür, sie möglichst schnell professionell restaurieren zu lassen. Eine Reinigung durch Freiwillige reicht bei empfindlichen Materialien oft nicht aus und kann den Schaden sogar vergrößern.",
+            "textVi": "Thành phố trước tiên nên để chuyên gia kiểm tra mức độ hư hại rồi hành động nhanh chóng. Những tấm biển, tác phẩm điêu khắc và dấu tích tưởng niệm đó thuộc về không gian công cộng. Nếu để chúng hư hỏng suốt nhiều tháng sẽ dễ tạo cảm giác nội dung đó chẳng quan trọng với ai. Vì thế tôi ủng hộ việc phục chế chuyên nghiệp càng sớm càng tốt. Việc tình nguyện viên tự lau chùi thường không đủ với vật liệu nhạy cảm và thậm chí có thể làm hư hại nặng thêm."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 158,
+            "timestampEnd": 173,
+            "textDe": "Ich verstehe den Wunsch nach einer schnellen Reaktion. Vor einer konkreten Maßnahme möchte ich mir aber genauer ansehen, wie der Ort heute genutzt wird und welche Bedeutung das beschädigte Objekt für die Umgebung hat. Manchmal entdeckt man dabei Fragen über die lange niemand gesprochen hat.",
+            "textVi": "Tôi hiểu mong muốn phản ứng nhanh. Tuy nhiên, trước khi triển khai biện pháp cụ thể, tôi muốn xem xét kỹ hơn nơi đó hiện nay được sử dụng như thế nào và vật thể bị hư hại mang ý nghĩa gì đối với khu vực xung quanh. Đôi khi qua đó người ta phát hiện ra những vấn đề đã từ lâu chưa được nhắc tới."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 174,
+            "timestampEnd": 209,
+            "textDe": "Oft erscheinen sofort Fotos in sozialen Netzwerken und kurz darauf berichten Zeitungen und lokale Sender. Öffentlichkeit kann helfen, doch sie hat auch eine problematische Seite. Meiner Ansicht nach sollten Medien nüchtern erklären, was geschehen ist und welche Folgen der Schaden hat. Dramatische Bilder und ständig wiederholte Namen geben den Verantwortlichen nur zusätzliche Aufmerksamkeit. Berichte sollten sachlich bleiben und den Tätern keine große Bühne bieten. Unsere Sendung nennt deshalb auch keine Vermutungen über Personen, solange die Polizei nichts bestätigt hat.",
+            "textVi": "Thường thì hình ảnh lập tức xuất hiện trên mạng xã hội và ngay sau đó báo chí cùng đài địa phương đưa tin. Dư luận có thể giúp ích nhưng cũng có mặt trái. Theo quan điểm của tôi, truyền thông nên giải thích chừng mực chuyện gì đã xảy ra và hậu quả của hư hại là gì. Hình ảnh giật gân hay việc lặp đi lặp lại tên tuổi chỉ tạo thêm sự chú ý cho người gây ra vụ việc. Bản tin nên giữ tính khách quan và không dựng sân khấu lớn cho kẻ phá hoại. Do đó chương trình của chúng tôi cũng không nêu suy đoán về cá nhân nào chừng nào cảnh sát chưa xác nhận."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 210,
+            "timestampEnd": 241,
+            "textDe": "Unabhängig von der Berichterstattung stellt sich eine praktische Frage. Wer bezahlt die Arbeiten? Im Moment müssen die zuständigen Ämter nach jedem Vorfall erst suchen, aus welchem Projekt noch Geld genommen werden kann. Dadurch geht Zeit verloren. Ich schlage einen festen Betrag im jährlichen Stadthaushalt vor, der ausschließlich für unerwartete Reparaturen an öffentlichen Erinnerungsobjekten bereitsteht. Wird er in einem Jahr nicht vollständig gebraucht, könnte der Rest für die Pflege besonders gefährdeter Stücke verwendet werden.",
+            "textVi": "Tách biệt khỏi chuyện đưa tin, còn một câu hỏi thực tế: ai trả tiền cho các công việc này? Hiện nay sau mỗi sự cố các cơ quan chức năng mới phải đi tìm xem còn lấy tiền từ dự án nào được, làm mất rất nhiều thời gian. Tôi đề xuất dành một khoản ngân sách cố định hàng năm của thành phố, chỉ để chi cho những sửa chữa đột xuất đối với các di tích tưởng niệm công cộng. Nếu trong năm không dùng hết, phần dư có thể chuyển sang chăm sóc những hạng mục dễ bị xuống cấp."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 241,
+            "timestampEnd": 252,
+            "textDe": "Herr Bader, Ihnen geht es nicht nur darum, einen früheren Zustand wiederherzustellen. Sie sehen in einer Beschädigung offenbar manchmal auch einen Anlass, den Ort neu zu betrachten.",
+            "textVi": "Thưa ông Bader, ông không chỉ quan tâm tới việc khôi phục lại trạng thái trước đây. Dường như đôi lúc ông còn xem một vết hư hại là dịp để nhìn nhận lại địa điểm đó theo cách mới?"
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 253,
+            "timestampEnd": 282,
+            "textDe": "Genau. Man muss die Spuren nicht in jedem Fall unsichtbar machen. Stellen Sie sich eine zerbrochene Steinplatte vor, deren Teile mit einem deutlich erkennbaren Material verbunden werden. Wenn daneben erklärt wird, wann und warum die Reparatur nötig war, erzählt der Ort anschließend mehr als vorher. Eine bewusst sichtbare Reparatur kann selbst ein neues Kapitel in der Geschichte des Ortes bilden. Natürlich muss die Konstruktion sicher sein. Es geht nicht darum, Schäden einfach bestehen zu lassen.",
+            "textVi": "Chính xác. Không nhất thiết mọi dấu vết đều phải bị che đi hoàn toàn. Hãy tưởng tượng một tấm đá vỡ mà các mảnh được gắn lại bằng một loại vật liệu dễ nhận thấy. Nếu bên cạnh có giải thích việc sửa chữa diễn ra khi nào và vì sao, địa điểm đó sau này sẽ kể được nhiều câu chuyện hơn trước. Một vết sửa chữa cố ý giữ lại dấu tích có thể tự nó mở ra chương mới trong lịch sử nơi ấy. Tất nhiên kết cấu phải an toàn, không phải là cứ để mặc sự hư hỏng."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 283,
+            "timestampEnd": 312,
+            "textDe": "Damit Menschen solche Orte überhaupt verstehen, benötigen sie Hintergrundwissen. Besonders Schulen könnten hier eine aktive Rolle übernehmen. Ich wünsche mir Projekte, in denen Klassen einen Erinnerungsort in ihrer Nähe untersuchen, alte Fotos suchen, Gespräche mit Zeitzeugen oder Fachleuten führen und ihre Ergebnisse anschließend öffentlich vorstellen. So lernen junge Menschen nicht nur Geschichte, sondern auch, weshalb die Pflege eines scheinbar kleinen Schildes für die Gegenwart wichtig sein kann.",
+            "textVi": "Để mọi người thực sự hiểu những nơi như vậy, họ cần kiến thức nền. Đặc biệt trường học có thể đóng vai trò chủ động ở đây. Tôi mong có những dự án nơi các lớp tìm hiểu một địa điểm tưởng niệm gần trường, sưu tầm ảnh cũ, trò chuyện với nhân chứng lịch sử hoặc chuyên gia rồi công bố kết quả trước công chúng. Nhờ vậy giới trẻ không chỉ học lịch sử mà còn hiểu vì sao giữ gìn một tấm biển tưởng chừng nhỏ bé lại có ý nghĩa cho hiện tại."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 313,
+            "timestampEnd": 324,
+            "textDe": "Bei manchen Objekten ist nach einem schweren Schaden kaum noch Originalmaterial vorhanden. Dann stellt sich die Frage, ob man dasselbe Stück neu herstellen oder einen anderen Weg wählen sollte.",
+            "textVi": "Với một số di vật, sau hư hại nghiêm trọng hầu như không còn vật liệu gốc. Khi đó nảy sinh câu hỏi: nên làm lại một bản giống hệt hay chọn hướng khác?"
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 325,
+            "timestampEnd": 353,
+            "textDe": "Eine genaue Kopie darf nicht zur automatischen Standardlösung werden. Bevor die Stadt etwas nachbauen lässt, sollte sie prüfen, welche Aussage das Objekt hatte, ob diese Aussage heute noch verständlich ist und welche Funktion der Platz künftig erfüllen soll. Vielleicht ist eine Kopie sinnvoll. Vielleicht passt eine neue Gestaltung oder eine digitale Ergänzung besser. Entscheidend ist, dass diese Möglichkeiten für jeden einzelnen Fall ernsthaft untersucht werden.",
+            "textVi": "Một bản sao chính xác không nên trở thành giải pháp mặc định tự động. Trước khi thành phố cho đúc lại thứ gì, cần kiểm tra xem thông điệp ban đầu của vật thể là gì, hôm nay thông điệp đó còn dễ hiểu không và quảng trường ấy sẽ đóng vai trò gì trong tương lai. Có khi làm bản sao là hợp lý, nhưng cũng có thể một thiết kế mới hoặc phần bổ sung kỹ thuật số lại phù hợp hơn. Điều quyết định là xem xét nghiêm túc các khả năng cho từng trường hợp."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 354,
+            "timestampEnd": 381,
+            "textDe": "Bisher sprechen wir vor allem über große Denkmäler und bekannte Plätze. Das ist typisch für die öffentliche Debatte, aber zu eng. Auch eine kleine Tafel an einer ehemaligen Fabrik oder ein Erinnerungsstein in einem äußeren Stadtteil kann für viele Menschen bedeutend sein. Diskussion und finanzielle Unterstützung dürfen sich nicht ausschließlich auf berühmte Orte im Zentrum richten, sonst verschwinden wichtige Geschichten aus weniger besuchten Vierteln beinahe unbemerkt.",
+            "textVi": "Từ đầu tới giờ chúng ta chủ yếu nhắc đến tượng đài lớn và quảng trường nổi tiếng. Điều đó quen thuộc trong tranh luận công khai nhưng quá hẹp. Ngay cả một tấm biển nhỏ ở nhà máy cũ hay viên đá tưởng niệm ở khu ngoại vi cũng rất ý nghĩa với nhiều người. Thảo luận và hỗ trợ tài chính không thể chỉ tập trung vào những địa danh nổi tiếng ở trung tâm, nếu không những câu chuyện quan trọng ở các khu phố ít người ghé thăm sẽ biến mất gần như không ai hay."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 382,
+            "timestampEnd": 401,
+            "textDe": "Das Stadtmuseum kann zumindest dabei helfen, Informationen zu solchen kleineren Orten zu sammeln und zugänglich zu machen. Unsere Fachleute beraten außerdem, wenn Materialien geschützt oder historische Angaben überprüft werden müssen. Allerdings können Museen nicht jede Aufgabe der Stadtverwaltung übernehmen.",
+            "textVi": "Bảo tàng thành phố ít nhất có thể hỗ trợ thu thập thông tin về những địa điểm nhỏ hơn đó và giúp công chúng tiếp cận. Đội ngũ chuyên môn của chúng tôi cũng tư vấn khi cần bảo vệ vật liệu hay kiểm chứng dữ liệu lịch sử. Tuy nhiên bảo tàng không thể gánh hết mọi nhiệm vụ của cơ quan hành chính thành phố."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 402,
+            "timestampEnd": 411,
+            "textDe": "Herr Bader, wenn nach der Prüfung eine deutliche Veränderung oder sogar die Entfernung eines beschädigten Objekts vorgeschlagen wird, wer sollte am Ende entscheiden?",
+            "textVi": "Thưa ông Bader, nếu sau khi xem xét lại có đề xuất thay đổi rõ rệt hoặc thậm chí di dời một công trình bị hư hại, cuối cùng ai nên là người quyết định?"
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 412,
+            "timestampEnd": 442,
+            "textDe": "Bei größeren Veränderungen darf die Entscheidung nicht nur hinter den Türen eines Amtes fallen. Die Menschen aus dem betroffenen Viertel sollten vorher mitentscheiden können. Das kann durch öffentliche Treffen, Werkstätten oder eine Befragung geschehen. Sie erleben den Ort täglich und kennen oft persönliche Geschichten, die in offiziellen Unterlagen fehlen. Fachleute müssen erklären, was technisch und historisch möglich ist. Die Bewohnerinnen und Bewohner sollten aber echten Einfluss auf die gewählte Lösung haben.",
+            "textVi": "Với những thay đổi lớn, quyết định không được phép chỉ đưa ra sau cánh cửa đóng kín của một cơ quan hành chính. Người dân tại khu phố liên quan phải được tham gia góp ý quyết định trước đó, thông qua họp dân công khai, xưởng thảo luận hay khảo sát. Họ sống ở nơi đó hàng ngày và thường biết những câu chuyện riêng không có trong hồ sơ chính thức. Chuyên gia phải giải thích điều gì khả thi về mặt kỹ thuật và lịch sử, nhưng cư dân cần có tiếng nói thực chất đối với phương án được chọn."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 442,
+            "timestampEnd": 476,
+            "textDe": "Wir haben also verschiedene Wege gehört. Schnelle fachliche Hilfe, langfristige Finanzierung, Bildungsarbeit, neue Formen der Reparatur und eine stärkere Beteiligung vor Ort. Schäden an Erinnerungsorten betreffen offenbar nicht nur Stein oder Metall, sondern auch die Frage, wie eine Stadt mit ihrer Geschichte lebt. Dana Schneider und Florian Bader, vielen Dank für das Gespräch. Ihnen zu Hause danke ich fürs Zuhören. Bis zur nächsten Ausgabe von Stadtgespräch.",
+            "textVi": "Như vậy chúng ta vừa nghe nhiều hướng tiếp cận khác nhau: hỗ trợ chuyên môn kịp thời, tài chính dài hạn, giáo dục, cách phục chế mới và sự tham gia sâu hơn từ cộng đồng địa phương. Hư hại tại các điểm tưởng niệm rõ ràng không chỉ là chuyện đá hay kim loại, mà còn là câu hỏi thành phố sống cùng lịch sử của mình ra sao. Cảm ơn bà Dana Schneider và ông Florian Bader về cuộc trò chuyện. Cảm ơn quý khán thính giả tại nhà đã lắng nghe. Hẹn gặp lại trong số tiếp theo của Stadtgespräch."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 477,
+            "timestampEnd": 510,
+            "textDe": "Guten Abend und willkommen zu Stadtgespräch. An vielen Orten erinnern Tafeln, Denkmäler oder Kunstwerke an wichtige Personen und Ereignisse. Was soll geschehen, wenn solche Zeichen absichtlich oder durch einen Unfall beschädigt werden? Darüber diskutiere ich heute mit Dana Schneider, Museumspädagogin im Stadtmuseum und Florian Bader vom Verein Nachbarschaft im Wandel. Frau Schneider, vor wenigen Tagen wurde eine Gedenktafel am alten Bahnhof stark zerkratzt. Was wäre für Sie jetzt der richtige Schritt?",
+            "textVi": "(Lần nghe 2) Chào buổi tối và mừng quý vị đến với chương trình Stadtgespräch. Ở nhiều nơi, các tấm biển, tượng đài hay tác phẩm nghệ thuật gợi nhắc về những nhân vật và sự kiện quan trọng..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 510,
+            "timestampEnd": 538,
+            "textDe": "Die Stadt sollte zunächst Fachleute den Schaden untersuchen lassen und dann rasch handeln. Solche Tafeln, Skulpturen und andere Erinnerungszeichen gehören zum öffentlichen Raum. Bleiben sie monatelang beschädigt, entsteht leicht der Eindruck, ihr Inhalt sei niemandem wichtig. Deshalb bin ich dafür, sie möglichst schnell professionell restaurieren zu lassen. Eine Reinigung durch Freiwillige reicht bei empfindlichen Materialien oft nicht aus und kann den Schaden sogar vergrößern.",
+            "textVi": "(Lần nghe 2) Thành phố trước tiên nên để chuyên gia kiểm tra mức độ hư hại rồi hành động nhanh chóng..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 539,
+            "timestampEnd": 554,
+            "textDe": "Ich verstehe den Wunsch nach einer schnellen Reaktion. Vor einer konkreten Maßnahme möchte ich mir aber genauer ansehen, wie der Ort heute genutzt wird und welche Bedeutung das beschädigte Objekt für die Umgebung hat. Manchmal entdeckt man dabei Fragen über die lange niemand gesprochen hat.",
+            "textVi": "(Lần nghe 2) Tôi hiểu mong muốn phản ứng nhanh. Tuy nhiên trước khi triển khai biện pháp cụ thể..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 555,
+            "timestampEnd": 590,
+            "textDe": "Oft erscheinen sofort Fotos in sozialen Netzwerken und kurz darauf berichten Zeitungen und lokale Sender. Öffentlichkeit kann helfen, doch sie hat auch eine problematische Seite. Meine Ansicht nach sollten Medien nüchtern erklären, was Geschehen ist und welche Folgen der Schaden hat. Dramatische Bilder und ständig wiederholte Namen geben den Verantwortlichen nur zusätzliche Aufmerksamkeit. Berichte sollten sachlich bleiben und den Tätern keine große Bühne bieten. Unsere Sendung nennt deshalb auch keine Vermutungen über Personen, solange die Polizei nichts bestätigt hat.",
+            "textVi": "(Lần nghe 2) Thường thì hình ảnh lập tức xuất hiện trên mạng xã hội..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 591,
+            "timestampEnd": 622,
+            "textDe": "Unabhängig von der Berichterstattung stellt sich eine praktische Frage. Wer bezahlt die Arbeiten? Im Moment müssen die zuständigen Ämter nach jedem Fall erst suchen, aus welchem Projekt noch Geld genommen werden kann. Dadurch geht Zeit verloren. Ich schlage einen festen Betrag im jährlichen Stadthaushalt vor, der ausschließlich für unerwartete Reparaturen an öffentlichen Erinnerungsobjekten bereitsteht. Wird er in einem Jahr nicht vollständig gebraucht, könnte der Rest für die Pflege besonders gefährdeter Stücke verwendet werden.",
+            "textVi": "(Lần nghe 2) Tách biệt khỏi chuyện đưa tin, còn một câu hỏi thực tế: ai trả tiền cho các công việc này?..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 622,
+            "timestampEnd": 633,
+            "textDe": "Herr Bader, Ihnen geht es nicht nur darum, einen früheren Zustand wiederherzustellen. Sie sehen in einer Beschädigung offenbar manchmal auch einen Anlass, den Ort neu zu betrachten.",
+            "textVi": "(Lần nghe 2) Thưa ông Bader, ông không chỉ quan tâm tới việc khôi phục lại trạng thái trước đây..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 634,
+            "timestampEnd": 663,
+            "textDe": "Genau. Man muss die Spuren nicht in jedem Fall unsichtbar machen. Stellen Sie sich eine zerbrochene Steinplatte vor, deren Teile mit einem deutlich erkennbaren Material verbunden werden. Wenn daneben erklärt wird, wann und warum die Reparatur nötig war, erzählt der Ort anschließend mehr als vorher. Eine bewusst sichtbare Reparatur kann selbst ein neues Kapitel in der Geschichte des Ortes bilden. Natürlich muss die Konstruktion sicher sein. Es geht nicht darum, Schäden einfach bestehen zu lassen.",
+            "textVi": "(Lần nghe 2) Chính xác. Không nhất thiết mọi dấu vết đều phải bị che đi hoàn toàn..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 664,
+            "timestampEnd": 693,
+            "textDe": "Damit Menschen solche Orte überhaupt verstehen, benötigen sie Hintergrundwissen. Besonders Schulen könnten hier eine aktive Rolle übernehmen. Ich wünsche mir Projekte, in denen Klassen einen Erinnerungsort in ihrer Nähe untersuchen, alte Fotos suchen, Gespräche mit Zeitzeugen oder Fachleuten führen und ihre Ergebnisse anschließend öffentlich vorstellen. So lernen junge Menschen nicht nur Geschichte, sondern auch, weshalb die Pflege eines scheinbar kleinen Schildes für die Gegenwart wichtig sein kann.",
+            "textVi": "(Lần nghe 2) Để mọi người thực sự hiểu những nơi như vậy, họ cần kiến thức nền..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 694,
+            "timestampEnd": 705,
+            "textDe": "Bei manchen Objekten ist nach einem schweren Schaden kaum noch Originalmaterial vorhanden. Dann stellt sich die Frage, ob man dasselbe Stück neu herstellen oder einen anderen Weg wählen sollte.",
+            "textVi": "(Lần nghe 2) Với một số di vật, sau hư hại nghiêm trọng hầu như không còn vật liệu gốc..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 706,
+            "timestampEnd": 734,
+            "textDe": "Eine genaue Kopie darf nicht zur automatischen Standardlösung werden. Bevor die Stadt etwas nachbauen lässt, sollte Sie prüfen, welche Aussage das Objekt hatte, ob diese Aussage heute noch verständlich ist und welche Funktion der Platz künftig erfüllen soll. Vielleicht ist eine Kopie sinnvoll. Vielleicht passt eine neue Gestaltung oder eine digitale Ergänzung besser. Entscheidend ist, dass diese Möglichkeiten für jeden einzelnen Fall ernsthaft untersucht werden.",
+            "textVi": "(Lần nghe 2) Một bản sao chính xác không nên trở thành giải pháp mặc định tự động..."
+          },
+          {
+            "speakerId": "GAST_1",
+            "roleSide": "Right",
+            "speakerName": "Dana Schneider",
+            "timestampStart": 735,
+            "timestampEnd": 762,
+            "textDe": "Bisher sprechen wir vor allem über große Denkmäler und bekannte Plätze. Das ist typisch für die öffentliche Debatte, aber zu eng. Auch eine kleine Tafel an einer ehemaligen Fabrik oder ein Erinnerungsstein in einem äußeren Stadtteil kann für viele Menschen bedeutend sein. Diskussion und finanzielle Unterstützung dürfen sich nicht ausschließlich auf berühmte Orte im Zentrum richten, sonst verschwinden wichtige Geschichten aus weniger besuchten Vierteln beinahe unbemerkt.",
+            "textVi": "(Lần nghe 2) Từ đầu tới giờ chúng ta chủ yếu nhắc đến tượng đài lớn và quảng trường nổi tiếng..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 763,
+            "timestampEnd": 782,
+            "textDe": "Das Stadtmuseum kann zumindest dabei helfen, Informationen zu solchen kleineren Orten zu sammeln und zugänglich zu machen. Unsere Fachleute beraten außerdem, wenn Materialien geschützt oder historische Angaben überprüft werden müssen. Allerdings können Museen nicht jede Aufgabe der Stadthauptverwaltung übernehmen.",
+            "textVi": "(Lần nghe 2) Bảo tàng thành phố ít nhất có thể hỗ trợ thu thập thông tin..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 783,
+            "timestampEnd": 793,
+            "textDe": "Herr Bader, wenn nach der Prüfung eine deutliche Veränderung oder sogar die Entfernung eines beschädigten Objekts vorgeschlagen wird, wer sollte am Ende entscheiden?",
+            "textVi": "(Lần nghe 2) Thưa ông Bader, nếu sau khi xem xét lại có đề xuất thay đổi rõ rệt..."
+          },
+          {
+            "speakerId": "GAST_2",
+            "roleSide": "Right",
+            "speakerName": "Florian Bader",
+            "timestampStart": 793,
+            "timestampEnd": 823,
+            "textDe": "Bei größeren Veränderungen darf die Entscheidung nicht nur hinter den Türen eines Amtes fallen. Die Menschen aus dem betroffenen Viertel sollten vorher mitentscheiden können. Das kann durch öffentliche Treffen, Werkstätten oder eine Befragung geschehen. Sie erleben den Ort täglich und kennen oft persönliche Geschichten, die in offiziellen Unterlagen fehlen. Fachleute müssen erklären, was technisch und historisch möglich ist. Die Bewohnerinnen und Bewohner sollten aber echten Einfluss auf die gewählte Lösung haben.",
+            "textVi": "(Lần nghe 2) Với những thay đổi lớn, quyết định không được phép chỉ đưa ra sau cánh cửa đóng kín..."
+          },
+          {
+            "speakerId": "MOD",
+            "roleSide": "Left",
+            "speakerName": "Moderator",
+            "timestampStart": 823,
+            "timestampEnd": 853,
+            "textDe": "Wir haben also verschiedene Wege gehört. Schnelle fachliche Hilfe, langfristige Finanzierung, Bildungsarbeit, neue Formen der Reparatur und eine stärkere Beteiligung vor Ort. Schäden an Erinnerungsorten betreffen offenbar nicht nur Stein oder Metall, sondern auch die Frage, wie eine Stadt mit ihrer Geschichte lebt. Dana Schneider und Florian Bader, vielen Dank für das Gespräch. Ihnen zu Hause danke ich fürs Zuhören. Bis zur nächsten Ausgabe von Stadtgespräch.",
+            "textVi": "(Lần nghe 2) Như vậy chúng ta vừa nghe nhiều hướng tiếp cận khác nhau. Cảm ơn bà Dana Schneider và ông Florian Bader..."
+          },
+          {
+            "speakerId": "ANSAGE",
+            "roleSide": "Left",
+            "speakerName": "Prüfungsansage",
+            "timestampStart": 853,
+            "timestampEnd": 858,
+            "textDe": "Sie haben jetzt fünf Minuten Zeit, Ihre Lösungen auf den Antwortbogen zu übertragen.",
+            "textVi": "Bạn hiện có năm phút để chép đáp án vào phiếu trả lời."
+          }
+        ],
+        "annotations": {
+          "maxPlayCount": 2,
+          "audioIncludesRepetition": true,
+          "playbackNote": "File âm thanh đề chuẩn Goethe B1 cho Teil này đã ghép sẵn 2 lần đọc liên tiếp."
+        }
+      },
+      "questions": [
+        {
+          "id": "GOETHE_B1_T01_H_Q23",
+          "order": 23,
+          "part": 4,
+          "prompt": "Beschädigte Erinnerungszeichen sollten möglichst schnell fachgerecht restauriert werden.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q24",
+          "order": 24,
+          "part": 4,
+          "prompt": "Medien sollten über solche Schäden sachlich berichten und den Tätern keine große Bühne geben.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q25",
+          "order": 25,
+          "part": 4,
+          "prompt": "Die Stadt braucht einen festen Geldbetrag für unerwartete Reparaturen an Erinnerungsorten.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q26",
+          "order": 26,
+          "part": 4,
+          "prompt": "Eine sichtbare Reparatur kann selbst zu einem Teil der Geschichte des Ortes werden.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q27",
+          "order": 27,
+          "part": 4,
+          "prompt": "Schulklassen sollten sich in Projekten mit den Erinnerungsorten ihrer Stadt beschäftigen.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q28",
+          "order": 28,
+          "part": 4,
+          "prompt": "Nicht jeder beschädigte Gegenstand muss automatisch durch eine genaue Kopie ersetzt werden.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q29",
+          "order": 29,
+          "part": 4,
+          "prompt": "Die öffentliche Diskussion darf sich nicht nur auf bekannte Erinnerungsorte im Stadtzentrum konzentrieren.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        },
+        {
+          "id": "GOETHE_B1_T01_H_Q30",
+          "order": 30,
+          "part": 4,
+          "prompt": "Über größere Veränderungen sollen die Menschen aus dem jeweiligen Viertel mitentscheiden.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Moderator"
+            },
+            {
+              "id": "B",
+              "text": "Dana Schneider"
+            },
+            {
+              "id": "C",
+              "text": "Florian Bader"
+            }
+          ],
+          "taskType": "multiple_choice"
+        }
+      ]
+    }
+  ],
+  "serverGradingKeys": [
+    {
+      "questionId": "GOETHE_B1_T01_L_Q01",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Als unsere Tochter Lina bald zum ersten Mal in ihrem eigenen Zimmer schlafen sollte, wurde ich plötzlich unsicher.",
+      "trapExplanationVi": "Đúng: ngay đầu bài Jana nói khi con gái sắp ngủ phòng riêng lần đầu, cô lo lắng nên bắt đầu tìm hiểu thiết bị theo dõi.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q02",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Sie lieh uns für eine Woche eine Sensormatte, eine Kamera und ein Babybett",
+      "trapExplanationVi": "Bẫy mua sẵn: Jana mượn của chị gái Mia dùng thử 1 tuần rồi mới quyết định có mua hay không.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q03",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Sie schlief ruhig und atmete ganz normal. Beim Nachsehen bemerkten wir, dass die Matte unter der Matratze verrutscht war.",
+      "trapExplanationVi": "Bẫy tình huống: không có vấn đề hô hấp nào, báo động kêu chỉ vì tấm thảm cảm biến bị xô lệch.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q04",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Ihn beruhigten die Bilder: Ein kurzer Blick auf den Bildschirm genügte ihm. Bei mir war es genau umgekehrt.",
+      "trapExplanationVi": "Đúng: hình ảnh giúp David yên tâm chỉ cần liếc qua, trong khi Jana lại kiểm tra liên tục hơn.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q05",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Tatsächlich schlief sie dort aber unruhiger als in ihrem normalen Bett. Nach dem Ende unserer Testwoche gaben wir es deshalb zusammen mit den anderen Geräten an Mia zurück.",
+      "trapExplanationVi": "Đúng: bé ngủ bất an hơn trong chiếc giường tự đung đưa nên cả nhà đã trả lại sau tuần thử.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q06",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Vielleicht reicht schon ein einfaches Gerät, mit dem man nur die Geräusche aus dem Kinderzimmer hört.",
+      "trapExplanationVi": "Đúng: phần kết Jana khuyên các phụ huynh cân nhắc xem một máy báo khóc chỉ truyền âm thanh đơn giản đã đủ chưa.",
+      "tags": [
+        "Lesen",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q07",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Nun bringt der Familienbetrieb aus Rosenheim das traditionelle Produkt zurück – allerdings in einer kleineren Verpackung.",
+      "trapExplanationVi": "Bẫy chi tiết: A sai vì không nhắc bán qua bưu điện, C chỉ nói về buổi tham quan một phần, B nêu đúng trọng tâm thích nghi kích thước đóng gói theo thói quen hộ ít người.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q08",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Dort arbeiten die Beschäftigten nach dem alten Rezept der Familie und führen viele Arbeitsschritte von Hand aus.",
+      "trapExplanationVi": "Đúng A: nhân viên vẫn sản xuất tại xưởng riêng theo công thức gia truyền cũ, không thuê gia công (B) hay đổi gia vị (C).",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q09",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Teilnehmen können ausschließlich Erwachsene, die sich vorher telefonisch oder über die Internetseite der Metzgerei anmelden.",
+      "trapExplanationVi": "Đúng A: khách tham quan bắt buộc đăng ký trước qua điện thoại hoặc website.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q10",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Das sogenannte MehrwegMobil stellt Teller, Becher und Besteck bereit, die nach der Veranstaltung gereinigt und erneut benutzt werden können.",
+      "trapExplanationVi": "Đúng C: bài giới thiệu dịch vụ cho mượn chén đĩa dùng nhiều lần cho các lễ hội khu phố tại Lindenau.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q11",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Bei der Abholung zahlt jeder Veranstalter ein Pfand.",
+      "trapExplanationVi": "Bẫy đồng nghĩa: 'ein Pfand' trong bài tương đương với 'eine Kaution' (tiền đặt cọc hoàn lại, không phải phí thuê cố định).",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q12",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Läuft das erste Jahr gut, soll der Kreis der Nutzer erweitert werden. Dann dürfen auch Händlerinnen und Händler vom Wochenmarkt Teller und Becher für ihre Verkaufsstände ausleihen.",
+      "trapExplanationVi": "Đúng B: nếu năm thí điểm thành công, tiểu thương chợ tuần cũng sẽ được mượn bát đĩa.",
+      "tags": [
+        "Lesen",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q13",
+      "correctOption": "h",
+      "points": 1,
+      "citation": "Unter fachlicher Anleitung setzen Sie aus einzelnen Komponenten einen kleinen tragbaren Computer zusammen. Sämtliche Werkzeuge und Bauteile liegen bei uns bereit.",
+      "trapExplanationVi": "Khớp toàn bộ: xưởng cuối tuần, tự lắp máy tính nhỏ gọn từ linh kiện có hướng dẫn và có sẵn đầy đủ dụng cụ.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q14",
+      "correctOption": "c",
+      "points": 1,
+      "citation": "Unser Fachbetrieb rettet Fotos, Dokumente und andere Dateien von defekten Geräten. Wenn Sie Ihr Notebook nicht zu uns bringen können, holen wir es bei Ihnen zu Hause ab.",
+      "trapExplanationVi": "Khớp: cứu dữ liệu khi laptop không khởi động được và có dịch vụ đến tận nhà lấy máy.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q15",
+      "correctOption": "f",
+      "points": 1,
+      "citation": "Generalüberholtes Notebook – 379 Euro",
+      "trapExplanationVi": "Khớp: dưới 400 Euro (379 Euro), máy đã qua sử dụng được kiểm định và kèm bảo hành 12 tháng lỗi kỹ thuật.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q16",
+      "correctOption": "a",
+      "points": 1,
+      "citation": "Abendkurs dienstags und donnerstags, 18.30–20.30 Uhr.",
+      "trapExplanationVi": "Khớp: khóa học Linux buổi tối (18:30–20:30) cho người mới bắt đầu dùng chính laptop cá nhân.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q17",
+      "correctOption": "j",
+      "points": 1,
+      "citation": "In unserem barrierefreien Beratungsraum können Sie verschiedene angepasste Tastaturen testen. Einzeltermine nach telefonischer Vereinbarung.",
+      "trapExplanationVi": "Khớp: tư vấn cá nhân không rào cản và thử bàn phím chuyên dụng cho người hạn chế cử động tay.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q18",
+      "correctOption": "d",
+      "points": 1,
+      "citation": "Schnelle Geräte für Videoschnitt, Grafik und große Datenmengen. Mietdauer flexibel: von einer Woche bis zu sechs Monaten.",
+      "trapExplanationVi": "Khớp: thuê máy cấu hình mạnh dựng video trong 4 tuần (nằm trong khoảng 1 tuần – 6 tháng) mà không cần mua.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q19",
+      "correctOption": "0",
+      "points": 1,
+      "citation": "Kein Liveunterricht und keine praktischen Lötübungen.",
+      "trapExplanationVi": "Bẫy quảng cáo B: B là video quay sẵn không có dạy trực tiếp (live) và cũng không có thực hành hàn mạch điện tử -> chọn 0.",
+      "tags": [
+        "Lesen",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q20",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Ein allgemeines Fotografierverbot geht mir zu weit.",
+      "trapExplanationVi": "Phản đối lệnh cấm chung: Lea chỉ ủng hộ cấm đèn flash và chân máy chứ không cấm chụp ảnh nói chung.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q21",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Ich bin klar für das Verbot.",
+      "trapExplanationVi": "Ủng hộ lệnh cấm: Martin cho rằng khách giơ điện thoại che mất tầm nhìn và bảo tàng không phải studio chụp ảnh.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q22",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Ein vollständiges Verbot halte ich nicht für nötig.",
+      "trapExplanationVi": "Phản đối cấm hoàn toàn: Aylin đề xuất chia khung giờ chụp và gắn ký hiệu bên từng tác phẩm.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q23",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Deshalb sollte das Fotografieren in der gesamten Ausstellung untersagt sein.",
+      "trapExplanationVi": "Ủng hộ lệnh cấm: Robert cho rằng việc chụp ảnh làm xao nhãng khỏi tác phẩm nghệ thuật.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q24",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Darum bin ich gegen ein grundsätzliches Verbot.",
+      "trapExplanationVi": "Phản đối cấm triệt để: Sofia chỉ muốn cấm đèn flash nhưng vẫn cho phép chụp nhanh bằng điện thoại không flash.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q25",
+      "correctOption": "Ja",
+      "points": 1,
+      "citation": "Ein Fotografierverbot für alle Ausstellungsräume ist leicht zu verstehen und ebenso leicht zu kontrollieren. Deshalb unterstütze ich diese Lösung",
+      "trapExplanationVi": "Ủng hộ lệnh cấm: Daniel muốn quy định thống nhất dễ kiểm soát để nhân viên khỏi tranh cãi.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q26",
+      "correctOption": "Nein",
+      "points": 1,
+      "citation": "Deshalb sollte es kein einheitliches Fotografierverbot geben.",
+      "trapExplanationVi": "Phản đối lệnh cấm đồng loạt: Miriam muốn tùy từng phòng trưng bày hay hiện vật mà quy định riêng.",
+      "tags": [
+        "Lesen",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q27",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Elektrische Sägen, Bohrmaschinen und ähnliche Geräte dürfen erst benutzt werden, nachdem die Werkstattleitung eine Sicherheitseinweisung durchgeführt hat.",
+      "trapExplanationVi": "Đúng A: chỉ được dùng máy móc điện sau khi tham gia hướng dẫn an toàn với ban quản lý xưởng.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q28",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Sonntags sind alle lärmintensiven Arbeiten untersagt.",
+      "trapExplanationVi": "Bẫy cuối tuần: thứ Bảy chỉ được làm 9–15 giờ, còn Chủ nhật cấm hoàn toàn mọi công việc gây ồn -> chọn B.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q29",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Jede Person muss ihre Abfälle persönlich sortieren und in den richtigen Behälter legen.",
+      "trapExplanationVi": "Đúng C: người làm phát sinh phế liệu xây dựng phải tự phân loại bỏ vào đúng thùng quy định trong sân.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_L_Q30",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Falls ein besonders langes oder empfindliches Material nicht sicher in den Lastenaufzug passt, kann die Bauleitung vorher eine Ausnahme erlauben.",
+      "trapExplanationVi": "Đúng C: chỉ được chở vật liệu bằng thang máy chở người nếu ban chỉ huy công trình cho phép ngoại lệ trước đó.",
+      "tags": [
+        "Lesen",
+        "Teil 5",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q01",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Und nun das Bergwetter für alle, die heute eine Wanderung planen.",
+      "trapExplanationVi": "Đúng: bản tin dự báo thời tiết vùng núi dành riêng cho người chuẩn bị đi bộ đường dài (Wanderung).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q02",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Am Nachmittag bilden sich über den Bergen zunehmend dunkle Wolken. Dann sind örtlich kräftige Gewitter möglich.",
+      "trapExplanationVi": "Bẫy nhiễu: buổi sáng nắng trên 30 độ, nhưng buổi chiều vùng núi Alps có thể có giông mạnh cục bộ (Gewitter) -> chọn C.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q03",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Sie wollten Ihr Fahrrad am Mittwoch abholen. Leider schaffen wir die Reparatur bis dahin nicht.",
+      "trapExplanationVi": "Bẫy thời gian: không phải sớm hơn mà bị trễ từ thứ Tư sang thứ Sáu mới xong -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q04",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "dass wir noch ein Ersatzteil benötigen. Unser Lieferant kann es uns erst am Donnerstag bringen.",
+      "trapExplanationVi": "Đúng A: tiệm cần chờ phụ tùng thay thế đến thứ Năm nhà cung cấp mới giao tới.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q05",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Danke, dass Ihr bei den Vorbereitungen helft. Wir treffen uns um 9 Uhr vor dem Gemeinschaftshaus.",
+      "trapExplanationVi": "Đúng: Mira nhắn cho những người tình nguyện giúp chuẩn bị lễ hội khu phố vào thứ Bảy.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q06",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Da für Samstag große Hitze angekündigt ist, richten wir zusätzlich eine Station mit kostenlosem Trinkwasser ein.",
+      "trapExplanationVi": "Đúng B: vì trời nắng nóng nên ban tổ chức bố trí thêm một trạm cấp nước uống miễn phí.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q07",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Der Termin war ursprünglich für Dienstag vorgesehen. Der Techniker kann an diesem Tag jedoch nicht kommen und wird nun am Mittwoch zwischen 14 und 16 Uhr bei Ihnen sein.",
+      "trapExplanationVi": "Bẫy ngày hẹn: lịch cũ là thứ Ba đã bị dời sang thứ Tư từ 14–16 giờ -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q08",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Bitte rufen Sie uns zurück und bestätigen Sie, dass entweder Sie selbst oder eine von Ihnen beauftragte Person dem Techniker die Wohnung öffnen kann.",
+      "trapExplanationVi": "Đúng C: ông Demir cần gọi lại xác nhận có người mở cửa căn hộ cho kỹ thuật viên.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q09",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Ich bestätige Ihre telefonische Reservierung für diesen Samstag.",
+      "trapExplanationVi": "Đúng: đây là cuộc gọi xác nhận đặt 2 vé xem phim từ rạp Lichtblick.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q10",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Wir halten die Karten an der Abendkasse bis 19:15 Uhr für Sie bereit.",
+      "trapExplanationVi": "Bẫy giờ chiếu phim: 19:45 là giờ phim bắt đầu, còn hạn giữ vé tại quầy chỉ tới 19:15 -> chọn A.",
+      "tags": [
+        "Hören",
+        "Teil 1",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q11",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Eine Adoption wird heute Abend aber noch nicht vereinbart. Zuerst benötigen Sie einen persönlichen Beratungstermin mit einer Mitarbeiterin oder einem Mitarbeiter.",
+      "trapExplanationVi": "Bẫy hấp tấp: tối nay chưa thể nhận mang mèo về ngay (A), trước tiên phải hẹn một buổi tư vấn cá nhân -> chọn B.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q12",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Unser Abend beginnt gleich hier im Veranstaltungsraum. Gemeinsam sehen wir uns die Angaben auf mehreren Packungen Katzenfutter an und vergleichen sie.",
+      "trapExplanationVi": "Đúng A: hoạt động đầu tiên là cùng xem và so sánh thông tin trên nhiều gói thức ăn cho mèo.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q13",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "In jeder Gruppe dürfen höchstens sechs Personen sein.",
+      "trapExplanationVi": "Đúng B: để tránh làm mèo căng thẳng, mỗi nhóm tham quan tối đa 6 người (hạn mức không cho phép tự cho ăn hay đợi hôm sau).",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q14",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Über mehrere Tage geben wir zunächst nur eine kleine Menge des neuen Futters zum gewohnten Futter.",
+      "trapExplanationVi": "Đúng A: trộn thức ăn mới vào thức ăn cũ rồi tăng dần tỷ lệ trong vài ngày.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q15",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Falls Sie eine persönliche Beratung zur Ernährung Ihrer eigenen Katze wünschen, melden Sie sich bitte spätestens bis Freitag per E-Mail an.",
+      "trapExplanationVi": "Đúng C: muốn tư vấn riêng về dinh dưỡng cho mèo nhà mình thì đăng ký qua e-mail chậm nhất đến thứ Sáu.",
+      "tags": [
+        "Hören",
+        "Teil 2",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q16",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Die Stadt kürzt zwar unseren Zuschuss, aber das Zentrum bleibt geöffnet.",
+      "trapExplanationVi": "Tin đồn sai: trung tâm chỉ bị giảm trợ cấp nên thu gọn hoạt động chứ vẫn tiếp tục mở cửa -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q17",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "unsere Leitung hat uns Beschäftigten die Kürzungen am Dienstag in einer Teamsitzung erklärt.",
+      "trapExplanationVi": "Đúng: chưa đăng báo công khai, Lena biết qua cuộc họp nhóm nội bộ hôm thứ Ba.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q18",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Wir mussten die Renovierung auf das nächste Jahr verschieben.",
+      "trapExplanationVi": "Đúng: kế hoạch sửa phòng âm nhạc mùa thu bị hoãn sang năm sau.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q19",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Die Angebote für Kinder laufen alle weiter. Dort wollen wir nichts streichen.",
+      "trapExplanationVi": "Đảo ngược chủ thể: lớp trẻ em được giữ nguyên toàn bộ, phần bị cắt giảm là các lớp buổi tối của người lớn -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q20",
+      "correctOption": "F",
+      "points": 1,
+      "citation": "Wir sollten das Fest nicht komplett streichen. Machen wir es kleiner.",
+      "trapExplanationVi": "Đảo ngược ý kiến: một số đồng nghiệp nghĩ hủy cho gọn, nhưng Markus đề nghị KHÔNG hủy mà tổ chức quy mô nhỏ hơn -> Sai (F).",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q21",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Der Baumarkt bietet Farbe und Papier an, das Café leiht uns Stühle und weitere Läden würden ähnliche Materialien geben. Geld hat bisher allerdings noch keiner angeboten.",
+      "trapExplanationVi": "Đúng: các tiệm quanh khu quyên góp đồ dùng và vật liệu, hiện chưa có ai đóng góp tiền mặt.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q22",
+      "correctOption": "R",
+      "points": 1,
+      "citation": "Wie wäre es mit Samstagvormittag im Zentrum? Um 10 Uhr ist der große Raum frei.",
+      "trapExplanationVi": "Đúng: hai người thống nhất hẹn tình nguyện viên sáng thứ Bảy lúc 10 giờ tại trung tâm khu phố.",
+      "tags": [
+        "Hören",
+        "Teil 3",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q23",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Deshalb bin ich dafür, sie möglichst schnell professionell restaurieren zu lassen.",
+      "trapExplanationVi": "Dana Schneider nhấn mạnh cần mời chuyên gia kiểm tra và phục chế chuyên nghiệp thật nhanh.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q24",
+      "correctOption": "A",
+      "points": 1,
+      "citation": "Berichte sollten sachlich bleiben und den Tätern keine große Bühne bieten.",
+      "trapExplanationVi": "Moderator cho rằng truyền thông cần đưa tin khách quan, không tạo sân khấu gây chú ý cho thủ phạm.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q25",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Ich schlage einen festen Betrag im jährlichen Stadthaushalt vor, der ausschließlich für unerwartete Reparaturen an öffentlichen Erinnerungsobjekten bereitsteht.",
+      "trapExplanationVi": "Dana Schneider đề xuất lập một khoản ngân sách cố định hàng năm cho các sửa chữa đột xuất.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q26",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Eine bewusst sichtbare Reparatur kann selbst ein neues Kapitel in der Geschichte des Ortes bilden.",
+      "trapExplanationVi": "Florian Bader nêu quan điểm không cần che hết vết vỡ mà sửa chữa để lộ dấu tích như một chương mới của địa điểm.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q27",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Besonders Schulen könnten hier eine aktive Rolle übernehmen. Ich wünsche mir Projekte, in denen Klassen einen Erinnerungsort in ihrer Nähe untersuchen",
+      "trapExplanationVi": "Dana Schneider mong các lớp học thực hiện dự án tìm hiểu điểm tưởng niệm ở địa phương.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q28",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Eine genaue Kopie darf nicht zur automatischen Standardlösung werden.",
+      "trapExplanationVi": "Florian Bader cho rằng không nên mặc định lúc nào cũng làm bản sao giống hệt nguyên bản.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q29",
+      "correctOption": "B",
+      "points": 1,
+      "citation": "Diskussion und finanzielle Unterstützung dürfen sich nicht ausschließlich auf berühmte Orte im Zentrum richten",
+      "trapExplanationVi": "Dana Schneider lưu ý không chỉ quan tâm tượng đài lớn ở trung tâm mà cần chú ý cả di tích nhỏ ở các khu ngoại vi.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    },
+    {
+      "questionId": "GOETHE_B1_T01_H_Q30",
+      "correctOption": "C",
+      "points": 1,
+      "citation": "Die Menschen aus dem betroffenen Viertel sollten vorher mitentscheiden können.",
+      "trapExplanationVi": "Florian Bader khẳng định cư dân tại khu phố liên quan phải có quyền cùng quyết định các thay đổi lớn.",
+      "tags": [
+        "Hören",
+        "Teil 4",
+        "Goethe B1"
+      ]
+    }
+  ]
+}

@@ -1,3 +1,9 @@
-import { SkillProviderSummary } from '../../../../components/learning/SkillProviderSummary';
+import { SkillProviderAcademicPage } from '../../../../components/learning/SkillProviderAcademicPage';
+import { getSkillExercises } from '../../../../lib/server/exam-content-loader';
 
-export default function GoetheReadingSummaryPage() { return <SkillProviderSummary provider="goethe" skill="Lesen" exercises={[]} />; }
+export const dynamic = 'force-dynamic';
+
+export default async function GoetheReadingSummaryPage() {
+  const items = (await getSkillExercises('Lesen')).filter((item) => item.provider === 'Goethe');
+  return <SkillProviderAcademicPage skill="Lesen" items={items} provider="goethe" />;
+}
